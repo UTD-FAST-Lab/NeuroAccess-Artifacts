@@ -1,0 +1,333 @@
+{
+  "app": "Claude",
+  "screen": "screen34",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen34_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen34_function_groups.png"
+  },
+  "elements": {
+    "screen34-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen34 (incog kb)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen34-f1",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen34 (incog kb)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f2": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": "active",
+      "location": "top right of screen34 (incog kb)",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X is the established close/dismiss convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "incognito chat",
+      "accessibility_text": "content_desc: \"Incognito chat\"; talkback_label: \"Incognito chat\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "turns incognito off on the same screen: the X becomes the ghost again, the incognito wording disappears and the regular greeting returns; the composer and any draft stay",
+      "glyph_group": "gg1",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen34-f2",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap X at top right of screen34 (incog kb)",
+          "expected_result": "every X dismisses the surface it sits on and returns to what was underneath; the three incognito-screen X marks are the \"on\" face of the incognito toggle and should take the user back out of incognito",
+          "confirms_if": "it reaches something unrelated to what the other members of gg1 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "turns incognito off on the same screen: the X becomes the ghost again, the incognito wording disappears and the regular greeting returns; the composer and any draft stay",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f3": {
+      "kind": "button",
+      "appearance": "the words \"Learn more\" underlined",
+      "state": null,
+      "location": "middle centre of screen34 (incog kb)",
+      "bounds": [
+        440,
+        775,
+        642,
+        833
+      ],
+      "visible_label": "Learn more",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "hands off to the Chrome browser (Chrome's first-run screen appeared); returned with one Back",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-screen34-f3",
+          "type": "function_determination",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap the words \"Learn more\" underlined at middle centre of screen34 (incog kb)",
+          "expected_result": "all open more information about incognito chats",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "hands off to the Chrome browser (Chrome's first-run screen appeared); returned with one Back",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f4": {
+      "kind": "button",
+      "appearance": "the words \"Upgrade to Pro\"",
+      "state": null,
+      "location": "middle right of screen34 (incog kb)",
+      "bounds": [
+        761,
+        1095,
+        985,
+        1221
+      ],
+      "visible_label": "Upgrade to Pro",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "upgrade to pro",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Upgrade to Pro\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "opens the full-page plans screen \"Get more Claude\"",
+      "glyph_group": "gg3",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg3-screen34-f4",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap the words \"Upgrade to Pro\" at middle right of screen34 (incog kb)",
+          "expected_result": "all open the upgrade/plans page",
+          "confirms_if": "it reaches something unrelated to what the other members of gg3 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the full-page plans screen \"Get more Claude\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f5": {
+      "kind": "icon",
+      "appearance": "plus sign in a grey circle",
+      "state": null,
+      "location": "middle left of screen34 (incog kb)",
+      "bounds": [
+        48,
+        1344,
+        174,
+        1470
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus in a circle beside a composer conventionally adds/attaches — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "add to chat",
+      "accessibility_text": "content_desc: \"Add to chat\"; talkback_label: \"Add to chat\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "opens the \"Add to chat\" bottom sheet (incognito variant: Camera/Photos/Files, Web search, Connectors)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-screen34-f5",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap plus sign in a grey circle at middle left of screen34 (incog kb)",
+          "expected_result": "all open the attach/add sheet for this chat",
+          "confirms_if": "it reaches something unrelated to what the other members of gg4 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the \"Add to chat\" bottom sheet (incognito variant: Camera/Photos/Files, Web search, Connectors)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f6": {
+      "kind": "button",
+      "appearance": "the words \"Haiku 4.5\"",
+      "state": null,
+      "location": "middle centre of screen34 (incog kb)",
+      "bounds": [
+        179,
+        1344,
+        410,
+        1470
+      ],
+      "visible_label": "Haiku 4.5",
+      "convention_relied_on": "a pill showing a current value conventionally opens a picker — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Haiku 4.5\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "opens the \"Select model\" bottom sheet",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-screen34-f6",
+          "type": "function_determination",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap the words \"Haiku 4.5\" at middle centre of screen34 (incog kb)",
+          "expected_result": "a pill showing the current model name conventionally opens a picker of models",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "opens the \"Select model\" bottom sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f7": {
+      "kind": "icon",
+      "appearance": "microphone in a grey circle",
+      "state": null,
+      "location": "middle right of screen34 (incog kb)",
+      "bounds": [
+        791,
+        1344,
+        907,
+        1470
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone is the established voice-input convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "start speech input",
+      "accessibility_text": "content_desc: \"Start speech input\"; talkback_label: \"Start speech input\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": "opens the page \"Send messages to Claude using your voice.\" (speech-input introduction)",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-screen34-f7",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap microphone in a grey circle at middle right of screen34 (incog kb)",
+          "expected_result": "all start speech input (dictation)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg6 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the page \"Send messages to Claude using your voice.\" (speech-input introduction)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen34-f8": {
+      "kind": "icon",
+      "appearance": "vertical sound-wave bars in a black circle",
+      "state": null,
+      "location": "middle right of screen34 (incog kb)",
+      "bounds": [
+        907,
+        1344,
+        1033,
+        1470
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "sound-wave bars are a recognisable voice/audio convention but not a firm first-time-user one — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "voice mode",
+      "accessibility_text": "content_desc: \"Voice Mode\"; talkback_label: \"Voice Mode\" — evidence of intent only",
+      "context_reading": "incognito home with the keyboard up: \"Incognito chat\" centred under the top bar, ghost and the incognito explanation above the composer",
+      "observed_function": null,
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-screen34-f8",
+          "type": "same_appearance",
+          "precondition": "app open on incog kb (live equivalent of screen34); context noted before the tap",
+          "action": "tap vertical sound-wave bars in a black circle at middle right of screen34 (incog kb)",
+          "expected_result": "all start voice mode (spoken conversation)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg7 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "not executed — starting voice mode is not allowed on the test devices",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 7,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

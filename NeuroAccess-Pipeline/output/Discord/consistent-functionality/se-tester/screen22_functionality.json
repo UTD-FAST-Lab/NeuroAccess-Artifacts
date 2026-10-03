@@ -1,0 +1,395 @@
+{
+  "app": "Discord",
+  "screen": "screen22",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen22_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen22_function_groups.png"
+  },
+  "elements": {
+    "screen22-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal sliders",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        934,
+        87,
+        1039,
+        192
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "sliders = filter/adjust - established convention - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Search Filters (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Search Filters\"; talkback_label: \"Search Filters\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files",
+      "observed_function": "opens a menu \"Filter results...\" (From a specific person, In a specific DM, ...)",
+      "glyph_group": "gg57",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg57-tc-screen22-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f1 (three horizontal sliders) at its captured position and record what happens",
+          "expected_result": "opens a menu \"Filter results...\" (From a specific person, In a specific DM, ...)",
+          "confirms_if": "it does something unrelated to what the other members of gg57 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg57, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens a menu \"Filter results...\" (From a specific person, In a specific DM, ...)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg57": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f2": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        42,
+        108,
+        105,
+        171
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "left arrow = back/up to the previous screen - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Back (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Back\"; talkback_label: \"Back\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files",
+      "observed_function": "returns to the screen the user came from",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen22-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f2 (arrow pointing left) at its captured position and record what happens",
+          "expected_result": "returns to the screen the user came from",
+          "confirms_if": "it does something unrelated to what the other members of gg8 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg8, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc-screen22-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen22 captured",
+          "action": "exercise screen22-f2 (\"arrow pointing left\") and compare its result with the other renderings in cfg4",
+          "expected_result": "hypothesis: the profile X and every left arrow return to the previous screen",
+          "confirms_if": "all return to the previous screen",
+          "overturns_if": "any member does something other than returning",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f3": {
+      "kind": "button",
+      "appearance": "the word \"Recent\"",
+      "state": "selected",
+      "location": "top left of the screen",
+      "bounds": [
+        42,
+        236,
+        156,
+        321
+      ],
+      "visible_label": "Recent",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Recent (from label; status declared)",
+      "accessibility_text": "content_desc: \"Recent\"; talkback_label: \"Recent\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"Recent\"",
+      "observed_function": "selects the Recent tab",
+      "glyph_group": "gg58",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg58-tc-screen22-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f3 (the word \"Recent\") at its captured position and record what happens",
+          "expected_result": "selects the Recent tab",
+          "confirms_if": "it does something unrelated to what the other members of gg58 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg58, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Recent tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg58": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f4": {
+      "kind": "button",
+      "appearance": "the word \"People\"",
+      "state": "unselected",
+      "location": "top left of the screen",
+      "bounds": [
+        219,
+        236,
+        332,
+        321
+      ],
+      "visible_label": "People",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "People (from label; status declared)",
+      "accessibility_text": "content_desc: \"People\"; talkback_label: \"People\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"People\"",
+      "observed_function": "selects the People tab",
+      "glyph_group": "gg59",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg59-tc-screen22-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f4 (the word \"People\") at its captured position and record what happens",
+          "expected_result": "selects the People tab",
+          "confirms_if": "it does something unrelated to what the other members of gg59 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg59, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the People tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg59": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f5": {
+      "kind": "button",
+      "appearance": "the word \"Media\"",
+      "state": "unselected",
+      "location": "top centre of the screen",
+      "bounds": [
+        395,
+        236,
+        496,
+        321
+      ],
+      "visible_label": "Media",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Media (from label; status declared)",
+      "accessibility_text": "content_desc: \"Media\"; talkback_label: \"Media\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"Media\"",
+      "observed_function": "selects the Media tab",
+      "glyph_group": "gg60",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg60-tc-screen22-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f5 (the word \"Media\") at its captured position and record what happens",
+          "expected_result": "selects the Media tab",
+          "confirms_if": "it does something unrelated to what the other members of gg60 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg60, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Media tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg60": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f6": {
+      "kind": "button",
+      "appearance": "the word \"Pins\"",
+      "state": "unselected",
+      "location": "top centre of the screen",
+      "bounds": [
+        559,
+        236,
+        629,
+        321
+      ],
+      "visible_label": "Pins",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Pins (from label; status declared)",
+      "accessibility_text": "content_desc: \"Pins\"; talkback_label: \"Pins\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"Pins\"",
+      "observed_function": "selects the Pins tab",
+      "glyph_group": "gg61",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg61-tc-screen22-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f6 (the word \"Pins\") at its captured position and record what happens",
+          "expected_result": "selects the Pins tab",
+          "confirms_if": "it does something unrelated to what the other members of gg61 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg61, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Pins tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg61": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f7": {
+      "kind": "button",
+      "appearance": "the word \"Links\"",
+      "state": "unselected",
+      "location": "top right of the screen",
+      "bounds": [
+        692,
+        236,
+        778,
+        321
+      ],
+      "visible_label": "Links",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Links (from label; status declared)",
+      "accessibility_text": "content_desc: \"Links\"; talkback_label: \"Links\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"Links\"",
+      "observed_function": "selects the Links tab",
+      "glyph_group": "gg62",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg62-tc-screen22-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f7 (the word \"Links\") at its captured position and record what happens",
+          "expected_result": "selects the Links tab",
+          "confirms_if": "it does something unrelated to what the other members of gg62 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg62, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Links tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg62": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f8": {
+      "kind": "button",
+      "appearance": "the word \"Files\"",
+      "state": "unselected",
+      "location": "top right of the screen",
+      "bounds": [
+        841,
+        236,
+        917,
+        321
+      ],
+      "visible_label": "Files",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Files (from label; status declared)",
+      "accessibility_text": "content_desc: \"Files\"; talkback_label: \"Files\"",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files; carries its own visible words \"Files\"",
+      "observed_function": "selects the Files tab",
+      "glyph_group": "gg63",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg63-tc-screen22-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f8 (the word \"Files\") at its captured position and record what happens",
+          "expected_result": "selects the Files tab",
+          "confirms_if": "it does something unrelated to what the other members of gg63 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg63, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Files tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg63": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f9": {
+      "kind": "icon",
+      "appearance": "three horizontal lines in a floating circle",
+      "state": null,
+      "location": "middle left of the screen",
+      "bounds": [
+        22,
+        1134,
+        168,
+        1280
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "hamburger = open a menu/drawer - established convention, but this one has no app record - my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "search screen with field \"Search in DMs\" and a tab row Recent/People/Media/Pins/Links/Files",
+      "observed_function": "not present on the live DM search screen (two entries, loaded and loading); the spot where it was drawn does nothing when tapped; the capture has no record for it",
+      "glyph_group": "gg64",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg64-tc-screen22-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen22 captured (screens 10 and 22 are recaptures of the same DM search view); context noted before the tap",
+          "action": "tap screen22-f9 (three horizontal lines in a floating circle) at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg64 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg64, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not present on the live DM search screen (two entries, loaded and loading); the spot where it was drawn does nothing when tapped; the capture has no record for it",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "fd-screen22-f9",
+          "type": "function_determination",
+          "precondition": "live app on the view this element was captured on",
+          "action": "tap screen22-f9 and record what it does, so it can be placed on the function axis",
+          "expected_result": "a determinable job",
+          "confirms_if": "n/a - placement test",
+          "overturns_if": "n/a - placement test",
+          "observed_result": "not present on the live DM search screen (two entries, loaded and loading); the spot where it was drawn does nothing when tapped; the capture has no record for it",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg64": null
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 1,
+    "test_cases_executed": 11,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "app": "Claude",
+  "screen": "s24",
+  "state_str": "7c63940a75749fa03fa51e13e48e5300",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134157.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s24_header_nav.png",
+  "name": "Settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Settings",
+      "verdict_on_region": "title \u2014 names the screen"
+    }
+  ],
+  "identifier_found": "\"Settings\" title",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title",
+  "test_cases": [
+    {
+      "id": "s24-tc1",
+      "type": "scroll_persistence",
+      "precondition": "Settings at the top",
+      "action": "swipe up twice to the bottom of the list",
+      "expected_result": "the title stays or scrolls away",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title scrolls away",
+      "observed_result": "\"Settings\" stayed pinned in the top bar through to the \"Log out\" row",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the title stays pinned while the list scrolls to \"Log out\"",
+  "recommendation": null,
+  "provisional": false
+}

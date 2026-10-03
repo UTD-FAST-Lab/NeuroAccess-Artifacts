@@ -1,0 +1,49 @@
+{
+  "app": "Duolingo",
+  "screen": "s34",
+  "state_str": "f946336696c496d74d04798893d39387",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185832.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s34_header_nav.png",
+  "name": "Create Avatar",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Create Avatar",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Skin tone",
+      "verdict_on_region": "names the currently selected editor category — a place inside the avatar editor, supplementary to the screen title"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "worded tab row; the current tab (\"first item\") is declared selected and drawn with a coloured label and underline — locates the user within the screen"
+    }
+  ],
+  "identifier_found": "'Create Avatar' in the top bar with X and DONE; category tabs with 'Skin tone' below",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title naming the editor; 'Skin tone' names the current category",
+  "test_cases": [
+    {
+      "id": "s34-tc1",
+      "type": "unconventional_region",
+      "precondition": "Profile with avatar placeholder",
+      "action": "open the avatar editor and read the category heading",
+      "expected_result": "-",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "not executed — opening the editor risks saving an avatar (an account/profile change); the title is sufficient without the category heading",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Create Avatar' names the screen; 'Skin tone' judged from the image as naming the current editor category (a place inside the editor), supplementary",
+  "recommendation": null,
+  "provisional": false
+}

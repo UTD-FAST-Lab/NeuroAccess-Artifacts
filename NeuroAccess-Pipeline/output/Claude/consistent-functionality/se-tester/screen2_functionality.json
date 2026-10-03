@@ -1,0 +1,345 @@
+{
+  "app": "Claude",
+  "screen": "screen2",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen2_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen2_function_groups.png"
+  },
+  "elements": {
+    "screen2-f1": {
+      "kind": "button",
+      "appearance": "dimmed strip of the screen behind the drawer",
+      "state": null,
+      "location": "middle right of screen2 (drawer)",
+      "bounds": [
+        945,
+        0,
+        1080,
+        2400
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "tapping the dimmed area outside a drawer to close it is an established convention — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "close navigation menu",
+      "accessibility_text": "content_desc: \"Close navigation menu\"; talkback_label: \"Close navigation menu\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "closed the drawer and returned to the screen beneath",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-screen2-f1",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap dimmed strip of the screen behind the drawer at middle right of screen2 (drawer)",
+          "expected_result": "all close the drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg12 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "closed the drawer and returned to the screen beneath",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f2": {
+      "kind": "button",
+      "appearance": "the word \"Claude\"",
+      "state": null,
+      "location": "top centre of screen2 (drawer)",
+      "bounds": [
+        32,
+        63,
+        913,
+        232
+      ],
+      "visible_label": "Claude",
+      "convention_relied_on": "a product wordmark is not a control convention on mobile — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Claude\"; talkback_label: \"Claude\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opened a fresh empty chat composer with the keyboard up (drawer closed)",
+      "glyph_group": "gg13",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg13-screen2-f2",
+          "type": "function_determination",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap the word \"Claude\" at top centre of screen2 (drawer)",
+          "expected_result": "the wordmark at the top of the drawer is a title; if it acts at all it may go \"home\"",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "opened a fresh empty chat composer with the keyboard up (drawer closed)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg4-tc-mix",
+          "type": "mixed_appearance",
+          "precondition": "app open on the home composer",
+          "action": "open the drawer, tap the \"Claude\" wordmark; reopen the drawer, tap \"+ New chat\"; compare",
+          "expected_result": "the wordmark is a title and does nothing, or goes somewhere different from New chat",
+          "confirms_if": "both start a new chat and nothing visible marks the wordmark as a control",
+          "overturns_if": "the wordmark does something else, or visibly reads as the same action",
+          "observed_result": "the wordmark closed the drawer and opened a fresh empty chat with the keyboard up — the same result as \"+ New chat\"",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality",
+        "fg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f3": {
+      "kind": "icon+label",
+      "appearance": "two overlapping speech bubbles with the word \"Chats\"",
+      "state": null,
+      "location": "top centre of screen2 (drawer)",
+      "bounds": [
+        21,
+        232,
+        924,
+        379
+      ],
+      "visible_label": "Chats",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "chats",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Chats\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opens the \"Chats\" list",
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-screen2-f3",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap two overlapping speech bubbles with the word \"Chats\" at top centre of screen2 (drawer)",
+          "expected_result": "all open \"Chats\" list",
+          "confirms_if": "it reaches something unrelated to what the other members of gg14 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the \"Chats\" list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg14": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f4": {
+      "kind": "icon+label",
+      "appearance": "stacked tray with the word \"Projects\"",
+      "state": null,
+      "location": "middle centre of screen2 (drawer)",
+      "bounds": [
+        21,
+        379,
+        924,
+        526
+      ],
+      "visible_label": "Projects",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "projects",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Projects\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opens the \"Projects\" list",
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-screen2-f4",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap stacked tray with the word \"Projects\" at middle centre of screen2 (drawer)",
+          "expected_result": "all open \"Projects\" list",
+          "confirms_if": "it reaches something unrelated to what the other members of gg15 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the \"Projects\" list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg15": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f5": {
+      "kind": "icon+label",
+      "appearance": "angle brackets around a slash with the word \"Code\"",
+      "state": null,
+      "location": "middle centre of screen2 (drawer)",
+      "bounds": [
+        21,
+        526,
+        924,
+        673
+      ],
+      "visible_label": "Code",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "code",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Code\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opened the \"Upgrade for Claude Code\" page",
+      "glyph_group": "gg16",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg16-screen2-f5",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap angle brackets around a slash with the word \"Code\" at middle centre of screen2 (drawer)",
+          "expected_result": "all open \"Upgrade for Claude Code\" page",
+          "confirms_if": "it reaches something unrelated to what the other members of gg16 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened the \"Upgrade for Claude Code\" page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f6": {
+      "kind": "icon+label",
+      "appearance": "overlapping circle, triangle and square outlines with the word \"Artifacts\"",
+      "state": null,
+      "location": "middle centre of screen2 (drawer)",
+      "bounds": [
+        21,
+        673,
+        924,
+        820
+      ],
+      "visible_label": "Artifacts",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "artifacts",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Artifacts\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opens the \"Artifacts\" list",
+      "glyph_group": "gg17",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg17-screen2-f6",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap overlapping circle, triangle and square outlines with the word \"Artifacts\" at middle centre of screen2 (drawer)",
+          "expected_result": "all open \"Artifacts\" list",
+          "confirms_if": "it reaches something unrelated to what the other members of gg17 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the \"Artifacts\" list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f7": {
+      "kind": "icon",
+      "appearance": "the letters AC in an orange circle",
+      "state": null,
+      "location": "bottom left of screen2 (drawer)",
+      "bounds": [
+        37,
+        2174,
+        163,
+        2300
+      ],
+      "visible_label": "\"AC\" initials",
+      "convention_relied_on": "an initials avatar opening the account area is a common convention — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "settings",
+      "accessibility_text": "content_desc: \"Ally Cooper, Settings\"; talkback_label: \"Ally Cooper, Settings\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opens \"Settings\"",
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-screen2-f7",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap the letters AC in an orange circle at bottom left of screen2 (drawer)",
+          "expected_result": "the initials avatar conventionally opens the account/settings area",
+          "confirms_if": "it reaches something unrelated to what the other members of gg18 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens \"Settings\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f8": {
+      "kind": "icon+label",
+      "appearance": "plus sign with the words \"New chat\"",
+      "state": null,
+      "location": "bottom centre of screen2 (drawer)",
+      "bounds": [
+        566,
+        2174,
+        903,
+        2300
+      ],
+      "visible_label": "New chat",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "new chat",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"New chat\" — evidence of intent only",
+      "context_reading": "navigation drawer: \"Claude\" wordmark at the top, rows Chats / Projects / Code / Artifacts, Recents, avatar \"AC\" and \"+ New chat\" at the bottom; the dimmed app shows at the right edge",
+      "observed_function": "opened a fresh empty chat composer with the keyboard up (drawer closed)",
+      "glyph_group": "gg11",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg11-screen2-f8",
+          "type": "same_appearance",
+          "precondition": "app open on drawer (live equivalent of screen2); context noted before the tap",
+          "action": "tap plus sign with the words \"New chat\" at bottom centre of screen2 (drawer)",
+          "expected_result": "all start a new chat",
+          "confirms_if": "it reaches something unrelated to what the other members of gg11 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened a fresh empty chat composer with the keyboard up (drawer closed)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality",
+        "fg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "elements_in_issue_groups": 2,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 9,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

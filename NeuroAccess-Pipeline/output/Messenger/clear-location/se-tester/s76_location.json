@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s76",
+  "state_str": "d59ff3ee1e75665deee7fa1f09b8e0aa",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152745.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s76_header_nav.png",
+  "name": "Avatar",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Avatar",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    }
+  ],
+  "identifier_found": "\"Avatar\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions; landing state of evaluated scrolls t132/t133 — on the device those scrolls never reach it (see transitions)",
+  "recommendation": null,
+  "provisional": false
+}

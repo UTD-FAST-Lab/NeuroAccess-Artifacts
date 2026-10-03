@@ -1,0 +1,93 @@
+{
+ "app": "Messenger",
+ "screen": "screen6",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen6_actionable_elements.png",
+ "elements": {
+  "screen6-a1": {
+   "kind": "icon",
+   "glyph": "arrow pointing left",
+   "description": "arrow pointing left",
+   "location": "top, left",
+   "bounds": [
+    0,
+    63,
+    147,
+    210
+   ],
+   "visible_text": "none (Android UI)",
+   "accessibility_text_consulted": "content_desc 'Navigate up' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": null,
+   "initial_rationale": "out of app: this surface belongs to Android (permission controller / Settings), not to com.facebook.orca",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": null,
+   "deciding_evidence": "OUT OF APP - not judged. Android's own UI was captured in the crawl; recorded as detector feedback for actionable-elements-detector and not shown to the personas",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen6-a2": {
+   "kind": "icon",
+   "glyph": "speech bubble with a zigzag",
+   "description": "speech bubble with a zigzag",
+   "location": "middle, centre",
+   "bounds": [
+    477,
+    596,
+    603,
+    722
+   ],
+   "visible_text": "none (Android UI)",
+   "accessibility_text_consulted": null,
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": null,
+   "initial_rationale": "out of app: this surface belongs to Android (permission controller / Settings), not to com.facebook.orca",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": null,
+   "deciding_evidence": "OUT OF APP - not judged. Android's own UI was captured in the crawl; recorded as detector feedback for actionable-elements-detector and not shown to the personas",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen6-a3": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'All Messenger notifications'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    764,
+    1080,
+    1045
+   ],
+   "visible_text": "(Android UI) 'All Messenger notifications'",
+   "accessibility_text_consulted": "talkback_label 'All Messenger notifications' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": null,
+   "initial_rationale": "out of app: this surface belongs to Android (permission controller / Settings), not to com.facebook.orca",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": null,
+   "deciding_evidence": "OUT OF APP - not judged. Android's own UI was captured in the crawl; recorded as detector feedback for actionable-elements-detector and not shown to the personas",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 0,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 0,
+  "clear_via_common_icon_exemption": 0,
+  "detection_false_positives": 0,
+  "test_cases_executed": 0,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 0,
+  "instincts_overturned": 0,
+  "provisional_verdicts": 0
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "app": "PDFReader",
+  "screen": "s13",
+  "state_str": "6d953a9d2c0340a68ae4615e60f66a88",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_181155.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s13_header_nav.png",
+  "name": "Settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Settings",
+      "verdict_on_region": "names the section; paired with a back arrow"
+    }
+  ],
+  "identifier_found": "\"Settings\" -- screen title beside a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a plain screen title naming the section, with a back arrow",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "template carry from s7 (same structure_str 89d70358cbc8f02f0bd1c9bd8912f5b2); identical content",
+  "recommendation": null,
+  "provisional": false
+}

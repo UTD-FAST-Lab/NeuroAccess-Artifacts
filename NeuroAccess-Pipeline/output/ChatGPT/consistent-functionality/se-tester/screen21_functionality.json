@@ -1,0 +1,760 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen21",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen21_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen21_function_groups.png"
+  },
+  "elements": {
+    "screen21-f1": {
+      "kind": "button",
+      "appearance": "dimmed band over the screen behind the side panel",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        864,
+        0,
+        1080,
+        2400
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "dimmed area outside an open drawer = tap outside to close - established platform convention; my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\", talkback: \"Close\"",
+      "context_reading": "side panel open",
+      "observed_function": "closes the side panel and returns to whatever was underneath (a past chat stayed open)",
+      "glyph_group": "gg27",
+      "function_group": "cfg2",
+      "test_cases": [
+        {
+          "id": "gg27-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the side panel and returns to whatever was underneath (a past chat stayed open)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the side panel and returns to whatever was underneath (a past chat stayed open)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "closes its own surface",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality",
+        "cfg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f2": {
+      "kind": "icon",
+      "appearance": "the wordmark \"ChatGPT\"",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        53,
+        90,
+        358,
+        216
+      ],
+      "visible_label": "ChatGPT",
+      "convention_relied_on": "a product name; no control convention - reads as a title",
+      "convention_confidence": "low",
+      "declared_function": "New chat",
+      "accessibility_text": "content_desc: \"New chat\", talkback: \"New chat\"",
+      "context_reading": "side panel open",
+      "observed_function": "closes the side panel and starts a new empty chat (from inside a past chat the past chat was left)",
+      "glyph_group": "gg28",
+      "function_group": "fg5",
+      "test_cases": [
+        {
+          "id": "gg28-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the side panel and starts a new empty chat (from inside a past chat the past chat was left)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the side panel and starts a new empty chat (from inside a past chat the past chat was left)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "new empty chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality",
+        "cfg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f3": {
+      "kind": "icon",
+      "appearance": "magnifying glass",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        680,
+        90,
+        806,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "magnifier = search - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Search",
+      "accessibility_text": "content_desc: \"Search\", talkback: \"Search\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens search (field with \"Recent files\" and an X)",
+      "glyph_group": "gg29",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg29-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens search (field with \"Recent files\" and an X)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens search (field with \"Recent files\" and an X)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f4": {
+      "kind": "icon+label",
+      "appearance": "stacked photo frames with the word \"Images\"",
+      "state": null,
+      "location": "top centre",
+      "bounds": [
+        0,
+        242,
+        864,
+        368
+      ],
+      "visible_label": "Images",
+      "convention_relied_on": "worded control (\"Images\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Images",
+      "accessibility_text": "content_desc: \"\", talkback: \"Images\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the Images page (Trending / Templates tiles, \"Describe an image\" field)",
+      "glyph_group": "gg30",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg30-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the Images page (Trending / Templates tiles, \"Describe an image\" field)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the Images page (Trending / Templates tiles, \"Describe an image\" field)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg30": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f5": {
+      "kind": "icon+label",
+      "appearance": "book spines on a shelf with the word \"Library\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        368,
+        864,
+        494
+      ],
+      "visible_label": "Library",
+      "convention_relied_on": "worded control (\"Library\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Library",
+      "accessibility_text": "content_desc: \"\", talkback: \"Library\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the Library page (Suggested / Favorites / Folders / Images)",
+      "glyph_group": "gg31",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg31-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the Library page (Suggested / Favorites / Folders / Images)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the Library page (Suggested / Favorites / Folders / Images)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg31": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f6": {
+      "kind": "icon+label",
+      "appearance": "folder with the word \"Projects\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        494,
+        864,
+        620
+      ],
+      "visible_label": "Projects",
+      "convention_relied_on": "worded control (\"Projects\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Projects",
+      "accessibility_text": "content_desc: \"\", talkback: \"Projects\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the Projects page",
+      "glyph_group": "gg32",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg32-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the Projects page",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the Projects page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg32": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f7": {
+      "kind": "icon+label",
+      "appearance": "clock face with the word \"Scheduled\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        620,
+        864,
+        746
+      ],
+      "visible_label": "Scheduled",
+      "convention_relied_on": "worded control (\"Scheduled\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Scheduled",
+      "accessibility_text": "content_desc: \"\", talkback: \"Scheduled\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the \"Schedule a task\" page",
+      "glyph_group": "gg33",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg33-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the \"Schedule a task\" page",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the \"Schedule a task\" page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg33": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f8": {
+      "kind": "icon+label",
+      "appearance": "circled swirl with the word \"Plugins\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        746,
+        864,
+        872
+      ],
+      "visible_label": "Plugins",
+      "convention_relied_on": "worded control (\"Plugins\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Plugins",
+      "accessibility_text": "content_desc: \"\", talkback: \"Plugins\"",
+      "context_reading": "side panel open",
+      "observed_function": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+      "glyph_group": "gg13",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg13-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f9": {
+      "kind": "button",
+      "appearance": "the words \"Create image\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1001,
+        864,
+        1127
+      ],
+      "visible_label": "Create image",
+      "convention_relied_on": "worded control (\"Create image\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Create image",
+      "accessibility_text": "content_desc: \"\", talkback: \"Create image\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f10": {
+      "kind": "button",
+      "appearance": "the words \"Polish writing\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1127,
+        864,
+        1253
+      ],
+      "visible_label": "Polish writing",
+      "convention_relied_on": "worded control (\"Polish writing\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Polish writing",
+      "accessibility_text": "content_desc: \"\", talkback: \"Polish writing\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg34",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg34-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg34": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f11": {
+      "kind": "button",
+      "appearance": "the words \"Proofread writing\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1253,
+        864,
+        1379
+      ],
+      "visible_label": "Proofread writing",
+      "convention_relied_on": "worded control (\"Proofread writing\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Proofread writing",
+      "accessibility_text": "content_desc: \"\", talkback: \"Proofread writing\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg35",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg35-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg35": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f12": {
+      "kind": "button",
+      "appearance": "the words \"Shorten writing rewrite\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1379,
+        864,
+        1505
+      ],
+      "visible_label": "Shorten writing rewrite",
+      "convention_relied_on": "worded control (\"Shorten writing rewrite\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Shorten writing rewrite",
+      "accessibility_text": "content_desc: \"\", talkback: \"Shorten writing rewrite\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg36",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg36-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg36": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f13": {
+      "kind": "button",
+      "appearance": "the words \"Create image\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1505,
+        864,
+        1631
+      ],
+      "visible_label": "Create image",
+      "convention_relied_on": "worded control (\"Create image\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Create image",
+      "accessibility_text": "content_desc: \"\", talkback: \"Create image\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f14": {
+      "kind": "button",
+      "appearance": "the words \"Create image\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        0,
+        1631,
+        864,
+        1757
+      ],
+      "visible_label": "Create image",
+      "convention_relied_on": "worded control (\"Create image\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Create image",
+      "accessibility_text": "content_desc: \"\", talkback: \"Create image\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f15": {
+      "kind": "button",
+      "appearance": "the words \"Create image\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        0,
+        1757,
+        864,
+        1883
+      ],
+      "visible_label": "Create image",
+      "convention_relied_on": "worded control (\"Create image\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Create image",
+      "accessibility_text": "content_desc: \"\", talkback: \"Create image\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the past conversation of that title",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the past conversation of that title",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the past conversation of that title",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f16": {
+      "kind": "button",
+      "appearance": "the words \"See all…\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        0,
+        1883,
+        864,
+        2009
+      ],
+      "visible_label": "See all…",
+      "convention_relied_on": "worded control (\"See all…\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "See all…",
+      "accessibility_text": "content_desc: \"\", talkback: \"See all…\"",
+      "context_reading": "side panel open",
+      "observed_function": "expands the past-chat list in place (older rows appear)",
+      "glyph_group": "gg37",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg37-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "expands the past-chat list in place (older rows appear)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "expands the past-chat list in place (older rows appear)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg37": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f17": {
+      "kind": "icon+label",
+      "appearance": "square with a pencil across its corner, with the word \"Chat\"",
+      "state": null,
+      "location": "bottom left",
+      "bounds": [
+        84,
+        2179,
+        373,
+        2305
+      ],
+      "visible_label": "Chat",
+      "convention_relied_on": "worded control (\"Chat\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\", talkback: \"Chat\"",
+      "context_reading": "side panel open",
+      "observed_function": "closes the side panel and starts a new empty chat (from inside a past chat)",
+      "glyph_group": "gg38",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg38-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the side panel and starts a new empty chat (from inside a past chat)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the side panel and starts a new empty chat (from inside a past chat)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "new empty chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg38": "Consistent Functionality",
+        "cfg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f18": {
+      "kind": "icon",
+      "appearance": "initials \"AT\" in a filled circle",
+      "state": null,
+      "location": "bottom right",
+      "bounds": [
+        675,
+        2179,
+        801,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "initials in a circle = account / profile - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Account settings",
+      "accessibility_text": "content_desc: \"Account settings\", talkback: \"Account settings\"",
+      "context_reading": "side panel open",
+      "observed_function": "opens the account settings page (Personalization, Memory, Plugins, Workspace, Upgrade plan, ...)",
+      "glyph_group": "gg39",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg39-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the account settings page (Personalization, Memory, Plugins, Workspace, Upgrade plan, ...)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the account settings page (Personalization, Memory, Plugins, Workspace, Upgrade plan, ...)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg39": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 18,
+    "elements_in_issue_groups": 2,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 17,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

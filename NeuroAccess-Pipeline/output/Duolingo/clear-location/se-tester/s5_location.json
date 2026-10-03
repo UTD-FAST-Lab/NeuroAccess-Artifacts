@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s5",
+  "state_str": "5c80a4e21f9a8575a3803a4160df596f",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185346.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s5_header_nav.png",
+  "name": "the Learn path (home)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SECTION 1, UNIT 1 / Order at a café",
+      "verdict_on_region": "content: names the course unit being studied, not a part of the app"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "the house tab drawn inside a light-blue rounded box in the bottom bar; above the path the unit banner 'SECTION 1, UNIT 1 / Order at a café'",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the bottom tab bar visibly highlights the house (Learn) tab; the unit banner names the course unit rather than the section, so the highlight carries the location",
+  "test_cases": [
+    {
+      "id": "s5-tc1",
+      "type": "active_state",
+      "precondition": "app open on the Learn path (house tab highlighted)",
+      "action": "scroll the path down twice the captured distance and back; then tap the treasure-chest tab, the trophy tab and the ⋯ tab in turn, watching the light-blue highlight",
+      "expected_result": "the highlight either follows the tapped tab or stays fixed",
+      "confirms_if": "the highlight never moves, or disappears while the path is shown",
+      "overturns_if": "the highlight follows the tab (moves to the chest on Quests, to the trophy on Leaderboards)",
+      "observed_result": "Scrolling: the unit banner and the tab bar stayed pinned; 'Greet people and say goodbye' / 'JUMP HERE?' scrolled past underneath. Tabs: the light-blue box moved to the chest on the Quests screen ('Quests' title) and to the trophy on the Leaderboards screen; back on Learn it returned to the house.",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the highlight moved with every tab tapped and stayed pinned with the banner while the path scrolled — a working active state, pixel-rendered though never declared selected:true",
+  "recommendation": null,
+  "provisional": false
+}

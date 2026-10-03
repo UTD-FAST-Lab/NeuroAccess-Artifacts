@@ -1,0 +1,31 @@
+{
+  "app": "ChatGPT",
+  "screen": "s20",
+  "state_str": "48e45a2b3df8223376d1483a72e28d4c",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204749.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s20_header_nav.png",
+  "name": "the Library in selection mode (\"Select items\", \"Files\" tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Select items",
+      "verdict_on_region": "names a selection mode/count, not a place; the \"Library\" title it replaced is gone"
+    },
+    {
+      "kind": "navigation",
+      "text": "All | Images | Files (Files selected)",
+      "verdict_on_region": "visible pill on a filter tab; names a content type, not the section"
+    }
+  ],
+  "identifier_found": "none that names the section; \"Select items\" replaces the \"Library\" title and the highlighted tab names a filter (\"Files\")",
+  "identifier_class": "none",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the header names what the user is doing, not where; the filter tab is not the section name — nothing says Library",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "entering selection mode replaces the section name with \"Select items\"; a filter tab (\"Files\") does not name the part of the app. Template carry from s19 (structures 724f4265 / 5e2dab1b are the same selection-mode layout; the header text differs between \"Select items\" and \"1 selected\", and I judged both texts separately — neither names a place).",
+  "recommendation": "keep the section in the title while selecting, e.g. \"Library — select items\"",
+  "provisional": false
+}

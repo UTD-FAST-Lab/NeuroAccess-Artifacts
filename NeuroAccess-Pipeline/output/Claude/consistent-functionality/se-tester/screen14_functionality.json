@@ -1,0 +1,135 @@
+{
+  "app": "Claude",
+  "screen": "screen14",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen14_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen14_function_groups.png"
+  },
+  "elements": {
+    "screen14-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen14 (code)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "\"Upgrade for Claude Code\" upsell page with a code sample; \"Upgrade\" and \"Return to chat\" buttons at the bottom",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen14-f1",
+          "type": "same_appearance",
+          "precondition": "app open on code (live equivalent of screen14); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen14 (code)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen14-f2": {
+      "kind": "button",
+      "appearance": "the word \"Upgrade\"",
+      "state": null,
+      "location": "bottom centre of screen14 (code)",
+      "bounds": [
+        42,
+        2022,
+        1038,
+        2148
+      ],
+      "visible_label": "Upgrade",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Upgrade\" — evidence of intent only",
+      "context_reading": "\"Upgrade for Claude Code\" upsell page with a code sample; \"Upgrade\" and \"Return to chat\" buttons at the bottom",
+      "observed_function": "opened the full-page plans screen \"Get more Claude\"",
+      "glyph_group": "gg28",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg28-screen14-f2",
+          "type": "function_determination",
+          "precondition": "app open on code (live equivalent of screen14); context noted before the tap",
+          "action": "tap the word \"Upgrade\" at bottom centre of screen14 (code)",
+          "expected_result": "both open the upgrade/plans page",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "opened the full-page plans screen \"Get more Claude\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen14-f3": {
+      "kind": "button",
+      "appearance": "the words \"Return to chat\"",
+      "state": null,
+      "location": "bottom centre of screen14 (code)",
+      "bounds": [
+        42,
+        2169,
+        1038,
+        2295
+      ],
+      "visible_label": "Return to chat",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "return to chat",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Return to chat\" — evidence of intent only",
+      "context_reading": "\"Upgrade for Claude Code\" upsell page with a code sample; \"Upgrade\" and \"Return to chat\" buttons at the bottom",
+      "observed_function": "returned to the Chats list (the screen visited before Code) — cross-check against \"New chat\"",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "fd-screen14-f3",
+          "type": "function_determination",
+          "precondition": "app open on Settings (live equivalent of screen16)",
+          "action": "tap the words \"Return to chat\"",
+          "expected_result": "the page its label names",
+          "confirms_if": "n/a — cross-check only",
+          "overturns_if": "n/a — cross-check only",
+          "observed_result": "returned to the Chats list (the screen visited before Code) — cross-check against \"New chat\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

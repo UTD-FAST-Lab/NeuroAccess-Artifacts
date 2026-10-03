@@ -1,0 +1,1614 @@
+{
+  "persona": "persona-kwame",
+  "app": "Discord",
+  "screens": {
+    "s1": {
+      "where": "The general channel",
+      "expectation": "I am inside the channel called general, in a server called Accessibility Testin's server, with nothing written in it yet.",
+      "confidence": "sure",
+      "cue": "The top line says '# general' next to a back arrow, the big bold welcome names 'Accessibility Testin's server', and the box at the bottom says 'Message #general'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name sits at the top where I look first, and the same name is repeated in the message box, so I can check myself twice without doubt. The page is mostly white space, which helps me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "The general channel",
+      "expectation": "I am in the general channel of Accessibility Testin's server. It looks exactly like an empty channel.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, 'Welcome to Accessibility Testin's server' in large type, and 'Message #general' in the typing box.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name of the place is at the top and repeated at the bottom. Nothing competes with it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s3": {
+      "where": "Channel list of Accessibility Testin's server",
+      "expectation": "I am looking at the list of channels inside Accessibility Testin's server, and 'general' is the one currently chosen.",
+      "confidence": "guessing",
+      "cue": "The heading 'Accessibility Testin's server', the grey highlight behind '# general', and the blue tile in the left column.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading tells me the server, but the left column has three tiles that all say exactly 'ATs'. Only one is blue. If I had three servers with the same letters I could not tell by looking which one I am in; I would have to trust the heading and keep checking it. The column of rounded squares with no words is hard for me to remember.",
+        "solution": "Put the full server name under or beside each tile in the left column, or at least make the tiles look different from one another, so the selected one is named and not only coloured."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "I tapped each of the four 'ATs' squares in turn. Each tap turned that square blue and moved the small dark bar beside it, and that was the only change. All four times the heading said exactly 'Accessibility Testin's server', with the same '# general' and 'General' underneath. Nothing on the screen told the four apart. If I had to say which server I was in, I could only say 'the third one from the top', and I could not have said what makes it different from the second.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone all four squares say 'ATs' and every one of them opens a page headed 'Accessibility Testin's server' with the same channels. It is not just hard to tell which square I am on; there is literally nothing on screen that distinguishes them.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Messages (direct messages)",
+      "expectation": "I am in the Messages area, where my private conversations with people would be. I have none yet.",
+      "confidence": "sure",
+      "cue": "The large heading 'Messages' at the top, and the speech bubble tile at the top left is the blue, selected one.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is one plain word that says exactly what the page is. The illustration is large but it is below the heading and does not stop me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Channel list of Accessibility Testin's server",
+      "expectation": "I am in Accessibility Testin's server, looking at its channels, with general chosen.",
+      "confidence": "guessing",
+      "cue": "The heading 'Accessibility Testin's server' and the grey band behind '# general'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as before: the heading names the server, but three identical 'ATs' tiles sit on the left and only colour marks mine. I have to read the heading and then look at the tiles and then read the heading again to be sure they agree.",
+        "solution": "Label each server tile with its full name, or give each a distinct picture, so the one I am in is named and not only coloured blue."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "I tapped each of the four 'ATs' squares in turn. Each tap turned that square blue and moved the small dark bar beside it, and that was the only change. All four times the heading said exactly 'Accessibility Testin's server', with the same '# general' and 'General' underneath. Nothing on the screen told the four apart. If I had to say which server I was in, I could only say 'the third one from the top', and I could not have said what makes it different from the second.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone all four squares say 'ATs' and every one of them opens a page headed 'Accessibility Testin's server' with the same channels. It is not just hard to tell which square I am on; there is literally nothing on screen that distinguishes them.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Create Your Server - choose how to start",
+      "expectation": "I am at the beginning of making a new server, choosing whether to make my own or start from a template.",
+      "confidence": "sure",
+      "cue": "The large heading 'Create Your Server' and the sentence under it, plus 'Start from a template'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says exactly what I am doing. The choices are in a simple list with words next to each picture. I do not know how many steps follow, but I know where I am right now.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Tell Us More About Your Server",
+      "expectation": "I am part-way through making a new server, and it is asking whether the server is for friends or for a club.",
+      "confidence": "guessing",
+      "cue": "The heading 'Tell Us More About Your Server' and the words 'your new server' in the line under it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names the question, not the task. It does not say 'Create Your Server' any more, and there is no step count, so I have to work out from 'your new server' that I am still in the same process. I do not know if this is step two of three or two of ten.",
+        "solution": "Keep 'Create Your Server' visible as the task name and add a step indicator such as 'Step 2 of 3', so I know which process this belongs to and how far along I am."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_CREATE",
+          "action": "Tap the + at the bottom of the left column of squares. Tap 'Create My Own', then 'For me and my friends'. On each page, say which task you are doing and which step of it you are on. Do not press 'Create Server'. Leave with the back arrow or X until you are back where you started.",
+          "real_if": "on a page you cannot tell which task or which step you are on",
+          "not_real_if": "every page tells you the task and the step",
+          "observed_result": "I tapped the + at the bottom of the squares. Page 1 was titled 'Create Your Server', so the task is creating a server, but there is no step number. I tapped 'Create My Own'. Page 2 was titled 'Tell Us More About Your Server' and mentioned 'your new server'. I can infer it is still the same task, but there is no step number and the task name has gone. I tapped 'For me and my friends'. Page 3 was titled 'Create Your Server' again, word for word the same as page 1, with 'Server Name' already filled in with 'Accessibility Testin's server' and the 'Create Server' button, which I did not press. No page told me which step I was on or how many there were. And because pages 1 and 3 share a title, the title alone cannot tell me whether I went forward or back. The back arrows took me back one page at a time, then the X returned me to the server page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Confirmed on the device: no step indicator on any of the three pages, the middle page drops the task name, and the first and last pages share the identical title 'Create Your Server'.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "Create Your Server - name and picture",
+      "expectation": "I am in the server-making process, on the part where I give the server a name and a picture before pressing Create Server.",
+      "confidence": "guessing",
+      "cue": "The heading 'Create Your Server', the 'Server Name' field and the 'Create Server' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "This heading is word for word the same as the first screen with the templates, but the page is different. When two different pages carry the same title I cannot tell from the title whether I have gone forward or back. I have to read the whole page again to be sure.",
+        "solution": "Give this step its own title, such as 'Name your server', under the task name, and show which step of how many this is."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_CREATE",
+          "action": "Tap the + at the bottom of the left column of squares. Tap 'Create My Own', then 'For me and my friends'. On each page, say which task you are doing and which step of it you are on. Do not press 'Create Server'. Leave with the back arrow or X until you are back where you started.",
+          "real_if": "on a page you cannot tell which task or which step you are on",
+          "not_real_if": "every page tells you the task and the step",
+          "observed_result": "I tapped the + at the bottom of the squares. Page 1 was titled 'Create Your Server', so the task is creating a server, but there is no step number. I tapped 'Create My Own'. Page 2 was titled 'Tell Us More About Your Server' and mentioned 'your new server'. I can infer it is still the same task, but there is no step number and the task name has gone. I tapped 'For me and my friends'. Page 3 was titled 'Create Your Server' again, word for word the same as page 1, with 'Server Name' already filled in with 'Accessibility Testin's server' and the 'Create Server' button, which I did not press. No page told me which step I was on or how many there were. And because pages 1 and 3 share a title, the title alone cannot tell me whether I went forward or back. The back arrows took me back one page at a time, then the X returned me to the server page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Confirmed on the device: no step indicator on any of the three pages, the middle page drops the task name, and the first and last pages share the identical title 'Create Your Server'.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Enable Permissions pop-up over Create Your Server",
+      "expectation": "I am still creating my server, and a box has popped up saying Discord cannot reach my photos.",
+      "confidence": "sure",
+      "cue": "The pop-up heading 'Enable Permissions' in the white box, with 'Create Your Server' greyed behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The pop-up has its own clear heading and the page behind is still readable, so I know the box belongs to the server-making page. Two plain buttons, 'Take me there' and 'Close'.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Create Your Server - name and picture, empty",
+      "expectation": "I am on the server-naming part of creating a server, and the name box is empty.",
+      "confidence": "guessing",
+      "cue": "The heading 'Create Your Server', the empty 'Server Name' box and the faded 'Create Server' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The title is identical to the template-choice page, so the title alone does not tell me which part of the process I am on. I have to read everything below it to be sure.",
+        "solution": "A distinct step title and a step count, for example 'Step 3 of 3: Name your server'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_CREATE",
+          "action": "Tap the + at the bottom of the left column of squares. Tap 'Create My Own', then 'For me and my friends'. On each page, say which task you are doing and which step of it you are on. Do not press 'Create Server'. Leave with the back arrow or X until you are back where you started.",
+          "real_if": "on a page you cannot tell which task or which step you are on",
+          "not_real_if": "every page tells you the task and the step",
+          "observed_result": "I tapped the + at the bottom of the squares. Page 1 was titled 'Create Your Server', so the task is creating a server, but there is no step number. I tapped 'Create My Own'. Page 2 was titled 'Tell Us More About Your Server' and mentioned 'your new server'. I can infer it is still the same task, but there is no step number and the task name has gone. I tapped 'For me and my friends'. Page 3 was titled 'Create Your Server' again, word for word the same as page 1, with 'Server Name' already filled in with 'Accessibility Testin's server' and the 'Create Server' button, which I did not press. No page told me which step I was on or how many there were. And because pages 1 and 3 share a title, the title alone cannot tell me whether I went forward or back. The back arrows took me back one page at a time, then the X returned me to the server page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Confirmed on the device: no step indicator on any of the three pages, the middle page drops the task name, and the first and last pages share the identical title 'Create Your Server'.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "Enable Permissions pop-up over Create Your Server",
+      "expectation": "A permissions pop-up about photos, on top of the server-naming page.",
+      "confidence": "sure",
+      "cue": "The heading 'Enable Permissions' in the box, and 'Create Your Server' behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box names itself clearly and the page underneath is still visible, so I know what I was doing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Add some people (inviting friends)",
+      "expectation": "I am on a page for inviting people to my server with a link; I think it comes right after making the server.",
+      "confidence": "guessing",
+      "cue": "The heading 'Add some people', the line 'get the most out of your server', and the invite link.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading plainly says what this page is for. It does not name which server, and there is no back arrow, only 'Skip', but for knowing where I am the heading is enough.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Add some people (inviting friends)",
+      "expectation": "The invite page for my server, with the link to share.",
+      "confidence": "guessing",
+      "cue": "'Add some people' in large type and the discord.gg link.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, short heading and very little on the page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Add some people, after copying the link",
+      "expectation": "I am still on the invite page; I copied the link and a small copy box appeared at the bottom.",
+      "confidence": "guessing",
+      "cue": "'Add some people' heading, the 'Link Copied!' note at the top, and the pasted link box at the bottom left.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is unchanged, so I know I did not move. The extra pop-ups at top and bottom add clutter, but they do not hide the heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Link Settings for the invite",
+      "expectation": "I am changing the settings of the invite link, which leads to #general in Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "The heading 'Link Settings' at the top, the 'Invite Channel' section naming '#general' and 'Accessibility Testin's server'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is at the top and the page is broken into labelled sections. I can say exactly what page this is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Add some people (inviting friends)",
+      "expectation": "Back on the invite page, and now the top right says Done instead of Skip.",
+      "confidence": "guessing",
+      "cue": "The heading 'Add some people' and the invite link.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same clear heading as before. I know which page it is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Expire After choice, inside Link Settings",
+      "expectation": "I am choosing how long the invite link lasts; a list has slid up over Link Settings.",
+      "confidence": "sure",
+      "cue": "The sheet heading 'Expire After', with 'Link Settings' still visible behind it at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the sheet and the page behind it are named, so I know I am one level inside Link Settings. The list is simple with one choice marked.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Max Uses choice, inside Link Settings",
+      "expectation": "I am choosing how many times the invite link can be used, in a list over Link Settings.",
+      "confidence": "sure",
+      "cue": "The sheet heading 'Max Uses' and 'Link Settings' behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two levels both named, and the heading matches the row I would have pressed on the page behind.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Link Settings, with a change made",
+      "expectation": "I am on Link Settings for the invite; I have turned on Temporary Membership and can now Save.",
+      "confidence": "sure",
+      "cue": "The 'Link Settings' heading and the 'Save' word at top right.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is unchanged and clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "The general channel",
+      "expectation": "I am in the general channel of Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Message #general' at the bottom, and the welcome heading naming the server.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top and repeated at the bottom.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Channel list of Accessibility Testin's server, with setup progress",
+      "expectation": "I am in Accessibility Testin's server looking at its channels; general is chosen and there is a setup card saying step 1 of 4.",
+      "confidence": "guessing",
+      "cue": "The heading 'Accessibility Testin's server', the grey band behind '# general', and the blue first tile on the left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names the server, but the left column now has four tiles that all say 'ATs'. Only colour tells me which one I am in. I would read the heading, look at the tiles, and read the heading again, and still not be certain which of four identical things I am inside.",
+        "solution": "Show the full server name on or beside each tile in the left column, or make each tile look different, so the one I am in is named, not only coloured."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "I tapped each of the four 'ATs' squares in turn. Each tap turned that square blue and moved the small dark bar beside it, and that was the only change. All four times the heading said exactly 'Accessibility Testin's server', with the same '# general' and 'General' underneath. Nothing on the screen told the four apart. If I had to say which server I was in, I could only say 'the third one from the top', and I could not have said what makes it different from the second.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone all four squares say 'ATs' and every one of them opens a page headed 'Accessibility Testin's server' with the same channels. It is not just hard to tell which square I am on; there is literally nothing on screen that distinguishes them.",
+      "provisional": false
+    },
+    "s22": {
+      "where": "My own profile page",
+      "expectation": "I think this is my own profile, because it has my name 'Accessibility Testing' and an 'Edit Profile' button.",
+      "confidence": "guessing",
+      "cue": "The big name 'Accessibility Testing', the 'Edit Profile' button, and the 'Main' tab underlined.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a person's name, not the name of a page. I do not recognise pictures of faces or avatars, so I have to reason from 'Edit Profile' that this is me and my profile. The page is also crowded: a speech bubble, an advertising box, orbs, and a floating bar with four more places where none is marked as current.",
+        "solution": "A plain page title such as 'My Profile' above the name, and fewer promotional boxes, would let me orient myself at a glance."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_PROFILE",
+          "action": "Open the page that has your own name as its big heading: tap your name at the bottom-left of the column of rooms, beside the round picture. Scroll the page down and back up. Then look away for a few seconds, look back, and say, from the top of the screen only, which page you are on. Leave with the X at the top-left.",
+          "real_if": "at every scroll position nothing at the top names the page",
+          "not_real_if": "a page name appears somewhere as you scroll, or you can say which page it is from the top alone",
+          "observed_result": "I tapped my name at the bottom-left and the page opened with an X at the top-left, my round picture, a bubble 'Just finished playing...', my name 'Accessibility Testing' in large type, 'Edit Profile', and tabs 'Main' and 'Wishlist'. I scrolled down. The X went off the top, but my name stayed near the top. I scrolled back up. At no scroll position did the page call itself anything: no 'Profile', no 'My Account'. After looking away and back, from the top alone I could only say 'this is the page with my name on it'. I work out that it is my own profile from the 'Edit Profile' button, not from any title. The floating Quests / Shop / Nitro / Settings bar at the bottom marks none of them as current. The X took me back to the server page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Scrolling never revealed a page title. I can still only reason from 'Edit Profile' that this is my profile.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "My own profile page",
+      "expectation": "My own profile, the same page as before but with different words in the bubble.",
+      "confidence": "guessing",
+      "cue": "My name 'Accessibility Testing', 'Edit Profile', 'Main' tab.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Again the only heading is a name, not a place. I infer 'profile' from the Edit Profile button. The bubble text changed from the last time, which makes me doubt for a moment that it is the same page. Plenty competes for attention.",
+        "solution": "Title the page 'My Profile', and keep the floating bubble text still so the page looks the same each time I arrive."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_PROFILE",
+          "action": "Open the page that has your own name as its big heading: tap your name at the bottom-left of the column of rooms, beside the round picture. Scroll the page down and back up. Then look away for a few seconds, look back, and say, from the top of the screen only, which page you are on. Leave with the X at the top-left.",
+          "real_if": "at every scroll position nothing at the top names the page",
+          "not_real_if": "a page name appears somewhere as you scroll, or you can say which page it is from the top alone",
+          "observed_result": "I tapped my name at the bottom-left and the page opened with an X at the top-left, my round picture, a bubble 'Just finished playing...', my name 'Accessibility Testing' in large type, 'Edit Profile', and tabs 'Main' and 'Wishlist'. I scrolled down. The X went off the top, but my name stayed near the top. I scrolled back up. At no scroll position did the page call itself anything: no 'Profile', no 'My Account'. After looking away and back, from the top alone I could only say 'this is the page with my name on it'. I work out that it is my own profile from the 'Edit Profile' button, not from any title. The floating Quests / Shop / Nitro / Settings bar at the bottom marks none of them as current. The X took me back to the server page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Same page as s22 on the device: my name is the only heading, and no page name appears at any scroll position.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Notifications",
+      "expectation": "I am on my Notifications page, with two suggestions in it.",
+      "confidence": "sure",
+      "cue": "The heading 'Notifications' at the top next to the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "One plain word at the top that names the page, and a short list with lots of space.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Search in my direct messages",
+      "expectation": "I am searching my private messages; nothing has been found.",
+      "confidence": "guessing",
+      "cue": "The grey words 'Search in DMs' inside the search box, and the tabs with 'Recent' in blue.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only thing naming this page is the pale hint inside the search box. The moment I start typing, those words will vanish and nothing will say where I am. 'DMs' is also an abbreviation I have to decode. The tab row runs off the right edge, so I cannot see all the options.",
+        "solution": "A fixed title above the search box, such as 'Search your messages', that stays when I type; and show all the tabs without cutting the last one off."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_SEARCHDM",
+          "action": "Tap the speech-bubble square at the top of the left column to reach 'Messages'. Tap the magnifying glass beside 'Add Friends'. Read the box, then type the word hello. Look away for a few seconds, look back, and say where you are. Leave with the back arrow.",
+          "real_if": "once you have typed, nothing on the screen names the place",
+          "not_real_if": "a name for the place stays on the screen after you type",
+          "observed_result": "From 'Messages' I tapped the magnifying glass. The box said 'Search in DMs' in pale grey, with tabs Recent, People, Media, Pins, Links, Files. As soon as I typed hello, the words 'Search in DMs' vanished. For a moment the tabs changed, then the whole tab row disappeared too. What was left was my word 'hello', an empty page with 'We searched far and wide. Unfortunately, no results were found.', and the keyboard. When I looked back, nothing on the screen named the place: not 'DMs', not 'Messages', nothing. The back arrow took me to 'Messages'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Worse than the picture suggested. Once I typed, 'Search in DMs' vanished and the tab row disappeared too, leaving nothing on the screen that named where I was.",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Add Friends",
+      "expectation": "I am on the Add Friends page, with ways to invite or find people.",
+      "confidence": "sure",
+      "cue": "The heading 'Add Friends' at the top, the big 'Find your friends' text lower down.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading plainly names the page and the choices under it are all labelled with words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "Add Friends, after copying a link",
+      "expectation": "I think I am on Add Friends and have just copied an invite link.",
+      "confidence": "guessing",
+      "cue": "The 'Link Copied!' note at the top, and the same row of Share Invite, Copy Link, QR Code, and 'Find your friends' below.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The 'Link Copied!' bubble sits exactly where the page title should be and covers it. With the title gone I have to recognise the page from the row of buttons and the illustration, and I am not good at recognising pages by their pictures. The pasted-link box at the bottom adds another thing to look at.",
+        "solution": "Show the 'Link Copied' message somewhere that does not cover the page title, so 'Add Friends' stays visible at all times."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_COPYLINK",
+          "action": "Tap the speech-bubble square at the very top of the left column to reach the page titled 'Messages'. Tap 'Add Friends', then tap 'Copy Link'. Watch the top of the screen for a few seconds. Leave with the back arrow at the top-left.",
+          "real_if": "the page name stays covered long enough that you would lose track of where you are",
+          "not_real_if": "the page name comes back within a second or two and stays",
+          "observed_result": "I tapped the speech-bubble square and reached 'Messages', then 'Add Friends', then 'Copy Link' (twice, because the first tap seemed not to register). Each time I looked, and my looks were several seconds apart, the top of the screen said 'Add Friends' plainly. I never caught the 'Link Copied!' bubble at all, so if it appeared it was gone before my next look. The back arrow took me back to 'Messages'. I could not lose track of the page, because its name was there every time I looked.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "On the phone the 'Add Friends' title was there every time I looked. Whatever covered it in the picture was gone within seconds.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Channel list of Accessibility Testin's server, with setup progress",
+      "expectation": "I am in Accessibility Testin's server, looking at channels, with general chosen and a setup card at step 1 of 4.",
+      "confidence": "guessing",
+      "cue": "The heading 'Accessibility Testin's server', the grey '# general' row, the blue first tile.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Four tiles on the left all read 'ATs'. The heading tells me a name, but I cannot tell which of the four identical tiles that name belongs to except by the colour. I would keep questioning it.",
+        "solution": "Name each server tile in full, or make them visibly different."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "I tapped each of the four 'ATs' squares in turn. Each tap turned that square blue and moved the small dark bar beside it, and that was the only change. All four times the heading said exactly 'Accessibility Testin's server', with the same '# general' and 'General' underneath. Nothing on the screen told the four apart. If I had to say which server I was in, I could only say 'the third one from the top', and I could not have said what makes it different from the second.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone all four squares say 'ATs' and every one of them opens a page headed 'Accessibility Testin's server' with the same channels. It is not just hard to tell which square I am on; there is literally nothing on screen that distinguishes them.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "The general channel",
+      "expectation": "I am in the general channel of Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, 'Message #general' at the bottom, and the welcome heading.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top and repeated in the message box.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Channel list of Accessibility Testin's server (second tile)",
+      "expectation": "I am in a server called Accessibility Testin's server, looking at its channels, with general chosen. This time the second tile on the left is the blue one.",
+      "confidence": "guessing",
+      "cue": "The heading 'Accessibility Testin's server' and the blue second 'ATs' tile.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Four tiles all say 'ATs', and here it is the second one that is blue. The heading gives a name, but nothing on the screen tells me whether the other tiles are the same server or different servers with the same name. That is exactly the kind of doubt I read over and over and cannot settle.",
+        "solution": "Give every server a distinct visible name on its tile, and if two servers really share a name, show something that tells them apart."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "I tapped each of the four 'ATs' squares in turn. Each tap turned that square blue and moved the small dark bar beside it, and that was the only change. All four times the heading said exactly 'Accessibility Testin's server', with the same '# general' and 'General' underneath. Nothing on the screen told the four apart. If I had to say which server I was in, I could only say 'the third one from the top', and I could not have said what makes it different from the second.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone all four squares say 'ATs' and every one of them opens a page headed 'Accessibility Testin's server' with the same channels. It is not just hard to tell which square I am on; there is literally nothing on screen that distinguishes them.",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Details of the general channel - Members",
+      "expectation": "I am looking at the details of the general text channel, on the Members tab, and I am the only member online.",
+      "confidence": "sure",
+      "cue": "The heading 'general' with 'Text Channel' under it, and 'Members' in blue in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says which channel and the line under it says what kind of thing it is. The selected tab is coloured and underlined.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Search inside the general channel",
+      "expectation": "I think I am searching inside the general channel, and the Members tab is showing.",
+      "confidence": "guessing",
+      "cue": "The chip 'in: general' inside the search box at the top, and 'Members' in blue.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "This looks almost the same as the channel details page, but the top is now a search box with 'in: general' in a small grey chip. 'in:' is shorthand I have to interpret. I cannot tell with certainty whether I am searching or looking at members.",
+        "solution": "A plain title such as 'Search in #general' above the box, so the page says in words what it is."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_SEARCHCH",
+          "action": "Open the 'general' room (tap an 'ATs' square, then '# general'). Tap the magnifying glass at the top-right. Type the word hello and nothing else. Look away for a few seconds, look back, and say where you are. Leave with the back arrow.",
+          "real_if": "nothing on the screen tells you that you are searching, and in which room",
+          "not_real_if": "you can say from the screen that you are searching, and where",
+          "observed_result": "I opened '# general' and tapped the magnifying glass. The box at the top showed a grey chip 'in: general' before my cursor, with tabs such as Members, Media and Pins under it. I typed hello. The chip 'in: general' stayed in the box beside my word, and the page said 'We searched far and wide. Unfortunately, no results were found.' When I looked back after a pause, I could say that I was searching, and that it was in general, from the chip plus that sentence. The back arrow returned me to '# general'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The 'in: general' chip stays in the box after typing, and the 'We searched far and wide' line confirms I am searching. It is still shorthand I have to decode, but it does tell me the task and the room.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Finish setting up your server panel, over the general channel",
+      "expectation": "A panel has slid up over the general channel listing the four steps to finish setting up my server; I have done none.",
+      "confidence": "sure",
+      "cue": "The heading 'Finish setting up your server!' and 'You have completed 0 of 4 steps.', with '# general' dimmed behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It names the task, tells me how many steps there are and how many I have done. This is exactly the kind of progress statement I rely on.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "The general channel with the attach tray open",
+      "expectation": "I am in the general channel and have opened the tray for adding photos, polls, threads, apps or files.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Message #general' in the box above the tray.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is still at the top. The tray at the bottom is busy, but it does not hide where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "New Thread in general",
+      "expectation": "I am making a new thread inside the general channel.",
+      "confidence": "sure",
+      "cue": "The heading 'New Thread' with 'general' under it, and the 'Thread Name' field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says what I am doing and the line under it says where. That pair is exactly what I need.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Gift a Nitro membership",
+      "expectation": "I am on a page for buying Nitro as a gift for someone.",
+      "confidence": "sure",
+      "cue": "The large white heading 'Gift a new Nitro membership' and the 'Gift Nitro' button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is large and plain. The background is a busy collage and there is a second card cut off on the right, which I do not like, but I still know what page this is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Gifting Badge panel over the Nitro gift page",
+      "expectation": "A panel explaining the gifting badges has come up over the Nitro gift page.",
+      "confidence": "sure",
+      "cue": "The panel heading 'Gifting Badge', with 'Gift a new Nitro membership' dimmed behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel and the page behind are both named. The badges are pictures, but each has a word under it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "Error box over the Nitro gift page",
+      "expectation": "Something failed on the Nitro gift page and an error box has appeared.",
+      "confidence": "guessing",
+      "cue": "The box heading 'Oops, something went wrong...' and the dimmed 'Gift a new Nitro membership' behind it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The box names an error, not a place, and does not say what went wrong or where 'Okay' will take me. I only know where I am because the old heading is faintly visible behind it, and I have to squint through the grey to read it.",
+        "solution": "Say in the box which action failed, for example 'Your Nitro gift could not be loaded', and what pressing Okay will do."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-s38-none",
+          "action": null,
+          "real_if": null,
+          "not_real_if": null,
+          "observed_result": null,
+          "status": "not_executed",
+          "reason": "the screen in this picture comes after the 'Gift Nitro' buy button; it was not reproduced on the phone to avoid a real purchase flow"
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s39": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel and the emoji picker is open, on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, 'Message #general', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is still at the top and the picker's current tab is shaded and named. The rows of small emoji are busy, but they are in the lower part and do not take my place away.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s40": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the channel and the chosen tab are named in words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "The general channel, with the emoji picker open on Emoji.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Emoji' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as before: channel named at top, tab named and shaded.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "The general channel with the picker open on Stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab both named. The sticker pictures are some still loading, but that does not affect where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "Trending GIFs, over the general channel",
+      "expectation": "I think I am looking at trending GIFs to send in the general channel.",
+      "confidence": "guessing",
+      "cue": "The small word 'Trending' with a back arrow, 'GIFs' shaded above it, and '# general' dimmed at the very top.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "Almost the whole screen is a wall of pictures of faces and animals and big decorative words, all shouting at once. I cannot recognise faces, and this many images shuts me down before I find the small word 'Trending'. I would stop here.",
+        "solution": "Make the heading much larger, for example 'Trending GIFs for #general', and show fewer, smaller previews with plenty of space between them."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_GIF",
+          "action": "Open the 'general' room and tap the smiling face in the message box to open the picture panel. Tap 'GIFs'. Drag the small handle at the top of the panel upward so the panel fills the screen. Tap 'Trending GIFs' and say where you are. Then use the small back arrow to return to the GIFs list, tap the panel's search box, type hello, and say where you are again. Do not tap any picture. Press Back once to close.",
+          "real_if": "at those points you cannot find anything on the screen that tells you where you are",
+          "not_real_if": "you can find something on the screen that tells you where you are",
+          "observed_result": "In '# general' I tapped the smiling face and then 'GIFs', and dragged the handle up so the panel filled the screen. On the GIFs list, each tile carries a word ('Trending GIFs', 'hello', 'lol', and so on), which I could manage. I tapped 'Trending GIFs'. The panel then showed a small back arrow and the word 'Trending' under the Emoji / GIFs / Stickers row with 'GIFs' shaded, and '# general' faintly visible, dimmed, at the very top. So something did tell me where I was. But everything below it was a moving wall of faces, sportsmen, a mascot and large captions like 'THE RECKONING IS COMING', and I had to force myself to look only at the top line. I used the small back arrow, tapped the search box and typed hello. There was no heading now, only my word 'hello' in the box, 'GIFs' shaded above it, and '# general' dimmed at the top. Below that were more faces, animals and big 'Hello' captions. I pressed Back once and it only closed the keyboard, so I pressed Back again a few seconds later and the panel closed, back to '# general'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "There is a small 'Trending' label and a dimmed '# general', so something names the place, but the wall of moving faces and captions still overloads me before I can use it.",
+      "provisional": false
+    },
+    "s44": {
+      "where": "The general channel with the Emoji picker, list empty",
+      "expectation": "The general channel with the emoji picker open on the Emoji tab; the emoji area has gone blank.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Emoji' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and tab are named. The empty area is odd, but it does not confuse where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s45": {
+      "where": "GIF search results for 'hello'",
+      "expectation": "I think I searched for 'hello' GIFs to send in the general channel.",
+      "confidence": "guessing",
+      "cue": "The word 'hello' in the search box, 'GIFs' shaded, and '# general' dimmed at the very top.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There is no heading at all for this page; the only clue is what I typed in the box. Below it is a crowd of faces, animals and big coloured words. That much imagery overloads me and I lose track of what I was doing.",
+        "solution": "A heading that says 'GIF results for hello', and a calmer layout with fewer images at a time and more space."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-T_GIF",
+          "action": "Open the 'general' room and tap the smiling face in the message box to open the picture panel. Tap 'GIFs'. Drag the small handle at the top of the panel upward so the panel fills the screen. Tap 'Trending GIFs' and say where you are. Then use the small back arrow to return to the GIFs list, tap the panel's search box, type hello, and say where you are again. Do not tap any picture. Press Back once to close.",
+          "real_if": "at those points you cannot find anything on the screen that tells you where you are",
+          "not_real_if": "you can find something on the screen that tells you where you are",
+          "observed_result": "In '# general' I tapped the smiling face and then 'GIFs', and dragged the handle up so the panel filled the screen. On the GIFs list, each tile carries a word ('Trending GIFs', 'hello', 'lol', and so on), which I could manage. I tapped 'Trending GIFs'. The panel then showed a small back arrow and the word 'Trending' under the Emoji / GIFs / Stickers row with 'GIFs' shaded, and '# general' faintly visible, dimmed, at the very top. So something did tell me where I was. But everything below it was a moving wall of faces, sportsmen, a mascot and large captions like 'THE RECKONING IS COMING', and I had to force myself to look only at the top line. I used the small back arrow, tapped the search box and typed hello. There was no heading now, only my word 'hello' in the box, 'GIFs' shaded above it, and '# general' dimmed at the top. Below that were more faces, animals and big 'Hello' captions. I pressed Back once and it only closed the keyboard, so I pressed Back again a few seconds later and the panel closed, back to '# general'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still no heading, only my typed 'hello' and the shaded 'GIFs' tab, beneath which is a crowd of faces and animals. I stop here just as I did with the picture.",
+      "provisional": false
+    },
+    "s46": {
+      "where": "The general channel with the Emoji picker, an emoji typed",
+      "expectation": "I am in the general channel with the emoji picker open, and I have put a 100 emoji in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Emoji' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name and the picker tab are both named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s47": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "The general channel with the GIF picker open; a 100 emoji is waiting in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab both named plainly.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s48": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "The general channel with the Sticker picker open.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab both named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "The general channel with the Emoji picker, two emoji typed",
+      "expectation": "The general channel with the emoji picker open, two 100 emoji in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Emoji' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "The general channel with the GIF picker open.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s53": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s54": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s55": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s56": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s58": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s60": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s61": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s63": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s64": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s67": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s70": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s71": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s72": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s73": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s74": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s75": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s76": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s77": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s81": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s82": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s85": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s86": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s87": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s88": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s89": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s90": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s91": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s92": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s93": {
+      "where": "The general channel with the GIF picker",
+      "expectation": "I am in the general channel with the picker open on the GIFs tab, showing categories like 'Trending GIFs' and 'hello'.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'GIFs' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel and tab are both named in words. Only the top of the GIF tiles shows, so the pictures do not overwhelm me here.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s94": {
+      "where": "The general channel with the Sticker picker",
+      "expectation": "I am in the general channel with the picker open on the Stickers tab, showing the 'Mallow The Rascal' stickers.",
+      "confidence": "sure",
+      "cue": "'# general' at the top and 'Stickers' shaded in the tab row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel and the chosen tab are both named. The pink rabbit stickers are colourful but kept to the bottom strip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s95": {
+      "where": "The general channel with the Emoji picker",
+      "expectation": "I am in the general channel of Accessibility Testin's server with the emoji picker open on the Emoji tab; a row of 100 emoji is building up in my message.",
+      "confidence": "sure",
+      "cue": "'# general' at the top, the large 'Welcome to Accessibility Testin's server', and 'Emoji' shaded in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name stays at the top and the picker's current tab is named in a word and shaded. The many identical screens blur together in my memory, but each one on its own tells me where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 95,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 75,
+      "guessing": 20,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 79,
+    "navigate_with_difficulty": 14,
+    "cannot_handle": 2,
+    "tests_run": 7,
+    "opinions": {
+      "unchanged": 8,
+      "hardened": 6,
+      "softened": 1,
+      "reversed": 1
+    },
+    "out_of_scope": 0,
+    "not_executed": 1
+  }
+}

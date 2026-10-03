@@ -1,0 +1,969 @@
+{
+  "app": "Duolingo",
+  "screen": "screen35",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen35_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen35_function_groups.png"
+  },
+  "elements": {
+    "screen35-f1": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen, above the green unit banner",
+      "bounds": [
+        63,
+        63,
+        227,
+        189
+      ],
+      "visible_label": "1",
+      "convention_relied_on": "a country flag with a number is the course switcher in language apps; flag = language is common, the drawer it opens is not predictable — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "learning spanish",
+      "accessibility_text": "content_desc: \"Learning Spanish\"; talkback_label: \"Learning Spanish\"",
+      "context_reading": "top counter bar of the home screen, above the green unit banner",
+      "observed_function": "opens the course drawer (Spanish / + Course / \"Your Spanish Score is 1\" / New Courses: Math, Music, Chess)",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the course drawer; where the drawer is already open, closes it",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the open course drawer; opens the course drawer (Spanish / + Course / \"Your Spanish Score is 1\" / New Courses: Math, Music, Chess)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f2": {
+      "kind": "icon+label",
+      "appearance": "flame with a number beside it",
+      "state": "inactive (grey)",
+      "location": "top counter bar of the home screen, above the green unit banner",
+      "bounds": [
+        298,
+        63,
+        455,
+        189
+      ],
+      "visible_label": "1",
+      "convention_relied_on": "a flame with a count is a widely used streak indicator — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "day streak",
+      "accessibility_text": "content_desc: \"1 day streak\"; talkback_label: \"1 day streak\"",
+      "context_reading": "top counter bar of the home screen, above the green unit banner",
+      "observed_function": "opens the Streak page (PERSONAL / FRIENDS tabs, \"day streak!\", Streak Calendar)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the streak page from every capture",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Streak page (PERSONAL / FRIENDS tabs, \"day streak!\", Streak Calendar)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f3": {
+      "kind": "icon+label",
+      "appearance": "blue gem with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen, above the green unit banner",
+      "bounds": [
+        525,
+        63,
+        754,
+        189
+      ],
+      "visible_label": "520",
+      "convention_relied_on": "a gem with a count reads as an in-app currency balance; that it opens the Shop is not conventional — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"520\"",
+      "context_reading": "top counter bar of the home screen, above the green unit banner",
+      "observed_function": "opens the Shop page (SUPER banner, Special Offers, Streak)",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the shop",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Shop page (SUPER banner, Special Offers, Streak)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the gem counter and the lightning-bolt counter at the top both open the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "the gem counter opens the Shop page; the lightning-bolt counter opens the Energy page",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f4": {
+      "kind": "icon+label",
+      "appearance": "pink lightning bolt with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen, above the green unit banner",
+      "bounds": [
+        825,
+        63,
+        1017,
+        189
+      ],
+      "visible_label": "25",
+      "convention_relied_on": "a lightning bolt with a count reads as energy/power; not a first-time-user convention for a page — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"520 gems\"; talkback_label: \"520 gems\"",
+      "context_reading": "top counter bar of the home screen, above the green unit banner",
+      "observed_function": "opens the Energy page (25 / 25 bar, SUPER Unlimited FREE TRIAL, Recharge, Widget Boost, +5 energy rows)",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens an energy sheet",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Energy page (25 / 25 bar, SUPER Unlimited FREE TRIAL, Recharge, Widget Boost, +5 energy rows)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the gem counter and the lightning-bolt counter at the top both open the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "the gem counter opens the Shop page; the lightning-bolt counter opens the Energy page",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f5": {
+      "kind": "button",
+      "appearance": "green banner \"SECTION 1, UNIT 1 / Order at a café\"",
+      "state": null,
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        63,
+        189,
+        865,
+        396
+      ],
+      "visible_label": "SECTION 1, UNIT 1 Order at a café",
+      "convention_relied_on": "worded banner; no glyph convention needed — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "section 1 unit 1 order at a café",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"SECTION 1, UNIT 1 Order at a caf\\u00e9\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "opens the \"Spanish Course\" page listing Section 1, Section 2 (JUMP HERE), Section 3",
+      "glyph_group": "gg13",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg13-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the course/section overview",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the \"Spanish Course\" page listing Section 1, Section 2 (JUMP HERE), Section 3",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f6": {
+      "kind": "icon",
+      "appearance": "notepad with lines",
+      "state": null,
+      "location": "right-hand end of the green SECTION 1, UNIT 1 / Order at a café banner on the home screen",
+      "bounds": [
+        870,
+        189,
+        1017,
+        396
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a notepad with lines reads as notes/guide; confidence medium — my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "right-hand end of the green SECTION 1, UNIT 1 / Order at a café banner on the home screen",
+      "observed_function": "opens the unit guidebook (\"SECTION 1, UNIT 1 / Order at a café / KEY PHRASES\")",
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the unit guidebook",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the unit guidebook (\"SECTION 1, UNIT 1 / Order at a café / KEY PHRASES\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg14": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f7": {
+      "kind": "icon",
+      "appearance": "skull badge with a red exclamation dot",
+      "state": "reward available (red dot)",
+      "location": "top-left of the learning path under the unit banner, with a small purple label beneath it",
+      "bounds": [
+        63,
+        438,
+        221,
+        530
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no convention: a skull badge with a red dot is a promotion/partner badge recognized only from this product — my reading",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Brawl Stars Quest\"; talkback_label: \"Brawl Stars Quest\"",
+      "context_reading": "top-left of the learning path under the unit banner, with a small purple label beneath it",
+      "observed_function": "opens the \"Brawl Stars Quest\" page (INCOMPLETE; Day 1–7 rewards)",
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the partner quest page",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the \"Brawl Stars Quest\" page (INCOMPLETE; Day 1–7 rewards)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the skull badge and the '13 days' pill beneath it do the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "both the skull badge and the purple pill beneath it open the same \"Brawl Stars Quest\" page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc2",
+          "type": "mixed_appearance",
+          "precondition": "candidate confirmed by tc1",
+          "action": "from the screen carrying one rendering, look for the job on the screen carrying the other and judge whether it is recognizable before tapping",
+          "expected_result": "the second rendering is recognizable as the same job",
+          "confirms_if": "a user who learned one rendering would not recognize the other on its surface",
+          "overturns_if": "surface, scope or explicit wording makes the second rendering recognizable",
+          "observed_result": "from a candidate: the badge and its pill were never declared to share a job; both tapped live on the home screen and both open the Brawl Stars Quest page. They co-occur, but the pill is drawn flush against the foot of the badge as its caption, so the pair reads as one tile, not two options; a first-time user tapping either part gets the same page and has nothing to choose between. Justification: they are one visual unit (primary glyph plus its caption), not two renderings competing on one surface",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg15": "Consistent Functionality",
+        "cfg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f8": {
+      "kind": "icon",
+      "appearance": "partially drawn path node",
+      "state": null,
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        449,
+        482,
+        633,
+        653
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no convention: the capture shows a half-drawn grey block; on the live app it is a round lesson-path stop with a star (a game-path convention, not a first-time-user one) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "opens the current lesson card \"Order at a café / Lesson 2 of 3\" with a green CONTINUE +20 XP button",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each member opens a card describing that lesson stop",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button; opens the current lesson card \"Order at a café / Lesson 2 of 3\" with a green CONTINUE +20 XP button",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these stops on the lesson path all open a card about that stop when pressed?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "star-disc stops open that lesson's card (current: CONTINUE +20 XP; locked: LOCKED); the chest shows a tooltip \"Complete 10 more lessons to unlock this chest!\"; the purple stop (screen10-f15) opens a full-screen \"Jump ahead to Unit 2 … START TEST / NOT NOW\" page. Three different jobs.",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "screen35-f8-rc1",
+          "type": "render_check",
+          "precondition": "reach the screen on the live app and let it settle",
+          "action": "compare the settled drawing with the capture crop",
+          "expected_result": "the element draws in full once loaded",
+          "confirms_if": "it draws like its siblings once loaded (capture artifact)",
+          "overturns_if": "it still looks different on the settled live screen (real difference)",
+          "observed_result": "on the running app this stop draws in full as a green star disc with a progress ring (the current lesson)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f9": {
+      "kind": "button",
+      "appearance": "the words \"13 days\" on a purple pill",
+      "state": null,
+      "location": "directly under the skull badge, forming its foot",
+      "bounds": [
+        63,
+        530,
+        221,
+        598
+      ],
+      "visible_label": "13 days",
+      "convention_relied_on": "worded pill; no glyph convention — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"13 days\"",
+      "context_reading": "directly under the skull badge, forming its foot",
+      "observed_function": "opens the \"Brawl Stars Quest\" page (same destination as the skull badge above it)",
+      "glyph_group": "gg16",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg16-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the same quest page as the badge above it",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the \"Brawl Stars Quest\" page (INCOMPLETE; Day 1–7 rewards)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the skull badge and the '13 days' pill beneath it do the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "both the skull badge and the purple pill beneath it open the same \"Brawl Stars Quest\" page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc2",
+          "type": "mixed_appearance",
+          "precondition": "candidate confirmed by tc1",
+          "action": "from the screen carrying one rendering, look for the job on the screen carrying the other and judge whether it is recognizable before tapping",
+          "expected_result": "the second rendering is recognizable as the same job",
+          "confirms_if": "a user who learned one rendering would not recognize the other on its surface",
+          "overturns_if": "surface, scope or explicit wording makes the second rendering recognizable",
+          "observed_result": "from a candidate: the badge and its pill were never declared to share a job; both tapped live on the home screen and both open the Brawl Stars Quest page. They co-occur, but the pill is drawn flush against the foot of the badge as its caption, so the pair reads as one tile, not two options; a first-time user tapping either part gets the same page and has nothing to choose between. Justification: they are one visual unit (primary glyph plus its caption), not two renderings competing on one surface",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen35-f9-fd1",
+          "type": "function_determination",
+          "precondition": "app open on the element's screen",
+          "action": "tap the element and record what happens",
+          "expected_result": "a determinable action",
+          "confirms_if": "a clear action occurs (function determined)",
+          "overturns_if": "nothing happens (not a control)",
+          "observed_result": "opens the \"Brawl Stars Quest\" page (same destination as the skull badge above it)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality",
+        "cfg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f10": {
+      "kind": "icon",
+      "appearance": "grey owl character",
+      "state": null,
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        527,
+        653,
+        1080,
+        1430
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a mascot character; no action convention — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "nothing: no navigation, no animation change, no state change",
+      "glyph_group": "gg17",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg17-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "decorative; probably nothing",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "nothing: no navigation, no animation change, no state change",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": null
+      },
+      "provisional": false
+    },
+    "screen35-f11": {
+      "kind": "icon",
+      "appearance": "partially drawn path node",
+      "state": null,
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        331,
+        705,
+        515,
+        876
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no convention: the capture shows a half-drawn grey block; on the live app it is a round lesson-path stop with a star (a game-path convention, not a first-time-user one) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each member opens a card describing that lesson stop",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button; opens the current lesson card \"Order at a café / Lesson 2 of 3\" with a green CONTINUE +20 XP button",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these stops on the lesson path all open a card about that stop when pressed?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "star-disc stops open that lesson's card (current: CONTINUE +20 XP; locked: LOCKED); the chest shows a tooltip \"Complete 10 more lessons to unlock this chest!\"; the purple stop (screen10-f15) opens a full-screen \"Jump ahead to Unit 2 … START TEST / NOT NOW\" page. Three different jobs.",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "screen35-f11-rc1",
+          "type": "render_check",
+          "precondition": "reach the screen on the live app and let it settle",
+          "action": "compare the settled drawing with the capture crop",
+          "expected_result": "the element draws in full once loaded",
+          "confirms_if": "it draws like its siblings once loaded (capture artifact)",
+          "overturns_if": "it still looks different on the settled live screen (real difference)",
+          "observed_result": "on the running app this stop draws in full as a grey star disc, like the members of gg2",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f12": {
+      "kind": "icon",
+      "appearance": "grey disc with a star",
+      "state": "locked-looking (grey)",
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        265,
+        949,
+        449,
+        1120
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a grey disc with a star on a path reads as a not-yet-reached level (game convention, not universal) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button, anchored to that stop",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each opens a card for that locked lesson",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button, anchored to that stop",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these stops on the lesson path all open a card about that stop when pressed?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "star-disc stops open that lesson's card (current: CONTINUE +20 XP; locked: LOCKED); the chest shows a tooltip \"Complete 10 more lessons to unlock this chest!\"; the purple stop (screen10-f15) opens a full-screen \"Jump ahead to Unit 2 … START TEST / NOT NOW\" page. Three different jobs.",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f13": {
+      "kind": "icon",
+      "appearance": "closed treasure chest",
+      "state": "locked-looking (grey)",
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        318,
+        1194,
+        528,
+        1430
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a closed chest on a path reads as a reward to unlock (game convention) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "shows a tooltip \"Complete 10 more lessons to unlock this chest!\" anchored to the chest",
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "shows what unlocks the chest",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "shows a tooltip \"Complete 10 more lessons to unlock this chest!\" anchored to the chest",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these stops on the lesson path all open a card about that stop when pressed?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "star-disc stops open that lesson's card (current: CONTINUE +20 XP; locked: LOCKED); the chest shows a tooltip \"Complete 10 more lessons to unlock this chest!\"; the purple stop (screen10-f15) opens a full-screen \"Jump ahead to Unit 2 … START TEST / NOT NOW\" page. Three different jobs.",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f14": {
+      "kind": "icon",
+      "appearance": "grey disc with a star",
+      "state": "locked-looking (grey)",
+      "location": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "bounds": [
+        449,
+        1486,
+        633,
+        1657
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a grey disc with a star on a path reads as a not-yet-reached level (game convention, not universal) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "home (learning path) screen under the green SECTION 1, UNIT 1 / Order at a café banner",
+      "observed_function": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button, anchored to that stop",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each opens a card for that locked lesson",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a grey lesson card \"Order at a café / Complete all levels above to unlock this!\" with a LOCKED button, anchored to that stop",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these stops on the lesson path all open a card about that stop when pressed?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "star-disc stops open that lesson's card (current: CONTINUE +20 XP; locked: LOCKED); the chest shows a tooltip \"Complete 10 more lessons to unlock this chest!\"; the purple stop (screen10-f15) opens a full-screen \"Jump ahead to Unit 2 … START TEST / NOT NOW\" page. Three different jobs.",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f15": {
+      "kind": "icon",
+      "appearance": "colourful bird",
+      "state": "inactive",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        733,
+        2162,
+        862,
+        2291
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no convention: a colourful bird does not conventionally mean anything; recognized only from this product — my reading, confidence n/a",
+      "convention_confidence": "low",
+      "declared_function": "upgrade",
+      "accessibility_text": "content_desc: \"Upgrade\"; talkback_label: \"Upgrade\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "opens the Subscription tab (\"Subscription / Compare plans\": Super, Super Family, Lite, each with TRY FOR $0.00)",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the subscription tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Subscription tab (\"Subscription / Compare plans\": Super, Super Family, Lite, each with TRY FOR $0.00)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f16": {
+      "kind": "icon",
+      "appearance": "house",
+      "state": "active (highlighted)",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        46,
+        2164,
+        172,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a house is the established home convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "learn",
+      "accessibility_text": "content_desc: \"Learn Tab\"; talkback_label: \"Learn Tab\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "scrolls the learning path back to the current lesson",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "returns to the learning path",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the learning path (home); scrolls the learning path back to the current lesson",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f17": {
+      "kind": "icon",
+      "appearance": "treasure chest seen from the front",
+      "state": "inactive",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        218,
+        2164,
+        344,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a treasure chest for quests/rewards is a game convention, not a first-time-user one — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "goals",
+      "accessibility_text": "content_desc: \"Goals Tab\"; talkback_label: \"Goals Tab\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "opens the Quests tab (\"Quests / Complete quests to earn rewards!\")",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the Quests tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Quests tab (\"Quests / Complete quests to earn rewards!\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f18": {
+      "kind": "icon",
+      "appearance": "trophy cup",
+      "state": "inactive",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        390,
+        2164,
+        516,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a trophy cup reads as competition/leaderboard — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "leagues",
+      "accessibility_text": "content_desc: \"Leagues Tab\"; talkback_label: \"Leagues Tab\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "opens the Leagues tab (\"Finish 2 lessons to start competing on Leaderboards!\")",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens leagues",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Leagues tab (\"Finish 2 lessons to start competing on Leaderboards!\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f19": {
+      "kind": "icon",
+      "appearance": "heart in a speech bubble",
+      "state": "inactive",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        561,
+        2164,
+        687,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a heart in a speech bubble reads as social/likes; not a settled convention for a feed — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "news",
+      "accessibility_text": "content_desc: \"News Tab\"; talkback_label: \"News Tab\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "opens the Feed tab (title \"Feed\", friend streak slots, ADD FRIENDS card, posts)",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the feed",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Feed tab (title \"Feed\", friend streak slots, ADD FRIENDS card, posts)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f20": {
+      "kind": "icon",
+      "appearance": "speech bubble with three dots",
+      "state": "inactive",
+      "location": "bottom tab bar, on the home (learning path) screen",
+      "bounds": [
+        908,
+        2164,
+        1034,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a bubble with three dots reads as \"more\"/overflow; confidence medium (the bubble shape also suggests chat) — my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "bottom tab bar, on the home (learning path) screen",
+      "observed_function": "opens a bottom sheet with Profile and Video Call over the current tab; pressing it again closes the sheet",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens a \"more\" menu from every tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a bottom sheet with Profile and Video Call over the current tab; pressing it again closes the sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 20,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 1,
+    "test_cases_executed": 25,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen18",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen18_actionable_elements.png",
+  "elements": {
+    "screen18-a1": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "top-left",
+      "location": "top-left",
+      "bounds": [
+        43,
+        85,
+        169,
+        211
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Close\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "X = close - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled X at top left of the prompt editor; close convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen18-a1-tc1",
+          "type": "verification",
+          "precondition": "sticker prompt editor open",
+          "action": "tap the X",
+          "expected_result": "the editor closes",
+          "confirms_if": "something else happens",
+          "overturns_if": "it closes",
+          "observed_result": "the editor closed and the image tile grid returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping closed the editor back to the tile grid",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen18-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "rounded chip showing '3D' inside the prompt text",
+      "location": "rounded chip showing '3D' inside the prompt text",
+      "bounds": [
+        296,
+        242,
+        438,
+        368
+      ],
+      "visible_text": "\"3D\"",
+      "accessibility_text_consulted": "talkback_label \"3D\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "rounded chip '3D' sits inside the sentence like a word; nothing says it can be changed",
+      "test_cases": [
+        {
+          "id": "screen18-a2-tc1",
+          "type": "expected",
+          "precondition": "sticker prompt editor",
+          "action": "tap the '3D' chip",
+          "expected_result": "if a word: nothing",
+          "confirms_if": "it opens a choice nothing announced",
+          "overturns_if": "nothing happens or it is visibly marked as changeable",
+          "observed_result": "a menu 'Choose style' opened listing 3D (checked), Hand-drawn, Chibi, Meme, Holographic, Chrome, Comic Book...",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a 'Choose style' list (3D, Hand-drawn, Chibi, Meme...) - a choice the chip never announced",
+      "recommendation": "add a visible chevron and hint, e.g. '3D v' with 'tap to change style'",
+      "provisional": false
+    },
+    "screen18-a3": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "large editable prompt 'Create a [3D] sticker pack based on [Photo], remixing with [emoji].' with a text cursor; contains two chip controls marked separately",
+      "location": "large editable prompt 'Create a [3D] sticker pack based on [Photo], remixing with [emoji].' with a text cursor",
+      "bounds": [
+        42,
+        252,
+        1038,
+        567
+      ],
+      "visible_text": "content: \"Create a           sticker pack based on               , remixing with 🤓🌈🚀👽.\"",
+      "accessibility_text_consulted": "talkback_label \"Create a           sticker pack based on               , remixing with 🤓🌈🚀👽.\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "a large sentence with a text cursor; it looks like a heading, and nothing says it is editable or that the grey Photo slot must be filled",
+      "test_cases": [
+        {
+          "id": "screen18-a3-tc1",
+          "type": "expected",
+          "precondition": "sticker prompt editor",
+          "action": "type ' cute' at the end",
+          "expected_result": "the edit is accepted and the page says what is still needed",
+          "confirms_if": "nothing says what the field needs to be complete",
+          "overturns_if": "a hint names the missing photo",
+          "observed_result": "' cute' appeared after the sentence; Generate stayed grey; no hint appeared",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "typing ' cute' was accepted into the sentence, but 'Generate' stayed grey and nothing said the Photo slot had to be filled first",
+      "recommendation": "add a label such as 'Edit your prompt' and a line 'Add a photo to continue'",
+      "provisional": false
+    },
+    "screen18-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "rounded chip showing grey 'Photo' inside the prompt text",
+      "location": "rounded chip showing grey 'Photo' inside the prompt text",
+      "bounds": [
+        470,
+        347,
+        703,
+        473
+      ],
+      "visible_text": "\"Photo\"",
+      "accessibility_text_consulted": "talkback_label \"Add reference image Photo\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "grey chip 'Photo' inside the sentence looks like a placeholder word, not a button to add a picture",
+      "test_cases": [
+        {
+          "id": "screen18-a4-tc1",
+          "type": "expected",
+          "precondition": "sticker prompt editor",
+          "action": "tap the 'Photo' chip",
+          "expected_result": "a photo picker opens",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "not run: selecting or attaching a photo is not allowed",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: not tapped, because it opens photo selection/attachment, which the safety rules forbid; the verdict rests on the screenshot alone",
+      "recommendation": "label it 'Add photo' with a picture glyph",
+      "provisional": true
+    },
+    "screen18-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "full-width grey button with pale grey text; focusable:false — looks disabled",
+      "location": "full-width grey button with pale grey text",
+      "bounds": [
+        42,
+        1291,
+        1038,
+        1433
+      ],
+      "visible_text": "\"Generate\"",
+      "accessibility_text_consulted": "talkback_label \"Generate\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "grey 'Generate' looks disabled and nothing says why",
+      "test_cases": [
+        {
+          "id": "screen18-a5-tc1",
+          "type": "expected",
+          "precondition": "sticker prompt editor, no photo added",
+          "action": "tap 'Generate'",
+          "expected_result": "generation starts, or a reason is shown",
+          "confirms_if": "nothing happens and no reason is given",
+          "overturns_if": "it generates or explains",
+          "observed_result": "nothing happened; no message appeared",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it did nothing and showed no message - the user is not told that a photo is required",
+      "recommendation": "show why it is unavailable, e.g. 'Add a photo to generate' under the button",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "issues": 4,
+    "missing_purpose": 0,
+    "unclear_purpose": 4,
+    "clear_purpose": 1,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 4,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 1
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "app": "Claude",
+  "screen": "screen1",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen1_actionable_elements.png",
+  "elements": {
+    "screen1-a1": {
+      "kind": "icon",
+      "glyph": "three horizontal lines of decreasing length",
+      "description": "three stacked lines control in the top-left corner of the toolbar",
+      "location": "top-left",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Open menu\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "three stacked horizontal lines (hamburger) is an established convention for opening the app's navigation menu — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but the hamburger glyph is a widely-known convention; common-icon exemption applies pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a1-tc1",
+          "type": "verification",
+          "precondition": "home screen, drawer closed",
+          "action": "tap the three-lines glyph",
+          "expected_result": "a navigation panel slides in from the left",
+          "confirms_if": "it does something other than open a navigation menu",
+          "overturns_if": "a navigation menu opens, matching the convention",
+          "observed_result": "a side panel slid in from the left listing Chats, Projects, Code, Artifacts, recent chats and a New chat button",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping the hamburger opened the side navigation panel, exactly what the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a2": {
+      "kind": "icon",
+      "glyph": "ghost outline with two dots for eyes",
+      "description": "ghost outline glyph in the top-right corner of the toolbar",
+      "location": "top-right",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Incognito chat\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a ghost outline is not an established mobile convention; I know of no common meaning a first-time user could rely on — my reading, confidence high that it is not a convention",
+      "convention_confidence": "high",
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "no visible text anywhere near it and the ghost is not a recognizable convention; nothing on the screen says what it does",
+      "test_cases": [
+        {
+          "id": "screen1-a2-tc1",
+          "type": "verification",
+          "precondition": "home screen, normal (non-incognito) chat",
+          "action": "long-press the ghost glyph to look for a tooltip or label",
+          "expected_result": "no tooltip; any label that appears would overturn the verdict",
+          "confirms_if": "no tooltip or visible label appears before or during the press",
+          "overturns_if": "a tooltip or visible caption names the control",
+          "observed_result": "no tooltip appeared; the long-press acted as a tap and switched the screen into incognito mode",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen1-a2-tc2",
+          "type": "verification",
+          "precondition": "home screen, normal chat, nothing typed",
+          "action": "check the toolbar row and the surrounding screen for any copy belonging to the glyph, then tap it",
+          "expected_result": "no copy before the tap; the purpose becomes visible only after acting",
+          "confirms_if": "the only explanation appears after the tap",
+          "overturns_if": "an explanatory caption is visible before tapping",
+          "observed_result": "nothing on the home screen refers to the glyph; only after tapping did the words 'Incognito chat' and 'Incognito chats stay out of your history and search, and aren't used to train Claude.' appear, and the glyph changed to an X",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "no label, tooltip or adjacent copy exists before the tap, and the ghost glyph is not a convention; the explanation is shown only after the user has already switched modes",
+      "recommendation": "put a visible word beside or under the glyph, e.g. 'Incognito' (or 'Private chat'), so the mode is named before it is switched on",
+      "provisional": false
+    },
+    "screen1-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Upgrade to Pro' link at the right of the grey banner above the typing box",
+      "location": "bottom, above the typing box",
+      "bounds": [
+        761,
+        1915,
+        985,
+        2041
+      ],
+      "visible_text": "\"Upgrade to Pro\" beside the banner text \"Get more with Claude Pro\"",
+      "accessibility_text_consulted": "talkback_label \"Upgrade to Pro\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit verb and object; a first-time user can tell it leads to upgrading to a paid Pro plan",
+      "test_cases": [
+        {
+          "id": "screen1-a3-tc1",
+          "type": "expected",
+          "precondition": "home screen",
+          "action": "tap 'Upgrade to Pro' and observe (nothing confirmed)",
+          "expected_result": "a plan / upgrade screen opens",
+          "confirms_if": "something other than an upgrade offer opens",
+          "overturns_if": "an upgrade/plan screen opens",
+          "observed_result": "a full-height sheet titled 'Get more Claude — Choose the plan right for you' opened with Pro and Max price options; closed it with its X without selecting anything",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the link opened the plan screen it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a4": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "text entry box at the bottom of the screen",
+      "location": "bottom, full width",
+      "bounds": [
+        76,
+        2043,
+        1004,
+        2169
+      ],
+      "visible_text": "placeholder: \"Chat with Claude…\"",
+      "accessibility_text_consulted": "talkback_label \"Chat with Claude…\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "placeholder names what goes in (a chat message to Claude); no format or constraint matters for free text",
+      "test_cases": [
+        {
+          "id": "screen1-a4-tc1",
+          "type": "expected",
+          "precondition": "home screen, composer empty",
+          "action": "tap the box and type 'hello' (not sent)",
+          "expected_result": "text accepted; the purpose stays evident once typing starts",
+          "confirms_if": "the hint vanishes on focus with nothing to replace it",
+          "overturns_if": "the hint survives focus and the typed text itself is the message",
+          "observed_result": "on focus the placeholder stayed visible with the cursor; it disappeared only once 'hello' was typed, and a send arrow replaced the right-hand round button; text deleted without sending",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the placeholder survives focus and names the job; it is replaced only by the user's own message, with a send arrow appearing",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a5": {
+      "kind": "icon",
+      "glyph": "plus sign in a grey circle",
+      "description": "plus sign in a grey circle at the left of the typing bar",
+      "location": "bottom-left",
+      "bounds": [
+        48,
+        2164,
+        174,
+        2290
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Add to chat\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a plus in a message composer is an established 'add/attach' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled plus in the composer toolbar; add/attach convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a5-tc1",
+          "type": "verification",
+          "precondition": "home screen",
+          "action": "tap the plus",
+          "expected_result": "a panel for adding things to the chat opens",
+          "confirms_if": "it does something other than add/attach",
+          "overturns_if": "an add/attach panel opens",
+          "observed_result": "a bottom sheet titled 'Add to chat' opened with Camera, Photos, Files, Add to project, Web search, Connectors (and, live, a Memory switch)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the plus opened the 'Add to chat' sheet, as the add convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill in the typing bar with the words 'Haiku 4.5'",
+      "location": "bottom, second from left",
+      "bounds": [
+        179,
+        2164,
+        410,
+        2290
+      ],
+      "visible_text": "\"Haiku 4.5\"",
+      "accessibility_text_consulted": "talkback_label \"Haiku 4.5\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the pill shows a proper name and a version number; nothing says it is a model, or that pressing it lets you change which one answers — a first-time user has no way to read 'Haiku 4.5' as a setting",
+      "test_cases": [
+        {
+          "id": "screen1-a6-tc1",
+          "type": "expected",
+          "precondition": "home screen",
+          "action": "tap the pill",
+          "expected_result": "if the label conveyed its purpose, the result would be predictable from 'Haiku 4.5'",
+          "confirms_if": "what opens is something the words 'Haiku 4.5' did not predict",
+          "overturns_if": "the pill itself says what it controls, or the result is obvious from it",
+          "observed_result": "a sheet titled 'Select model' opened listing Fable, Opus, Sonnet and Haiku with descriptions; only after opening did the word 'model' appear anywhere",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the purpose ('choose the model') is disclosed only by the sheet the tap opens; the pill's face is a product name a first-time user cannot interpret",
+      "recommendation": "show the purpose on the pill, e.g. 'Model: Haiku 4.5 ▾', or a caption 'Choose model'",
+      "provisional": false
+    },
+    "screen1-a7": {
+      "kind": "icon",
+      "glyph": "microphone outline in a grey circle",
+      "description": "microphone outline in a grey circle, second from the right in the typing bar",
+      "location": "bottom-right",
+      "bounds": [
+        791,
+        2164,
+        907,
+        2290
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Start speech input\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a microphone is an established 'speak / dictate' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled microphone in a text composer; dictation convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a7-tc1",
+          "type": "verification",
+          "precondition": "home screen",
+          "action": "tap the microphone (no permission granted)",
+          "expected_result": "a speech-input flow starts",
+          "confirms_if": "it starts something other than speech input",
+          "overturns_if": "speech input starts",
+          "observed_result": "a full-height sheet opened: 'Send messages to Claude using your voice.' with a language picker and Continue; closed it with its X before any permission prompt",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the microphone opened a voice-dictation intro, matching the convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a8": {
+      "kind": "icon",
+      "glyph": "white vertical bars of varying height in a black circle",
+      "description": "round black button with white vertical bars at the right end of the typing bar",
+      "location": "bottom-right corner of the composer",
+      "bounds": [
+        907,
+        2164,
+        1033,
+        2290
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Voice Mode\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "vertical bars of varying height suggest sound in general, but this is not an established control convention a first-time user could map to one action; sitting beside a microphone it does not distinguish itself — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "no visible text, and the sound-bars glyph is not a recognizable convention; next to a microphone nothing says how it differs",
+      "test_cases": [
+        {
+          "id": "screen1-a8-tc1",
+          "type": "verification",
+          "precondition": "home screen, composer empty",
+          "action": "inspect the composer row for any caption, and type into the box to see whether the control changes or gains a label",
+          "expected_result": "no visible text in any state reached",
+          "confirms_if": "no caption appears in any state",
+          "overturns_if": "a caption or label appears in some state",
+          "observed_result": "no caption in any state; when text is typed the control is replaced by an orange send arrow, and when the box is empty it returns as the unlabeled bars glyph",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen1-a8-tc2",
+          "type": "verification",
+          "precondition": "home screen, composer empty",
+          "action": "tap the bars glyph and observe what starts",
+          "expected_result": "if it is a recognizable convention, what starts would match it",
+          "confirms_if": "what starts does not match any reading of the glyph",
+          "overturns_if": "it behaves as a glyph a first-time user would predict",
+          "observed_result": "not run: this control starts a live spoken session, which this run does not permit on the devices",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "verification found no visible text in any reachable state and the glyph is not a convention; the behavioural tap could not be run, so the verdict is provisional",
+      "recommendation": "add a visible label such as 'Talk' or 'Voice chat' under or beside the button, distinct from the microphone",
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "issues": 3,
+    "missing_purpose": 2,
+    "unclear_purpose": 1,
+    "clear_purpose": 5,
+    "clear_via_common_icon_exemption": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 9,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 8,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 1
+  }
+}

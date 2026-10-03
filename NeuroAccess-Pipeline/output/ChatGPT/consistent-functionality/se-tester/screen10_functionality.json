@@ -1,0 +1,97 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen10",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen10_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen10_function_groups.png"
+  },
+  "elements": {
+    "screen10-f1": {
+      "kind": "button",
+      "appearance": "the word \"Cancel\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        407,
+        1302,
+        584,
+        1428
+      ],
+      "visible_label": "Cancel",
+      "convention_relied_on": "worded control (\"Cancel\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Cancel",
+      "accessibility_text": "content_desc: \"\", talkback: \"Cancel\"",
+      "context_reading": "dialog \"Enable ChatGPT to use your microphone?\"",
+      "observed_function": "dismisses the microphone dialog and returns to the chat",
+      "glyph_group": "gg16",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg16-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "dismisses the microphone dialog and returns to the chat",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "dismisses the microphone dialog and returns to the chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen10-f2": {
+      "kind": "button",
+      "appearance": "the words \"Open settings\"",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        605,
+        1302,
+        897,
+        1428
+      ],
+      "visible_label": "Open settings",
+      "convention_relied_on": "worded control (\"Open settings\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Open settings",
+      "accessibility_text": "content_desc: \"\", talkback: \"Open settings\"",
+      "context_reading": "dialog \"Enable ChatGPT to use your microphone?\"",
+      "observed_function": "leaves the app for Android Settings (App info for ChatGPT)",
+      "glyph_group": "gg17",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg17-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "leaves the app for Android Settings (App info for ChatGPT)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "leaves the app for Android Settings (App info for ChatGPT)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s22",
+  "state_str": "920c38f8123816b90dd716fe36a32cd5",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151730.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s22_header_nav.png",
+  "name": "story viewer",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Deki",
+      "verdict_on_region": "story author name in the viewer chrome with a close control — names whose story is open"
+    }
+  ],
+  "identifier_found": "\"Deki\"",
+  "identifier_class": "back_affordance_with_title",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s22-tc1",
+      "type": "exception",
+      "precondition": "People tab",
+      "action": "open a story; observe the top chrome; tap X",
+      "expected_result": "author name and X stay; X returns",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "Krishna Bharti's story showed \"Krishna Bharti 20h\" and X top-right; X returned to People. Same template as Deki's (s22). No reply or reaction touched",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: Krishna Bharti's story showed \"Krishna Bharti 20h\" and X top-right; X returned to People. Same template as Deki's (s22). No reply or reaction touched",
+  "recommendation": null,
+  "provisional": false
+}

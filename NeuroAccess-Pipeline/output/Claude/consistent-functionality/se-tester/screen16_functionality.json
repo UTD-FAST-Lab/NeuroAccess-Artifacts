@@ -1,0 +1,392 @@
+{
+  "app": "Claude",
+  "screen": "screen16",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen16_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen16_function_groups.png"
+  },
+  "elements": {
+    "screen16-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen16 (settings)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen16-f1",
+          "type": "same_appearance",
+          "precondition": "app open on settings (live equivalent of screen16); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen16 (settings)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen16-f2": {
+      "kind": "icon",
+      "appearance": "letter i in a circle",
+      "state": null,
+      "location": "top right of screen16 (settings)",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter i in a circle is an established information convention — my reading, confidence high",
+      "convention_confidence": null,
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Learn more\"; talkback_label: \"Learn more\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opens an in-app popup menu: Consumer Terms, Usage Policy, Privacy Policy, Licenses, Help & Support, version number",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "fd-screen16-f2",
+          "type": "function_determination",
+          "precondition": "app open on Settings (live equivalent of screen16)",
+          "action": "tap letter i in a circle",
+          "expected_result": "the same kind of information page the underlined \"Learn more\" links open",
+          "confirms_if": "it opens the same kind of help/information target as the \"Learn more\" links",
+          "overturns_if": "it opens something of a different kind",
+          "observed_result": "opens an in-app popup menu: Consumer Terms, Usage Policy, Privacy Policy, Licenses, Help & Support, version number",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f3": {
+      "kind": "button",
+      "appearance": "the word \"Upgrade\"",
+      "state": null,
+      "location": "middle left of screen16 (settings)",
+      "bounds": [
+        95,
+        673,
+        330,
+        799
+      ],
+      "visible_label": "Upgrade",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Upgrade\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opened the full-page plans screen \"Get more Claude\"",
+      "glyph_group": "gg28",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg28-screen16-f3",
+          "type": "function_determination",
+          "precondition": "app open on settings (live equivalent of screen16); context noted before the tap",
+          "action": "tap the word \"Upgrade\" at middle left of screen16 (settings)",
+          "expected_result": "both open the upgrade/plans page",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "opened the full-page plans screen \"Get more Claude\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg3-tc-mix",
+          "type": "mixed_appearance",
+          "precondition": "app open on the home composer",
+          "action": "from Settings tap \"Upgrade\"; from the Code page tap \"Upgrade\"; from the composer tap \"Upgrade to Pro\"; compare destinations",
+          "expected_result": "all three open the same plans page",
+          "confirms_if": "they open different pages",
+          "overturns_if": "they open the same page — then judge recognisability",
+          "observed_result": "all three opened the same full-page \"Get more Claude\" plans screen; its X returned to the screen of origin",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen16-f4": {
+      "kind": "icon+label",
+      "appearance": "person in a circle with the word \"Profile\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        878,
+        1048,
+        1025
+      ],
+      "visible_label": "Profile",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "profile",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Profile\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f5": {
+      "kind": "icon+label",
+      "appearance": "dollar sign in a circle with the word \"Billing\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1030,
+        1048,
+        1177
+      ],
+      "visible_label": "Billing",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "billing",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Billing\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f6": {
+      "kind": "icon+label",
+      "appearance": "three vertical sliders with the word \"Capabilities\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1209,
+        1048,
+        1375
+      ],
+      "visible_label": "Capabilities",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "capabilities",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Capabilities 5 enabled\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opens the \"Capabilities\" settings page (feature switches) — cross-check for gg20's picture",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "fd-screen16-f6",
+          "type": "function_determination",
+          "precondition": "app open on Settings (live equivalent of screen16)",
+          "action": "tap three vertical sliders with the word \"Capabilities\"",
+          "expected_result": "the page its label names",
+          "confirms_if": "n/a — cross-check only",
+          "overturns_if": "n/a — cross-check only",
+          "observed_result": "opens the \"Capabilities\" settings page (feature switches) — cross-check for gg20's picture",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f7": {
+      "kind": "icon+label",
+      "appearance": "two diagonal interlocking loops with the word \"Connectors\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1380,
+        1048,
+        1527
+      ],
+      "visible_label": "Connectors",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "connectors",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Connectors\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opens the full \"Connectors\" page (back arrow, \"+\", \"Connector discovery\" switch)",
+      "glyph_group": null,
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "fd-screen16-f7",
+          "type": "function_determination",
+          "precondition": "app open on Settings (live equivalent of screen16)",
+          "action": "tap two diagonal interlocking loops with the word \"Connectors\"",
+          "expected_result": "the page its label names",
+          "confirms_if": "n/a — cross-check only",
+          "overturns_if": "n/a — cross-check only",
+          "observed_result": "opens the full \"Connectors\" page (back arrow, \"+\", \"Connector discovery\" switch)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg2-tc-mix",
+          "type": "mixed_appearance",
+          "precondition": "app open on the home composer",
+          "action": "from Settings, tap the \"Connectors\" row; separately, from the composer, open \"+\" and tap \"Connectors\" in the sheet; compare destinations",
+          "expected_result": "both reach the same Connectors content",
+          "confirms_if": "they reach different things, or the Settings row would not be recognised as the sheet row",
+          "overturns_if": "they reach the same content and the picture and word match",
+          "observed_result": "the Settings row opened the full \"Connectors\" page; the sheet row opened the same \"Connectors\" content inside the sheet (back arrow, \"+\", \"Connector discovery\" switch, \"No connectors yet\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen16-f8": {
+      "kind": "icon+label",
+      "appearance": "robot head with antennae with the word \"Permissions\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1532,
+        1048,
+        1679
+      ],
+      "visible_label": "Permissions",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "permissions",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Permissions\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f9": {
+      "kind": "icon+label",
+      "appearance": "crescent moon with the words \"Color mode\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1711,
+        1048,
+        1877
+      ],
+      "visible_label": "Color mode",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "color mode",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Color mode System\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f10": {
+      "kind": "icon+label",
+      "appearance": "the letters Aa with the words \"Font style\"",
+      "state": null,
+      "location": "middle centre of screen16 (settings)",
+      "bounds": [
+        32,
+        1882,
+        1048,
+        2048
+      ],
+      "visible_label": "Font style",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "font style",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Font style Default\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f11": {
+      "kind": "icon+label",
+      "appearance": "vertical sound-wave bars with the word \"Voice\"",
+      "state": null,
+      "location": "bottom centre of screen16 (settings)",
+      "bounds": [
+        32,
+        2053,
+        1048,
+        2200
+      ],
+      "visible_label": "Voice",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "voice",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Voice\" — evidence of intent only",
+      "context_reading": "screen titled \"Settings\": account e-mail with a \"Free\" badge, card \"Want more Claude? Upgrade for more usage and capabilities.\" and the settings rows",
+      "observed_function": "opens \"Voice settings\" (voice picker, Language, Pace) — cross-check against the composer voice buttons",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "fd-screen16-f11",
+          "type": "function_determination",
+          "precondition": "app open on Settings (live equivalent of screen16)",
+          "action": "tap vertical sound-wave bars with the word \"Voice\"",
+          "expected_result": "the page its label names",
+          "confirms_if": "n/a — cross-check only",
+          "overturns_if": "n/a — cross-check only",
+          "observed_result": "opens \"Voice settings\" (voice picker, Language, Pace) — cross-check against the composer voice buttons",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 11,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 8,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

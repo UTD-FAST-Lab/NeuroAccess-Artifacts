@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s12",
+  "state_str": "ff772ee41c15976ff4db99f24613195f",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185427.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s12_header_nav.png",
+  "name": "the Super subscription offer",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SUPER",
+      "verdict_on_region": "product wordmark of the subscription — branding, not a part of the app"
+    }
+  ],
+  "identifier_found": "none that names a place: a 'SUPER' wordmark top-right, an X top-left, and a marketing headline",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "'SUPER' is the product's wordmark; the headline sells a feature; nothing says where in the app this is",
+  "test_cases": [
+    {
+      "id": "s12-tc1",
+      "type": "verification",
+      "precondition": "Shop open",
+      "action": "tap TRY 1 WEEK FOR FREE, wait, tap the illustration, then tap X (never START MY FREE WEEK)",
+      "expected_result": "a title appears or none does; X returns to the Shop",
+      "confirms_if": "no title appears in any state",
+      "overturns_if": "a title naming the page appears",
+      "observed_result": "the page showed 'Power up your learning with unlimited energy on Super!' under the SUPER wordmark; nothing changed while waiting or on tapping the illustration; X returned to the Shop",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "no title in any state reached; a visible X returns to the Shop, so the user is not trapped, but nothing names the page",
+  "recommendation": "give the page a plain title such as 'Super subscription' next to the X",
+  "provisional": false
+}

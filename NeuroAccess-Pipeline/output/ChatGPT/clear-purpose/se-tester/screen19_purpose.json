@@ -1,0 +1,130 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen19",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen19_actionable_elements.png",
+  "elements": {
+    "screen19-a1": {
+      "kind": "icon",
+      "glyph": "three small circles joined by two lines",
+      "description": "top-right of the photo in the bottom sheet, on a dark translucent circle",
+      "location": "top-right of the photo in the bottom sheet, on a dark translucent circle",
+      "bounds": [
+        780,
+        1047,
+        906,
+        1173
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Share\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "three circles joined by lines = share - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled three joined circles; share convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: the glyph is the established share symbol, but tapping it was not allowed (sharing is outside the safety rules), so the exemption is untested; tested once on screen17-a1 and carried to this identical control",
+      "recommendation": null,
+      "provisional": true
+    },
+    "screen19-a2": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "top-right corner of the bottom sheet's photo, white on a dark translucent circle",
+      "location": "top-right corner of the bottom sheet's photo, white on a dark translucent circle",
+      "bounds": [
+        917,
+        1047,
+        1043,
+        1173
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Close\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "X = close - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled X on the sheet photo; close convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping closed the template sheet - the close convention held; tested once on screen17-a2 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen19-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "centred prompt text under the heading; clickable",
+      "location": "centred prompt text under the heading",
+      "bounds": [
+        42,
+        1958,
+        1038,
+        2084
+      ],
+      "visible_text": "\"Create a caricature of me and my job based on everything you know about me.\"",
+      "accessibility_text_consulted": "talkback_label \"Create a caricature of me and my job based on everything you know about me.\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "looks like body text; clickable record but no visible cue",
+      "test_cases": [
+        {
+          "id": "screen19-a3-tc1",
+          "type": "verification",
+          "precondition": "screen reached on the live app",
+          "action": "tap the element (and long-press where relevant) and observe",
+          "expected_result": "if actionable, something opens or changes",
+          "confirms_if": "it performs its own action with nothing naming it",
+          "overturns_if": "it performs no action of its own in this state",
+          "observed_result": "tapped the full prompt text twice and long-pressed it once; nothing opened, expanded or changed (the text is already complete)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the full prompt text twice and long-pressed it once; nothing opened, expanded or changed (the text is already complete)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen19-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black full-width button",
+      "location": "black full-width button",
+      "bounds": [
+        42,
+        2132,
+        1038,
+        2274
+      ],
+      "visible_text": "\"Choose photo\"",
+      "accessibility_text_consulted": "talkback_label \"Choose photo\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "button 'Choose photo'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words state the action; not exercised (choosing a photo would attach it)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 1,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 3,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 1
+  }
+}

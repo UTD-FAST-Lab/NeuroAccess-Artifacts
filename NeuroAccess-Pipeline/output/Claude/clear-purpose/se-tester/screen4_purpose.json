@@ -1,0 +1,241 @@
+{
+  "app": "Claude",
+  "screen": "screen4",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen4_actionable_elements.png",
+  "elements": {
+    "screen4-a1": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "X glyph at the top-left of the full-height plan sheet",
+      "location": "top-left",
+      "bounds": [
+        37,
+        113,
+        163,
+        239
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Close\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "an X is an established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close convention on a full-height sheet; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen4-a1-tc1",
+          "type": "verification",
+          "precondition": "plan sheet open",
+          "action": "tap the X",
+          "expected_result": "the sheet closes",
+          "confirms_if": "it does anything other than close",
+          "overturns_if": "the sheet closes",
+          "observed_result": "the plan sheet closed and the home screen returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the sheet",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "Pro plan option card with a radio button, '$20.00 Billed monthly'",
+      "location": "Pro card, left",
+      "bounds": [
+        126,
+        762,
+        529,
+        1080
+      ],
+      "visible_text": "\"$20.00\" \"Billed monthly\", under the heading \"Pro — For everyday productivity\"",
+      "accessibility_text_consulted": "talkback_label \"$20.00 Billed monthly\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "radio card inside a Pro section with price and billing period; plainly a choice of how to pay for Pro",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "price, billing period and the section heading together say what choosing it means; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a3": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "Pro plan option card with a radio button, 'Save 10% $216.00 Billed annually'",
+      "location": "Pro card, right",
+      "bounds": [
+        550,
+        762,
+        954,
+        1080
+      ],
+      "visible_text": "\"Save 10%\" \"$216.00\" \"Billed annually\"",
+      "accessibility_text_consulted": "talkback_label \"Save 10% $216.00 Billed annually\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "radio card with price, billing period and saving; plainly the annual option of Pro",
+      "test_cases": [
+        {
+          "id": "screen4-a3-tc1",
+          "type": "expected",
+          "precondition": "plan sheet open, monthly selected",
+          "action": "tap the annual card to see the selection move (nothing confirmed)",
+          "expected_result": "the radio moves to annual and nothing else happens",
+          "confirms_if": "selecting it triggers a purchase or something unlabeled",
+          "overturns_if": "only the selection changes",
+          "observed_result": "not run: the tool environment blocked interacting with plan price options as a real-world transaction; nothing was selected",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the card's own words state price, period and saving; the optional selection test was blocked but no test is required for a Clear verdict",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black 'Get Pro plan' button",
+      "location": "under the Pro options",
+      "bounds": [
+        126,
+        1112,
+        954,
+        1238
+      ],
+      "visible_text": "\"Get Pro plan\"",
+      "accessibility_text_consulted": "talkback_label \"Get Pro plan\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit action tied to the Pro section and the selected price",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words say exactly what it does; not pressed because it starts a purchase flow; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "underlined 'Limits apply' link at the end of the Pro feature list",
+      "location": "Pro card, bottom-left",
+      "bounds": [
+        116,
+        1749,
+        333,
+        1875
+      ],
+      "visible_text": "\"Limits apply\" (underlined)",
+      "accessibility_text_consulted": "content_desc \"Limits apply for Pro\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the words state a fact, not an action; they do not say which limits, or that tapping shows them, or where it goes",
+      "test_cases": [
+        {
+          "id": "screen4-a5-tc1",
+          "type": "expected",
+          "precondition": "plan sheet open",
+          "action": "tap 'Limits apply'",
+          "expected_result": "if the wording conveyed the purpose, the limits would be shown in place",
+          "confirms_if": "the tap goes somewhere the words did not predict",
+          "overturns_if": "the limits are explained in the app, as the words imply",
+          "observed_result": "the tap left the app and opened the Chrome browser, which stopped on its first-run sign-in screen; returned immediately with Back. No limits were shown in the app",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "a statement used as a link hands the user to another app without saying so or saying what it will show",
+      "recommendation": "make it an action with its destination, e.g. 'See Pro usage limits (opens web page)'",
+      "provisional": false
+    },
+    "screen4-a6": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "Max plan option card with a radio button, '$125.00', cut off by the bottom edge",
+      "location": "Max card, left, clipped",
+      "bounds": [
+        126,
+        2206,
+        529,
+        2400
+      ],
+      "visible_text": "\"$125.00\" under \"Max — More time with Claude\"; the caption below the price is off-screen",
+      "accessibility_text_consulted": "talkback_label \"$125.00 5x more usage than Pro\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "only a price is visible; what distinguishes it from the $250.00 card beside it is off-screen",
+      "test_cases": [
+        {
+          "id": "screen4-a6-tc1",
+          "type": "expected",
+          "precondition": "plan sheet open, scrolled to the top",
+          "action": "scroll the sheet up once and read the Max cards",
+          "expected_result": "if the purpose depends on hidden text, one ordinary scroll should reveal it",
+          "confirms_if": "the cards stay price-only after scrolling",
+          "overturns_if": "a caption distinguishing the options appears",
+          "observed_result": "one swipe revealed '5x more usage than Pro' / 'Billed monthly' under $125.00 and '20x more usage than Pro' / 'Billed monthly' under $250.00, plus a 'Get Max plan' button",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "one scroll reveals the caption stating what the option gives and how it is billed; the clipping is a crop of the capture, not a missing label",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a7": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "Max plan option card with a radio button, '$250.00', cut off by the bottom edge",
+      "location": "Max card, right, clipped",
+      "bounds": [
+        550,
+        2206,
+        954,
+        2400
+      ],
+      "visible_text": "\"$250.00\" under \"Max — More time with Claude\"; the caption below the price is off-screen",
+      "accessibility_text_consulted": "talkback_label \"$250.00 20x more usage than Pro\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "only a price is visible; what distinguishes it from the $125.00 card is off-screen",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "tested together with the $125.00 card on screen4-a6: one scroll reveals '20x more usage than Pro / Billed monthly'",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 6,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 2,
+    "provisional_verdicts": 0
+  }
+}

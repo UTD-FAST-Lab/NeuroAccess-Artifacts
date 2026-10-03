@@ -1,0 +1,499 @@
+{
+  "app": "PDFReader",
+  "screen": "screen21",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen21_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen21_function_groups.png"
+  },
+  "elements": {
+    "screen21-f1": {
+      "kind": "button",
+      "appearance": "the word \"Settings\"",
+      "state": null,
+      "location": "the title \"Settings\" in the Settings screen toolbar",
+      "bounds": [
+        147,
+        63,
+        1080,
+        210
+      ],
+      "visible_label": "Settings",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "settings",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Settings\"",
+      "context_reading": "this is the screen title; it reads as a heading naming the current screen",
+      "observed_function": "left Settings and returned to the screen it was opened from (the Home tab); tapped on the word and again at x=700, far right of the word, with the same result",
+      "glyph_group": "gg19",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg19-screen21-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f1 (Settings) once",
+          "expected_result": "nothing (a heading) — or, if anything, something to do with Settings",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "left Settings and returned to the screen it was opened from (the Home tab); tapped on the word and again at x=700, far right of the word, with the same result",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "fg4-screen21-f1",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f1 (Settings) once",
+          "expected_result": "nothing (a heading) — or, if anything, something to do with Settings",
+          "confirms_if": "the title and the chevron do the same thing, on the same bar, with nothing tying the heading to \"back\"",
+          "overturns_if": "the title does nothing, or does something the word \"Settings\" announces",
+          "observed_result": "left Settings and returned to the screen it was opened from (the Home tab); tapped on the word and again at x=700, far right of the word, with the same result",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality",
+        "fg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f2": {
+      "kind": "icon",
+      "appearance": "chevron pointing left",
+      "state": null,
+      "location": "top left of the Settings screen, left of the title \"Settings\"",
+      "bounds": [
+        21,
+        84,
+        126,
+        189
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a left chevron at the top left is the established back / up convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "Settings screen toolbar, beside the title \"Settings\"",
+      "observed_function": "left Settings and returned to the screen it was opened from (the Home tab)",
+      "glyph_group": "gg20",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg20-screen21-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f2 (chevron pointing left) once",
+          "expected_result": "goes back to the previous screen",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "left Settings and returned to the screen it was opened from (the Home tab)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg4-screen21-f2",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f2 (chevron pointing left) once",
+          "expected_result": "goes back to the previous screen",
+          "confirms_if": "the title and the chevron do the same thing, on the same bar, with nothing tying the heading to \"back\"",
+          "overturns_if": "the title does nothing, or does something the word \"Settings\" announces",
+          "observed_result": "left Settings and returned to the screen it was opened from (the Home tab)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen21-f2",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen21-f2 and record what happens (no function string in any field)",
+          "expected_result": "goes back to the previous screen",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "left Settings and returned to the screen it was opened from (the Home tab)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality",
+        "fg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f3": {
+      "kind": "icon+label",
+      "appearance": "golden crown with the words \"Upgrade to Premium\" and a right chevron",
+      "state": null,
+      "location": "orange banner at the top of Settings",
+      "bounds": [
+        42,
+        231,
+        1038,
+        421
+      ],
+      "visible_label": "Upgrade to Premium",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "upgrade to premium",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Upgrade to Premium\"",
+      "context_reading": "crown picture plus the words \"Upgrade to Premium\" and a right chevron",
+      "observed_function": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\"); its X returned to Settings",
+      "glyph_group": "gg21",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg21-screen21-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f3 (Upgrade to Premium) once",
+          "expected_result": "opens the premium offer",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\"); its X returned to Settings",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-screen21-f3",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f3 (Upgrade to Premium) once",
+          "expected_result": "opens the premium offer",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\"); its X returned to Settings",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f4": {
+      "kind": "icon+label",
+      "appearance": "letter A with a translation mark with the words \"Language English\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        632,
+        1038,
+        801
+      ],
+      "visible_label": "Language English",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "language english",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Language English\"",
+      "context_reading": "Settings list row, its own words \"Language English\" with an icon and a right chevron",
+      "observed_function": "opened the \"Language\" list (English, English (AU), English (CA)...); nothing selected; returned with the chevron",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-screen21-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f4 (Language English) once",
+          "expected_result": "opens Language English",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the \"Language\" list (English, English (AU), English (CA)...); nothing selected; returned with the chevron",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f5": {
+      "kind": "icon+label",
+      "appearance": "star inside a square frame with the words \"Set default reader\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        801,
+        1038,
+        970
+      ],
+      "visible_label": "Set default reader",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "set default reader",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Set default reader\"",
+      "context_reading": "Settings list row, its own words \"Set default reader\" with an icon and a right chevron",
+      "observed_function": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+      "glyph_group": "gg23",
+      "function_group": "cfg3",
+      "test_cases": [
+        {
+          "id": "gg23-screen21-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f5 (Set default reader) once",
+          "expected_result": "opens Set default reader",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-screen21-f5",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f5 (Set default reader) once",
+          "expected_result": "opens Set default reader",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality",
+        "cfg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f6": {
+      "kind": "icon+label",
+      "appearance": "rectangle with a bar across it with the words \"Add widget\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        970,
+        1038,
+        1139
+      ],
+      "visible_label": "Add widget",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "add widget",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Add widget\"",
+      "context_reading": "Settings list row, its own words \"Add widget\" with an icon and a right chevron",
+      "observed_function": "opened the \"Add widget\" sheet (\"PDF Tools — One-tap access to common features\", button \"Add\"); dismissed with Back, nothing added",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-screen21-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f6 (Add widget) once",
+          "expected_result": "opens Add widget",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the \"Add widget\" sheet (\"PDF Tools — One-tap access to common features\", button \"Add\"); dismissed with Back, nothing added",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f7": {
+      "kind": "icon+label",
+      "appearance": "five-point star with the words \"Rate App\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        1181,
+        1038,
+        1350
+      ],
+      "visible_label": "Rate App",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "rate app",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Rate App\"",
+      "context_reading": "Settings list row, its own words \"Rate App\" with an icon and a right chevron",
+      "observed_function": "opened an in-app rating sheet (\"Thank you for using PDF Reader, PDF Viewer!\", five outline stars, \"Rate this App\"); dismissed with Back, no rating given",
+      "glyph_group": "gg25",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg25-screen21-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f7 (Rate App) once",
+          "expected_result": "opens Rate App",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened an in-app rating sheet (\"Thank you for using PDF Reader, PDF Viewer!\", five outline stars, \"Rate this App\"); dismissed with Back, no rating given",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f8": {
+      "kind": "icon+label",
+      "appearance": "curved arrow pointing right with the words \"Share App\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        1350,
+        1038,
+        1519
+      ],
+      "visible_label": "Share App",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "share app",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Share App\"",
+      "context_reading": "Settings list row, its own words \"Share App\" with an icon and a right chevron",
+      "observed_function": "opened Android's share sheet; backed out without sharing",
+      "glyph_group": "gg26",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg26-screen21-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f8 (Share App) once",
+          "expected_result": "opens Share App",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened Android's share sheet; backed out without sharing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg26": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f9": {
+      "kind": "icon+label",
+      "appearance": "document with a shield shape with the words \"Privacy Policy\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        1561,
+        1038,
+        1730
+      ],
+      "visible_label": "Privacy Policy",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "privacy policy",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Privacy Policy\"",
+      "context_reading": "Settings list row, its own words \"Privacy Policy\" with an icon and a right chevron",
+      "observed_function": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+      "glyph_group": "gg27",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg27-screen21-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f9 (Privacy Policy) once",
+          "expected_result": "opens Privacy Policy",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg3-screen21-f9",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f9 (Privacy Policy) once",
+          "expected_result": "opens Privacy Policy",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f10": {
+      "kind": "icon+label",
+      "appearance": "document with a person outline with the words \"Terms of Use\" and a right chevron",
+      "state": null,
+      "location": "row in the Settings list",
+      "bounds": [
+        42,
+        1730,
+        1038,
+        1899
+      ],
+      "visible_label": "Terms of Use",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "terms of use",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Terms of Use\"",
+      "context_reading": "Settings list row, its own words \"Terms of Use\" with an icon and a right chevron",
+      "observed_function": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+      "glyph_group": "gg28",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg28-screen21-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f10 (Terms of Use) once",
+          "expected_result": "opens Terms of Use",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg2-screen21-f10",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen21 (Settings opened from the Home-tab gear (PPT chip))",
+          "action": "note what is on screen, then tap screen21-f10 (Terms of Use) once",
+          "expected_result": "opens Terms of Use",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "elements_in_issue_groups": 2,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 17,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

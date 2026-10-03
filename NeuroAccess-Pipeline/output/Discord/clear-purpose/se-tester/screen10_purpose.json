@@ -1,0 +1,338 @@
+{
+  "app": "Discord",
+  "screen": "screen10",
+  "image": "inputs/Discord/actionable-elements-highlighted/screen10_actionable_elements.png",
+  "elements": {
+    "screen10-a1": {
+      "kind": "icon",
+      "glyph": "three horizontal lines with slider knobs",
+      "description": "right of the search field",
+      "location": "top, right",
+      "bounds": [
+        934,
+        87,
+        1039,
+        192
+      ],
+      "visible_text": "none (three lines with slider knobs, right of the search field)",
+      "accessibility_text_consulted": "content_desc \"Search Filters\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "sliders = filter/adjust; my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the sliders glyph is the filter convention; exemption pending the tap",
+      "test_cases": [
+        {
+          "id": "screen10-a1-tc1",
+          "type": "verification",
+          "precondition": "a search view with the same sliders glyph open",
+          "action": "tap the sliders",
+          "expected_result": "filter options appear",
+          "confirms_if": "something other than filters appears",
+          "overturns_if": "filters appear",
+          "observed_result": "a menu 'Filter results...' opened (From a specific person, In a specific channel, Has specific data, Mention someone, Sent on a date, Before/After a date, By author type); tested in the server search, which uses the identical control",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the sliders opened search filters, matching the convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "search text field",
+      "location": "top, centre",
+      "bounds": [
+        235,
+        107,
+        869,
+        170
+      ],
+      "visible_text": "placeholder \"Search in DMs\" with a magnifier inside the field",
+      "accessibility_text_consulted": "content_desc \"Search\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "placeholder-only label; 'DMs' is an abbreviation; the scope wording vanishes once typing starts",
+      "test_cases": [
+        {
+          "id": "screen10-a2-tc1",
+          "type": "expected",
+          "precondition": "DM search open, field empty",
+          "action": "type 'hello'",
+          "expected_result": "text accepted and the search scope still visible",
+          "confirms_if": "the only wording naming what is searched disappears",
+          "overturns_if": "a persistent label remains",
+          "observed_result": "text accepted; the placeholder 'Search in DMs' vanished; only the magnifier remained; results area showed loading placeholders, then 'We searched far and wide. Unfortunately, no results were found.'",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "screen10-a2-tc2",
+          "type": "unexpected",
+          "precondition": "DM search open",
+          "action": "leave empty and look for any other caption naming the scope",
+          "expected_result": "a heading naming what is searched",
+          "confirms_if": "no heading other than the placeholder exists",
+          "overturns_if": "a persistent heading exists",
+          "observed_result": "no heading on the screen; the placeholder is the only text naming the scope",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the magnifier keeps 'search' visible, but what is searched ('DMs', itself jargon) exists only in a placeholder that disappears on typing",
+      "recommendation": "add a persistent screen heading such as 'Search your direct messages' above the field",
+      "provisional": false
+    },
+    "screen10-a3": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "left of the search field",
+      "location": "top, left",
+      "bounds": [
+        42,
+        108,
+        105,
+        171
+      ],
+      "visible_text": "none (left arrow)",
+      "accessibility_text_consulted": "content_desc \"Back\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "left arrow = back; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "back convention; exemption pending the tap",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen11-a1 (same control, tested once): the arrow went back, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab (selected)",
+      "location": "top, left",
+      "bounds": [
+        42,
+        236,
+        156,
+        321
+      ],
+      "visible_text": "\"Recent\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"Recent\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "an everyday word naming a result type",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible everyday word under a search field; same tab pattern as the tested 'Media' tab (screen10-a6)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab",
+      "location": "top, left",
+      "bounds": [
+        219,
+        236,
+        332,
+        321
+      ],
+      "visible_text": "\"People\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"People\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "an everyday word naming a result type",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible everyday word under a search field; same tab pattern as the tested 'Media' tab (screen10-a6)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab",
+      "location": "top, centre",
+      "bounds": [
+        395,
+        236,
+        496,
+        321
+      ],
+      "visible_text": "\"Media\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"Media\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "an everyday word naming a result type",
+      "test_cases": [
+        {
+          "id": "screen10-a6-tc1",
+          "type": "verification",
+          "precondition": "DM search open",
+          "action": "tap 'Media'",
+          "expected_result": "results limit to media",
+          "confirms_if": "nothing changes",
+          "overturns_if": "the tab switches",
+          "observed_result": "the Media tab became selected (underlined) and the results area updated to the Media filter (empty)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible everyday word under a search field ; tapping switched the filter",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab",
+      "location": "top, centre",
+      "bounds": [
+        559,
+        236,
+        629,
+        321
+      ],
+      "visible_text": "\"Pins\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"Pins\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Pins' is jargon; a first-time user does not know what a pin is here",
+      "test_cases": [
+        {
+          "id": "screen10-a7-tc1",
+          "type": "expected",
+          "precondition": "a search view with the same tab set",
+          "action": "tap 'Pins'",
+          "expected_result": "an explanation of pinned items or a list of them",
+          "confirms_if": "an empty result with no explanation",
+          "overturns_if": "the view explains what pins are",
+          "observed_result": "the Pins tab selected and showed only 'We searched far and wide. Unfortunately, no results were found.' — nothing explains what a pin is (tested in the server search, identical tab)",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping 'Pins' gives an empty result with no explanation; the word never becomes meaningful",
+      "recommendation": "rename to 'Pinned messages' and show a one-line explanation in the empty state",
+      "provisional": false
+    },
+    "screen10-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab",
+      "location": "top, right",
+      "bounds": [
+        692,
+        236,
+        778,
+        321
+      ],
+      "visible_text": "\"Links\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"Links\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "an everyday word naming a result type",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible everyday word under a search field; same tab pattern as the tested 'Media' tab (screen10-a6)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filter tab",
+      "location": "top, right",
+      "bounds": [
+        841,
+        236,
+        917,
+        321
+      ],
+      "visible_text": "\"Files\" (filter tab)",
+      "accessibility_text_consulted": "content_desc \"Files\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "an everyday word naming a result type",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible everyday word under a search field; same tab pattern as the tested 'Media' tab (screen10-a6)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen10-a10": {
+      "kind": "icon",
+      "glyph": "three horizontal lines",
+      "description": "round floating button over the left edge of the loading media grid",
+      "location": "middle, left",
+      "bounds": [
+        24,
+        1136,
+        166,
+        1286
+      ],
+      "visible_text": "none (three horizontal lines on a round floating button over the loading media grid)",
+      "accessibility_text_consulted": "none present",
+      "convention_relied_on": "three lines = menu; my reading, confidence medium; but floating over content at the left edge the context does not fit a navigation menu",
+      "convention_confidence": "medium",
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "hamburger glyph in a floating button over a content grid: the convention (open a nav menu) does not fit where it sits",
+      "test_cases": [
+        {
+          "id": "screen10-a10-tc1",
+          "type": "verification",
+          "precondition": "DM search with the loading media grid",
+          "action": "tap the floating three-lines button",
+          "expected_result": "a menu opens",
+          "confirms_if": "it does something other than open a menu",
+          "overturns_if": "a navigation menu opens",
+          "observed_result": "not run: the floating button does not appear on the live app's DM search (checked on the Recent and Media tabs with results loaded and empty); it was only captured over a loading grid",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: a menu glyph floating over content with nothing visible saying what it opens; could not be reproduced",
+      "recommendation": "caption the button with what it opens, or remove it from over the results",
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "issues": 3,
+    "missing_purpose": 0,
+    "unclear_purpose": 3,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 10,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s2",
+  "state_str": "12b2ebb258c1a4fcc9dea47b7d169791",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133600.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s2_header_nav.png",
+  "name": "the side menu opened from the home screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Claude",
+      "verdict_on_region": "the app's own name at the head of the drawer \u2014 names the app, not a place in it"
+    },
+    {
+      "kind": "navigation",
+      "text": "Chats / Projects / Code / Artifacts",
+      "verdict_on_region": "contains_selected_view: false and no item is visibly highlighted \u2014 lists where you could go, not where you are"
+    }
+  ],
+  "identifier_found": "none; the drawer head is the app's name \"Claude\" and no drawer item is highlighted",
+  "identifier_class": "none",
+  "accessibility_text": "\"Claude\" is the content_description of the head button; nothing names a current section",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the only header text is the app's name and the navigation list has no active item, so neither locates the user",
+  "test_cases": [
+    {
+      "id": "s2-tc1",
+      "type": "active_state_verification",
+      "precondition": "app on the home screen",
+      "action": "tap the three-line menu glyph and look at the drawer for a highlighted item",
+      "expected_result": "either one drawer item is visibly highlighted, or none is",
+      "confirms_if": "no item is highlighted and the head shows only \"Claude\"",
+      "overturns_if": "an item is highlighted, locating the user",
+      "observed_result": "drawer opened: head \"Claude\"; Chats, Projects, Code, Artifacts all drawn alike with no fill; \"Recents\" with two \"Untitled\" rows below (not in the capture)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: opening the drawer from the home screen shows \"Claude\" at the head and no highlighted item among Chats, Projects, Code, Artifacts (a Recents list now follows them). The same drawer opened from Chats/Projects/Code does highlight the current item (s9, s44), so the absence here is specific to arriving from the home screen, which belongs to no listed section.",
+  "recommendation": "when the drawer is opened from the home screen, show which place the user came from \u2014 e.g. a highlighted \"New chat\" entry \u2014 rather than the bare app name",
+  "provisional": false
+}

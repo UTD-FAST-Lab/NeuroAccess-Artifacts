@@ -1,0 +1,1922 @@
+{
+  "persona": "persona-yuki",
+  "app": "Messenger",
+  "screens": {
+    "s1": {
+      "where": "A full-screen prompt asking me to turn on notifications",
+      "expectation": "A start-up page asking me to turn on Messenger notifications, before I'm really in the app",
+      "confidence": "guessing",
+      "cue": "The big bold title about turning on notifications and the bell picture",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a single question with a clear bold title and two buttons, so I know what it wants from me. I'm not lost.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "Main Messenger home screen with the chats list",
+      "expectation": "The main Chats list, the home of the app",
+      "confidence": "guessing",
+      "cue": "The blue 'Chats' tab at the bottom. The 'messenger' logo at the top only tells me the app.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only says 'messenger', which is just the app's name. The blue Chats tab at the bottom is what tells me where I am, but it's small and far away. In between there's a blue notifications banner, a row of story bubbles, a floating purple Meta AI blob and big blue 'Add friend' buttons all pulling at me, so I find the Chats tab last.",
+        "solution": "Put the word 'Chats' at the top where the logo is, and make the Chats tab stand out more. Fewer bright extras (banner, AI blob, Add friend buttons) on this screen."
+      },
+      "test_cases": [
+        {
+          "id": "s2-A",
+          "try": "A",
+          "task": "On the first screen scroll down two screens, pause, name where I am; then tap the middle and right bottom items and come back with the left.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the chat list down two screens and stopped. The top still only said 'messenger' and the blue banner was still there. What told me where I was is the little blue 'Chats' tab at the bottom, and I could name it straight away from that. When I tapped People and Notifications, the top changed to a big bold 'People' and 'Notifications', so those tabs name themselves at the top and Chats is the only one that doesn't. My taps were slow to register and I had to tap twice.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s2-A-oos",
+          "try": "A",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "On the Chats screen the purple Meta AI bubble stretched into an 'Ask Meta AI' pill by itself while I looked. That kind of movement pulls my attention, but it doesn't change knowing where I am.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I can find where I am from the Chats tab, but the top should say 'Chats' like the other tabs say their names.",
+      "provisional": false
+    },
+    "s3": {
+      "where": "A side menu panel slid over the home screen",
+      "expectation": "A side menu, not really a place",
+      "confidence": "guessing",
+      "cue": "The list of menu items. The name at the top is the account, not a place.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s3-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "A 'Subscriptions' sheet with a Meta logo",
+      "expectation": "Subscriptions, a page for paid plans",
+      "confidence": "sure",
+      "cue": "The big bold word 'Subscriptions'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says exactly what this is. The Meta logo makes me wonder if I've left Messenger, but the title is clear enough.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "A blue Facebook Plus 'free week' sales page",
+      "expectation": "An advert or sign-up page for Facebook Plus, maybe not Messenger at all",
+      "confidence": "guessing",
+      "cue": "The big Facebook logo and 'Try Facebook Plus free for one week'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It feels like I've been dropped into an advert. There's no Messenger name and no title naming a place, just a sales pitch, so I don't know whether I'm still in the app.",
+        "solution": "Show at the top that this is still Messenger, e.g. 'Messenger > Subscriptions', and give an obvious way back."
+      },
+      "test_cases": [
+        {
+          "id": "s5-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row > first 'View all benefits'; read the top each time; leave with the X.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with 'Meta Account' small at the top and a bold 'Subscriptions' heading, so that's clear. The second row opened a page with a big 'Meta One' title. 'View all benefits' opened 'Try Meta One Core free for one month'. That's a pitch, but I knew I was in the subscription pages I'd just come through. Three X taps got me straight back, with no trouble. None of it says Messenger, but I could follow it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Easier than the pictures suggested: I could follow and leave, even if nothing says Messenger.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Meta One 'Choose your plan' page",
+      "expectation": "A plans or pricing page for Meta, somewhere outside normal Messenger",
+      "confidence": "guessing",
+      "cue": "'Choose your plan' and the plan cards",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The title names what to do, not where I am. It's a shop page and nothing says it's still inside Messenger.",
+        "solution": "A top title like 'Subscriptions' that matches where I came from."
+      },
+      "test_cases": [
+        {
+          "id": "s6-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row > first 'View all benefits'; read the top each time; leave with the X.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with 'Meta Account' small at the top and a bold 'Subscriptions' heading, so that's clear. The second row opened a page with a big 'Meta One' title. 'View all benefits' opened 'Try Meta One Core free for one month'. That's a pitch, but I knew I was in the subscription pages I'd just come through. Three X taps got me straight back, with no trouble. None of it says Messenger, but I could follow it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Easier than the pictures suggested: I could follow and leave, even if nothing says Messenger.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Meta One Core free week sales page",
+      "expectation": "A sales page for a Meta subscription",
+      "confidence": "guessing",
+      "cue": "The headline 'Try Meta One Core free for one week'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It's another sales page with a long list. The headline is a pitch, not a place name, and with all these plan names (Meta One, Core) I lose track of which part of the app this is.",
+        "solution": "Name the page at the top, like 'Subscriptions: Meta One', and keep that name there as I scroll."
+      },
+      "test_cases": [
+        {
+          "id": "s7-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row > first 'View all benefits'; read the top each time; leave with the X.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with 'Meta Account' small at the top and a bold 'Subscriptions' heading, so that's clear. The second row opened a page with a big 'Meta One' title. 'View all benefits' opened 'Try Meta One Core free for one month'. That's a pitch, but I knew I was in the subscription pages I'd just come through. Three X taps got me straight back, with no trouble. None of it says Messenger, but I could follow it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Easier than the pictures suggested: I could follow and leave, even if nothing says Messenger.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "A feature slide sheet on top of a sales page",
+      "expectation": "A promotional slide about image and video features",
+      "confidence": "guessing",
+      "cue": "The bold feature title and the dots",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It's a sheet on top of another sheet, plus carousel dots. I'm two layers deep into adverts and nothing tells me where I am.",
+        "solution": "One layer at a time, a top title naming the subscription, and slides that don't move by themselves."
+      },
+      "test_cases": [
+        {
+          "id": "s8-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Facebook Plus feature slide: story rewatch insights",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title and the small 'Facebook Plus' line",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s9-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Facebook Plus feature slide: search your story viewer list",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title and the small 'Facebook Plus' line",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s10-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "A long Meta subscription list scrolled down, with no title",
+      "expectation": "Somewhere in the subscriptions sales pages, but I really can't tell",
+      "confidence": "no idea",
+      "cue": "Nothing. Just 'View all plans' and a list of other apps' Plus plans.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There's no title at all. It's a list of plans for Instagram and WhatsApp as well, so I can't even tell which app I'm in. I'd give up and press X.",
+        "solution": "Keep a title pinned at the top, like 'Subscriptions', even when I scroll."
+      },
+      "test_cases": [
+        {
+          "id": "s11-D",
+          "try": "D",
+          "task": "On the 'View all benefits' page scroll down two screens, then back up halfway, looking for a page name at the top; leave with the X.",
+          "real_if": "There is no page name at the top until you are back at the very top.",
+          "not_real_if": "A page name stays or comes back as soon as you scroll back a little.",
+          "what_happened": "On the 'Try Meta One Core' page I scrolled down two screens. The top had only an X and 'View all plans', with no page name. I scrolled back up halfway and still saw no name. Then I saw Instagram Plus and WhatsApp Plus sections and had to stop and think about which app I was in. It's exactly what I said.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Once you scroll there's nothing at the top, and the other apps' plans make it worse.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Facebook Plus feature slide: choose a custom app icon",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title and the small 'Facebook Plus' line",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s12-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Facebook Plus feature slide: choose a custom app icon, again",
+      "expectation": "A Facebook Plus feature slide, the same one as before",
+      "confidence": "guessing",
+      "cue": "The bold title 'Choose a custom app icon'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words. The dots have shifted even though the slide looks the same, which makes me feel it moved by itself.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s13-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s13-E-oos",
+          "try": "E",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The dots looked like the slides were moving by themselves. On the phone the cards only moved when I swiped, during the short time I looked.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Facebook Plus feature slide: super react to stories",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title 'Super react to stories'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words. It even says the hearts are 'animated' and 'burst across the screen', which is exactly what I don't want.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s14-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s14-E-oos",
+          "try": "E",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The slide promises animated hearts bursting across the screen. That's about motion, not about knowing where I am.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Facebook Plus feature slide: extend your story's expiration",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title 'Extend your story's expiration'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s15-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Facebook Plus feature slide: message with custom fonts",
+      "expectation": "A Facebook Plus feature slide",
+      "confidence": "guessing",
+      "cue": "The bold title 'Message with custom fonts'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s16-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s17-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Message requests page, 'You may know' tab",
+      "expectation": "Message requests, the 'You may know' tab",
+      "confidence": "sure",
+      "cue": "The 'Message requests' title at the top and the grey highlighted 'You may know' tab",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "There's a clear title and the selected tab is shaded. One odd thing: the bottom bar still lights up 'Chats', but the title wins.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "New message screen",
+      "expectation": "Starting a new message",
+      "confidence": "sure",
+      "cue": "The title 'New message' and the 'To:' box",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and an obvious 'To:' line.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "Search screen, no title",
+      "expectation": "Search, probably",
+      "confidence": "guessing",
+      "cue": "Only the 'Ask Meta AI or search' box",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title. The top is just a search box that says 'Ask Meta AI or search', then lists of people. I'm guessing this is Search, but it could be a 'new chat' screen. The list is long and keeps going.",
+        "solution": "A bold 'Search' title above the box, and keep the Meta AI bit separate so I know which one I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s20-F",
+          "try": "F",
+          "task": "Tap the long grey box on the first screen, hide the keyboard once, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "Tapping the grey box opened a screen with a back arrow and the 'Ask Meta AI or search' box at the top, then 'Recent searches' and 'Suggested'. A floating keyboard bar popped up and Back hid it. No page name, and scrolling down and back didn't change that. The arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still just a box. I'm guessing it's Search.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "New note screen",
+      "expectation": "Writing a new note",
+      "confidence": "sure",
+      "cue": "The title 'New note'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is centred and clear, and there's lots of calm white space.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Deki's story, full screen",
+      "expectation": "Watching someone's story",
+      "confidence": "guessing",
+      "cue": "The name 'Deki' and the progress bar at the top",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It's a full-screen story photo with a progress bar at the top that's ticking along, plus emoji reply bubbles and a 'Send message' box. The only words are the person's name, in small white letters. Nothing tells me 'this is Stories'. The ticking bar pulls my attention off everything else.",
+        "solution": "A clear label like 'Stories' at the top, and a big obvious pause. Better still, don't advance on its own."
+      },
+      "test_cases": [
+        {
+          "id": "s22-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card; watch the top for five seconds; say where I am; tap the X at top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "From People I tapped Krishna's card. It opened full screen with his name and '21h' at the top, a song title and a sound icon, a progress bar filling, and an X. I could tell it's Krishna's story and the X took me straight back to People, so I'm not lost. But music started playing and the bar kept moving the whole time I looked.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s22-G-oos",
+          "try": "G",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "On a story the progress bar keeps filling and moves on by itself. That pulls my attention, but it doesn't change knowing where I am.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could name it and leave, but the running bar and the music are the real problem for me.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "A story with a 'Sent to Deki' bar across the top",
+      "expectation": "Still in a story, just after I reacted to it",
+      "confidence": "guessing",
+      "cue": "The 'Sent to Deki' black bar",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "A black bar saying 'Sent to …' has dropped over the top and covers the person's name and the progress bar. It reads like a message popped up. It doesn't tell me where I am, and now I can't even see whose story this is.",
+        "solution": "Show the 'Sent' confirmation lower down or as a small tick, and keep the story's name and a 'Stories' label visible at the top."
+      },
+      "test_cases": [
+        {
+          "id": "s23-H",
+          "try": "H",
+          "task": "'Sent to ...' pictures - would need a reply sent to a real person.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: this needs a reply sent to a real person, which is forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s24": {
+      "where": "Chat with Siquem Lsm",
+      "expectation": "A chat with Siquem Lsm",
+      "confidence": "sure",
+      "cue": "The name at the top next to the photo, and again big in the middle",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The person's name at the top plus the message box at the bottom tells me I'm in a conversation with them.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Main Messenger home screen",
+      "expectation": "The main Chats list",
+      "confidence": "guessing",
+      "cue": "The blue 'Chats' tab at the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only says 'messenger', which is just the app's name. The blue Chats tab at the bottom is what tells me where I am, but it's small and far away. In between there's a blue notifications banner, a row of story bubbles, a floating purple Meta AI blob and big blue 'Add friend' buttons all pulling at me, so I find the Chats tab last.",
+        "solution": "Put the word 'Chats' at the top where the logo is, and make the Chats tab stand out more. Fewer bright extras (banner, AI blob, Add friend buttons) on this screen."
+      },
+      "test_cases": [
+        {
+          "id": "s25-A",
+          "try": "A",
+          "task": "On the first screen scroll down two screens, pause, name where I am; then tap the middle and right bottom items and come back with the left.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the chat list down two screens and stopped. The top still only said 'messenger' and the blue banner was still there. What told me where I was is the little blue 'Chats' tab at the bottom, and I could name it straight away from that. When I tapped People and Notifications, the top changed to a big bold 'People' and 'Notifications', so those tabs name themselves at the top and Chats is the only one that doesn't. My taps were slow to register and I had to tap twice.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I can find where I am from the Chats tab, but the top should say 'Chats' like the other tabs say their names.",
+      "provisional": false
+    },
+    "s26": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s26-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s27": {
+      "where": "Main Messenger home screen",
+      "expectation": "The main Chats list",
+      "confidence": "guessing",
+      "cue": "The blue 'Chats' tab at the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only says 'messenger', which is just the app's name. The blue Chats tab at the bottom is what tells me where I am, but it's small and far away. In between there's a blue notifications banner, a row of story bubbles, a floating purple Meta AI blob and big blue 'Add friend' buttons all pulling at me, so I find the Chats tab last.",
+        "solution": "Put the word 'Chats' at the top where the logo is, and make the Chats tab stand out more. Fewer bright extras (banner, AI blob, Add friend buttons) on this screen."
+      },
+      "test_cases": [
+        {
+          "id": "s27-A",
+          "try": "A",
+          "task": "On the first screen scroll down two screens, pause, name where I am; then tap the middle and right bottom items and come back with the left.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the chat list down two screens and stopped. The top still only said 'messenger' and the blue banner was still there. What told me where I was is the little blue 'Chats' tab at the bottom, and I could name it straight away from that. When I tapped People and Notifications, the top changed to a big bold 'People' and 'Notifications', so those tabs name themselves at the top and Chats is the only one that doesn't. My taps were slow to register and I had to tap twice.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I can find where I am from the Chats tab, but the top should say 'Chats' like the other tabs say their names.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Communities intro page",
+      "expectation": "The introduction to Communities",
+      "confidence": "sure",
+      "cue": "The big bold 'Build a chat-based community on Messenger'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is big and plain and there's lots of white space. The dots suggest slides, but in this picture nothing is moving and I know what this page is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "'Me' page, my profile and settings",
+      "expectation": "My own profile and settings page",
+      "confidence": "sure",
+      "cue": "The title 'Me' at the top and the big name below",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Short clear title, big name, neat sections with grey headings.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Message requests page",
+      "expectation": "Message requests",
+      "confidence": "sure",
+      "cue": "The 'Message requests' title and the shaded 'You may know' tab",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title. The bottom bar lighting up 'Chats' is a little odd but it doesn't throw me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Archive page, empty",
+      "expectation": "The Archive",
+      "confidence": "sure",
+      "cue": "The title 'Archive' and 'Your archive is empty'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, calm empty page, and the middle text backs it up.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "New story page asking for photo access",
+      "expectation": "Making a new story",
+      "confidence": "sure",
+      "cue": "The title 'New story'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is clear at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "New note page with a sheet about sharing notes",
+      "expectation": "Making a new note, with a pop-up about making notes public",
+      "confidence": "sure",
+      "cue": "The title 'New note' still visible at the top and the sheet's bold heading",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can still see 'New note' behind, and the sheet's bold heading tells me what it's asking.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "New note screen",
+      "expectation": "Writing a new note",
+      "confidence": "sure",
+      "cue": "The title 'New note'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and calm layout.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "New group screen",
+      "expectation": "Making a new group chat",
+      "confidence": "sure",
+      "cue": "The title 'New group'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title with a 'Next' button, so I know it's step one of something.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Chat with Ally",
+      "expectation": "A conversation with Ally Cooper",
+      "confidence": "sure",
+      "cue": "'Ally' at the top and the big name in the middle",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Name at the top and a message box at the bottom: it's a chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Search screen, no title",
+      "expectation": "Search, probably",
+      "confidence": "guessing",
+      "cue": "Only the 'Ask Meta AI or search' box",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title. The top is just a search box that says 'Ask Meta AI or search', then lists of people. I'm guessing this is Search, but it could be a 'new chat' screen. The list is long and keeps going.",
+        "solution": "A bold 'Search' title above the box, and keep the Meta AI bit separate so I know which one I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s37-F",
+          "try": "F",
+          "task": "Tap the long grey box on the first screen, hide the keyboard once, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "Tapping the grey box opened a screen with a back arrow and the 'Ask Meta AI or search' box at the top, then 'Recent searches' and 'Suggested'. A floating keyboard bar popped up and Back hid it. No page name, and scrolling down and back didn't change that. The arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still just a box. I'm guessing it's Search.",
+      "provisional": false
+    },
+    "s38": {
+      "where": "New note page with a 'GIF notes' sheet",
+      "expectation": "Making a new note, with a pop-up about GIF notes",
+      "confidence": "sure",
+      "cue": "'New note' at the top and the bold 'GIF notes for any mood'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can still read 'New note' at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s39": {
+      "where": "A GIF picker sheet, all loading",
+      "expectation": "Picking a GIF",
+      "confidence": "guessing",
+      "cue": "The search box saying 'Search gifs across apps…'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title, just a search box and a big grid of grey boxes with loading spinners. Those spinners would be spinning, and I'd be staring at them. The row of little icons at the bottom has one shaded, but with no words I don't know what it means.",
+        "solution": "Give the sheet a title like 'Choose a GIF', put words on the bottom icons, and show still placeholders instead of a wall of spinners."
+      },
+      "test_cases": [
+        {
+          "id": "s39-L",
+          "try": "L",
+          "task": "Pages that need a note made public, the GIF panel, or an invitation created.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: these need a note made public, the GIF panel opened, or an invitation created, which are forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s40": {
+      "where": "New note with a GIF picked",
+      "expectation": "Writing a new note with a GIF in it",
+      "confidence": "sure",
+      "cue": "The title 'New note'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is clear. Out of scope: that GIF will be moving, and that would pull my eyes, but it doesn't change knowing where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "A 'Delete draft?' box over the New note screen",
+      "expectation": "About to leave the new note, being asked about deleting the draft",
+      "confidence": "sure",
+      "cue": "'Delete draft?' box with 'New note' still visible behind",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear question with two buttons, and 'New note' is still at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "Chat with Deki",
+      "expectation": "A conversation with Deki",
+      "confidence": "sure",
+      "cue": "'Deki' at the top and big in the middle",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Name at the top, messages and message box: it's a chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "Chat with Marco Peralta",
+      "expectation": "A conversation with Marco Peralta",
+      "confidence": "sure",
+      "cue": "The name at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same chat layout, name clear at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "Settings for the chat with Marco Peralta, no top title",
+      "expectation": "Something about Marco Peralta: his profile or the chat's settings",
+      "confidence": "guessing",
+      "cue": "The big name in the middle and the small 'Chat info' heading",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title at the top at all, just a back arrow and three dots. The big name in the middle looks exactly like the chat screen, so at first I thought I was still in the chat. Only the small grey 'Chat info' heading lower down hints that this is settings for the conversation.",
+        "solution": "Put a title at the top like 'Chat settings with <name>'."
+      },
+      "test_cases": [
+        {
+          "id": "s44-K",
+          "try": "K",
+          "task": "Open Krishna Bharti's chat, tap only the 'i' at top right, read the top, scroll down two screens and read again, leave twice with the arrow.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "First the list jumped (a 'New Facebook friend' row popped in at the top) and I opened Fra Mendy by mistake, so I came back and tapped Krishna. In his chat I tapped only the 'i'. The page had no title at the top, just an arrow and three dots, with his big name in the middle like the chat. When I scrolled down two screens even his name disappeared, and the top was still only an arrow and dots, above rows like Block and Delete chat. I couldn't have said what page this was if I'd come back to it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Worse than I thought: after scrolling even the name is gone.",
+      "provisional": false
+    },
+    "s45": {
+      "where": "Pinned messages page, empty",
+      "expectation": "Pinned messages for a chat",
+      "confidence": "sure",
+      "cue": "The title 'Pinned messages'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title. The empty-state text says it's for this chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "Krishna Bharti's story, playing with music",
+      "expectation": "Watching Krishna's story",
+      "confidence": "guessing",
+      "cue": "The small name 'Krishna Bharti' and the progress bar",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It's a full-screen story photo with a progress bar at the top that's ticking along, plus emoji reply bubbles and a 'Send message' box. The only words are the person's name, in small white letters. Nothing tells me 'this is Stories'. The ticking bar pulls my attention off everything else. It's playing a song too, with a sound icon, and that's another thing tugging at me.",
+        "solution": "A clear label like 'Stories' at the top, and a big obvious pause. Better still, don't advance on its own."
+      },
+      "test_cases": [
+        {
+          "id": "s46-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card; watch the top for five seconds; say where I am; tap the X at top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "From People I tapped Krishna's card. It opened full screen with his name and '21h' at the top, a song title and a sound icon, a progress bar filling, and an X. I could tell it's Krishna's story and the X took me straight back to People, so I'm not lost. But music started playing and the bar kept moving the whole time I looked.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s46-G-oos",
+          "try": "G",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "On the phone Krishna's story played music and the progress bar kept moving the whole time. That's a motion and sound problem for me, separate from location.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could name it and leave, but the running bar and the music are the real problem for me.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "Krishna's story with a 'Sent to Krishna' bar",
+      "expectation": "Still in a story, just after I replied",
+      "confidence": "guessing",
+      "cue": "The 'Sent to Krishna' bar",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "A black bar saying 'Sent to …' has dropped over the top and covers the person's name and the progress bar. It reads like a message popped up. It doesn't tell me where I am, and now I can't even see whose story this is.",
+        "solution": "Show the 'Sent' confirmation lower down or as a small tick, and keep the story's name and a 'Stories' label visible at the top."
+      },
+      "test_cases": [
+        {
+          "id": "s47-H",
+          "try": "H",
+          "task": "'Sent to ...' pictures - would need a reply sent to a real person.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: this needs a reply sent to a real person, which is forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s48": {
+      "where": "Chat with Krishna Bharti",
+      "expectation": "A conversation with Krishna Bharti",
+      "confidence": "sure",
+      "cue": "The name at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name at the top, my message in the chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "Settings for the chat with Krishna Bharti, no top title",
+      "expectation": "Something about Krishna: profile or chat settings",
+      "confidence": "guessing",
+      "cue": "The big name in the middle and the small 'Chat info' heading",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title at the top at all, just a back arrow and three dots. The big name in the middle looks exactly like the chat screen, so at first I thought I was still in the chat. Only the small grey 'Chat info' heading lower down hints that this is settings for the conversation.",
+        "solution": "Put a title at the top like 'Chat settings with <name>'."
+      },
+      "test_cases": [
+        {
+          "id": "s49-K",
+          "try": "K",
+          "task": "Open Krishna Bharti's chat, tap only the 'i' at top right, read the top, scroll down two screens and read again, leave twice with the arrow.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "First the list jumped (a 'New Facebook friend' row popped in at the top) and I opened Fra Mendy by mistake, so I came back and tapped Krishna. In his chat I tapped only the 'i'. The page had no title at the top, just an arrow and three dots, with his big name in the middle like the chat. When I scrolled down two screens even his name disappeared, and the top was still only an arrow and dots, above rows like Block and Delete chat. I couldn't have said what page this was if I'd come back to it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Worse than I thought: after scrolling even the name is gone.",
+      "provisional": false
+    },
+    "s50": {
+      "where": "Chat with Krishna Bharti",
+      "expectation": "A conversation with Krishna Bharti",
+      "confidence": "sure",
+      "cue": "The name at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "Chat with Krishna Bharti",
+      "expectation": "A conversation with Krishna Bharti",
+      "confidence": "sure",
+      "cue": "The name at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as before, clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "Main Messenger home screen",
+      "expectation": "The main Chats list",
+      "confidence": "guessing",
+      "cue": "The blue 'Chats' tab at the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only says 'messenger', which is just the app's name. The blue Chats tab at the bottom is what tells me where I am, but it's small and far away. In between there's a blue notifications banner, a row of story bubbles, a floating purple Meta AI blob and big blue 'Add friend' buttons all pulling at me, so I find the Chats tab last.",
+        "solution": "Put the word 'Chats' at the top where the logo is, and make the Chats tab stand out more. Fewer bright extras (banner, AI blob, Add friend buttons) on this screen."
+      },
+      "test_cases": [
+        {
+          "id": "s52-A",
+          "try": "A",
+          "task": "On the first screen scroll down two screens, pause, name where I am; then tap the middle and right bottom items and come back with the left.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the chat list down two screens and stopped. The top still only said 'messenger' and the blue banner was still there. What told me where I was is the little blue 'Chats' tab at the bottom, and I could name it straight away from that. When I tapped People and Notifications, the top changed to a big bold 'People' and 'Notifications', so those tabs name themselves at the top and Chats is the only one that doesn't. My taps were slow to register and I had to tap twice.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I can find where I am from the Chats tab, but the top should say 'Chats' like the other tabs say their names.",
+      "provisional": false
+    },
+    "s53": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s53-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s54": {
+      "where": "Facebook Plus 'Preview stories' slide with a Facebook logo behind",
+      "expectation": "A Facebook Plus feature slide, maybe in Facebook rather than Messenger",
+      "confidence": "guessing",
+      "cue": "'Preview stories' and the small 'Facebook Plus' line",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The bold title names one feature, and a small 'Facebook Plus' line sits above it. But I'm on a sales sheet with dots at the bottom, so it's a set of slides, and with a greyed list peeking behind it I can't tell whether I'm still in Messenger or in a Facebook shop. Slides like this usually slide on their own, and that would pull my eyes off the words. Here a big Facebook logo sits behind the sheet, which makes me even less sure I'm still in Messenger.",
+        "solution": "Put 'Facebook Plus subscription' clearly at the very top of the sheet. Show 'slide 3 of 6' instead of tiny dots. Never move the slides on their own. Let me tap through them."
+      },
+      "test_cases": [
+        {
+          "id": "s54-E",
+          "try": "E",
+          "task": "On that page tap a grey row with an arrow, read above the large words, swipe the card sideways twice, close with its X, leave with the X.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped 'Get story rewatch insights' and a card slid up. Small 'Facebook Plus' is written above the big words. I swiped twice: 'Search your story viewer list', then 'Choose a custom app icon'. 'Facebook Plus' stayed above the big words on every card, and the cards only moved when I swiped. The X closed the card and the next X closed the page. So there is a steady name, it's just small.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "'Facebook Plus' is there on every card, it's just small. I'd like it at the top.",
+      "provisional": false
+    },
+    "s56": {
+      "where": "Notifications page",
+      "expectation": "Notifications",
+      "confidence": "sure",
+      "cue": "The big bold 'Notifications' at the top and the blue bell tab at the bottom",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title and the tab agree. Easy.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s57-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s58": {
+      "where": "Notifications page, scrolled",
+      "expectation": "Notifications",
+      "confidence": "sure",
+      "cue": "The 'Notifications' title still at the top and the bell tab",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stayed put while the list moved. Good.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s59-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s60": {
+      "where": "Archive page, with the bottom bar showing Notifications",
+      "expectation": "The Archive, I think",
+      "confidence": "guessing",
+      "cue": "The 'Archive' title. But the bottom bar highlights the bell, Notifications.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top says Archive and the bottom says Notifications, so the two disagree. I trust the top, but I stop and second-guess myself.",
+        "solution": "Either hide the bottom bar on Archive, or don't light up a tab that isn't where I am."
+      },
+      "test_cases": [
+        {
+          "id": "s60-M",
+          "try": "M",
+          "task": "Tap Notifications in the bottom row; open the side panel and tap Archive; compare the top and the bottom row.",
+          "real_if": "The top and the bottom row name different places.",
+          "not_real_if": "They agree.",
+          "what_happened": "I tapped Notifications and the bell went blue. Then I opened the panel and tapped Archive. The top said 'Archive', but the bottom row still had Notifications lit up blue. The top and the bottom disagreed, just like in the picture.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Top and bottom still disagree.",
+      "provisional": false
+    },
+    "s61": {
+      "where": "People page",
+      "expectation": "People, the friends and stories page",
+      "confidence": "sure",
+      "cue": "The big bold 'People' at the top and the People tab lit at the bottom",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and tab agree, and the '1 active' filter is shaded. Out of scope: the story cards are big busy photos that pull at me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "The side menu panel again",
+      "expectation": "A side menu",
+      "confidence": "guessing",
+      "cue": "The menu list",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name at the top, 'Ally Cooper', is the account name. It doesn't name a place. The list has no highlighted row, so I can't tell which part of the app I came from or am in. It's a menu sliding over something greyed out.",
+        "solution": "Give the panel a title like 'Menu', and highlight the row for the part of the app I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "s62-B",
+          "try": "B",
+          "task": "Open the side panel from the first screen, read it, close with Back; open it again from the People tab and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top just says 'Ally Cooper' with a gear, then a list. No title, no row highlighted. I opened it again from People and it looked exactly the same, with no hint that I'd come from People. Back closed it fine.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Still a menu with no name that forgets where I came from.",
+      "provisional": false
+    },
+    "s63": {
+      "where": "Deki's story popping up over the People page",
+      "expectation": "In a story that opened on top of People",
+      "confidence": "guessing",
+      "cue": "'People' still faintly visible at the top and 'Deki' on the story",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There are two names: 'People' greyed at the top and 'Deki' on the story sliding up over it. The story's progress bar is running. I'm halfway between two places.",
+        "solution": "Open the story full screen with a clear 'Stories' label, or keep it clearly a pop-up with a close button and no auto-advance."
+      },
+      "test_cases": [
+        {
+          "id": "s63-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card; watch the top for five seconds; say where I am; tap the X at top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "From People I tapped Krishna's card. It opened full screen with his name and '21h' at the top, a song title and a sound icon, a progress bar filling, and an X. I could tell it's Krishna's story and the X took me straight back to People, so I'm not lost. But music started playing and the bar kept moving the whole time I looked.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s63-G-oos",
+          "try": "G",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The story's progress bar keeps running and moving on by itself. That's motion, separate from location.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could name it and leave, but the running bar and the music are the real problem for me.",
+      "provisional": false
+    },
+    "s64": {
+      "where": "'Me' page, scrolled down",
+      "expectation": "My Me / settings page",
+      "confidence": "sure",
+      "cue": "'Me' still at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stayed at the top while the list scrolled. One row is shaded grey but that doesn't confuse me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "'Me' page, scrolled a little",
+      "expectation": "My Me / settings page",
+      "confidence": "sure",
+      "cue": "'Me' at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title stays, sections have grey headings.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "'Me' page, scrolled further down",
+      "expectation": "My Me / settings page",
+      "confidence": "sure",
+      "cue": "'Me' at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title still there, and the grey section headings help me skim.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s67": {
+      "where": "Switch profile page",
+      "expectation": "Switching account/profile",
+      "confidence": "sure",
+      "cue": "The title 'Switch profile'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, very little on the page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "Dark mode setting",
+      "expectation": "The Dark mode setting",
+      "confidence": "sure",
+      "cue": "The title 'Dark mode'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, three simple choices.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "Active status setting",
+      "expectation": "The Active status setting",
+      "confidence": "sure",
+      "cue": "The title 'Active status'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, one switch.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s70": {
+      "where": "'Me' page with a small sheet about my username link",
+      "expectation": "On the Me page, with a username menu popped up",
+      "confidence": "guessing",
+      "cue": "'Me' dimmed at the top. The sheet only says 'm.me/'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The sheet at the bottom has no heading, just 'm.me/' and two options. I'm guessing it's about my username, but it doesn't say so.",
+        "solution": "Give the sheet a heading like 'Your username link'."
+      },
+      "test_cases": [
+        {
+          "id": "s70-N",
+          "try": "N",
+          "task": "Side panel > gear > Username; read the panel that slides up; close with Back once.",
+          "real_if": "The panel never says what it is.",
+          "not_real_if": "Something on it, or behind it, tells you where you are.",
+          "what_happened": "From the gear page I tapped Username. A sheet slid up saying only 'm.me/' with 'Edit username' and 'Copy link'. The sheet still has no heading, but 'Me' and the Username row were right there behind it, dimmed, and I'd just tapped it myself. So I knew what it was. One Back closed it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Fine in real use because I just tapped Username, but the sheet should still say what it is.",
+      "provisional": false
+    },
+    "s71": {
+      "where": "Supervision for Teen Accounts intro",
+      "expectation": "The start of setting up teen supervision",
+      "confidence": "sure",
+      "cue": "The bold 'Supervision for Teen Accounts' heading",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Even though the heading sits halfway down under a big picture, it's bold and plain and the bullet points have icons. I know what this is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s72": {
+      "where": "Select the profiles you want to supervise",
+      "expectation": "A step in setting up teen supervision",
+      "confidence": "guessing",
+      "cue": "The bold instruction at the top",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading tells me what to do, not where I am or how far along. Nothing says 'Supervision' or 'step 2 of 3', so I'm not sure how much more there is.",
+        "solution": "Add the flow name and a step count, like 'Teen supervision: step 1 of 2'."
+      },
+      "test_cases": [
+        {
+          "id": "s72-Q",
+          "try": "Q",
+          "task": "Side panel > gear > Family Center; read; tap Continue once; read the top; leave with arrow/X back to the gear page.",
+          "real_if": "You cannot tell which process you are in or how far along.",
+          "not_real_if": "You can.",
+          "what_happened": "Family Center opened 'Supervision for Teen Accounts', which is clear. Continue gave 'Select the profiles you want to supervise', with no flow name and no 'step 1 of 2'. When I tapped the back arrow, it just turned into an X and I stayed on the same page. That threw me. A second tap on the X went back to the intro and then out to the Me page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "No step count, and the back arrow turning into an X without moving me was confusing.",
+      "provisional": false
+    },
+    "s73": {
+      "where": "Here's your link page",
+      "expectation": "A step in teen supervision, sharing an invite link",
+      "confidence": "guessing",
+      "cue": "The bold 'Here's your link'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "'Here's your link' could be any link. Only the small text under it mentions teens and supervision. No step count, so I don't know if I'm done.",
+        "solution": "Name the flow at the top and say whether this is the last step."
+      },
+      "test_cases": [
+        {
+          "id": "s73-L",
+          "try": "L",
+          "task": "Pages that need a note made public, the GIF panel, or an invitation created.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: these need a note made public, the GIF panel opened, or an invitation created, which are forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s74": {
+      "where": "'Cancel invite?' full page",
+      "expectation": "Being asked whether to cancel the supervision invite",
+      "confidence": "guessing",
+      "cue": "The bold 'Cancel invite?' in the middle",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page is mostly empty, with a magnifying-glass picture that makes me think 'search'. The question is in the middle and nothing at the top says which invite or which part of the app.",
+        "solution": "A title at the top naming the flow, and an icon that matches 'cancel'."
+      },
+      "test_cases": [
+        {
+          "id": "s74-L",
+          "try": "L",
+          "task": "Pages that need a note made public, the GIF panel, or an invitation created.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: these need a note made public, the GIF panel opened, or an invitation created, which are forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s75": {
+      "where": "Select profiles page again, with an 'Invite canceled' message",
+      "expectation": "Back at choosing profiles to supervise after cancelling",
+      "confidence": "guessing",
+      "cue": "The bold instruction and the 'Invite canceled' bar at the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as before: the heading is an instruction, not a place. The pop-up message at the bottom is helpful but it'll vanish on its own, and I might miss it.",
+        "solution": "Name the flow at the top. Leave the 'Invite canceled' message up until I close it."
+      },
+      "test_cases": [
+        {
+          "id": "s75-L",
+          "try": "L",
+          "task": "Pages that need a note made public, the GIF panel, or an invitation created.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried.",
+          "status": "not_executed",
+          "reason": "House rules: these need a note made public, the GIF panel opened, or an invitation created, which are forbidden."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s76": {
+      "where": "Avatar page",
+      "expectation": "The Avatar page",
+      "confidence": "sure",
+      "cue": "The title 'Avatar' at the top",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and a calm, still picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s77": {
+      "where": "App icon page",
+      "expectation": "Choosing the app icon",
+      "confidence": "sure",
+      "cue": "The title 'App icon'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and a neat grid.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "Notifications & sounds setting",
+      "expectation": "Notification settings",
+      "confidence": "sure",
+      "cue": "The title 'Notifications & sounds'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and one switch.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "Accessibility settings",
+      "expectation": "Accessibility settings",
+      "confidence": "sure",
+      "cue": "The title 'Accessibility'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, and I spot 'Reduce motion' straight away. Love that.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "Privacy & safety settings",
+      "expectation": "Privacy & safety settings",
+      "confidence": "sure",
+      "cue": "The title 'Privacy & safety'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title, and the grey section headings help me skim a long list.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s81": {
+      "where": "Language identification setting",
+      "expectation": "Language identification setting",
+      "confidence": "sure",
+      "cue": "The title 'Language identification'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s82": {
+      "where": "Photos & media settings",
+      "expectation": "Photos & media settings",
+      "confidence": "sure",
+      "cue": "The title 'Photos & media'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "'Turn on notifications' box over the Me page",
+      "expectation": "On the Me page, with a box asking me to turn on notifications",
+      "confidence": "sure",
+      "cue": "'Me' dimmed at the top and the box's heading",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box has a clear heading and I can still see 'Me' behind it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "'Make your own avatar' intro slides",
+      "expectation": "The start of making an avatar",
+      "confidence": "guessing",
+      "cue": "The bold 'Make your own avatar' near the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title at the top, just an X. A huge 3D picture fills most of the screen and the bold 'Make your own avatar' is pushed down near the bottom under some dots. The dots say this is a slideshow, and that pulls at me.",
+        "solution": "Put 'Avatar' as a title at the top. Show 'Step 1 of 3' in words instead of dots. Keep the pictures still until I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s84-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap 'Make your avatar'; read; close with X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a clear 'Avatar' title at the top. Tapping 'Make your avatar' opened a full-screen sheet with only an X at the top, a big 3D picture, dots, and 'Make your own avatar' near the bottom. While I looked, the picture changed by itself: first a group, then a woman taking a selfie and moving her phone, and the dots stayed on the first one. There's no word at the top and the moving picture pulled my eyes. The X took me back to Avatar.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s84-O-oos",
+          "try": "O",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The avatar picture changed by itself on the phone, from a group to a woman taking a selfie. It's a motion problem for me, separate from location.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No title at the top, and the picture animates by itself.",
+      "provisional": false
+    },
+    "s85": {
+      "where": "'Make your own avatar' intro slides, different picture",
+      "expectation": "The start of making an avatar",
+      "confidence": "guessing",
+      "cue": "The bold 'Make your own avatar' near the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title at the top, just an X. A huge 3D picture fills most of the screen and the bold 'Make your own avatar' is pushed down near the bottom under some dots. The dots say this is a slideshow, and that pulls at me. The picture is different from the last one while the dots haven't changed, so it looks like it's animating by itself.",
+        "solution": "Put 'Avatar' as a title at the top. Show 'Step 1 of 3' in words instead of dots. Keep the pictures still until I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s85-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap 'Make your avatar'; read; close with X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a clear 'Avatar' title at the top. Tapping 'Make your avatar' opened a full-screen sheet with only an X at the top, a big 3D picture, dots, and 'Make your own avatar' near the bottom. While I looked, the picture changed by itself: first a group, then a woman taking a selfie and moving her phone, and the dots stayed on the first one. There's no word at the top and the moving picture pulled my eyes. The X took me back to Avatar.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s85-O-oos",
+          "try": "O",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The picture kept animating by itself on the phone. That's motion, separate from location.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No title at the top, and the picture animates by itself.",
+      "provisional": false
+    },
+    "s86": {
+      "where": "'Make your own avatar' intro slides, picture shifted again",
+      "expectation": "The start of making an avatar",
+      "confidence": "guessing",
+      "cue": "The bold 'Make your own avatar' near the bottom",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There's no title at the top, just an X. A huge 3D picture fills most of the screen and the bold 'Make your own avatar' is pushed down near the bottom under some dots. The dots say this is a slideshow, and that pulls at me. The phone in her hand has moved since the last picture. It's animating, and my eyes go there instead of to the words.",
+        "solution": "Put 'Avatar' as a title at the top. Show 'Step 1 of 3' in words instead of dots. Keep the pictures still until I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s86-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap 'Make your avatar'; read; close with X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a clear 'Avatar' title at the top. Tapping 'Make your avatar' opened a full-screen sheet with only an X at the top, a big 3D picture, dots, and 'Make your own avatar' near the bottom. While I looked, the picture changed by itself: first a group, then a woman taking a selfie and moving her phone, and the dots stayed on the first one. There's no word at the top and the moving picture pulled my eyes. The X took me back to Avatar.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s86-O-oos",
+          "try": "O",
+          "task": "Motion I noticed on this screen (not about knowing where I am).",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "The figure's phone and hand moved by themselves. That's motion, separate from location.",
+          "status": "out_of_scope",
+          "reason": "About motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No title at the top, and the picture animates by itself.",
+      "provisional": false
+    }
+  },
+  "transitions": {
+    "t132": {
+      "where": "The Avatar page, after scrolling on the Me page",
+      "action_sentence": "You stayed on this screen and scrolled up.",
+      "expectation": "The Avatar page. The title says 'Avatar', not 'Me' any more.",
+      "confidence": "guessing",
+      "cue": "The word 'Avatar' at the top where 'Me' used to be, and the avatar picture",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The second picture says 'Avatar' at the top, but I was on 'Me' and was told I only scrolled. If I just scrolled, the page name shouldn't change under me. Seeing a new name makes me think I tapped something by accident, and I'd stop and wonder how to get back to where I was.",
+        "solution": "If I only scroll, keep 'Me' at the top. Opening the Avatar page should only happen when I tap it, and then it should look like moving to a new page."
+      },
+      "test_cases": [
+        {
+          "id": "t132-R",
+          "try": "R",
+          "task": "Side panel > gear; scroll the Me list up and down several times on the blank right side, watching the top; leave with the arrow.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "On the Me page I scrolled up and down several times on the blank right side. The top said 'Me' every single time and no other page opened. Nothing changed except the list.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Scrolling never changes the page. My worry from the pictures doesn't hold.",
+      "provisional": false
+    },
+    "t133": {
+      "where": "The Avatar page, after scrolling on the Me page",
+      "action_sentence": "You stayed on this screen and scrolled down.",
+      "expectation": "The Avatar page. The title says 'Avatar', not 'Me' any more.",
+      "confidence": "guessing",
+      "cue": "The word 'Avatar' at the top where 'Me' used to be, and the avatar picture",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The second picture says 'Avatar' at the top, but I was on 'Me' and was told I only scrolled. If I just scrolled, the page name shouldn't change under me. Seeing a new name makes me think I tapped something by accident, and I'd stop and wonder how to get back to where I was.",
+        "solution": "If I only scroll, keep 'Me' at the top. Opening the Avatar page should only happen when I tap it, and then it should look like moving to a new page."
+      },
+      "test_cases": [
+        {
+          "id": "t133-R",
+          "try": "R",
+          "task": "Side panel > gear; scroll the Me list up and down several times on the blank right side, watching the top; leave with the arrow.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "On the Me page I scrolled up and down several times on the blank right side. The top said 'Me' every single time and no other page opened. Nothing changed except the list.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Scrolling never changes the page. My worry from the pictures doesn't hold.",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "screens_reviewed": 85,
+    "transitions_reviewed": 2,
+    "confidence": {
+      "sure": 41,
+      "guessing": 45,
+      "no_idea": 1
+    },
+    "cue_nothing": 1,
+    "no_problem": 42,
+    "navigate_with_difficulty": 44,
+    "cannot_handle": 1,
+    "tests_run": 13,
+    "opinions": {
+      "unchanged": 20,
+      "hardened": 3,
+      "softened": 20,
+      "reversed": 2
+    },
+    "out_of_scope": 9,
+    "not_executed": 6
+  }
+}

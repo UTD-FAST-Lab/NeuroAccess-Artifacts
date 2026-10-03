@@ -1,0 +1,1822 @@
+{
+  "persona": "persona-kwame",
+  "app": "Claude",
+  "groups": {
+    "gg1": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg1.png",
+      "members": {
+        "screen3-f2": {
+          "where": "Top right corner of the chat screen, where the ghost usually sits; this is the screen with 'Incognito chat' written under it",
+          "expectation": "I think it ends the incognito chat and takes me back to an ordinary chat. But I am not certain whether it only leaves incognito or also throws away what I wrote.",
+          "confidence": "guessing"
+        },
+        "screen4-f1": {
+          "where": "Top left corner of the 'Get more Claude' plan page, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen6-f2": {
+          "where": "Top left corner of the 'Add to chat' panel with the camera tile, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen7-f1": {
+          "where": "Top left corner of the 'Select model' panel (Fable 5.1 is visible), just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen8-f1": {
+          "where": "Top left corner of the voice introduction page with the microphone drawing, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen21-f2": {
+          "where": "Top right corner of a chat screen, in the spot where the ghost normally is",
+          "expectation": "I think it ends the incognito chat and takes me back to an ordinary chat. But I am not certain whether it only leaves incognito or also throws away what I wrote.",
+          "confidence": "guessing"
+        },
+        "screen22-f2": {
+          "where": "Top left corner of the 'Add to chat' panel with the camera tile, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen23-f1": {
+          "where": "Top left corner of the 'Select model' panel, opened over an incognito chat, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen24-f1": {
+          "where": "Top left corner of a page with a plain beige background, like the voice introduction page, just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen27-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen28-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen31-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        },
+        "screen34-f2": {
+          "where": "Top right corner of a chat screen, in the spot where the ghost normally is",
+          "expectation": "I think it ends the incognito chat and takes me back to an ordinary chat. But I am not certain whether it only leaves incognito or also throws away what I wrote.",
+          "confidence": "guessing"
+        },
+        "screen35-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel and puts me back on the screen I was on before it opened.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "unsure",
+      "same_expectation_why": "The X in the top left of a panel means close to me, but the X in the top right of the incognito chat sits where the ghost usually is, so it seems to be undoing the ghost rather than closing a panel, and I cannot be sure those are the same thing.",
+      "affects_navigation": "Yes: if the right-hand X on the incognito chat does something bigger than close, such as discard my conversation, I would stop trusting the X anywhere and would hesitate before every one of them.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Thirteen of these are the same close button in the same top-left place on a panel and I would handle them easily. The three in the top right of the chat screen are the same picture in a different place doing, I think, a different job: leaving incognito. I would read that one over and over, asking whether it closes, leaves or deletes.",
+        "solution": "Give the top-right one words, such as 'Leave incognito', or keep the ghost there and show it switched on, so the plain X only ever means 'close this panel'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg1-tc1",
+          "what_to_try": "Press the ghost at the top right of the chat screen. In the chat box type one short word (for example 'test') but do not send it. Now press the X in the top-right corner. Tell me whether it closed, deleted or left something, and whether your word is still there.",
+          "real_if": "you cannot tell what the X did, or it did something you did not expect (closing or deleting)",
+          "not_real_if": "it did what you expected and you can tell what happened",
+          "what_happened": "I pressed the ghost in the top-right corner. For a second or two nothing seemed to change, so the first time I pressed it again; by the time the screen caught up I had gone into incognito and straight back out without ever seeing it, and I had to work out from the greeting what had happened. On the second attempt I pressed once and waited. The screen changed to 'Incognito chat' at the top, a large ghost and the sentence about history, and the ghost in the corner became an X. I typed 'test' and did not send it. Then I pressed the top-right X. After a short delay the 'Incognito chat' words and the large ghost disappeared, the ordinary greeting came back, the ghost returned to the corner, and my word 'test' was still in the box. Nothing was deleted; it left incognito. I could tell what had happened from the heading disappearing. I finished the test and then cleared my word.",
+          "status": "executed"
+        },
+        {
+          "id": "kwame-gg1-tc2",
+          "what_to_try": "Clear your word from the box. Press the + at the bottom left of the chat box, then press the X at the top left of the panel that opens. Compare it with the top-right X.",
+          "real_if": "the two X marks behave in ways you could not tell apart before pressing",
+          "not_real_if": "each did what you expected",
+          "what_happened": "With my word cleared, I pressed the + at the bottom left of the chat box. A panel slid up titled 'Add to chat' with an X in its top-left corner. I pressed that X and the panel closed, leaving me on the chat screen exactly as before. I did the same thing once inside incognito and it behaved the same way. Each X did what I expected. The top-left X closes a panel. The top-right X leaves incognito, which was my guess but not something I could be sure of before pressing. Having pressed it once, I can now tell them apart.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg2": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg2.png",
+      "members": {
+        "screen1-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen3-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen5-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen10-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen11-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen12-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen13-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen14-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen15-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen16-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen17-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen19-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen21-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen26-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        },
+        "screen34-f1": {
+          "where": "Top left corner of the screen, three lines of different lengths",
+          "expectation": "It opens the side menu with Chats, Projects, Code and Artifacts.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same three-line picture in exactly the same corner on every screen, including the Chats and Settings screens.",
+      "affects_navigation": "Not much: I would still press it expecting the menu, and I would notice quickly if it did anything else.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It never moves and never changes. It is my way out of any screen, and I would learn it once.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg3": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg3.png",
+      "members": {
+        "screen1-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen3-f4": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen5-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen10-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen11-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen17-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen19-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen26-f3": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "Right-hand end of the grey strip above the message box that says 'Get more with Claude Pro'",
+          "expectation": "It opens a page that lets me buy the Pro plan.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "The words are identical and always in the same strip above the message box.",
+      "affects_navigation": "No; I would simply avoid it unless I wanted to pay.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words say exactly what will happen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg4": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg4.png",
+      "members": {
+        "screen1-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen3-f5": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen5-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen10-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen11-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen17-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen19-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen21-f5": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen26-f4": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        },
+        "screen34-f5": {
+          "where": "Bottom left of the message box, the round grey button with a plus, to the left of 'Haiku 4.5'",
+          "expectation": "I think it lets me add something to my message, such as a photo or a file. It could also mean start a new chat, because 'New chat' elsewhere in the app has the same plus in front of it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "They are the same round plus in the same place in the message box every time.",
+      "affects_navigation": "A little: the plus inside the message box and the plus on the 'New chat' button look the same, so if one adds a file and the other starts a new conversation, I would need to remember which plus is which.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Within this set it is perfectly steady. My hesitation is that the same plus sign also sits in front of 'New chat' in the side menu and on the Chats screen, and here it has no word. I would stop and question whether pressing it would throw away my conversation and start a new one.",
+        "solution": "Put a short word next to it, such as 'Add', or use a paper-clip picture, so the plus only means 'new chat'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg4-tc1",
+          "what_to_try": "Press the ghost at the top right so the chat is private, then type one short word in the chat box but do not send it. Press the + at the bottom left of the chat box. Tell me whether your word and your chat were thrown away or kept, and what opened. Close what opened with its X, then clear your word.",
+          "real_if": "the + threw your word or conversation away, or you could not tell whether it had",
+          "not_real_if": "your word stayed and what opened was something to add to the chat",
+          "what_happened": "I pressed the ghost and waited until 'Incognito chat' appeared. I typed 'test' without sending it and pressed the + at the bottom left of the chat box. After a moment a panel titled 'Add to chat' slid up, with Camera, Photos and Files tiles and rows for Web search and Connectors. Behind it the incognito chat was still there. I closed the panel with its X. My word 'test' was still in the box and I was still in the incognito chat. Nothing was thrown away. I finished and later cleared my word.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "reversed",
+      "provisional": false
+    },
+    "gg5": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg5.png",
+      "members": {
+        "screen1-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen3-f6": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen5-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen10-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen11-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen17-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen19-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen21-f6": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen26-f5": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        },
+        "screen34-f6": {
+          "where": "Bottom of the message box, the grey pill that says 'Haiku 4.5', next to the plus",
+          "expectation": "It opens a list where I choose which version of Claude answers me. I only know this because I have seen the 'Select model' panel; the name 'Haiku 4.5' does not tell me that on its own.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words, same place, every time.",
+      "affects_navigation": "No; it is the same button everywhere.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "As a set they behave alike. Whether 'Haiku 4.5' explains itself is a different matter, which I have noted separately.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg6": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg6.png",
+      "members": {
+        "screen1-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen3-f7": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen5-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen10-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen11-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen17-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen19-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen21-f7": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen26-f6": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        },
+        "screen34-f7": {
+          "where": "Bottom right of the message box, the grey round button with a microphone, left of the black button",
+          "expectation": "It lets me speak and have my words typed into the message box, which is how I usually enter text.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "The same microphone in the same place every time.",
+      "affects_navigation": "Yes, a lot for me, because I rely on dictation; if one of them started a spoken conversation instead of typing my words, I would be caught off guard.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "On its own the microphone is familiar to me and it never moves.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg7": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg7.png",
+      "members": {
+        "screen1-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen3-f8": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen5-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen10-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen11-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen17-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen19-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen21-f8": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen26-f7": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        },
+        "screen34-f8": {
+          "where": "Far bottom right of the message box, the black round button with vertical sound bars, next to the microphone",
+          "expectation": "Something to do with voice, perhaps talking out loud to Claude and hearing it answer. Because it sits right next to the microphone, I cannot tell how it differs from the microphone.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "They are identical and always in the same corner.",
+      "affects_navigation": "Not within this set; what worries me is the pair of voice buttons side by side, not this button changing from screen to screen.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Two voice-looking buttons sit next to each other, and the one I would mistake for 'send' is the black one. I cannot tell which one types my speech and which one starts a spoken conversation. The same sound-bar picture also appears beside 'Voice' in Settings, which suggests it is a voice setting as well.",
+        "solution": "Label the black one with a word such as 'Talk' or 'Voice chat', and keep it visibly different from the microphone and from a send arrow."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg7-tc1",
+          "what_to_try": "Do NOT press the round black button with the sound bars. Instead open the side menu (three lines, top left), press the round 'AC' letters at the bottom to open Settings, and press the row 'Voice'. Tell me what opens. Then use the back arrow to return. Afterwards look at the chat box again and tell me whether you now know which of the two voice buttons types your speech and which starts a spoken conversation.",
+          "real_if": "after this you still cannot tell the two chat-box buttons apart, or the Settings row made you more unsure",
+          "not_real_if": "the Settings row is plainly a separate settings page and you can now tell the two chat-box buttons apart",
+          "what_happened": "I did not press the black sound-bar button. I opened the side menu, pressed the orange 'AC' circle and reached Settings, then pressed the 'Voice' row, which has the same sound-bar picture. A page titled 'Voice settings' opened. It had a row of voice styles that slide sideways ('Mellow', 'Glassy', 'Rounded'), a 'Language' row showing English and a 'Pace' row showing Normal. I pressed the back arrow and was on Settings again. From that page I can now tell that the sound bars mean Claude speaking aloud to me in a chosen voice, so the black button starts a spoken conversation and the microphone types my speech. But I only know this because I went into Settings; the chat box itself still does not say it.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg8": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg8.png",
+      "members": {
+        "screen1-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen5-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen10-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen11-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen17-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen19-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        },
+        "screen26-f2": {
+          "where": "Top right corner of the home chat screen, a small outline ghost",
+          "expectation": "I do not recognize the picture. From the incognito screen, which has a large ghost and the words 'Incognito chat', I would work out that it starts a private chat, but only after I have seen that screen.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same ghost in the same corner.",
+      "affects_navigation": "Only in that it turns into an X once pressed, so the corner does not keep one picture.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I do not recognize the ghost as meaning anything, so I cannot connect it to incognito until after I have pressed it. Once pressed, the ghost is gone and an X is in its place, so the same corner shows two pictures and I cannot tell which state I am in.",
+        "solution": "Add the word 'Incognito' under or beside the ghost, and keep the ghost in the corner shown as switched on, rather than replacing it with an X."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg8-tc1",
+          "what_to_try": "On the chat screen, press the ghost in the top-right corner. Look at the screen and tell me whether you can tell which state you are in. Then press whatever is in that corner now and tell me where you are.",
+          "real_if": "you cannot tell which state you are in after either press",
+          "not_real_if": "you can tell each time which state you are in",
+          "what_happened": "On the chat screen I pressed the ghost. The change was slow; the first time I pressed again because nothing seemed to happen, and I ended up back where I started without seeing the change. When I pressed once and waited, the screen clearly said 'Incognito chat' at the top, with a large ghost and a sentence explaining that these chats stay out of my history. The corner now held an X. I pressed the X and, after a short wait, the heading was gone and the ordinary greeting was back with the ghost in the corner. Once each screen had settled I could tell which state I was in, because of the words 'Incognito chat'. The corner picture on its own did not tell me that.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg9": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg9.png",
+      "members": {
+        "screen4-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen20-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen27-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen28-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen31-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen32-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        },
+        "screen35-f2": {
+          "where": "Middle of the Pro plan card, the wide black button under 'Billed monthly' and 'Billed annually'",
+          "expectation": "It starts paying for the Pro plan, with whichever billing option is chosen above it.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words, same place on the Pro card.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says exactly what it does.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg10": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg10.png",
+      "members": {
+        "screen4-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen20-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen27-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen28-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen31-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen32-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        },
+        "screen35-f3": {
+          "where": "Bottom of the Pro plan card, the small grey underlined words 'Limits apply', under the list of features",
+          "expectation": "It shows me what the limits on the Pro plan are.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "The same underlined words in the same place.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They are identical; I would expect an explanation each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg11": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg11.png",
+      "members": {
+        "screen2-f8": {
+          "where": "Bottom right of the open side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation with Claude.",
+          "confidence": "sure"
+        },
+        "screen12-f3": {
+          "where": "Bottom right of the Chats screen, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation with Claude.",
+          "confidence": "sure"
+        },
+        "screen18-f8": {
+          "where": "Bottom right of the open side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation with Claude.",
+          "confidence": "sure"
+        },
+        "screen33-f8": {
+          "where": "Bottom right of the open side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation with Claude.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words and same shape in the side menu and on the Chats screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words are explicit and it looks the same in both places.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg12": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg12.png",
+      "members": {
+        "screen2-f1": {
+          "where": "The dimmed grey strip down the right edge while the side menu is open; at its top is the ghost",
+          "expectation": "I think pressing the grey area closes the side menu. But there is a ghost drawn at the top of it, and if I press on the ghost I do not know whether I close the menu or start an incognito chat.",
+          "confidence": "guessing"
+        },
+        "screen18-f1": {
+          "where": "The dimmed grey strip down the right edge while the side menu is open; at its top is an X",
+          "expectation": "I think pressing the grey area closes the side menu. The X at the top of it makes me unsure whether it closes the menu or the incognito chat behind it.",
+          "confidence": "guessing"
+        },
+        "screen33-f1": {
+          "where": "The dimmed grey strip down the right edge while the side menu is open; at its top is the ghost",
+          "expectation": "I think pressing the grey area closes the side menu. But there is a ghost drawn at the top of it, and if I press on the ghost I do not know whether I close the menu or start an incognito chat.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "unsure",
+      "same_expectation_why": "The grey area should close the menu each time, but the picture drawn at its top is a ghost on two screens and an X on the third, and I cannot tell whether those pictures are still pressable through the grey.",
+      "affects_navigation": "Yes: I would avoid pressing anywhere on the grey strip in case I hit the ghost or the X by mistake, and I would close the menu some other way.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "One large grey box holds two different pictures in its corner depending on the screen underneath, and I cannot tell what a press there will do: close the menu, or act on what is underneath.",
+        "solution": "Give the menu its own close button, with the word 'Close', inside the menu itself, and make the grey area plainly inactive."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg12-tc1",
+          "what_to_try": "On the chat screen open the side menu (three lines, top left). Press the grey strip on the right, on the spot where a faded picture shows through. Tell me whether the menu closed or whether the thing underneath was pressed.",
+          "real_if": "the press acted on the thing underneath, or you could not tell what happened",
+          "not_real_if": "the menu simply closed",
+          "what_happened": "On the chat screen I opened the side menu. The ghost showed faintly through the grey strip on the right. I pressed right on that faded ghost. The menu slid away and I was on the ordinary chat screen. I waited and looked again; it had not gone into incognito. The press only closed the menu.",
+          "status": "executed"
+        },
+        {
+          "id": "kwame-gg12-tc2",
+          "what_to_try": "Open the menu and press the round 'AC' letters to go to Settings. Open the side menu again from Settings and press the grey strip there too. Compare the two.",
+          "real_if": "the grey strip did different things on the two screens",
+          "not_real_if": "it closed the menu both times",
+          "what_happened": "I opened the menu, pressed 'AC' and reached Settings. I opened the menu again from Settings; this time a faded round 'i' showed through the grey strip. I pressed on it. The menu closed and I was on Settings, and nothing else opened. It closed the menu both times, whatever picture was showing through underneath.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "reversed",
+      "provisional": false
+    },
+    "gg13": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg13.png",
+      "members": {
+        "screen2-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it to be the title of the menu, not a button. If it does anything, I would guess it takes me to the main chat screen.",
+          "confidence": "no idea"
+        },
+        "screen18-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it to be the title of the menu, not a button. If it does anything, I would guess it takes me to the main chat screen.",
+          "confidence": "no idea"
+        },
+        "screen33-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it to be the title of the menu, not a button. If it does anything, I would guess it takes me to the main chat screen.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same title on the same menu.",
+      "affects_navigation": "No; I would not press it on purpose.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I would treat it as a heading and use the items underneath instead. It does not get in my way.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg14": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg14.png",
+      "members": {
+        "screen2-f3": {
+          "where": "In the side menu, the first row: 'Chats' with a small picture before it",
+          "expectation": "It opens the list of my previous conversations.",
+          "confidence": "sure"
+        },
+        "screen18-f3": {
+          "where": "In the side menu, the first row: 'Chats' with a small picture before it",
+          "expectation": "It opens the list of my previous conversations.",
+          "confidence": "sure"
+        },
+        "screen33-f3": {
+          "where": "In the side menu, the first row: 'Chats' with a small picture before it",
+          "expectation": "It opens the list of my previous conversations.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word, same picture, same position in the same menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A word, a picture, and it never moves. This is the kind of menu I can orient myself with.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg15": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg15.png",
+      "members": {
+        "screen2-f4": {
+          "where": "In the side menu, the second row: 'Projects' with a small picture before it",
+          "expectation": "It opens my projects.",
+          "confidence": "sure"
+        },
+        "screen18-f4": {
+          "where": "In the side menu, the second row: 'Projects' with a small picture before it",
+          "expectation": "It opens my projects.",
+          "confidence": "sure"
+        },
+        "screen33-f4": {
+          "where": "In the side menu, the second row: 'Projects' with a small picture before it",
+          "expectation": "It opens my projects.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word, same picture, same position in the same menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A word, a picture, and it never moves. This is the kind of menu I can orient myself with.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg16": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg16.png",
+      "members": {
+        "screen2-f5": {
+          "where": "In the side menu, the third row: 'Code' with a small picture before it",
+          "expectation": "It opens a coding section of the app.",
+          "confidence": "guessing"
+        },
+        "screen18-f5": {
+          "where": "In the side menu, the third row: 'Code' with a small picture before it",
+          "expectation": "It opens a coding section of the app.",
+          "confidence": "guessing"
+        },
+        "screen33-f5": {
+          "where": "In the side menu, the third row: 'Code' with a small picture before it",
+          "expectation": "It opens a coding section of the app.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word, same picture, same position in the same menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A word, a picture, and it never moves. This is the kind of menu I can orient myself with.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg17": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg17.png",
+      "members": {
+        "screen2-f6": {
+          "where": "In the side menu, the fourth row: 'Artifacts' with a small picture before it",
+          "expectation": "It opens things Claude has made for me, though I am not certain what an 'Artifact' is.",
+          "confidence": "guessing"
+        },
+        "screen18-f6": {
+          "where": "In the side menu, the fourth row: 'Artifacts' with a small picture before it",
+          "expectation": "It opens things Claude has made for me, though I am not certain what an 'Artifact' is.",
+          "confidence": "guessing"
+        },
+        "screen33-f6": {
+          "where": "In the side menu, the fourth row: 'Artifacts' with a small picture before it",
+          "expectation": "It opens things Claude has made for me, though I am not certain what an 'Artifact' is.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word, same picture, same position in the same menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A word, a picture, and it never moves. This is the kind of menu I can orient myself with.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg18": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg18.png",
+      "members": {
+        "screen2-f7": {
+          "where": "Bottom left of the side menu, the orange circle with the letters 'AC'",
+          "expectation": "It opens my account, probably my profile and settings.",
+          "confidence": "guessing"
+        },
+        "screen18-f7": {
+          "where": "Bottom left of the side menu, the orange circle with the letters 'AC'",
+          "expectation": "It opens my account, probably my profile and settings.",
+          "confidence": "guessing"
+        },
+        "screen33-f7": {
+          "where": "Bottom left of the side menu, the orange circle with the letters 'AC'",
+          "expectation": "It opens my account, probably my profile and settings.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same circle, same letters, same corner of the same menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is always the same. Initials in a circle is a pattern I know means 'me'.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg19": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg19.png",
+      "members": {
+        "screen3-f3": {
+          "where": "Middle of the incognito chat screen, the underlined 'Learn more' under the sentence about incognito chats",
+          "expectation": "It explains in more detail what an incognito chat is.",
+          "confidence": "sure"
+        },
+        "screen21-f3": {
+          "where": "Middle of the incognito chat screen, the underlined 'Learn more' under the sentence about incognito chats",
+          "expectation": "It explains in more detail what an incognito chat is.",
+          "confidence": "sure"
+        },
+        "screen34-f3": {
+          "where": "Middle of the incognito chat screen, the underlined 'Learn more' under the sentence about incognito chats",
+          "expectation": "It explains in more detail what an incognito chat is.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words under the same sentence.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence above tells me what it will explain.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg20": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg20.png",
+      "members": {
+        "screen12-f2": {
+          "where": "Top right corner of the Chats screen, three vertical sliders",
+          "expectation": "I think it lets me filter or sort my chats. It might also open settings, because the same slider picture sits next to 'Capabilities' on the Settings screen.",
+          "confidence": "guessing"
+        },
+        "screen13-f2": {
+          "where": "Top right corner of the Chats screen, three vertical sliders",
+          "expectation": "I think it lets me filter or sort my chats. It might also open settings, because the same slider picture sits next to 'Capabilities' on the Settings screen.",
+          "confidence": "guessing"
+        },
+        "screen15-f2": {
+          "where": "Top right corner of the Chats screen, three vertical sliders",
+          "expectation": "I think it lets me filter or sort my chats. It might also open settings, because the same slider picture sits next to 'Capabilities' on the Settings screen.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "All three are on the Chats screen in the same corner.",
+      "affects_navigation": "A little: if the sliders here filter chats but the same sliders in Settings mean capabilities, I would have to remember two meanings for one picture.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The three here are consistent with each other, but I have seen the same slider picture on the Settings screen beside 'Capabilities', so I would not be confident whether this one sorts my list or takes me somewhere to change what Claude can do.",
+        "solution": "Put the word 'Filter' or 'Sort' beside it, so it is not confused with the Capabilities setting."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-gg20-tc1",
+          "what_to_try": "Open the side menu and press 'Chats'. Press the icon with the three sliders at the top right. Tell me whether it sorted or filtered your list, or took you somewhere to change what Claude can do. Tap on an empty part of the screen to close whatever opened.",
+          "real_if": "it took you somewhere you did not expect, or you could not tell what it was for",
+          "not_real_if": "it plainly acted on the list of chats",
+          "what_happened": "I opened the menu and pressed 'Chats'. On the live app there are now two small pictures in the top-right corner: the sliders, and a list with ticks beside it. I pressed the sliders. A small box opened under it with 'All' (ticked) and 'Pinned'. It acts on the list of chats; it chooses which chats to show. I tapped an empty part of the screen and the box closed. I could finish, and it did not take me anywhere else.",
+          "status": "executed"
+        },
+        {
+          "id": "kwame-gg20-tc2",
+          "what_to_try": "Optional comparison, just looking: open Settings (menu, then the 'AC' letters) and press 'Capabilities'. Do not change any switch. Use the back arrow to return. Tell me whether seeing both changes how sure you are about the sliders picture on the Chats screen.",
+          "real_if": "seeing both makes you less sure what the sliders picture does on the Chats screen",
+          "not_real_if": "you can keep the two apart",
+          "what_happened": "From Settings I pressed 'Capabilities', which has the same slider picture. A page of switches opened: Web search, Artifacts, Inline visualizations, Code execution, switching models, and a Memory section. I did not touch any switch. I pressed the back arrow and was on Settings again. Having seen both, I can keep them apart: on the Chats screen the sliders gave me a short 'All / Pinned' choice, and in Settings they led to a full page of switches. Before pressing I could not have known which one I would get.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg21": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg21.png",
+      "members": {
+        "screen6-f1": {
+          "where": "Top centre of the 'Add to chat' panel, the short grey bar above the title",
+          "expectation": "Nothing, I think. It looks like a handle for dragging the panel down to close it.",
+          "confidence": "guessing"
+        },
+        "screen22-f1": {
+          "where": "Top centre of the 'Add to chat' panel, the short grey bar above the title",
+          "expectation": "Nothing, I think. It looks like a handle for dragging the panel down to close it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same bar, same panel.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I would never press it deliberately; there is an X to close the panel.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg22": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg22.png",
+      "members": {
+        "screen6-f3": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Camera'",
+          "expectation": "It opens the camera so I can take a photo and add it to my message.",
+          "confidence": "sure"
+        },
+        "screen22-f3": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Camera'",
+          "expectation": "It opens the camera so I can take a photo and add it to my message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tile, same word, same panel.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A clear word under a clear picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg23": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg23.png",
+      "members": {
+        "screen6-f4": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Photos'",
+          "expectation": "It opens my photos so I can choose one to add.",
+          "confidence": "sure"
+        },
+        "screen22-f4": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Photos'",
+          "expectation": "It opens my photos so I can choose one to add.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tile, same word, same panel.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A clear word under a clear picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg24": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg24.png",
+      "members": {
+        "screen6-f5": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Files'",
+          "expectation": "It lets me choose a file from my phone to add.",
+          "confidence": "sure"
+        },
+        "screen22-f5": {
+          "where": "In the 'Add to chat' panel, the tile with a picture in a grey circle and the word 'Files'",
+          "expectation": "It lets me choose a file from my phone to add.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tile, same word, same panel.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A clear word under a clear picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg25": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg25.png",
+      "members": {
+        "screen6-f7": {
+          "where": "Bottom of the 'Add to chat' panel, the row 'Connectors' with an arrow on the right, under 'Web search'",
+          "expectation": "It opens another page listing connectors. I am not sure what a connector is.",
+          "confidence": "guessing"
+        },
+        "screen22-f6": {
+          "where": "Bottom of the 'Add to chat' panel, the row 'Connectors' with an arrow on the right, under 'Web search'",
+          "expectation": "It opens another page listing connectors. I am not sure what a connector is.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same word, same arrow.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "As a pair they are the same. Not knowing what 'Connectors' means is a separate issue.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg26": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg26.png",
+      "members": {
+        "screen7-f2": {
+          "where": "Bottom of the 'Select model' panel, the row 'More models' with an arrow",
+          "expectation": "It shows more versions of Claude to choose from.",
+          "confidence": "sure"
+        },
+        "screen23-f2": {
+          "where": "Bottom of the 'Select model' panel, the row 'More models' with an arrow",
+          "expectation": "It shows more versions of Claude to choose from.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words, same panel.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words say exactly what it does.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg27": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg27.png",
+      "members": {
+        "screen8-f2": {
+          "where": "Bottom of the voice introduction page, the wide black 'Continue' button",
+          "expectation": "It moves me on from this introduction to the next step, which I think is starting to use my voice.",
+          "confidence": "sure"
+        },
+        "screen24-f2": {
+          "where": "Bottom of a beige page like the voice introduction page, the wide black 'Continue' button",
+          "expectation": "It moves me on from this introduction to the next step, which I think is starting to use my voice.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button at the bottom of the same kind of page.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Continue' at the bottom of an introduction is clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg28": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/gg28.png",
+      "members": {
+        "screen14-f2": {
+          "where": "Bottom of the 'Upgrade for Claude Code' page, the wide black 'Upgrade' button above 'Return to chat'",
+          "expectation": "It takes me to the page to pay for a better plan.",
+          "confidence": "sure"
+        },
+        "screen16-f3": {
+          "where": "On the Settings screen, inside the box 'Want more Claude?', the small black 'Upgrade' button",
+          "expectation": "It takes me to the page to pay for a better plan.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word; one is wide and one is small, but both say 'Upgrade'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word is the same even though the sizes differ.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg1": {
+      "kind": "function_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/fg1.png",
+      "members": {
+        "screen1-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen3-f2": {
+          "where": "Top right corner of the chat screen, an X where the ghost normally is",
+          "expectation": "It leaves incognito and returns me to an ordinary chat, or closes this chat; I am not sure which.",
+          "confidence": "guessing"
+        },
+        "screen5-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen10-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen11-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen17-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen19-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen21-f2": {
+          "where": "Top right corner of the chat screen, an X where the ghost normally is",
+          "expectation": "It leaves incognito and returns me to an ordinary chat, or closes this chat; I am not sure which.",
+          "confidence": "guessing"
+        },
+        "screen26-f2": {
+          "where": "Top right corner of the home chat screen, the outline ghost",
+          "expectation": "I do not recognize the ghost. Only after seeing the incognito screen could I guess it starts a private chat.",
+          "confidence": "no idea"
+        },
+        "screen34-f2": {
+          "where": "Top right corner of the chat screen, an X where the ghost normally is",
+          "expectation": "It leaves incognito and returns me to an ordinary chat, or closes this chat; I am not sure which.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "no",
+      "same_expectation_why": "The ghost seems to start something and the X seems to stop it or close something, so I would not expect the same result from both.",
+      "affects_navigation": "Yes: the same corner shows two different pictures, and I have to remember that the X there is the ghost switched on, not the close button I see on every panel.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I do not recognize the ghost, and when it becomes an X it looks exactly like the close button on panels. I would not connect the X to the ghost, and I would be unsure whether pressing the X closes, deletes or leaves my chat.",
+        "solution": "Keep one picture in that corner and show it switched on or off, with the word 'Incognito' beside it, rather than swapping it for an X."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-fg1-tc1",
+          "what_to_try": "Press the ghost in the top-right corner, then press the X that replaces it. Tell me whether the X closed, deleted or left your chat, and whether you connected it to the ghost.",
+          "real_if": "you could not tell what the X would do before pressing it, or it did something you did not expect",
+          "not_real_if": "you knew the X would take you back out and it did",
+          "what_happened": "I pressed the ghost and waited until 'Incognito chat' appeared, then pressed the X that had replaced the ghost. After a short delay I was back on the ordinary greeting, with the ghost in the corner again. It left the incognito chat; it did not delete anything I could see, since my typed word came back with me. I connected the X to the ghost only because the heading 'Incognito chat' was on the screen while the X was showing. The X itself looks exactly like the close button on panels. On my first try the slow change made me press twice, and I was in and out of incognito without knowing it.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "fg2": {
+      "kind": "function_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/fg2.png",
+      "members": {
+        "screen6-f7": {
+          "where": "Bottom of the 'Add to chat' panel, the 'Connectors' row with a grey circle behind the picture and an arrow on the right",
+          "expectation": "It opens a list of connectors.",
+          "confidence": "guessing"
+        },
+        "screen16-f7": {
+          "where": "On the Settings screen, the 'Connectors' row between 'Capabilities' and 'Permissions', with no grey circle and no arrow",
+          "expectation": "It opens a page about connectors, probably the same list.",
+          "confidence": "guessing"
+        },
+        "screen22-f6": {
+          "where": "Bottom of the 'Add to chat' panel over an incognito chat, the 'Connectors' row with a grey circle and an arrow",
+          "expectation": "It opens a list of connectors.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "All three say 'Connectors' with the same picture, so I would expect the same list, even though the Settings one looks a little plainer.",
+      "affects_navigation": "No; the word carries it for me.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The same word and the same picture tie them together. The difference in background and arrow is small.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg3": {
+      "kind": "function_group",
+      "sheet": "output/Claude/functionality-detector/sheets/fg3.png",
+      "members": {
+        "screen1-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen3-f4": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen5-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen10-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen11-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen14-f2": {
+          "where": "Bottom of the 'Upgrade for Claude Code' page, the wide black 'Upgrade' button",
+          "expectation": "It takes me to the page to pay for a better plan, perhaps one that includes Claude Code.",
+          "confidence": "sure"
+        },
+        "screen16-f3": {
+          "where": "Settings screen, inside 'Want more Claude?', the small black 'Upgrade' button",
+          "expectation": "It takes me to the page to pay for a better plan.",
+          "confidence": "sure"
+        },
+        "screen17-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen19-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen26-f3": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "Right-hand end of the grey strip above the message box, purple 'Upgrade to Pro'",
+          "expectation": "It takes me to the page to buy the Pro plan.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "All of them contain the word 'Upgrade', so I would expect them all to take me to the plan page.",
+      "affects_navigation": "No; the word is what I go by, not the colour or shape.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Upgrade' is on all of them. The purple text and the black buttons look different, but I would connect them without effort.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg4": {
+      "kind": "function_group",
+      "sheet": "output/Claude/functionality-detector/sheets/fg4.png",
+      "members": {
+        "screen2-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it for the menu's title. If it does something, perhaps it takes me to the main screen.",
+          "confidence": "no idea"
+        },
+        "screen2-f8": {
+          "where": "Bottom right of the side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation.",
+          "confidence": "sure"
+        },
+        "screen12-f3": {
+          "where": "Bottom right of the Chats screen, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation.",
+          "confidence": "sure"
+        },
+        "screen18-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it for the menu's title. If it does something, perhaps it takes me to the main screen.",
+          "confidence": "no idea"
+        },
+        "screen18-f8": {
+          "where": "Bottom right of the side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation.",
+          "confidence": "sure"
+        },
+        "screen33-f2": {
+          "where": "Top of the side menu, the large word 'Claude'",
+          "expectation": "I would take it for the menu's title. If it does something, perhaps it takes me to the main screen.",
+          "confidence": "no idea"
+        },
+        "screen33-f8": {
+          "where": "Bottom right of the side menu, the black '+ New chat' button",
+          "expectation": "It starts a new, empty conversation.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "no",
+      "same_expectation_why": "'New chat' says it starts a conversation; 'Claude' looks like a title, and I would not expect a title to do anything, least of all start a new chat.",
+      "affects_navigation": "Yes: if pressing the title quietly starts a new chat, I could lose the conversation I was in without meaning to, and then I would be lost.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The 'New chat' buttons are perfectly clear. The word 'Claude' at the top of the menu gives no sign that it is a button or what it would do, so I would never find that job there, and I would be startled if I pressed it by accident.",
+        "solution": "If the title starts a new chat, say so ('Claude — new chat'), or make it only a title and keep 'New chat' as the one way to do it."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-fg4-tc1",
+          "what_to_try": "Open the side menu. Press the word 'Claude' at the top of the menu. Tell me what happened and whether you expected it.",
+          "real_if": "something happened that you did not expect or intend",
+          "not_real_if": "nothing happened, or exactly what you expected",
+          "what_happened": "I opened the side menu and pressed the large word 'Claude' at the top. The menu closed and I was on an empty chat, with the cursor in the message box and the keyboard up, ready to type. Later I pressed '+ New chat' in the same menu and got exactly the same result. So the title does the same job as 'New chat'. I did not expect a title to do anything. I was already on an empty chat, so nothing was lost this time; I did not send a message to see whether it would take me away from a conversation in progress, because that would need a real prompt.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "unchanged",
+      "provisional": false
+    },
+    "cfg1": {
+      "kind": "candidate_function_group",
+      "sheet": "inputs/Claude/functionality-groups/groups/cfg1.png",
+      "members": {
+        "screen4-f1": {
+          "where": "Top left corner of the 'Get more Claude' plan page, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen6-f2": {
+          "where": "Top left corner of the 'Add to chat' panel with the camera tile, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen7-f1": {
+          "where": "Top left corner of the 'Select model' panel (Fable 5.1 is visible), just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen8-f1": {
+          "where": "Top left corner of the voice introduction page with the microphone drawing, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen22-f2": {
+          "where": "Top left corner of the 'Add to chat' panel with the camera tile, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen23-f1": {
+          "where": "Top left corner of the 'Select model' panel, opened over an incognito chat, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen24-f1": {
+          "where": "Top left corner of a page with a plain beige background, like the voice introduction page, just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen27-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen28-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen31-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        },
+        "screen35-f1": {
+          "where": "Top left corner of a plan page that begins with a large 'G', just under the grey band at the top",
+          "expectation": "It closes this panel or page and puts me back where I was before it opened.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The pictures also carry thin dotted teal/green boxes that the screen-capture tool drew. They are not part of the app. Disregard them; only the solid pink box marks the thing you are being asked about.",
+        "The app on the phone today looks a little different from the pictures in places (a different greeting line, some newer model names, a few extra rows or icons). Judge the pictures, and when you use the phone, go by what you see there."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Every one is the same X in the top-left corner of a panel that has slid up over the screen.",
+      "affects_navigation": "No; I would use it the same way every time.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same picture, same corner, and each time it is on a panel sitting over the screen I came from. I know what to expect.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "groups_reviewed": 33,
+    "no_problem": 25,
+    "navigate_with_difficulty": 8,
+    "cannot_handle": 0,
+    "same_expectation": {
+      "yes": 29,
+      "no": 2,
+      "unsure": 2
+    },
+    "tests_run": 11,
+    "opinions": {
+      "unchanged": 1,
+      "hardened": 0,
+      "softened": 5,
+      "reversed": 2
+    },
+    "out_of_scope": 7,
+    "not_executed": 0
+  },
+  "out_of_scope": [
+    {
+      "group": "gg3",
+      "why": "'Upgrade to Pro' is small purple text on a light grey strip; reading it takes effort.",
+      "category": "size and contrast"
+    },
+    {
+      "group": "gg10",
+      "why": "'Limits apply' is small, pale grey underlined text; I have to strain to read it.",
+      "category": "size and contrast"
+    },
+    {
+      "group": "gg5",
+      "why": "'Haiku 4.5' is a product name that does not tell me it chooses the model; this is about what the word means, not about the set being consistent.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg25",
+      "why": "I do not know what 'Connectors' means; that is about the word, not about the pair behaving differently.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg17",
+      "why": "I am not certain what 'Artifacts' means.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg13",
+      "why": "The large 'Claude' title gives no sign of being pressable.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg8",
+      "why": "I do not recognize the ghost as meaning anything, so I cannot connect it to incognito until after I have pressed it.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    }
+  ]
+}

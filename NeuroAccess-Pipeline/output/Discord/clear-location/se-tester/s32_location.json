@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s32",
+  "state_str": "ca362c914abe63dcf557d716cbc12296",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215632.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s32_header_nav.png",
+  "name": "search inside #general",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "in: general",
+      "verdict_on_region": "an app-inserted scope chip inside the search field ('in: general'); names where the search is looking — counted, weakly: the word 'Search' itself is not drawn"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Members / Media / Pins / Threads / Links / Files tabs with the current one underlined; the underline moved live when another tab was tapped — counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"in: general\"",
+  "identifier_class": "header + navigation with visible active state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the scope chip 'in: general' names the channel being searched, and the Members tab is underlined; the word 'Search' is only implied by the magnifier glyph",
+  "test_cases": [
+    {
+      "id": "s32-tc1",
+      "type": "verification",
+      "precondition": "#general channel",
+      "action": "tap the search glyph in the top bar",
+      "expected_result": "a scope chip or title names where the search is",
+      "confirms_if": "nothing names the channel or the fact of searching",
+      "overturns_if": "a chip or title names the scope",
+      "observed_result": "reproduced the capture: the field opens with an app-inserted chip 'in: general' and the cursor after it; tabs Members / Media / Pins / Threads / Links / Files with Members underlined. The word 'Search' is not drawn; the chip is the only place name",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: reproduced the capture: the field opens with an app-inserted chip 'in: general' and the cursor after it; tabs Members / Media / Pins / Threads / Links / Files with Members underlined. The word 'Search' is not drawn; the chip is the only place name",
+  "recommendation": "draw the word 'Search' (e.g. 'Search in #general') rather than relying on the chip and the magnifier glyph",
+  "provisional": false
+}

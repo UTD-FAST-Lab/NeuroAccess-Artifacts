@@ -1,0 +1,69 @@
+{
+ "app": "Messenger",
+ "screen": "screen5",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen5_actionable_elements.png",
+ "elements": {
+  "screen5-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Allow'",
+   "location": "middle, centre",
+   "bounds": [
+    133,
+    1206,
+    947,
+    1352
+   ],
+   "visible_text": "(Android UI) 'Allow'",
+   "accessibility_text_consulted": null,
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": null,
+   "initial_rationale": "out of app: this surface belongs to Android (permission controller / Settings), not to com.facebook.orca",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": null,
+   "deciding_evidence": "OUT OF APP - not judged. Android's own UI was captured in the crawl; recorded as detector feedback for actionable-elements-detector and not shown to the personas",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen5-a2": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Don’t allow'",
+   "location": "middle, centre",
+   "bounds": [
+    133,
+    1363,
+    947,
+    1508
+   ],
+   "visible_text": "(Android UI) 'Don’t allow'",
+   "accessibility_text_consulted": null,
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": null,
+   "initial_rationale": "out of app: this surface belongs to Android (permission controller / Settings), not to com.facebook.orca",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": null,
+   "deciding_evidence": "OUT OF APP - not judged. Android's own UI was captured in the crawl; recorded as detector feedback for actionable-elements-detector and not shown to the personas",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 0,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 0,
+  "clear_via_common_icon_exemption": 0,
+  "detection_false_positives": 0,
+  "test_cases_executed": 0,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 0,
+  "instincts_overturned": 0,
+  "provisional_verdicts": 0
+ }
+}

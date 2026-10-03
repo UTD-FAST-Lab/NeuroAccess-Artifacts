@@ -1,0 +1,26 @@
+{
+  "app": "Claude",
+  "screen": "s15",
+  "state_str": "71ad93d66dde03835a62a1f6759d62c1",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134030.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s15_header_nav.png",
+  "name": "the voice-input introduction page after choosing English (India)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Send messages to Claude using your voice.",
+      "verdict_on_region": "same headline as s7 \u2014 accepted as self-evident body copy"
+    }
+  ],
+  "identifier_found": "the voice-input headline",
+  "identifier_class": "self_evident_body",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "same page as s7",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s7 (same structure_str 6bd3aa17\u2026, same headline; only the chosen language differs, which does not change the answer); tested live under s7-tc1",
+  "recommendation": null,
+  "provisional": false
+}

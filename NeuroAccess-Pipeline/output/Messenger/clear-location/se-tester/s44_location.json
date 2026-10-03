@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s44",
+  "state_str": "d96526327d2bcadcff49dcc5ba1b5653",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152051.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s44_header_nav.png",
+  "name": "thread settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Marco Peralta.",
+      "verdict_on_region": "contact name heading the page — names a person, not which page this is (chat, profile or chat settings); it also scrolls away with the content and the top bar stays empty"
+    }
+  ],
+  "identifier_found": "the top bar carries only Back and a menu; the contact name heading the page names a person, not the chat-settings page, and scrolls away",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the top bar carries only Back and a menu; the contact name heading the page names a person, not the chat-settings page, and scrolls away",
+  "test_cases": [
+    {
+      "id": "s44-tc1",
+      "type": "verification",
+      "precondition": "a conversation open (Krishna Bharti) with its name in the top bar",
+      "action": "tap the info (i) icon; scroll the settings page down and back",
+      "expected_result": "a title appears in the top bar on scroll, or the top bar stays empty",
+      "confirms_if": "top bar has only Back and a menu in every scroll state",
+      "overturns_if": "a collapsing top bar shows the contact name or a page title on scroll",
+      "observed_result": "thread settings opened with a back arrow and three-dot menu only; the large \"Krishna Bharti\" heading scrolled off with the content and the top bar stayed empty while \"Actions\", \"Privacy & support\" rows were shown; no title in any state (tested on the Krishna Bharti thread — same template as Marco Peralta's)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed on the device: the top bar carries only Back and a menu; the contact name heading the page names a person, not the chat-settings page, and scrolls away; tested on the Krishna Bharti thread settings (s49's thread) — same template, content does not change the answer; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "put a title in the empty top bar, e.g. \"Chat settings — Krishna Bharti\", and keep it when the heading scrolls away",
+  "provisional": false
+}

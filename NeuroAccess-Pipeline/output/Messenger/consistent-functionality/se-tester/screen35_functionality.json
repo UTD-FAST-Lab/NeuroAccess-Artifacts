@@ -1,0 +1,133 @@
+{
+  "app": "Messenger",
+  "screen": "screen35",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen35_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen35_function_groups.png"
+  },
+  "elements": {
+    "screen35-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of screen35",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "arrow pointing left: back — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "back",
+      "accessibility_text": "content_desc: 'Back'; talkback_label: 'Back'",
+      "context_reading": "'Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account",
+      "observed_function": "returned to the previous screen (the side menu)",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen35-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen35 ('Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account)",
+          "action": "note what is on screen, then tap the arrow pointing left at top left of screen35",
+          "expected_result": "the same result as the other members of gg3 (arrow pointing left)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "returned to the previous screen (the side menu)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen35-f2": {
+      "kind": "icon+label",
+      "appearance": "grey person silhouette with the words \"Ally Cooper\", \"Signed in\" and a check mark",
+      "state": "checked",
+      "location": "top centre of screen35",
+      "bounds": [
+        0,
+        211,
+        1080,
+        358
+      ],
+      "visible_label": "Ally Cooper / Signed in",
+      "convention_relied_on": "grey person silhouette with the words \"Ally Cooper\", \"Signed in\" and a check mark: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "switch to ally cooper",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Switch to Ally Cooper, signed in'",
+      "context_reading": "'Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen35-f2",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen35 ('Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account)",
+          "action": "note what is on screen, then tap the grey person silhouette with the words \"Ally Cooper\", \"Signed in\" and a check mark at top centre of screen35",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "would switch account — forbidden",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen35-f3": {
+      "kind": "icon+label",
+      "appearance": "plus sign with the words \"Log into another Meta Account\"",
+      "state": null,
+      "location": "middle centre of screen35",
+      "bounds": [
+        0,
+        451,
+        1080,
+        598
+      ],
+      "visible_label": "Log into another Meta Account",
+      "convention_relied_on": "plus sign with the words \"Log into another Meta Account\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "log into another meta account",
+      "accessibility_text": "content_desc: 'Log into another Meta Account'; talkback_label: 'Log into another Meta Account'",
+      "context_reading": "'Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen35-f3",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen35 ('Switch profile' page: back arrow, Ally Cooper Signed in ✓, Log into another Meta Account)",
+          "action": "note what is on screen, then tap the plus sign with the words \"Log into another Meta Account\" at middle centre of screen35",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "would start a new login — forbidden",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 2,
+    "provisional_verdicts": 2
+  }
+}

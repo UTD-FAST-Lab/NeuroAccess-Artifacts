@@ -1,0 +1,70 @@
+{
+  "app": "PDFReader",
+  "screen": "screen14",
+  "image": "inputs/PDFReader/actionable-elements-highlighted/screen14_actionable_elements.png",
+  "elements": {
+    "screen14-a1": {
+      "kind": "button",
+      "glyph": null,
+      "description": "dark full-width button \"GO TO SET\" in the permission dialog",
+      "location": "bottom of the dialog",
+      "bounds": [
+        79,
+        2085,
+        1001,
+        2211
+      ],
+      "visible_text": "\"GO TO SET\", under \"Request permission to access all files\" and its explanation",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "\"GO TO SET\" is not a phrase — \"SET\" could be settings, a setting, or setting something; it does not say that the user will leave the app for a system page, and the dialog offers no other way out",
+      "test_cases": [
+        {
+          "id": "screen14-a1-tc1",
+          "type": "expected",
+          "precondition": "permission dialog open (via the floating button or any Tools tile)",
+          "action": "tap GO TO SET, observe, return with Back without toggling anything",
+          "expected_result": "the reading \"go to settings\" — a system settings page opens",
+          "confirms_if": "the words and the destination can only be matched by guessing",
+          "overturns_if": "the destination is announced by the words themselves",
+          "observed_result": "the Android system page \"All files access\" opened (outside the app) with the switch \"Allow access to manage all files\" off; returned with Back without touching it",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen14-a1-tc2",
+          "type": "unexpected",
+          "precondition": "permission dialog open",
+          "action": "look for any way to decline or close the dialog on screen, then press the system Back key",
+          "expected_result": "no on-screen way out; Back closes it",
+          "confirms_if": "the only on-screen choice is the unclear button",
+          "overturns_if": "a visible cancel/close option exists",
+          "observed_result": "the dialog has no cancel or close control on screen; the system Back key dismissed it",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the button does open system settings, but \"GO TO SET\" only makes sense once you have seen where it goes — the words themselves do not name the destination",
+      "recommendation": "relabel it \"Open Settings to allow access\" (or \"Go to Settings\"), and add a \"Not now\" option",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 1,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 0,
+    "clear_via_common_icon_exemption": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 1,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

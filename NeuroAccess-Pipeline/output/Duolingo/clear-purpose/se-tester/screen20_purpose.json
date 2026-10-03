@@ -1,0 +1,141 @@
+{
+  "app": "Duolingo",
+  "screen": "screen20",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen20_actionable_elements.png",
+  "elements": {
+    "screen20-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        42,
+        96,
+        102,
+        156
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no content_desc or talkback label; nothing consulted",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen4-a1, the same X on the same page type, tested once: the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen20-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "white button in the purple family-plan banner",
+      "location": "Shop, top banner",
+      "bounds": [
+        84,
+        790,
+        996,
+        916
+      ],
+      "visible_text": "\"TRY 1 WEEK FOR FREE\" under \"Save with a family plan! Get faster learning for 2–6 people\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the button says it starts a one-week free trial of the plan described above",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen4-a2 (same control on the duplicate screen): Clear on the visible text; no test was required and running it would start a trial",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen20-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "offer card with a NEW badge",
+      "location": "Shop, Special Offers",
+      "bounds": [
+        42,
+        1221,
+        1038,
+        1593
+      ],
+      "visible_text": "\"Widget Reward\" / \"Add the Duolingo widget to your home screen to earn an XP Boost.\" / \"GET STARTED\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the card explains what to do and what you get; GET STARTED begins it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test required (the sibling 'Widget Boost' row opened an 'Add the widget' explainer, consistent with this reading)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen20-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "offer card with a chest-and-play picture",
+      "location": "Shop, Special Offers",
+      "bounds": [
+        42,
+        1635,
+        1038,
+        1957
+      ],
+      "visible_text": "\"Free Chest\" / \"Watch an ad to earn up to 15 gems\" / \"CLAIM CHEST\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the card says pressing plays an ad in exchange for gems",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen20-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "offer card clipped by the bottom of the viewport",
+      "location": "Shop, Streak section, bottom edge",
+      "bounds": [
+        42,
+        2178,
+        1038,
+        2337
+      ],
+      "visible_text": "\"Streak Freeze\" / \"Protect your streak if you miss a day…\" (cut off; no price or action word visible)",
+      "accessibility_text_consulted": "talkback repeats the title and description; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the visible part names an item but not what pressing does (buy? how much? equip?) — no action word and no price in view",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen4-a5 (same control on the duplicate screen): PROVISIONAL — not tested (would risk spending gems); the visible part names the item but not the action or its cost",
+      "recommendation": "show the price and an action word ('Buy for 200 gems') in the visible part of the card",
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 1
+  }
+}

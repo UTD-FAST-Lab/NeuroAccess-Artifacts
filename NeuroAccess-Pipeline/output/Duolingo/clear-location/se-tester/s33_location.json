@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s33",
+  "state_str": "753b94b7cb47541f64d91d5de1c34728",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185826.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s33_header_nav.png",
+  "name": "the user's Friends list",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "worded tab row; the current tab (\"FOLLOWERS\") is declared selected and drawn with a coloured label and underline — locates the user within the screen"
+    }
+  ],
+  "identifier_found": "back arrow, 'Friends' (light grey), FOLLOWING/FOLLOWERS tabs with the current one blue and underlined",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title plus visibly selected tab",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title and declared, visibly rendered tab selection; template carry from s31's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s50",
+  "state_str": "6eef1a36107a622348d5799f5a513fa2",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190230.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s50_header_nav.png",
+  "name": "the share sheet over Find your friends",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Find your friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "FOLLOW ME ON DUOLINGO!",
+      "verdict_on_region": "content: the caption of the card being shared, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "'Find your friends' still readable at the top under the scrim; a share card captioned 'FOLLOW ME ON DUOLINGO!' with Messages/Save/More",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the underlying title stays readable; the sheet is a modal with an X",
+  "test_cases": [
+    {
+      "id": "s50-tc1",
+      "type": "unconventional_region",
+      "precondition": "Find your friends",
+      "action": "tap Share follow link and read the sheet; close with X",
+      "expected_result": "-",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "not executed — opening the share flow is next to sharing, which the run forbids",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'FOLLOW ME ON DUOLINGO!' is the caption of the card being shared — dismissed as content; the dimmed 'Find your friends' title locates the user",
+  "recommendation": null,
+  "provisional": false
+}

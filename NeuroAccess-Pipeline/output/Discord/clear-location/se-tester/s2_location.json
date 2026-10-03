@@ -1,0 +1,31 @@
+{
+  "app": "Discord",
+  "screen": "s2",
+  "state_str": "fe28ff68a305bab237d71534e4130a9b",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215154.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s2_header_nav.png",
+  "name": "the #general channel of the server, empty",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Welcome to Accessibility Testin's server",
+      "verdict_on_region": "names the server, but as the opening greeting of the channel's message history, not as a screen title; it sits in the scrolling message stream and moves up and away as soon as messages exist (seen live) — content, not counted as an identifier"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' with the '#' channel sign and back arrow names the channel; the mid-screen welcome is a greeting in the message stream",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s20: same layout and the same top header text, so the content does not change the answer",
+  "recommendation": null,
+  "provisional": false
+}

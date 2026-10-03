@@ -1,0 +1,26 @@
+{
+  "app": "Duolingo",
+  "screen": "s56",
+  "state_str": "eb7a7ad63f7ef41eae16922443480839",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190331.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s56_header_nav.png",
+  "name": "another user's profile",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Baron Laqeas",
+      "verdict_on_region": "another user's name centred in a top bar with a back arrow — a title naming the current context"
+    }
+  ],
+  "identifier_found": "back arrow with 'Baron Laqeas' centred in the top bar and a share icon",
+  "identifier_class": "back affordance + title",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "back affordance paired with a title naming the current context",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "back arrow plus the person's name in a titled top bar; not re-checked live (the other user's profile could not be reached: the live Find-your-friends screen shows no suggestions, and searching by name (typing into the app) was refused on this run)",
+  "recommendation": null,
+  "provisional": false
+}

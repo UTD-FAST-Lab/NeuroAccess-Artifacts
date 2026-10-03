@@ -1,0 +1,121 @@
+{
+  "app": "Claude",
+  "screen": "screen13",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen13_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen13_function_groups.png"
+  },
+  "elements": {
+    "screen13-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen13 (projects)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "screen titled \"Projects\" with a \"Search projects\" field and an empty-state message; \"+ New project\" at the bottom right",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen13-f1",
+          "type": "same_appearance",
+          "precondition": "app open on projects (live equivalent of screen13); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen13 (projects)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f2": {
+      "kind": "icon",
+      "appearance": "three vertical sliders",
+      "state": null,
+      "location": "top right of screen13 (projects)",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "the sliders glyph conventionally means filter or adjust — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "filter projects",
+      "accessibility_text": "content_desc: \"Filter projects\"; talkback_label: \"Filter projects\" — evidence of intent only",
+      "context_reading": "screen titled \"Projects\" with a \"Search projects\" field and an empty-state message; \"+ New project\" at the bottom right",
+      "observed_function": "opened a dropdown \"Yours ✓ / Archived\" under the icon",
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-screen13-f2",
+          "type": "same_appearance",
+          "precondition": "app open on projects (live equivalent of screen13); context noted before the tap",
+          "action": "tap three vertical sliders at top right of screen13 (projects)",
+          "expected_result": "each opens a filter for the list on its own screen (chats / projects / artifacts)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg20 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened a dropdown \"Yours ✓ / Archived\" under the icon",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f3": {
+      "kind": "icon+label",
+      "appearance": "plus sign with the words \"New project\"",
+      "state": null,
+      "location": "bottom centre of screen13 (projects)",
+      "bounds": [
+        638,
+        2174,
+        1038,
+        2300
+      ],
+      "visible_label": "New project",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "new project",
+      "accessibility_text": "content_desc: \"New project\"; talkback_label: \"New project\" — evidence of intent only",
+      "context_reading": "screen titled \"Projects\" with a \"Search projects\" field and an empty-state message; \"+ New project\" at the bottom right",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

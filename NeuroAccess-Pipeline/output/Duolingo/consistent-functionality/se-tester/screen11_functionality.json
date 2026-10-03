@@ -1,0 +1,204 @@
+{
+  "app": "Duolingo",
+  "screen": "screen11",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen11_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen11_function_groups.png"
+  },
+  "elements": {
+    "screen11-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the Spanish Course page",
+      "bounds": [
+        42,
+        105,
+        105,
+        168
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-left of the Spanish Course page",
+      "observed_function": "closes the Spanish Course section list, back to home",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen11-f2": {
+      "kind": "icon+label",
+      "appearance": "owl section card \"¡Hola! / Section 1\"",
+      "state": null,
+      "location": "Spanish Course section list",
+      "bounds": [
+        42,
+        252,
+        1038,
+        1017
+      ],
+      "visible_label": "¡Hola! Section 1",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": "section 1",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\\u00a1Hola! Section\\u00a01\"",
+      "context_reading": "Spanish Course section list",
+      "observed_function": "not tested: ungrouped element outside every subject of this phase",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen11-f3": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with the words \"1 to 9\"",
+      "state": null,
+      "location": "Spanish Course section list",
+      "bounds": [
+        801,
+        806,
+        985,
+        882
+      ],
+      "visible_label": "1 to 9",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"1 to 9\"",
+      "context_reading": "Spanish Course section list",
+      "observed_function": "opens the \"Section 1\" detail page (\"1 to 9 • CEFR A1\", Grammar concepts)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen11-f3-fd1",
+          "type": "function_determination",
+          "precondition": "app open on the element's screen",
+          "action": "tap the element and record what happens",
+          "expected_result": "a determinable action",
+          "confirms_if": "a clear action occurs (function determined)",
+          "overturns_if": "nothing happens (not a control)",
+          "observed_result": "opens the \"Section 1\" detail page (\"1 to 9 • CEFR A1\", Grammar concepts)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen11-f4": {
+      "kind": "icon+label",
+      "appearance": "owl section card \"Quiero aprender español. / Section 2 / JUMP HERE\"",
+      "state": null,
+      "location": "Spanish Course section list",
+      "bounds": [
+        42,
+        1059,
+        1038,
+        1820
+      ],
+      "visible_label": "Quiero aprender español. Section 2 JUMP HERE",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": "section 2 jump here",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Quiero aprender espa\\u00f1ol. Section\\u00a02 JUMP HERE\"",
+      "context_reading": "Spanish Course section list",
+      "observed_function": "not tested: ungrouped element outside every subject of this phase",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen11-f5": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with the words \"10 to 19\"",
+      "state": null,
+      "location": "Spanish Course section list",
+      "bounds": [
+        757,
+        1613,
+        985,
+        1689
+      ],
+      "visible_label": "10 to 19",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"10 to 19\"",
+      "context_reading": "Spanish Course section list",
+      "observed_function": "opens the \"Section 2\" detail page (\"10 to 19 • CEFR A1\", Grammar concepts)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen11-f5-fd1",
+          "type": "function_determination",
+          "precondition": "app open on the element's screen",
+          "action": "tap the element and record what happens",
+          "expected_result": "a determinable action",
+          "confirms_if": "a clear action occurs (function determined)",
+          "overturns_if": "nothing happens (not a control)",
+          "observed_result": "opens the \"Section 2\" detail page (\"10 to 19 • CEFR A1\", Grammar concepts)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen11-f6": {
+      "kind": "icon+label",
+      "appearance": "owl section card \"Sé algunas palabras.\"",
+      "state": null,
+      "location": "Spanish Course section list",
+      "bounds": [
+        42,
+        1862,
+        1038,
+        2337
+      ],
+      "visible_label": "Sé algunas palabras.",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": "section 3 jump here",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"S\\u00e9 algunas palabras. Section\\u00a03 JUMP HERE\"",
+      "context_reading": "Spanish Course section list",
+      "observed_function": "not tested: ungrouped element outside every subject of this phase",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

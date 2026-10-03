@@ -1,0 +1,33 @@
+{
+  "app": "ChatGPT",
+  "screen": "s17",
+  "state_str": "3e626a8466c20d7c156442d96d725d61",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204437.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s17_header_nav.png",
+  "name": "the full-screen image viewer",
+  "regions_read": [],
+  "identifier_found": "none; top row is an X, a ⋮, a download icon and \"Share\"; bottom row \"Edit\" / \"Resize\" / \"Remove\"; the rest is the photo",
+  "identifier_class": "none",
+  "accessibility_text": "not needed",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "immersive viewer with no title",
+  "test_cases": [
+    {
+      "id": "s17-tc1",
+      "type": "verification",
+      "precondition": "Library open",
+      "action": "tap an image, look for any title, swipe down on the image, reopen it and tap the X",
+      "expected_result": "a title appears somewhere, or none exists; the X returns to the Library",
+      "confirms_if": "no title in any state",
+      "overturns_if": "a title appears",
+      "observed_result": "no title in any state; a downward swipe dismissed the viewer back to Library, and the X also returned to Library — the way back is visible and works",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing names the viewer in any state. It is an immersive media viewer with a visible, working X back to where the user came from, which would qualify as an exception for a transition into it — but none of the moves into this screen is an evaluated transition, and the screen verdict itself stays Missing. The scroll t32 recorded as landing here is not reproducible (see t32).",
+  "recommendation": "add a small caption naming the image or its source (\"Library\") in the top row",
+  "provisional": false
+}

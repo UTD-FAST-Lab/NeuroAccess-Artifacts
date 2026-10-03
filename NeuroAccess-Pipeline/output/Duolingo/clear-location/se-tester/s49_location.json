@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s49",
+  "state_str": "a0a698787b921353a40a984133eb1b42",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190223.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s49_header_nav.png",
+  "name": "Search for friends",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Search for friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Friend suggestions",
+      "verdict_on_region": "sub-section heading naming a list of people, not the screen — not counted"
+    }
+  ],
+  "identifier_found": "'Search for friends' (light grey) with back arrow and a search field",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title naming the screen",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title names the screen; confirmed on opening Search by name live (no text entered)",
+  "recommendation": null,
+  "provisional": false
+}

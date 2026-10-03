@@ -1,0 +1,97 @@
+{
+  "app": "PDFReader",
+  "screen": "screen27",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen27_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen27_function_groups.png"
+  },
+  "elements": {
+    "screen27-f1": {
+      "kind": "button",
+      "appearance": "the words \"Set as default\"",
+      "state": null,
+      "location": "dark button in the bottom sheet \"The fastest way to read PDF files\"",
+      "bounds": [
+        42,
+        2127,
+        1038,
+        2253
+      ],
+      "visible_label": "Set as default",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "set as default",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Set as default\"",
+      "context_reading": "sheet text: \"Set PDF Reader, PDF Viewer as your default app\"; an illustration of an \"Always\" choice",
+      "observed_function": "opened Android's \"Open with\" app chooser (PDF Reader, PDF Viewer; ChatGPT; Drive; \"Just once\" / \"Always\"); backed out without choosing",
+      "glyph_group": "gg29",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg29-screen27-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen27 (\"Set as default\" sheet opened from the banner SET pill / Settings row)",
+          "action": "note what is on screen, then tap screen27-f1 (Set as default) once",
+          "expected_result": "opens the system choice of default app",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened Android's \"Open with\" app chooser (PDF Reader, PDF Viewer; ChatGPT; Drive; \"Just once\" / \"Always\"); backed out without choosing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen27-f2": {
+      "kind": "button",
+      "appearance": "the word \"Later\"",
+      "state": null,
+      "location": "grey text button under \"Set as default\" in the bottom sheet",
+      "bounds": [
+        42,
+        2274,
+        1038,
+        2358
+      ],
+      "visible_label": "Later",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "later",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Later\"",
+      "context_reading": "below \"Set as default\"",
+      "observed_function": "closed the sheet; the screen underneath stayed as it was",
+      "glyph_group": "gg30",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg30-screen27-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen27 (\"Set as default\" sheet opened from the banner SET pill / Settings row)",
+          "action": "note what is on screen, then tap screen27-f2 (Later) once",
+          "expected_result": "closes the sheet without doing anything",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "closed the sheet; the screen underneath stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg30": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

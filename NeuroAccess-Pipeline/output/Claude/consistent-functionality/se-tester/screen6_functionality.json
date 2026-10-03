@@ -1,0 +1,279 @@
+{
+  "app": "Claude",
+  "screen": "screen6",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen6_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen6_function_groups.png"
+  },
+  "elements": {
+    "screen6-f1": {
+      "kind": "icon",
+      "appearance": "short horizontal grey bar",
+      "state": null,
+      "location": "middle centre of screen6 (addsheet)",
+      "bounds": [
+        477,
+        1190,
+        604,
+        1313
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a short grey bar at the top of a bottom sheet is an established drag-handle convention — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "drag handle",
+      "accessibility_text": "content_desc: \"Drag handle\"; talkback_label: \"Drag handle\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "expanded the \"Add to chat\" sheet to full height",
+      "glyph_group": "gg21",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg21-screen6-f1",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap short horizontal grey bar at middle centre of screen6 (addsheet)",
+          "expected_result": "the sheet handle resizes or dismisses the sheet",
+          "confirms_if": "it reaches something unrelated to what the other members of gg21 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "expanded the \"Add to chat\" sheet to full height",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen6-f2": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "middle left of screen6 (addsheet)",
+      "bounds": [
+        37,
+        1281,
+        163,
+        1407
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X is the established close/dismiss convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\"; talkback_label: \"Close\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "closes the surface and returns to the home composer underneath",
+      "glyph_group": "gg1",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen6-f2",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap X at middle left of screen6 (addsheet)",
+          "expected_result": "every X dismisses the surface it sits on and returns to what was underneath; the three incognito-screen X marks are the \"on\" face of the incognito toggle and should take the user back out of incognito",
+          "confirms_if": "it reaches something unrelated to what the other members of gg1 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "closes the surface and returns to the home composer underneath",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen6-f3": {
+      "kind": "icon+label",
+      "appearance": "camera in a grey circle with the word \"Camera\"",
+      "state": null,
+      "location": "middle left of screen6 (addsheet)",
+      "bounds": [
+        32,
+        1447,
+        356,
+        1720
+      ],
+      "visible_label": "Camera",
+      "convention_relied_on": "camera glyph, labelled \"Camera\"",
+      "convention_confidence": "high",
+      "declared_function": "camera",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Camera\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "opened the system camera app",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-screen6-f3",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap camera in a grey circle with the word \"Camera\" at middle left of screen6 (addsheet)",
+          "expected_result": "both open the camera",
+          "confirms_if": "it reaches something unrelated to what the other members of gg22 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened the system camera app",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen6-f4": {
+      "kind": "icon+label",
+      "appearance": "picture frame in a grey circle with the word \"Photos\"",
+      "state": null,
+      "location": "middle centre of screen6 (addsheet)",
+      "bounds": [
+        377,
+        1447,
+        702,
+        1720
+      ],
+      "visible_label": "Photos",
+      "convention_relied_on": "picture glyph, labelled \"Photos\"",
+      "convention_confidence": "high",
+      "declared_function": "photos",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Photos\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "opened the system photo picker",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-screen6-f4",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap picture frame in a grey circle with the word \"Photos\" at middle centre of screen6 (addsheet)",
+          "expected_result": "both open the photo picker",
+          "confirms_if": "it reaches something unrelated to what the other members of gg23 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened the system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen6-f5": {
+      "kind": "icon+label",
+      "appearance": "page with an upward arrow in a grey circle with the word \"Files\"",
+      "state": null,
+      "location": "middle right of screen6 (addsheet)",
+      "bounds": [
+        723,
+        1447,
+        1048,
+        1720
+      ],
+      "visible_label": "Files",
+      "convention_relied_on": "page glyph, labelled \"Files\"",
+      "convention_confidence": "high",
+      "declared_function": "files",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Files\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "opened the system document picker",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-screen6-f5",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap page with an upward arrow in a grey circle with the word \"Files\" at middle right of screen6 (addsheet)",
+          "expected_result": "both open a file chooser",
+          "confirms_if": "it reaches something unrelated to what the other members of gg24 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened the system document picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen6-f6": {
+      "kind": "icon+label",
+      "appearance": "stacked tray in a grey circle with the words \"Add to project\" and a right chevron",
+      "state": null,
+      "location": "middle centre of screen6 (addsheet)",
+      "bounds": [
+        32,
+        1752,
+        1048,
+        1918
+      ],
+      "visible_label": "Add to project",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "add to project",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Add to project None\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen6-f7": {
+      "kind": "icon+label",
+      "appearance": "two diagonal interlocking loops in a grey circle with the word \"Connectors\" and a right chevron",
+      "state": null,
+      "location": "bottom centre of screen6 (addsheet)",
+      "bounds": [
+        32,
+        2102,
+        1048,
+        2249
+      ],
+      "visible_label": "Connectors",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "connectors",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Connectors\" — evidence of intent only",
+      "context_reading": "bottom sheet titled \"Add to chat\" (X on the same row as the title), over the dimmed home screen",
+      "observed_function": "opened the \"Connectors\" panel inside the sheet",
+      "glyph_group": "gg25",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg25-screen6-f7",
+          "type": "same_appearance",
+          "precondition": "app open on addsheet (live equivalent of screen6); context noted before the tap",
+          "action": "tap two diagonal interlocking loops in a grey circle with the word \"Connectors\" and a right chevron at bottom centre of screen6 (addsheet)",
+          "expected_result": "both open Connectors",
+          "confirms_if": "it reaches something unrelated to what the other members of gg25 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened the \"Connectors\" panel inside the sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 6,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

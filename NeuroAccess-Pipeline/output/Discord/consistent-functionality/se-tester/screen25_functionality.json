@@ -1,0 +1,446 @@
+{
+  "app": "Discord",
+  "screen": "screen25",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen25_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen25_function_groups.png"
+  },
+  "elements": {
+    "screen25-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        63,
+        147,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "left arrow = back/up to the previous screen - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Navigate up (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Navigate up\"; talkback_label: \"Navigate up\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section",
+      "observed_function": "returns to the screen the user came from",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen25-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f1 (arrow pointing left) at its captured position and record what happens",
+          "expected_result": "returns to the screen the user came from",
+          "confirms_if": "it does something unrelated to what the other members of gg8 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg8, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc-screen25-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen25 captured",
+          "action": "exercise screen25-f1 (\"arrow pointing left\") and compare its result with the other renderings in cfg4",
+          "expected_result": "hypothesis: the profile X and every left arrow return to the previous screen",
+          "confirms_if": "all return to the previous screen",
+          "overturns_if": "any member does something other than returning",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f2": {
+      "kind": "icon+label",
+      "appearance": "square tray with an upward arrow above the words \"Share Invite\"",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        42,
+        252,
+        205,
+        452
+      ],
+      "visible_label": "Share Invite",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Share Invite (from label; status declared)",
+      "accessibility_text": "content_desc: \"Share Invite\"; talkback_label: \"Share Invite\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Share Invite\"",
+      "observed_function": "opens the Android share sheet with the text \"Add me as a friend on Discord! Invite expires in 1 week: https://discord.gg/...\"",
+      "glyph_group": "gg33",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg33-tc-screen25-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f2 (square tray with an upward arrow above the words \"Share Invite\") at its captured position and record what happens",
+          "expected_result": "opens the Android share sheet with the text \"Add me as a friend on Discord! Invite expires in 1 week: https://discord.gg/...\"",
+          "confirms_if": "it does something unrelated to what the other members of gg33 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg33, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Android share sheet with the text \"Add me as a friend on Discord! Invite expires in 1 week: https://discord.gg/...\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg33": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f3": {
+      "kind": "icon+label",
+      "appearance": "chain link above the words \"Copy Link\"",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        237,
+        252,
+        373,
+        452
+      ],
+      "visible_label": "Copy Link",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Copy Link (from label; status declared)",
+      "accessibility_text": "content_desc: \"Copy Link\"; talkback_label: \"Copy Link\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Copy Link\"",
+      "observed_function": "copies the friend-invite link to the clipboard (system clipboard preview appears)",
+      "glyph_group": "gg34",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg34-tc-screen25-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f3 (chain link above the words \"Copy Link\") at its captured position and record what happens",
+          "expected_result": "copies the friend-invite link to the clipboard (system clipboard preview appears)",
+          "confirms_if": "it does something unrelated to what the other members of gg34 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg34, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "copies the friend-invite link to the clipboard (system clipboard preview appears)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg34": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f4": {
+      "kind": "icon+label",
+      "appearance": "QR-code squares above the words \"QR Code\"",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        404,
+        252,
+        530,
+        452
+      ],
+      "visible_label": "QR Code",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "QR Code (from label; status declared)",
+      "accessibility_text": "content_desc: \"QR Code\"; talkback_label: \"QR Code\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"QR Code\"",
+      "observed_function": "opens the sheet \"Add Friend by QR Code\" with a QR code",
+      "glyph_group": "gg35",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg35-tc-screen25-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f4 (QR-code squares above the words \"QR Code\") at its captured position and record what happens",
+          "expected_result": "opens the sheet \"Add Friend by QR Code\" with a QR code",
+          "confirms_if": "it does something unrelated to what the other members of gg35 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg35, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the sheet \"Add Friend by QR Code\" with a QR code",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg35": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f5": {
+      "kind": "icon+label",
+      "appearance": "square speech bubble above the word \"Messages\"",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        562,
+        252,
+        697,
+        452
+      ],
+      "visible_label": "Messages",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Messages (from label; status declared)",
+      "accessibility_text": "content_desc: \"Messages\"; talkback_label: \"Messages\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Messages\"",
+      "observed_function": "leaves Discord for the phone's SMS app, \"New conversation\"",
+      "glyph_group": "gg36",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg36-tc-screen25-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f5 (square speech bubble above the word \"Messages\") at its captured position and record what happens",
+          "expected_result": "leaves Discord for the phone's SMS app, \"New conversation\"",
+          "confirms_if": "it does something unrelated to what the other members of gg36 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg36, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "leaves Discord for the phone's SMS app, \"New conversation\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg36": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f6": {
+      "kind": "icon+label",
+      "appearance": "envelope above the word \"Email\"",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        728,
+        252,
+        854,
+        452
+      ],
+      "visible_label": "Email",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Email (from label; status declared)",
+      "accessibility_text": "content_desc: \"Email\"; talkback_label: \"Email\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Email\"",
+      "observed_function": "leaves Discord for the Gmail app",
+      "glyph_group": "gg37",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg37-tc-screen25-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f6 (envelope above the word \"Email\") at its captured position and record what happens",
+          "expected_result": "leaves Discord for the Gmail app",
+          "confirms_if": "it does something unrelated to what the other members of gg37 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg37, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "leaves Discord for the Gmail app",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg37": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f7": {
+      "kind": "icon+label",
+      "appearance": "blue-purple speech bubble with a zigzag above the word \"Messenger\"",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        886,
+        255,
+        1036,
+        449
+      ],
+      "visible_label": "Messenger",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Messenger (from label; status declared)",
+      "accessibility_text": "content_desc: \"Messenger\"; talkback_label: \"Messenger\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Messenger\"",
+      "observed_function": "leaves Discord for Messenger's \"Send to\" screen carrying the invite",
+      "glyph_group": "gg38",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg38-tc-screen25-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f7 (blue-purple speech bubble with a zigzag above the word \"Messenger\") at its captured position and record what happens",
+          "expected_result": "leaves Discord for Messenger's \"Send to\" screen carrying the invite",
+          "confirms_if": "it does something unrelated to what the other members of gg38 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg38, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "leaves Discord for Messenger's \"Send to\" screen carrying the invite",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg38": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f8": {
+      "kind": "icon+label",
+      "appearance": "at sign beside the words \"Add by Username\" with a right chevron",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        515,
+        1038,
+        662
+      ],
+      "visible_label": "Add by Username",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Add by Username (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Add by Username\"; talkback_label: \"Add by Username\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Add by Username\"",
+      "observed_function": "opens \"Add by Username\" (\"Who would you like to add as a friend?\", \"Send Friend Request\")",
+      "glyph_group": "gg39",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg39-tc-screen25-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f8 (at sign beside the words \"Add by Username\" with a right chevron) at its captured position and record what happens",
+          "expected_result": "opens \"Add by Username\" (\"Who would you like to add as a friend?\", \"Send Friend Request\")",
+          "confirms_if": "it does something unrelated to what the other members of gg39 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg39, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens \"Add by Username\" (\"Who would you like to add as a friend?\", \"Send Friend Request\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg6-tc-screen25-f8",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen25 captured",
+          "action": "exercise screen25-f8 (\"at sign beside the words \"Add by Username\" with a right chevron\") and compare its result with the other renderings in cfg6",
+          "expected_result": "hypothesis: \"Add by Username\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something narrower or different",
+          "observed_result": "opens \"Add by Username\" (\"Who would you like to add as a friend?\", \"Send Friend Request\")",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg39": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f9": {
+      "kind": "button",
+      "appearance": "the words \"Learn more\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        589,
+        1316,
+        771,
+        1364
+      ],
+      "visible_label": "Learn more",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Learn more (from label; status declared)",
+      "accessibility_text": "content_desc: \"Learn more\"; talkback_label: \"Learn more\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Learn more\"",
+      "observed_function": "leaves Discord for the web browser (help article)",
+      "glyph_group": "gg40",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg40-tc-screen25-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f9 (the words \"Learn more\") at its captured position and record what happens",
+          "expected_result": "leaves Discord for the web browser (help article)",
+          "confirms_if": "it does something unrelated to what the other members of gg40 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg40, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "leaves Discord for the web browser (help article)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg40": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f10": {
+      "kind": "button",
+      "appearance": "the words \"Find friends\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        74,
+        1427,
+        1007,
+        1553
+      ],
+      "visible_label": "Find friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Find friends (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Find friends\"; talkback_label: \"Find friends\"",
+      "context_reading": "screen titled \"Add Friends\": a row of share targets, an \"Add by Username\" row, a \"Find your friends\" section; carries its own visible words \"Find friends\"",
+      "observed_function": "opens the contact-sync screen \"Find your friends\" with an \"Allow\" button",
+      "glyph_group": "gg41",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg41-tc-screen25-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen25 captured (screens 11, 13, 23 and 25 are recaptures of the same Add Friends view); context noted before the tap",
+          "action": "tap screen25-f10 (the words \"Find friends\") at its captured position and record what happens",
+          "expected_result": "opens the contact-sync screen \"Find your friends\" with an \"Allow\" button",
+          "confirms_if": "it does something unrelated to what the other members of gg41 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg41, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the contact-sync screen \"Find your friends\" with an \"Allow\" button",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg7-tc-screen25-f10",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen25 captured",
+          "action": "exercise screen25-f10 (\"the words \"Find friends\"\") and compare its result with the other renderings in cfg7",
+          "expected_result": "hypothesis: \"Find friends\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something different (e.g. contact sync)",
+          "observed_result": "opens the contact-sync screen \"Find your friends\" with an \"Allow\" button",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg41": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 13,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

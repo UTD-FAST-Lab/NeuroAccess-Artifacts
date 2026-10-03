@@ -1,0 +1,819 @@
+{
+  "persona": "persona-kwame",
+  "app": "PDFReader",
+  "screens": {
+    "s1": {
+      "where": "The app's opening loading screen",
+      "expectation": "I think I am at the very start: the app is opening and has not reached any real page yet.",
+      "confidence": "guessing",
+      "cue": "The large logo in the middle, the words \"PDF Reader, PDF Viewer\" under it, and a thin bar near the bottom that looks like it is filling up. The line \"This process may contain ads\" also suggests something is running.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only name on the screen is the app's own name, which tells me which app I have opened but not which part of it I am in. Nothing says \"Loading\" or \"Starting\", so I have to infer from the bar and the empty space. The word \"process\" is vague to me: which process? I read that line several times. I am fairly confident of my interpretation, but only after working it out.",
+        "solution": "Put one plain word with the bar, such as \"Loading, please wait\", so I do not have to deduce it. Say what \"this process\" is."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc1",
+          "action": "Close the app completely (terminate it) and open it again. Watch the very first screen until it moves on by itself. Then, without going back, say in one sentence what that first screen was and whether any words on it told you so.",
+          "confirms_if": "nothing on the first screen says what it is -- you had to work it out from the picture or the bar",
+          "overturns_if": "some words on the first screen say plainly what is happening (for example that the app is starting)",
+          "observed_result": "I closed the app completely and opened it again. The first time, it skipped any opening screen and went straight to the main page. So I closed it and opened it a second time. After a moment of the home screen, I saw a greyed, dimmed screen with the app's logo, the words \"PDF Reader, PDF Viewer\", a spinning circle near the bottom (not the bar from the picture), and \"This process may contain ads\". Then a Google Play \"This app needs an update\" page came up, which I closed with its X, and then a test advertisement, which I left by tapping the arrow beside \"Continue to app\". Then I reached the main page. In one sentence: the first screen was the app starting up, and no words on it said so. I worked that out from the spinning circle and from the fact that nothing else was there. The only words were the app's name and the vague \"This process may contain ads\".",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "On the real phone the opening screen was even dimmer than the picture, and it had a spinning circle instead of a bar. It still has no word saying the app is starting. Then two more screens I did not ask for (an update page and an advertisement) came before the app. The first time I opened it, the opening screen did not appear at all, so it is not even consistent.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "The app's opening loading screen",
+      "expectation": "I think I am at the very start: the app is opening and has not reached any real page yet.",
+      "confidence": "guessing",
+      "cue": "The large logo in the middle, the words \"PDF Reader, PDF Viewer\" under it, and a thin bar near the bottom that looks like it is filling up. The line \"This process may contain ads\" also suggests something is running.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only name on the screen is the app's own name, which tells me which app I have opened but not which part of it I am in. Nothing says \"Loading\" or \"Starting\", so I have to infer from the bar and the empty space. The word \"process\" is vague to me: which process? I read that line several times. I am fairly confident of my interpretation, but only after working it out.",
+        "solution": "Put one plain word with the bar, such as \"Loading, please wait\", so I do not have to deduce it. Say what \"this process\" is."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc1",
+          "action": "Close the app completely (terminate it) and open it again. Watch the very first screen until it moves on by itself. Then, without going back, say in one sentence what that first screen was and whether any words on it told you so.",
+          "confirms_if": "nothing on the first screen says what it is -- you had to work it out from the picture or the bar",
+          "overturns_if": "some words on the first screen say plainly what is happening (for example that the app is starting)",
+          "observed_result": "I closed the app completely and opened it again. The first time, it skipped any opening screen and went straight to the main page. So I closed it and opened it a second time. After a moment of the home screen, I saw a greyed, dimmed screen with the app's logo, the words \"PDF Reader, PDF Viewer\", a spinning circle near the bottom (not the bar from the picture), and \"This process may contain ads\". Then a Google Play \"This app needs an update\" page came up, which I closed with its X, and then a test advertisement, which I left by tapping the arrow beside \"Continue to app\". Then I reached the main page. In one sentence: the first screen was the app starting up, and no words on it said so. I worked that out from the spinning circle and from the fact that nothing else was there. The only words were the app's name and the vague \"This process may contain ads\".",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "On the real phone the opening screen was even dimmer than the picture, and it had a spinning circle instead of a bar. It still has no word saying the app is starting. Then two more screens I did not ask for (an update page and an advertisement) came before the app. The first time I opened it, the opening screen did not appear at all, so it is not even consistent.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Home, on the PDF files tab",
+      "expectation": "I am on the Home page of the app, looking at the PDF section.",
+      "confidence": "sure",
+      "cue": "In the bottom bar, the house icon and the word \"Home\" are dark while \"Recent\", \"Favorite\" and \"Tools\" are grey. In the row of rounded buttons near the top, \"PDF\" is filled red and the others are only outlined. The title \"PDF Reader\" agrees with the PDF button being chosen.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two separate things agree: the bottom bar says Home, and the top row says PDF, and the title says PDF Reader, so there is nothing for me to argue with myself about. The dark-versus-grey difference on \"Home\" is not large, but the word is there to read. The \"Set as default reader\" strip and the \"allow file access\" message add a fair amount to look at, but they do not hide where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "A rating pop-up on top of Settings",
+      "expectation": "I am still in Settings, and a box has come up asking me to rate the app.",
+      "confidence": "guessing",
+      "cue": "The greyed-out \"Settings\" title and list behind, the white panel rising from the bottom with the heading \"Thank you for using PDF Reader, PDF Viewer!\", the row of five stars, and the faint \"Rate this App\" button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There are two headings now. The one on the panel is a thank-you message, not a name for where I am, so it does not tell me what this box is; I have to work that out from the stars and the faint button at the bottom. The dimmed \"Settings\" behind helps me remember where I came from. The large emoji face and the orange \"The best rating for us\" bubble add more to look at than I would like, and the \"Rate this App\" button is so pale I am not sure it is there.",
+        "solution": "Title the panel with what it is, such as \"Rate this app\", and give it a clearly labelled way to close it or go back to Settings."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc4",
+          "action": "On the main page, tap the gear picture at the top right, then Rate App. Say where you are. Then find your way back to the Settings list, and say how. Do not touch the stars.",
+          "confirms_if": "you cannot tell where you are with the box open, or cannot find how to get back to Settings",
+          "overturns_if": "you can tell you are still in Settings and get back without guessing",
+          "observed_result": "On the main page I tapped the gear, which opened Settings, and then tapped Rate App. There was a pause, and then a white box rose from the bottom with the heart-eyed face, \"Thank you for using PDF Reader, PDF Viewer!\", five stars and a very faint \"Rate this App\" button. Where am I? Still in Settings, with a rating box on top. I could tell from the dimmed \"Settings\" title and list behind it. Then I looked for a way back. The box has no X, no Close and no Cancel. The only choices on it are the stars and the faint button. I did not want to tap the dimmed list in case I switched something on by accident, so I pressed the phone's own Back button. That closed the box and left me on the Settings list. It worked, but I had to guess that Back would do it; nothing on the box told me. I did not touch the stars.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I could tell I was still in Settings from the dimmed list behind, so that part is fine. But the box itself gave me no visible way back. I got out only because I guessed that the phone's Back button would work. The heading is still a thank-you message, not a name for the box.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Add widget panel, over Settings",
+      "expectation": "I am in Settings, and I have opened the \"Add widget\" panel, which is showing me the first of several widget choices.",
+      "confidence": "sure",
+      "cue": "The heading \"Add widget\" on the white panel, which is the same wording as the \"Add widget\" row I can still see in the dimmed Settings list behind it, plus the dimmed \"Settings\" title at the top. The row of six dots under \"PDF Tools\" with the first one dark.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel's heading matches the option behind it word for word, so I can see exactly how I got here and where I will return. The dots tell me I am on one of six pages and which one, which helps me keep my place. The dots are small, and the grid of coloured icons in the middle is a lot to take in, but they do not confuse where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Home, on the HWP tab",
+      "expectation": "I am on the Home page, and I think I am looking at the HWP section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"HWP\" button in the top row filled blue while the others are outlined. The book icon and the \"SET\" button have also turned the same colour.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"HWP\". Those two statements pull against each other: am I in a PDF reader, or in a HWP section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and HWP), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it. The \"Set as default reader\" strip in between adds a third thing competing for my attention.",
+        "solution": "Change the title to name the section I chose, for example \"HWP files\", or put a clear line under the buttons saying \"Showing: HWP files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Add widget panel, over Settings",
+      "expectation": "I am in Settings, and I have opened the \"Add widget\" panel, which is showing me the second of several widget choices.",
+      "confidence": "sure",
+      "cue": "The heading \"Add widget\" on the white panel, which is the same wording as the \"Add widget\" row I can still see in the dimmed Settings list behind it, plus the dimmed \"Settings\" title at the top. The row of six dots under \"PDF Tools\" with the second one dark.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel's heading matches the option behind it word for word, so I can see exactly how I got here and where I will return. The dots tell me I am on one of six pages and which one, which helps me keep my place. The dots are small, and the grid of coloured icons in the middle is a lot to take in, but they do not confuse where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Home, on the Word tab",
+      "expectation": "I am on the Home page, and I think I am looking at the Word section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"Word\" button in the top row filled bright blue while the others are outlined. The book icon and the \"SET\" button have also turned the same colour.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"Word\". Those two statements pull against each other: am I in a PDF reader, or in a Word section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and Word), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it. The \"Set as default reader\" strip in between adds a third thing competing for my attention.",
+        "solution": "Change the title to name the section I chose, for example \"Word files\", or put a clear line under the buttons saying \"Showing: Word files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Home, on the Excel tab",
+      "expectation": "I am on the Home page, and I think I am looking at the Excel section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"Excel\" button in the top row filled green while the others are outlined. The book icon and the \"SET\" button have also turned the same colour.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"Excel\". Those two statements pull against each other: am I in a PDF reader, or in a Excel section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and Excel), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it. The \"Set as default reader\" strip in between adds a third thing competing for my attention.",
+        "solution": "Change the title to name the section I chose, for example \"Excel files\", or put a clear line under the buttons saying \"Showing: Excel files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s20": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "Home, on the PPT tab",
+      "expectation": "I am on the Home page, and I think I am looking at the PPT section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"PPT\" button in the top row filled orange while the others are outlined. The book icon and the \"SET\" button have also turned the same colour.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"PPT\". Those two statements pull against each other: am I in a PDF reader, or in a PPT section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and PPT), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it. The \"Set as default reader\" strip in between adds a third thing competing for my attention.",
+        "solution": "Change the title to name the section I chose, for example \"PPT files\", or put a clear line under the buttons saying \"Showing: PPT files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "A \"set as default\" pop-up on top of Home",
+      "expectation": "I am on the Home page, and a box has come up asking me to make this app the one that always opens PDF files.",
+      "confidence": "guessing",
+      "cue": "The dimmed \"PDF Reader\" title and the row of file-type buttons behind, and on the white panel the heading \"The fastest way to read PDF files\", the line \"Set PDF Reader, PDF Viewer as your default app\", and the \"Set as default\" and \"Later\" buttons.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel's heading is a promise about speed rather than a name for what this box is; the real explanation is the smaller line underneath it, which I only found on a second pass. The top half of the panel is a picture of another box with \"Just once\" and \"Always\" and a pointing hand, and I cannot be sure whether that is a real set of buttons I am meant to press or only an illustration. That doubt would hold me up for a long time. Behind it, the row of file-type buttons no longer shows which one is chosen, so I have lost that part of my bearings too.",
+        "solution": "Head the panel with what it is, such as \"Make this your default PDF app?\", and make the illustration clearly look like a picture, or remove it, so I am not unsure what I can press."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc6",
+          "action": "On the main page, tap the red SET button. Say what the panel is and where you are. Tap Later and say where you landed. Never tap Set as default, Always or Just once.",
+          "confirms_if": "you cannot tell what the panel is from its heading",
+          "overturns_if": "you can tell what the panel is at once",
+          "observed_result": "On the main page I tapped the red SET button. After a pause, a white panel rose from the bottom. Its heading said \"The fastest way to read PDF files\", and below that, in smaller type, \"Set PDF Reader, PDF Viewer as your default app\", with \"Set as default\" and \"Later\". The top half was the picture of another box with \"Just once\" and \"Always\" and a pointing hand. What is the panel? A request to make this app my default PDF reader. I only knew that from the smaller second line, not from the heading. Where am I? On the main page, which I could see dimmed behind it, with PDF still marked red. I tapped Later. There was a moment's delay, and then I was back on the main page with PDF and Home chosen, as I expected. I did not tap Set as default, Always or Just once.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I understood the panel only from its smaller second line. The large heading is a promise about speed, and I still cannot be certain whether the Just once / Always picture is something I am meant to press. Later brought me back where I expected, and on the phone the PDF button stayed marked behind the panel, which helped more than in the picture.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Home, on the PDF files tab",
+      "expectation": "I am on the Home page of the app, looking at the PDF section.",
+      "confidence": "sure",
+      "cue": "In the bottom bar, the house icon and the word \"Home\" are dark while \"Recent\", \"Favorite\" and \"Tools\" are grey. In the row of rounded buttons near the top, \"PDF\" is filled red and the others are only outlined. The title \"PDF Reader\" agrees with the PDF button being chosen.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two separate things agree: the bottom bar says Home, and the top row says PDF, and the title says PDF Reader, so there is nothing for me to argue with myself about. The dark-versus-grey difference on \"Home\" is not large, but the word is there to read. Without any extra strip at the top it is calmer to read.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Home, on the HWP tab",
+      "expectation": "I am on the Home page, and I think I am looking at the HWP section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"HWP\" button in the top row filled blue while the others are outlined.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"HWP\". Those two statements pull against each other: am I in a PDF reader, or in a HWP section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and HWP), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it.",
+        "solution": "Change the title to name the section I chose, for example \"HWP files\", or put a clear line under the buttons saying \"Showing: HWP files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Premium subscription offer (no way out visible)",
+      "expectation": "I think I am on an advertisement or sign-up page for a paid Premium plan. I cannot tell where in the app it sits or how I got here.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try the Premium plan completely free\", the big \"Start Free Trial\" button, and the price line \"$29.99/year\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading is a sales sentence, not the name of a page, so it tells me what is being offered but not where I am. There is no back arrow, no close button and no bottom bar anywhere on the screen, so I have nothing to hold on to and no visible way back to where I was. The \"Today / Day 2 / Day 3\" column with the dotted line also looks to me like a set of steps in a process, and I would start wondering whether I am at step one of something I did not choose to begin. At that point I stop.",
+        "solution": "Give the page a plain name at the top, such as \"Premium plan\", and put a clear, labelled \"Back\" or \"Close\" button on it from the moment it appears."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc2",
+          "action": "On the main page, tap the crown picture at the top right. As soon as the diamond page appears, look for a way back to where you were, and try to get back there. Say what you found, how long it took to appear, and where you ended up. Never tap Start Free Trial.",
+          "confirms_if": "you find no way back you can see, or you cannot tell where you have ended up",
+          "overturns_if": "you find a way back quickly and land where you started",
+          "observed_result": "On the main page I tapped the crown. My first tap landed me in Settings instead, because the crown and the gear sit very close together. I used the back arrow in Settings, which brought me cleanly back to the main page, and tapped the crown again. The screen did not change for a moment, and then the diamond page appeared. By the time I first saw it, a round X was already showing in the top left corner, so I never saw the page without it. I tapped the X. The page stayed for a moment longer, which made me doubt my tap, and then I was back on the main page with PDF and Home chosen, exactly where I started. I never tapped Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Every time I reached the diamond page on the phone, the X was already there when I first looked, and it brought me back to where I started. I cannot rule out a brief moment without it, because I only look every few seconds, but I was never stranded. The heading is still a sales line rather than the name of a page, so I still have to rely on my memory of tapping the crown to know where I am. Out of scope: the crown and the gear are so close together that my first tap opened Settings instead.",
+      "provisional": false
+    },
+    "s34": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top, next to a back arrow, and a list of plainly worded options below it: \"Keep screen on\", \"Language\", \"Set default reader\" and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title names the page, it sits where I expect a title to be, and the list underneath matches it, so there is no second reading to wrestle with. The back arrow tells me there is somewhere to return to. The options are grouped into separate white boxes with space between them, which keeps it calm. This is genuinely a good screen for me.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Home, on the Word tab",
+      "expectation": "I am on the Home page, and I think I am looking at the Word section rather than PDF, but I am not fully certain.",
+      "confidence": "guessing",
+      "cue": "The dark \"Home\" in the bottom bar, and the \"Word\" button in the top row filled bright blue while the others are outlined.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large title at the top still says \"PDF Reader\" while the chosen button says \"Word\". Those two statements pull against each other: am I in a PDF reader, or in a Word section? I would read that over and over until I convinced myself the title is just the app's name and the button is the real place. Two navigation rows on one screen also means I have to hold two answers at once (Home, and Word), which is more to keep track of. My interpretation is probably right, but it cost me real effort to reach it.",
+        "solution": "Change the title to name the section I chose, for example \"Word files\", or put a clear line under the buttons saying \"Showing: Word files\". Keep the title from saying \"PDF\" when PDF is not the chosen section."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc5",
+          "action": "On the main page, tap Excel in the row of buttons. Say where you are. Then find your way back to the PDF files and say how sure you are that you are back where you began.",
+          "confirms_if": "the title and the chosen button keep pulling against each other so you cannot settle where you are",
+          "overturns_if": "on the live screen it is plain which files you are looking at and getting back is easy",
+          "observed_result": "On the main page I tapped Excel in the row of buttons. At first nothing seemed to happen, and I had to look again before I saw that Excel had turned green and the SET button and book icon had turned green too. The title still said \"PDF Reader\". The middle of the page was exactly the same as before: the same picture of papers, the same \"To continue, please allow file access\" message and the same Allow Access button. So nothing in the page itself told me I was now looking at Excel files. The only sign was the colour of one small button. Where am I? The Excel section of Home, I think, but I am relying on a colour change alone, against a title that says PDF. Getting back was easy: I tapped PDF, and after a short pause it turned red again. I am sure I am back where I began, because the red PDF button now agrees with the \"PDF Reader\" title.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It was worse live than in the pictures. When I chose Excel, only the colour of one small button changed. The title still said PDF Reader, and the rest of the page stayed the same, so nothing confirmed which files I was looking at. The slight delay before the colour changed made me unsure my tap had worked at all. Going back to PDF was easy, and I was sure of it only because the title and the button agreed again.",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Premium subscription offer, with a close button",
+      "expectation": "I think I am on a sign-up page for a paid Premium plan that has appeared on top of the app, and the X at the top left would take me away from it.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try the Premium plan completely free\", the \"Start Free Trial\" button, and the round X button in the top left corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X gives me a way out, which is a great relief compared with the same page without it. But the heading is still a sales sentence rather than the name of a page, so I know what is being offered, not where I am in the app. The \"Today / Day 2 / Day 3\" column looks like a step indicator, and I would have to read it slowly to be sure it is describing the trial and not steps I have to complete. The X has no word with it, so I am inferring that it closes the page.",
+        "solution": "Name the page plainly at the top, such as \"Premium plan\", and put the word \"Close\" next to the X, or a \"Back\" button that says where it goes."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-tc3",
+          "action": "Open the diamond page again from the crown picture. Wait until the X is showing, then say where in the app you are. Tap the X and say whether you landed where you expected.",
+          "confirms_if": "even with the X showing you cannot say where in the app you are, or the X takes you somewhere unexpected",
+          "overturns_if": "with the X showing you can say where you are and the X brings you back where you expected",
+          "observed_result": "I opened the diamond page again from the crown. The X was showing when the page appeared. Where am I? On a Premium sign-up offer that has come up over the main page. I can say that only because I remember tapping the crown a moment ago. The page itself still names only an offer (\"Try the Premium plan completely free\"), not a place. I tapped the X. After a short pause it brought me back to the main page with PDF and Home chosen, which is where I expected to land.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The X did what I expected and brought me back to the main page, so the way out is real. What remains is that the page never names itself as a place, and the X has no word with it. There is also a pause after tapping it, and that made me doubt my tap for a moment.",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 36,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 11,
+      "guessing": 25,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 11,
+    "navigate_with_difficulty": 18,
+    "cannot_handle": 7,
+    "tests_run": 6,
+    "opinions": {
+      "unchanged": 4,
+      "hardened": 6,
+      "softened": 15,
+      "reversed": 0
+    },
+    "out_of_scope": 1,
+    "not_executed": 0
+  }
+}

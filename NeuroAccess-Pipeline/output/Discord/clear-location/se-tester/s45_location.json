@@ -1,0 +1,31 @@
+{
+  "app": "Discord",
+  "screen": "s45",
+  "state_str": "932dc6442319d2c1b2f7c163a923ae9e",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_220056.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s45_header_nav.png",
+  "name": "#general with the GIF picker expanded on a search for hello",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Emoji / GIFs / Stickers tab row of the expression picker; the current tab is drawn with a grey fill (declared: 'GIFs') and the fill followed each tab tapped live — locates within the picker only, counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' names the channel and stays visible (dimmed where a sheet covers the lower screen); picker/sheet headings name the panel",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s43: same layout and the same top header text, so the content does not change the answer",
+  "recommendation": null,
+  "provisional": false
+}

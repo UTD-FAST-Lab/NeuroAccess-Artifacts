@@ -1,0 +1,213 @@
+{
+  "app": "PDFReader",
+  "screen": "screen20",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen20_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen20_function_groups.png"
+  },
+  "elements": {
+    "screen20-f1": {
+      "kind": "icon",
+      "appearance": "an X",
+      "state": null,
+      "location": "top left corner of the full-screen Premium paywall, white X on a dark circle",
+      "bounds": [
+        42,
+        84,
+        147,
+        189
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established convention for close / dismiss — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "the only control at the top of a full-screen offer \"Try the Premium plan completely free\"",
+      "observed_function": "closed the paywall and returned to the screen it was opened from (Settings)",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-screen20-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f1 (an X) once",
+          "expected_result": "closes the paywall and returns to where I was",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "closed the paywall and returned to the screen it was opened from (Settings)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen20-f1",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen20-f1 and record what happens (no function string in any field)",
+          "expected_result": "closes the paywall and returns to where I was",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "closed the paywall and returned to the screen it was opened from (Settings)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f2": {
+      "kind": "button",
+      "appearance": "the words \"Start Free Trial\"",
+      "state": null,
+      "location": "bottom of the full-screen Premium paywall",
+      "bounds": [
+        42,
+        2071,
+        1038,
+        2239
+      ],
+      "visible_label": "Start Free Trial",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "start free trial",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Start Free Trial\"",
+      "context_reading": "paywall footer, words \"Start Free Trial\"",
+      "observed_function": null,
+      "glyph_group": "gg16",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg16-screen20-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f2 (Start Free Trial) once",
+          "expected_result": "starts a free trial purchase flow",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f3": {
+      "kind": "button",
+      "appearance": "the words \"Terms of Use\"",
+      "state": null,
+      "location": "bottom of the full-screen Premium paywall",
+      "bounds": [
+        42,
+        2312,
+        490,
+        2342
+      ],
+      "visible_label": "Terms of Use",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "terms of use",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Terms of Use\"",
+      "context_reading": "paywall footer, words \"Terms of Use\"",
+      "observed_function": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+      "glyph_group": "gg17",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg17-screen20-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f3 (Terms of Use) once",
+          "expected_result": "opens the Terms of Use text",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg2-screen20-f3",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f3 (Terms of Use) once",
+          "expected_result": "opens the Terms of Use text",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the in-app \"Terms of Use\" page (toolbar with a back chevron and the title \"Terms of Use\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f4": {
+      "kind": "button",
+      "appearance": "the words \"Privacy Policy\"",
+      "state": null,
+      "location": "bottom of the full-screen Premium paywall",
+      "bounds": [
+        590,
+        2312,
+        1038,
+        2342
+      ],
+      "visible_label": "Privacy Policy",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "privacy policy",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Privacy Policy\"",
+      "context_reading": "paywall footer, words \"Privacy Policy\"",
+      "observed_function": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+      "glyph_group": "gg18",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg18-screen20-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f4 (Privacy Policy) once",
+          "expected_result": "opens the Privacy Policy text",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg3-screen20-f4",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen20 (paywall opened from the Settings \"Upgrade to Premium\" banner)",
+          "action": "note what is on screen, then tap screen20-f4 (Privacy Policy) once",
+          "expected_result": "opens the Privacy Policy text",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the in-app \"Privacy Policy\" page (toolbar with a back chevron and the title \"Privacy Policy\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 6,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

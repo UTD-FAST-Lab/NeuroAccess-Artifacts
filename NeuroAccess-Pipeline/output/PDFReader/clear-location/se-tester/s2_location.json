@@ -1,0 +1,39 @@
+{
+  "app": "PDFReader",
+  "screen": "s2",
+  "state_str": "2421b219e3dbfe2df6b8e88ff81d2fb9",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180412.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s2_header_nav.png",
+  "name": "the launch screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "PDF Reader, PDF Viewer",
+      "verdict_on_region": "unconventional position (centred); names the app, not the place -- dismissed as a location signal"
+    }
+  ],
+  "identifier_found": "none that names the place; the only words are the app's name and \"This process may contain ads\"",
+  "identifier_class": "none",
+  "accessibility_text": "none -- no content_description on any view",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "logo, app name and an unlabelled progress indicator; no title, no nav bar, no phrase saying the app is starting",
+  "test_cases": [
+    {
+      "id": "s2-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "launch screen on screen, progress bar filling",
+      "action": "read the centred text \"PDF Reader, PDF Viewer\" and decide whether it names a place or the app",
+      "expected_result": "the text names the app only, or it names a part of the app",
+      "confirms_if": "it is the app’s own name and nothing else on the screen names where the user is",
+      "overturns_if": "some other visible text names the screen",
+      "observed_result": "\"PDF Reader, PDF Viewer\" is the app's name (the same words as the store listing); the progress bar has no label; nothing else names the screen",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "no text other than the app's own name appears in any moment of the live launch screen; the splash exception applies to a disappearing-identifier transition, not to whether this screen names itself, and no scroll transition touches it. Low impact: transient, and it hands over by itself",
+  "recommendation": "label the progress indicator, e.g. \"Starting PDF Reader...\" or \"Loading\", so the screen says what it is",
+  "provisional": false
+}

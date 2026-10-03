@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s38",
+  "state_str": "a40003f7b828ab4a481828e7adf856bc",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215722.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s38_header_nav.png",
+  "name": "Gift a new Nitro membership with an error dialog",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Gift a new Nitro membership",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Oops, something went wrong...",
+      "verdict_on_region": "an error dialog's title; names an event, not a place — not counted; the gift screen's own title stays visible, dimmed, behind the dialog"
+    }
+  ],
+  "identifier_found": "\"Gift a new Nitro membership\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Gift a new Nitro membership' stays visible dimmed behind the error dialog, whose 'Okay' returns to that page",
+  "test_cases": [
+    {
+      "id": "s38-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Gift a new Nitro membership page",
+      "action": "tap 'Gift Nitro' to reproduce the error dialog",
+      "expected_result": "the 'Oops, something went wrong...' dialog appears over the dimmed gift page with 'Okay' returning to it",
+      "confirms_if": "the dialog hides every place name or 'Okay' does not return",
+      "overturns_if": "the gift title stays visible behind and 'Okay' returns",
+      "observed_result": "not run: 'Gift Nitro' starts a purchase flow on the live account; the captured error cannot be reproduced without risking a real billing sheet",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "the region the detector marked away from the top was read from the image and reasoned about; the screen's own title stays visible behind the overlay",
+  "recommendation": null,
+  "provisional": false
+}

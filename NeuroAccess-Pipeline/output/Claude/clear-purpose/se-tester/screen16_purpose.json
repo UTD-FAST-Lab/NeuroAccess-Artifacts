@@ -1,0 +1,361 @@
+{
+  "app": "Claude",
+  "screen": "screen16",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen16_actionable_elements.png",
+  "elements": {
+    "screen16-a1": {
+      "kind": "icon",
+      "glyph": "three horizontal lines of decreasing length",
+      "description": "three stacked lines control in the top-left corner of the toolbar",
+      "location": "top-left",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Open menu\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "three stacked horizontal lines (hamburger) is an established convention for opening the app's navigation menu — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but the hamburger glyph is a widely-known convention; common-icon exemption applies pending the behavioural test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same control as screen1-a1 (identical appearance, words and position in the same repeated state); tested once there and the verdict carried: tapping the hamburger opened the side navigation panel, exactly what the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a2": {
+      "kind": "icon",
+      "glyph": "letter i inside a circle",
+      "description": "letter i inside a circle in the top-right of the Settings screen",
+      "location": "top-right",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Learn more\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a circled i is an established 'information / about' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "info convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen16-a2-tc1",
+          "type": "verification",
+          "precondition": "Settings screen",
+          "action": "tap the circled i",
+          "expected_result": "information about the app appears",
+          "confirms_if": "something other than information opens",
+          "overturns_if": "information opens",
+          "observed_result": "a menu opened with Consumer Terms, Usage Policy, Privacy Policy, Licenses, Help & Support and the app version",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the info glyph opened legal, help and version information, matching the convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black 'Upgrade' button in the 'Want more Claude?' card",
+      "location": "upper settings card",
+      "bounds": [
+        95,
+        673,
+        330,
+        799
+      ],
+      "visible_text": "\"Upgrade\" under \"Want more Claude? Upgrade for more usage and capabilities.\"",
+      "accessibility_text_consulted": "talkback_label \"Upgrade\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "card copy supplies what upgrading gives",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the card copy states what the button does; not pressed (purchase flow); no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Profile' with a person glyph",
+      "location": "settings list",
+      "bounds": [
+        32,
+        878,
+        1048,
+        1025
+      ],
+      "visible_text": "\"Profile\"",
+      "accessibility_text_consulted": "talkback_label \"Profile\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain settings label (with current value where shown)",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "plain label in a Settings list; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Billing' with a dollar-coin glyph",
+      "location": "settings list",
+      "bounds": [
+        32,
+        1030,
+        1048,
+        1177
+      ],
+      "visible_text": "\"Billing\"",
+      "accessibility_text_consulted": "talkback_label \"Billing\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain settings label (with current value where shown)",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "plain label in a Settings list; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Capabilities' with value '5 enabled'",
+      "location": "settings list",
+      "bounds": [
+        32,
+        1209,
+        1048,
+        1375
+      ],
+      "visible_text": "\"Capabilities\" / \"5 enabled\"",
+      "accessibility_text_consulted": "talkback_label \"Capabilities 5 enabled\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Capabilities' is vague — capabilities of what?",
+      "test_cases": [
+        {
+          "id": "screen16-a6-tc1",
+          "type": "expected",
+          "precondition": "Settings screen",
+          "action": "tap 'Capabilities'",
+          "expected_result": "if the row's words conveyed the purpose, the page would be a set of switchable features",
+          "confirms_if": "the page is something '5 enabled' did not predict",
+          "overturns_if": "a list of features that can be switched on and off opens",
+          "observed_result": "a 'Capabilities' page opened listing features (Web search, Artifacts, Inline visualizations, …) each with a plain-language description and an on/off switch — what the count 'N enabled' implied",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "the value 'N enabled' tells the user this is a set of things that can be switched on or off, and that is exactly what opened",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Connectors' row with a paperclip-like glyph and a chevron",
+      "location": "sheet / settings list",
+      "bounds": [
+        32,
+        1380,
+        1048,
+        1527
+      ],
+      "visible_text": "\"Connectors\"",
+      "accessibility_text_consulted": "talkback_label \"Connectors\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Connectors' is jargon; nothing says what gets connected to what",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same control as screen6-a8 (identical appearance, words and position in the same repeated state); tested once there and the verdict carried: the explanation of the term exists only on the page the row opens; the row gives the bare jargon word",
+      "recommendation": "add a caption to the row, e.g. 'Connectors — let Claude use your other apps and tools'",
+      "provisional": false
+    },
+    "screen16-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Permissions'",
+      "location": "settings list",
+      "bounds": [
+        32,
+        1532,
+        1048,
+        1679
+      ],
+      "visible_text": "\"Permissions\"",
+      "accessibility_text_consulted": "talkback_label \"Permissions\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain settings label",
+      "test_cases": [
+        {
+          "id": "screen16-a8-tc1",
+          "type": "expected",
+          "precondition": "Settings screen",
+          "action": "tap 'Permissions'",
+          "expected_result": "a list of app permissions opens",
+          "confirms_if": "something unrelated opens",
+          "overturns_if": "permissions open",
+          "observed_result": "a 'Permissions' page opened with Location and Calendar, each explaining how to allow access in system settings",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened the permissions page it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Color mode System' with a moon glyph and value 'System'",
+      "location": "settings list",
+      "bounds": [
+        32,
+        1711,
+        1048,
+        1877
+      ],
+      "visible_text": "\"Color mode System\"",
+      "accessibility_text_consulted": "talkback_label \"Color mode System\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain settings label (with current value where shown)",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "plain label in a Settings list; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a10": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Font style Default' with an 'Aa' glyph and value 'Default'",
+      "location": "settings list",
+      "bounds": [
+        32,
+        1882,
+        1048,
+        2048
+      ],
+      "visible_text": "\"Font style Default\"",
+      "accessibility_text_consulted": "talkback_label \"Font style Default\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain settings label (with current value where shown)",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "plain label in a Settings list; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a11": {
+      "kind": "button",
+      "glyph": null,
+      "description": "settings row 'Voice' with a sound-bars glyph",
+      "location": "settings list",
+      "bounds": [
+        32,
+        2053,
+        1048,
+        2200
+      ],
+      "visible_text": "\"Voice\"",
+      "accessibility_text_consulted": "talkback_label \"Voice\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "in a Settings list, 'Voice' reads as the voice settings",
+      "test_cases": [
+        {
+          "id": "screen16-a11-tc1",
+          "type": "expected",
+          "precondition": "Settings screen",
+          "action": "tap 'Voice'",
+          "expected_result": "voice settings open",
+          "confirms_if": "something else (e.g. a voice session) starts",
+          "overturns_if": "voice settings open",
+          "observed_result": "a 'Voice settings' page opened with voice styles, Language and Pace",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened voice settings, as a 'Voice' row in Settings implies",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a12": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "settings row 'Haptic feedback' with a switch",
+      "location": "settings list, bottom",
+      "bounds": [
+        32,
+        2232,
+        1048,
+        2379
+      ],
+      "visible_text": "\"Haptic feedback\" with an on/off switch",
+      "accessibility_text_consulted": "talkback_label \"Haptic feedback\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "standard settings label with a switch",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "label plus switch state what it controls; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 12,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 11,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 4,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 11,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

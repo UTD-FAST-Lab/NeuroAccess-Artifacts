@@ -1,0 +1,49 @@
+{
+  "app": "Claude",
+  "screen": "s29",
+  "state_str": "6a8e3e1a593d30f5c9d89b19f198da76",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134344.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s29_header_nav.png",
+  "name": "Capabilities",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Capabilities",
+      "verdict_on_region": "title \u2014 names the screen"
+    },
+    {
+      "kind": "header",
+      "text": "Memory",
+      "verdict_on_region": "unconventional (bottom): section heading within the page \u2014 names a group of settings, not the screen; dismissed"
+    },
+    {
+      "kind": "header",
+      "text": "Tool access",
+      "verdict_on_region": "unconventional (bottom): section heading within the page \u2014 dismissed"
+    }
+  ],
+  "identifier_found": "\"Capabilities\" title, pinned while scrolling",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title",
+  "test_cases": [
+    {
+      "id": "s29-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Settings",
+      "action": "open Capabilities, scroll to the bottom, read the lower headings",
+      "expected_result": "the headings name groups within the page; the title stays",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title scrolls away",
+      "observed_result": "\"Capabilities\" pinned throughout; \"Memory\" heads Generate memory / Include sensitive topics / Memory files; \"Tool access\" heads Auto / On demand / Always available",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: \"Capabilities\" stayed pinned while scrolling to the Tool access options; \"Memory\" and \"Tool access\" are small section headings",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,36 @@
+{
+  "app": "Claude",
+  "screen": "s30",
+  "state_str": "5b06934dee8b010817d8342b4cf6a836",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134400.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s30_header_nav.png",
+  "name": "Capabilities with different toggles set",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Capabilities",
+      "verdict_on_region": "title \u2014 names the screen"
+    },
+    {
+      "kind": "header",
+      "text": "Memory",
+      "verdict_on_region": "unconventional: section heading within the page \u2014 dismissed"
+    },
+    {
+      "kind": "header",
+      "text": "Tool access",
+      "verdict_on_region": "unconventional: section heading within the page \u2014 dismissed"
+    }
+  ],
+  "identifier_found": "\"Capabilities\" title",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s29-tc1 by content \u2014 the same Capabilities page with the same title and headings; only toggle positions differ, which do not change the answer (s32\u2013s34 carry a different structure_str, 611e8580\u2026, but the header is identical)",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s31",
+  "state_str": "3b12b2ff3c96a45d8a87e2a725702ec1",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215626.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s31_header_nav.png",
+  "name": "channel details for #general (Members tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Members / Media / Pins / Threads / Links / Files tabs with the current one underlined; the underline moved live when another tab was tapped — counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header + navigation with visible active state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'general' names the place",
+  "test_cases": [
+    {
+      "id": "s31-tc1",
+      "type": "active_state_verification",
+      "precondition": "#general channel",
+      "action": "tap the channel name in the top bar, scroll the list, then tap a different tab",
+      "expected_result": "the '# general / Text Channel' header persists and the tab underline follows the tap",
+      "confirms_if": "the header scrolls away or the underline never moves",
+      "overturns_if": "header persists and underline moves",
+      "observed_result": "header '# general / Text Channel' stayed in place through the scroll; the underline moved from Members to Pins when Pins was tapped",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: header '# general / Text Channel' stayed in place through the scroll; the underline moved from Members to Pins when Pins was tapped",
+  "recommendation": null,
+  "provisional": false
+}

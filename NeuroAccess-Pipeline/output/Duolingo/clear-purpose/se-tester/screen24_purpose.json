@@ -1,0 +1,95 @@
+{
+  "app": "Duolingo",
+  "screen": "screen24",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen24_actionable_elements.png",
+  "elements": {
+    "screen24-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no content_desc or talkback label; nothing consulted",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen24-a1-tc1",
+          "type": "verification",
+          "precondition": "Spanish Score page",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the Score page closed and the home path returned (course panel re-opened on arrival)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen24-a2": {
+      "kind": "icon",
+      "glyph": "upward arrow above an open-topped tray",
+      "description": "upward arrow above an open-topped tray, page header right",
+      "location": "top-right of the Spanish Score page",
+      "bounds": [
+        943,
+        74,
+        1069,
+        200
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings; not used in the verdict",
+      "convention_relied_on": "arrow up out of a tray is the established 'share / export' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "share glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen24-a2-tc1",
+          "type": "verification",
+          "precondition": "Spanish Score page",
+          "action": "tap the glyph (choose no target)",
+          "expected_result": "a share sheet opens",
+          "confirms_if": "something unrelated",
+          "overturns_if": "a share sheet",
+          "observed_result": "a sheet 'SHARE SPANISH SCORE' opened with a score card preview and Instagram / Facebook / Messages / Save / More; closed without sharing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the glyph opened a share sheet, matching the convention",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 2,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 2,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

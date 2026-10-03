@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s7",
+  "state_str": "80749a8fbd2a7eb3a70dfb6a3c1b37e9",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_203950.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s7_header_nav.png",
+  "name": "an empty temporary chat",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Temporary chat",
+      "verdict_on_region": "unconventional (mid-screen) — names the kind of chat the user is in; counted"
+    }
+  ],
+  "identifier_found": "\"Temporary chat\" centred mid-screen with \"This chat won't appear in history.\"; the composer hint also reads \"Temporary chat\"",
+  "identifier_class": "header (unconventional position) plus body copy",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the mid-screen text names the chat mode, repeated in the composer",
+  "test_cases": [
+    {
+      "id": "s7-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "home screen",
+      "action": "tap the temporary-chat icon at top right and read the screen with keyboard open and closed",
+      "expected_result": "the centred text either names the part of the app the user is in or names a piece of content",
+      "confirms_if": "it names content only",
+      "overturns_if": "it names the mode/place",
+      "observed_result": "the screen shows \"Temporary chat\" centred with \"This chat won't appear in history. Learn more\" and the composer hint \"Temporary chat\"; it names the kind of chat the user is in",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "\"Temporary chat\" names the place (a chat mode) and is echoed in the composer; accepted despite its mid-screen position. Not tested: whether it survives once a message is sent, which is a different state the capture does not hold.",
+  "recommendation": "keep the \"Temporary chat\" name in the top bar once messages start",
+  "provisional": false
+}

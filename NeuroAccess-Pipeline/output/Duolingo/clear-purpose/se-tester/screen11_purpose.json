@@ -1,0 +1,230 @@
+{
+  "app": "Duolingo",
+  "screen": "screen11",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen11_actionable_elements.png",
+  "elements": {
+    "screen11-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        42,
+        105,
+        105,
+        168
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no content_desc or talkback label; nothing consulted",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen11-a1-tc1",
+          "type": "verification",
+          "precondition": "Spanish Course page",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the Spanish Course page closed and the home path returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen11-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "section card with a speech-bubble picture, 'Section 1' and a progress bar",
+      "location": "Spanish Course page, first card",
+      "bounds": [
+        42,
+        252,
+        1038,
+        1017
+      ],
+      "visible_text": "\"¡Hola!\" (speech bubble) / \"Section 1\" and a progress bar",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "no action word, while the next card carries 'JUMP HERE'; a first-time user cannot tell what pressing the current section does",
+      "test_cases": [
+        {
+          "id": "screen11-a2-tc1",
+          "type": "expected",
+          "precondition": "Spanish Course page",
+          "action": "tap the Section 1 card body (not the chip)",
+          "expected_result": "reading 1: go to Section 1's lessons; reading 2: details about Section 1",
+          "confirms_if": "it does something neither reading predicts",
+          "overturns_if": "it takes me to Section 1's lessons",
+          "observed_result": "returned to the Section 1 lesson path on the home screen",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "pressing the Section 1 card took me to Section 1's lessons, the plain reading of a section card",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen11-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "small chip with a flag and a number range inside a section card",
+      "location": "Spanish Course page, right side of a section card",
+      "bounds": [
+        801,
+        806,
+        985,
+        882
+      ],
+      "visible_text": "\"1 to 9\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "a bare number range next to a flag does not say what the numbers are or that pressing opens anything",
+      "test_cases": [
+        {
+          "id": "screen11-a3-tc1",
+          "type": "expected",
+          "precondition": "Spanish Course page",
+          "action": "tap the '1 to 9' chip",
+          "expected_result": "reading 1: nothing (a label); reading 2: something about the numbers",
+          "confirms_if": "it opens a page the bare range never announced",
+          "overturns_if": "it does nothing, or opens only a score explanation the range implies",
+          "observed_result": "opened a 'Section 1' details page: '1 to 9 · CEFR A1', a description of what the section covers, an example sentence and a 'Grammar concepts' list",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the chip opened a separate section-details page (score range, CEFR level, grammar concepts) that its bare number range never announced",
+      "recommendation": "label it 'Score 1–9 · details ›'",
+      "provisional": false
+    },
+    "screen11-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "section card with 'JUMP HERE'",
+      "location": "Spanish Course page, second card",
+      "bounds": [
+        42,
+        1059,
+        1038,
+        1820
+      ],
+      "visible_text": "\"Quiero aprender español.\" / \"Section 2\" / \"JUMP HERE\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "'JUMP HERE' on the Section 2 card says pressing moves you ahead to that section",
+      "test_cases": [
+        {
+          "id": "screen11-a4-tc1",
+          "type": "expected",
+          "precondition": "Spanish Course page",
+          "action": "tap the Section 2 card",
+          "expected_result": "an offer to move ahead to Section 2",
+          "confirms_if": "something else",
+          "overturns_if": "a jump-ahead to Section 2",
+          "observed_result": "opened 'Jump ahead to Section 2 and increase your Duolingo Score!' with START TEST / NOT NOW; closed with NOT NOW",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the card opened the jump-ahead offer for Section 2 that 'JUMP HERE' announces",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen11-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "small chip with a flag and a number range inside a section card",
+      "location": "Spanish Course page, right side of a section card",
+      "bounds": [
+        757,
+        1613,
+        985,
+        1689
+      ],
+      "visible_text": "\"10 to 19\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "a bare number range next to a flag does not say what the numbers are or that pressing opens anything",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen11-a3 (identical chip pattern on the same page), tested once: the chip opened a separate section-details page (score range, CEFR level, grammar concepts) that its bare number range never announced",
+      "recommendation": "label it 'Score 1–9 · details ›'",
+      "provisional": false
+    },
+    "screen11-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "section card clipped by the bottom edge; only its speech bubble and owl show",
+      "location": "Spanish Course page, third card (clipped)",
+      "bounds": [
+        42,
+        1862,
+        1038,
+        2337
+      ],
+      "visible_text": "\"Sé algunas palabras.\" (a Spanish phrase in a speech bubble)",
+      "accessibility_text_consulted": "talkback includes text that is off-screen; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the only visible text is a Spanish phrase; nothing in view says what the card is or what pressing does",
+      "test_cases": [
+        {
+          "id": "screen11-a6-tc1",
+          "type": "expected",
+          "precondition": "Spanish Course page, card clipped as captured",
+          "action": "tap the visible speech bubble",
+          "expected_result": "reading 1: hear/translate the phrase; reading 2: open the section",
+          "confirms_if": "it does something the phrase does not suggest",
+          "overturns_if": "it plays or translates the phrase",
+          "observed_result": "opened 'Jump ahead to Section 3 and increase your Duolingo Score!' with START TEST / NOT NOW; closed with NOT NOW",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "a Spanish phrase in a bubble opened a jump-ahead test, which the visible part gives no hint of",
+      "recommendation": "keep the section title and 'JUMP HERE' in the visible part, or add an English caption to the phrase card",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "issues": 3,
+    "missing_purpose": 0,
+    "unclear_purpose": 3,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

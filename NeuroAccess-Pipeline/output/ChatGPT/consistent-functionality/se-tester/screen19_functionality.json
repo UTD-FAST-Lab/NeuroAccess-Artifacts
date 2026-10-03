@@ -1,0 +1,199 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen19",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen19_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen19_function_groups.png"
+  },
+  "elements": {
+    "screen19-f1": {
+      "kind": "icon",
+      "appearance": "three dots joined by two lines",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        780,
+        1047,
+        906,
+        1173
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three joined dots = share (Android) - established on Android; my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Share",
+      "accessibility_text": "content_desc: \"Share\", talkback: \"Share\"",
+      "context_reading": "template preview sheet \"Create a caricature\"",
+      "observed_function": null,
+      "glyph_group": "gg49",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg49-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "the same effect for every member",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg49": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen19-f2": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        917,
+        1047,
+        1043,
+        1173
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close / dismiss - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\", talkback: \"Close\"",
+      "context_reading": "template preview sheet \"Create a caricature\"",
+      "observed_function": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+      "glyph_group": "gg6",
+      "function_group": "cfg2",
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "closes its own surface",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality",
+        "cfg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f3": {
+      "kind": "button",
+      "appearance": "the words \"Create a caricature of me and my job based on everything you know about me.\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        42,
+        1958,
+        1038,
+        2084
+      ],
+      "visible_label": "Create a caricature of me and my job based on everything you know about me.",
+      "convention_relied_on": "worded control (\"Create a caricature of me and my job based on everything you\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\", talkback: \"Create a caricature of me and my job based on everything you know about me.\"",
+      "context_reading": "template preview sheet \"Create a caricature\"",
+      "observed_function": "no effect: tapped twice on the live caricature sheet; the short prompt is already shown in full and nothing opened, expanded, toggled or changed",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen19-f3-fd1",
+          "type": "function_determination",
+          "precondition": "the sheet or chat that holds it, live",
+          "action": "tap it and watch for any change",
+          "expected_result": "some action or state change",
+          "confirms_if": "n/a",
+          "overturns_if": "nothing happens and nothing changes - not a control",
+          "observed_result": "no effect: tapped twice on the live caricature sheet; the short prompt is already shown in full and nothing opened, expanded, toggled or changed",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen19-f4": {
+      "kind": "button",
+      "appearance": "the words \"Choose photo\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        42,
+        2132,
+        1038,
+        2274
+      ],
+      "visible_label": "Choose photo",
+      "convention_relied_on": "worded control (\"Choose photo\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Choose photo",
+      "accessibility_text": "content_desc: \"\", talkback: \"Choose photo\"",
+      "context_reading": "template preview sheet \"Create a caricature\"",
+      "observed_function": "opens the system photo picker",
+      "glyph_group": "gg50",
+      "function_group": "fg9",
+      "test_cases": [
+        {
+          "id": "gg50-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the system photo picker",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg9-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg50": "Consistent Functionality",
+        "fg9": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 1,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

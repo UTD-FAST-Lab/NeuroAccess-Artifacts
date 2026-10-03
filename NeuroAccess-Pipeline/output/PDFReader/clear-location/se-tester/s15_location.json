@@ -1,0 +1,36 @@
+{
+  "app": "PDFReader",
+  "screen": "s15",
+  "state_str": "4c0984654f21444562317756eacd8fbf",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_181234.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s15_header_nav.png",
+  "name": "Home, the file list (Word filter)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "PDF Reader",
+      "verdict_on_region": "names the app, not the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "PDF / HWP / Word / Excel / PPT pill row (selected: Word)",
+      "verdict_on_region": "a file-type filter on the list, not a place in the app; its visible selection says which files are listed, not which section you are in"
+    },
+    {
+      "kind": "navigation",
+      "text": "Home / Recent / Favorite / Tools tab bar (selected: Home)",
+      "verdict_on_region": "locates the user: 'Home' is drawn with a filled black icon and dark label while the other three are grey outlines; contains_selected_view: true with selected_item_text \"Home\""
+    }
+  ],
+  "identifier_found": "\"Home\" -- the highlighted item of the bottom tab bar (filled icon, dark label); the top header \"PDF Reader\" is the app's name",
+  "identifier_class": "navigation_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the header names only the app, but the bottom tab bar visibly highlights Home",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "template carry from s4 (same structure_str bf78733f2635e0199a058deaf0b6aa82): the only difference is which filter pill is selected (Word), which does not change the answer; the Home tab highlight is identical. Header is only the app's name",
+  "recommendation": null,
+  "provisional": false
+}

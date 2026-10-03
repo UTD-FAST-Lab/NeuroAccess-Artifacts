@@ -1,0 +1,214 @@
+{
+  "app": "Messenger",
+  "screen": "screen33",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen33_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen33_function_groups.png"
+  },
+  "elements": {
+    "screen33-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines",
+      "state": null,
+      "location": "top left of screen33",
+      "bounds": [
+        42,
+        63,
+        168,
+        221
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines: menu (hamburger) — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "main menu",
+      "accessibility_text": "content_desc: 'Main menu'; talkback_label: 'Main menu'",
+      "context_reading": "Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs",
+      "observed_function": "opened the side menu",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen33-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen33 (Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs)",
+          "action": "note what is on screen, then tap the three horizontal lines at top left of screen33",
+          "expected_result": "the same result as the other members of gg8 (three horizontal lines)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the side menu",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f2": {
+      "kind": "icon",
+      "appearance": "ring of purple dots",
+      "state": null,
+      "location": "bottom right of screen33",
+      "bounds": [
+        903,
+        2013,
+        1046,
+        2156
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "ring of purple dots: none — a product-specific Meta AI mark, not a convention — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "meta ai",
+      "accessibility_text": "content_desc: 'Meta AI'; talkback_label: 'Meta AI'",
+      "context_reading": "Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs",
+      "observed_function": "opened the Meta AI page",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc-screen33-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen33 (Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs)",
+          "action": "note what is on screen, then tap the ring of purple dots at bottom right of screen33",
+          "expected_result": "the same result as the other members of gg9 (ring of purple dots)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the Meta AI page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f3": {
+      "kind": "icon+label",
+      "appearance": "speech bubble with the word \"Chats\"",
+      "state": "unselected",
+      "location": "bottom left of screen33",
+      "bounds": [
+        0,
+        2190,
+        360,
+        2337
+      ],
+      "visible_label": "Chats",
+      "convention_relied_on": "speech bubble with the word \"Chats\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "chats",
+      "accessibility_text": "content_desc: 'Chats, Tab 1 of 3'; talkback_label: 'Chats, Tab 1 of 3'",
+      "context_reading": "Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs",
+      "observed_function": "shows the Chats list",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-tc-screen33-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen33 (Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs)",
+          "action": "note what is on screen, then tap the speech bubble with the word \"Chats\" at bottom left of screen33",
+          "expected_result": "the same result as the other members of gg10 (speech bubble with the word \"Chats\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "shows the Chats list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f4": {
+      "kind": "icon+label",
+      "appearance": "two people with the word \"People\"",
+      "state": "unselected",
+      "location": "bottom centre of screen33",
+      "bounds": [
+        360,
+        2190,
+        720,
+        2337
+      ],
+      "visible_label": "People",
+      "convention_relied_on": "two people with the word \"People\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "people",
+      "accessibility_text": "content_desc: 'People tab, Tab 2 of 3'; talkback_label: 'People tab, Tab 2 of 3'",
+      "context_reading": "Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs",
+      "observed_function": "opened the People tab",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc-screen33-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen33 (Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs)",
+          "action": "note what is on screen, then tap the two people with the word \"People\" at bottom centre of screen33",
+          "expected_result": "the same result as the other members of gg11 (two people with the word \"People\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the People tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f5": {
+      "kind": "icon+label",
+      "appearance": "bell with the word \"Notifications\"",
+      "state": "selected",
+      "location": "bottom right of screen33",
+      "bounds": [
+        720,
+        2190,
+        1080,
+        2337
+      ],
+      "visible_label": "Notifications",
+      "convention_relied_on": "bell with the word \"Notifications\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "notifications",
+      "accessibility_text": "content_desc: 'Notifications, Tab 3 of 3'; talkback_label: 'Notifications, Tab 3 of 3'",
+      "context_reading": "Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs",
+      "observed_function": "opened the Notifications tab",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc-screen33-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen33 (Notifications tab: hamburger, 'Notifications' title, list, Meta AI button, tabs)",
+          "action": "note what is on screen, then tap the bell with the word \"Notifications\" at bottom right of screen33",
+          "expected_result": "the same result as the other members of gg12 (bell with the word \"Notifications\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the Notifications tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

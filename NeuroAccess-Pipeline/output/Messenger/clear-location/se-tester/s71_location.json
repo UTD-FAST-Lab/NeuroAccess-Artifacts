@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s71",
+  "state_str": "e355e0b48149c557bd9bcc12e4c15398",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152659.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s71_header_nav.png",
+  "name": "Family Center supervision sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Supervision for Teen Accounts",
+      "verdict_on_region": "large title naming the full-screen page or sheet the user is on — accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Supervision for Teen Accounts\"",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s71-tc1",
+      "type": "unconventional_region",
+      "precondition": "Me > Family Center",
+      "action": "scroll the sheet; read the mid-screen title",
+      "expected_result": "title persists and names the page, or scrolls away",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "\"Supervision for Teen Accounts\" stayed on screen at full scroll with the Close (X) visible; accepted",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: \"Supervision for Teen Accounts\" stayed on screen at full scroll with the Close (X) visible; accepted",
+  "recommendation": null,
+  "provisional": false
+}

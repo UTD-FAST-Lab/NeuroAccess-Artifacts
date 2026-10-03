@@ -1,0 +1,44 @@
+{
+  "app": "Messenger",
+  "screen": "s53",
+  "state_str": "3e5116daf01947a068a57bb8b852b2eb",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152239.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s53_header_nav.png",
+  "name": "side drawer (main menu)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Ally Cooper",
+      "verdict_on_region": "signed-in account name — names a profile, not a place"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Unselected, Unselected, Unselected, Unselected, Unselected, Unselected, Unselected, Unselected",
+      "verdict_on_region": "side-drawer list of destinations; no item declared or drawn as current — says where you could go, not where you are"
+    }
+  ],
+  "identifier_found": "the side drawer has the signed-in account name at the top and a list of destinations with no item drawn as current; nothing says this is the main menu or which section is open",
+  "identifier_class": "none",
+  "accessibility_text": "content_description on the drawer root: \"All chats menu\" — names the drawer; nothing visible does",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the side drawer has the signed-in account name at the top and a list of destinations with no item drawn as current; nothing says this is the main menu or which section is open",
+  "test_cases": [
+    {
+      "id": "s53-tc1",
+      "type": "verification",
+      "precondition": "app open on a tab, side drawer opened from the hamburger",
+      "action": "look at the drawer top and its items; scroll it; then open Archive from it, return and reopen the drawer",
+      "expected_result": "either a title or a highlighted current item appears in some state, or none ever does",
+      "confirms_if": "no title and no highlighted item in any state, including after visiting a drawer destination",
+      "overturns_if": "a drawer title appears or the item for the current page is highlighted",
+      "observed_result": "drawer shows only \"Ally Cooper\" with a chevron and a settings gear at the top; Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels/Events/Dating all drawn identically; it does not scroll (content fits); after opening Archive and reopening, still no item highlighted (template carry from s3 — same drawer, identical content)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed on the device: the side drawer has the signed-in account name at the top and a list of destinations with no item drawn as current; nothing says this is the main menu or which section is open; template carry from s3 (same drawer, same content); no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "add a visible drawer heading (the accessibility layer already says \"All chats menu\") and highlight the item for the page the drawer was opened from",
+  "provisional": false
+}

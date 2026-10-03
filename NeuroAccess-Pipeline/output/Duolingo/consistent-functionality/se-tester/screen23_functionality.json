@@ -1,0 +1,422 @@
+{
+  "app": "Duolingo",
+  "screen": "screen23",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen23_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen23_function_groups.png"
+  },
+  "elements": {
+    "screen23-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the course picker \"What would you like to learn?\"",
+      "bounds": [
+        21,
+        126,
+        105,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "close page",
+      "accessibility_text": "content_desc: \"Close Page\"; talkback_label: \"Close Page\"",
+      "context_reading": "top-left of the course picker \"What would you like to learn?\"",
+      "observed_function": "closes the course picker, back to home",
+      "glyph_group": "gg19",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the page carrying the X",
+          "action": "tap each member",
+          "expected_result": "each closes its page",
+          "confirms_if": "a member does something other than close its page",
+          "overturns_if": "every member closes its page",
+          "observed_result": "closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f2": {
+      "kind": "icon+label",
+      "appearance": "the words \"New Courses\" with an upward chevron",
+      "state": "expanded",
+      "location": "section header in the course picker",
+      "bounds": [
+        42,
+        577,
+        1038,
+        742
+      ],
+      "visible_label": "New Courses",
+      "convention_relied_on": "a header with an up chevron conventionally collapses its section — confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "new courses",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"New Courses\"",
+      "context_reading": "section header in the course picker",
+      "observed_function": "collapses the \"New Courses\" list (chevron flips down); pressing again expands it",
+      "glyph_group": "gg44",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg44-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "collapses/expands the New Courses list",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "collapses the \"New Courses\" list (chevron flips down); pressing again expands it",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg44": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f3": {
+      "kind": "icon+label",
+      "appearance": "musical note with the word Music",
+      "state": null,
+      "location": "row under \"New Courses\" in the course picker",
+      "bounds": [
+        42,
+        742,
+        1038,
+        910
+      ],
+      "visible_label": "Music",
+      "convention_relied_on": "Music glyph with the word \"Music\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "music",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Music\"",
+      "context_reading": "row under \"New Courses\" in the course picker",
+      "observed_function": "opens the Music course setup question \"Do you have any music experience?\"",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Music course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Music course setup question \"Do you have any music experience?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f4": {
+      "kind": "icon+label",
+      "appearance": "arithmetic signs with the word Math",
+      "state": null,
+      "location": "row under \"New Courses\" in the course picker",
+      "bounds": [
+        42,
+        942,
+        1038,
+        1110
+      ],
+      "visible_label": "Math",
+      "convention_relied_on": "Math glyph with the word \"Math\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "math",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Math\"",
+      "context_reading": "row under \"New Courses\" in the course picker",
+      "observed_function": "opens the Math course setup question \"What best describes you?\"",
+      "glyph_group": "gg21",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg21-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Math course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Math course setup question \"What best describes you?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f5": {
+      "kind": "icon+label",
+      "appearance": "chess rook with the word Chess",
+      "state": null,
+      "location": "row under \"New Courses\" in the course picker",
+      "bounds": [
+        42,
+        1142,
+        1038,
+        1310
+      ],
+      "visible_label": "Chess",
+      "convention_relied_on": "Chess glyph with the word \"Chess\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "chess",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Chess\"",
+      "context_reading": "row under \"New Courses\" in the course picker",
+      "observed_function": "opens the Chess course setup question \"How much chess do you know?\"",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Chess course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Chess course setup question \"How much chess do you know?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f6": {
+      "kind": "icon+label",
+      "appearance": "the words \"For English speakers\" with an upward chevron",
+      "state": "expanded",
+      "location": "section header in the course picker",
+      "bounds": [
+        42,
+        1342,
+        1038,
+        1507
+      ],
+      "visible_label": "For English speakers",
+      "convention_relied_on": "as gg44 — confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "for english speakers",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"For English speakers\"",
+      "context_reading": "section header in the course picker",
+      "observed_function": "collapses the \"For English speakers\" list (revealing other \"For … speakers\" headers); pressing again expands it",
+      "glyph_group": "gg45",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg45-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "collapses/expands the For English speakers list",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "collapses the \"For English speakers\" list (revealing other \"For … speakers\" headers); pressing again expands it",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg45": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f7": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with the word Spanish",
+      "state": null,
+      "location": "row under \"For English speakers\" in the course picker",
+      "bounds": [
+        42,
+        1507,
+        1038,
+        1675
+      ],
+      "visible_label": "Spanish",
+      "convention_relied_on": "a flag with the language name; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "spanish",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Spanish\"",
+      "context_reading": "row under \"For English speakers\" in the course picker",
+      "observed_function": "returns to the Spanish course learning path",
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both go to the Spanish course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the drawer and stays on the Spanish course learning path; returns to the Spanish course learning path",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f8": {
+      "kind": "icon+label",
+      "appearance": "French flag with the word French",
+      "state": null,
+      "location": "French row under \"For English speakers\" in the course picker",
+      "bounds": [
+        42,
+        1707,
+        1038,
+        1875
+      ],
+      "visible_label": "French",
+      "convention_relied_on": "flag with the word \"French\" — explicit, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "french",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"French\"",
+      "context_reading": "French row under \"For English speakers\" in the course picker",
+      "observed_function": "opens the French setup question \"How much French do you know?\"",
+      "glyph_group": "gg46",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg46-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "starts the French course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the French setup question \"How much French do you know?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg46": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f9": {
+      "kind": "icon+label",
+      "appearance": "German flag with the word German",
+      "state": null,
+      "location": "German row under \"For English speakers\" in the course picker",
+      "bounds": [
+        42,
+        1907,
+        1038,
+        2075
+      ],
+      "visible_label": "German",
+      "convention_relied_on": "flag with the word \"German\" — explicit, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "german",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"German\"",
+      "context_reading": "German row under \"For English speakers\" in the course picker",
+      "observed_function": "opens the German setup question \"How much German do you know?\"",
+      "glyph_group": "gg47",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg47-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "starts the German course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the German setup question \"How much German do you know?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg47": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f10": {
+      "kind": "icon+label",
+      "appearance": "Italian flag with the word Italian",
+      "state": null,
+      "location": "Italian row under \"For English speakers\" in the course picker",
+      "bounds": [
+        42,
+        2107,
+        1038,
+        2275
+      ],
+      "visible_label": "Italian",
+      "convention_relied_on": "flag with the word \"Italian\" — explicit, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "italian",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Italian\"",
+      "context_reading": "Italian row under \"For English speakers\" in the course picker",
+      "observed_function": "opens the Italian setup question \"How much Italian do you know?\"",
+      "glyph_group": "gg48",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg48-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "starts the Italian course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Italian setup question \"How much Italian do you know?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg48": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 11,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

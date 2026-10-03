@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s85",
+  "state_str": "c3c99b363855ff588bc21b4ff5dbed35",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152940.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s85_header_nav.png",
+  "name": "avatar onboarding",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Make your own avatar",
+      "verdict_on_region": "large title naming the full-screen page or sheet the user is on — accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Make your own avatar\"",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s84 (same layout; content does not change the answer): \"Make your own avatar\" onboarding with Close (X) top-left; Close returned to the \"Avatar\" page. Nothing created",
+  "recommendation": null,
+  "provisional": false
+}

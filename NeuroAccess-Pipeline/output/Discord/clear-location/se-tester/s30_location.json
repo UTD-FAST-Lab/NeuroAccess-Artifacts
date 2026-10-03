@@ -1,0 +1,41 @@
+{
+  "app": "Discord",
+  "screen": "s30",
+  "state_str": "0ce7095febb6368b78394ae5f3b5348d",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215613.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s30_header_nav.png",
+  "name": "the server panel (second server tile selected)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Accessibility Testin's server",
+      "verdict_on_region": "names the server whose channel panel is open — a place name, counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "left rail of server tiles with a visible pill and filled tile on the current item (declared: 'Accessibility Testin's server'); the active state moved live when switching between DMs and a server — counted; note all server tiles read only 'ATs'"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "the server's channel list with the current channel row ('# general') drawn in a grey fill (declared selected); navigation, not content — counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "account strip (own name + status chip, bell); no item is current and it leads to the profile and notifications — not a location signal, not counted"
+    }
+  ],
+  "identifier_found": "\"Accessibility Testin's server\"",
+  "identifier_class": "header + navigation with visible active state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Accessibility Testin's server' names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s3: same layout and the same top header text, so the content does not change the answer",
+  "recommendation": "optional: server tiles all read 'ATs'; the header does the locating — no fix required for this phase",
+  "provisional": false
+}

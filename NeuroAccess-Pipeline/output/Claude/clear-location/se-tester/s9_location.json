@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s9",
+  "state_str": "5956121029a9987fc67dae5917b0dbad",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133711.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s9_header_nav.png",
+  "name": "the side menu opened from Chats, with Chats highlighted",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Claude",
+      "verdict_on_region": "the app's own name \u2014 not a location signal"
+    },
+    {
+      "kind": "navigation",
+      "text": "Chats / Projects / Code / Artifacts",
+      "verdict_on_region": "contains_selected_view: true on \"Chats\"; rendered as a light grey pill behind the row \u2014 visible, though low in contrast"
+    }
+  ],
+  "identifier_found": "\"Chats\" highlighted in the drawer",
+  "identifier_class": "nav_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the drawer head is only the app name, but the current section is highlighted",
+  "test_cases": [
+    {
+      "id": "s9-tc1",
+      "type": "active_state_verification",
+      "precondition": "app on the Chats list",
+      "action": "open the drawer; then go to Projects and open it again; then Code and open it again",
+      "expected_result": "the highlight either moves with the section or stays put",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the highlight never moves, or is invisible",
+      "observed_result": "Chats row highlighted when opened from Chats; Projects row highlighted when opened from Projects; Code row highlighted when opened from Code \u2014 the pill moves each time",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: opened from Chats the drawer fills the \"Chats\" row with a light grey pill; opened from Projects the pill moves to \"Projects\"; opened from Code it moves to \"Code\" \u2014 the active state follows the user. The fill is faint (light grey on off-white), which is noted but does not overturn the call.",
+  "recommendation": null,
+  "provisional": false
+}

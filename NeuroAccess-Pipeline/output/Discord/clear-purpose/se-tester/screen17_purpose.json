@@ -1,0 +1,93 @@
+{
+  "app": "Discord",
+  "screen": "screen17",
+  "image": "inputs/Discord/actionable-elements-highlighted/screen17_actionable_elements.png",
+  "elements": {
+    "screen17-a1": {
+      "kind": "icon",
+      "glyph": "short horizontal grey bar",
+      "description": "drag strip at the top edge of the bottom sheet",
+      "location": "middle, centre",
+      "bounds": [
+        0,
+        1113,
+        1080,
+        1124
+      ],
+      "visible_text": "none (short grey handle bar at the top of the bottom sheet)",
+      "accessibility_text_consulted": "none present",
+      "convention_relied_on": "grabber bar = drag the sheet to move or dismiss it; my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled; the sheet grabber is an established bottom-sheet convention; exemption pending the test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen3-a1 (same control, tested once): the grabber responds to a drag exactly as the sheet-handle convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen17-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "primary filled button in the bottom sheet",
+      "location": "bottom, centre",
+      "bounds": [
+        63,
+        2054,
+        1017,
+        2159
+      ],
+      "visible_text": "\"Turn on Notifications\" under copy 'Turn on notifications to know when something's happening in this server.'",
+      "accessibility_text_consulted": "content_desc \"Turn on Notifications\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the words state the action and the copy explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen3-a2 (same control, tested once): visible text names the action and its effect; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen17-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "secondary button in the bottom sheet",
+      "location": "bottom, centre",
+      "bounds": [
+        63,
+        2180,
+        1017,
+        2285
+      ],
+      "visible_text": "\"Not Now\"",
+      "accessibility_text_consulted": "content_desc \"Not Now\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a standard decline of the sheet's offer, placed under it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen3-a3 (same control, tested once): visible text 'Not Now' directly under the offer declines it; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 3,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "app": "PDFReader",
+  "screen": "s4",
+  "state_str": "809a5854d38a6fb88dd4bdfc9ee82b0f",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180423.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s4_header_nav.png",
+  "name": "Home, the file list (PDF filter)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "PDF Reader",
+      "verdict_on_region": "names the app, not the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "PDF / HWP / Word / Excel / PPT pill row (selected: PDF)",
+      "verdict_on_region": "a file-type filter on the list, not a place in the app; its visible selection says which files are listed, not which section you are in"
+    },
+    {
+      "kind": "navigation",
+      "text": "Home / Recent / Favorite / Tools tab bar (selected: Home)",
+      "verdict_on_region": "locates the user: 'Home' is drawn with a filled black icon and dark label while the other three are grey outlines; contains_selected_view: true with selected_item_text \"Home\""
+    }
+  ],
+  "identifier_found": "\"Home\" -- the highlighted item of the bottom tab bar (filled icon, dark label); the top header \"PDF Reader\" is the app's name",
+  "identifier_class": "navigation_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the header names only the app, but the bottom tab bar visibly highlights Home",
+  "test_cases": [
+    {
+      "id": "s4-tc1",
+      "type": "active_state",
+      "precondition": "Home open, tab bar showing Home highlighted",
+      "action": "tap Recent, then Favorite, then Tools, then Home, watching the tab bar and the top header",
+      "expected_result": "the highlight moves to each tapped tab, or it stays on Home",
+      "confirms_if": "the filled icon and dark label move to each tapped tab",
+      "overturns_if": "the highlight never moves or is not visibly different",
+      "observed_result": "the filled icon and dark label moved to Recent, Favorite and Tools in turn and back to Home; the top header read \"PDF Reader\" on all four tabs; Recent and Favorite showed the same file-access prompt as Home, so the highlighted tab was the only thing telling them apart",
+      "status": "executed",
+      "matched_expectation": true
+    },
+    {
+      "id": "s4-tc2",
+      "type": "scroll_persistence",
+      "precondition": "Home open at the top",
+      "action": "scroll the content down twice (past any crawl distance), then scroll back up; repeated on the Tools tab, the longest tab",
+      "expected_result": "the header and tab bar either stay, or leave and return",
+      "confirms_if": "the tab bar or its active state leaves the viewport and does not return",
+      "overturns_if": "the tab bar and its active state stay on screen throughout",
+      "observed_result": "on Home and on Tools the top \"PDF Reader\" bar collapsed out of view when scrolling down and came back on scrolling up; the bottom tab bar and its highlighted item stayed on screen throughout; Tools also pinned its current section name (\"Convert\") at the top while scrolled. Recorded as a note -- no scroll transition is in the manifest",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the tab-bar highlight moves with the user to every tab and survives scrolling (s4-tc1, s4-tc2); the header is only the app's name and the pill row is a filter, so the tab bar alone carries the location",
+  "recommendation": null,
+  "provisional": false
+}

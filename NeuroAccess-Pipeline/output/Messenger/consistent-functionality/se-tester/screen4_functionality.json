@@ -1,0 +1,172 @@
+{
+  "app": "Messenger",
+  "screen": "screen4",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen4_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen4_function_groups.png"
+  },
+  "elements": {
+    "screen4-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of screen4",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "arrow pointing left: back — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "back",
+      "accessibility_text": "content_desc: 'Back'; talkback_label: 'Back'",
+      "context_reading": "'New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts",
+      "observed_function": "returned to the previous screen (Chats home)",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen4-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen4 ('New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts)",
+          "action": "note what is on screen, then tap the arrow pointing left at top left of screen4",
+          "expected_result": "the same result as the other members of gg3 (arrow pointing left)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "returned to the previous screen (Chats home)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen4-f2": {
+      "kind": "icon+label",
+      "appearance": "two upright panels with the words \"New story\"",
+      "state": null,
+      "location": "middle centre of screen4",
+      "bounds": [
+        0,
+        357,
+        1080,
+        504
+      ],
+      "visible_label": "New story",
+      "convention_relied_on": "two upright panels with the words \"New story\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "new story",
+      "accessibility_text": "content_desc: 'New story'; talkback_label: 'New story'",
+      "context_reading": "'New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts",
+      "observed_function": "opened 'New story' (Camera tile; gallery permission prompt not answered)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen4-f2",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen4 ('New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts)",
+          "action": "note what is on screen, then tap the two upright panels with the words \"New story\" at middle centre of screen4",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "opened 'New story' (Camera tile; gallery permission prompt not answered)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen4-f3": {
+      "kind": "icon+label",
+      "appearance": "speech bubble with the words \"New note\"",
+      "state": null,
+      "location": "middle centre of screen4",
+      "bounds": [
+        0,
+        504,
+        1080,
+        651
+      ],
+      "visible_label": "New note",
+      "convention_relied_on": "speech bubble with the words \"New note\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "new note",
+      "accessibility_text": "content_desc: 'New note'; talkback_label: 'New note'",
+      "context_reading": "'New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts",
+      "observed_function": "opened the same full-screen 'New note' page as the Chats-home thought bubble",
+      "glyph_group": null,
+      "function_group": "fg5",
+      "test_cases": [
+        {
+          "id": "fg5-tc-screen4-f3",
+          "type": "mixed_appearance",
+          "precondition": "Messenger open on the live equivalent of screen4 ('New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts)",
+          "action": "note what is on screen, then tap the speech bubble with the words \"New note\" at middle centre of screen4",
+          "expected_result": "the job its function group fg5 declares",
+          "confirms_if": "it does the same job but would not be recognized as that job from its rendering",
+          "overturns_if": "it does a different job (wrong group), or surface/scope/explicitness justify the rendering",
+          "observed_result": "opened the same full-screen 'New note' page as the Chats-home thought bubble",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "fg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen4-f4": {
+      "kind": "icon+label",
+      "appearance": "two people with the words \"Group chat\"",
+      "state": null,
+      "location": "middle centre of screen4",
+      "bounds": [
+        0,
+        651,
+        1080,
+        798
+      ],
+      "visible_label": "Group chat",
+      "convention_relied_on": "two people with the words \"Group chat\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "group chat",
+      "accessibility_text": "content_desc: 'Group chat'; talkback_label: 'Group chat'",
+      "context_reading": "'New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts",
+      "observed_function": "opened 'New group' contact picker",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen4-f4",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen4 ('New message' page: back arrow, 'To:' field, rows New story / New note / Group chat, then 'Suggested' contacts)",
+          "action": "note what is on screen, then tap the two people with the words \"Group chat\" at middle centre of screen4",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "opened 'New group' contact picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 4,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

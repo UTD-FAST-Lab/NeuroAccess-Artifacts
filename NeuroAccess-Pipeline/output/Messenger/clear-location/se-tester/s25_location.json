@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s25",
+  "state_str": "696e27c913eaf04b9ca288f348415f09",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151750.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s25_header_nav.png",
+  "name": "Chats home",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Messenger",
+      "verdict_on_region": "the Messenger wordmark — names the app, not the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Chats, People tab, Notifications",
+      "verdict_on_region": "bottom tab bar with \"Chats\" visibly highlighted (blue fill and caption) — locates the section"
+    }
+  ],
+  "identifier_found": "bottom bar \"Chats\" visibly highlighted (blue glyph and caption); the header is only the Messenger wordmark",
+  "identifier_class": "nav_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s2 (same layout; content does not change the answer): Chats highlighted blue and stays while scrolling (wordmark stays pinned, search bar scrolls off); tapping People moved the highlight to People with the \"People\" title; Notifications likewise. Live divergence: the Chats list now has All/Unread/Groups filter chips not in the capture",
+  "recommendation": null,
+  "provisional": false
+}

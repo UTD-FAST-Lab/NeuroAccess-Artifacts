@@ -1,0 +1,31 @@
+{
+  "app": "ChatGPT",
+  "screen": "s6",
+  "state_str": "99b731546508143217433416d7add723",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_203933.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s6_header_nav.png",
+  "name": "the ChatGPT Go plan page",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "ChatGPT Go",
+      "verdict_on_region": "large page title; names the page"
+    },
+    {
+      "kind": "navigation",
+      "text": "Go | Plus",
+      "verdict_on_region": "segmented switcher; \"Go\" drawn with a grey fill, no declared selection"
+    }
+  ],
+  "identifier_found": "\"ChatGPT Go\" title",
+  "identifier_class": "header",
+  "accessibility_text": "switcher declares no selected item",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a large title names the plan page",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title present in the image; template carry from s5 (same structure d268e893, same title position; only the plan name differs, and it is visible).",
+  "recommendation": null,
+  "provisional": false
+}

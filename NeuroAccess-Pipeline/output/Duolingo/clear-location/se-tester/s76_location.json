@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s76",
+  "state_str": "6ba36effb9563fca0b59baf9a9115995",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190531.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s76_header_nav.png",
+  "name": "the course menu open over the Learn path",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "New Courses",
+      "verdict_on_region": "content: heading of a group of course shortcuts inside the course menu, not a place — dismissed"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box (dimmed under the menu scrim but still visible) — pixel-read active state, never declared selected"
+    }
+  ],
+  "identifier_found": "the house tab still visibly boxed (dimmed under the scrim); the Spanish flag at the top boxed in blue; menu headed by 'Spanish / Course' and 'Your Spanish Score is 1'",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a drop-down anchored to the course flag, over the Learn path whose tab stays visibly highlighted; 'New Courses' is a list heading, not a place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'New Courses' names a group of courses — dismissed as content; the location is carried by the Learn highlight, still visible under the scrim, and the menu closes back to the path from the same flag; template carry from s4's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

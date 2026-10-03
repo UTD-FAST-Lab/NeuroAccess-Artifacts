@@ -1,0 +1,49 @@
+{
+  "app": "Messenger",
+  "screen": "s61",
+  "state_str": "93f83d4a1c118438239432899e4d2673",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152542.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s61_header_nav.png",
+  "name": "People",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "People",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: 1 active, Friend requests, All, Current city",
+      "verdict_on_region": "filter chips inside People (\"1 active\" selected) — they filter the list, they do not name the place; dismissed as a location signal (People is named by the title)"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Chats, People tab, Notifications",
+      "verdict_on_region": "bottom tab bar with \"People tab\" visibly highlighted (blue fill and caption) — locates the section"
+    }
+  ],
+  "identifier_found": "\"People\" title plus the People tab highlighted",
+  "identifier_class": "header+nav",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s61-tc1",
+      "type": "unconventional_region",
+      "precondition": "People tab",
+      "action": "scroll the People list; read the \"1 active / Friend requests / All / Current city\" chips",
+      "expected_result": "chips name the place or filter it",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "\"People\" title and the chips stay pinned while scrolling; the chips filter the list inside People (live: \"3 active\"). Dismissed as a location signal; the title locates",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: \"People\" title and the chips stay pinned while scrolling; the chips filter the list inside People (live: \"3 active\"). Dismissed as a location signal; the title locates",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s21",
+  "state_str": "e597fec5874ccd8725c8fe20ea21798e",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185655.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s21_header_nav.png",
+  "name": "Energy",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Energy",
+      "verdict_on_region": "screen title naming the place"
+    }
+  ],
+  "identifier_found": "'Energy' in the top bar with an X and gem count",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title naming the screen",
+  "test_cases": [
+    {
+      "id": "s21-tc1",
+      "type": "verification",
+      "precondition": "Learn path",
+      "action": "tap the energy counter at top-right",
+      "expected_result": "'Energy' title shows",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "'Energy' title with X; 25/25 bar; Unlimited / Recharge / Widget Boost / +5 energy rows",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title names the screen",
+  "recommendation": null,
+  "provisional": false
+}

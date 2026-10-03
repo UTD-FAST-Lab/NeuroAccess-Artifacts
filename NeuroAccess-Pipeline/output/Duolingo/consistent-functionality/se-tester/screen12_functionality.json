@@ -1,0 +1,108 @@
+{
+  "app": "Duolingo",
+  "screen": "screen12",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen12_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen12_function_groups.png"
+  },
+  "elements": {
+    "screen12-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the unit guidebook",
+      "bounds": [
+        21,
+        84,
+        105,
+        168
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "close page",
+      "accessibility_text": "content_desc: \"Close Page\"; talkback_label: \"Close Page\"",
+      "context_reading": "top-left of the unit guidebook",
+      "observed_function": "closes the unit guidebook, back to home",
+      "glyph_group": "gg19",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the page carrying the X",
+          "action": "tap each member",
+          "expected_result": "each closes its page",
+          "confirms_if": "a member does something other than close its page",
+          "overturns_if": "every member closes its page",
+          "observed_result": "closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f2": {
+      "kind": "button",
+      "appearance": "three grey loading dots",
+      "state": null,
+      "location": "unit guidebook, loading",
+      "bounds": [
+        0,
+        955,
+        1080,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "unit guidebook, loading",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen12-f2-rc1",
+          "type": "render_check",
+          "precondition": "reach the screen on the live app and let it settle",
+          "action": "compare the settled drawing with the capture crop",
+          "expected_result": "the element draws in full once loaded",
+          "confirms_if": "it draws like its siblings once loaded (capture artifact)",
+          "overturns_if": "it still looks different on the settled live screen (real difference)",
+          "observed_result": "on the running app the dots are a loading indicator; once settled the area shows the guidebook's KEY PHRASES list (tapping a word shows its translation)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

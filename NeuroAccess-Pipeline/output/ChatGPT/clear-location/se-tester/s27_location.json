@@ -1,0 +1,26 @@
+{
+  "app": "ChatGPT",
+  "screen": "s27",
+  "state_str": "a5af5205876b1546a28c3ffd55f0872f",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204920.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s27_header_nav.png",
+  "name": "the project icon-and-colour picker over New Project",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "New Project",
+      "verdict_on_region": "dimmed title of the form behind; legible"
+    }
+  ],
+  "identifier_found": "dimmed \"New Project\" title behind the untitled picker",
+  "identifier_class": "header (behind scrim)",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the form title stays legible above the picker",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the title behind the modal picker stays legible; the picker returns to the form on OK.",
+  "recommendation": "give the picker its own title (\"Icon and colour\")",
+  "provisional": false
+}

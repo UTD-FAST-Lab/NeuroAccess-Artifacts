@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s73",
+  "state_str": "fb14b9c0270e27907c2dde455d40dc80",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152722.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s73_header_nav.png",
+  "name": "supervision invite link",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Here's your link",
+      "verdict_on_region": "title \"Here's your link\" names the thing shown, not the place; the body copy names supervision"
+    }
+  ],
+  "identifier_found": "title \"Here's your link\" plus body copy \"Share this link with your teens to invite them to set up supervision\"",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions; also lands a return transition from outside the app and names itself on arrival; relies on body copy, untested (creating an invite is forbidden)",
+  "recommendation": null,
+  "provisional": false
+}

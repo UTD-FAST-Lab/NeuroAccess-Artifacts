@@ -1,0 +1,31 @@
+{
+  "app": "Discord",
+  "screen": "s11",
+  "state_str": "5aa9b828e56b4bce7e740d20195443e6",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215243.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s11_header_nav.png",
+  "name": "Create Your Server (name cleared) with an Enable Permissions dialog",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Create Your Server",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Enable Permissions",
+      "verdict_on_region": "title of a modal dialog raised over the create-server form; names the dialog's own purpose, with 'Create Your Server' still visible dimmed behind — counted for the dialog"
+    }
+  ],
+  "identifier_found": "\"Create Your Server\"; \"Enable Permissions\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Create Your Server' stays visible dimmed above the 'Enable Permissions' dialog, which names itself and closes back to the form",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s9: same layout and the same top header text, so the content does not change the answer; the region the detector marked away from the top was read from the image and reasoned about; the screen's own title stays visible behind the overlay",
+  "recommendation": null,
+  "provisional": false
+}

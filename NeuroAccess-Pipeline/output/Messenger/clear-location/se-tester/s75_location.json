@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s75",
+  "state_str": "acf6688bf4f902ec3ce9863b7007f96e",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152738.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s75_header_nav.png",
+  "name": "supervision profile picker",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Select the profiles you want to supervise",
+      "verdict_on_region": "page title phrased as an instruction; it names the task (choosing profiles to supervise) — accepted"
+    }
+  ],
+  "identifier_found": "\"Select the profiles you want to supervise\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

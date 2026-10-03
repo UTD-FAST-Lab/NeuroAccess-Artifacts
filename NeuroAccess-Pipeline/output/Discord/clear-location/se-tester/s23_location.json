@@ -1,0 +1,36 @@
+{
+  "app": "Discord",
+  "screen": "s23",
+  "state_str": "bd4c6bb64466472678763ef3238679a3",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215428.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s23_header_nav.png",
+  "name": "the own-account profile page",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Accessibility Testing",
+      "verdict_on_region": "the account's own display name, printed as the largest text on the page; it names a person, not a part of the app, and nothing says this is a profile — dismissed as content"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Main / Wishlist tabs inside the profile, 'Main' underlined; names a sub-tab, not a part of the app — not counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "floating pill of shortcuts (Quests / Shop / Nitro / Settings); no item is declared or drawn as current (confirmed live) — not a location signal"
+    }
+  ],
+  "identifier_found": "none that names the page; the largest text is the account's display name 'Accessibility Testing', the tabs say 'Main' / 'Wishlist', and the bottom pill has no current item",
+  "identifier_class": "none",
+  "accessibility_text": "no content_description or label names the page as a profile; the only related strings are the 'Edit Profile' button and the 'Amp up your profile' card, both drawn on screen as body copy",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the only large text is a person's name, not a place; no title, no active nav state; 'Edit Profile' hints at the page but is a button, not a title",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed live: no title in any scroll state, and no pill item is current. The 'Edit Profile' button is the nearest thing to a name and is body copy on a control, not a title; strictly, nothing tells a first-time user which part of the app this is. Template carry from s22 (same structure_str ca5ede…, same header text and layout; only the status-bubble prompt differs), which does not change the answer. No evaluated transition lands here (touch edges t7 / t8 are not evaluated in this phase).",
+  "recommendation": "add a visible page title such as 'Your Profile' (or 'You') in the top bar beside the close X, pinned while the page scrolls",
+  "provisional": false
+}

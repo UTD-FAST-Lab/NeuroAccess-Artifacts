@@ -1,0 +1,640 @@
+{
+  "app": "PDFReader",
+  "screen": "screen32",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen32_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen32_function_groups.png"
+  },
+  "elements": {
+    "screen32-f1": {
+      "kind": "icon",
+      "appearance": "golden crown",
+      "state": null,
+      "location": "top right of the \"PDF Reader\" header, left of the gear",
+      "bounds": [
+        827,
+        78,
+        943,
+        194
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a crown is a widely used mobile convention for \"premium / upgrade\" — my reading, confidence medium (common in freemium apps, not something every first-time user knows)",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "sits in the app header next to the title \"PDF Reader\"; no word beside it",
+      "observed_function": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+      "glyph_group": "gg1",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen32-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f1 (golden crown) once",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-screen32-f1",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f1 (golden crown) once",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen32-f1",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen32-f1 and record what happens (no function string in any field)",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f2": {
+      "kind": "icon",
+      "appearance": "gear with a wrench across it",
+      "state": null,
+      "location": "top right corner of the \"PDF Reader\" header",
+      "bounds": [
+        943,
+        78,
+        1059,
+        194
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a gear is the established convention for settings; the wrench across it can also read as \"tools\" — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "app header, far right; no word beside it; the bottom bar has a separate \"Tools\" tab",
+      "observed_function": "opened the Settings screen",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen32-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f2 (gear with a wrench across it) once",
+          "expected_result": "opens Settings",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the Settings screen",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen32-f2",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen32-f2 and record what happens (no function string in any field)",
+          "expected_result": "opens Settings",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "opened the Settings screen",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f3": {
+      "kind": "button",
+      "appearance": "the word \"PDF\"",
+      "state": "selected",
+      "location": "row of file-type chips under the \"PDF Reader\" title",
+      "bounds": [
+        32,
+        231,
+        221,
+        357
+      ],
+      "visible_label": "PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"PDF\"",
+      "context_reading": "one of five chips \"PDF HWP Word Excel PPT\"; carries its own word \"PDF\"",
+      "observed_function": "kept the current selection (it was already selected); the screen stayed as it was",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-screen32-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f3 (PDF) once",
+          "expected_result": "filters the document list to PDF files",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "kept the current selection (it was already selected); the screen stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f4": {
+      "kind": "button",
+      "appearance": "the word \"HWP\"",
+      "state": "unselected",
+      "location": "row of file-type chips under the \"PDF Reader\" title",
+      "bounds": [
+        221,
+        231,
+        422,
+        357
+      ],
+      "visible_label": "HWP",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "hwp",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"HWP\"",
+      "context_reading": "one of five chips \"PDF HWP Word Excel PPT\"; carries its own word \"HWP\"",
+      "observed_function": "selected the HWP chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-screen32-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f4 (HWP) once",
+          "expected_result": "filters the document list to HWP files",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "selected the HWP chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f5": {
+      "kind": "button",
+      "appearance": "the word \"Word\"",
+      "state": "unselected",
+      "location": "row of file-type chips under the \"PDF Reader\" title",
+      "bounds": [
+        422,
+        231,
+        628,
+        357
+      ],
+      "visible_label": "Word",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "word",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Word\"",
+      "context_reading": "one of five chips \"PDF HWP Word Excel PPT\"; carries its own word \"Word\"",
+      "observed_function": "selected the Word chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-screen32-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f5 (Word) once",
+          "expected_result": "filters the document list to Word files",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "selected the Word chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f6": {
+      "kind": "button",
+      "appearance": "the word \"Excel\"",
+      "state": "unselected",
+      "location": "row of file-type chips under the \"PDF Reader\" title",
+      "bounds": [
+        628,
+        231,
+        835,
+        357
+      ],
+      "visible_label": "Excel",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "excel",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Excel\"",
+      "context_reading": "one of five chips \"PDF HWP Word Excel PPT\"; carries its own word \"Excel\"",
+      "observed_function": "selected the Excel chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-screen32-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f6 (Excel) once",
+          "expected_result": "filters the document list to Excel files",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "selected the Excel chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f7": {
+      "kind": "button",
+      "appearance": "the word \"PPT\"",
+      "state": "unselected",
+      "location": "row of file-type chips under the \"PDF Reader\" title",
+      "bounds": [
+        835,
+        231,
+        1024,
+        357
+      ],
+      "visible_label": "PPT",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "ppt",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"PPT\"",
+      "context_reading": "one of five chips \"PDF HWP Word Excel PPT\"; carries its own word \"PPT\"",
+      "observed_function": "selected the PPT chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-screen32-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f7 (PPT) once",
+          "expected_result": "filters the document list to PPT files",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "selected the PPT chip (the chip filled with colour, and the SET pill on the banner took the same colour); with no file access the content stayed the file-access prompt",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f8": {
+      "kind": "icon",
+      "appearance": "an X",
+      "state": null,
+      "location": "far left end of the \"Set as default reader\" banner strip, small faint grey X",
+      "bounds": [
+        0,
+        378,
+        105,
+        483
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established convention for close / dismiss — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "attached to the banner strip that reads \"Set as default reader\" with a red book icon and a SET pill",
+      "observed_function": "dismissed the \"Set as default reader\" banner strip; the rest of the screen stayed as it was",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-screen32-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f8 (an X) once",
+          "expected_result": "dismisses the banner strip",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "dismissed the \"Set as default reader\" banner strip; the rest of the screen stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen32-f8",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen32-f8 and record what happens (no function string in any field)",
+          "expected_result": "dismisses the banner strip",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "dismissed the \"Set as default reader\" banner strip; the rest of the screen stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f9": {
+      "kind": "button",
+      "appearance": "the word \"SET\"",
+      "state": null,
+      "location": "right end of the \"Set as default reader\" banner strip",
+      "bounds": [
+        872,
+        378,
+        1080,
+        504
+      ],
+      "visible_label": "SET",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "set",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"SET\"",
+      "context_reading": "the banner text beside it reads \"Set as default reader\"",
+      "observed_function": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+      "glyph_group": "gg14",
+      "function_group": "cfg3",
+      "test_cases": [
+        {
+          "id": "gg14-screen32-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f9 (SET) once",
+          "expected_result": "starts setting this app as the default PDF reader",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-screen32-f9",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f9 (SET) once",
+          "expected_result": "starts setting this app as the default PDF reader",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the bottom sheet \"The fastest way to read PDF files\" with \"Set as default\" and \"Later\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg14": "Inconsistent Functionality",
+        "cfg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f10": {
+      "kind": "button",
+      "appearance": "the words \"Allow Access\"",
+      "state": null,
+      "location": "centre of the empty document area, dark pill button",
+      "bounds": [
+        303,
+        1254,
+        776,
+        1380
+      ],
+      "visible_label": "Allow Access",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "allow access",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Allow Access\"",
+      "context_reading": "directly under the sentence \"To continue, please allow file access on your device.\"",
+      "observed_function": "left the app for Android's \"All files access\" page for this app (returned with Back; nothing toggled)",
+      "glyph_group": "gg13",
+      "function_group": "cfg4",
+      "test_cases": [
+        {
+          "id": "gg13-screen32-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f10 (Allow Access) once",
+          "expected_result": "asks for file access (system permission page)",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "left the app for Android's \"All files access\" page for this app (returned with Back; nothing toggled)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-screen32-f10",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f10 (Allow Access) once",
+          "expected_result": "asks for file access (system permission page)",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "left the app for Android's \"All files access\" page for this app (returned with Back; nothing toggled)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality",
+        "cfg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f11": {
+      "kind": "icon+label",
+      "appearance": "house above the word \"Home\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        0,
+        2083,
+        270,
+        2230
+      ],
+      "visible_label": "Home",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "home",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Home\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Home\"",
+      "observed_function": "switched to the Home tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-screen32-f11",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f11 (Home) once",
+          "expected_result": "switches to the Home tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Home tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f12": {
+      "kind": "icon+label",
+      "appearance": "clock above the word \"Recent\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        270,
+        2083,
+        540,
+        2230
+      ],
+      "visible_label": "Recent",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "recent",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Recent\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Recent\"",
+      "observed_function": "switched to the Recent tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-screen32-f12",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f12 (Recent) once",
+          "expected_result": "switches to the Recent tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Recent tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f13": {
+      "kind": "icon+label",
+      "appearance": "five-point star above the word \"Favorite\"",
+      "state": "selected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        540,
+        2083,
+        810,
+        2230
+      ],
+      "visible_label": "Favorite",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "favorite",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Favorite\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Favorite\"",
+      "observed_function": "kept the current selection (it was already selected); the screen stayed as it was",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-screen32-f13",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f13 (Favorite) once",
+          "expected_result": "switches to the Favorite tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "kept the current selection (it was already selected); the screen stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f14": {
+      "kind": "icon+label",
+      "appearance": "four small squares in a grid above the word \"Tools\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        810,
+        2083,
+        1080,
+        2230
+      ],
+      "visible_label": "Tools",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "tools",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Tools\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Tools\"",
+      "observed_function": "switched to the Tools tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-screen32-f14",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen32 (MAIN tab=Favorite chip=['PDF'] banner allow nofab)",
+          "action": "note what is on screen, then tap screen32-f14 (Tools) once",
+          "expected_result": "switches to the Tools tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Tools tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 14,
+    "elements_in_issue_groups": 2,
+    "functions_determined_by_testing": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 20,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s17",
+  "state_str": "0a0ad8dfcdc8ef15823a154347664c1e",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215347.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s17_header_nav.png",
+  "name": "Link Settings with the Expire After sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Link Settings",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Expire After",
+      "verdict_on_region": "heading of a bottom sheet choosing one invite-link setting; names the sheet, and 'Link Settings' stays visible dimmed behind — counted"
+    }
+  ],
+  "identifier_found": "\"Link Settings\"; \"Expire After\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Link Settings' names the place",
+  "test_cases": [
+    {
+      "id": "s17-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "server panel -> Invite -> 'Edit invite link.' -> Link Settings",
+      "action": "tap 'Expire After'",
+      "expected_result": "a bottom sheet titled 'Expire After' opens over the dimmed 'Link Settings' screen",
+      "confirms_if": "the sheet heading is the only text and the screen behind is hidden",
+      "overturns_if": "heading names the sheet and the parent title stays visible",
+      "observed_result": "sheet 'Expire After' opened with its eight options, 'Link Settings' and its rows visible dimmed behind; the heading names the setting being chosen — a place in the app, not content. Closed without changing the setting",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: sheet 'Expire After' opened with its eight options, 'Link Settings' and its rows visible dimmed behind; the heading names the setting being chosen — a place in the app, not content. Closed without changing the setting",
+  "recommendation": null,
+  "provisional": false
+}

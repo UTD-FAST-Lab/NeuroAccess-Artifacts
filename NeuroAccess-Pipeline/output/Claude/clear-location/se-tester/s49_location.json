@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s49",
+  "state_str": "18990f3523a516c8e6e8bc597140b5a1",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_135115.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s49_header_nav.png",
+  "name": "the Turn off memory sheet over Capabilities",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Capabilities",
+      "verdict_on_region": "title of the page underneath, dimmed"
+    },
+    {
+      "kind": "header",
+      "text": "Turn off memory",
+      "verdict_on_region": "unconventional (sheet title): names the sheet \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Turn off memory\" sheet title with close X",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself",
+  "test_cases": [
+    {
+      "id": "s49-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Capabilities, memory on",
+      "action": "tap the Generate memory row, read the sheet, tap Cancel",
+      "expected_result": "the title names the sheet",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the sheet is untitled",
+      "observed_result": "\"Turn off memory\" heads the sheet; Cancel returned to Capabilities with memory still on",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: tapping \"Generate memory from chats\" opened the sheet titled \"Turn off memory\"; Cancel closed it and memory stayed on",
+  "recommendation": null,
+  "provisional": false
+}

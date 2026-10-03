@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s5",
+  "state_str": "dd4e88e11a1052fc8b33132110553a3e",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133625.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s5_header_nav.png",
+  "name": "the Add to chat sheet over the home screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Back at it, Ally Cooper",
+      "verdict_on_region": "greeting on the home screen dimmed behind the sheet's scrim; names the user, not a place \u2014 does not count"
+    },
+    {
+      "kind": "header",
+      "text": "Add to chat",
+      "verdict_on_region": "unconventional (sheet title mid-screen): names the open panel \u2014 accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Add to chat\" as the sheet title, with a close X",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself and has a close control; the dimmed greeting behind is not a location signal",
+  "test_cases": [
+    {
+      "id": "s5-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "home screen",
+      "action": "tap the plus glyph to open the sheet and read its title and the greeting behind it",
+      "expected_result": "the sheet title names the panel, the greeting does not",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the sheet title is absent or names content",
+      "observed_result": "\"Add to chat\" titles the sheet with a close X; greeting \"Good afternoon, Ally Cooper\" dimmed behind \u2014 the title names the panel, the greeting names the user",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the sheet opens with \"Add to chat\" centred in its own header row beside a close X (the live sheet now also lists a Memory row, and Web search is on). The return edges b11\u2013b13 land here from the camera, photo picker and file picker and are not judged as edges; this arrival screen is judged here.",
+  "recommendation": null,
+  "provisional": false
+}

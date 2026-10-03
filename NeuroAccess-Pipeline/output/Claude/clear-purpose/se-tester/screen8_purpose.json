@@ -1,0 +1,119 @@
+{
+  "app": "Claude",
+  "screen": "screen8",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen8_actionable_elements.png",
+  "elements": {
+    "screen8-a1": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "X glyph at the top-left of the voice intro sheet",
+      "location": "top-left",
+      "bounds": [
+        37,
+        113,
+        163,
+        239
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Close\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "an X is an established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen8-a1-tc1",
+          "type": "verification",
+          "precondition": "voice intro sheet open",
+          "action": "tap the X",
+          "expected_result": "the sheet closes",
+          "confirms_if": "anything else happens",
+          "overturns_if": "the sheet closes",
+          "observed_result": "the sheet closed and the home screen returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the sheet",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen8-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "dropdown with floating label 'Speech Input Language' and value 'English'",
+      "location": "middle of the sheet",
+      "bounds": [
+        63,
+        1590,
+        1017,
+        1796
+      ],
+      "visible_text": "label \"Speech Input Language\", value \"English\", down chevron",
+      "accessibility_text_consulted": "talkback_label \"Speech Input Language English\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "persistent label names the choice; value and chevron show it is a picker",
+      "test_cases": [
+        {
+          "id": "screen8-a2-tc1",
+          "type": "expected",
+          "precondition": "voice intro sheet open",
+          "action": "tap the dropdown, then keep English",
+          "expected_result": "a language list opens",
+          "confirms_if": "anything else opens",
+          "overturns_if": "a language list opens",
+          "observed_result": "a list of languages opened (English, English (India), English (United Kingdom), Chinese (Mandarin), …); kept English",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "label persists and the picker offers the languages it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen8-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black 'Continue' button at the bottom of the voice intro sheet",
+      "location": "bottom",
+      "bounds": [
+        63,
+        2222,
+        1017,
+        2348
+      ],
+      "visible_text": "\"Continue\" under the heading \"Send messages to Claude using your voice.\"",
+      "accessibility_text_consulted": "talkback_label \"Continue\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "single-step intro sheet whose heading states the feature; 'Continue' reads as 'go on to use it'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "in a one-screen intro the heading supplies what Continue proceeds to; not pressed because it leads to a microphone permission request; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 3,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

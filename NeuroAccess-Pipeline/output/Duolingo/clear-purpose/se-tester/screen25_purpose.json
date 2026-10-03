@@ -1,0 +1,143 @@
+{
+  "app": "Duolingo",
+  "screen": "screen25",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen25_actionable_elements.png",
+  "elements": {
+    "screen25-a1": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "left-pointing arrow at the top-left",
+      "location": "top-left of the page",
+      "bounds": [
+        21,
+        126,
+        105,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Back\"; not used in the verdict",
+      "convention_relied_on": "a left arrow at the top-left is the established 'back' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "back glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen25-a1-tc1",
+          "type": "verification",
+          "precondition": "math set-up question",
+          "action": "tap the left arrow",
+          "expected_result": "the previous step shows",
+          "confirms_if": "something else",
+          "overturns_if": "the previous step shows",
+          "observed_result": "returned to the course list, and a second tap returned to the home path",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the arrow returned to the previous step, as the back convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "single-choice answer card under a question from the owl",
+      "location": "course set-up question",
+      "bounds": [
+        42,
+        577,
+        1038,
+        746
+      ],
+      "visible_text": "\"I’m in grades 2–12\"",
+      "accessibility_text_consulted": "content_desc holds a code (e.g. 'STUDENT'); not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a first-person answer under a plainly worded question",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling answer cards tested on the device (screen25-a3) — the card was selected (highlighted) and CONTINUE became active, as an answer choice should [capture was mid-animation: the card face is drawn slid right; on the settled live screen the text is fully visible]",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a3": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "single-choice answer card under a question from the owl",
+      "location": "course set-up question",
+      "bounds": [
+        42,
+        778,
+        1038,
+        947
+      ],
+      "visible_text": "\"I’m an adult learner\"",
+      "accessibility_text_consulted": "content_desc holds a code (e.g. 'STUDENT'); not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a first-person answer under a plainly worded question",
+      "test_cases": [
+        {
+          "id": "screen25-a3-tc1",
+          "type": "expected",
+          "precondition": "math set-up question (settled; capture was mid-slide)",
+          "action": "tap 'I’m an adult learner'",
+          "expected_result": "the card is chosen",
+          "confirms_if": "nothing, or something else",
+          "overturns_if": "the card is selected",
+          "observed_result": "the card turned blue; the next set-up step ('Let's pick a starting point!') appeared; backed out without adding a course",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the card was selected (highlighted) and CONTINUE became active, as an answer choice should [capture was mid-animation: the card face is drawn slid right; on the settled live screen the text is fully visible]",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "grey bottom button",
+      "location": "bottom of the course set-up question",
+      "bounds": [
+        42,
+        2158,
+        1038,
+        2295
+      ],
+      "visible_text": "\"CONTINUE\" (greyed)",
+      "accessibility_text_consulted": "talkback \"CONTINUE\"; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "'CONTINUE' goes to the next step; greyed until an answer is chosen",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "observed turning green once an answer was chosen; not pressed (it would add a course)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 4,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

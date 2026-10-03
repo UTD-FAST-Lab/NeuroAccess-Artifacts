@@ -1,0 +1,264 @@
+{
+  "app": "Duolingo",
+  "screen": "screen20",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen20_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen20_function_groups.png"
+  },
+  "elements": {
+    "screen20-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the Shop page (faded top bar)",
+      "bounds": [
+        42,
+        96,
+        102,
+        156
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-left of the Shop page (faded top bar)",
+      "observed_function": "closes the Shop page, back to home (the X is drawn faded but works)",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f2": {
+      "kind": "button",
+      "appearance": "the words \"TRY 1 WEEK FOR FREE\"",
+      "state": null,
+      "location": "white button in the SUPER banner at the top of the Shop (\"Save with a family plan!\" in the capture; the banner rotates live)",
+      "bounds": [
+        84,
+        790,
+        996,
+        916
+      ],
+      "visible_label": "TRY 1 WEEK FOR FREE",
+      "convention_relied_on": "worded button — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"TRY 1 WEEK FOR FREE\"",
+      "context_reading": "white button in the SUPER banner at the top of the Shop (\"Save with a family plan!\" in the capture; the banner rotates live)",
+      "observed_function": "opens a full-screen Super offer \"Power up your learning with unlimited energy on Super!\" with START MY FREE WEEK (not pressed)",
+      "glyph_group": "gg34",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg34-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the Super free-trial offer",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a full-screen Super offer \"Power up your learning with unlimited energy on Super!\" with START MY FREE WEEK (not pressed)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these both start the same free trial?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "\"TRY 1 WEEK FOR FREE\" (Shop, under both banner faces) and \"Unlimited FREE TRIAL\" (Energy) open the identical full-screen Super offer \"Power up your learning with unlimited energy on Super!\" with START MY FREE WEEK",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc2",
+          "type": "mixed_appearance",
+          "precondition": "candidate confirmed by tc1",
+          "action": "from the screen carrying one rendering, look for the job on the screen carrying the other and judge whether it is recognizable before tapping",
+          "expected_result": "the second rendering is recognizable as the same job",
+          "confirms_if": "a user who learned one rendering would not recognize the other on its surface",
+          "overturns_if": "surface, scope or explicit wording makes the second rendering recognizable",
+          "observed_result": "from a candidate: both renderings tapped live and open the identical Super offer. They sit on different surfaces (a promotional banner on the Shop page vs a product row on the Energy page) and both are explicit words that share \"FREE\" and \"TRY/TRIAL\", so a user who learned one would recognize the other. Justification: different surfaces, and both renderings are explicit rather than glyph-only. Noted, not weighed here: the Shop banner's family-plan face (\"Save with a family plan!\") leads to the individual Super offer, a banner-copy question rather than a rendering one",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg34": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f3": {
+      "kind": "icon+label",
+      "appearance": "widget picture with the words \"Widget Reward … GET STARTED\"",
+      "state": null,
+      "location": "Widget Reward card under \"Special Offers\" in the Shop",
+      "bounds": [
+        42,
+        1221,
+        1038,
+        1593
+      ],
+      "visible_label": "Widget Reward Add the Duolingo widget to your home screen to earn an XP Boost. GET STARTED",
+      "convention_relied_on": "worded card — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Widget Reward Add the Duolingo widget to your home screen to earn an XP Boost. GET STARTED\"",
+      "context_reading": "Widget Reward card under \"Special Offers\" in the Shop",
+      "observed_function": "opens \"Add the Duolingo widget to your home screen to earn an XP Boost.\" with ADD NOW / MAYBE LATER (MAYBE LATER pressed)",
+      "glyph_group": "gg35",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg35-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the add-widget prompt",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens \"Add the Duolingo widget to your home screen to earn an XP Boost.\" with ADD NOW / MAYBE LATER (MAYBE LATER pressed)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg5-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these both add the home-screen widget?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "\"Widget Reward … GET STARTED\" opens \"Add the Duolingo widget to your home screen to earn an XP Boost.\" (ADD NOW / MAYBE LATER); \"Widget Boost INSTALL\" opens \"Add the widget to get +8 energy every hour!\" (ADD WIDGET / NOT NOW). Both lead to adding the home-screen widget; the reward offered differs",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg5-tc2",
+          "type": "mixed_appearance",
+          "precondition": "candidate confirmed by tc1",
+          "action": "from the screen carrying one rendering, look for the job on the screen carrying the other and judge whether it is recognizable before tapping",
+          "expected_result": "the second rendering is recognizable as the same job",
+          "confirms_if": "a user who learned one rendering would not recognize the other on its surface",
+          "overturns_if": "surface, scope or explicit wording makes the second rendering recognizable",
+          "observed_result": "from a candidate: both tapped live; each opens an add-the-widget prompt, with a different reward (XP Boost vs +8 energy an hour). Different surfaces (Shop offer card vs Energy row), different object (the reward), and both name \"Widget\" in visible words, so the job is recognizable in either place. Justification: scope/object difference carried by the wording, and both renderings are explicit",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg35": "Consistent Functionality",
+        "cfg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f4": {
+      "kind": "icon+label",
+      "appearance": "chest with a play triangle and the words \"Free Chest … CLAIM CHEST\"",
+      "state": null,
+      "location": "Free Chest card under \"Special Offers\" in the Shop",
+      "bounds": [
+        42,
+        1635,
+        1038,
+        1957
+      ],
+      "visible_label": "Free Chest Watch an ad to earn up to 15 gems CLAIM CHEST",
+      "convention_relied_on": "worded card with a play triangle (video) — confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "free chest claim chest",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Free Chest Watch an ad to earn up to 15 gems CLAIM CHEST\"",
+      "context_reading": "Free Chest card under \"Special Offers\" in the Shop",
+      "observed_function": "plays a full-screen video ad; afterwards the card reads \"Next free chest will be available in 48 seconds\"",
+      "glyph_group": "gg36",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg36-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "plays an ad for a free chest",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "plays a full-screen video ad; afterwards the card reads \"Next free chest will be available in 48 seconds\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg36": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f5": {
+      "kind": "icon+label",
+      "appearance": "ice crystal with the words \"Streak Freeze\"",
+      "state": null,
+      "location": "Streak Freeze card under \"Streak\" in the Shop",
+      "bounds": [
+        42,
+        2178,
+        1038,
+        2337
+      ],
+      "visible_label": "Streak Freeze Protect your streak if you miss a day of practice.",
+      "convention_relied_on": "worded card — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "streak freeze",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Streak Freeze Protect your streak if you miss a day of practice.\"",
+      "context_reading": "Streak Freeze card under \"Streak\" in the Shop",
+      "observed_function": "not observed",
+      "glyph_group": "gg37",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg37-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "buys a Streak Freeze with gems",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "not_executed: safety — the card sells a Streak Freeze for gems, and pressing it risks spending currency. The two members are one card photographed twice on the same page; carried provisionally",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg37": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 8,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s61",
+  "state_str": "ad6e8e46ea8896c00b03bc9955cb14fc",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190355.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s61_header_nav.png",
+  "name": "an achievement detail",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Baron Laqeas’s best league finish was #6 in Pearl League!",
+      "verdict_on_region": "content: describes one award, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "none that names a place: X top-left, a badge, a date and a headline describing one award",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen ('Close Page' / 'Back' only)",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the headline describes one award (content); nothing names the achievements area",
+  "test_cases": [
+    {
+      "id": "s61-tc1",
+      "type": "verification",
+      "precondition": "another user's Achievements",
+      "action": "tap an award and look for a title",
+      "expected_result": "-",
+      "confirms_if": "no title in any state",
+      "overturns_if": "a title appears",
+      "observed_result": "not executed — the other user's profile could not be reached: the live Find-your-friends screen shows no suggestions, and searching by name (typing into the app) was refused on this run",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "judged from the image only: the headline names one award; an X is visible. Provisional",
+  "recommendation": "add a small title such as 'Achievement' beside the X",
+  "provisional": true
+}

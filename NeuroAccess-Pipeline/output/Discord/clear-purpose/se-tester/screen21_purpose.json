@@ -1,0 +1,191 @@
+{
+  "app": "Discord",
+  "screen": "screen21",
+  "image": "inputs/Discord/actionable-elements-highlighted/screen21_actionable_elements.png",
+  "elements": {
+    "screen21-a1": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "top-left of the 'Notifications' header",
+      "location": "top, left",
+      "bounds": [
+        42,
+        95,
+        126,
+        179
+      ],
+      "visible_text": "none (left arrow)",
+      "accessibility_text_consulted": "content_desc \"Back\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "left arrow = back; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "back convention; exemption pending the tap",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen9-a1 (same control, tested once): the arrow went back, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen21-a2": {
+      "kind": "icon",
+      "glyph": "bookmark ribbon",
+      "description": "header toolbar",
+      "location": "top, right",
+      "bounds": [
+        723,
+        95,
+        807,
+        179
+      ],
+      "visible_text": "none (bookmark ribbon glyph)",
+      "accessibility_text_consulted": "content_desc \"Bookmarks\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "bookmark ribbon = saved items; my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "bookmark ribbon conventionally opens saved items; exemption pending the tap",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "carried from screen9-a2 (same control, tested once): the familiar bookmark glyph opens a paid-upgrade sales sheet instead of saved items; being misled is worse than being told nothing",
+      "recommendation": "caption the glyph 'Bookmarks (Nitro)' or show a lock badge so the upsell is predictable",
+      "provisional": false
+    },
+    "screen21-a3": {
+      "kind": "icon",
+      "glyph": "clock face",
+      "description": "header toolbar",
+      "location": "top, right",
+      "bounds": [
+        839,
+        95,
+        923,
+        179
+      ],
+      "visible_text": "none (clock glyph)",
+      "accessibility_text_consulted": "content_desc \"Reminders\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "clock = history/recent or reminders/time; my reading, confidence low",
+      "convention_confidence": "low",
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "a clock glyph is ambiguous between history, recent and reminders",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen9-a3 (same control, tested once): the clock opened a bookmarks upsell, which none of the clock's readings predict",
+      "recommendation": "add a caption ('Reminders') and indicate that it requires Nitro",
+      "provisional": false
+    },
+    "screen21-a4": {
+      "kind": "icon",
+      "glyph": "three horizontal dots",
+      "description": "header toolbar, right end",
+      "location": "top, right",
+      "bounds": [
+        954,
+        95,
+        1038,
+        179
+      ],
+      "visible_text": "none (three horizontal dots)",
+      "accessibility_text_consulted": "content_desc \"More\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "overflow '…' = more options; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "overflow convention; exemption pending the tap",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen9-a4 (same control, tested once): the dots opened an options menu as the overflow convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen21-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "the popup card 'NEW! Bookmarks' anchored under the bookmark toolbar glyph itself",
+      "location": "top, right",
+      "bounds": [
+        419,
+        205,
+        1049,
+        706
+      ],
+      "visible_text": "\"NEW! Bookmarks\" / \"Manage your most important messages with Nitro.\" with an illustration",
+      "accessibility_text_consulted": "talkback_label \"NEW! Bookmarks, Manage your most important messages with Nitro. NEW! Bookmarks Manage your most important messages with Nitro. Close\" — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "a promotional card; its text announces a feature but not what pressing the card does",
+      "test_cases": [
+        {
+          "id": "screen21-a5-tc1",
+          "type": "expected",
+          "precondition": "Notifications with the 'NEW! Bookmarks' popup",
+          "action": "tap the body of the card",
+          "expected_result": "something the card's words predict (bookmarks or Nitro)",
+          "confirms_if": "it opens a sales page or does nothing",
+          "overturns_if": "it opens bookmarks as the text predicts",
+          "observed_result": "not run: the one-time popup is not shown on the live app",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: the card's visible text describes a feature, not an action, and it could not be reproduced to press",
+      "recommendation": "give the card an explicit button ('See Bookmarks (Nitro)') or make only the X interactive",
+      "provisional": true
+    },
+    "screen21-a6": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "top-right of the popup card 'NEW! Bookmarks' anchored under the bookmark toolbar glyph",
+      "location": "top, right",
+      "bounds": [
+        962,
+        250,
+        1004,
+        292
+      ],
+      "visible_text": "none (X at the top-right of the popup card)",
+      "accessibility_text_consulted": "content_desc \"Close\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "X = close; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close convention",
+      "test_cases": [
+        {
+          "id": "screen21-a6-tc1",
+          "type": "verification",
+          "precondition": "popup shown",
+          "action": "tap the X",
+          "expected_result": "the popup closes",
+          "confirms_if": "anything else happens",
+          "overturns_if": "it closes",
+          "observed_result": "not run: the one-time popup is not shown on the live app",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: close convention on a popup; could not be reproduced",
+      "recommendation": null,
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "issues": 3,
+    "missing_purpose": 0,
+    "unclear_purpose": 3,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 2,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 2
+  }
+}

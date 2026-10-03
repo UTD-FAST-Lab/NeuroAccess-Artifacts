@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s26",
+  "state_str": "106c4ca5e08b60116824ef2753d6a01c",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204914.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s26_header_nav.png",
+  "name": "the New Project form",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "New Project",
+      "verdict_on_region": "top-bar title; names the screen"
+    }
+  ],
+  "identifier_found": "\"New Project\" title",
+  "identifier_class": "header",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title names the screen",
+  "test_cases": [
+    {
+      "id": "s26-tc1",
+      "type": "promotion_spot_check",
+      "precondition": "Projects list",
+      "action": "tap \"+\" to open New Project, then tap the \"Investing\" chip (candidate t64)",
+      "expected_result": "the user either stays on the same form with its title, or moves elsewhere",
+      "confirms_if": "the user stays on the same form and the title is lost (promote)",
+      "overturns_if": "the title stays, or the user moved elsewhere (do not promote)",
+      "observed_result": "the chip filled the name field with \"Investing\"; the user stayed on the same form and \"New Project\" stayed in the top bar. Left without creating a project",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "plain title; chip taps leave it in place (spot-checked on the device).",
+  "recommendation": null,
+  "provisional": false
+}

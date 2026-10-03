@@ -1,0 +1,95 @@
+{
+  "app": "Duolingo",
+  "screen": "screen13",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen13_actionable_elements.png",
+  "elements": {
+    "screen13-a1": {
+      "kind": "button",
+      "glyph": null,
+      "description": "blue full-width button with an outward-arrow glyph after the words",
+      "location": "bottom of the quest reward page",
+      "bounds": [
+        42,
+        2000,
+        1038,
+        2127
+      ],
+      "visible_text": "\"CLAIM ON BRAWL STARS\" with an open-in-new glyph",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "says the reward is claimed in another game, and the outward arrow says it leaves this app",
+      "test_cases": [
+        {
+          "id": "screen13-a1-tc1",
+          "type": "expected",
+          "precondition": "quest reward page",
+          "action": "tap CLAIM ON BRAWL STARS",
+          "expected_result": "hands off to the other game or store",
+          "confirms_if": "it stays in this app doing something else",
+          "overturns_if": "it leaves to the other game",
+          "observed_result": "not run: hands off to another app (safety rule)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test required and running it hands off to another app",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen13-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "borderless blue text button under the primary one",
+      "location": "bottom of the quest reward page",
+      "bounds": [
+        63,
+        2148,
+        1017,
+        2274
+      ],
+      "visible_text": "\"CLAIM LATER\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "defers the claim and dismisses the reward screen",
+      "test_cases": [
+        {
+          "id": "screen13-a2-tc1",
+          "type": "expected",
+          "precondition": "quest reward page",
+          "action": "tap CLAIM LATER",
+          "expected_result": "the reward screen goes away and the reward stays available",
+          "confirms_if": "the reward is lost or something else opens",
+          "overturns_if": "it defers and dismisses",
+          "observed_result": "the reward screen closed into the 'Brawl Stars Quest' reward track; the reward was not claimed and the red dot cleared from the home badge",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "CLAIM LATER dismissed the reward without claiming it",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 2,
+    "clear_via_common_icon_exemption": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 2,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

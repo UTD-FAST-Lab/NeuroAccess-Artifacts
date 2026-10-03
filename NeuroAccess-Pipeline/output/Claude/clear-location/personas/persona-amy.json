@@ -1,0 +1,911 @@
+{
+  "persona": "persona-amy",
+  "app": "Claude",
+  "screens": {
+    "s1": {
+      "where": "the empty page with the greeting and the writing box at the bottom",
+      "expectation": "Probably the start screen where I would type a new message to Claude.",
+      "confidence": "guessing",
+      "cue": "Nothing names it. The 'Chat with Claude...' box at the bottom and the empty middle suggest a new conversation. The large text is a greeting, 'Back at it, Ally Cooper'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "'Back at it, Ally Cooper' is a greeting to a person, not the name of a place. Nothing on the screen names this screen. I only infer it is the start page from the empty writing box at the bottom.",
+        "solution": "Put a literal title at the top, the same place other screens put theirs, such as 'New chat'. Keep the greeting if you want, but not as the only text."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "When I looked back I still had to work it out from the 'Chat with Claude...' box. The big text now says 'Good afternoon, Ally Cooper' where the picture said 'Back at it, Ally Cooper', so the only large text on the page changes by itself between visits. Dragging up and down moved nothing, and no name for the page appeared anywhere. The top bar only has the three-line menu icon and the ghost icon. Later, when I came back to this page from the menu, the keyboard opened again without me asking.",
+          "what_they_did": "The app was already on the greeting page, but the keyboard had opened by itself. I closed it with Back once. I looked away and back, then said where I was before touching anything. Then I dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "No name appears anywhere, and the one big piece of text is a greeting that changes between visits ('Back at it' then 'Good afternoon'), so it cannot even serve as a landmark.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "the side menu with Chats, Projects, Code, Artifacts",
+      "expectation": "The app's main menu, slid out from the left.",
+      "confidence": "sure",
+      "cue": "The list 'Chats, Projects, Code, Artifacts' and the 'New chat' button. 'Claude' at the top is only the app name.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A list of sections is obviously a menu. It does not show which section I came from (none is highlighted), but I know I am in the menu.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s3": {
+      "where": "the incognito chat page with the ghost",
+      "expectation": "A new incognito chat.",
+      "confidence": "sure",
+      "cue": "The text 'Incognito chat' at the top and the sentence explaining incognito chats.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It literally says 'Incognito chat' at the top, in the title position.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "the plans page with prices",
+      "expectation": "The page for buying a paid plan.",
+      "confidence": "sure",
+      "cue": "'Choose the plan right for you' and the Pro plan prices. 'Get more Claude' on its own is vague, but the line under it is literal.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The subtitle and the prices tell me exactly what this page is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "the 'Add to chat' panel over the greeting page",
+      "expectation": "A panel for adding a photo, file or setting to the chat.",
+      "confidence": "sure",
+      "cue": "'Add to chat' at the top of the panel, with Camera, Photos, Files underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel title is literal and matches its contents.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "the 'Select model' panel",
+      "expectation": "A panel for choosing which model answers.",
+      "confidence": "sure",
+      "cue": "'Select model' at the top of the panel and the list of model names with a tick on one.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title, and the tick shows the current choice.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "the voice-input setup page with the drawn microphone",
+      "expectation": "A setup page for sending messages by speaking.",
+      "confidence": "sure",
+      "cue": "The sentence 'Send messages to Claude using your voice.' and the 'Speech Input Language' field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is a sentence rather than a short title, but it is literal and tells me what this page is for.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "the Chats list page (empty)",
+      "expectation": "The list of my chats.",
+      "confidence": "sure",
+      "cue": "'Chats' at the top centre and 'Your chats with Claude will show up here.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title in the expected place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "the side menu with Chats highlighted",
+      "expectation": "The main menu, opened from the Chats page.",
+      "confidence": "sure",
+      "cue": "The menu list, with 'Chats' on a slightly darker background.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can tell it is the menu and that Chats is the current section. The highlight is quite faint, but visible.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "the Chats page with the All/Pinned drop-down open",
+      "expectation": "The Chats list, with a filter menu open.",
+      "confidence": "sure",
+      "cue": "'Chats' at the top, and the small menu showing 'All' with a tick and 'Pinned'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is still there and the tick shows which filter is on.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s11": {
+      "where": "the 'Add to project' panel",
+      "expectation": "A panel for choosing a project to put this chat in.",
+      "confidence": "sure",
+      "cue": "'Add to project' at the top of the panel, 'Search projects' field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "the 'Add to chat' panel filling the screen",
+      "expectation": "The panel for adding things to a chat.",
+      "confidence": "sure",
+      "cue": "'Add to chat' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title. I cannot see which chat it belongs to, but I know which panel I am in.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "the 'Upgrade to use Pro' panel",
+      "expectation": "A panel telling me a model needs a paid plan.",
+      "confidence": "sure",
+      "cue": "'Upgrade to use Pro' and 'This model requires a Pro plan.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title and explanation.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "the voice setup page with the language list open",
+      "expectation": "Choosing a speech language on the voice-input setup page.",
+      "confidence": "guessing",
+      "cue": "No title is visible. The list of languages covers the middle, and I can see 'Speech Input Language' below it and the drawn microphone above it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The list covers the only sentence that said what this page was, and there is no title at the top. I have to work it out from the field label underneath.",
+        "solution": "Give this page a short title at the top, for example 'Voice input', that stays visible when the language list is open."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t2",
+          "subjects": [
+            "s14"
+          ],
+          "task": "From the page with the greeting, tap the small microphone picture in the writing box (the grey one, not the round black button at the far right). On the page that opens, tap the box headed 'Speech Input Language' so its list drops down. Without choosing anything, say where you are. Then press the phone's Back button once to close the list, and compare. Do not press Continue. Leave with the X at the top left.",
+          "real_if": "while the list is open nothing tells you what page this is",
+          "not_real_if": "you can still tell what page this is while the list is open",
+          "persona_report": "With the list open, the screen matched the picture exactly: a drawing of a microphone, a list of languages with a tick on English, and 'Speech Input Language' underneath. No title. The list covers the sentence 'Send messages to Claude using your voice.' On the phone I knew where I was only because I had just tapped the box myself two seconds earlier. The screen itself did not tell me. Back closed the list and the sentence came back. It was already on this page and did not move, so it is a fixed place I can check once the list is shut.",
+          "what_they_did": "From the greeting page I tapped the grey microphone in the writing box. The voice setup page slid up. I tapped the 'Speech Input Language' box and the language list dropped down. Without choosing anything, I said where I was. I pressed Back once to close the list and compared. Then I left with the X, without pressing Continue.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "In the frozen picture nothing names the page, and that is still true. On the phone I had just opened the list myself, and one Back press brought the sentence back, so in practice I was not lost for long.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "the voice-input setup page, language changed",
+      "expectation": "The voice-input setup page again.",
+      "confidence": "sure",
+      "cue": "'Send messages to Claude using your voice.' and 'Speech Input Language: English (India)'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same literal sentence as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "the greeting page with a microphone permission warning",
+      "expectation": "Probably the start screen, with a warning about the microphone.",
+      "confidence": "guessing",
+      "cue": "The warning box text and the writing box at the bottom. The large text is only 'Back at it, Ally Cooper'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "'Back at it, Ally Cooper' is a greeting to a person, not the name of a place. Nothing on the screen names this screen. I only infer it is the start page from the empty writing box at the bottom. The warning box tells me about a permission, not where I am.",
+        "solution": "Put a literal title at the top, the same place other screens put theirs, such as 'New chat'. Keep the greeting if you want, but not as the only text."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "When I looked back I still had to work it out from the 'Chat with Claude...' box. The big text now says 'Good afternoon, Ally Cooper' where the picture said 'Back at it, Ally Cooper', so the only large text on the page changes by itself between visits. Dragging up and down moved nothing, and no name for the page appeared anywhere. The top bar only has the three-line menu icon and the ghost icon. Later, when I came back to this page from the menu, the keyboard opened again without me asking.",
+          "what_they_did": "The app was already on the greeting page, but the keyboard had opened by itself. I closed it with Back once. I looked away and back, then said where I was before touching anything. Then I dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Same page as s1, with the same missing name and a greeting that changes by itself. The warning box sits on top and names nothing either.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "the Projects page (empty)",
+      "expectation": "The list of my projects.",
+      "confidence": "sure",
+      "cue": "'Projects' at the top centre, 'Search projects', 'New project'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title in the expected place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "the Projects page with the Yours/Archived menu open",
+      "expectation": "Projects, with a filter menu open.",
+      "confidence": "sure",
+      "cue": "'Projects' title, menu with 'Yours' ticked and 'Archived'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title stays and the tick shows the current filter.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "the archived projects view",
+      "expectation": "The archived projects list inside Projects.",
+      "confidence": "sure",
+      "cue": "'Projects' title, the blue box icon at top right, and 'No archived projects' in the middle.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can tell, but only because the list is empty and the empty message says 'archived'. The title still says only 'Projects'. If there were archived projects, nothing in words would tell me I was in the archived list.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "the 'Upgrade for Claude Code' page with the sample code",
+      "expectation": "Probably the Code section, which is locked and showing an advertisement to upgrade.",
+      "confidence": "guessing",
+      "cue": "'Upgrade for Claude Code' in the middle, the 'Return to chat' button. There is no title at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top half looks like a real conversation ('Make Clawd dance', code edits), so at first I thought I was in a chat. The heading is halfway down the page, not at the top. 'Return to chat' makes me think I am not in a chat, which contradicts what the top half shows.",
+        "solution": "Put 'Code' as the title at the top, the same place as 'Chats' and 'Projects', and label the sample conversation as an example."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t3",
+          "subjects": [
+            "s20"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Code. When it opens, look only at the top third of the screen for a few seconds and say where you are. Then read the rest of the page. Then open the menu again and see which row is marked. Do not press Upgrade; leave by opening the menu and tapping Chats.",
+          "real_if": "the top of the page does not tell you where you are and you have to read down to the middle",
+          "not_real_if": "you can tell where you are from the top of the page",
+          "persona_report": "The top third had the three-line menu icon, an empty strip, and a chat bubble saying 'Make Clawd dance' with a reply under it. From the top alone I would say I was inside a conversation. I only learned it was the Code area when I read down to 'Upgrade for Claude Code' in the middle of the screen. In the menu, the Code row had a light grey background, so the menu does say Code, but only after I open it. The page itself does not.",
+          "what_they_did": "I opened the menu and tapped Code. I looked only at the top third for a few seconds, then read the rest. I opened the menu again to see which row was marked, then tapped Chats to leave. I did not press Upgrade.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The top of the Code page shows a fake conversation and no title, so I still have to read to the middle to find out I am in Code, not in a chat.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "the Artifacts page (empty)",
+      "expectation": "The list of my artifacts.",
+      "confidence": "sure",
+      "cue": "'Artifacts' at the top centre, 'Search artifacts'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title in the expected place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "the Artifacts page with All/Chat/Code menu open",
+      "expectation": "Artifacts, choosing a filter.",
+      "confidence": "sure",
+      "cue": "'Artifacts' title, menu with 'All' ticked.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title stays; tick shows the choice.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "the Artifacts page filtered to Chat",
+      "expectation": "Artifacts, showing only chat ones.",
+      "confidence": "sure",
+      "cue": "'Artifacts' title and 'Chat' next to the search field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The filter name is written next to the search box.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s24": {
+      "where": "the Settings page",
+      "expectation": "The settings page.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "the Profile page with name fields",
+      "expectation": "My profile, inside settings.",
+      "confidence": "sure",
+      "cue": "'Profile' at the top, 'Full name' field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title, back arrow shows it is one level down.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "the 'Delete account' dialog over Profile",
+      "expectation": "A confirmation box for deleting my account.",
+      "confidence": "sure",
+      "cue": "'Delete account' at the top of the box, 'Profile' still visible behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the dialog and the page behind are named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "the Billing page",
+      "expectation": "Billing, inside settings.",
+      "confidence": "sure",
+      "cue": "'Billing' at the top, 'Account Plan Free'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s28": {
+      "where": "the plans page scrolled down to the Max plan",
+      "expectation": "Probably the page for buying a paid plan, further down.",
+      "confidence": "guessing",
+      "cue": "Nothing names it now. I see 'Max', prices, 'Get Max plan', and the end of a list that belongs to some other plan.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The title at the top ('Get more Claude' / 'Choose the plan right for you') has scrolled away and only a close X remains. I have to work out what page this is from the prices.",
+        "solution": "Keep a short title fixed at the top next to the X, for example 'Choose a plan', while the content scrolls."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t4",
+          "subjects": [
+            "s28"
+          ],
+          "task": "From the page with the greeting, tap 'Upgrade to Pro' in the grey strip above the writing box. When the page opens, drag it upward until you reach the bottom. Pause, look away for a moment, look back, and say where you are. Then drag it back down a little (not all the way to the top) and see whether a name for the page comes back. Do not tap any plan, price, circle or button; leave with the X at the top left.",
+          "real_if": "at the bottom, and after scrolling back a little, nothing names the page",
+          "not_real_if": "a name for the page stays or comes back while you scroll",
+          "persona_report": "At the bottom I saw the Max plan, prices, 'Get Max plan', 'Terms' and 'Privacy Policy'. The only thing at the top was the X. Nothing named the page. When I dragged back down part of the way, I saw the Pro prices and 'Get Pro plan', but the title did not come back. It only returns when I scroll all the way to the top. The X stayed put, which is good, but an X tells me how to leave, not where I am. The first tap on the X did nothing I could see. The second screenshot showed the greeting page.",
+          "what_they_did": "From the greeting page I tapped 'Upgrade to Pro'. The plans page opened with 'Get more Claude' and 'Choose the plan right for you' at the top. I dragged it up to the bottom, looked away and back, then dragged it back down part of the way. I tapped no plan, price, circle or button, and left with the X.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Once I scroll past the top, nothing on the plans page says what it is, and the title does not come back until I scroll all the way up.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "the Capabilities page",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top, with section names 'Memory' and 'Tool access' lower down.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title and literal section headings.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "the Capabilities page, some switches changed",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "the Capabilities page, Artifacts switched off",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "the Capabilities page, memory switched on",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top, 'Memory' section heading.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "the Capabilities page, code execution off",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "the Capabilities page, Artifacts and code off",
+      "expectation": "The capabilities settings page.",
+      "confidence": "sure",
+      "cue": "'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "the Settings page, '3 enabled'",
+      "expectation": "The settings page.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "the Settings page scrolled a little",
+      "expectation": "The settings page, further down.",
+      "confidence": "sure",
+      "cue": "'Settings' still at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stayed at the top when the list moved. That is exactly what I want.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "the Settings page scrolled to Log out",
+      "expectation": "The settings page, at the bottom.",
+      "confidence": "sure",
+      "cue": "'Settings' still at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stayed in place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "the Permissions page",
+      "expectation": "Permissions, inside settings.",
+      "confidence": "sure",
+      "cue": "'Permissions' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s39": {
+      "where": "the Voice settings page with the 'Buttery' card",
+      "expectation": "Voice settings.",
+      "confidence": "sure",
+      "cue": "'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title. (What 'Buttery' and 'Airy' mean is a different question; it does not affect knowing where I am.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s40": {
+      "where": "the Voice settings page with the 'Airy' card",
+      "expectation": "Voice settings.",
+      "confidence": "sure",
+      "cue": "'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "the Voice settings page with the language list open",
+      "expectation": "Voice settings, choosing a language.",
+      "confidence": "sure",
+      "cue": "'Voice settings' at the top, partly covered by the list but readable.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can still read the title above the list.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "the Voice settings page, English (India)",
+      "expectation": "Voice settings.",
+      "confidence": "sure",
+      "cue": "'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "the Voice settings page, Airy, English (India)",
+      "expectation": "Voice settings.",
+      "confidence": "sure",
+      "cue": "'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "the side menu with Code highlighted",
+      "expectation": "The main menu, opened from the Code section.",
+      "confidence": "sure",
+      "cue": "The menu list with 'Code' on a slightly darker background.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Menu is obvious, and the highlight shows the current section, though it is faint.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s45": {
+      "where": "the Artifacts page with All/Pinned/Yours/Shared menu open",
+      "expectation": "Artifacts, choosing a filter.",
+      "confidence": "sure",
+      "cue": "'Artifacts' title and the menu with 'All' ticked.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and tick are clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "the Artifacts page with a blue pin button and 'All'",
+      "expectation": "Artifacts, possibly only pinned ones.",
+      "confidence": "guessing",
+      "cue": "'Artifacts' at the top. The top-right button is blue with a pin picture. Next to the search box it says 'All'. The middle says 'No artifacts match'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know I am in Artifacts, but I cannot tell which list I am looking at. The written word says 'All', while the blue pin picture suggests 'Pinned'. The words and the picture contradict each other.",
+        "solution": "Write the active filter in words, for example 'Artifacts: Pinned', and do not show 'All' when something else is filtering."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t5",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the top-right button turned into a blue circle with a pin drawn in it. The word beside the search box still said 'All', and the middle said 'No artifacts match'. What is written says All, and it was not All. After choosing Code, the word said 'Code' but the pin filter was still only the blue picture. The only written place that showed 'Pinned' was the menu itself, with a tick, and only while it was open. So two filters were on, and only one was ever written on the page.",
+          "what_they_did": "I opened the menu and tapped Artifacts. I tapped the small picture at the top right and chose Pinned, then said which list I was on. Next I tapped the word beside the search box ('All') and chose Code, then said which list I was on. Then I put both back: small picture, choose All; word beside the search box, choose All. Both show All again.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the real app the written word said 'All' while the Pinned filter was on. The page tells me the wrong thing in words, not just nothing.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "the Artifacts page with a blue pin button and 'Code'",
+      "expectation": "Artifacts, possibly pinned code ones.",
+      "confidence": "guessing",
+      "cue": "'Artifacts' title, blue pin button, 'Code' next to the search box, 'No artifacts match'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Again I know it is Artifacts, but there seem to be two filters on at once, and only one of them is written in words. I have to guess the pin one from a coloured picture.",
+        "solution": "Show every active filter as text in one place, for example 'Pinned, Code', near the title."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t5",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the top-right button turned into a blue circle with a pin drawn in it. The word beside the search box still said 'All', and the middle said 'No artifacts match'. What is written says All, and it was not All. After choosing Code, the word said 'Code' but the pin filter was still only the blue picture. The only written place that showed 'Pinned' was the menu itself, with a tick, and only while it was open. So two filters were on, and only one was ever written on the page.",
+          "what_they_did": "I opened the menu and tapped Artifacts. I tapped the small picture at the top right and chose Pinned, then said which list I was on. Next I tapped the word beside the search box ('All') and chose Code, then said which list I was on. Then I put both back: small picture, choose All; word beside the search box, choose All. Both show All again.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Code is written, Pinned is only a blue picture, so I still have to guess one of the two filters that are on.",
+      "provisional": false
+    },
+    "s48": {
+      "where": "the second 'Delete account' dialog over Profile",
+      "expectation": "The final confirmation for deleting my account.",
+      "confidence": "sure",
+      "cue": "'Delete account' at the top of the box and 'Are you sure you want to delete your account?'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title and question.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "the 'Turn off memory' panel over Capabilities",
+      "expectation": "A panel for turning off memory.",
+      "confidence": "sure",
+      "cue": "'Turn off memory' at the top of the panel, 'Capabilities' visible behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the panel and the page behind are named literally.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "the 'Turn off sensitive topics' panel over Capabilities",
+      "expectation": "A panel for turning off sensitive-topic memory.",
+      "confidence": "sure",
+      "cue": "'Turn off sensitive topics' at the top of the panel.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "the Connectors page, discovery on",
+      "expectation": "Connectors, inside settings.",
+      "confidence": "sure",
+      "cue": "'Connectors' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "the Connectors page, discovery off",
+      "expectation": "Connectors, inside settings.",
+      "confidence": "sure",
+      "cue": "'Connectors' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 52,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 45,
+      "guessing": 7,
+      "no_idea": 0
+    },
+    "cue_nothing": 2,
+    "no_problem": 45,
+    "navigate_with_difficulty": 7,
+    "cannot_handle": 0,
+    "tests_run": 5,
+    "opinions": {
+      "unchanged": 3,
+      "hardened": 3,
+      "softened": 1,
+      "reversed": 0
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

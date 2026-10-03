@@ -1,0 +1,49 @@
+{
+  "app": "Messenger",
+  "screen": "s31",
+  "state_str": "2201714206c7e01c263def9045df2fd4",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151846.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s31_header_nav.png",
+  "name": "Archive",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Archive",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    },
+    {
+      "kind": "header",
+      "text": "Your archive is empty",
+      "verdict_on_region": "empty-state heading naming what this place holds — supports the top-bar title"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Chats, People tab, Notifications",
+      "verdict_on_region": "bottom tab bar with \"Chats\" visibly highlighted although the page is not that tab — the highlight shows the tab you came from, not this page"
+    }
+  ],
+  "identifier_found": "\"Archive\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s31-tc1",
+      "type": "active_state",
+      "precondition": "People tab",
+      "action": "open the drawer, tap Archive; also Message requests",
+      "expected_result": "bottom bar highlight follows the page or not",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "\"Archive\" and \"Message requests\" titles shown; the bottom bar still highlights \"People\" (the tab the drawer was opened from) — the highlight shows origin, the title locates. Live divergence: Archive now holds three chats (capture: empty)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: \"Archive\" and \"Message requests\" titles shown; the bottom bar still highlights \"People\" (the tab the drawer was opened from) — the highlight shows origin, the title locates. Live divergence: Archive now holds three chats (capture: empty); the bottom bar highlights the tab the drawer was opened from, not this page — the title is what locates",
+  "recommendation": null,
+  "provisional": false
+}

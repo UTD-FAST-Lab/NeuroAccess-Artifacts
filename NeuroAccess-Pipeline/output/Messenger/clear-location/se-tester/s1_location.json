@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s1",
+  "state_str": "59dff180b11bd80efeab2e94b0df48b8",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151349.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s1_header_nav.png",
+  "name": "notification permission prompt",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Turn on notifications from Messenger",
+      "verdict_on_region": "large title naming the full-screen page or sheet the user is on — accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Turn on notifications from Messenger\"",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions; also lands a return transition from outside the app and names itself on arrival",
+  "recommendation": null,
+  "provisional": false
+}

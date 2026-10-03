@@ -1,0 +1,410 @@
+{
+  "app": "Messenger",
+  "screen": "screen2",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen2_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen2_function_groups.png"
+  },
+  "elements": {
+    "screen2-f1": {
+      "kind": "icon+label",
+      "appearance": "grey person silhouette with the words \"Ally Cooper\" and a downward chevron",
+      "state": null,
+      "location": "top centre of screen2",
+      "bounds": [
+        0,
+        63,
+        912,
+        252
+      ],
+      "visible_label": "Ally Cooper",
+      "convention_relied_on": "grey person silhouette with the words \"Ally Cooper\" and a downward chevron: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "switch profile",
+      "accessibility_text": "content_desc: 'Logged in as, Ally Cooper, Tap to switch profile'; talkback_label: 'Logged in as, Ally Cooper, Tap to switch profile'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens the 'Switch profile' page (Ally Cooper ✓, Log into another Meta Account); nothing switched.",
+      "glyph_group": "gg35",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg35-tc-screen2-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the grey person silhouette with the words \"Ally Cooper\" and a downward chevron at top centre of screen2",
+          "expected_result": "the same result as the other members of gg35 (grey person silhouette with the words \"Ally Cooper\" and a downward chevron)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens the 'Switch profile' page (Ally Cooper ✓, Log into another Meta Account); nothing switched.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg35": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f2": {
+      "kind": "icon",
+      "appearance": "gear",
+      "state": null,
+      "location": "top right of screen2",
+      "bounds": [
+        742,
+        69,
+        912,
+        248
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "gear: settings — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "settings",
+      "accessibility_text": "content_desc: 'Settings'; talkback_label: 'Settings'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens the 'Me' settings page.",
+      "glyph_group": "gg36",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg36-tc-screen2-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the gear at top right of screen2",
+          "expected_result": "the same result as the other members of gg36 (gear)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens the 'Me' settings page.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg36": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f3": {
+      "kind": "icon+label",
+      "appearance": "three people with the words \"Communities\"",
+      "state": "unselected",
+      "location": "top centre of screen2",
+      "bounds": [
+        0,
+        253,
+        912,
+        400
+      ],
+      "visible_label": "Communities",
+      "convention_relied_on": "three people with the words \"Communities\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "communities",
+      "accessibility_text": "content_desc: 'Unselected, Communities, 1 of 3'; talkback_label: 'Unselected, Communities, 1 of 3'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens 'Build a chat-based community on Messenger'.",
+      "glyph_group": "gg37",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg37-tc-screen2-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the three people with the words \"Communities\" at top centre of screen2",
+          "expected_result": "the same result as the other members of gg37 (three people with the words \"Communities\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens 'Build a chat-based community on Messenger'.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg37": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f4": {
+      "kind": "icon+label",
+      "appearance": "speech bubble with three dots with the words \"Message requests\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        400,
+        912,
+        547
+      ],
+      "visible_label": "Message requests",
+      "convention_relied_on": "speech bubble with three dots with the words \"Message requests\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "message requests",
+      "accessibility_text": "content_desc: 'Unselected, Message requests, 2 of 3'; talkback_label: 'Unselected, Message requests, 2 of 3'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens 'Message requests'.",
+      "glyph_group": "gg38",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg38-tc-screen2-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the speech bubble with three dots with the words \"Message requests\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg38 (speech bubble with three dots with the words \"Message requests\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens 'Message requests'.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg38": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f5": {
+      "kind": "icon+label",
+      "appearance": "box with a lid with the words \"Archive\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        547,
+        912,
+        694
+      ],
+      "visible_label": "Archive",
+      "convention_relied_on": "box with a lid with the words \"Archive\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "archive",
+      "accessibility_text": "content_desc: 'Unselected, Archive, 3 of 3'; talkback_label: 'Unselected, Archive, 3 of 3'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens the 'Archive' list of archived chats.",
+      "glyph_group": "gg39",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg39-tc-screen2-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the box with a lid with the words \"Archive\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg39 (box with a lid with the words \"Archive\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens the 'Archive' list of archived chats.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg39": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f6": {
+      "kind": "icon+label",
+      "appearance": "two people with the words \"Friend requests\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        820,
+        912,
+        967
+      ],
+      "visible_label": "Friend requests",
+      "convention_relied_on": "two people with the words \"Friend requests\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "friend requests",
+      "accessibility_text": "content_desc: 'Unselected, Friend requests, 1 of 1, 2 new messages'; talkback_label: 'Unselected, Friend requests, 1 of 1, 2 new messages'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens the 'Facebook friend requests' page.",
+      "glyph_group": "gg40",
+      "function_group": "fg7",
+      "test_cases": [
+        {
+          "id": "gg40-tc-screen2-f6",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the two people with the words \"Friend requests\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg40 (two people with the words \"Friend requests\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens the 'Facebook friend requests' page.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg40": "Consistent Functionality",
+        "fg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f7": {
+      "kind": "icon+label",
+      "appearance": "circling arrows around a dollar sign with the words \"Subscriptions\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        1093,
+        912,
+        1240
+      ],
+      "visible_label": "Subscriptions",
+      "convention_relied_on": "circling arrows around a dollar sign with the words \"Subscriptions\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "subscriptions",
+      "accessibility_text": "content_desc: 'Unselected, SubscriptionsFind and manage your Meta subscriptions, 1 of 4'; talkback_label: 'Unselected, SubscriptionsFind and manage your Meta subscriptions, 1 of 4'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "opens a Meta Account 'Subscriptions' sheet.",
+      "glyph_group": "gg41",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg41-tc-screen2-f7",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the circling arrows around a dollar sign with the words \"Subscriptions\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg41 (circling arrows around a dollar sign with the words \"Subscriptions\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens a Meta Account 'Subscriptions' sheet.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg41": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f8": {
+      "kind": "icon+label",
+      "appearance": "play symbol on a screen with the words \"Facebook Reels\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        1240,
+        912,
+        1387
+      ],
+      "visible_label": "Facebook Reels",
+      "convention_relied_on": "play symbol on a screen with the words \"Facebook Reels\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "facebook reels",
+      "accessibility_text": "content_desc: 'Unselected, Facebook Reels, 2 of 4'; talkback_label: 'Unselected, Facebook Reels, 2 of 4'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "switches to the Facebook app on Reels.",
+      "glyph_group": "gg42",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg42-tc-screen2-f8",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the play symbol on a screen with the words \"Facebook Reels\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg42 (play symbol on a screen with the words \"Facebook Reels\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "switches to the Facebook app on Reels.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg42": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f9": {
+      "kind": "icon+label",
+      "appearance": "calendar with the words \"Facebook Events\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        1387,
+        912,
+        1534
+      ],
+      "visible_label": "Facebook Events",
+      "convention_relied_on": "calendar with the words \"Facebook Events\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "facebook events",
+      "accessibility_text": "content_desc: 'Unselected, Facebook Events, 3 of 4'; talkback_label: 'Unselected, Facebook Events, 3 of 4'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "switches to the Facebook app on Events.",
+      "glyph_group": "gg43",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg43-tc-screen2-f9",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the calendar with the words \"Facebook Events\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg43 (calendar with the words \"Facebook Events\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "switches to the Facebook app on Events.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg43": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen2-f10": {
+      "kind": "icon+label",
+      "appearance": "heart with the words \"Facebook Dating\"",
+      "state": "unselected",
+      "location": "middle centre of screen2",
+      "bounds": [
+        0,
+        1534,
+        912,
+        1681
+      ],
+      "visible_label": "Facebook Dating",
+      "convention_relied_on": "heart with the words \"Facebook Dating\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "facebook dating",
+      "accessibility_text": "content_desc: 'Unselected, Facebook Dating, 4 of 4'; talkback_label: 'Unselected, Facebook Dating, 4 of 4'",
+      "context_reading": "side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More': Friend requests; 'Also from Meta': Subscriptions, Facebook Reels, Events, Dating",
+      "observed_function": "switches to the Facebook app.",
+      "glyph_group": "gg44",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg44-tc-screen2-f10",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen2 (side menu drawn over the Chats home: Ally Cooper ▾ and gear at top; rows Communities, Message requests, Archive; 'More':)",
+          "action": "note what is on screen, then tap the heart with the words \"Facebook Dating\" at middle centre of screen2",
+          "expected_result": "the same result as the other members of gg44 (heart with the words \"Facebook Dating\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "switches to the Facebook app.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg44": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 10,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

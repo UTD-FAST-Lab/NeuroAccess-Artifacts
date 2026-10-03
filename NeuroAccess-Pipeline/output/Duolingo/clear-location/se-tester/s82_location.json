@@ -1,0 +1,26 @@
+{
+  "app": "Duolingo",
+  "screen": "s82",
+  "state_str": "90418253a3439a850cf47b8cd5ad7ddc",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190838.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s82_header_nav.png",
+  "name": "the widget offer over the Shop",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Add the Duolingo widget to your home screen to earn an XP Boost.",
+      "verdict_on_region": "content: describes an offer (the widget reward), not a place in the app"
+    }
+  ],
+  "identifier_found": "none that names a place: headline 'Add the Duolingo widget to your home screen to earn an XP Boost.' with ADD NOW / MAYBE LATER",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "a full-screen offer covering the Shop and its title; the headline describes an offer",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the headline names an offer, not a place; the way back is a text link (MAYBE LATER) rather than a close control; template carry from s15's test (same template; the header content does not change the answer)",
+  "recommendation": "keep the Shop top bar (with its X) visible above the offer, or title it 'Widget reward'",
+  "provisional": false
+}

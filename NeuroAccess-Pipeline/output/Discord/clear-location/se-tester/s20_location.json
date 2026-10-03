@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s20",
+  "state_str": "931691040a0b91e3f256a11b6ba47832",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215411.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s20_header_nav.png",
+  "name": "the #general channel of the server, empty",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Welcome to Accessibility Testin's server",
+      "verdict_on_region": "names the server, but as the opening greeting of the channel's message history, not as a screen title; it sits in the scrolling message stream and moves up and away as soon as messages exist (seen live) — content, not counted as an identifier"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' with the '#' channel sign and back arrow names the channel; the mid-screen welcome is a greeting in the message stream",
+  "test_cases": [
+    {
+      "id": "s20-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "app open on the #general channel of the server, composer empty",
+      "action": "scroll the message area down and up; then watch the mid-screen 'Welcome to Accessibility Testin's server' heading as a message is added to the channel",
+      "expected_result": "the heading either stays fixed as a screen title or moves with the message stream",
+      "confirms_if": "n/a for the screen verdict (the top bar decides it); the region is dismissed as content if it moves with the messages",
+      "overturns_if": "the heading is pinned in place like a title",
+      "observed_result": "top bar '# general' / '1 Online' stayed fixed through every scroll; the welcome heading is the first item of the message history — when a message was present it slid upward under the top bar and was partly hidden. It is a greeting in the content, not a title. (A GIF was accidentally posted during this test and was deleted straight after; the channel was restored to its captured empty state.)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: top bar '# general' / '1 Online' stayed fixed through every scroll; the welcome heading is the first item of the message history — when a message was present it slid upward under the top bar and was partly hidden. It is a greeting in the content, not a title",
+  "recommendation": null,
+  "provisional": false
+}

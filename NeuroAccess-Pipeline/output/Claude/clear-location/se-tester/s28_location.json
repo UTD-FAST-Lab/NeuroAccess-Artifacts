@@ -1,0 +1,33 @@
+{
+  "app": "Claude",
+  "screen": "s28",
+  "state_str": "b9266e43e196f2f7ea7bf3417b53ea09",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134335.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s28_header_nav.png",
+  "name": "the upgrade page scrolled down to the Max plan",
+  "regions_read": [],
+  "identifier_found": "none; the \"Get more Claude\" title has scrolled off the top; visible text is plan cards (\"Max\", prices, feature bullets), \"Get Max plan\", \"Limits apply\", Terms / Privacy Policy",
+  "identifier_class": "none",
+  "accessibility_text": "only \"Close\", \"Limits apply for Pro\", \"Limits apply for Max\"; nothing names the page",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the page's only title scrolls away with the content and no bar remains; plan names name products, not a place",
+  "test_cases": [
+    {
+      "id": "s28-tc1",
+      "type": "scroll_persistence",
+      "precondition": "upgrade page open at the top, \"Get more Claude\" visible",
+      "action": "scroll down (vertical) past the Pro plan, on to the end of the page (further than the capture), then scroll back up part-way",
+      "expected_result": "the title stays, collapses into a smaller persistent form, or leaves and returns",
+      "confirms_if": "the title is gone at rest and does not return on a partial scroll back",
+      "overturns_if": "the title persists, collapses to a persistent bar, or returns on scrolling back",
+      "observed_result": "\"Get more Claude\" scrolled out with the content; at the end of the page only the close X, the Max card, \"Get Max plan\" and Terms / Privacy Policy were visible; a partial scroll back showed \"Get Pro plan\" and the Pro bullets but no title; no plan was selected",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live (reached by scrolling the upgrade page, s4): \"Get more Claude\" scrolls off with the content, no collapsed bar replaces it, and scrolling part-way back does not bring it back \u2014 it returns only at the very top. The loss is caused by scrolling, not by navigating. Detector note: the capture reached this state by t20, recorded as a touch on \"Everything in Free, plus:\"; it is not a structural_same_view_candidate (the header lists differ), so it could not be promoted and no transition verdict is attached \u2014 the screen verdict carries the finding.",
+  "recommendation": "pin \"Get more Claude\" (or a short \"Plans\" title) in the top bar beside the close X so it survives scrolling",
+  "provisional": false
+}

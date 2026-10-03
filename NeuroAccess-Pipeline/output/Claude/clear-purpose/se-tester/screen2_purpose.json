@@ -1,0 +1,304 @@
+{
+  "app": "Claude",
+  "screen": "screen2",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen2_actionable_elements.png",
+  "elements": {
+    "screen2-a1": {
+      "kind": "icon",
+      "glyph": "dimmed grey strip along the right screen edge, no symbol of its own",
+      "description": "dimmed grey strip along the right edge beside the open side panel; the ghost glyph of the screen beneath shows through it",
+      "location": "right edge, full height",
+      "bounds": [
+        945,
+        0,
+        1080,
+        2400
+      ],
+      "visible_text": "none; the only mark inside it is the dimmed ghost glyph belonging to the covered screen",
+      "accessibility_text_consulted": "content_desc \"Close navigation menu\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "tapping the dimmed area outside a side panel to close it is an Android convention, but the strip shows another control's glyph as its only face — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the strip has no face of its own; what a user sees inside it is the ghost glyph, which suggests the strip does that glyph's job",
+      "test_cases": [
+        {
+          "id": "screen2-a1-tc1",
+          "type": "expected",
+          "precondition": "side panel open over the home screen",
+          "action": "tap exactly on the dimmed ghost glyph inside the strip",
+          "expected_result": "if the visible glyph conveyed the purpose, tapping it would do the ghost's job",
+          "confirms_if": "the tap does something other than what the visible glyph belongs to",
+          "overturns_if": "the tap does the ghost glyph's job, or the strip carries its own visible close cue",
+          "observed_result": "the side panel closed and nothing else happened; the screen stayed in normal (non-incognito) mode, so the glyph the user aimed at did not act",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the only visible thing in the strip is a glyph from the covered screen, and tapping it closes the panel instead of doing that glyph's job",
+      "recommendation": "dim the covered screen enough that its controls do not read as live, or give the panel its own visible close control (an X or 'Close') at the top",
+      "provisional": false
+    },
+    "screen2-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "large word 'Claude' at the top of the side panel",
+      "location": "top of the side panel",
+      "bounds": [
+        32,
+        63,
+        913,
+        232
+      ],
+      "visible_text": "\"Claude\" (the product's name, set as a title)",
+      "accessibility_text_consulted": "content_desc \"Claude\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the visible text is the product's name; it reads as a title, not an action, and says nothing about what pressing it does",
+      "test_cases": [
+        {
+          "id": "screen2-a2-tc1",
+          "type": "expected",
+          "precondition": "side panel open",
+          "action": "tap the word 'Claude'",
+          "expected_result": "if the word conveyed a purpose, the result would be predictable from it",
+          "confirms_if": "something happens that the word does not predict",
+          "overturns_if": "nothing happens (then it is only a title) or the result is predictable from 'Claude'",
+          "observed_result": "the panel closed and an empty new chat opened with the keyboard up — a 'home / new chat' action the title word did not predict",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the title is actionable and starts a new chat, which the product name gives no hint of",
+      "recommendation": "make the title non-interactive, or label the action it performs (e.g. 'Home' / 'New chat')",
+      "provisional": false
+    },
+    "screen2-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Chats' row with a speech-bubbles glyph in the side panel",
+      "location": "side panel, first row",
+      "bounds": [
+        21,
+        232,
+        924,
+        379
+      ],
+      "visible_text": "\"Chats\"",
+      "accessibility_text_consulted": "talkback_label \"Chats\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain word naming a destination: the list of your chats",
+      "test_cases": [
+        {
+          "id": "screen2-a3-tc1",
+          "type": "expected",
+          "precondition": "side panel open",
+          "action": "tap 'Chats'",
+          "expected_result": "a list of chats opens",
+          "confirms_if": "something other than a chats list opens",
+          "overturns_if": "a chats list opens",
+          "observed_result": "a screen titled 'Chats' opened with a search box and the list of past chats",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened the Chats list it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen2-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Projects' row with a stacked-tray glyph in the side panel",
+      "location": "side panel, second row",
+      "bounds": [
+        21,
+        379,
+        924,
+        526
+      ],
+      "visible_text": "\"Projects\"",
+      "accessibility_text_consulted": "talkback_label \"Projects\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain word naming a destination",
+      "test_cases": [
+        {
+          "id": "screen2-a4-tc1",
+          "type": "expected",
+          "precondition": "side panel open",
+          "action": "tap 'Projects'",
+          "expected_result": "a projects screen opens",
+          "confirms_if": "something unrelated opens",
+          "overturns_if": "a projects screen opens",
+          "observed_result": "a 'Projects' screen opened with 'Create a project to organize chats with Claude around a topic or set of documents.'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened the Projects screen, which also explains what a project is",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen2-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Code' row with a </> glyph in the side panel",
+      "location": "side panel, third row",
+      "bounds": [
+        21,
+        526,
+        924,
+        673
+      ],
+      "visible_text": "\"Code\"",
+      "accessibility_text_consulted": "talkback_label \"Code\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Code' alone does not say whether this writes code, shows code, or opens a coding tool; a first-time user cannot tell what they get",
+      "test_cases": [
+        {
+          "id": "screen2-a5-tc1",
+          "type": "expected",
+          "precondition": "side panel open",
+          "action": "tap 'Code'",
+          "expected_result": "if the word conveyed the purpose, the destination would be predictable",
+          "confirms_if": "the destination is something 'Code' did not predict",
+          "overturns_if": "a clearly code-related tool the user could have predicted opens",
+          "observed_result": "a page opened showing a sample coding conversation and the heading 'Upgrade for Claude Code' with 'Upgrade' and 'Return to chat' buttons — an upgrade offer for a separate product",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the row leads to a paid-product upgrade page; neither the product nor the paywall is conveyed by the single word 'Code'",
+      "recommendation": "name the destination, e.g. 'Claude Code (coding assistant) — Pro'",
+      "provisional": false
+    },
+    "screen2-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Artifacts' row with a shapes glyph in the side panel",
+      "location": "side panel, fourth row",
+      "bounds": [
+        21,
+        673,
+        924,
+        820
+      ],
+      "visible_text": "\"Artifacts\"",
+      "accessibility_text_consulted": "talkback_label \"Artifacts\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Artifacts' is product jargon; a first-time user does not know what an artifact is",
+      "test_cases": [
+        {
+          "id": "screen2-a6-tc1",
+          "type": "expected",
+          "precondition": "side panel open",
+          "action": "tap 'Artifacts'",
+          "expected_result": "if the word conveyed the purpose, the destination would explain itself",
+          "confirms_if": "the destination still does not say what an artifact is",
+          "overturns_if": "the destination defines artifacts in plain words",
+          "observed_result": "an 'Artifacts' screen opened with the empty-state line 'Artifacts you've had with Claude will show up here.' — circular; it never says what an artifact is",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "neither the row nor the screen it opens explains the term",
+      "recommendation": "rename or caption it in plain words, e.g. 'Artifacts — documents, code and designs Claude made for you'",
+      "provisional": false
+    },
+    "screen2-a7": {
+      "kind": "icon",
+      "glyph": "orange filled circle containing the letters AC",
+      "description": "orange circle with the letters 'AC' at the bottom-left of the side panel",
+      "location": "bottom-left of the side panel",
+      "bounds": [
+        37,
+        2174,
+        163,
+        2300
+      ],
+      "visible_text": "\"AC\" (initials, not a word)",
+      "accessibility_text_consulted": "content_desc \"Ally Cooper, Settings\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a circle with the user's initials is an established account/profile avatar convention leading to account settings — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "initials avatar convention for 'your account'; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen2-a7-tc1",
+          "type": "verification",
+          "precondition": "side panel open",
+          "action": "tap the AC circle",
+          "expected_result": "account / settings screen opens",
+          "confirms_if": "something other than account/settings opens",
+          "overturns_if": "account settings open",
+          "observed_result": "a 'Settings' screen opened with the account email and plan at the top",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the initials avatar opened the account settings, as the avatar convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen2-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black pill with a plus and the words 'New chat'",
+      "location": "bottom-right",
+      "bounds": [
+        566,
+        2174,
+        903,
+        2300
+      ],
+      "visible_text": "\"New chat\" with a plus sign",
+      "accessibility_text_consulted": "talkback_label \"New chat\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit verb-object label",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the visible words say exactly what it does; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "issues": 4,
+    "missing_purpose": 0,
+    "unclear_purpose": 4,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 7,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 8,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

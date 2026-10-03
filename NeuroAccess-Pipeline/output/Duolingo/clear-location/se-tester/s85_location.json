@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s85",
+  "state_str": "042c26d9a553ed32c605af445a636e74",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190926.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s85_header_nav.png",
+  "name": "the Shop with an XP-boost overlay",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Shop",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "XP Boost activated! Earn double XP for the next 10 minutes.",
+      "verdict_on_region": "content: reports an outcome on an overlay, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "'Shop' still visible in the top bar above a purple 'XP Boost activated!' overlay with CONTINUE",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the Shop header stays visible above the overlay",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the overlay headline reports an outcome and is dismissed as content; the Shop title above it carries the location. Not reproduced live (it follows installing the widget, which is out of bounds)",
+  "recommendation": null,
+  "provisional": false
+}

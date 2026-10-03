@@ -1,0 +1,317 @@
+{
+  "app": "Duolingo",
+  "screen": "screen3",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen3_actionable_elements.png",
+  "elements": {
+    "screen3-a1": {
+      "kind": "icon",
+      "glyph": "square outline with an upward arrow out of its top",
+      "description": "square with an upward arrow out of its top, page header right",
+      "location": "top-right of the Streak page header",
+      "bounds": [
+        975,
+        93,
+        1038,
+        159
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings; not used in the verdict",
+      "convention_relied_on": "box with upward arrow is the established 'share' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "share glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen3-a1-tc1",
+          "type": "verification",
+          "precondition": "Streak page",
+          "action": "tap the share glyph (do not choose any target)",
+          "expected_result": "a share sheet/preview opens",
+          "confirms_if": "it does something other than share",
+          "overturns_if": "a share preview/sheet opens",
+          "observed_result": "opened 'Share Streak' preview card with targets Save / Instagram / Facebook / Messages / More; closed without sharing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the glyph opened a share preview, matching the share convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a2": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        42,
+        95,
+        105,
+        158
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no content_desc or talkback label; nothing consulted",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen3-a2-tc1",
+          "type": "verification",
+          "precondition": "Streak page",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the Streak page closed and the home path returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "tab in the Streak page tab bar",
+      "location": "below the Streak page header",
+      "bounds": [
+        0,
+        189,
+        540,
+        315
+      ],
+      "visible_text": "\"PERSONAL\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "two tabs, PERSONAL and FRIENDS, with an underline showing the selected one",
+      "test_cases": [
+        {
+          "id": "screen3-a3-tc1",
+          "type": "expected",
+          "precondition": "Streak page on the FRIENDS tab",
+          "action": "tap PERSONAL",
+          "expected_result": "the personal streak view returns",
+          "confirms_if": "something else",
+          "overturns_if": "the personal view shows",
+          "observed_result": "the personal streak view (count, card, calendar) slid back in and PERSONAL was underlined",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tabs switched between the personal streak and the friends-streak view",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "tab in the Streak page tab bar",
+      "location": "below the Streak page header",
+      "bounds": [
+        540,
+        189,
+        1080,
+        315
+      ],
+      "visible_text": "\"FRIENDS\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "two tabs, PERSONAL and FRIENDS, with an underline showing the selected one",
+      "test_cases": [
+        {
+          "id": "screen3-a4-tc1",
+          "type": "expected",
+          "precondition": "Streak page on PERSONAL",
+          "action": "tap FRIENDS",
+          "expected_result": "a friends-streak view",
+          "confirms_if": "something else",
+          "overturns_if": "a friends view",
+          "observed_result": "switched to a view 'Start Friend Streaks to make daily progress together!' with ADD FRIENDS; FRIENDS underlined",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tabs switched between the personal streak and the friends-streak view",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "card with a stopwatch picture and a call to action",
+      "location": "Streak page, under the streak count",
+      "bounds": [
+        42,
+        750,
+        1038,
+        981
+      ],
+      "visible_text": "\"Do a lesson today to extend your streak!\" / \"START LESSON\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the card says what to do and the action word says what pressing does",
+      "test_cases": [
+        {
+          "id": "screen3-a5-tc1",
+          "type": "expected",
+          "precondition": "Streak page showing the captured card",
+          "action": "tap START LESSON",
+          "expected_result": "a lesson starts",
+          "confirms_if": "it does something else",
+          "overturns_if": "a lesson starts",
+          "observed_result": "not run: on the live app the card at this position showed a different message ('You're out of Streak Freezes! GET MORE'), so the captured card could not be reached",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test was required and the captured state could not be reproduced",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a6": {
+      "kind": "icon",
+      "glyph": "chevron pointing left",
+      "description": "chevron beside the month name in the streak calendar",
+      "location": "streak calendar header",
+      "bounds": [
+        84,
+        1227,
+        179,
+        1322
+      ],
+      "visible_text": "none; the month name 'September 2026' sits between the two chevrons",
+      "accessibility_text_consulted": "no strings; not used in the verdict",
+      "convention_relied_on": "left/right chevrons beside a month name are the established previous/next-month convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "calendar paging chevrons, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen3-a6-tc1",
+          "type": "verification",
+          "precondition": "calendar showing October after paging forward",
+          "action": "tap the left chevron",
+          "expected_result": "previous month shows",
+          "confirms_if": "something else",
+          "overturns_if": "the previous month shows",
+          "observed_result": "the calendar went back to September 2026",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the chevrons paged the calendar month, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a7": {
+      "kind": "icon",
+      "glyph": "chevron pointing right",
+      "description": "chevron beside the month name in the streak calendar",
+      "location": "streak calendar header",
+      "bounds": [
+        901,
+        1227,
+        996,
+        1322
+      ],
+      "visible_text": "none; the month name 'September 2026' sits between the two chevrons",
+      "accessibility_text_consulted": "no strings; not used in the verdict",
+      "convention_relied_on": "left/right chevrons beside a month name are the established previous/next-month convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "calendar paging chevrons, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen3-a7-tc1",
+          "type": "verification",
+          "precondition": "calendar showing September 2026",
+          "action": "tap the right chevron",
+          "expected_result": "next month shows",
+          "confirms_if": "something else",
+          "overturns_if": "the next month shows",
+          "observed_result": "the calendar moved to October 2026",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the chevrons paged the calendar month, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen3-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "the calendar day grid",
+      "location": "streak calendar",
+      "bounds": [
+        42,
+        1301,
+        1038,
+        1973
+      ],
+      "visible_text": "day letters and dates",
+      "accessibility_text_consulted": "no strings; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a grid of dates; nothing says tapping it does anything",
+      "test_cases": [
+        {
+          "id": "screen3-a8-tc1",
+          "type": "verification",
+          "precondition": "Streak page",
+          "action": "tap an empty day, tap the highlighted day, long-press a day",
+          "expected_result": "if actionable, something opens",
+          "confirms_if": "something opens",
+          "overturns_if": "nothing happens",
+          "observed_result": "nothing opened, nothing changed on any of the three touches",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: the calendar grid takes no action and carries no state",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 4,
+    "detection_false_positives": 1,
+    "test_cases_executed": 7,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 7,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

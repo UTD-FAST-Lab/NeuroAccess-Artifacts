@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s15",
+  "state_str": "88b72e4d60df17f60909067fabff2bdc",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204414.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s15_header_nav.png",
+  "name": "the Library (\"All\" tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Library",
+      "verdict_on_region": "top-bar title; names the section"
+    },
+    {
+      "kind": "navigation",
+      "text": "All | Images | Files (All selected)",
+      "verdict_on_region": "visible grey pill on the current tab"
+    }
+  ],
+  "identifier_found": "\"Library\" top-bar title plus a highlighted tab",
+  "identifier_class": "header and navigation bar with visible active state",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title names the section and the tab highlight names the sub-section",
+  "test_cases": [
+    {
+      "id": "s15-tc1",
+      "type": "verification",
+      "precondition": "side menu",
+      "action": "tap \"Library\" and scroll the grid well down, then back",
+      "expected_result": "title stays or scrolls away",
+      "confirms_if": "the \"Library\" title scrolls away and does not return",
+      "overturns_if": "the \"Library\" title stays pinned or returns on scrolling back",
+      "observed_result": "the \"Library\" title stays pinned in the top bar while the grid scrolls; the tab row scrolls away with the grid. Live tabs now read \"Suggested / Favorites / Folders / Images\" rather than \"All / Images / Files\" (capture divergence)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "a pinned \"Library\" title verified live.",
+  "recommendation": null,
+  "provisional": false
+}

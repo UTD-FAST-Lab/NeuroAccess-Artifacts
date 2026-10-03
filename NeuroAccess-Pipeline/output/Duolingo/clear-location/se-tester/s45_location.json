@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s45",
+  "state_str": "b7d239eedd54ff3ce992e0602f90fc35",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190152.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s45_header_nav.png",
+  "name": "the unit Guidebook",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SECTION 1, UNIT 1 / Order at a café",
+      "verdict_on_region": "content: names the course unit being studied, not a part of the app"
+    }
+  ],
+  "identifier_found": "none that names a place: X, mascot, 'SECTION 1, UNIT 1 / Order at a café', 'KEY PHRASES'",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen ('Close Page' / 'Back' only)",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the heading names the unit (content); nothing says this is the guidebook",
+  "test_cases": [
+    {
+      "id": "s45-tc1",
+      "type": "verification",
+      "precondition": "Learn path",
+      "action": "tap the notebook icon on the unit banner; scroll down and back",
+      "expected_result": "a 'Guidebook' title appears, or none does",
+      "confirms_if": "none appears",
+      "overturns_if": "a title naming the guidebook appears",
+      "observed_result": "no 'Guidebook' anywhere; on scrolling, a collapsing title appeared in the top bar reading 'Section 1, Unit 1' — the unit again, not the screen; X returned to Learn",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the only titles, including the one revealed on scroll, name the unit (content); 'KEY PHRASES' is a sub-section heading",
+  "recommendation": "title the screen 'Guidebook — Section 1, Unit 1'",
+  "provisional": false
+}

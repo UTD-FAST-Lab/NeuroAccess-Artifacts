@@ -1,0 +1,33 @@
+{
+  "app": "Duolingo",
+  "screen": "s1",
+  "state_str": "200d392145f17f12fe2fb9c4ed7d3dbd",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185330.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s1_header_nav.png",
+  "name": "the launch splash",
+  "regions_read": [],
+  "identifier_found": "none: the owl logo on green (live: the 'duolingo' wordmark on green)",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "a splash screen with no text",
+  "test_cases": [
+    {
+      "id": "s1-tc1",
+      "type": "verification",
+      "precondition": "app closed",
+      "action": "cold-launch the app and watch the first frames",
+      "expected_result": "a splash with or without a title",
+      "confirms_if": "no place is named",
+      "overturns_if": "-",
+      "observed_result": "green splash with the 'duolingo' wordmark (the capture showed the owl instead — live app diverges), then the Learn path",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing names a place; it is a transient launch screen that hands over to the Learn path on its own — the only text live is the app's name",
+  "recommendation": "none needed beyond keeping it brief; if it lingers, show 'Loading your course…'",
+  "provisional": false
+}

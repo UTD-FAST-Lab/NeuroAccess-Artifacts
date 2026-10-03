@@ -1,0 +1,1700 @@
+{
+  "persona": "persona-amy",
+  "app": "Duolingo",
+  "screens": {
+    "s1": {
+      "where": "The app's start-up screen",
+      "expectation": "The app is loading.",
+      "confidence": "guessing",
+      "cue": "Only a large owl face on a plain green background; no words at all.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no text, so I have to assume from the empty screen and the logo that the app is starting; nothing says loading.",
+        "solution": "A line of text such as 'Loading' under the logo."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s1-T1",
+          "action": "Close the app completely (swipe it away or press the home button and relaunch from the phone), open Duolingo again, and watch the very first screen. Say what you see and whether you can tell what is happening.",
+          "real_if": "you cannot tell what is happening on the first screen",
+          "not_real_if": "you can tell the app is starting",
+          "what_happened": "I closed Duolingo and opened it again, twice. Both times, by the first screenshot I could take, the app was already on the path screen with 'SECTION 1, UNIT 1 Order at a café' at the top. I never caught the plain owl screen from the picture; if it appears, it passes faster than I can look.",
+          "screen_matched_picture": "no",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the real phone the wordless owl screen passes so fast that I never saw it, so it barely strands anyone, although it would still be clearer with a word such as 'Loading'.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "Choosing a course to learn, probably at sign-up",
+      "expectation": "A list of courses where I pick one and press CONTINUE.",
+      "confidence": "sure",
+      "cue": "The question 'What would you like to learn?', the heading 'For English speakers', and the list of languages.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The question says literally what this screen is for, and the list matches it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s3": {
+      "where": "The home learning screen, on a unit called 'Hot Cross Buns – Zari's version'",
+      "expectation": "The main path screen, but mostly empty.",
+      "confidence": "guessing",
+      "cue": "The pink bar 'SECTION 1, UNIT 1 / Hot Cross Buns – Zari's version' and the highlighted house in the bottom bar.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The house tells me this is home, but the unit name is the name of a song and a person, not a description of what I am learning, and the rest of the screen is blank.",
+        "solution": "A unit title that says literally what the unit teaches, and content on the page, or a 'Loading' message while it fills."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s3-T2",
+          "action": "Open the app and let the first screen settle. Look at it for a few seconds without scrolling and say where you think you are. Then tap the second picture in the row along the bottom, then tap the first picture again, and say whether you can tell you are back where you started.",
+          "real_if": "you cannot name the place, or cannot tell you are back",
+          "not_real_if": "you can name it and recognise it when you come back",
+          "what_happened": "The first screen showed 'SECTION 1, UNIT 1 Order at a café' at the top and the house highlighted in the bottom row, so I knew I was on the learning path for that unit. The unit was 'Order at a café', not 'Hot Cross Buns'. I tapped the second picture and got 'Quests' with its picture highlighted. I tapped the house again and was back on the same path with the same title and the house highlighted again. Out of scope: the shape at the bottom of the path kept switching between a '2' badge, a flag and an exclamation mark between my screenshots, without me doing anything.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Live, the unit title was the literal 'Order at a café' and the page was filled in, so the song-title unit and the blank path in the picture were not what I met.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "A course picker opened over the home screen",
+      "expectation": "A panel for switching or adding a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish' with a blue outline, '+ Course', 'Your Spanish Score is 1' and the boxed heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only boxed name is 'New Courses', which is one section of the panel; the panel itself has no title, so I deduce what it is from the flags.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s4-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The panel drops down from the flag I pressed and closes when I press it again, so I know what it is; it still has no title of its own.",
+      "provisional": false
+    },
+    "s5": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The unit is named at the top in literal words and the first bottom-bar item is highlighted.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Streak page, Personal tab",
+      "expectation": "A page about my daily practice streak.",
+      "confidence": "sure",
+      "cue": "'Streak' at the top, 'PERSONAL' selected in blue, and 'Streak Calendar' below.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title at the top, selected tab visible, and section headings that match.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "The course picker over the home screen",
+      "expectation": "A panel for switching or adding a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish', '+ Course', and the boxed heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel has no title of its own; 'New Courses' names only its lower section.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s7-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same panel: pressing the flag tells me what opened, although the panel never names itself.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Unit named at the top and the first bottom-bar item highlighted.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Share Streak",
+      "expectation": "A screen for sharing a card showing my 1 day streak.",
+      "confidence": "sure",
+      "cue": "'Share Streak' at the top, and Save, Messages, More at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says exactly what the screen is for.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Streak page, Friends tab",
+      "expectation": "The friends part of the streak page.",
+      "confidence": "sure",
+      "cue": "'Streak' at the top and 'FRIENDS' in blue with an underline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page title and the selected tab are both visible.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s11": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says Shop. Out of scope: the title is very faint grey.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "An advert for a paid plan called Super",
+      "expectation": "A sales screen asking me to start a free trial.",
+      "confidence": "guessing",
+      "cue": "The 'SUPER' logo top right, 'Power up your learning with unlimited energy on Super!' and 'START MY FREE WEEK'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The boxed region is a logo, not a name for this place; I work out it is a sales page from the button, and 'Power up' is a figure of speech.",
+        "solution": "A plain title such as 'Super subscription: free trial' at the top."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s12-T4",
+          "action": "On the first screen tap the blue number with the gem at the top. On the page that opens, tap the white button TRY 1 WEEK FOR FREE near the top — never tap START MY FREE WEEK. Say where you think you are. Then tap the X at the top-left and say where you are.",
+          "real_if": "you cannot say where you are on that page, or the X does not take you somewhere you recognise",
+          "not_real_if": "you can say where you are and the X brings you back",
+          "what_happened": "I tapped the gem number and got a page titled 'Shop' in faint grey. I tapped the white 'TRY 1 WEEK FOR FREE' button. The page that opened had only the 'SUPER' logo at the top right, 'Power up your learning with unlimited energy on Super!', a cartoon creature holding an infinity sign, and a 'START MY FREE WEEK' button, which I did not touch. There is no title saying what this page is; I know it is an offer only because I pressed a button that said so. I tapped the X at the top left and was back in 'Shop'. The banner at the top of the Shop had changed from 'Save with a family plan!' to 'Features for faster learning' while I was away.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "On the phone this page had only the SUPER logo and 'Power up your learning' as a place name; the X did return me to Shop, but I only knew where I was from the button I had pressed.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place. Out of scope: faint title, and the top banner differs from the previous Shop picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Another page of the Super advert",
+      "expectation": "A second sales page for the paid plan.",
+      "confidence": "guessing",
+      "cue": "The 'SUPER' logo and 'With no ads, you'll fly through your lessons!'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Again only a logo is boxed; 'fly through your lessons' is a metaphor and the picture is an abstract creature, so nothing literal names the screen.",
+        "solution": "A plain title naming the subscription offer, and literal text instead of 'fly through'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s14-T4",
+          "action": "On the first screen tap the blue number with the gem at the top. On the page that opens, tap the white button TRY 1 WEEK FOR FREE near the top — never tap START MY FREE WEEK. Say where you think you are. Then tap the X at the top-left and say where you are.",
+          "real_if": "you cannot say where you are on that page, or the X does not take you somewhere you recognise",
+          "not_real_if": "you can say where you are and the X brings you back",
+          "what_happened": "I tapped the gem number and got a page titled 'Shop' in faint grey. I tapped the white 'TRY 1 WEEK FOR FREE' button. The page that opened had only the 'SUPER' logo at the top right, 'Power up your learning with unlimited energy on Super!', a cartoon creature holding an infinity sign, and a 'START MY FREE WEEK' button, which I did not touch. There is no title saying what this page is; I know it is an offer only because I pressed a button that said so. I tapped the X at the top left and was back in 'Shop'. The banner at the top of the Shop had changed from 'Save with a family plan!' to 'Features for faster learning' while I was away.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I did not see this exact page live, and nothing in what I did see gives these offer pages a literal title.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "A page offering the home-screen widget",
+      "expectation": "A screen asking me to add a widget.",
+      "confidence": "guessing",
+      "cue": "'Add the Duolingo widget to your home screen to earn an XP Boost.' with ADD NOW and MAYBE LATER.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence says literally what this screen is about.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Some screen of the Super advert, with only a creature and clouds",
+      "expectation": "Probably a transition between advert pages, but I cannot tell.",
+      "confidence": "no idea",
+      "cue": "Only the 'SUPER' logo top right and an abstract creature over clouds; no sentence at all.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The only boxed thing is a brand logo, there is no text, and the picture is an abstract character, so nothing tells me what this screen is.",
+        "solution": "A literal title such as 'Super subscription offer' and a sentence saying what the screen is for."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s17-T4",
+          "action": "On the first screen tap the blue number with the gem at the top. On the page that opens, tap the white button TRY 1 WEEK FOR FREE near the top — never tap START MY FREE WEEK. Say where you think you are. Then tap the X at the top-left and say where you are.",
+          "real_if": "you cannot say where you are on that page, or the X does not take you somewhere you recognise",
+          "not_real_if": "you can say where you are and the X brings you back",
+          "what_happened": "I tapped the gem number and got a page titled 'Shop' in faint grey. I tapped the white 'TRY 1 WEEK FOR FREE' button. The page that opened had only the 'SUPER' logo at the top right, 'Power up your learning with unlimited energy on Super!', a cartoon creature holding an infinity sign, and a 'START MY FREE WEEK' button, which I did not touch. There is no title saying what this page is; I know it is an offer only because I pressed a button that said so. I tapped the X at the top left and was back in 'Shop'. The banner at the top of the Shop had changed from 'Save with a family plan!' to 'Features for faster learning' while I was away.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The live offer page again had only a logo and an abstract creature as its identity, so a version without the sentence would still tell me nothing.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Another page of the Super advert, about video calls",
+      "expectation": "A sales page for the paid plan.",
+      "confidence": "guessing",
+      "cue": "The 'SUPER' logo, 'Speak confidently with unlimited Video Call' and 'START MY FREE WEEK'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Only a logo is boxed; I deduce it is a sales page from the button, not from any name for the screen.",
+        "solution": "A plain title naming the subscription offer."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s19-T4",
+          "action": "On the first screen tap the blue number with the gem at the top. On the page that opens, tap the white button TRY 1 WEEK FOR FREE near the top — never tap START MY FREE WEEK. Say where you think you are. Then tap the X at the top-left and say where you are.",
+          "real_if": "you cannot say where you are on that page, or the X does not take you somewhere you recognise",
+          "not_real_if": "you can say where you are and the X brings you back",
+          "what_happened": "I tapped the gem number and got a page titled 'Shop' in faint grey. I tapped the white 'TRY 1 WEEK FOR FREE' button. The page that opened had only the 'SUPER' logo at the top right, 'Power up your learning with unlimited energy on Super!', a cartoon creature holding an infinity sign, and a 'START MY FREE WEEK' button, which I did not touch. There is no title saying what this page is; I know it is an offer only because I pressed a button that said so. I tapped the X at the top left and was back in 'Shop'. The banner at the top of the Shop had changed from 'Save with a family plan!' to 'Features for faster learning' while I was away.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Same offer-page layout with only the logo boxed; the X returning me to Shop is good, but it does not name this page.",
+      "provisional": false
+    },
+    "s20": {
+      "where": "The Shop, scrolled down to Gems, Energy and Promo Code",
+      "expectation": "The lower part of the Shop.",
+      "confidence": "sure",
+      "cue": "'Shop' still at the top, with headings 'Gems', 'Energy', 'Promo Code'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The Shop title stays at the top and the section headings are literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Energy page",
+      "expectation": "A page about my energy and ways to refill it.",
+      "confidence": "sure",
+      "cue": "'Energy' at the top and '25 / 25' in the bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is at the top and the content matches it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Quests",
+      "expectation": "A page listing tasks with rewards.",
+      "confidence": "sure",
+      "cue": "'Quests' at the top, 'Complete quests to earn rewards!', and the highlighted second item in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is at the top and the sentence under it explains in literal words what it is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "The home learning path with a lesson popup, 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Unit named at the top and the first bottom-bar item highlighted.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s24": {
+      "where": "The course picker over the home screen",
+      "expectation": "A panel for switching or adding a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish', '+ Course', and the boxed heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel itself has no title; 'New Courses' names only its lower section.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s24-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same panel: I found it and got out of it without trouble, but only 'New Courses' is written on it.",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Inside a lesson exercise, with a tip about a new word",
+      "expectation": "A picture question in a lesson.",
+      "confidence": "sure",
+      "cue": "'Select the correct image', the progress bar, and 'This is a new word. Tap it to learn what it means.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The instruction is literal and the progress bar shows I am in a lesson.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Leaderboards, probably, before I have unlocked them",
+      "expectation": "A ranking page I cannot use yet.",
+      "confidence": "guessing",
+      "cue": "The boxed sentence 'Finish 2 lessons to start competing on Leaderboards!' and the highlighted third item in the bottom bar.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no title; I only find the word 'Leaderboards' inside an instruction sentence, and the highlighted bar item is a brown shape I cannot name.",
+        "solution": "A title 'Leaderboards' at the top, and a text label under each bottom-bar item."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s26-T5",
+          "action": "On the first screen tap the third picture in the row along the bottom. Say where you think you are, and what told you.",
+          "real_if": "you cannot say where you are",
+          "not_real_if": "you can say where you are",
+          "what_happened": "I tapped the third picture in the bottom row, the brown shape. The screen showed three placeholder rows with medals and the sentence 'Finish 2 lessons to start competing on Leaderboards!'. The brown item was highlighted. There is still no title; the only place the word 'Leaderboards' appears is inside that sentence. I would guess this is the Leaderboards page, but only from reading the instruction sentence.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Live, it is exactly the picture: no title, 'Leaderboards' only inside an instruction sentence, and a brown shape I cannot name.",
+      "provisional": false
+    },
+    "s27": {
+      "where": "The home learning path, 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "guessing",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The unit title is there, but on this picture no item in the bottom bar is highlighted, whereas on the other home pictures the house is; the bar no longer confirms where I am.",
+        "solution": "Keep the current item highlighted in the bottom bar every time, and put a text label under each item."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s27-T2",
+          "action": "Open the app and let the first screen settle. Look at it for a few seconds without scrolling and say where you think you are. Then tap the second picture in the row along the bottom, then tap the first picture again, and say whether you can tell you are back where you started.",
+          "real_if": "you cannot name the place, or cannot tell you are back",
+          "not_real_if": "you can name it and recognise it when you come back",
+          "what_happened": "The first screen showed 'SECTION 1, UNIT 1 Order at a café' at the top and the house highlighted in the bottom row, so I knew I was on the learning path for that unit. The unit was 'Order at a café', not 'Hot Cross Buns'. I tapped the second picture and got 'Quests' with its picture highlighted. I tapped the house again and was back on the same path with the same title and the house highlighted again. Out of scope: the shape at the bottom of the path kept switching between a '2' badge, a flag and an exclamation mark between my screenshots, without me doing anything.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Every time I reached the path on the phone the house was highlighted, including after I left and came back, so the unhighlighted bar in the picture was not what the app did.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "A profile page for Ally Cooper, probably mine, with a 'Create your avatar!' panel on top",
+      "expectation": "My own profile with a prompt to make an avatar.",
+      "confidence": "guessing",
+      "cue": "'Ally Cooper' at the top, a settings gear, 'JOINED 2026', and the panel 'Create your avatar!'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top shows only a person's name; I infer it is my own profile from the settings gear and the empty avatar, not from any word saying 'Profile' or 'You'.",
+        "solution": "A title such as 'Your profile' above or beside the name."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s28-T6",
+          "action": "On the first screen tap the last picture in the row along the bottom (the purple circle), then tap 'Profile'. If a box about an avatar comes up, tap MAYBE LATER. Say where you think you are. Scroll down and back up and say whether you are still sure.",
+          "real_if": "you cannot say whose page this is or that it is your own",
+          "not_real_if": "you can say you are on your own page",
+          "what_happened": "I tapped the purple circle. The first taps highlighted it but nothing opened; on the next tap a small menu appeared with 'Profile' and 'Video Call'. I tapped 'Profile'. No avatar box appeared. The page shows 'Ally Cooper' at the top, a settings gear, '@ALLYCOOPER680885 · JOINED 2026' and 'Finish your profile!'. No item in the bottom row is highlighted, not even the purple circle I had used. I scrolled down and back up and the name 'Ally Cooper' stayed fixed at the top the whole time. I am sure it is my own page, but only because I pressed 'Profile' myself and it says 'Finish your profile!'; the page never says 'Profile' at the top.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Reached through a menu item labelled 'Profile', I was sure it was my page, and the name stayed while scrolling; the page itself still never says 'Profile'.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "A profile page for Ally Cooper, probably mine",
+      "expectation": "My own profile.",
+      "confidence": "guessing",
+      "cue": "'Ally Cooper' at the top, 'Finish your profile!', and the bottom bar.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Only a name names the page, and none of the bottom-bar items is highlighted, so the bar does not tell me which section I am in either.",
+        "solution": "A title such as 'Your profile', and a highlighted, labelled item in the bottom bar for this page."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s29-T6",
+          "action": "On the first screen tap the last picture in the row along the bottom (the purple circle), then tap 'Profile'. If a box about an avatar comes up, tap MAYBE LATER. Say where you think you are. Scroll down and back up and say whether you are still sure.",
+          "real_if": "you cannot say whose page this is or that it is your own",
+          "not_real_if": "you can say you are on your own page",
+          "what_happened": "I tapped the purple circle. The first taps highlighted it but nothing opened; on the next tap a small menu appeared with 'Profile' and 'Video Call'. I tapped 'Profile'. No avatar box appeared. The page shows 'Ally Cooper' at the top, a settings gear, '@ALLYCOOPER680885 · JOINED 2026' and 'Finish your profile!'. No item in the bottom row is highlighted, not even the purple circle I had used. I scrolled down and back up and the name 'Ally Cooper' stayed fixed at the top the whole time. I am sure it is my own page, but only because I pressed 'Profile' myself and it says 'Finish your profile!'; the page never says 'Profile' at the top.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I knew where I was because I pressed 'Profile', but no bottom item was highlighted on the phone either, so the bar still does not help.",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Ally Cooper's list of courses",
+      "expectation": "The courses that account is learning.",
+      "confidence": "sure",
+      "cue": "'Ally Cooper's Courses' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Friends, Following tab",
+      "expectation": "The list of people I follow, currently empty.",
+      "confidence": "sure",
+      "cue": "'Friends' at the top and 'FOLLOWING' in blue with an underline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Page title and selected tab are both visible. Out of scope: the title is pale grey.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "A profile page for Ally Cooper, probably mine, a little further down",
+      "expectation": "My own profile.",
+      "confidence": "guessing",
+      "cue": "'Ally Cooper' at the top, a settings gear, 'Finish your profile!', 'FRIEND SUGGESTIONS'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as the other picture of this page: only a name, and no bottom-bar item is highlighted.",
+        "solution": "A title such as 'Your profile', and a highlighted, labelled bottom-bar item for it."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s32-T6",
+          "action": "On the first screen tap the last picture in the row along the bottom (the purple circle), then tap 'Profile'. If a box about an avatar comes up, tap MAYBE LATER. Say where you think you are. Scroll down and back up and say whether you are still sure.",
+          "real_if": "you cannot say whose page this is or that it is your own",
+          "not_real_if": "you can say you are on your own page",
+          "what_happened": "I tapped the purple circle. The first taps highlighted it but nothing opened; on the next tap a small menu appeared with 'Profile' and 'Video Call'. I tapped 'Profile'. No avatar box appeared. The page shows 'Ally Cooper' at the top, a settings gear, '@ALLYCOOPER680885 · JOINED 2026' and 'Finish your profile!'. No item in the bottom row is highlighted, not even the purple circle I had used. I scrolled down and back up and the name 'Ally Cooper' stayed fixed at the top the whole time. I am sure it is my own page, but only because I pressed 'Profile' myself and it says 'Finish your profile!'; the page never says 'Profile' at the top.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Scrolling kept 'Ally Cooper' fixed at the top, so I did not lose my place, though the page never names itself as my profile.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Friends, Followers tab",
+      "expectation": "The list of people who follow me, currently empty.",
+      "confidence": "sure",
+      "cue": "'Friends' at the top and 'FOLLOWERS' in blue with an underline; 'No followers yet'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and selected tab are both visible.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "Create Avatar, on the skin tone step",
+      "expectation": "An editor for building my avatar, choosing skin colour.",
+      "confidence": "sure",
+      "cue": "'Create Avatar' at the top and the heading 'Skin tone' under the row of pictures.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page title and the section heading together tell me exactly where I am. The row of tab pictures has no words, but the 'Skin tone' heading names the selected one.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Find your friends",
+      "expectation": "A page for finding people to follow.",
+      "confidence": "sure",
+      "cue": "'Find your friends' and 'Friend suggestions'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and the options under it match.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Unit named at the top and the first bottom-bar item highlighted. Out of scope: the badge says '12 days' here and '13 days' on other home pictures.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Streak page, Personal tab, showing August",
+      "expectation": "The streak page with the calendar on the previous month.",
+      "confidence": "sure",
+      "cue": "'Streak' at the top, 'PERSONAL' selected, 'Streak Calendar' and 'August 2026'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title and selected tab as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "The course picker over the home screen",
+      "expectation": "A panel for switching or adding a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish', '+ Course', and the boxed heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel has no title; 'New Courses' names only one section of it.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s38-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same panel: the flag opens and closes it predictably, which answers most of my doubt.",
+      "provisional": false
+    },
+    "s39": {
+      "where": "A video advert for a food delivery service",
+      "expectation": "An advert playing inside the app.",
+      "confidence": "guessing",
+      "cue": "'DOORDASH Order now', the video with the caption 'Based on a DoorDash order far, far too real.', a spinning circle top left and a speaker icon top right.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "A video with sound on that I did not start, no text naming where I am in the app, and a loading circle where the close control would be, so I cannot leave either.",
+        "solution": "A text label saying this is an advert, a visible Close button from the start, sound off, and nothing playing until I press play."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s39-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone the advert started instantly with sound, cut between unrelated scenes by itself, and for about 30 seconds offered no way out and no sign I was still in the app.",
+      "provisional": false
+    },
+    "s40": {
+      "where": "A video advert for a food delivery service, full screen",
+      "expectation": "I am inside an advert that is playing; I cannot tell which part of the app this belongs to.",
+      "confidence": "guessing",
+      "cue": "The red 'DOORDASH Order now' bar and the video; a spinning circle top left and a speaker icon top right.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "Nothing names where I am, the video is moving, the speaker icon shows sound is on, and where a close control should be there is only a spinning circle.",
+        "solution": "A fixed line of text at the top saying this is an advert inside the app, a visible Close button from the first frame, and no sound or movement until I press play."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s40-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The spinning circle really is the only thing where the close button should be for about half a minute, with the video and sound running.",
+      "provisional": false
+    },
+    "s41": {
+      "where": "The same advert, now a black screen with a close cross",
+      "expectation": "Still inside the advert, after the video ended.",
+      "confidence": "guessing",
+      "cue": "The 'DOORDASH Order now' bar, the X at top left and a muted speaker icon.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I can at least see an X to leave, but nothing on the screen says where I am or where the X will take me.",
+        "solution": "A text title such as 'Advertisement' at the top and a Close button labelled with words."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s41-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When the X appeared it did take me back to a reward page inside Duolingo, so leaving works; the black screen still names nothing.",
+      "provisional": false
+    },
+    "s42": {
+      "where": "A reward result after opening a free chest",
+      "expectation": "A confirmation screen telling me I got 6 gems.",
+      "confidence": "guessing",
+      "cue": "The boxed line 'You earned 6 gems!' and 'Next free chest will be available in 1 minute'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The boxed text tells me what happened, not where I am, and nothing says where DONE will return me.",
+        "solution": "A title naming the place, for example 'Free Chest', and a button that says where it goes, for example 'Back to Shop'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s42-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "DONE returned me to the Shop I came from, so once I knew that I was not lost, although the page itself only describes the reward.",
+      "provisional": false
+    },
+    "s43": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "The word 'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says Shop in the expected place. Out of scope: the title is very faint grey, and the Free Chest card has a countdown ('22 seconds') that changes by itself.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place. Out of scope: the faint title, the top banner changed from the family-plan one, and the chest countdown keeps changing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s45": {
+      "where": "The notes page for Section 1, Unit 1, 'Order at a café'",
+      "expectation": "A guide page for that unit with key phrases.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 / Order at a café' and 'KEY PHRASES'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It names the section, the unit and the topic in plain words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "Inside a lesson, on an exercise",
+      "expectation": "A lesson question asking me to pick a picture.",
+      "confidence": "sure",
+      "cue": "'Select the correct image', the progress bar and the X at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I know I am in an exercise; the instruction is literal. It does not name which lesson, but inside a lesson that is acceptable.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s47": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café', with a lesson popup open",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "The green bar 'SECTION 1, UNIT 1 Order at a café', the popup 'Lesson 2 of 3', and the highlighted house in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The unit name is at the top and the first bottom-bar item is highlighted. The bottom bar has no words, but the house is a picture of a real thing I can name.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s48": {
+      "where": "The Feed",
+      "expectation": "A social feed page.",
+      "confidence": "sure",
+      "cue": "The title 'Feed' and the highlighted pink heart item in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "Search for friends",
+      "expectation": "A page to search for friends by name.",
+      "confidence": "sure",
+      "cue": "'Search for friends' at the top and 'Friend suggestions'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says exactly what the page is. Out of scope: the title text is pale grey.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "A share panel for my profile card, over the Find your friends page",
+      "expectation": "A sheet for sending my profile to someone.",
+      "confidence": "guessing",
+      "cue": "'FOLLOW ME ON DUOLINGO!' above Messages, Save and More; 'Find your friends' greyed behind.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The boxed text at the bottom is a slogan, not a name for this panel, so I have to work out from the Messages and Save buttons that this is sharing.",
+        "solution": "A plain title on the panel such as 'Share your profile'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s50-none",
+          "action": null,
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": null,
+          "screen_matched_picture": null,
+          "status": "not_executed",
+          "not_run_reason": "the share panel is part of sharing, which this session does not allow"
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Not tried, because sharing is not allowed; the slogan is still the only name on that panel.",
+      "provisional": true
+    },
+    "s51": {
+      "where": "Another user's profile, Baron Laqeas",
+      "expectation": "That person's profile page.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas' at the top, with Courses, Following, Followers and a FOLLOW button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A person's name at the top of a page with their statistics tells me I am on their profile.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "Baron Laqeas's list of courses",
+      "expectation": "The courses that person is learning.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas's Courses' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s53": {
+      "where": "Baron Laqeas's friends, Following tab",
+      "expectation": "The people that person follows.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas's Friends' and 'FOLLOWING' in blue with an underline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Page title and selected tab are both clear. Out of scope: the title is pale grey.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s54": {
+      "where": "Baron Laqeas's friends, Followers tab",
+      "expectation": "The people who follow that person.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas's Friends' and 'FOLLOWERS' in blue with an underline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title, and the selected tab changed as expected.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s55": {
+      "where": "Baron Laqeas's profile",
+      "expectation": "The profile, now showing FOLLOWING.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s56": {
+      "where": "Baron Laqeas's profile, further down",
+      "expectation": "The same profile, scrolled.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas' still at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stays fixed while the content moves.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "Baron Laqeas's profile, near the bottom",
+      "expectation": "The same profile, scrolled further.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas' at the top; REPORT USER and BLOCK USER at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is still there.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s58": {
+      "where": "Baron Laqeas's achievements",
+      "expectation": "That person's records and awards.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas's Achievements', with 'Personal Records' and 'Awards' headings.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear title and clear section headings.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "Baron Laqeas's profile",
+      "expectation": "The profile, scrolled a little.",
+      "confidence": "sure",
+      "cue": "'Baron Laqeas' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title, same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s60": {
+      "where": "Detail of Baron Laqeas's longest streak record",
+      "expectation": "A full-screen view of one record.",
+      "confidence": "guessing",
+      "cue": "'Baron Laqeas's longest streak is 88!' and the date.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence says literally what I am looking at; there is an X to leave.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s61": {
+      "where": "Detail of Baron Laqeas's best league finish",
+      "expectation": "A full-screen view of one record.",
+      "confidence": "guessing",
+      "cue": "'Baron Laqeas's best league finish was #6 in Pearl League!'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says literally which record this is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "The Feed",
+      "expectation": "The social feed.",
+      "confidence": "sure",
+      "cue": "'Feed' at the top and the highlighted heart in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title and bar as the other Feed picture. Out of scope: the card list changed between the two Feed pictures without me doing anything.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s63": {
+      "where": "The Feed, scrolled down",
+      "expectation": "Further down the same feed.",
+      "confidence": "sure",
+      "cue": "'Feed' at the top and the highlighted heart.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stays while the posts move.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s64": {
+      "where": "The Feed, scrolled",
+      "expectation": "The same feed.",
+      "confidence": "sure",
+      "cue": "'Feed' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and bottom bar unchanged.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "The Feed, scrolled further",
+      "expectation": "The same feed.",
+      "confidence": "sure",
+      "cue": "'Feed' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and bottom bar unchanged.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "The Feed, scrolled further",
+      "expectation": "The same feed, articles section.",
+      "confidence": "sure",
+      "cue": "'Feed' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and bottom bar unchanged.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Unit named at the top, first bar item highlighted.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "A course picker opened over the home screen",
+      "expectation": "A panel for choosing or adding a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish' selected with a blue outline, '+ Course', and the boxed heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only boxed name is 'New Courses', which names one section of the panel, not the panel itself; I have to deduce from the flags that this is a course switcher.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s69-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same panel: understandable because I opened it myself, still untitled.",
+      "provisional": false
+    },
+    "s70": {
+      "where": "A quest completion message",
+      "expectation": "A screen telling me I finished a task.",
+      "confidence": "guessing",
+      "cue": "'Quest complete!' and 'Follow your first friend 1 / 1'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It tells me an event happened, not where I am, and CONTINUE does not say where it goes. 'Quest' is also a game word, not a literal description.",
+        "solution": "A plain title such as 'Task completed' and a button that names its destination."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s70-none",
+          "action": null,
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": null,
+          "screen_matched_picture": null,
+          "status": "not_executed",
+          "not_run_reason": "that reward only appears once and it has already been used on this phone; getting another would mean adding a friend, which this session does not allow"
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Not tried; the screen still names an event, not a place.",
+      "provisional": true
+    },
+    "s71": {
+      "where": "A reward screen for opening a chest",
+      "expectation": "A result screen listing what I got.",
+      "confidence": "guessing",
+      "cue": "'You earned a Double XP Boost for 15 minutes and 50 gems!', CLAIM NOW and CLAIM IN SHOP.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The sentence describes a reward, not a place, and there is no title or bar to say which part of the app I am in.",
+        "solution": "A title naming the screen, and buttons that say where each one goes."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s71-none",
+          "action": null,
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": null,
+          "screen_matched_picture": null,
+          "status": "not_executed",
+          "not_run_reason": "that reward only appears once and it has already been used on this phone; getting another would mean adding a friend, which this session does not allow"
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Not tried; a reward sentence with no title still does not locate me.",
+      "provisional": true
+    },
+    "s72": {
+      "where": "A message that a double XP boost has started",
+      "expectation": "A confirmation screen.",
+      "confidence": "guessing",
+      "cue": "'XP Boost activated! Earn double XP for the next 15 minutes.' and 'x2'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It describes a state change, not a place, and there is nothing else on the screen to locate me.",
+        "solution": "A small title saying which part of the app this belongs to, and a button saying where CONTINUE goes."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s72-none",
+          "action": null,
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": null,
+          "screen_matched_picture": null,
+          "status": "not_executed",
+          "not_run_reason": "that reward only appears once and it has already been used on this phone; getting another would mean adding a friend, which this session does not allow"
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Not tried; the boost message still has nothing that says where in the app I am.",
+      "provisional": true
+    },
+    "s73": {
+      "where": "Quests",
+      "expectation": "A page listing tasks with rewards.",
+      "confidence": "sure",
+      "cue": "'Quests' at the top, 'Complete quests to earn rewards!', and the highlighted second item in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is at the top and the sentence under it explains in literal words what a quest is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s74": {
+      "where": "Find your friends",
+      "expectation": "A page for finding people to follow.",
+      "confidence": "sure",
+      "cue": "'Find your friends' and 'Friend suggestions'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and the options under it match it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s75": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café'",
+      "expectation": "The main learning screen.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' and the highlighted house.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as the other home pictures. Out of scope: the ring around the first circle has sparkles that look animated.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s76": {
+      "where": "The course picker over the home screen",
+      "expectation": "Same panel as before for choosing a course.",
+      "confidence": "guessing",
+      "cue": "'Spanish', '+ Course' and the heading 'New Courses'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as before: only a section heading is named, the panel itself has no title.",
+        "solution": "A title at the top of the panel such as 'Your courses'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s76-T3",
+          "action": "On the first screen, tap the small flag at the top-left. Say where you think you are now. Then tap the flag again and say whether you are back where you were.",
+          "real_if": "you cannot say what opened or where you are",
+          "not_real_if": "you can say what opened and that the flag took you back",
+          "what_happened": "I tapped the flag at the top left. A panel dropped down from the top bar with a small pointer under the flag, showing 'Spanish' (outlined), '+ Course', 'Your Spanish Score is 1' and 'New Courses'. The path behind went grey. Because I had just pressed the flag, I knew this was the course panel, but the panel still has no title of its own. I tapped the flag again and the panel closed, leaving me on the same path screen.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same panel: the flag toggles it reliably, but a title such as 'Your courses' would still help.",
+      "provisional": false
+    },
+    "s77": {
+      "where": "Find your friends",
+      "expectation": "The same friend-finding page.",
+      "confidence": "sure",
+      "cue": "'Find your friends' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title in the same place as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "Inside a lesson exercise, with 'mom' selected",
+      "expectation": "The same picture question, one answer chosen.",
+      "confidence": "sure",
+      "cue": "'Select the correct image' and the progress bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as the earlier exercise picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place. Out of scope: faint title text.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "Some kind of promotion screen for SUPER",
+      "expectation": "An advert or introduction for a paid plan, but I am not sure.",
+      "confidence": "no idea",
+      "cue": "The 'SUPER' logo in the top right and a cartoon creature ringing a bell over clouds.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The only boxed thing is a brand logo, which names a product, not a place; the picture is abstract and there is no text saying what this screen is.",
+        "solution": "A literal title, for example 'Super subscription offer', and a sentence explaining what the screen is for."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s80-T4",
+          "action": "On the first screen tap the blue number with the gem at the top. On the page that opens, tap the white button TRY 1 WEEK FOR FREE near the top — never tap START MY FREE WEEK. Say where you think you are. Then tap the X at the top-left and say where you are.",
+          "real_if": "you cannot say where you are on that page, or the X does not take you somewhere you recognise",
+          "not_real_if": "you can say where you are and the X brings you back",
+          "what_happened": "I tapped the gem number and got a page titled 'Shop' in faint grey. I tapped the white 'TRY 1 WEEK FOR FREE' button. The page that opened had only the 'SUPER' logo at the top right, 'Power up your learning with unlimited energy on Super!', a cartoon creature holding an infinity sign, and a 'START MY FREE WEEK' button, which I did not touch. There is no title saying what this page is; I know it is an offer only because I pressed a button that said so. I tapped the X at the top left and was back in 'Shop'. The banner at the top of the Shop had changed from 'Save with a family plan!' to 'Features for faster learning' while I was away.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Nothing I saw on the phone gives the Super pages a name beyond the logo, so a wordless one stays unreadable to me.",
+      "provisional": false
+    },
+    "s81": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s82": {
+      "where": "A page offering the home-screen widget",
+      "expectation": "A screen asking me to add a widget.",
+      "confidence": "guessing",
+      "cue": "'Add the Duolingo widget to your home screen to earn an XP Boost.' with ADD NOW and MAYBE LATER.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence says literally what this screen is about.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place. Out of scope: the top banner keeps changing between Shop pictures.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s85": {
+      "where": "The Shop, with an XP boost message on top",
+      "expectation": "A confirmation inside the Shop.",
+      "confidence": "sure",
+      "cue": "'Shop' still at the top, and 'XP Boost activated!' in the middle.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The Shop title stays visible above the message, so I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s86": {
+      "where": "The Shop, with an XP boost message on top",
+      "expectation": "The same confirmation inside the Shop.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The Shop title is still visible. Out of scope: this one says 25 minutes and the previous one 10 minutes, which I cannot explain.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s87": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s88": {
+      "where": "A video advert for a food delivery service",
+      "expectation": "An advert playing inside the app.",
+      "confidence": "guessing",
+      "cue": "'DOORDASH Order now', the video, an X and a speaker icon showing sound on.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "A video with sound that I did not start, and nothing names where I am in the app.",
+        "solution": "A text label saying this is an advert, sound off by default, and nothing playing until I press play."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s88-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The advert I got was a completely different one with sound on from the first frame, so I cannot even learn what to expect.",
+      "provisional": false
+    },
+    "s89": {
+      "where": "A reward result after opening a free chest",
+      "expectation": "A confirmation that I got 9 gems.",
+      "confidence": "guessing",
+      "cue": "'You earned 9 gems!' and 'Next free chest will be available in 1 minute'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It names what happened, not where I am, and DONE does not say where it goes.",
+        "solution": "A title naming the place, such as 'Free Chest', and a button naming where it returns me."
+      },
+      "test_cases": [
+        {
+          "id": "amy-s89-T7",
+          "action": "On the first screen tap the blue number with the gem at the top. Under 'Free Chest', if it says CLAIM CHEST, tap it. A video advert will play: do not touch the video or its coloured strip at the bottom. Wait (it can take about 30 seconds, check again every few seconds) until an X appears, then tap the X. Say where you think you are at each step. On the page after the advert, tap DONE and say where you are. If the chest is not available, say so and stop.",
+          "real_if": "you cannot tell you are still in the app, or cannot tell where you are after the X or DONE",
+          "not_real_if": "you can tell where you are at each step",
+          "what_happened": "In 'Shop', under 'Free Chest', I tapped CLAIM CHEST. A video advert started straight away with sound on: the speaker icon at the top right showed sound, and there was a spinning circle at the top left where a close control would be. This was a different advert from the pictures, for 'Disney+ Hulu'. The picture changed several times by itself: cartoon car, TV scenes, a logo. For about 30 seconds nothing on the screen said I was still in Duolingo and I had no way to leave. Then the screen went black and an X appeared at the top left. I tapped the X and got 'You earned 9 gems!' with 'Next free chest will be available in 1 minute' and DONE. I tapped DONE and was back in 'Shop'.",
+          "screen_matched_picture": "partly",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same reward page: DONE predictably took me back to Shop, which is where I started.",
+      "provisional": false
+    },
+    "s90": {
+      "where": "The Shop",
+      "expectation": "The Shop page.",
+      "confidence": "sure",
+      "cue": "'Shop' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {
+    "t18": {
+      "where": "The home learning path, Section 1, Unit 1 'Order at a café' — not the Streak page I was on",
+      "action_sentence": "You stayed on this screen and scrolled up.",
+      "expectation": "I was told I stayed on the Streak page and scrolled up, so I expected the Streak title, the PERSONAL/FRIENDS tabs and the calendar; instead I see the home path.",
+      "confidence": "sure",
+      "cue": "'SECTION 1, UNIT 1 Order at a café' at the top and the highlighted house in the bottom bar; the 'Streak' title, the tabs and the calendar are all gone.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I can read where the second picture is, but it is a different page from the one I scrolled on; a scroll should move content, not replace the whole screen, and nothing tells me why the Streak page disappeared.",
+        "solution": "Keep the Streak title and tabs in place while I scroll, and only leave that page when I press something that says where it goes, such as the X labelled 'Close'."
+      },
+      "test_cases": [
+        {
+          "id": "amy-t18-T8",
+          "action": "On the first screen tap the flame with a number at the top. On the page that opens, scroll up and down as far as it goes several times, then swipe sideways and back. After each move, without looking back, say where you are. Finally tap the X at the top-left.",
+          "real_if": "the name at the top leaves you, or the page changes under you while you only scroll",
+          "not_real_if": "the name stays with you through every scroll",
+          "what_happened": "I tapped the flame at the top and got the page titled 'Streak', with PERSONAL selected, a calendar and 'Streak Society'. I scrolled down to the bottom twice. The title 'Streak', the X and the PERSONAL/FRIENDS tabs stayed fixed at the top every time, and only the content under them moved. I scrolled back up to the top and pulled down further past the top three times. The page stayed as 'Streak'; it did not change into anything else. I swiped left and it slid over to the FRIENDS tab ('Start Friend Streaks...'), with 'Streak' still at the top and FRIENDS now blue. I swiped right and was back on PERSONAL. Only when I tapped the X did I leave, and it took me to the path screen with 'Order at a café'.",
+          "screen_matched_picture": "yes",
+          "status": "executed",
+          "not_run_reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "On the phone, scrolling and swiping on Streak never left the page, and the 'Streak' title and tabs stayed fixed at the top; only the X took me to the path, so the jump in the pictures was not caused by scrolling.",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "screens_reviewed": 89,
+    "transitions_reviewed": 1,
+    "confidence": {
+      "sure": 58,
+      "guessing": 30,
+      "no_idea": 2
+    },
+    "cue_nothing": 0,
+    "no_problem": 61,
+    "navigate_with_difficulty": 24,
+    "cannot_handle": 5,
+    "tests_run": 8,
+    "opinions": {
+      "unchanged": 10,
+      "hardened": 3,
+      "softened": 14,
+      "reversed": 2
+    },
+    "out_of_scope": 4,
+    "not_executed": 4
+  }
+}

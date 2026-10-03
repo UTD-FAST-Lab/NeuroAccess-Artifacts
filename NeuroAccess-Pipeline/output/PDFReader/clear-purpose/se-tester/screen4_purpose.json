@@ -1,0 +1,130 @@
+{
+  "app": "PDFReader",
+  "screen": "screen4",
+  "image": "inputs/PDFReader/actionable-elements-highlighted/screen4_actionable_elements.png",
+  "elements": {
+    "screen4-a1": {
+      "kind": "icon",
+      "glyph": "white X on a dark brown circle",
+      "description": "white X on a dark brown circle, top-left of the offer page",
+      "location": "top left",
+      "bounds": [
+        42,
+        84,
+        147,
+        189
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "resource_id iv_close; no label; not used in the verdict",
+      "convention_relied_on": "X = close, established convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled close X on a full-screen offer — common-icon exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen4-a1-tc1",
+          "type": "verification",
+          "precondition": "Premium offer page open (reached by tapping the crown)",
+          "action": "tap the X",
+          "expected_result": "the offer page closes",
+          "confirms_if": "it does something else (e.g. starts the trial)",
+          "overturns_if": "the page closes back to where the user was",
+          "observed_result": "the offer page closed and the home screen returned; nothing was purchased",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the offer page, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "dark full-width button \"Start Free Trial\"",
+      "location": "bottom of the offer page",
+      "bounds": [
+        42,
+        2071,
+        1038,
+        2239
+      ],
+      "visible_text": "\"Start Free Trial\", above \"3 day free trial, then $29.99/year ($2,50/month)\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the button and the price line above it say plainly that it starts a paid-plan free trial",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the button and the price line above it say plainly that it starts a paid-plan free trial (not tested: judged Clear on its visible text, and tapping it would start a purchase/billing flow or change a setting)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "small grey underlined link \"Terms of Use\"",
+      "location": "foot of the offer page, left",
+      "bounds": [
+        42,
+        2312,
+        490,
+        2342
+      ],
+      "visible_text": "\"Terms of Use\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the words name the document it opens; an underlined footer link is a familiar form",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words name the document it opens; an underlined footer link is a familiar form",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen4-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "small grey underlined link \"Privacy Policy\"",
+      "location": "foot of the offer page, right",
+      "bounds": [
+        590,
+        2312,
+        1038,
+        2342
+      ],
+      "visible_text": "\"Privacy Policy\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the words name the document it opens; an underlined footer link is a familiar form",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words name the document it opens; an underlined footer link is a familiar form",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 4,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

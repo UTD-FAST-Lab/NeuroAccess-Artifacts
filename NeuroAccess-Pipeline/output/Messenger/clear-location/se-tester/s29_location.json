@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s29",
+  "state_str": "3439f92c043cd294fede3ca6ad729cbc",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151823.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s29_header_nav.png",
+  "name": "Me",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Me",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    }
+  ],
+  "identifier_found": "\"Me\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s29-tc1",
+      "type": "scroll_persistence",
+      "precondition": "Me page at top",
+      "action": "scroll the list down past the end and back",
+      "expected_result": "\"Me\" stays pinned or not",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "\"Me\" stays pinned in the top bar through the whole list (to \"Meta Quest\" at the bottom) and back",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: \"Me\" stays pinned in the top bar through the whole list (to \"Meta Quest\" at the bottom) and back",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s63",
+  "state_str": "f738dbd2e385e72a613d92b109a81124",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190406.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s63_header_nav.png",
+  "name": "the Feed",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Feed",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "'Feed' at the top-left; the heart-bubble tab highlighted",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title plus a highlighted tab",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "pinned title and highlighted tab; template carry from s48's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,214 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen31",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen31_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen31_function_groups.png"
+  },
+  "elements": {
+    "screen31-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        32,
+        91,
+        158,
+        217
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "left arrow top-left = back - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Navigate up",
+      "accessibility_text": "content_desc: \"Navigate up\", talkback: \"Navigate up\"",
+      "context_reading": "\"ChatGPT Plus\" plan page",
+      "observed_function": "returns from the plan page to the chat",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "returns from the plan page to the chat",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "returns from the plan page to the chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen31-f2": {
+      "kind": "button",
+      "appearance": "the word \"Go\"",
+      "state": "selected",
+      "location": "middle left",
+      "bounds": [
+        63,
+        493,
+        538,
+        619
+      ],
+      "visible_label": "Go",
+      "convention_relied_on": "worded control (\"Go\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Go",
+      "accessibility_text": "content_desc: \"\", talkback: \"Go\"",
+      "context_reading": "\"ChatGPT Plus\" plan page",
+      "observed_function": "switches the plan page to \"ChatGPT Go\" (\"Upgrade for $8.00\"); the Go segment then takes the grey fill",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "switches the plan page to \"ChatGPT Go\" (\"Upgrade for $8.00\"); the Go segment then takes the grey fill",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "switches the plan page to \"ChatGPT Go\" (\"Upgrade for $8.00\"); the Go segment then takes the grey fill",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen31-f3": {
+      "kind": "button",
+      "appearance": "the word \"Plus\"",
+      "state": "unselected",
+      "location": "middle right",
+      "bounds": [
+        538,
+        493,
+        1017,
+        619
+      ],
+      "visible_label": "Plus",
+      "convention_relied_on": "worded control (\"Plus\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Plus",
+      "accessibility_text": "content_desc: \"\", talkback: \"Plus\"",
+      "context_reading": "\"ChatGPT Plus\" plan page",
+      "observed_function": "no change when tapped on the captured page (Plus is the current segment: grey fill); from the Go page it switches back to \"ChatGPT Plus\"",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "no change when tapped on the captured page (Plus is the current segment: grey fill); from the Go page it switches back to \"ChatGPT Plus\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "no change when tapped on the captured page (Plus is the current segment: grey fill); from the Go page it switches back to \"ChatGPT Plus\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen31-f4": {
+      "kind": "button",
+      "appearance": "the words \"Restore subscription\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        63,
+        1937,
+        1017,
+        2062
+      ],
+      "visible_label": "Restore subscription",
+      "convention_relied_on": "worded control (\"Restore subscription\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Restore subscription",
+      "accessibility_text": "content_desc: \"\", talkback: \"Restore subscription\"",
+      "context_reading": "\"ChatGPT Plus\" plan page",
+      "observed_function": null,
+      "glyph_group": "gg25",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg25-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "the same effect for every member",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen31-f5": {
+      "kind": "button",
+      "appearance": "the words \"Upgrade for $19.99\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        63,
+        2062,
+        1017,
+        2195
+      ],
+      "visible_label": "Upgrade for $19.99",
+      "convention_relied_on": "worded control (\"Upgrade for $19.99\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Upgrade for $19.99",
+      "accessibility_text": "content_desc: \"\", talkback: \"Upgrade for $19.99\"",
+      "context_reading": "\"ChatGPT Plus\" plan page",
+      "observed_function": null,
+      "glyph_group": "gg26",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg26-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "the same effect for every member",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg26": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 2,
+    "provisional_verdicts": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s44",
+  "state_str": "b847c2101b81d12edd67f1f184f41caf",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134632.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s44_header_nav.png",
+  "name": "the side menu opened from Code, with Code highlighted",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Claude",
+      "verdict_on_region": "the app's own name \u2014 not a location signal"
+    },
+    {
+      "kind": "navigation",
+      "text": "Chats / Projects / Code / Artifacts",
+      "verdict_on_region": "contains_selected_view: true on \"Code\"; light grey pill behind the Code row \u2014 visible"
+    }
+  ],
+  "identifier_found": "\"Code\" highlighted in the drawer",
+  "identifier_class": "nav_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "active item highlighted",
+  "test_cases": [
+    {
+      "id": "s44-tc1",
+      "type": "active_state_verification",
+      "precondition": "Code screen",
+      "action": "open the drawer",
+      "expected_result": "Code is highlighted or not",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "no highlight",
+      "observed_result": "the \"Code\" row carries the light grey pill",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: opened from the Code screen, the drawer highlights \"Code\" (s9-tc1 showed the pill moving between sections)",
+  "recommendation": null,
+  "provisional": false
+}

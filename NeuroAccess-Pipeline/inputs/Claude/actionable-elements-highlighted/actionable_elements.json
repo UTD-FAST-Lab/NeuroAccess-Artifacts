@@ -1,0 +1,6459 @@
+{
+  "app": "Claude",
+  "package": "com.anthropic.claude",
+  "image_size": [
+    1080,
+    2400
+  ],
+  "screens": {
+    "screen1": [
+      {
+        "id": "screen1-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen1-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen1-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1915,
+          985,
+          2041
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen1-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen1-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          2164,
+          174,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen1-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen1-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          2164,
+          907,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen1-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          2164,
+          1033,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen2": [
+      {
+        "id": "screen2-a1",
+        "kind": "icon",
+        "glyph": "dimmed grey strip along the right screen edge, no symbol of its own",
+        "bounds": [
+          945,
+          0,
+          1080,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close navigation menu",
+        "talkback_label": "Close navigation menu",
+        "resource_id": "",
+        "notes": "clickable scrim to the right of the open drawer; the dimmed screen beneath shows through (its toolbar glyph is visible inside this strip but is not itself reachable); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          63,
+          913,
+          232
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Claude",
+        "talkback_label": "Claude",
+        "resource_id": "",
+        "notes": "drawer header; visible word \"Claude\"; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "text": "Chats",
+        "content_desc": "",
+        "talkback_label": "Chats",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "text": "Projects",
+        "content_desc": "",
+        "talkback_label": "Projects",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "text": "Code",
+        "content_desc": "",
+        "talkback_label": "Code",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "text": "Artifacts",
+        "content_desc": "",
+        "talkback_label": "Artifacts",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a7",
+        "kind": "icon",
+        "glyph": "orange filled circle containing the letters AC",
+        "bounds": [
+          37,
+          2174,
+          163,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Ally Cooper, Settings",
+        "talkback_label": "Ally Cooper, Settings",
+        "resource_id": "",
+        "notes": "bottom-left of drawer; letters are initials, not a word (visible letters \"AC\"); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen2-a8",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "text": "New chat",
+        "content_desc": "",
+        "talkback_label": "New chat",
+        "resource_id": "",
+        "notes": "black pill with a plus sign and the words \"New chat\"; belongs to the navigation drawer"
+      }
+    ],
+    "screen3": [
+      {
+        "id": "screen3-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen3-a2",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true (checked); checkable, checked=True"
+      },
+      {
+        "id": "screen3-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          440,
+          1195,
+          640,
+          1247
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": false,
+        "class_name": "android.widget.TextView",
+        "source": [
+          "talkback",
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Learn more",
+        "content_desc": "",
+        "talkback_label": "Incognito chats stay out of your history and search, and aren’t used to train Claude.  Learn more",
+        "resource_id": "",
+        "notes": "underlined \"Learn more\" link under the incognito explainer; the TextView carries clickable_span:true (an inline link) but no clickable record of its own; bounds measured from the pixels of the underlined words"
+      },
+      {
+        "id": "screen3-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1915,
+          985,
+          2041
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen3-a5",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen3-a6",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          2164,
+          174,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen3-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen3-a8",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          2164,
+          907,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen3-a9",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          2164,
+          1033,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen4": [
+      {
+        "id": "screen4-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen4-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen5": [
+      {
+        "id": "screen5-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen5-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen5-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1095,
+          985,
+          1221
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen5-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen5-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          1344,
+          174,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen5-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen5-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          1344,
+          907,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen5-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          1344,
+          1033,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen6": [
+      {
+        "id": "screen6-a1",
+        "kind": "icon",
+        "glyph": "short horizontal grey bar",
+        "bounds": [
+          477,
+          1190,
+          604,
+          1313
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Drag handle",
+        "talkback_label": "Drag handle",
+        "resource_id": "",
+        "notes": "top of the bottom sheet; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a2",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          1281,
+          163,
+          1407
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1447,
+          356,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1447,
+          356,
+          1720
+        ],
+        "text": "Camera",
+        "content_desc": "",
+        "talkback_label": "Camera",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          377,
+          1447,
+          702,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          377,
+          1447,
+          702,
+          1720
+        ],
+        "text": "Photos",
+        "content_desc": "",
+        "talkback_label": "Photos",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          723,
+          1447,
+          1048,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          723,
+          1447,
+          1048,
+          1720
+        ],
+        "text": "Files",
+        "content_desc": "",
+        "talkback_label": "Files",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1752,
+          1048,
+          1918
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1752,
+          1048,
+          1918
+        ],
+        "text": "Add to project None",
+        "content_desc": "",
+        "talkback_label": "Add to project None",
+        "resource_id": "",
+        "notes": "row with glyph, title \"Add to project\", value \"None\", and a right chevron; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          1950,
+          1048,
+          2097
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1950,
+          1048,
+          2097
+        ],
+        "text": "Web search",
+        "content_desc": "",
+        "talkback_label": "Web search",
+        "resource_id": "",
+        "notes": "row with a switch at right (switch shown on); checkable, checked=True; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen6-a8",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          2102,
+          1048,
+          2249
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          2102,
+          1048,
+          2249
+        ],
+        "text": "Connectors",
+        "content_desc": "",
+        "talkback_label": "Connectors",
+        "resource_id": "",
+        "notes": "row with glyph, word and right chevron; belongs to the \"Add to chat\" bottom sheet"
+      }
+    ],
+    "screen7": [
+      {
+        "id": "screen7-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          1147,
+          163,
+          1273
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1313,
+          1048,
+          1471
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1313,
+          1048,
+          1471
+        ],
+        "text": "Fable 5.1 Pro or Max For your toughest challenges",
+        "content_desc": "",
+        "talkback_label": "Fable 5.1 Pro or Max For your toughest challenges",
+        "resource_id": "",
+        "notes": "model option row with a \"Pro or Max\" badge; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1476,
+          1048,
+          1634
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1476,
+          1048,
+          1634
+        ],
+        "text": "Opus 5.5 Pro Most capable for ambitious work",
+        "content_desc": "",
+        "talkback_label": "Opus 5.5 Pro Most capable for ambitious work",
+        "resource_id": "",
+        "notes": "model option row with a \"Pro\" badge; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1639,
+          1048,
+          1797
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1639,
+          1048,
+          1797
+        ],
+        "text": "Sonnet 5 Most efficient for everyday tasks",
+        "content_desc": "",
+        "talkback_label": "Sonnet 5 Most efficient for everyday tasks",
+        "resource_id": "",
+        "notes": "model option row; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1802,
+          1048,
+          1960
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "talkback"
+        ],
+        "clickable": false,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Haiku 4.5 Fastest for quick answers",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5 Fastest for quick answers",
+        "resource_id": "",
+        "notes": "model option row showing a check mark at right (the currently selected model); focusable:true but clickable:false and absent from actionables — included because it is visibly one of the same option rows as its clickable neighbours; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          1992,
+          1048,
+          2158
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1992,
+          1048,
+          2158
+        ],
+        "text": "Extended Always uses deep reasoning",
+        "content_desc": "",
+        "talkback_label": "Extended Always uses deep reasoning",
+        "resource_id": "",
+        "notes": "row with a switch at right (switch shown off); checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen7-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          2190,
+          1048,
+          2337
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          2190,
+          1048,
+          2337
+        ],
+        "text": "More models",
+        "content_desc": "",
+        "talkback_label": "More models",
+        "resource_id": "",
+        "notes": "row with right chevron; belongs to the \"Select model\" bottom sheet"
+      }
+    ],
+    "screen8": [
+      {
+        "id": "screen8-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height voice-input intro sheet"
+      },
+      {
+        "id": "screen8-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          63,
+          1590,
+          1017,
+          1796
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          63,
+          1590,
+          1017,
+          1796
+        ],
+        "text": "Speech Input Language English",
+        "content_desc": "",
+        "talkback_label": "Speech Input Language English",
+        "resource_id": "",
+        "notes": "dropdown: floating label \"Speech Input Language\", value \"English\", down chevron; belongs to the full-height voice-input intro sheet"
+      },
+      {
+        "id": "screen8-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          63,
+          2222,
+          1017,
+          2348
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          63,
+          2222,
+          1017,
+          2348
+        ],
+        "text": "Continue",
+        "content_desc": "",
+        "talkback_label": "Continue",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height voice-input intro sheet"
+      }
+    ],
+    "screen9": [
+      {
+        "id": "screen9-a1",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1097,
+          947,
+          1243
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "While using the app",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      },
+      {
+        "id": "screen9-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1254,
+          947,
+          1400
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Only this time",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      },
+      {
+        "id": "screen9-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1411,
+          947,
+          1557
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Don’t allow",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      }
+    ],
+    "screen10": [
+      {
+        "id": "screen10-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen10-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen10-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1915,
+          985,
+          2041
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen10-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen10-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          2164,
+          174,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen10-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen10-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          2164,
+          907,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen10-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          2164,
+          1033,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen11": [
+      {
+        "id": "screen11-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen11-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen11-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1095,
+          985,
+          1221
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen11-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen11-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          1344,
+          174,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen11-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen11-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          1344,
+          907,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen11-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          1344,
+          1033,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen12": [
+      {
+        "id": "screen12-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen12-a2",
+        "kind": "icon",
+        "glyph": "three vertical lines with knobs at different heights",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Filter",
+        "talkback_label": "Filter",
+        "resource_id": "",
+        "notes": "top-right toolbar control"
+      },
+      {
+        "id": "screen12-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          253,
+          1048,
+          379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Search",
+        "talkback_label": "Search",
+        "resource_id": "",
+        "notes": "search field with magnifier glyph and placeholder \"Search\""
+      },
+      {
+        "id": "screen12-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          690,
+          2174,
+          1038,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "New chat",
+        "talkback_label": "New chat",
+        "resource_id": "",
+        "notes": "black pill with a plus sign and the words \"New chat\""
+      }
+    ],
+    "screen13": [
+      {
+        "id": "screen13-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen13-a2",
+        "kind": "icon",
+        "glyph": "three vertical lines with knobs at different heights",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Filter projects",
+        "talkback_label": "Filter projects",
+        "resource_id": "",
+        "notes": "top-right toolbar control"
+      },
+      {
+        "id": "screen13-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          253,
+          1048,
+          379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Search projects; Search",
+        "talkback_label": "Search projects Search",
+        "resource_id": "",
+        "notes": "search field with magnifier glyph and placeholder \"Search projects\""
+      },
+      {
+        "id": "screen13-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          638,
+          2174,
+          1038,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "New project",
+        "talkback_label": "New project",
+        "resource_id": "",
+        "notes": "black pill with a plus sign and the words \"New project\""
+      }
+    ],
+    "screen14": [
+      {
+        "id": "screen14-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen14-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          42,
+          2022,
+          1038,
+          2148
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          42,
+          2022,
+          1038,
+          2148
+        ],
+        "text": "Upgrade",
+        "content_desc": "",
+        "talkback_label": "Upgrade",
+        "resource_id": "",
+        "notes": "black button with the word \"Upgrade\""
+      },
+      {
+        "id": "screen14-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          42,
+          2169,
+          1038,
+          2295
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          42,
+          2169,
+          1038,
+          2295
+        ],
+        "text": "Return to chat",
+        "content_desc": "",
+        "talkback_label": "Return to chat",
+        "resource_id": "",
+        "notes": "outlined button"
+      }
+    ],
+    "screen15": [
+      {
+        "id": "screen15-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen15-a2",
+        "kind": "icon",
+        "glyph": "three vertical lines with knobs at different heights",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Choose artifacts to list",
+        "talkback_label": "Choose artifacts to list",
+        "resource_id": "",
+        "notes": "top-right toolbar control"
+      },
+      {
+        "id": "screen15-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          42,
+          252,
+          899,
+          399
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Search artifacts; Search",
+        "talkback_label": "Search artifacts Search",
+        "resource_id": "",
+        "notes": "search field with magnifier glyph and placeholder \"Search artifacts\""
+      },
+      {
+        "id": "screen15-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          916,
+          263,
+          1042,
+          389
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          916,
+          263,
+          1042,
+          389
+        ],
+        "text": "All",
+        "content_desc": "Filter by where artifacts were made",
+        "talkback_label": "Filter by where artifacts were made All",
+        "resource_id": "",
+        "notes": "dropdown beside search: value \"All\" with a down chevron"
+      }
+    ],
+    "screen16": [
+      {
+        "id": "screen16-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen16-a2",
+        "kind": "icon",
+        "glyph": "letter i inside a circle",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Learn more",
+        "talkback_label": "Learn more",
+        "resource_id": "",
+        "notes": "top-right toolbar control on Settings"
+      },
+      {
+        "id": "screen16-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          95,
+          673,
+          330,
+          799
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          95,
+          673,
+          330,
+          799
+        ],
+        "text": "Upgrade",
+        "content_desc": "",
+        "talkback_label": "Upgrade",
+        "resource_id": "",
+        "notes": "black button with the word \"Upgrade\""
+      },
+      {
+        "id": "screen16-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          878,
+          1048,
+          1025
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          878,
+          1048,
+          1025
+        ],
+        "text": "Profile",
+        "content_desc": "",
+        "talkback_label": "Profile",
+        "resource_id": "",
+        "notes": "settings row: glyph + word"
+      },
+      {
+        "id": "screen16-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1030,
+          1048,
+          1177
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1030,
+          1048,
+          1177
+        ],
+        "text": "Billing",
+        "content_desc": "",
+        "talkback_label": "Billing",
+        "resource_id": "",
+        "notes": "settings row: glyph + word"
+      },
+      {
+        "id": "screen16-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1209,
+          1048,
+          1375
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1209,
+          1048,
+          1375
+        ],
+        "text": "Capabilities 5 enabled",
+        "content_desc": "",
+        "talkback_label": "Capabilities 5 enabled",
+        "resource_id": "",
+        "notes": "settings row with value \"5 enabled\""
+      },
+      {
+        "id": "screen16-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1380,
+          1048,
+          1527
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1380,
+          1048,
+          1527
+        ],
+        "text": "Connectors",
+        "content_desc": "",
+        "talkback_label": "Connectors",
+        "resource_id": "",
+        "notes": "row with glyph, word and right chevron"
+      },
+      {
+        "id": "screen16-a8",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1532,
+          1048,
+          1679
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1532,
+          1048,
+          1679
+        ],
+        "text": "Permissions",
+        "content_desc": "",
+        "talkback_label": "Permissions",
+        "resource_id": "",
+        "notes": "settings row: glyph + word"
+      },
+      {
+        "id": "screen16-a9",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1711,
+          1048,
+          1877
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1711,
+          1048,
+          1877
+        ],
+        "text": "Color mode System",
+        "content_desc": "",
+        "talkback_label": "Color mode System",
+        "resource_id": "",
+        "notes": "settings row with value \"System\""
+      },
+      {
+        "id": "screen16-a10",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1882,
+          1048,
+          2048
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1882,
+          1048,
+          2048
+        ],
+        "text": "Font style Default",
+        "content_desc": "",
+        "talkback_label": "Font style Default",
+        "resource_id": "",
+        "notes": "settings row with value \"Default\""
+      },
+      {
+        "id": "screen16-a11",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          2053,
+          1048,
+          2200
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          2053,
+          1048,
+          2200
+        ],
+        "text": "Voice",
+        "content_desc": "",
+        "talkback_label": "Voice",
+        "resource_id": "",
+        "notes": "settings row: glyph + word"
+      },
+      {
+        "id": "screen16-a12",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          2232,
+          1048,
+          2379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          2232,
+          1048,
+          2379
+        ],
+        "text": "Haptic feedback",
+        "content_desc": "",
+        "talkback_label": "Haptic feedback",
+        "resource_id": "",
+        "notes": "settings row with a switch at right (switch shown on); checkable, checked=True"
+      }
+    ],
+    "screen17": [
+      {
+        "id": "screen17-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen17-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen17-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1095,
+          985,
+          1221
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen17-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen17-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          1344,
+          174,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen17-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen17-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          1344,
+          907,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen17-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          1344,
+          1033,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen18": [
+      {
+        "id": "screen18-a1",
+        "kind": "icon",
+        "glyph": "dimmed grey strip along the right screen edge, no symbol of its own",
+        "bounds": [
+          945,
+          0,
+          1080,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close navigation menu",
+        "talkback_label": "Close navigation menu",
+        "resource_id": "",
+        "notes": "clickable scrim to the right of the open drawer; the dimmed screen beneath shows through (its toolbar glyph is visible inside this strip but is not itself reachable); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          63,
+          913,
+          232
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Claude",
+        "talkback_label": "Claude",
+        "resource_id": "",
+        "notes": "drawer header; visible word \"Claude\"; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "text": "Chats",
+        "content_desc": "",
+        "talkback_label": "Chats",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "text": "Projects",
+        "content_desc": "",
+        "talkback_label": "Projects",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "text": "Code",
+        "content_desc": "",
+        "talkback_label": "Code",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "text": "Artifacts",
+        "content_desc": "",
+        "talkback_label": "Artifacts",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a7",
+        "kind": "icon",
+        "glyph": "orange filled circle containing the letters AC",
+        "bounds": [
+          37,
+          2174,
+          163,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Ally Cooper, Settings",
+        "talkback_label": "Ally Cooper, Settings",
+        "resource_id": "",
+        "notes": "bottom-left of drawer; letters are initials, not a word (visible letters \"AC\"); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen18-a8",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "text": "New chat",
+        "content_desc": "",
+        "talkback_label": "New chat",
+        "resource_id": "",
+        "notes": "black pill with a plus sign and the words \"New chat\"; belongs to the navigation drawer"
+      }
+    ],
+    "screen19": [
+      {
+        "id": "screen19-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen19-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen19-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1915,
+          985,
+          2041
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen19-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen19-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          2164,
+          174,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen19-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen19-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          2164,
+          907,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen19-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          2164,
+          1033,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen20": [
+      {
+        "id": "screen20-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen20-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen21": [
+      {
+        "id": "screen21-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen21-a2",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true (checked); checkable, checked=True"
+      },
+      {
+        "id": "screen21-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          440,
+          785,
+          640,
+          837
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": false,
+        "class_name": "android.widget.TextView",
+        "source": [
+          "talkback",
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Learn more",
+        "content_desc": "",
+        "talkback_label": "Incognito chats stay out of your history and search, and aren’t used to train Claude.  Learn more",
+        "resource_id": "",
+        "notes": "underlined \"Learn more\" link under the incognito explainer; the TextView carries clickable_span:true (an inline link) but no clickable record of its own; bounds measured from the pixels of the underlined words"
+      },
+      {
+        "id": "screen21-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1095,
+          985,
+          1221
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen21-a5",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen21-a6",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          1344,
+          174,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen21-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen21-a8",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          1344,
+          907,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen21-a9",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          1344,
+          1033,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen22": [
+      {
+        "id": "screen22-a1",
+        "kind": "icon",
+        "glyph": "short horizontal grey bar",
+        "bounds": [
+          477,
+          1190,
+          604,
+          1313
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Drag handle",
+        "talkback_label": "Drag handle",
+        "resource_id": "",
+        "notes": "top of the bottom sheet; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a2",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          1281,
+          163,
+          1407
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1447,
+          356,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1447,
+          356,
+          1720
+        ],
+        "text": "Camera",
+        "content_desc": "",
+        "talkback_label": "Camera",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          377,
+          1447,
+          702,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          377,
+          1447,
+          702,
+          1720
+        ],
+        "text": "Photos",
+        "content_desc": "",
+        "talkback_label": "Photos",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          723,
+          1447,
+          1048,
+          1720
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          723,
+          1447,
+          1048,
+          1720
+        ],
+        "text": "Files",
+        "content_desc": "",
+        "talkback_label": "Files",
+        "resource_id": "",
+        "notes": "tile: glyph in grey circle + word; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          1752,
+          1048,
+          1899
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1752,
+          1048,
+          1899
+        ],
+        "text": "Web search",
+        "content_desc": "",
+        "talkback_label": "Web search",
+        "resource_id": "",
+        "notes": "row with a switch at right (switch shown on); checkable, checked=True; belongs to the \"Add to chat\" bottom sheet"
+      },
+      {
+        "id": "screen22-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1904,
+          1048,
+          2051
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1904,
+          1048,
+          2051
+        ],
+        "text": "Connectors",
+        "content_desc": "",
+        "talkback_label": "Connectors",
+        "resource_id": "",
+        "notes": "row with glyph, word and right chevron; belongs to the \"Add to chat\" bottom sheet"
+      }
+    ],
+    "screen23": [
+      {
+        "id": "screen23-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          1147,
+          163,
+          1273
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1313,
+          1048,
+          1471
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1313,
+          1048,
+          1471
+        ],
+        "text": "Fable 5.1 Pro or Max For your toughest challenges",
+        "content_desc": "",
+        "talkback_label": "Fable 5.1 Pro or Max For your toughest challenges",
+        "resource_id": "",
+        "notes": "model option row with a \"Pro or Max\" badge; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1476,
+          1048,
+          1634
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1476,
+          1048,
+          1634
+        ],
+        "text": "Opus 5.5 Pro Most capable for ambitious work",
+        "content_desc": "",
+        "talkback_label": "Opus 5.5 Pro Most capable for ambitious work",
+        "resource_id": "",
+        "notes": "model option row with a \"Pro\" badge; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1639,
+          1048,
+          1797
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1639,
+          1048,
+          1797
+        ],
+        "text": "Sonnet 5 Most efficient for everyday tasks",
+        "content_desc": "",
+        "talkback_label": "Sonnet 5 Most efficient for everyday tasks",
+        "resource_id": "",
+        "notes": "model option row; checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          1802,
+          1048,
+          1960
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "talkback"
+        ],
+        "clickable": false,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Haiku 4.5 Fastest for quick answers",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5 Fastest for quick answers",
+        "resource_id": "",
+        "notes": "model option row showing a check mark at right (the currently selected model); focusable:true but clickable:false and absent from actionables — included because it is visibly one of the same option rows as its clickable neighbours; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          32,
+          1992,
+          1048,
+          2158
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          1992,
+          1048,
+          2158
+        ],
+        "text": "Extended Always uses deep reasoning",
+        "content_desc": "",
+        "talkback_label": "Extended Always uses deep reasoning",
+        "resource_id": "",
+        "notes": "row with a switch at right (switch shown off); checkable, checked=False; belongs to the \"Select model\" bottom sheet"
+      },
+      {
+        "id": "screen23-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          2190,
+          1048,
+          2337
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          32,
+          2190,
+          1048,
+          2337
+        ],
+        "text": "More models",
+        "content_desc": "",
+        "talkback_label": "More models",
+        "resource_id": "",
+        "notes": "row with right chevron; belongs to the \"Select model\" bottom sheet"
+      }
+    ],
+    "screen24": [
+      {
+        "id": "screen24-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height voice-input intro sheet"
+      },
+      {
+        "id": "screen24-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          63,
+          1590,
+          1017,
+          1796
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          63,
+          1590,
+          1017,
+          1796
+        ],
+        "text": "Speech Input Language English",
+        "content_desc": "",
+        "talkback_label": "Speech Input Language English",
+        "resource_id": "",
+        "notes": "dropdown: floating label \"Speech Input Language\", value \"English\", down chevron; belongs to the full-height voice-input intro sheet"
+      },
+      {
+        "id": "screen24-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          63,
+          2222,
+          1017,
+          2348
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          63,
+          2222,
+          1017,
+          2348
+        ],
+        "text": "Continue",
+        "content_desc": "",
+        "talkback_label": "Continue",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height voice-input intro sheet"
+      }
+    ],
+    "screen25": [
+      {
+        "id": "screen25-a1",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1097,
+          947,
+          1243
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "While using the app",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      },
+      {
+        "id": "screen25-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1254,
+          947,
+          1400
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Only this time",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      },
+      {
+        "id": "screen25-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          133,
+          1411,
+          947,
+          1557
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": true,
+        "class_name": "",
+        "source": [
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Don’t allow",
+        "content_desc": "",
+        "talkback_label": "",
+        "resource_id": "",
+        "notes": "button in the Android system permission dialog \"Allow Claude to record audio?\" (not com.anthropic.claude; no records captured for this screen); the Claude screen beneath is dimmed and unreachable"
+      }
+    ],
+    "screen26": [
+      {
+        "id": "screen26-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen26-a2",
+        "kind": "icon",
+        "glyph": "ghost outline with two dots for eyes",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true; checkable, checked=False"
+      },
+      {
+        "id": "screen26-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1915,
+          985,
+          2041
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen26-a4",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          2043,
+          1004,
+          2169
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen26-a5",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          2164,
+          174,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen26-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          2164,
+          410,
+          2290
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen26-a7",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          2164,
+          907,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen26-a8",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          2164,
+          1033,
+          2290
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen27": [
+      {
+        "id": "screen27-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen27-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen28": [
+      {
+        "id": "screen28-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen28-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen29": [],
+    "screen30": [],
+    "screen31": [
+      {
+        "id": "screen31-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen31-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen32": [
+      {
+        "id": "screen32-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen32-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ],
+    "screen33": [
+      {
+        "id": "screen33-a1",
+        "kind": "icon",
+        "glyph": "dimmed grey strip along the right screen edge, no symbol of its own",
+        "bounds": [
+          945,
+          0,
+          1080,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close navigation menu",
+        "talkback_label": "Close navigation menu",
+        "resource_id": "",
+        "notes": "clickable scrim to the right of the open drawer; the dimmed screen beneath shows through (its toolbar glyph is visible inside this strip but is not itself reachable); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a2",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          32,
+          63,
+          913,
+          232
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Claude",
+        "talkback_label": "Claude",
+        "resource_id": "",
+        "notes": "drawer header; visible word \"Claude\"; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          232,
+          924,
+          379
+        ],
+        "text": "Chats",
+        "content_desc": "",
+        "talkback_label": "Chats",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          379,
+          924,
+          526
+        ],
+        "text": "Projects",
+        "content_desc": "",
+        "talkback_label": "Projects",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          526,
+          924,
+          673
+        ],
+        "text": "Code",
+        "content_desc": "",
+        "talkback_label": "Code",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a6",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          21,
+          673,
+          924,
+          820
+        ],
+        "text": "Artifacts",
+        "content_desc": "",
+        "talkback_label": "Artifacts",
+        "resource_id": "",
+        "notes": "drawer row: glyph + word; belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a7",
+        "kind": "icon",
+        "glyph": "orange filled circle containing the letters AC",
+        "bounds": [
+          37,
+          2174,
+          163,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Ally Cooper, Settings",
+        "talkback_label": "Ally Cooper, Settings",
+        "resource_id": "",
+        "notes": "bottom-left of drawer; letters are initials, not a word (visible letters \"AC\"); belongs to the navigation drawer"
+      },
+      {
+        "id": "screen33-a8",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          566,
+          2174,
+          903,
+          2300
+        ],
+        "text": "New chat",
+        "content_desc": "",
+        "talkback_label": "New chat",
+        "resource_id": "",
+        "notes": "black pill with a plus sign and the words \"New chat\"; belongs to the navigation drawer"
+      }
+    ],
+    "screen34": [
+      {
+        "id": "screen34-a1",
+        "kind": "icon",
+        "glyph": "three horizontal lines of decreasing length",
+        "bounds": [
+          1,
+          84,
+          127,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Open menu",
+        "talkback_label": "Open menu",
+        "resource_id": "",
+        "notes": "top-left toolbar control"
+      },
+      {
+        "id": "screen34-a2",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          954,
+          84,
+          1080,
+          210
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Incognito chat",
+        "talkback_label": "Incognito chat",
+        "resource_id": "",
+        "notes": "top-right toolbar control; checkable:true (checked); checkable, checked=True"
+      },
+      {
+        "id": "screen34-a3",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          440,
+          785,
+          640,
+          837
+        ],
+        "bounds_estimated": true,
+        "over_floating_element": false,
+        "class_name": "android.widget.TextView",
+        "source": [
+          "talkback",
+          "image"
+        ],
+        "clickable": false,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "Learn more",
+        "content_desc": "",
+        "talkback_label": "Incognito chats stay out of your history and search, and aren’t used to train Claude.  Learn more",
+        "resource_id": "",
+        "notes": "underlined \"Learn more\" link under the incognito explainer; the TextView carries clickable_span:true (an inline link) but no clickable record of its own; bounds measured from the pixels of the underlined words"
+      },
+      {
+        "id": "screen34-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          761,
+          1095,
+          985,
+          1221
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.Button",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "Upgrade to Pro",
+        "content_desc": "",
+        "talkback_label": "Upgrade to Pro",
+        "resource_id": "",
+        "notes": "text link on the grey upgrade banner above the composer"
+      },
+      {
+        "id": "screen34-a5",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.widget.EditText",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          76,
+          1223,
+          1004,
+          1349
+        ],
+        "text": "Chat with Claude…",
+        "content_desc": "",
+        "talkback_label": "Chat with Claude…",
+        "resource_id": "",
+        "notes": "message composer; placeholder text visible inside"
+      },
+      {
+        "id": "screen34-a6",
+        "kind": "icon",
+        "glyph": "plus sign in a grey circle",
+        "bounds": [
+          48,
+          1344,
+          174,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Add to chat",
+        "talkback_label": "Add to chat",
+        "resource_id": "",
+        "notes": "first control in composer toolbar"
+      },
+      {
+        "id": "screen34-a7",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          179,
+          1344,
+          410,
+          1470
+        ],
+        "text": "Haiku 4.5",
+        "content_desc": "",
+        "talkback_label": "Haiku 4.5",
+        "resource_id": "",
+        "notes": "pill in composer toolbar showing a model name"
+      },
+      {
+        "id": "screen34-a8",
+        "kind": "icon",
+        "glyph": "microphone outline in a grey circle",
+        "bounds": [
+          791,
+          1344,
+          907,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Start speech input",
+        "talkback_label": "Start speech input",
+        "resource_id": "",
+        "notes": "composer toolbar, second from right"
+      },
+      {
+        "id": "screen34-a9",
+        "kind": "icon",
+        "glyph": "white vertical bars of varying height in a black circle",
+        "bounds": [
+          907,
+          1344,
+          1033,
+          1470
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": false,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Voice Mode",
+        "talkback_label": "Voice Mode",
+        "resource_id": "",
+        "notes": "composer toolbar, rightmost"
+      }
+    ],
+    "screen35": [
+      {
+        "id": "screen35-a1",
+        "kind": "icon",
+        "glyph": "X made of two crossed diagonal lines",
+        "bounds": [
+          37,
+          113,
+          163,
+          239
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Close",
+        "talkback_label": "Close",
+        "resource_id": "",
+        "notes": "top-left close control of the sheet; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a2",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          762,
+          529,
+          1080
+        ],
+        "text": "$20.00 Billed monthly",
+        "content_desc": "",
+        "talkback_label": "$20.00 Billed monthly",
+        "resource_id": "",
+        "notes": "radio card (Pro, monthly); checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a3",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          762,
+          954,
+          1080
+        ],
+        "text": "Save 10% $216.00 Billed annually",
+        "content_desc": "",
+        "talkback_label": "Save 10% $216.00 Billed annually",
+        "resource_id": "",
+        "notes": "radio card (Pro, annual); checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a4",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          1112,
+          954,
+          1238
+        ],
+        "text": "Get Pro plan",
+        "content_desc": "",
+        "talkback_label": "Get Pro plan",
+        "resource_id": "",
+        "notes": "primary black button; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a5",
+        "kind": "button",
+        "glyph": null,
+        "bounds": [
+          116,
+          1749,
+          333,
+          1875
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": false,
+        "actionable_ancestor": null,
+        "text": "",
+        "content_desc": "Limits apply for Pro",
+        "talkback_label": "Limits apply for Pro",
+        "resource_id": "",
+        "notes": "underlined text link \"Limits apply\"; the words \"for Pro\" exist only in content_desc; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a6",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          126,
+          2206,
+          529,
+          2400
+        ],
+        "text": "$125.00 5x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$125.00 5x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, lower tier); clipped by the bottom screen edge — caption \"5x more usage than Pro\" is off-screen; checkable, checked=True; belongs to the full-height \"Get more Claude\" plan sheet"
+      },
+      {
+        "id": "screen35-a7",
+        "kind": "input field",
+        "glyph": null,
+        "bounds": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "bounds_estimated": false,
+        "over_floating_element": true,
+        "class_name": "android.view.View",
+        "source": [
+          "actionables",
+          "talkback"
+        ],
+        "clickable": true,
+        "focusable": true,
+        "actionable_ancestor": [
+          550,
+          2206,
+          954,
+          2400
+        ],
+        "text": "$250.00 20x more usage than Pro",
+        "content_desc": "",
+        "talkback_label": "$250.00 20x more usage than Pro",
+        "resource_id": "",
+        "notes": "radio card (Max, higher tier); clipped by the bottom screen edge — caption \"20x more usage than Pro\" is off-screen; checkable, checked=False; belongs to the full-height \"Get more Claude\" plan sheet"
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "screen": "screen16",
+      "bounds": [
+        32,
+        2384,
+        1048,
+        2400
+      ],
+      "ground": "not visible in the screenshot",
+      "evidence": "clickable:true, focusable:true, visible:true in actionables; its 'Notifications' text node sits at [153,2426,424,2489], below the 2400 px screen edge (visible:false)",
+      "reason": "the row's bounds are a 16 px sliver at the very bottom of the viewport; the pixels there show only background and the gesture bar — no glyph, word or row outline of the Notifications row is drawn"
+    }
+  ],
+  "screen_notes": {
+    "screen5": "soft keyboard (system IME, not com.anthropic.claude) covers the lower half; its keys are not marked; all Claude controls sit above it and are fully visible",
+    "screen11": "soft keyboard (system IME) visible; keys not marked",
+    "screen17": "soft keyboard (system IME) visible; keys not marked",
+    "screen21": "soft keyboard (system IME) visible; keys not marked",
+    "screen34": "soft keyboard (system IME) visible; keys not marked",
+    "screen9": "Android system permission dialog over the Claude home screen; capture holds zero records; dialog buttons recovered from the image; underlying Claude controls dimmed and unreachable",
+    "screen25": "Android system permission dialog over the Claude incognito screen; capture holds zero records; dialog buttons recovered from the image",
+    "screen29": "OUT OF APP: Google Play billing sheet (package com.android.vending) over the plan sheet; zero actionables records; nothing marked",
+    "screen30": "OUT OF APP: Chrome first-run sign-in screen (package com.android.chrome); zero actionables records; nothing marked"
+  }
+}

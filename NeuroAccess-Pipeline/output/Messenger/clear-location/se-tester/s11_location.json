@@ -1,0 +1,33 @@
+{
+  "app": "Messenger",
+  "screen": "s11",
+  "state_str": "4bd59083d26888b7d6695e6e7662dc36",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151444.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s11_header_nav.png",
+  "name": "Meta One offer page, scrolled",
+  "regions_read": [],
+  "identifier_found": "this is the Meta One offer page scrolled: its title is above the viewport and does not collapse into a bar; visible text is benefit rows, plan section names and the \"Start your free week\" footer",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "this is the Meta One offer page scrolled: its title is above the viewport and does not collapse into a bar; visible text is benefit rows, plan section names and the \"Start your free week\" footer",
+  "test_cases": [
+    {
+      "id": "s11-tc1",
+      "type": "verification",
+      "precondition": "Meta One offer page (\"Try Meta One Core free for one ...\" at top), reached via Subscriptions > Meta One > View all benefits",
+      "action": "scroll the benefit list down the captured distance, then twice as far, then partway back up",
+      "expected_result": "title stays, collapses to a bar, returns on partial scroll-back, or is gone",
+      "confirms_if": "the title scrolls off with the content and does not return until the very top",
+      "overturns_if": "a pinned or collapsed title appears, or the title returns on a small scroll back",
+      "observed_result": "the large title scrolled off with the list; the top shows only a Close (X) and \"View all plans\" over a gradient; scrolling back ~500 px still showed no title — it reappears only at the top of the page. Live title now reads \"free for one month\" (capture: one week)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed on the device: the title scrolls away and does not return until the top; this screen is reached by touches (\"Show more\", \"Close\") so it is judged as a screen; no evaluated transition lands here; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "pin the offer title, or collapse it into a persistent bar (\"Meta One Core\") when it scrolls away",
+  "provisional": false
+}

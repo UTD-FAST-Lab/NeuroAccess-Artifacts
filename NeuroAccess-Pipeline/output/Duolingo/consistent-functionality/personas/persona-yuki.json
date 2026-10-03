@@ -1,0 +1,3086 @@
+{
+  "persona": "persona-yuki",
+  "app": "Duolingo",
+  "groups": {
+    "gg1": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg1.png",
+      "members": {
+        "screen1-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen1-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen6-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen7-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen7-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen8-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen8-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen9-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen9-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen14-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen14-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen18-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen18-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen22-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen22-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen26-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen26-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen31-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen31-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        },
+        "screen35-f8": {
+          "where": "on the learning path, the round star button at the top with the green ring (the current lesson)",
+          "expectation": "Starts the lesson I'm on - or shows a little pop-up with a START button.",
+          "confidence": "sure"
+        },
+        "screen35-f11": {
+          "where": "on the learning path, the grey round star button just below the green one",
+          "expectation": "Shows me it's locked - I have to finish the green one first.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In this picture, the ones in this set hadn't finished drawing when the screenshots were taken — on the app each one is a round button with a star on it: the one tagged f8 is green with a ring around it, and the one tagged f11 is grey. Judge them as they look on the app."
+      ],
+      "same_expectation": "no",
+      "same_expectation_why": "The green one with the ring is the lesson I'm on, the grey ones are ones I haven't reached, so I'd expect the green one to start a lesson and the grey ones to just tell me they're not open yet.",
+      "affects_navigation": "Not really - the colour already tells me which one is live, so I'd only ever press the green one.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Green with a ring means 'you are here, go', grey means 'not yet' - I get that in one glance and I don't have to think about it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg2": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg2.png",
+      "members": {
+        "screen1-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen1-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen6-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen7-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen8-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen9-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen9-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen10-f9": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen10-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen14-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen14-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen18-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen18-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen22-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen22-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen26-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen26-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen31-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen31-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen35-f12": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        },
+        "screen35-f14": {
+          "where": "a grey round star button further down the learning path",
+          "expectation": "It would show me a little bubble saying this lesson is locked and I have to finish the ones above first.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "They're all the same grey star buttons further down the path, so they're all lessons I haven't got to yet.",
+      "affects_navigation": "No - if one of them did open I'd just be pleasantly surprised, I'd still work down the path in order.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same grey button, same spot on the path, same meaning every time - nothing to work out.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg3": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg3.png",
+      "members": {
+        "screen1-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen2-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen6-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen7-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen8-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen9-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen10-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen14-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen18-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen22-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen26-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen27-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen28-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen30-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen31-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen33-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen34-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        },
+        "screen35-f1": {
+          "where": "top left of the top bar, the little Spanish flag with a 1",
+          "expectation": "It opens the list of my courses so I can switch or add one.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the same flag in the same corner of every main screen.",
+      "affects_navigation": "No, I'd only use it to change course.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's the course I'm learning, always in the same corner - I tapped it once in my head and I know.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg4": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg4.png",
+      "members": {
+        "screen1-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen2-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen6-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen7-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen8-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen9-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen10-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen14-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen18-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen22-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen26-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen27-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen28-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen30-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen31-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen33-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen34-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        },
+        "screen35-f2": {
+          "where": "top bar, second from left, the flame with a number",
+          "expectation": "It opens my streak - how many days in a row I've practised, with a calendar.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "In these pictures the number beside the flame is 1; on the app today it is 0."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same flame in the same place on every screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A flame with a number is a streak in every app I use, and it sits in the same spot everywhere.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg5": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg5.png",
+      "members": {
+        "screen1-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen2-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen6-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen7-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen8-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen9-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen10-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen14-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen18-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen22-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen26-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen27-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen28-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen30-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen31-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen33-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen34-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        },
+        "screen35-f3": {
+          "where": "top bar, middle, the blue gem with 520",
+          "expectation": "It opens the shop or somewhere to see and spend my gems.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In these pictures the number beside the gem is 520; on the app today it is 644."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same gem, same place, every screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's always the gem counter in the same place - whatever it opens, it'll open the same thing every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg6": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg6.png",
+      "members": {
+        "screen1-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen2-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen6-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen7-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen8-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen9-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen10-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen14-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen18-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen22-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen26-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen27-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen28-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen30-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen31-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen33-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        },
+        "screen35-f4": {
+          "where": "top bar, far right, the pink lightning battery with 25",
+          "expectation": "It opens my energy - how much I have left and ways to top it up.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same pink battery in the same corner every time.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Battery with a number is energy, and it never moves.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg7": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg7.png",
+      "members": {
+        "screen1-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen6-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen7-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen8-f14": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen9-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen10-f16": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen14-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen15-f2": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen16-f1": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen17-f2": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen18-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen22-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen26-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen31-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        },
+        "screen35-f15": {
+          "where": "bottom menu, fifth icon, the colourful bird/swoosh",
+          "expectation": "Honestly I don't know - some special Duolingo feature, maybe practice or the AI thing.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the same icon in the same slot of the bottom menu on every screen.",
+      "affects_navigation": "No - it's a bottom menu, I'd tap it once to find out and then it's the same everywhere.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I don't know what the picture means, but it's the same slot on every screen, so I learn it once by tapping and I'm done.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg8": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg8.png",
+      "members": {
+        "screen1-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen6-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen7-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen8-f15": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen9-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen10-f17": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen14-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen15-f3": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen16-f2": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen17-f3": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen18-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen22-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen26-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen31-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        },
+        "screen35-f16": {
+          "where": "bottom menu, first icon, the little house",
+          "expectation": "Takes me home to the learning path.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same house, same slot.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "House means home and it's always first in the menu.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg9": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg9.png",
+      "members": {
+        "screen1-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen6-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen7-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen8-f16": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen9-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen10-f18": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen14-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen15-f4": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen16-f3": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen17-f4": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen18-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen22-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen26-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen31-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        },
+        "screen35-f17": {
+          "where": "bottom menu, second icon, the treasure chest",
+          "expectation": "Opens rewards or quests - things I can earn.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same chest, same slot.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place every screen; I'd find out once what it is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg10": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg10.png",
+      "members": {
+        "screen1-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen6-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen7-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen8-f17": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen9-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen10-f19": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen14-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen15-f5": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen16-f4": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen17-f5": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen18-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen22-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen26-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen31-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        },
+        "screen35-f18": {
+          "where": "bottom menu, third icon, the brown shield/trophy shape",
+          "expectation": "Probably the leaderboard or leagues.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same shape, same slot.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a fixed menu slot, so once I know, I know.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg11": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg11.png",
+      "members": {
+        "screen1-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen6-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen7-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen8-f18": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen9-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen10-f20": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen14-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen15-f6": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen16-f5": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen17-f6": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen18-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen22-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen26-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen31-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        },
+        "screen35-f19": {
+          "where": "bottom menu, fourth icon, the pink heart speech bubble",
+          "expectation": "Friends or a feed - something social.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same heart, same slot.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Always the same place in the bottom menu.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg12": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg12.png",
+      "members": {
+        "screen1-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen6-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen7-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen8-f19": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen9-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen10-f21": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen14-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen15-f7": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen16-f6": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen17-f7": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen18-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen22-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen26-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen31-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        },
+        "screen35-f20": {
+          "where": "bottom menu, last icon, the purple bubble with three dots and a red dot",
+          "expectation": "A 'more' menu - settings, profile, other stuff - and the red dot says there's something new in there.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same dots in the same last slot every time.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Three dots is 'more' and it's always in the corner. The red dot pulls my eye a bit but it's still, so it's fine.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg13": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg13.png",
+      "members": {
+        "screen1-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen6-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen7-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen8-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen9-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen10-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen14-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen18-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen22-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen26-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen31-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        },
+        "screen35-f5": {
+          "where": "the big green banner at the top of the path: SECTION 1, UNIT 1 Order at a café",
+          "expectation": "It opens something about this unit - an overview of the section or the list of units.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same green unit banner in the same spot on every path screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's the same banner with the same words every time, so pressing it will do the same thing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg14": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg14.png",
+      "members": {
+        "screen1-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen6-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen7-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen8-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen9-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen10-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen14-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen18-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen22-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen26-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen31-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        },
+        "screen35-f6": {
+          "where": "the notebook icon on the right end of the green unit banner",
+          "expectation": "Opens the guidebook - the notes/tips for this unit.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's always the same notebook on the end of the same banner.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same icon, same place, next to the unit name - it's clearly about this unit.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg15": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg15.png",
+      "members": {
+        "screen1-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen6-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen7-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen8-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen9-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen10-f8": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen14-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen18-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen22-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen26-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen31-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        },
+        "screen35-f7": {
+          "where": "left side of the path under the banner, the owl with a round yellow character and a red exclamation badge",
+          "expectation": "Opens some special event or promotion - the red '!' says 'look at me'.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the same sticker in the same spot every time.",
+      "affects_navigation": "No, but I'd probably ignore it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's the same every time. It does grab my eye with the red '!' and the cartoon faces while I'm trying to see my lessons, but it's not moving in these pictures.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg16": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg16.png",
+      "members": {
+        "screen1-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen6-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen7-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen8-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen9-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen10-f10": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen14-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen18-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen22-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen26-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen31-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        },
+        "screen35-f9": {
+          "where": "left side of the path, the purple label under the owl sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event as the sticker above it - how long it has left.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In these pictures the small purple label reads \"13 days\"; on the app today the same label reads \"Ended\"."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same purple label under the same sticker each time.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Always the same label in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg18": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg18.png",
+      "members": {
+        "screen1-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen6-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen8-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen9-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen10-f11": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen14-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen18-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen22-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen26-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen31-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        },
+        "screen35-f13": {
+          "where": "on the path, the grey treasure chest between the lesson buttons",
+          "expectation": "Tells me it's locked - I get a reward once I reach it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same grey chest in the same place on the path.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same chest every time; grey means not yet.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg19": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg19.png",
+      "members": {
+        "screen3-f2": {
+          "where": "top-left corner of the Streak page, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen4-f1": {
+          "where": "top-left corner of the Shop, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen5-f1": {
+          "where": "top-left corner of the Energy page, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen11-f1": {
+          "where": "top-left corner of a page with a light-blue card, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen12-f1": {
+          "where": "top-left corner of the lesson loading page (Order at a café), the X",
+          "expectation": "Leaves the lesson before it starts and takes me back to the path.",
+          "confidence": "sure"
+        },
+        "screen19-f2": {
+          "where": "top-left corner of the Streak page, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "top-left corner of the Shop, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen21-f1": {
+          "where": "top-left corner of the Energy page, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen23-f1": {
+          "where": "top-left corner of the \"What would you like to learn?\" course picker, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen24-f1": {
+          "where": "top-left corner of the Spanish Score page, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "top-left corner of the \"What would you like to learn?\" course picker, the X",
+          "expectation": "Closes this page and takes me back to where I was.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "An X in the top-left corner is close, everywhere.",
+      "affects_navigation": "No - even if one of them quits a lesson and another closes the shop, it's still 'get me out of here', which is what I want.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "X top-left always means leave this page. Some are darker, some are lighter grey, but I recognise it every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg20": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg20.png",
+      "members": {
+        "screen2-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        },
+        "screen23-f7": {
+          "where": "course picker, the Spanish row under 'For English speakers'",
+          "expectation": "Picks Spanish - since I already do Spanish I'd expect it to take me to my course, not start again.",
+          "confidence": "guessing"
+        },
+        "screen27-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        },
+        "screen28-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        },
+        "screen30-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        },
+        "screen32-f7": {
+          "where": "course picker, the Spanish row under 'For English speakers'",
+          "expectation": "Picks Spanish - since I already do Spanish I'd expect it to take me to my course, not start again.",
+          "confidence": "guessing"
+        },
+        "screen33-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        },
+        "screen34-f5": {
+          "where": "course drop-down at the top of the path, the Spanish flag tile (ringed in blue)",
+          "expectation": "Keeps me on Spanish, the course I'm on - it just closes the drop-down.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same flag with the word Spanish under/next to it.",
+      "affects_navigation": "A bit - if pressing Spanish on the big list started me over from scratch instead of taking me to my course, that would throw me.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says Spanish with the flag every time, and I'm already doing Spanish, so I'd expect to land in my course.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg21": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg21.png",
+      "members": {
+        "screen2-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen23-f4": {
+          "where": "course picker, the Math row under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen27-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen28-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen30-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen32-f4": {
+          "where": "course picker, the Math row under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen33-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        },
+        "screen34-f8": {
+          "where": "course drop-down, the Math tile under 'New Courses'",
+          "expectation": "Starts or adds the Math course.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same blue maths symbol with the word Math.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word is right there under or next to the picture.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg22": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg22.png",
+      "members": {
+        "screen2-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen23-f3": {
+          "where": "course picker, the Music row under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen27-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen28-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen30-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen32-f3": {
+          "where": "course picker, the Music row under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen33-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        },
+        "screen34-f9": {
+          "where": "course drop-down, the Music tile under 'New Courses'",
+          "expectation": "Starts or adds the Music course.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same purple music note with the word Music.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Word plus picture, same both places.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg23": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg23.png",
+      "members": {
+        "screen2-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen23-f5": {
+          "where": "course picker, the Chess row under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen27-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen28-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen30-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen32-f5": {
+          "where": "course picker, the Chess row under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen33-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        },
+        "screen34-f10": {
+          "where": "course drop-down, the Chess tile under 'New Courses'",
+          "expectation": "Starts or adds the Chess course.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same green chess piece with the word Chess.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Word plus picture, same both places.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg24": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg24.png",
+      "members": {
+        "screen2-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        },
+        "screen27-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        },
+        "screen28-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        },
+        "screen30-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        },
+        "screen33-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        },
+        "screen34-f6": {
+          "where": "course drop-down at the top, the grey '+ Course' tile next to Spanish",
+          "expectation": "Opens a list of courses to add a new one.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same '+ Course' tile each time.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Plus with 'Course' - add a course. Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg25": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg25.png",
+      "members": {
+        "screen2-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        },
+        "screen27-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        },
+        "screen28-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        },
+        "screen30-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        },
+        "screen33-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        },
+        "screen34-f7": {
+          "where": "course drop-down, the blue MORE ABOUT SCORE link under 'Your Spanish Score is 1'",
+          "expectation": "Opens a page explaining my Spanish score.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same words each time.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says exactly what it does.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg26": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg26.png",
+      "members": {
+        "screen2-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        },
+        "screen27-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        },
+        "screen28-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        },
+        "screen30-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        },
+        "screen33-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        },
+        "screen34-f11": {
+          "where": "the dimmed grey area under the course drop-down, covering the path and bottom menu",
+          "expectation": "Closes the drop-down and puts me back on the path.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the same dimmed background every time the drop-down is open.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Tapping outside a pop-up to close it is normal, and it's the same every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg27": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg27.png",
+      "members": {
+        "screen3-f1": {
+          "where": "top-right corner of the Streak page, the share icon",
+          "expectation": "Shares my streak with someone.",
+          "confidence": "sure"
+        },
+        "screen19-f1": {
+          "where": "top-right corner of the Streak page, the share icon",
+          "expectation": "Shares my streak with someone.",
+          "confidence": "sure"
+        },
+        "screen24-f2": {
+          "where": "top-right corner of the Spanish Score page, the share icon",
+          "expectation": "Shares my Spanish score with someone.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The box-with-arrow-up is share everywhere, in the top-right corner.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Share icon, top right, and it would share whatever page I'm on - streak or score.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg28": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg28.png",
+      "members": {
+        "screen3-f3": {
+          "where": "Streak page, the PERSONAL tab under the title",
+          "expectation": "Shows my own streak.",
+          "confidence": "sure"
+        },
+        "screen19-f3": {
+          "where": "Streak page, the PERSONAL tab under the title",
+          "expectation": "Shows my own streak.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tab on the same page.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Tabs with words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg29": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg29.png",
+      "members": {
+        "screen3-f4": {
+          "where": "Streak page, the FRIENDS tab next to PERSONAL",
+          "expectation": "Shows my friends' streaks.",
+          "confidence": "sure"
+        },
+        "screen19-f4": {
+          "where": "Streak page, the FRIENDS tab next to PERSONAL",
+          "expectation": "Shows my friends' streaks.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tab.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Tabs with words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg30": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg30.png",
+      "members": {
+        "screen3-f5": {
+          "where": "Streak page, the white card 'Do a lesson today to extend your streak! START LESSON'",
+          "expectation": "Starts a lesson.",
+          "confidence": "sure"
+        },
+        "screen19-f5": {
+          "where": "Streak page, the white card 'Do a lesson today to extend your streak! START LESSON'",
+          "expectation": "Starts a lesson.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [
+        "The card in these pictures is not shown on the app today; its place on that page is taken by a different card."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same card, same words.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says START LESSON.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg31": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg31.png",
+      "members": {
+        "screen3-f6": {
+          "where": "Streak Calendar, the left end of the month heading (the back arrow - very faint here)",
+          "expectation": "Goes back to the previous month.",
+          "confidence": "guessing"
+        },
+        "screen19-f6": {
+          "where": "Streak Calendar, the left end of the month heading (the back arrow - very faint here)",
+          "expectation": "Goes back to the previous month.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same spot on the same calendar.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Arrows either side of a month are for changing month. This one is barely visible, probably because there's no earlier month.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg32": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg32.png",
+      "members": {
+        "screen3-f7": {
+          "where": "Streak Calendar, the > arrow at the right of 'September 2026'",
+          "expectation": "Goes to the next month.",
+          "confidence": "sure"
+        },
+        "screen19-f7": {
+          "where": "Streak Calendar, the > arrow at the right of 'September 2026'",
+          "expectation": "Goes to the next month.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same arrow on the same calendar.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Month arrows - standard.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg34": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg34.png",
+      "members": {
+        "screen4-f2": {
+          "where": "Shop, the white TRY 1 WEEK FOR FREE button on the purple 'Save with a family plan!' card",
+          "expectation": "Starts a free-trial sign-up for the family plan - I'd be careful, it'll want payment details.",
+          "confidence": "sure"
+        },
+        "screen20-f2": {
+          "where": "Shop, the white TRY 1 WEEK FOR FREE button on the purple 'Save with a family plan!' card",
+          "expectation": "Starts a free-trial sign-up for the family plan - I'd be careful, it'll want payment details.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button on the same card.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words say what it is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg35": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg35.png",
+      "members": {
+        "screen4-f3": {
+          "where": "Shop, Special Offers, the Widget Reward card with GET STARTED",
+          "expectation": "Walks me through adding the Duolingo widget to my home screen.",
+          "confidence": "sure"
+        },
+        "screen20-f3": {
+          "where": "Shop, Special Offers, the Widget Reward card with GET STARTED",
+          "expectation": "Walks me through adding the Duolingo widget to my home screen.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same card.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg36": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg36.png",
+      "members": {
+        "screen4-f4": {
+          "where": "Shop, the Free Chest card, CLAIM CHEST",
+          "expectation": "Plays an advert and then gives me gems.",
+          "confidence": "sure"
+        },
+        "screen20-f4": {
+          "where": "Shop, the Free Chest card, CLAIM CHEST",
+          "expectation": "Plays an advert and then gives me gems.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same card.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says 'watch an ad' - clear, though I'd avoid it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg37": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg37.png",
+      "members": {
+        "screen4-f5": {
+          "where": "Shop, bottom, the Streak Freeze card (cut off)",
+          "expectation": "Lets me buy a streak freeze with gems.",
+          "confidence": "guessing"
+        },
+        "screen20-f5": {
+          "where": "Shop, bottom, the Streak Freeze card (cut off)",
+          "expectation": "Lets me buy a streak freeze with gems.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same card.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same card on both.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg38": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg38.png",
+      "members": {
+        "screen5-f2": {
+          "where": "Energy page, the SUPER 'Unlimited FREE TRIAL' row",
+          "expectation": "Starts a free trial of Super for unlimited energy.",
+          "confidence": "sure"
+        },
+        "screen21-f2": {
+          "where": "Energy page, the SUPER 'Unlimited FREE TRIAL' row",
+          "expectation": "Starts a free trial of Super for unlimited energy.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says FREE TRIAL.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg39": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg39.png",
+      "members": {
+        "screen5-f3": {
+          "where": "Energy page, the greyed Recharge row with 350 gems",
+          "expectation": "Refills energy for 350 gems - greyed because I'm already full.",
+          "confidence": "guessing"
+        },
+        "screen21-f3": {
+          "where": "Energy page, the greyed Recharge row with 350 gems",
+          "expectation": "Refills energy for 350 gems - greyed because I'm already full.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same row both times.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg40": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg40.png",
+      "members": {
+        "screen5-f4": {
+          "where": "Energy page, the Widget Boost row with INSTALL",
+          "expectation": "Adds the widget to my home screen and gives me energy.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "Energy page, the Widget Boost row with INSTALL",
+          "expectation": "Adds the widget to my home screen and gives me energy.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says INSTALL.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg41": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg41.png",
+      "members": {
+        "screen5-f5": {
+          "where": "Energy page, the greyed '+5 energy WATCH AD' row",
+          "expectation": "Plays an ad for 5 energy.",
+          "confidence": "sure"
+        },
+        "screen21-f5": {
+          "where": "Energy page, the greyed '+5 energy WATCH AD' row",
+          "expectation": "Plays an ad for 5 energy.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says WATCH AD.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg42": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg42.png",
+      "members": {
+        "screen5-f6": {
+          "where": "Energy page, the greyed '+5 energy FREE' row",
+          "expectation": "Gives me 5 free energy (greyed now because I'm full).",
+          "confidence": "guessing"
+        },
+        "screen21-f6": {
+          "where": "Energy page, the greyed '+5 energy FREE' row",
+          "expectation": "Gives me 5 free energy (greyed now because I'm full).",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same row both times.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg43": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg43.png",
+      "members": {
+        "screen7-f14": {
+          "where": "path, the pop-up for 'Order at a café' (locked), the grey LOCKED button",
+          "expectation": "Nothing - it's the grey LOCKED button in the pop-up; it just tells me I can't do this yet.",
+          "confidence": "sure"
+        },
+        "screen10-f14": {
+          "where": "path, the pop-up for 'Score 2 review', the grey LOCKED button",
+          "expectation": "Nothing - it's the grey LOCKED button in the pop-up; it just tells me I can't do this yet.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Both are grey LOCKED buttons in the same kind of pop-up.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says LOCKED.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg44": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg44.png",
+      "members": {
+        "screen23-f2": {
+          "where": "course picker, the 'New Courses' heading with the up-arrow on the right",
+          "expectation": "Folds the New Courses list away.",
+          "confidence": "guessing"
+        },
+        "screen32-f2": {
+          "where": "course picker, the 'New Courses' heading with the up-arrow on the right",
+          "expectation": "Folds the New Courses list away.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same heading.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Heading with a fold arrow.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg45": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg45.png",
+      "members": {
+        "screen23-f6": {
+          "where": "course picker, the 'For English speakers' heading with the up-arrow",
+          "expectation": "Folds that list away.",
+          "confidence": "guessing"
+        },
+        "screen32-f6": {
+          "where": "course picker, the 'For English speakers' heading with the up-arrow",
+          "expectation": "Folds that list away.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same heading.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Heading with a fold arrow.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg46": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg46.png",
+      "members": {
+        "screen23-f8": {
+          "where": "course picker, the French row",
+          "expectation": "Starts adding French.",
+          "confidence": "sure"
+        },
+        "screen32-f8": {
+          "where": "course picker, the French row",
+          "expectation": "Starts adding French.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says French.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg47": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg47.png",
+      "members": {
+        "screen23-f9": {
+          "where": "course picker, the German row",
+          "expectation": "Starts adding German.",
+          "confidence": "sure"
+        },
+        "screen32-f9": {
+          "where": "course picker, the German row",
+          "expectation": "Starts adding German.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says German.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg48": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg48.png",
+      "members": {
+        "screen23-f10": {
+          "where": "course picker, the Italian row",
+          "expectation": "Starts adding Italian.",
+          "confidence": "sure"
+        },
+        "screen32-f10": {
+          "where": "course picker, the Italian row",
+          "expectation": "Starts adding Italian.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says Italian.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg49": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg49.png",
+      "members": {
+        "screen25-f1": {
+          "where": "top-left of the 'What best describes you?' question page, the back arrow",
+          "expectation": "Takes me back one step.",
+          "confidence": "sure"
+        },
+        "screen29-f1": {
+          "where": "top-left of the 'What best describes you?' question page, the back arrow",
+          "expectation": "Takes me back one step.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same arrow, same page.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Back arrow.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg50": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/gg50.png",
+      "members": {
+        "screen25-f2": {
+          "where": "bottom of the 'What best describes you?' page, the grey CONTINUE button",
+          "expectation": "Moves on once I've picked an answer - greyed until I pick.",
+          "confidence": "sure"
+        },
+        "screen29-f2": {
+          "where": "bottom of the 'What best describes you?' page, the grey CONTINUE button",
+          "expectation": "Moves on once I've picked an answer - greyed until I pick.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Says CONTINUE.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg1": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/fg1.png",
+      "members": {
+        "screen12-f1": {
+          "where": "top-left corner of the lesson loading page (Order at a café), the X",
+          "expectation": "Leaves the lesson before it starts and takes me back to the path.",
+          "confidence": "sure"
+        },
+        "screen23-f1": {
+          "where": "top-left corner of the \"What would you like to learn?\" course picker, the X",
+          "expectation": "Closes this page and takes me back.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "top-left corner of the \"What would you like to learn?\" course picker, the X",
+          "expectation": "Closes this page and takes me back.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same light grey X in the same top-left corner.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a plain close X, same everywhere.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg2": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/fg2.png",
+      "members": {
+        "screen5-f1": {
+          "where": "top-left corner of the Energy page, the grey X",
+          "expectation": "Closes the energy page and takes me back.",
+          "confidence": "sure"
+        },
+        "screen21-f1": {
+          "where": "top-left corner of the Energy page, the grey X",
+          "expectation": "Closes the energy page and takes me back.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same X, same page.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Plain close X.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg3": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/cfg3.png",
+      "members": {
+        "screen1-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen1-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen6-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen6-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen7-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen7-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen8-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen8-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen9-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen9-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen10-f8": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen10-f10": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen14-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen14-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen18-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen18-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen22-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen22-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen26-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen26-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen31-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen31-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        },
+        "screen35-f7": {
+          "where": "left side of the path under the green banner, the owl-and-yellow-character sticker with the red '!'",
+          "expectation": "Opens some special event or promotion page.",
+          "confidence": "guessing"
+        },
+        "screen35-f9": {
+          "where": "left side of the path, the purple label under the sticker (13 days, now 'Ended')",
+          "expectation": "Opens the same event - it's the label of that sticker.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In these pictures the small purple label reads \"13 days\"; on the app today the same label reads \"Ended\"."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "The cartoon sticker and the purple label under it look like one badge, so I'd expect both to open the same event thing.",
+      "affects_navigation": "A bit - if the face and the label under it did different things I'd never know which part my finger actually hit.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They look glued together as one thing, so I'd assume one job, and that's fine. What bothers me is more that this cartoon promo with its red '!' sits on my path and pulls my eye while I'm looking for my next lesson.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg4": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/cfg4.png",
+      "members": {
+        "screen4-f2": {
+          "where": "Shop, the TRY 1 WEEK FOR FREE button on the 'Save with a family plan!' card",
+          "expectation": "Starts a free-week sign-up for the family plan.",
+          "confidence": "sure"
+        },
+        "screen5-f2": {
+          "where": "Energy page, the SUPER 'Unlimited FREE TRIAL' row",
+          "expectation": "Starts a free-trial sign-up for Super, for unlimited energy.",
+          "confidence": "sure"
+        },
+        "screen20-f2": {
+          "where": "Shop, the TRY 1 WEEK FOR FREE button on the 'Save with a family plan!' card",
+          "expectation": "Starts a free-week sign-up for the family plan.",
+          "confidence": "sure"
+        },
+        "screen21-f2": {
+          "where": "Energy page, the SUPER 'Unlimited FREE TRIAL' row",
+          "expectation": "Starts a free-trial sign-up for Super, for unlimited energy.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "Both say free trial, but one is on a 'family plan' card and the other is 'Unlimited' energy, so they might be two different offers.",
+      "affects_navigation": "Not much - I'd avoid both anyway because they lead to a subscription.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both are clearly 'free trial' buttons in words, so I'd recognise either one for what it is, even if the wording is different.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg5": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/cfg5.png",
+      "members": {
+        "screen4-f3": {
+          "where": "Shop, Special Offers, the 'Widget Reward' card with GET STARTED and a NEW badge",
+          "expectation": "Walks me through adding the Duolingo widget to get an XP Boost.",
+          "confidence": "sure"
+        },
+        "screen5-f4": {
+          "where": "Energy page, the 'Widget Boost' row with INSTALL and a NEW badge",
+          "expectation": "Installs a widget that gives me energy - maybe the same widget, maybe not.",
+          "confidence": "guessing"
+        },
+        "screen20-f3": {
+          "where": "Shop, Special Offers, the 'Widget Reward' card with GET STARTED and a NEW badge",
+          "expectation": "Walks me through adding the Duolingo widget to get an XP Boost.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "Energy page, the 'Widget Boost' row with INSTALL and a NEW badge",
+          "expectation": "Installs a widget that gives me energy - maybe the same widget, maybe not.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "They both seem to be about adding the Duolingo widget, but one says GET STARTED for an 'XP Boost' and the other says INSTALL with an 8 and energy - so I can't tell if it's one widget or two different things.",
+      "affects_navigation": "Yes - I'd do one, then see the other still sitting there asking me, and I'd wonder whether I'd done it wrong or whether there's a second thing I'm supposed to do. That's the kind of half-finished loop that eats my attention.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The same job - add the widget - is drawn two different ways with two different buttons and two different rewards, in two different places. I can't tell if it's one thing or two, and I'd end up doing it, then second-guessing it.",
+        "solution": "Use the same name and the same button word in both places (e.g. 'Add widget' on both), say the reward for both in one line, and once I've added it, show it as done in both places so I'm not asked again."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-cfg5-tc1",
+          "what_to_try": "From the learning path, open the Shop with the gem, press the Widget Reward GET STARTED card and read what comes up, press MAYBE LATER and close the Shop; then open the energy page with the lightning bolt, press the Widget Boost INSTALL row and read what comes up, press NOT NOW, and say whether the two were the same thing or two separate things to do.",
+          "real_if": "I can't tell they lead to the same thing, or I come away thinking there are two separate jobs to finish.",
+          "not_real_if": "On seeing what each one opens, I recognise straight away that both are asking me to add the same widget.",
+          "what_happened": "Shop GET STARTED opened a full page: 'Add the Duolingo widget to your home screen to earn an XP Boost.' with a picture of a dark red widget showing a flame and 100 and a green owl, and buttons ADD NOW / MAYBE LATER. I pressed MAYBE LATER, went back to the Shop, and the NEW badge on that card was gone. Energy page INSTALL opened a different-looking page: 'Add the widget to get +8 energy every hour!' with a pink/purple widget showing a flame and 8 and a brown owl with lightning eyes, and buttons ADD WIDGET / NOT NOW. I pressed NOT NOW and the Widget Boost row still had its NEW badge, even though I'd just dismissed the Shop one. Two different pictures of the widget, two different rewards, two different button words, and dismissing one didn't touch the other - I honestly came away thinking these are two different widgets, two separate jobs. Nothing on either page told me they were the same thing. I couldn't have known before pressing, and pressing made me more unsure, not less.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "hardened",
+      "provisional": false
+    },
+    "cfg8": {
+      "kind": "function_group",
+      "sheet": "inputs/Duolingo/functionality-groups/groups/cfg8.png",
+      "members": {
+        "screen15-f1": {
+          "where": "Quests page, under 'Follow your first friend', the FIND A FRIEND button with a person-plus icon",
+          "expectation": "Opens a search to find people to follow.",
+          "confidence": "sure"
+        },
+        "screen17-f1": {
+          "where": "Feed page, the blue 'Celebrate achievements with friends!' card, ADD FRIENDS button",
+          "expectation": "Opens a search to find and add friends.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "FIND A FRIEND and ADD FRIENDS are basically the same words - go and find people to follow.",
+      "affects_navigation": "Not really - I'd be surprised if one did something else, but they read the same.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Different styles, one with a person-plus picture and one plain blue text, but the words say the same job and I'd connect them straight away.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "groups_reviewed": 54,
+    "no_problem": 53,
+    "navigate_with_difficulty": 1,
+    "cannot_handle": 0,
+    "same_expectation": {
+      "yes": 51,
+      "no": 1,
+      "unsure": 2
+    },
+    "tests_run": 1,
+    "opinions": {
+      "unchanged": 0,
+      "hardened": 1,
+      "softened": 0,
+      "reversed": 0
+    },
+    "out_of_scope": 3,
+    "not_executed": 0
+  },
+  "out_of_scope": [
+    {
+      "group": "cfg3",
+      "why": "The cartoon promo sticker on the path (red '!' badge, now labelled 'Ended') pulls my eye while I'm looking for my next lesson.",
+      "category": "distraction"
+    },
+    {
+      "group": "gg31",
+      "why": "The left month arrow on the Streak Calendar is so faint I can barely see it.",
+      "category": "contrast"
+    },
+    {
+      "group": "gg1",
+      "why": "On the phone, the star on the green current-lesson button was caught tilted in one screenshot, so it seems to wobble on its own; that movement grabs my attention.",
+      "category": "motion"
+    }
+  ]
+}

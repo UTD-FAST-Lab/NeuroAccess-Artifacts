@@ -1,0 +1,20 @@
+{
+  "app": "ChatGPT",
+  "screen": "s37",
+  "state_str": "8b0cd260abb51057dda076434c070b02",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_205236.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s37_header_nav.png",
+  "name": "a chat conversation",
+  "regions_read": [],
+  "identifier_found": "none; the top bar holds a back arrow and two icon buttons; everything else is the conversation (the user's \"@Create image\" bubble, the reply, progress text, an upsell or an ad card)",
+  "identifier_class": "none",
+  "accessibility_text": "none — the live chat screen carries no accessible screen name either",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "no title; the user's own message is content, not a place name — the detector's decision not to mark the bubble or streaming reply is upheld",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the chat's own title exists only in the drawer's history list; nothing on the chat screen shows it. Template carry from s36 (chat screens share one layout; structures 260c7ba9 / 829d4097; content differs — progress, image, ad, snackbar — but none of it names the chat, so it does not change the answer).",
+  "recommendation": "show the chat's title (the one listed in the side menu, e.g. \"Create red apple image\") in the top bar",
+  "provisional": false
+}

@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s4",
+  "state_str": "edb448fce51f15fe8ef64f1a61e22a74",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151401.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s4_header_nav.png",
+  "name": "Subscriptions sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Meta",
+      "verdict_on_region": "company wordmark — names the company, not the page"
+    },
+    {
+      "kind": "header",
+      "text": "Subscriptions",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    }
+  ],
+  "identifier_found": "\"Subscriptions\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

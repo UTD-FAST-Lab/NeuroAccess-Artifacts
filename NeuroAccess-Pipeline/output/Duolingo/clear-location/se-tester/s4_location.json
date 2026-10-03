@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s4",
+  "state_str": "d1c264ae09e05bca289e80880da24cf0",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185342.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s4_header_nav.png",
+  "name": "the course menu open over the Learn path",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "New Courses",
+      "verdict_on_region": "content: heading of a group of course shortcuts inside the course menu, not a place — dismissed"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box (dimmed under the menu scrim but still visible) — pixel-read active state, never declared selected"
+    }
+  ],
+  "identifier_found": "the house tab still visibly boxed (dimmed under the scrim); the Spanish flag at the top boxed in blue; menu headed by 'Spanish / Course' and 'Your Spanish Score is 1'",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a drop-down anchored to the course flag, over the Learn path whose tab stays visibly highlighted; 'New Courses' is a list heading, not a place",
+  "test_cases": [
+    {
+      "id": "s4-tc1",
+      "type": "unconventional_region",
+      "precondition": "Learn path shown",
+      "action": "tap the Spanish flag at top-left to open the course menu; read the 'New Courses' heading and the tab bar; tap the flag again",
+      "expected_result": "the menu drops over the path with the Learn tab still visible",
+      "confirms_if": "the tab highlight is gone and nothing else names the context",
+      "overturns_if": "the Learn highlight remains visible through the scrim and the flag is drawn selected",
+      "observed_result": "menu dropped over the path: 'Spanish' (boxed) / 'Course', 'Your Spanish Score is 1', 'New Courses' over Math / Music / Chess; the house tab remained visibly boxed under the grey scrim; tapping the flag closed the menu back to the path",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'New Courses' names a group of courses — dismissed as content; the location is carried by the Learn highlight, still visible under the scrim, and the menu closes back to the path from the same flag",
+  "recommendation": null,
+  "provisional": false
+}

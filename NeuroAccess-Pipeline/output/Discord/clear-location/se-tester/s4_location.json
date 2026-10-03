@@ -1,0 +1,49 @@
+{
+  "app": "Discord",
+  "screen": "s4",
+  "state_str": "bfb61ba05efc31ff2f29c3dcdba4885c",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215200.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s4_header_nav.png",
+  "name": "the Messages (DM) home",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Messages",
+      "verdict_on_region": "names the Direct Messages section — a place name, counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "left rail of server tiles with a visible pill and filled tile on the current item (declared: 'Direct Messages'); the active state moved live when switching between DMs and a server — counted; note all server tiles read only 'ATs'"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "account strip (own name + status chip, bell); no item is current and it leads to the profile and notifications — not a location signal, not counted"
+    }
+  ],
+  "identifier_found": "\"Messages\"",
+  "identifier_class": "header + navigation with visible active state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Messages' names the place",
+  "test_cases": [
+    {
+      "id": "s4-tc1",
+      "type": "active_state_verification",
+      "precondition": "app open on the Messages (DM) home",
+      "action": "tap the first server tile in the left rail, then the DM tile",
+      "expected_result": "the pill marker and filled tile move to the tapped item and the header text changes with it",
+      "confirms_if": "the highlight stays put or looks the same on every tile",
+      "overturns_if": "the highlight moves with the section and the header names the new place",
+      "observed_result": "the pill and the blue fill moved from the DM tile to the first 'ATs' tile, the DM glyph turned grey, and the header changed from 'Messages' to 'Accessibility Testin's server' with '# general' highlighted in the channel list; reversing restored 'Messages'. Live rail shows 4 server tiles, all reading 'ATs'",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: the pill and the blue fill moved from the DM tile to the first 'ATs' tile, the DM glyph turned grey, and the header changed from 'Messages' to 'Accessibility Testin's server' with '# general' highlighted in the channel list; reversing restored 'Messages'. Live rail shows 4 server tiles, all reading 'ATs'",
+  "recommendation": "optional: server tiles all read 'ATs'; the header does the locating — no fix required for this phase",
+  "provisional": false
+}

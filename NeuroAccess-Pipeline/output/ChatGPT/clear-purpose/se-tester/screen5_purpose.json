@@ -1,0 +1,180 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen5",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen5_actionable_elements.png",
+  "elements": {
+    "screen5-a1": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "top-left",
+      "location": "top-left",
+      "bounds": [
+        32,
+        91,
+        158,
+        217
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Navigate up\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "left arrow at top left = go back - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled left arrow at top left; back convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen5-a1-tc1",
+          "type": "verification",
+          "precondition": "Plus paywall open",
+          "action": "tap the left arrow",
+          "expected_result": "returns to the previous screen",
+          "confirms_if": "it does something else",
+          "overturns_if": "it goes back",
+          "observed_result": "returned to the new-chat screen",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping returned from the paywall to the chat - the back convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "left half of a two-part segmented switch, currently selected (white)",
+      "location": "left half of a two-part segmented switch, currently selected (white)",
+      "bounds": [
+        63,
+        493,
+        538,
+        619
+      ],
+      "visible_text": "\"Go\"",
+      "accessibility_text_consulted": "talkback_label \"Go\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "segment reads just 'Go'; it is a plan name, and nothing says that choosing it switches plans - 'Go' reads as a verb",
+      "test_cases": [
+        {
+          "id": "screen5-a2-tc1",
+          "type": "expected",
+          "precondition": "Plus paywall, Plus half grey",
+          "action": "tap 'Go'",
+          "expected_result": "the page shows the Go plan and the Go half looks selected",
+          "confirms_if": "the word 'Go' does not predict a plan switch, or the selected state reads backwards",
+          "overturns_if": "the outcome is predictable from the word and the selected look is clear",
+          "observed_result": "the heading changed to 'ChatGPT Go', the table to Go features and the button to 'Upgrade for $8.00'; the Go half turned grey and the Plus half turned white",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping 'Go' swapped the whole page to a different plan ('ChatGPT Go', 'Upgrade for $8.00'), and the chosen half turned grey while the other turned white - the selection is drawn backwards from what the screenshot suggests",
+      "recommendation": "label the segments as plans, e.g. 'Go plan - $8' / 'Plus plan - $19.99', and draw the selected one as selected",
+      "provisional": false
+    },
+    "screen5-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "right half of the same segmented switch (grey, unselected); no record — only the 'Go' half is in the tree",
+      "location": "right half of the same segmented switch (grey, unselected)",
+      "bounds": [
+        542,
+        493,
+        1017,
+        619
+      ],
+      "visible_text": "\"Plus\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "grey segment reads 'Plus'; it is the selected plan, but grey reads as unselected, and nothing says it is a plan choice",
+      "test_cases": [
+        {
+          "id": "screen5-a3-tc1",
+          "type": "expected",
+          "precondition": "Go plan showing",
+          "action": "tap 'Plus'",
+          "expected_result": "the Plus page returns",
+          "confirms_if": "selection is signalled by a style that reads as unselected",
+          "overturns_if": "selection is shown clearly",
+          "observed_result": "the page returned to 'ChatGPT Plus' / 'Upgrade for $19.99' and the Plus half turned grey, Go white",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping 'Plus' restored the Plus page and made the Plus half grey again - grey means selected here, the reverse of how the pair looks",
+      "recommendation": "show the selected plan with a clear selected style (filled, check mark) and label the pair as plan choices",
+      "provisional": false
+    },
+    "screen5-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "text button above the main button",
+      "location": "text button above the main button",
+      "bounds": [
+        63,
+        1937,
+        1017,
+        2062
+      ],
+      "visible_text": "\"Restore subscription\"",
+      "accessibility_text_consulted": "talkback_label \"Restore subscription\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "words 'Restore subscription' say what it does",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words state the action; not exercised because it touches billing",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black full-width button",
+      "location": "black full-width button",
+      "bounds": [
+        63,
+        2062,
+        1017,
+        2195
+      ],
+      "visible_text": "\"Upgrade for $19.99\"",
+      "accessibility_text_consulted": "talkback_label \"Upgrade for $19.99\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "words 'Upgrade for $19.99' name the action and the price",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words state the action and price; not exercised because purchases are not allowed",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "issues": 2,
+    "missing_purpose": 0,
+    "unclear_purpose": 2,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

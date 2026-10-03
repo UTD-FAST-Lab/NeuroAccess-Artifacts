@@ -1,0 +1,119 @@
+{
+ "app": "Messenger",
+ "screen": "screen35",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen35_actionable_elements.png",
+ "elements": {
+  "screen35-a1": {
+   "kind": "icon",
+   "glyph": "arrow pointing left",
+   "description": "arrow pointing left",
+   "location": "top, left",
+   "bounds": [
+    11,
+    74,
+    137,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Back' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "left-pointing arrow at top left = go back - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a left arrow with no label; back arrow is the established convention; exemption pending a tap",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the left arrow returned to the previous screen [test run once on screen4-a2 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen35-a2": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Ally Cooper Signed in'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    211,
+    1080,
+    358
+   ],
+   "visible_text": "'Ally Cooper Signed in'",
+   "accessibility_text_consulted": "talkback_label 'Switch to Ally Cooper, signed in' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the signed-in account with a tick and 'Signed in'",
+   "test_cases": [
+    {
+     "id": "screen35-a2-tc1",
+     "type": "expected",
+     "precondition": "Switch profile open",
+     "action": "tap the signed-in account row",
+     "expected_result": "nothing changes (already selected)",
+     "confirms_if": "something unexpected happens",
+     "overturns_if": "it stays selected",
+     "observed_result": "nothing changed; the tick stayed",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the already-selected account kept it selected and changed nothing - consistent with a chooser whose tick marks the current choice",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen35-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Log into another Meta Account'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    451,
+    1080,
+    598
+   ],
+   "visible_text": "'Log into another Meta Account'",
+   "accessibility_text_consulted": "content_desc 'Log into another Meta Account' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'Log into another Meta Account' with a plus",
+   "test_cases": [
+    {
+     "id": "screen35-a3-tc1",
+     "type": "expected",
+     "precondition": "Switch profile open",
+     "action": "tap 'Log into another Meta Account'",
+     "expected_result": "a login form opens",
+     "confirms_if": "something else opens",
+     "overturns_if": "it matches",
+     "observed_result": "a login form opened (Mobile number or email / Password); closed with X",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "it opened a login form (closed without entering anything)",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 3,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 3,
+  "clear_via_common_icon_exemption": 1,
+  "detection_false_positives": 0,
+  "test_cases_executed": 2,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 3,
+  "instincts_overturned": 0,
+  "provisional_verdicts": 0
+ }
+}

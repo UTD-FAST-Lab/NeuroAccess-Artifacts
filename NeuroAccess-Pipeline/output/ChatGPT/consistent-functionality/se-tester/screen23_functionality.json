@@ -1,0 +1,721 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen23",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen23_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen23_function_groups.png"
+  },
+  "elements": {
+    "screen23-f1": {
+      "kind": "icon",
+      "appearance": "two horizontal lines, the lower one shorter",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "two-line menu (\"hamburger\" family) glyph - established menu convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Menu",
+      "accessibility_text": "content_desc: \"Menu\", talkback: \"Menu\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg1",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f2": {
+      "kind": "icon+label",
+      "appearance": "four-pointed sparkle with the words \"Get Plus\"",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_label": "Get Plus",
+      "convention_relied_on": "worded control (\"Get Plus\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Get Plus",
+      "accessibility_text": "content_desc: \"\", talkback: \"Get Plus\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the \"ChatGPT Plus\" plan page (Go / Plus switch, feature table, \"Upgrade for $19.99\")",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f3": {
+      "kind": "icon",
+      "appearance": "speech bubble with a broken outline",
+      "state": "off, greyed",
+      "location": "top right",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no established convention for a broken-outline bubble; product-specific, not a convention",
+      "convention_confidence": "low",
+      "declared_function": "Temporary chat",
+      "accessibility_text": "content_desc: \"Temporary chat\", talkback: \"Temporary chat\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "toggles temporary chat: off -> on (glyph gains a check, placeholder becomes \"Temporary chat\", \"This chat won't appear in history.\"), on -> off; in its greyed face (image suggestions open) it shows the tooltip \"This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f4": {
+      "kind": "button",
+      "appearance": "the word \"Trending\"",
+      "state": "selected",
+      "location": "top left",
+      "bounds": [
+        42,
+        285,
+        296,
+        411
+      ],
+      "visible_label": "Trending",
+      "convention_relied_on": "worded control (\"Trending\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Trending",
+      "accessibility_text": "content_desc: \"\", talkback: \"Trending\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "selects the Trending tab (tapping it while already selected changes nothing)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f5": {
+      "kind": "button",
+      "appearance": "the word \"Templates\"",
+      "state": "unselected",
+      "location": "top centre",
+      "bounds": [
+        317,
+        285,
+        606,
+        411
+      ],
+      "visible_label": "Templates",
+      "convention_relied_on": "worded control (\"Templates\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Templates",
+      "accessibility_text": "content_desc: \"\", talkback: \"Templates\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "selects the Templates tab (tapping it while already selected changes nothing)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f6": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        913,
+        286,
+        1039,
+        412
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close / dismiss - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Close image suggestions",
+      "accessibility_text": "content_desc: \"Close image suggestions\", talkback: \"Close image suggestions\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg6",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f7": {
+      "kind": "button",
+      "appearance": "picture tile: line drawing of a flower with an orange centre",
+      "state": null,
+      "location": "middle left",
+      "bounds": [
+        42,
+        453,
+        519,
+        1049
+      ],
+      "visible_label": "Sketch",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": "Sketch",
+      "accessibility_text": "content_desc: \"Sketch, Simple sketch of a flower with an orange center, green stem and leaves, and a bee.\", talkback: \"Sketch, Simple sketch of a flower with an orange center, green stem and leaves, and a bee.\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg18",
+      "function_group": "fg6",
+      "test_cases": [
+        {
+          "id": "gg18-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the drawing sheet (pencil / shapes / eraser, undo, colours, check)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f8": {
+      "kind": "button",
+      "appearance": "picture tile: photo of a woman in sunglasses and a denim jacket",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        561,
+        453,
+        1038,
+        1049
+      ],
+      "visible_label": "’80s flashback",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": "’80s flashback",
+      "accessibility_text": "content_desc: \"’80s flashback, A smiling woman in black sunglasses, bright pink hoop earrings, a pink mesh top, and an oversized denim jacket poses in front of indoor plants. A red-orange da…\", talkback: \"’80s flashback, A smiling woman in black sunglasses, bright pink hoop earrings, a pink mesh top, and an oversized denim jacket poses in front of indoor plants. A red-orange da…\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg19",
+      "function_group": "fg7",
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the preview sheet \"Give your photos an '80s look\" with the prompt, \"Take photo\" and \"Choose photo\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f9": {
+      "kind": "button",
+      "appearance": "picture tile: cat, plant and bearded-face stickers",
+      "state": null,
+      "location": "middle left",
+      "bounds": [
+        42,
+        1091,
+        519,
+        1687
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": "Stickers, A colorful collection of illustrated stickers.",
+      "accessibility_text": "content_desc: \"Stickers, A colorful collection of illustrated stickers.\", talkback: \"Stickers, A colorful collection of illustrated stickers.\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the sticker prompt editor \"Create a 3D sticker pack based on Photo, remixing with ...\" with a \"Generate\" button",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f10": {
+      "kind": "button",
+      "appearance": "picture tile: cartoon woman with a headlamp holding a book",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        561,
+        1091,
+        1038,
+        1687
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": "Create a caricature",
+      "accessibility_text": "content_desc: \"Create a caricature\", talkback: \"Create a caricature\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg21",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg21-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the preview sheet \"Create a caricature\" with \"Choose photo\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f11": {
+      "kind": "icon+label",
+      "appearance": "camera with the word \"Camera\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        32,
+        1494,
+        700,
+        1652
+      ],
+      "visible_label": "Camera",
+      "convention_relied_on": "worded control (\"Camera\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Camera",
+      "accessibility_text": "nothing declared",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "opens an in-app camera sheet that asks for camera permission (\"Grant permission\")",
+      "glyph_group": "gg40",
+      "function_group": "fg10",
+      "test_cases": [
+        {
+          "id": "gg40-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens an in-app camera sheet that asks for camera permission (\"Grant permission\")",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens an in-app camera sheet that asks for camera permission (\"Grant permission\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg10-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "in-app camera asking for camera permission",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg40": "Consistent Functionality",
+        "fg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f12": {
+      "kind": "icon+label",
+      "appearance": "picture frame with the word \"Photos\"",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        32,
+        1652,
+        700,
+        1810
+      ],
+      "visible_label": "Photos",
+      "convention_relied_on": "worded control (\"Photos\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Photos",
+      "accessibility_text": "nothing declared",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "opens the system photo picker (\"No photos yet\")",
+      "glyph_group": "gg41",
+      "function_group": "fg9",
+      "test_cases": [
+        {
+          "id": "gg41-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the system photo picker (\"No photos yet\")",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the system photo picker (\"No photos yet\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg9-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg41": "Consistent Functionality",
+        "fg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f13": {
+      "kind": "button",
+      "appearance": "picture tile: cartoon man winking and pointing",
+      "state": null,
+      "location": "bottom right",
+      "bounds": [
+        561,
+        1729,
+        1038,
+        2325
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": "Anime",
+      "accessibility_text": "content_desc: \"Anime\", talkback: \"Anime\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg44",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg44-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the preview sheet \"See yourself in anime\" with \"Take photo\" / \"Choose photo\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f14": {
+      "kind": "icon+label",
+      "appearance": "paperclip with the word \"Files\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        32,
+        1810,
+        700,
+        1968
+      ],
+      "visible_label": "Files",
+      "convention_relied_on": "worded control (\"Files\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Files",
+      "accessibility_text": "nothing declared",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "opens the in-app \"Add files\" page (Upload files, recent library images)",
+      "glyph_group": "gg42",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg42-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the in-app \"Add files\" page (Upload files, recent library images)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the in-app \"Add files\" page (Upload files, recent library images)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg42": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f15": {
+      "kind": "icon+label",
+      "appearance": "circled swirl with the word \"Plugins\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        32,
+        1968,
+        700,
+        2126
+      ],
+      "visible_label": "Plugins",
+      "convention_relied_on": "worded control (\"Plugins\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Plugins",
+      "accessibility_text": "nothing declared",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+      "glyph_group": "gg13",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg13-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "side panel (7/21/33): opens the full \"Plugins\" directory page (Installed, Popular, New & Noteworthy, search). Attachment popup (9/23/35): puts \"@\" in the composer and shows an inline \"Plugins\" picker (Thinking, Study, Health, ...) for the message being written",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f16": {
+      "kind": "icon+label",
+      "appearance": "brain with the words \"Think harder\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        32,
+        2126,
+        700,
+        2284
+      ],
+      "visible_label": "Think harder",
+      "convention_relied_on": "worded control (\"Think harder\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Think harder",
+      "accessibility_text": "nothing declared",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "turns on a \"think harder\" mode shown as a small brain mark in the composer",
+      "glyph_group": "gg43",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg43-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "turns on a \"think harder\" mode shown as a small brain mark in the composer",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "turns on a \"think harder\" mode shown as a small brain mark in the composer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg43": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen23-f17": {
+      "kind": "icon",
+      "appearance": "microphone",
+      "state": null,
+      "location": "bottom right",
+      "bounds": [
+        791,
+        2179,
+        917,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone = voice input - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Dictation",
+      "accessibility_text": "content_desc: \"Dictation\", talkback: \"Dictation\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f18": {
+      "kind": "icon",
+      "appearance": "upward arrow in a filled circle",
+      "state": "active",
+      "location": "bottom right",
+      "bounds": [
+        917,
+        2179,
+        1043,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "upward arrow in a circle beside a text field = send - established in chat apps; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Send Message",
+      "accessibility_text": "content_desc: \"Send Message\", talkback: \"Send Message\"",
+      "context_reading": "attachment popup open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "sends the typed message when active (blue); does nothing when inactive (grey, empty composer)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the attachment popup drawn over the image suggestions panel is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 18,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 13,
+    "test_cases_executed": 20,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

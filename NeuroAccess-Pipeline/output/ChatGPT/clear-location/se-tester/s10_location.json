@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s10",
+  "state_str": "a1c5295d260de4251dae0509d13403ec",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204255.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s10_header_nav.png",
+  "name": "the drawing sheet over the image gallery",
+  "regions_read": [
+    {
+      "kind": "navigation",
+      "text": "Trending | Templates (Trending pill filled, marked from pixels)",
+      "verdict_on_region": "fully legible above the sheet; \"Trending\" visibly highlighted"
+    }
+  ],
+  "identifier_found": "\"Trending\" tab with a filled pill, fully legible above the drawing sheet; the sheet itself (pen / shapes / eraser tools, colour row) has no title",
+  "identifier_class": "navigation bar with visible active state",
+  "accessibility_text": "state dump empty",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the drawing sheet covering two-thirds of the screen has no name; the tab row above it names the gallery, not the tool",
+  "test_cases": [
+    {
+      "id": "s10-tc1",
+      "type": "verification",
+      "precondition": "image gallery, \"Trending\" selected",
+      "action": "tap the \"Sketch\" card; then swipe up, left and down across the sheet",
+      "expected_result": "the tab row either stays legible with its highlight throughout, or is covered / lost",
+      "confirms_if": "the tab row is covered or lost and nothing names the sheet",
+      "overturns_if": "the tab row with its active pill stays legible throughout",
+      "observed_result": "the drawing sheet opened over the lower two-thirds; \"Trending\" (filled pill) and \"Templates\" stayed fully legible and undimmed above it in every gesture; each swipe drew a stroke on the canvas rather than scrolling; closing asked \"Discard sketch?\" and I discarded my own strokes",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "overturned",
+  "deciding_evidence": "the gallery's active tab stays visible, undimmed and highlighted the whole time the user works in the sheet, so the user can still say they are in the Trending image gallery; the sheet itself remains unnamed, which is worth fixing but does not leave the user placeless. The scroll t32 out of this screen is judged separately (Identifier Persists).",
+  "recommendation": "give the sheet a title such as \"Sketch\" so the tool names itself",
+  "provisional": false
+}

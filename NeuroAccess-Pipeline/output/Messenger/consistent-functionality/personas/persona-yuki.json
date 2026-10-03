@@ -1,0 +1,3203 @@
+{
+  "persona": "persona-yuki",
+  "app": "Messenger",
+  "groups": {
+    "gg1": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg1.png",
+      "members": {
+        "screen1-f10": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen1-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen1-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen21-f9": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen21-f10": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen21-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen21-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen25-f10": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen25-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen25-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen27-f9": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen27-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen27-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen31-f9": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen31-f10": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen31-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen31-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen34-f9": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen34-f10": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen34-f11": {
+          "where": "the main Chats list, the blue 'Add friend' button on a person in People you may know",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        },
+        "screen34-f13": {
+          "where": "the main Chats list, the blue button on the last person in People you may know - it only shows 'Add', the purple circle covers the rest",
+          "expectation": "It sends that person a friend request.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "They all say Add friend, or Add, on a person I might know.",
+      "affects_navigation": "Not much - it's a clear word on each one.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear words, same blue button, same spot on every row. The last one is half hidden under that purple circle, but I can still see 'Add'.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg2": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg2.png",
+      "members": {
+        "screen1-f8": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen10-f5": {
+          "where": "top right corner of my chat with Deki, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Deki - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen11-f5": {
+          "where": "top right corner of my chat with Siquem Lsm, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Siquem Lsm - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen13-f5": {
+          "where": "top right corner of my chat with Krishna Bharti, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Krishna Bharti - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen14-f5": {
+          "where": "top right corner of my chat with Marco Peralta, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Marco Peralta - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen15-f5": {
+          "where": "top right corner of my chat with Krishna Bharti, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Krishna Bharti - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen17-f5": {
+          "where": "top right corner of my chat with Deki, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Deki - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen19-f5": {
+          "where": "top right corner of my chat with Fra Mendy, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Fra Mendy - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen20-f5": {
+          "where": "top right corner of my chat with Marco Peralta, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Marco Peralta - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen21-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen25-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen27-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen31-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen34-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "The purple one in a chat is chat details, the grey one next to 'People you may know' is an explanation of the list.",
+      "affects_navigation": "No - where they sit tells me which is which, and one is filled purple, the other a thin grey outline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They look different enough to me, and each sits next to what it's about. I'd get there.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg3": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg3.png",
+      "members": {
+        "screen4-f1": {
+          "where": "top left of the New message screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen7-f1": {
+          "where": "top left of the search screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen10-f1": {
+          "where": "top left of my chat with Deki, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen11-f1": {
+          "where": "top left of my chat with Siquem Lsm, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen13-f1": {
+          "where": "top left of my chat with Krishna Bharti, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen14-f1": {
+          "where": "top left of my chat with Marco Peralta, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen15-f1": {
+          "where": "top left of my chat with Krishna Bharti, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen17-f1": {
+          "where": "top left of my chat with Deki, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen19-f1": {
+          "where": "top left of my chat with Fra Mendy, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "top left of my chat with Marco Peralta, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen29-f1": {
+          "where": "top left of the Meta AI chat, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen30-f1": {
+          "where": "top left of the Meta AI chat, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen35-f1": {
+          "where": "top left of the Switch account screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "A left arrow at the top left is always back.",
+      "affects_navigation": "Yes, a lot - back has to be back or I lose my place. But I expect it to be.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same arrow, same corner every time. Easy.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg4": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg4.png",
+      "members": {
+        "screen8-f5": {
+          "where": "the New note screen, the black smiley under my picture next to GIF",
+          "expectation": "Lets me pick an emoji to put in my note.",
+          "confidence": "guessing"
+        },
+        "screen9-f5": {
+          "where": "the New note screen, the black smiley under my picture next to GIF",
+          "expectation": "Lets me pick an emoji to put in my note.",
+          "confidence": "guessing"
+        },
+        "screen10-f14": {
+          "where": "my chat with Deki, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen11-f18": {
+          "where": "my chat with Siquem Lsm, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen13-f14": {
+          "where": "my chat with Krishna Bharti, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen14-f17": {
+          "where": "my chat with Marco Peralta, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen15-f14": {
+          "where": "my chat with Krishna Bharti, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen17-f14": {
+          "where": "my chat with Deki, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen19-f16": {
+          "where": "my chat with Fra Mendy, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen20-f17": {
+          "where": "my chat with Marco Peralta, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "A smiley next to where I type means emojis.",
+      "affects_navigation": "Not really - worst case I get stickers instead of emojis and close it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Every smiley sits where I'm writing something, so I'd expect emojis or stickers each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg5": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg5.png",
+      "members": {
+        "screen1-f7": {
+          "where": "the main Chats list, the grey X on the 'New Facebook friend' row",
+          "expectation": "Gets rid of that row from my list.",
+          "confidence": "guessing"
+        },
+        "screen8-f1": {
+          "where": "top left of the New note screen",
+          "expectation": "Closes the note screen without posting.",
+          "confidence": "sure"
+        },
+        "screen9-f1": {
+          "where": "top left of the New note screen",
+          "expectation": "Closes the note screen without posting.",
+          "confidence": "sure"
+        },
+        "screen11-f9": {
+          "where": "my chat with Siquem Lsm, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        },
+        "screen12-f5": {
+          "where": "top right of Siquem's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        },
+        "screen14-f8": {
+          "where": "my chat with Marco Peralta, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        },
+        "screen16-f5": {
+          "where": "top right of Krishna's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        },
+        "screen18-f2": {
+          "where": "top right of Deki's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        },
+        "screen20-f8": {
+          "where": "my chat with Marco Peralta, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "An X means make this thing go away.",
+      "affects_navigation": "Only a little - if the X on the Chats list deletes the person rather than hiding the row I'd be annoyed, but it wouldn't lose me.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "X means close or dismiss everywhere I know. Each one is next to the thing it closes.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg6": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg6.png",
+      "members": {
+        "screen1-f9": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        },
+        "screen12-f3": {
+          "where": "top of Siquem's story, full screen, the three dots",
+          "expectation": "A menu of options for this story.",
+          "confidence": "sure"
+        },
+        "screen16-f3": {
+          "where": "top of Krishna's story, full screen, the three dots",
+          "expectation": "A menu of options for this story.",
+          "confidence": "sure"
+        },
+        "screen18-f1": {
+          "where": "top of Deki's story, full screen, the three dots",
+          "expectation": "A menu of options for this story.",
+          "confidence": "sure"
+        },
+        "screen21-f8": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        },
+        "screen25-f8": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        },
+        "screen27-f8": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        },
+        "screen31-f8": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        },
+        "screen34-f8": {
+          "where": "the main Chats list, the grey three dots on the right of 'People you may know'",
+          "expectation": "A menu of options for the suggestions, maybe hide them.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Three dots is always a menu of more options.",
+      "affects_navigation": "No - a menu just opens and I read it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Three dots is a menu. Fine.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg7": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg7.png",
+      "members": {
+        "screen10-f6": {
+          "where": "my chat with Deki, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Deki's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen11-f6": {
+          "where": "my chat with Siquem Lsm, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Siquem Lsm's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen13-f6": {
+          "where": "my chat with Krishna Bharti, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Krishna Bharti's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen14-f6": {
+          "where": "my chat with Marco Peralta, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Marco Peralta's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen15-f6": {
+          "where": "my chat with Krishna Bharti, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Krishna Bharti's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen17-f6": {
+          "where": "my chat with Deki, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Deki's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen19-f6": {
+          "where": "my chat with Fra Mendy, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Fra Mendy's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen19-f9": {
+          "where": "my chat with Fra Mendy, the tiny round photo next to their message bubble",
+          "expectation": "Probably opens Fra Mendy's profile.",
+          "confidence": "guessing"
+        },
+        "screen20-f6": {
+          "where": "my chat with Marco Peralta, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Marco Peralta's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "A big profile photo at the top of a chat is about that person.",
+      "affects_navigation": "No - if it shows the picture bigger instead of the profile I just go back.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's their face with their name under it, so it's about them either way.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg8": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg8.png",
+      "members": {
+        "screen1-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen21-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen25-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen27-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen31-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "top left corner of the People tab, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen33-f1": {
+          "where": "top left corner of the Notifications tab, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        },
+        "screen34-f1": {
+          "where": "top left corner of the main Chats list, three lines",
+          "expectation": "Opens the side menu.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Three lines top left is the menu.",
+      "affects_navigation": "No, same spot every time.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The menu button is in the same corner on every main tab.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg9": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg9.png",
+      "members": {
+        "screen1-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        },
+        "screen21-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        },
+        "screen25-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        },
+        "screen27-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        },
+        "screen31-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        },
+        "screen32-f7": {
+          "where": "the People tab, the purple-dotted circle floating at the bottom right",
+          "expectation": "No idea. Looks like a loading wheel, maybe Meta AI.",
+          "confidence": "no idea"
+        },
+        "screen33-f2": {
+          "where": "the Notifications tab, the purple-dotted circle floating at the bottom right",
+          "expectation": "No idea. Looks like a loading wheel, maybe Meta AI.",
+          "confidence": "no idea"
+        },
+        "screen34-f12": {
+          "where": "the main Chats list, the purple-dotted circle floating on the right, on top of the last 'Add friend' button",
+          "expectation": "No idea. It looks like something loading. Maybe it is the Meta AI thing.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "They look identical so I'd assume the same, I just don't know what.",
+      "affects_navigation": "Yes - I'd avoid it completely, and on the Chats list it sits on top of the last Add friend button so I could hit it by accident.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I can't tell what that purple dotted circle is - it looks like a loading wheel, not a button - and it floats over the 'Add friend' button on the person underneath, so I have to aim around it.",
+        "solution": "Put a word on it (like 'Meta AI') and don't let it sit on top of other buttons - or let me move it out of the way."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg10": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg10.png",
+      "members": {
+        "screen1-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen21-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen25-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen27-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen31-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen32-f8": {
+          "where": "bottom left tab of the People tab, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen33-f3": {
+          "where": "bottom left tab of the Notifications tab, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        },
+        "screen34-f14": {
+          "where": "bottom left tab of the main Chats list, speech bubble with 'Chats'",
+          "expectation": "Takes me to my list of chats.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the Chats tab with its name under it.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Labelled tab, same place, lights up blue when I'm on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg11": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg11.png",
+      "members": {
+        "screen1-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen21-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen25-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen27-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen31-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen32-f9": {
+          "where": "bottom middle tab of the People tab, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen33-f4": {
+          "where": "bottom middle tab of the Notifications tab, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        },
+        "screen34-f15": {
+          "where": "bottom middle tab of the main Chats list, two people with 'People'",
+          "expectation": "Shows my people / friends tab.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the People tab with its name.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Labelled tab, same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg12": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg12.png",
+      "members": {
+        "screen1-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen21-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen25-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen27-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen31-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen32-f10": {
+          "where": "bottom right tab of the People tab, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen33-f5": {
+          "where": "bottom right tab of the Notifications tab, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        },
+        "screen34-f16": {
+          "where": "bottom right tab of the main Chats list, bell with 'Notifications'",
+          "expectation": "Shows my notifications.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the Notifications tab with its name.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Labelled tab, same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg13": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg13.png",
+      "members": {
+        "screen10-f2": {
+          "where": "top bar of my chat with Deki, their little photo and name",
+          "expectation": "Opens Deki's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen11-f2": {
+          "where": "top bar of my chat with Siquem Lsm, their little photo and name",
+          "expectation": "Opens Siquem Lsm's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen13-f2": {
+          "where": "top bar of my chat with Krishna Bharti, their little photo and name",
+          "expectation": "Opens Krishna Bharti's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen14-f2": {
+          "where": "top bar of my chat with Marco Peralta, their little photo and name",
+          "expectation": "Opens Marco Peralta's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen15-f2": {
+          "where": "top bar of my chat with Krishna Bharti, their little photo and name",
+          "expectation": "Opens Krishna Bharti's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen17-f2": {
+          "where": "top bar of my chat with Deki, their little photo and name",
+          "expectation": "Opens Deki's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen19-f2": {
+          "where": "top bar of my chat with Fra Mendy, their little photo and name",
+          "expectation": "Opens Fra Mendy's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen20-f2": {
+          "where": "top bar of my chat with Marco Peralta, their little photo and name",
+          "expectation": "Opens Marco Peralta's details or profile.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In this picture, the one tagged screen10 · f2 hadn't finished drawing when the screenshot was taken — on the app the little round photo of the person shows there, like the others in this set. Judge it as it looks on the app.",
+        "In this picture, the one tagged screen17 · f2 hadn't finished drawing when the screenshot was taken — on the app the little round photo of the person shows there, like the others in this set. Judge it as it looks on the app."
+      ],
+      "same_expectation": "yes",
+      "same_expectation_why": "The name and photo at the top of a chat should open info about that person.",
+      "affects_navigation": "No - worst case it opens the same page as the 'i' and I go back.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place in every chat, with the person's name, so it's obviously about them.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg14": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg14.png",
+      "members": {
+        "screen10-f3": {
+          "where": "top right of my chat with Deki, the phone",
+          "expectation": "Rings Deki with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen11-f3": {
+          "where": "top right of my chat with Siquem Lsm, the phone",
+          "expectation": "Rings Siquem Lsm with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen13-f3": {
+          "where": "top right of my chat with Krishna Bharti, the phone",
+          "expectation": "Rings Krishna Bharti with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen14-f3": {
+          "where": "top right of my chat with Marco Peralta, the phone",
+          "expectation": "Rings Marco Peralta with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen15-f3": {
+          "where": "top right of my chat with Krishna Bharti, the phone",
+          "expectation": "Rings Krishna Bharti with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen17-f3": {
+          "where": "top right of my chat with Deki, the phone",
+          "expectation": "Rings Deki with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen19-f3": {
+          "where": "top right of my chat with Fra Mendy, the phone",
+          "expectation": "Rings Fra Mendy with a voice call straight away.",
+          "confidence": "sure"
+        },
+        "screen20-f3": {
+          "where": "top right of my chat with Marco Peralta, the phone",
+          "expectation": "Rings Marco Peralta with a voice call straight away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Phone means call.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Phone is a phone. I just have to not tap it by mistake.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg15": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg15.png",
+      "members": {
+        "screen10-f4": {
+          "where": "top right of my chat with Deki, the video camera",
+          "expectation": "Starts a video call with Deki.",
+          "confidence": "sure"
+        },
+        "screen11-f4": {
+          "where": "top right of my chat with Siquem Lsm, the video camera",
+          "expectation": "Starts a video call with Siquem Lsm.",
+          "confidence": "sure"
+        },
+        "screen13-f4": {
+          "where": "top right of my chat with Krishna Bharti, the video camera",
+          "expectation": "Starts a video call with Krishna Bharti.",
+          "confidence": "sure"
+        },
+        "screen14-f4": {
+          "where": "top right of my chat with Marco Peralta, the video camera",
+          "expectation": "Starts a video call with Marco Peralta.",
+          "confidence": "sure"
+        },
+        "screen15-f4": {
+          "where": "top right of my chat with Krishna Bharti, the video camera",
+          "expectation": "Starts a video call with Krishna Bharti.",
+          "confidence": "sure"
+        },
+        "screen17-f4": {
+          "where": "top right of my chat with Deki, the video camera",
+          "expectation": "Starts a video call with Deki.",
+          "confidence": "sure"
+        },
+        "screen19-f4": {
+          "where": "top right of my chat with Fra Mendy, the video camera",
+          "expectation": "Starts a video call with Fra Mendy.",
+          "confidence": "sure"
+        },
+        "screen20-f4": {
+          "where": "top right of my chat with Marco Peralta, the video camera",
+          "expectation": "Starts a video call with Marco Peralta.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Video camera means video call.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear and the same in every chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg16": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg16.png",
+      "members": {
+        "screen10-f7": {
+          "where": "my chat with Deki, grey 'View profile' button under their name",
+          "expectation": "Opens Deki's profile.",
+          "confidence": "sure"
+        },
+        "screen11-f7": {
+          "where": "my chat with Siquem Lsm, grey 'View profile' button under their name",
+          "expectation": "Opens Siquem Lsm's profile.",
+          "confidence": "sure"
+        },
+        "screen13-f7": {
+          "where": "my chat with Krishna Bharti, grey 'View profile' button under their name",
+          "expectation": "Opens Krishna Bharti's profile.",
+          "confidence": "sure"
+        },
+        "screen14-f7": {
+          "where": "my chat with Marco Peralta, grey 'View profile' button under their name",
+          "expectation": "Opens Marco Peralta's profile.",
+          "confidence": "sure"
+        },
+        "screen15-f7": {
+          "where": "my chat with Krishna Bharti, grey 'View profile' button under their name",
+          "expectation": "Opens Krishna Bharti's profile.",
+          "confidence": "sure"
+        },
+        "screen17-f7": {
+          "where": "my chat with Deki, grey 'View profile' button under their name",
+          "expectation": "Opens Deki's profile.",
+          "confidence": "sure"
+        },
+        "screen19-f7": {
+          "where": "my chat with Fra Mendy, grey 'View profile' button under their name",
+          "expectation": "Opens Fra Mendy's profile.",
+          "confidence": "sure"
+        },
+        "screen20-f7": {
+          "where": "my chat with Marco Peralta, grey 'View profile' button under their name",
+          "expectation": "Opens Marco Peralta's profile.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The button says View profile.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says exactly what it does.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg17": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg17.png",
+      "members": {
+        "screen10-f9": {
+          "where": "bottom left of my chat with Deki, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen11-f13": {
+          "where": "bottom left of my chat with Siquem Lsm, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen13-f9": {
+          "where": "bottom left of my chat with Krishna Bharti, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen14-f12": {
+          "where": "bottom left of my chat with Marco Peralta, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen15-f9": {
+          "where": "bottom left of my chat with Krishna Bharti, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen17-f9": {
+          "where": "bottom left of my chat with Deki, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen19-f11": {
+          "where": "bottom left of my chat with Fra Mendy, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        },
+        "screen20-f12": {
+          "where": "bottom left of my chat with Marco Peralta, the blue circle with a plus",
+          "expectation": "Opens more things I can send - location, files, that sort of thing.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The plus in the same spot in every chat.",
+      "affects_navigation": "No - I'd expect a list of extras and close it if it's not what I want.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same plus in the same corner of every chat. I'm only guessing what's behind it, but I'd guess the same every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg18": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg18.png",
+      "members": {
+        "screen10-f10": {
+          "where": "bottom row of my chat with Deki, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen11-f14": {
+          "where": "bottom row of my chat with Siquem Lsm, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen13-f10": {
+          "where": "bottom row of my chat with Krishna Bharti, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen14-f13": {
+          "where": "bottom row of my chat with Marco Peralta, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen15-f10": {
+          "where": "bottom row of my chat with Krishna Bharti, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen17-f10": {
+          "where": "bottom row of my chat with Deki, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen19-f12": {
+          "where": "bottom row of my chat with Fra Mendy, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        },
+        "screen20-f13": {
+          "where": "bottom row of my chat with Marco Peralta, the camera",
+          "expectation": "Opens the camera to take a photo to send.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Camera means take a photo.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same spot.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg19": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg19.png",
+      "members": {
+        "screen10-f11": {
+          "where": "bottom row of my chat with Deki, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen11-f15": {
+          "where": "bottom row of my chat with Siquem Lsm, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen13-f11": {
+          "where": "bottom row of my chat with Krishna Bharti, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen14-f14": {
+          "where": "bottom row of my chat with Marco Peralta, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen15-f11": {
+          "where": "bottom row of my chat with Krishna Bharti, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen17-f11": {
+          "where": "bottom row of my chat with Deki, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen19-f13": {
+          "where": "bottom row of my chat with Fra Mendy, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        },
+        "screen20-f14": {
+          "where": "bottom row of my chat with Marco Peralta, the picture icon",
+          "expectation": "Opens my photo gallery to send a picture.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Picture icon means my photos.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same spot.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg20": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg20.png",
+      "members": {
+        "screen10-f12": {
+          "where": "bottom row of my chat with Deki, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen11-f16": {
+          "where": "bottom row of my chat with Siquem Lsm, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen13-f12": {
+          "where": "bottom row of my chat with Krishna Bharti, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen14-f15": {
+          "where": "bottom row of my chat with Marco Peralta, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen15-f12": {
+          "where": "bottom row of my chat with Krishna Bharti, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen17-f12": {
+          "where": "bottom row of my chat with Deki, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen19-f14": {
+          "where": "bottom row of my chat with Fra Mendy, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        },
+        "screen20-f15": {
+          "where": "bottom row of my chat with Marco Peralta, the microphone",
+          "expectation": "Records a voice message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Microphone means voice message.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same spot.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg21": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg21.png",
+      "members": {
+        "screen10-f13": {
+          "where": "bottom right corner of my chat with Deki, the thumbs up",
+          "expectation": "Sends a thumbs up to Deki right away.",
+          "confidence": "sure"
+        },
+        "screen11-f17": {
+          "where": "bottom right corner of my chat with Siquem Lsm, the thumbs up",
+          "expectation": "Sends a thumbs up to Siquem Lsm right away.",
+          "confidence": "sure"
+        },
+        "screen13-f13": {
+          "where": "bottom right corner of my chat with Krishna Bharti, the thumbs up",
+          "expectation": "Sends a thumbs up to Krishna Bharti right away.",
+          "confidence": "sure"
+        },
+        "screen14-f16": {
+          "where": "bottom right corner of my chat with Marco Peralta, the thumbs up",
+          "expectation": "Sends a thumbs up to Marco Peralta right away.",
+          "confidence": "sure"
+        },
+        "screen15-f13": {
+          "where": "bottom right corner of my chat with Krishna Bharti, the thumbs up",
+          "expectation": "Sends a thumbs up to Krishna Bharti right away.",
+          "confidence": "sure"
+        },
+        "screen17-f13": {
+          "where": "bottom right corner of my chat with Deki, the thumbs up",
+          "expectation": "Sends a thumbs up to Deki right away.",
+          "confidence": "sure"
+        },
+        "screen19-f15": {
+          "where": "bottom right corner of my chat with Fra Mendy, the thumbs up",
+          "expectation": "Sends a thumbs up to Fra Mendy right away.",
+          "confidence": "sure"
+        },
+        "screen20-f16": {
+          "where": "bottom right corner of my chat with Marco Peralta, the thumbs up",
+          "expectation": "Sends a thumbs up to Marco Peralta right away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Thumbs up sends a like.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same in every chat. My only worry is it sends instantly, but that's not about these being different.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg22": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg22.png",
+      "members": {
+        "screen10-f8": {
+          "where": "my chat with Deki, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen11-f8": {
+          "where": "my chat with Siquem Lsm, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen13-f8": {
+          "where": "my chat with Krishna Bharti, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen15-f8": {
+          "where": "my chat with Krishna Bharti, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen17-f8": {
+          "where": "my chat with Deki, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen19-f8": {
+          "where": "my chat with Fra Mendy, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen22-f2": {
+          "where": "a pop-up explaining People you may know, blue 'Learn more' at the end of the text",
+          "expectation": "Opens a help page about how suggestions work.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Learn more opens more information about the sentence it's in.",
+      "affects_navigation": "No - the sentence right before it tells me what it's about.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Each 'Learn more' finishes a sentence, so I know what I'll learn about.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg23": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg23.png",
+      "members": {
+        "screen1-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        },
+        "screen21-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        },
+        "screen25-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        },
+        "screen27-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        },
+        "screen31-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        },
+        "screen34-f2": {
+          "where": "top right of the main Chats list, the square with a pencil",
+          "expectation": "Starts a new message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Pencil on a square is new message.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same corner on every Chats screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg24": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg24.png",
+      "members": {
+        "screen1-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        },
+        "screen21-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        },
+        "screen25-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        },
+        "screen27-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        },
+        "screen31-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        },
+        "screen34-f3": {
+          "where": "top right corner of the main Chats list, the Facebook 'f'",
+          "expectation": "Jumps out to the Facebook app.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the Facebook logo.",
+      "affects_navigation": "No - if it opens Facebook I'd just come back.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same logo, same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg25": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg25.png",
+      "members": {
+        "screen1-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        },
+        "screen25-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        },
+        "screen27-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        },
+        "screen31-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "the main Chats list, the bright blue strip 'Notifications are currently off. Tap to turn on.'",
+          "expectation": "Takes me to turn notifications on.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It's the same sentence on the same blue strip.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It tells me in words what tapping does. It's very bright and I'd like to get rid of it, but it doesn't move.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg26": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg26.png",
+      "members": {
+        "screen1-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen21-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen25-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen27-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen31-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen34-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same 'You' picture in the same spot.",
+      "affects_navigation": "No - they'd all be the same thing.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They're all identical and in the same place, so whatever it does, it'll do it every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg27": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg27.png",
+      "members": {
+        "screen21-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen25-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen27-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen31-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen34-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same 'What's up?' bubble in the same place.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same bubble, same place, every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg28": {
+      "kind": "glyph_group",
+      "sheet": "output/Messenger/functionality-detector/sheets/gg28.png",
+      "members": {
+        "screen24-f1": {
+          "where": "a half-open white sheet over the Chats list, the little grey bar at the top of the white sheet",
+          "expectation": "Lets me drag the sheet up or down, or close it.",
+          "confidence": "guessing"
+        },
+        "screen26-f1": {
+          "where": "a half-open white sheet over the Chats list, the little grey bar at the top of the white sheet",
+          "expectation": "Lets me drag the sheet up or down, or close it.",
+          "confidence": "guessing"
+        },
+        "screen28-f1": {
+          "where": "a half-open white sheet over the Chats list, the little grey bar at the top of the white sheet",
+          "expectation": "Lets me drag the sheet up or down, or close it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same little bar at the top of the same sheet.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's the handle on a sheet - drag or close. I'm more bothered by the spinning circle under it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg29": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg29.png",
+      "members": {
+        "screen29-f2": {
+          "where": "top right of the Meta AI chat, the blue plus next to the speech bubbles",
+          "expectation": "Starts a new chat with the AI, I think.",
+          "confidence": "guessing"
+        },
+        "screen29-f4": {
+          "where": "bottom left of the Meta AI chat, grey plus inside the 'Ask anything...' box",
+          "expectation": "Adds a photo or file to my question.",
+          "confidence": "guessing"
+        },
+        "screen30-f2": {
+          "where": "top right of the Meta AI chat, the blue plus next to the speech bubbles",
+          "expectation": "Starts a new chat with the AI, I think.",
+          "confidence": "guessing"
+        },
+        "screen30-f4": {
+          "where": "bottom left of the Meta AI chat, grey plus inside the 'Ask anything...' box",
+          "expectation": "Adds a photo or file to my question.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "The top one looks like 'new chat', the bottom one in the typing box looks like 'add a file' - two pluses meaning two things on one screen.",
+      "affects_navigation": "Yes - I'd stop and think every time I wanted to start fresh, and I'd probably hit the wrong one first.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Two pluses on the same screen and they almost certainly do different things - one at the top next to the speech bubbles, one inside the 'Ask anything' box. I'd have to guess which is 'new chat' and which is 'attach'.",
+        "solution": "Put a word on the top one, like 'New chat', so it can't be mixed up with the plus in the typing box."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-gg29-tc1",
+          "what_to_try": "Open Meta AI (the purple-dots circle). Press ONLY the plus at the top right and see what opens, then come back with the top-left arrow. Do NOT press the plus inside the 'Ask anything...' box.",
+          "real_if": "You couldn't have told from the screen which plus does what, or the top one did something you didn't expect.",
+          "not_real_if": "The top plus did what you predicted and the lower one's place in the typing box tells you it's different.",
+          "what_happened": "I tapped the purple circle and Meta AI opened with 'Where should we start?' and a list of suggestions. I pressed the blue plus at the top right. The title changed to 'New topic' and the plus and speech bubbles disappeared from the top. So it started a fresh chat, which is what I'd guessed. I never touched the plus in the 'Ask anything...' box. The top-left arrow took me straight out of Meta AI back to the tab I'd come from. Nothing on the top plus said 'new' before I tapped it, so I was right by guessing, not because it told me.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg30": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg30.png",
+      "members": {
+        "screen11-f10": {
+          "where": "my chat with Siquem Lsm, the 'Hey' wave bubble under 'Say hello.'",
+          "expectation": "Sends 'Hey' with a wave to Siquem Lsm straight away.",
+          "confidence": "sure"
+        },
+        "screen14-f9": {
+          "where": "my chat with Marco Peralta, the 'Hey' wave bubble under 'Say hello.'",
+          "expectation": "Sends 'Hey' with a wave to Marco Peralta straight away.",
+          "confidence": "sure"
+        },
+        "screen20-f9": {
+          "where": "my chat with Marco Peralta, the 'Hey' wave bubble under 'Say hello.'",
+          "expectation": "Sends 'Hey' with a wave to Marco Peralta straight away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Each says 'Hey' with a wave and sends it.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says what it'll send.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg31": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg31.png",
+      "members": {
+        "screen12-f7": {
+          "where": "bottom left of Siquem's story, full screen, the Messenger lightning-bubble mark",
+          "expectation": "No real idea. Maybe takes me back to my chats.",
+          "confidence": "no idea"
+        },
+        "screen16-f10": {
+          "where": "bottom left of Krishna's story, full screen, the Messenger lightning-bubble mark",
+          "expectation": "No real idea. Maybe takes me back to my chats.",
+          "confidence": "no idea"
+        },
+        "screen18-f9": {
+          "where": "bottom left of Deki's story, full screen, the Messenger lightning-bubble mark",
+          "expectation": "No real idea. Maybe takes me back to my chats.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same Messenger mark in the same corner of each story.",
+      "affects_navigation": "No - I wouldn't press it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I'm not sure what it does, but it's the same one on every story so I'd expect the same thing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg32": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg32.png",
+      "members": {
+        "screen12-f8": {
+          "where": "bottom right of Siquem's story, full screen, the red heart",
+          "expectation": "Sends a heart reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen16-f11": {
+          "where": "bottom right of Krishna's story, full screen, the red heart",
+          "expectation": "Sends a heart reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen18-f10": {
+          "where": "bottom right of Deki's story, full screen, the red heart",
+          "expectation": "Sends a heart reaction to the story.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Heart = love reaction.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg33": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg33.png",
+      "members": {
+        "screen12-f9": {
+          "where": "bottom right of Siquem's story, full screen, the laughing face",
+          "expectation": "Sends a laughing reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen16-f12": {
+          "where": "bottom right of Krishna's story, full screen, the laughing face",
+          "expectation": "Sends a laughing reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen18-f11": {
+          "where": "bottom right of Deki's story, full screen, the laughing face",
+          "expectation": "Sends a laughing reaction to the story.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Laughing face = laugh reaction.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, even though the two faces aren't quite drawn the same.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg34": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg34.png",
+      "members": {
+        "screen12-f10": {
+          "where": "bottom right corner of Siquem's story, full screen, the surprised face",
+          "expectation": "Sends a wow reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen16-f13": {
+          "where": "bottom right corner of Krishna's story, full screen, the surprised face",
+          "expectation": "Sends a wow reaction to the story.",
+          "confidence": "sure"
+        },
+        "screen18-f12": {
+          "where": "bottom right corner of Deki's story, full screen, the surprised face",
+          "expectation": "Sends a wow reaction to the story.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Wow face = wow reaction.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg35": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg35.png",
+      "members": {
+        "screen2-f1": {
+          "where": "top of the side menu that slides out, my picture and name 'Ally Cooper' with a down arrow",
+          "expectation": "Lets me switch accounts or see my profile.",
+          "confidence": "sure"
+        },
+        "screen3-f1": {
+          "where": "top of the side menu that slides out, my picture and name 'Ally Cooper' with a down arrow",
+          "expectation": "Lets me switch accounts or see my profile.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same name and arrow at the top of the menu.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place, my name on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg36": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg36.png",
+      "members": {
+        "screen2-f2": {
+          "where": "top right of the side menu that slides out, the gear",
+          "expectation": "Opens settings.",
+          "confidence": "sure"
+        },
+        "screen3-f2": {
+          "where": "top right of the side menu that slides out, the gear",
+          "expectation": "Opens settings.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Gear means settings.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg37": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg37.png",
+      "members": {
+        "screen2-f3": {
+          "where": "the side menu that slides out, 'Communities' row",
+          "expectation": "Opens my communities.",
+          "confidence": "sure"
+        },
+        "screen3-f3": {
+          "where": "the side menu that slides out, 'Communities' row",
+          "expectation": "Opens my communities.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Communities'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg38": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg38.png",
+      "members": {
+        "screen2-f4": {
+          "where": "the side menu that slides out, 'Message requests' row",
+          "expectation": "Shows messages from people who aren't my friends yet.",
+          "confidence": "sure"
+        },
+        "screen3-f4": {
+          "where": "the side menu that slides out, 'Message requests' row",
+          "expectation": "Shows messages from people who aren't my friends yet.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Message requests'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg39": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg39.png",
+      "members": {
+        "screen2-f5": {
+          "where": "the side menu that slides out, 'Archive' row",
+          "expectation": "Shows chats I've put away.",
+          "confidence": "sure"
+        },
+        "screen3-f5": {
+          "where": "the side menu that slides out, 'Archive' row",
+          "expectation": "Shows chats I've put away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Archive'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg40": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg40.png",
+      "members": {
+        "screen2-f6": {
+          "where": "the side menu that slides out, 'Friend requests' row with the blue dot",
+          "expectation": "Shows my friend requests.",
+          "confidence": "sure"
+        },
+        "screen3-f6": {
+          "where": "the side menu that slides out, 'Friend requests' row with the blue dot",
+          "expectation": "Shows my friend requests.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Friend requests'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg41": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg41.png",
+      "members": {
+        "screen2-f7": {
+          "where": "the side menu that slides out, 'Subscriptions' row",
+          "expectation": "Shows my Meta subscriptions.",
+          "confidence": "sure"
+        },
+        "screen3-f7": {
+          "where": "the side menu that slides out, 'Subscriptions' row",
+          "expectation": "Shows my Meta subscriptions.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Subscriptions'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg42": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg42.png",
+      "members": {
+        "screen2-f8": {
+          "where": "the side menu that slides out, 'Facebook Reels' row",
+          "expectation": "Opens Reels in Facebook - videos, so I'd avoid it.",
+          "confidence": "sure"
+        },
+        "screen3-f8": {
+          "where": "the side menu that slides out, 'Facebook Reels' row",
+          "expectation": "Opens Reels in Facebook - videos, so I'd avoid it.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Facebook Reels'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg43": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg43.png",
+      "members": {
+        "screen2-f9": {
+          "where": "the side menu that slides out, 'Facebook Events' row",
+          "expectation": "Opens Facebook Events.",
+          "confidence": "sure"
+        },
+        "screen3-f9": {
+          "where": "the side menu that slides out, 'Facebook Events' row",
+          "expectation": "Opens Facebook Events.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Facebook Events'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg44": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg44.png",
+      "members": {
+        "screen2-f10": {
+          "where": "the side menu that slides out, 'Facebook Dating' row",
+          "expectation": "Opens Facebook Dating.",
+          "confidence": "sure"
+        },
+        "screen3-f10": {
+          "where": "the side menu that slides out, 'Facebook Dating' row",
+          "expectation": "Opens Facebook Dating.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Labelled 'Facebook Dating'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It has words on it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg45": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg45.png",
+      "members": {
+        "screen8-f2": {
+          "where": "top right of the New note screen, the grey 'Share' button",
+          "expectation": "Posts my note - it's greyed out because I haven't written anything.",
+          "confidence": "sure"
+        },
+        "screen9-f2": {
+          "where": "top right of the New note screen, the grey 'Share' button",
+          "expectation": "Posts my note - it's greyed out because I haven't written anything.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Both say Share in the same place.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a word.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg46": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg46.png",
+      "members": {
+        "screen8-f3": {
+          "where": "the New note screen, music note under my picture",
+          "expectation": "Adds a song to my note.",
+          "confidence": "guessing"
+        },
+        "screen9-f3": {
+          "where": "the New note screen, music note under my picture",
+          "expectation": "Adds a song to my note.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Music note means music.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place on the note screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg47": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg47.png",
+      "members": {
+        "screen8-f4": {
+          "where": "the New note screen, GIF button under my picture",
+          "expectation": "Adds a GIF to my note.",
+          "confidence": "sure"
+        },
+        "screen9-f4": {
+          "where": "the New note screen, GIF button under my picture",
+          "expectation": "Adds a GIF to my note.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It says GIF.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says GIF.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg48": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg48.png",
+      "members": {
+        "screen8-f6": {
+          "where": "the New note screen, blue 'Change' in the line about who can see my note",
+          "expectation": "Lets me change who can see the note.",
+          "confidence": "sure"
+        },
+        "screen9-f6": {
+          "where": "the New note screen, blue 'Change' in the line about who can see my note",
+          "expectation": "Lets me change who can see the note.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Both say Change in the same sentence.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence tells me what I'm changing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg49": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg49.png",
+      "members": {
+        "screen12-f4": {
+          "where": "top right of Siquem's story, full screen, the speaker",
+          "expectation": "Turns the story sound off or on.",
+          "confidence": "sure"
+        },
+        "screen16-f4": {
+          "where": "top right of Krishna's story, full screen, the speaker",
+          "expectation": "Turns the story sound off or on.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Speaker means sound.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg50": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg50.png",
+      "members": {
+        "screen14-f10": {
+          "where": "my chat with Marco Peralta, the 'Hi, Marco!' greeting bubble",
+          "expectation": "Sends 'Hi, Marco!' straight away.",
+          "confidence": "sure"
+        },
+        "screen20-f10": {
+          "where": "my chat with Marco Peralta, the 'Hi, Marco!' greeting bubble",
+          "expectation": "Sends 'Hi, Marco!' straight away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same 'Hi, Marco!' bubble.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says what it sends.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg51": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg51.png",
+      "members": {
+        "screen14-f11": {
+          "where": "my chat with Marco Peralta, the 'Hello, Marco!' greeting bubble",
+          "expectation": "Sends 'Hello, Marco!' straight away.",
+          "confidence": "sure"
+        },
+        "screen20-f11": {
+          "where": "my chat with Marco Peralta, the 'Hello, Marco!' greeting bubble",
+          "expectation": "Sends 'Hello, Marco!' straight away.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same 'Hello, Marco!' bubble.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says what it sends.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg52": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg52.png",
+      "members": {
+        "screen16-f2": {
+          "where": "top of Krishna's story, full screen, the grey '4h' after the name",
+          "expectation": "Nothing, I think - it just says the story was posted 4 hours ago.",
+          "confidence": "guessing"
+        },
+        "screen18-f4": {
+          "where": "top of Deki's story, full screen, the grey '4h' after the name",
+          "expectation": "Nothing, I think - it just says the story was posted 4 hours ago.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "They're both just how long ago the story was posted.",
+      "affects_navigation": "No - I wouldn't try to press a time.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I'd never think of pressing '4h', so it doesn't get in my way.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg53": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg53.png",
+      "members": {
+        "screen25-f9": {
+          "where": "the main Chats list, the blue 'Cancel' button where 'Add friend' was",
+          "expectation": "Cancels the friend request I just sent.",
+          "confidence": "sure"
+        },
+        "screen27-f10": {
+          "where": "the main Chats list, the blue 'Cancel' button where 'Add friend' was",
+          "expectation": "Cancels the friend request I just sent.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Both say Cancel where Add friend used to be.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says Cancel. It is exactly the same bright blue as 'Add friend' though, so I'd have to read it before tapping, not go by colour.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg54": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg54.png",
+      "members": {
+        "screen29-f3": {
+          "where": "top right corner of the Meta AI chat, the two speech bubbles",
+          "expectation": "Shows my history of past chats with the AI - the pop-up under it is talking about history.",
+          "confidence": "guessing"
+        },
+        "screen30-f3": {
+          "where": "top right corner of the Meta AI chat, the two speech bubbles",
+          "expectation": "Shows my history of past chats with the AI - the pop-up under it is talking about history.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same two speech bubbles in the same corner.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place on both, and the pop-up under it hints it's about history.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg55": {
+      "kind": "glyph_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/gg55.png",
+      "members": {
+        "screen29-f5": {
+          "where": "bottom right of the Meta AI chat, the big blue round button with lines",
+          "expectation": "Talk to the AI out loud.",
+          "confidence": "guessing"
+        },
+        "screen30-f5": {
+          "where": "bottom right of the Meta AI chat, the big blue round button with lines",
+          "expectation": "Talk to the AI out loud.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same big blue button.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place on both. I'm guessing it's voice, but I'd guess the same both times.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg1": {
+      "kind": "function_group",
+      "sheet": "output/Messenger/functionality-detector/sheets/fg1.png",
+      "members": {
+        "screen10-f2": {
+          "where": "top bar of my chat with Deki, their little photo and name",
+          "expectation": "Opens Deki's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen10-f5": {
+          "where": "top right corner of my chat with Deki, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Deki - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen10-f6": {
+          "where": "my chat with Deki, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Deki's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen11-f2": {
+          "where": "top bar of my chat with Siquem Lsm, their little photo and name",
+          "expectation": "Opens Siquem Lsm's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen11-f5": {
+          "where": "top right corner of my chat with Siquem Lsm, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Siquem Lsm - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen11-f6": {
+          "where": "my chat with Siquem Lsm, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Siquem Lsm's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen13-f2": {
+          "where": "top bar of my chat with Krishna Bharti, their little photo and name",
+          "expectation": "Opens Krishna Bharti's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen13-f5": {
+          "where": "top right corner of my chat with Krishna Bharti, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Krishna Bharti - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen13-f6": {
+          "where": "my chat with Krishna Bharti, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Krishna Bharti's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen14-f2": {
+          "where": "top bar of my chat with Marco Peralta, their little photo and name",
+          "expectation": "Opens Marco Peralta's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen14-f5": {
+          "where": "top right corner of my chat with Marco Peralta, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Marco Peralta - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen14-f6": {
+          "where": "my chat with Marco Peralta, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Marco Peralta's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen15-f2": {
+          "where": "top bar of my chat with Krishna Bharti, their little photo and name",
+          "expectation": "Opens Krishna Bharti's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen15-f5": {
+          "where": "top right corner of my chat with Krishna Bharti, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Krishna Bharti - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen15-f6": {
+          "where": "my chat with Krishna Bharti, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Krishna Bharti's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen17-f2": {
+          "where": "top bar of my chat with Deki, their little photo and name",
+          "expectation": "Opens Deki's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen17-f5": {
+          "where": "top right corner of my chat with Deki, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Deki - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen17-f6": {
+          "where": "my chat with Deki, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Deki's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen19-f2": {
+          "where": "top bar of my chat with Fra Mendy, their little photo and name",
+          "expectation": "Opens Fra Mendy's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen19-f5": {
+          "where": "top right corner of my chat with Fra Mendy, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Fra Mendy - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen19-f6": {
+          "where": "my chat with Fra Mendy, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Fra Mendy's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        },
+        "screen20-f2": {
+          "where": "top bar of my chat with Marco Peralta, their little photo and name",
+          "expectation": "Opens Marco Peralta's details or profile.",
+          "confidence": "guessing"
+        },
+        "screen20-f5": {
+          "where": "top right corner of my chat with Marco Peralta, the purple filled 'i'",
+          "expectation": "Opens the details page for the chat with Marco Peralta - settings, shared photos, that kind of thing.",
+          "confidence": "sure"
+        },
+        "screen20-f6": {
+          "where": "my chat with Marco Peralta, the big round photo in the middle at the top of the conversation",
+          "expectation": "Opens Marco Peralta's profile or a bigger version of the picture.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [
+        "In this picture, the one tagged screen10 · f2 hadn't finished drawing when the screenshot was taken — on the app the little round photo of the person shows there, like the others in this set. Judge it as it looks on the app.",
+        "In this picture, the one tagged screen17 · f2 hadn't finished drawing when the screenshot was taken — on the app the little round photo of the person shows there, like the others in this set. Judge it as it looks on the app."
+      ],
+      "same_expectation": "unsure",
+      "same_expectation_why": "The name, the big photo and the 'i' all look like they're about the person, but the 'i' feels more like settings and the photo more like their profile.",
+      "affects_navigation": "Not much - all three are about the same person, so wherever I land I'd recognise it and go back.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They're all clearly about the person in the chat, and they're all near the top. If they open slightly different pages, that's fine.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg2": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg2.png",
+      "members": {
+        "screen4-f1": {
+          "where": "top left of the New message screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen7-f1": {
+          "where": "top left of the search screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen10-f1": {
+          "where": "top left of my chat with Deki, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen11-f1": {
+          "where": "top left of my chat with Siquem Lsm, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen13-f1": {
+          "where": "top left of my chat with Krishna Bharti, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen14-f1": {
+          "where": "top left of my chat with Marco Peralta, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen15-f1": {
+          "where": "top left of my chat with Krishna Bharti, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen17-f1": {
+          "where": "top left of my chat with Deki, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen19-f1": {
+          "where": "top left of my chat with Fra Mendy, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "top left of my chat with Marco Peralta, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        },
+        "screen35-f1": {
+          "where": "top left of the Switch account screen, the arrow pointing left",
+          "expectation": "Takes me back to where I was before.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same arrow, same corner.",
+      "affects_navigation": "Yes it would, but I expect them all to go back.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Back is back.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg4": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg4.png",
+      "members": {
+        "screen10-f14": {
+          "where": "my chat with Deki, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen11-f18": {
+          "where": "my chat with Siquem Lsm, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen13-f14": {
+          "where": "my chat with Krishna Bharti, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen14-f17": {
+          "where": "my chat with Marco Peralta, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen15-f14": {
+          "where": "my chat with Krishna Bharti, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen17-f14": {
+          "where": "my chat with Deki, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen19-f16": {
+          "where": "my chat with Fra Mendy, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        },
+        "screen20-f17": {
+          "where": "my chat with Marco Peralta, the blue smiley at the right end of the Message box",
+          "expectation": "Opens emojis and stickers to add to my message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same smiley next to the Message box in every chat.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same in every chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg5": {
+      "kind": "function_group",
+      "sheet": "output/Messenger/functionality-detector/sheets/fg5.png",
+      "members": {
+        "screen1-f5": {
+          "where": "the main Chats list, the white 'Drop a thought' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen1-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen4-f3": {
+          "where": "the New message screen, the 'New note' row near the top",
+          "expectation": "Starts a new note.",
+          "confidence": "sure"
+        },
+        "screen21-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen21-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen25-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen25-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen27-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen27-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen31-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen31-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        },
+        "screen34-f5": {
+          "where": "the main Chats list, the white 'What's up?' bubble above my picture",
+          "expectation": "Lets me write a short note / thought.",
+          "confidence": "guessing"
+        },
+        "screen34-f6": {
+          "where": "the main Chats list, my own grey blank picture with 'You' under it, first in the row of faces",
+          "expectation": "Lets me add a story, or maybe see my own profile.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "The bubble, my 'You' picture and the 'New note' row don't look like one job to me - 'You' in the row of faces looks like my story or profile, and the bubble's words keep changing ('Drop a thought', then 'What's up?').",
+      "affects_navigation": "Yes, a bit - if I wanted to post a note I wouldn't know to tap my own blank picture, and if I tapped my picture expecting my story I'd land somewhere else and lose my thread.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "My blank 'You' picture sits in the row of other people's faces, which I read as stories - I'd never guess it writes a note. And the bubble above it says 'Drop a thought' one time and 'What's up?' the next, so it doesn't feel like the same fixed thing.",
+        "solution": "Keep the bubble's words the same every time and put a small 'Note' or plus on it, so the bubble, my picture and the 'New note' menu row all look like the same thing."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-fg5-tc1",
+          "what_to_try": "On the home screen, press your blank 'You' picture, below the bubble, and see what opens. Close it with its X; don't type and don't press Share. Then press the bubble itself and compare. Finally, press the pencil-square at the top right and look at the 'New note' row there; you may press it, then close.",
+          "real_if": "You'd never have guessed the picture makes a note, or the changing bubble words make it feel like different things.",
+          "not_real_if": "Once tried, it is obviously one thing in different places.",
+          "what_happened": "Pressing my blank 'You' picture opened a 'New note' screen with my picture in the middle and a bubble saying 'Share a thought...'. It didn't open my story or profile like I'd expected. I closed it with the X. Pressing the 'What's up?' bubble opened exactly the same New note screen. The pencil-square opened 'New message', which has 'New note' as the second row under 'New story', and that also opened the same New note screen. So all three really are one thing, and once I'd seen the New note screen I recognised it each time. But the bubble has three wordings now: 'Drop a thought' and 'What's up?' on the home screen, and 'Share a thought...' inside. I'd still never have guessed that tapping my own face writes a note. (The phone was slow, so one of my close taps arrived late and opened the side menu and then Message requests. I backed out of both without changing anything.)",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "fg7": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg7.png",
+      "members": {
+        "screen2-f6": {
+          "where": "the side menu that slides out, 'Friend requests' row with the blue dot",
+          "expectation": "Shows my friend requests.",
+          "confidence": "sure"
+        },
+        "screen3-f6": {
+          "where": "the side menu that slides out, 'Friend requests' row with the blue dot",
+          "expectation": "Shows my friend requests.",
+          "confidence": "sure"
+        },
+        "screen32-f4": {
+          "where": "the People tab, the 'Friend requests' chip in the row near the top",
+          "expectation": "Shows my friend requests.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Both are labelled 'Friend requests'.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same words in both places, even if one is a menu row and one is a little chip.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg8": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg8.png",
+      "members": {
+        "screen11-f9": {
+          "where": "my chat with Siquem Lsm, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        },
+        "screen14-f8": {
+          "where": "my chat with Marco Peralta, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        },
+        "screen20-f8": {
+          "where": "my chat with Marco Peralta, small grey X above the 'Say hello' greeting bubbles",
+          "expectation": "Hides those suggested greetings.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The small X above the greetings in each chat.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same small X in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg9": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg9.png",
+      "members": {
+        "screen12-f5": {
+          "where": "top right of Siquem's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        },
+        "screen16-f5": {
+          "where": "top right of Krishna's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        },
+        "screen18-f2": {
+          "where": "top right of Deki's story, full screen",
+          "expectation": "Closes the story and takes me back.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The X in the top right of each story.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same X, same corner on every story.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg10": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg10.png",
+      "members": {
+        "screen16-f7": {
+          "where": "bottom of Krishna's story, full screen, the see-through quick reply the three heart-eye faces",
+          "expectation": "Sends that straight to Krishna as a reply to the story.",
+          "confidence": "guessing"
+        },
+        "screen16-f8": {
+          "where": "bottom of Krishna's story, full screen, the see-through quick reply 'love it!'",
+          "expectation": "Sends that straight to Krishna as a reply to the story.",
+          "confidence": "guessing"
+        },
+        "screen16-f9": {
+          "where": "bottom of Krishna's story, full screen, the see-through quick reply 'so handsome' with a heart",
+          "expectation": "Sends that straight to Krishna as a reply to the story.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Each one is a ready-made reply to the story.",
+      "affects_navigation": "No - though it would bother me that one tap sends it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They're all the same see-through bubbles in one row, so I'd expect each to send what it says.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg11": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg11.png",
+      "members": {
+        "screen8-f1": {
+          "where": "top left of the New note screen",
+          "expectation": "Closes the note screen without posting.",
+          "confidence": "sure"
+        },
+        "screen9-f1": {
+          "where": "top left of the New note screen",
+          "expectation": "Closes the note screen without posting.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same X top left of the note screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Close is close.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg12": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/fg12.png",
+      "members": {
+        "screen8-f5": {
+          "where": "the New note screen, the black smiley under my picture next to GIF",
+          "expectation": "Lets me pick an emoji to put in my note.",
+          "confidence": "guessing"
+        },
+        "screen9-f5": {
+          "where": "the New note screen, the black smiley under my picture next to GIF",
+          "expectation": "Lets me pick an emoji to put in my note.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same smiley under my picture on the note screen.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same place both times.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg4": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/cfg4.png",
+      "members": {
+        "screen1-f8": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen10-f8": {
+          "where": "my chat with Deki, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen11-f8": {
+          "where": "my chat with Siquem Lsm, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen13-f8": {
+          "where": "my chat with Krishna Bharti, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen15-f8": {
+          "where": "my chat with Krishna Bharti, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen17-f8": {
+          "where": "my chat with Deki, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen19-f8": {
+          "where": "my chat with Fra Mendy, blue 'Learn more' at the end of the encryption sentence",
+          "expectation": "Opens a help page about the encryption.",
+          "confidence": "sure"
+        },
+        "screen21-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen22-f2": {
+          "where": "a pop-up explaining People you may know, blue 'Learn more' at the end of the text",
+          "expectation": "Opens a help page about how suggestions work.",
+          "confidence": "sure"
+        },
+        "screen25-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen27-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen31-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        },
+        "screen34-f7": {
+          "where": "the main Chats list, the small grey outlined 'i' next to 'People you may know'",
+          "expectation": "Tells me why these people are being suggested to me.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The 'Learn more' links and the grey 'i' next to 'People you may know' all give me more information about something.",
+      "affects_navigation": "No - the words next to each tell me what the information is about.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "They look different (a blue link, a little 'i') but they're all 'tell me more' next to something that needs explaining. I'd get it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg8": {
+      "kind": "function_group",
+      "sheet": "inputs/Messenger/functionality-groups/groups/cfg8.png",
+      "members": {
+        "screen29-f2": {
+          "where": "top right of the Meta AI chat, the blue plus next to the speech bubbles",
+          "expectation": "Starts a new chat with the AI, I think.",
+          "confidence": "guessing"
+        },
+        "screen30-f2": {
+          "where": "top right of the Meta AI chat, the blue plus next to the speech bubbles",
+          "expectation": "Starts a new chat with the AI, I think.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same blue plus in the same corner of the Meta AI chat.",
+      "affects_navigation": "No.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "On its own, it's the same plus both times. (It's the one I'd mix up with the plus in the typing box, though.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "groups_reviewed": 67,
+    "no_problem": 64,
+    "navigate_with_difficulty": 3,
+    "cannot_handle": 0,
+    "same_expectation": {
+      "yes": 63,
+      "no": 3,
+      "unsure": 1
+    },
+    "tests_run": 2,
+    "opinions": {
+      "unchanged": 0,
+      "hardened": 0,
+      "softened": 2,
+      "reversed": 0
+    },
+    "out_of_scope": 5,
+    "not_executed": 0
+  },
+  "out_of_scope": [
+    {
+      "group": "story playback",
+      "why": "out of scope: motion. Anything that plays and moves on without me asking pulls my attention off the buttons; I'd want it to stay still until I tap.",
+      "category": "motion / autoplay"
+    },
+    {
+      "group": "gg28",
+      "why": "out of scope: motion. A blank sheet with just a spinner and nothing to read - I'd lose focus waiting.",
+      "category": "motion / autoplay"
+    },
+    {
+      "group": "gg1",
+      "why": "out of scope: target overlap - the floating circle sits over a real button, so I could tap the wrong one.",
+      "category": "control overlapping another button (target / layout)"
+    },
+    {
+      "group": "gg25",
+      "why": "out of scope: it's static, but it is the loudest thing on the screen and pulls my eye away from my chats every time.",
+      "category": "visual salience"
+    },
+    {
+      "group": "gg9",
+      "why": "I can't tell what that purple dotted circle is - it looks like a loading wheel, not a button - and it floats over the 'Add friend' button on the person underneath, so I have to aim around it.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    }
+  ]
+}

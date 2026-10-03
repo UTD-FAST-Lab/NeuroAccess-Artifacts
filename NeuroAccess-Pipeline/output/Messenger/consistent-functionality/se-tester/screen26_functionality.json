@@ -1,0 +1,58 @@
+{
+  "app": "Messenger",
+  "screen": "screen26",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen26_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen26_function_groups.png"
+  },
+  "elements": {
+    "screen26-f1": {
+      "kind": "icon",
+      "appearance": "short horizontal bar",
+      "state": null,
+      "location": "top centre of screen26",
+      "bounds": [
+        0,
+        300,
+        1080,
+        343
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "short horizontal bar: drag handle of a bottom sheet (drag, not tap) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "click to dismiss this bottom sheet",
+      "accessibility_text": "content_desc: 'Click to dismiss this bottom sheet'; talkback_label: 'Click to dismiss this bottom sheet'",
+      "context_reading": "loading bottom sheet with a grey bar at its top, over the dimmed home",
+      "observed_function": null,
+      "glyph_group": "gg28",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg28-tc-screen26-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen26 (loading bottom sheet with a grey bar at its top, over the dimmed home)",
+          "action": "note what is on screen, then tap the short horizontal bar at top centre of screen26",
+          "expected_result": "the same result as the other members of gg28 (short horizontal bar)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "the loading bottom sheet could not be reproduced live — 'See more suggestions' opened a full 'People you may know' page instead",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 1,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

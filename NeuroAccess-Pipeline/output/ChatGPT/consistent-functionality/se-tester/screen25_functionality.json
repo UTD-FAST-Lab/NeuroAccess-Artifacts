@@ -1,0 +1,261 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen25",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen25_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen25_function_groups.png"
+  },
+  "elements": {
+    "screen25-f1": {
+      "kind": "icon",
+      "appearance": "two horizontal lines, the lower one shorter",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "two-line menu (\"hamburger\" family) glyph - established menu convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Menu",
+      "accessibility_text": "content_desc: \"Menu\", talkback: \"Menu\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+      "glyph_group": "gg1",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f2": {
+      "kind": "icon",
+      "appearance": "square with a pencil across its corner",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        800,
+        90,
+        922,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "pencil across a square = compose / new - common in messaging apps; my reading",
+      "convention_confidence": "medium",
+      "declared_function": "New chat",
+      "accessibility_text": "content_desc: \"New chat\", talkback: \"New chat\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": "fg5",
+      "test_cases": [
+        {
+          "id": "cfg1-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "new empty chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "cfg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f3": {
+      "kind": "icon",
+      "appearance": "three vertical dots",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "vertical ellipsis = overflow menu - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Edit Menu",
+      "accessibility_text": "content_desc: \"Edit Menu\", talkback: \"Edit Menu\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen25-f4": {
+      "kind": "button",
+      "appearance": "the words \"@Create image\"",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        659,
+        275,
+        1038,
+        402
+      ],
+      "visible_label": "@Create image",
+      "convention_relied_on": "worded control (\"@Create image\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\", talkback: \"@Create image\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": "no effect: tapped the user's own sent bubble (\"@Create image a red apple\" and \"Hello\") in two live chats; nothing opened, no menu, no state change",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen25-f4-fd1",
+          "type": "function_determination",
+          "precondition": "the sheet or chat that holds it, live",
+          "action": "tap it and watch for any change",
+          "expected_result": "some action or state change",
+          "confirms_if": "n/a",
+          "overturns_if": "nothing happens and nothing changes - not a control",
+          "observed_result": "no effect: tapped the user's own sent bubble (\"@Create image a red apple\" and \"Hello\") in two live chats; nothing opened, no menu, no state change",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen25-f5": {
+      "kind": "icon",
+      "appearance": "plus sign in a circle",
+      "state": null,
+      "location": "middle left",
+      "bounds": [
+        32,
+        1359,
+        158,
+        1485
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus = add - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Attachment",
+      "accessibility_text": "content_desc: \"Attachment\", talkback: \"Attachment\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f6": {
+      "kind": "icon",
+      "appearance": "microphone",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        791,
+        1359,
+        917,
+        1485
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone = voice input - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Dictation",
+      "accessibility_text": "content_desc: \"Dictation\", talkback: \"Dictation\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen25-f7": {
+      "kind": "icon",
+      "appearance": "square in a filled circle",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        917,
+        1359,
+        1043,
+        1485
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "square in a circle = stop - established media convention; my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Stop",
+      "accessibility_text": "content_desc: \"Stop\", talkback: \"Stop\"",
+      "context_reading": "running chat \"@Create image ...\" with pencil-in-square and three dots in the header",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 1,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

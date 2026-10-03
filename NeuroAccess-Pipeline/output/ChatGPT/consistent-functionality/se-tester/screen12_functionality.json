@@ -1,0 +1,398 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen12",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen12_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen12_function_groups.png"
+  },
+  "elements": {
+    "screen12-f1": {
+      "kind": "icon",
+      "appearance": "two horizontal lines, the lower one shorter",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "two-line menu (\"hamburger\" family) glyph - established menu convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Menu",
+      "accessibility_text": "content_desc: \"Menu\", talkback: \"Menu\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+      "glyph_group": "gg1",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f2": {
+      "kind": "icon+label",
+      "appearance": "four-pointed sparkle with the words \"Get Plus\"",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_label": "Get Plus",
+      "convention_relied_on": "worded control (\"Get Plus\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Get Plus",
+      "accessibility_text": "content_desc: \"\", talkback: \"Get Plus\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the \"ChatGPT Plus\" plan page (Go / Plus switch, feature table, \"Upgrade for $19.99\")",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the \"ChatGPT Plus\" plan page (Go / Plus switch, feature table, \"Upgrade for $19.99\")",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the \"ChatGPT Plus\" plan page (Go / Plus switch, feature table, \"Upgrade for $19.99\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f3": {
+      "kind": "icon",
+      "appearance": "speech bubble with a broken outline",
+      "state": "off",
+      "location": "top right",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no established convention for a broken-outline bubble; product-specific, not a convention",
+      "convention_confidence": "low",
+      "declared_function": "Temporary chat",
+      "accessibility_text": "content_desc: \"Temporary chat\", talkback: \"Temporary chat\"",
+      "context_reading": "empty new chat",
+      "observed_function": "toggles temporary chat: off -> on (glyph gains a check, placeholder becomes \"Temporary chat\", \"This chat won't appear in history.\"), on -> off; in its greyed face (image suggestions open) it shows the tooltip \"This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.\"",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "toggles temporary chat: off -> on (glyph gains a check, placeholder becomes \"Temporary chat\", \"This chat won't appear in history.\"), on -> off; in its greyed face (image suggestions open) it shows the tooltip \"This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "toggles temporary chat: off -> on (glyph gains a check, placeholder becomes \"Temporary chat\", \"This chat won't appear in history.\"), on -> off; in its greyed face (image suggestions open) it shows the tooltip \"This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f4": {
+      "kind": "icon+label",
+      "appearance": "headphones with the words \"Start a voice chat\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        0,
+        1754,
+        1080,
+        1885
+      ],
+      "visible_label": "Start a voice chat",
+      "convention_relied_on": "worded control (\"Start a voice chat\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Start a voice chat",
+      "accessibility_text": "content_desc: \"\", talkback: \"Start a voice chat\"",
+      "context_reading": "empty new chat",
+      "observed_function": null,
+      "glyph_group": "gg10",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg10-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "the same effect for every member",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "fg3-tc2",
+          "type": "mixed_appearance",
+          "precondition": "empty new chat, live",
+          "action": "tap the \"Start a voice chat\" row and compare with the sound-wave circle",
+          "expected_result": "the same voice screen",
+          "confirms_if": "both reach the voice screen and nothing ties the two faces together",
+          "overturns_if": "they reach different things",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality",
+        "fg3": "Inconsistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen12-f5": {
+      "kind": "icon+label",
+      "appearance": "picture frame with the words \"Create an image or sticker\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        0,
+        1885,
+        1080,
+        2016
+      ],
+      "visible_label": "Create an image or sticker",
+      "convention_relied_on": "worded control (\"Create an image or sticker\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Create an image or sticker",
+      "accessibility_text": "content_desc: \"\", talkback: \"Create an image or sticker\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the image suggestions panel (Trending / Templates tiles) and puts \"Create image\" in the composer",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the image suggestions panel (Trending / Templates tiles) and puts \"Create image\" in the composer",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the image suggestions panel (Trending / Templates tiles) and puts \"Create image\" in the composer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f6": {
+      "kind": "icon+label",
+      "appearance": "pencil with the words \"Write or edit\"",
+      "state": null,
+      "location": "bottom centre",
+      "bounds": [
+        0,
+        2016,
+        1080,
+        2147
+      ],
+      "visible_label": "Write or edit",
+      "convention_relied_on": "worded control (\"Write or edit\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Write or edit",
+      "accessibility_text": "content_desc: \"\", talkback: \"Write or edit\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the \"Write or edit\" suggestions (three pencil rows with an X)",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the \"Write or edit\" suggestions (three pencil rows with an X)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the \"Write or edit\" suggestions (three pencil rows with an X)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f7": {
+      "kind": "icon",
+      "appearance": "plus sign in a circle",
+      "state": null,
+      "location": "bottom left",
+      "bounds": [
+        32,
+        2179,
+        158,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus = add - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Attachment",
+      "accessibility_text": "content_desc: \"Attachment\", talkback: \"Attachment\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the attachment popup: Camera / Photos / Files / Plugins / Think harder",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f8": {
+      "kind": "icon",
+      "appearance": "microphone",
+      "state": null,
+      "location": "bottom right",
+      "bounds": [
+        791,
+        2179,
+        917,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone = voice input - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": "Dictation",
+      "accessibility_text": "content_desc: \"Dictation\", talkback: \"Dictation\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the microphone permission dialog \"Enable ChatGPT to use your microphone? You will be redirected to Android settings...\" (microphone access is denied on the test device, so dictation itself could not start)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f9": {
+      "kind": "icon",
+      "appearance": "vertical sound-wave bars in a filled circle",
+      "state": null,
+      "location": "bottom right",
+      "bounds": [
+        917,
+        2179,
+        1043,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "sound-wave bars = audio / voice - moderately established; my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Start a voice conversation",
+      "accessibility_text": "content_desc: \"Start a voice conversation\", talkback: \"Start a voice conversation\"",
+      "context_reading": "empty new chat",
+      "observed_function": "opens the voice screen, which immediately shows \"Please enable microphone access in System Settings to use Voice.\" (microphone denied); Cancel returns to the chat",
+      "glyph_group": "gg8",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg8-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the voice screen, which immediately shows \"Please enable microphone access in System Settings to use Voice.\" (microphone denied); Cancel returns to the chat",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "opens the voice screen, which immediately shows \"Please enable microphone access in System Settings to use Voice.\" (microphone denied); Cancel returns to the chat",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg3-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "sound-wave circle: voice screen with the Voice microphone dialog",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "fg3": "Inconsistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "elements_in_issue_groups": 2,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 9,
+    "test_cases_not_executed": 2,
+    "provisional_verdicts": 2
+  }
+}

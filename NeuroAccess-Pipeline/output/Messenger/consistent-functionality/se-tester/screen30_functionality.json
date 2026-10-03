@@ -1,0 +1,215 @@
+{
+  "app": "Messenger",
+  "screen": "screen30",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen30_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen30_function_groups.png"
+  },
+  "elements": {
+    "screen30-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of screen30",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "arrow pointing left: back — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start?', '+ Ask anything…' field and blue sound-bars button",
+      "observed_function": "returned to the previous screen (the tab it was opened from)",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen30-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen30 (Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start)",
+          "action": "note what is on screen, then tap the arrow pointing left at top left of screen30",
+          "expected_result": "the same result as the other members of gg3 (arrow pointing left)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "returned to the previous screen (the tab it was opened from)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen30-f2": {
+      "kind": "icon",
+      "appearance": "plus sign",
+      "state": null,
+      "location": "top right of screen30",
+      "bounds": [
+        817,
+        74,
+        943,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus sign: add / new — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start?', '+ Ask anything…' field and blue sound-bars button",
+      "observed_function": "opened a fresh 'New topic' Meta AI conversation (nothing sent)",
+      "glyph_group": "gg29",
+      "function_group": "cfg8",
+      "test_cases": [
+        {
+          "id": "gg29-tc-screen30-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen30 (Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start)",
+          "action": "note what is on screen, then tap the plus sign at top right of screen30",
+          "expected_result": "the same result as the other members of gg29 (plus sign)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened a fresh 'New topic' Meta AI conversation (nothing sent)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality",
+        "cfg8": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen30-f3": {
+      "kind": "icon",
+      "appearance": "two overlapping speech bubbles",
+      "state": null,
+      "location": "top right of screen30",
+      "bounds": [
+        943,
+        74,
+        1069,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "two overlapping speech bubbles: conversations list — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start?', '+ Ask anything…' field and blue sound-bars button",
+      "observed_function": "opens a bottom sheet 'Your topics will appear here / Create topic'.",
+      "glyph_group": "gg54",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg54-tc-screen30-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen30 (Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start)",
+          "action": "note what is on screen, then tap the two overlapping speech bubbles at top right of screen30",
+          "expected_result": "the same result as the other members of gg54 (two overlapping speech bubbles)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens a bottom sheet 'Your topics will appear here / Create topic'.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg54": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen30-f4": {
+      "kind": "icon",
+      "appearance": "plus sign",
+      "state": null,
+      "location": "bottom left of screen30",
+      "bounds": [
+        37,
+        2179,
+        163,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus sign: add / new — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start?', '+ Ask anything…' field and blue sound-bars button",
+      "observed_function": null,
+      "glyph_group": "gg29",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg29-tc-screen30-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen30 (Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start)",
+          "action": "note what is on screen, then tap the plus sign at bottom left of screen30",
+          "expected_result": "the same result as the other members of gg29 (plus sign)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "Meta AI composer/voice control — messaging Meta AI is forbidden",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen30-f5": {
+      "kind": "icon",
+      "appearance": "vertical sound bars in a filled circle",
+      "state": null,
+      "location": "bottom right of screen30",
+      "bounds": [
+        922,
+        2179,
+        1047,
+        2304
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "vertical sound bars in a filled circle: voice input — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start?', '+ Ask anything…' field and blue sound-bars button",
+      "observed_function": null,
+      "glyph_group": "gg55",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg55-tc-screen30-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen30 (Meta AI page: back arrow, Meta AI mark and name, plus and two-bubbles at top right, a tip bubble, 'Where should we start)",
+          "action": "note what is on screen, then tap the vertical sound bars in a filled circle at bottom right of screen30",
+          "expected_result": "the same result as the other members of gg55 (vertical sound bars in a filled circle)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "Meta AI composer/voice control — messaging Meta AI is forbidden",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg55": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 2,
+    "provisional_verdicts": 3
+  }
+}

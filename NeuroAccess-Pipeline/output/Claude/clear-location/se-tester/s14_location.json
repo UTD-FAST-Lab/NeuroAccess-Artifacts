@@ -1,0 +1,33 @@
+{
+  "app": "Claude",
+  "screen": "s14",
+  "state_str": "4e8ddcd0df251fe9b5251370d786b8c7",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134026.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s14_header_nav.png",
+  "name": "the voice-input page with the language list dropped down",
+  "regions_read": [],
+  "identifier_found": "none; the dropdown covers the headline; visible text is the language list, the field label \"Speech Input Language\" and \"Continue\"",
+  "identifier_class": "none",
+  "accessibility_text": "no content_description anywhere on this state",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the only locating text on the page (the headline) is hidden under the dropdown; the language list names options, not a place",
+  "test_cases": [
+    {
+      "id": "s14-tc1",
+      "type": "verification",
+      "precondition": "voice-input page open",
+      "action": "tap the Speech Input Language field; scroll the list; then press Back",
+      "expected_result": "the headline is either visible somewhere while the list is open, or not",
+      "confirms_if": "no name for the page is visible while the list is open",
+      "overturns_if": "the headline or another name stays visible",
+      "observed_result": "list covered the headline throughout (English \u2026 Japanese as it scrolled); only the illustration and close X remained above; Back closed the list and \"Send messages to Claude using your voice.\" returned",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the dropdown covers the headline in every scroll position of the list; only the microphone drawing and the close X stay visible above it. Back closes the list and the headline returns \u2014 the loss lasts only while the list is open, but while it is open nothing names the page.",
+  "recommendation": "open the language list below the field or as a titled sheet (e.g. \"Speech input language\") so the page headline stays visible",
+  "provisional": false
+}

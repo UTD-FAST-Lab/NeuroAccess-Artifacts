@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s63",
+  "state_str": "d7dee8d7c5881ec16b8de942502e0940",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152554.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s63_header_nav.png",
+  "name": "story viewer over People",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "People",
+      "verdict_on_region": "page title readable but dimmed behind a scrim — still locates the page under the overlay"
+    },
+    {
+      "kind": "header",
+      "text": "Deki",
+      "verdict_on_region": "story author name in the viewer chrome with a close control — names whose story is open; accepted"
+    }
+  ],
+  "identifier_found": "\"People\"",
+  "identifier_class": "back_affordance_with_title",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s22 (same layout; content does not change the answer): Krishna Bharti's story showed \"Krishna Bharti 20h\" and X top-right; X returned to People. Same template as Deki's (s22). No reply or reaction touched",
+  "recommendation": null,
+  "provisional": false
+}

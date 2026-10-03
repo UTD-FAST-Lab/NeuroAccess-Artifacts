@@ -1,0 +1,49 @@
+{
+  "app": "Discord",
+  "screen": "s39",
+  "state_str": "aa72b6d3b5b58a24569f0805cb404778",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215946.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s39_header_nav.png",
+  "name": "the #general channel with the emoji / GIF / sticker picker open",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Welcome to Accessibility Testin's server",
+      "verdict_on_region": "names the server, but as the opening greeting of the channel's message history, not as a screen title; it sits in the scrolling message stream and moves up and away as soon as messages exist (seen live) — content, not counted as an identifier"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Emoji / GIFs / Stickers tab row of the expression picker; the current tab is drawn with a grey fill (declared: 'Emoji') and the fill followed each tab tapped live — locates within the picker only, counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' names the channel and stays visible (dimmed where a sheet covers the lower screen); picker/sheet headings name the panel",
+  "test_cases": [
+    {
+      "id": "s39-tc1",
+      "type": "active_state_verification",
+      "precondition": "app open on #general with the expression picker open",
+      "action": "tap Emoji, then Stickers, then GIFs; drag the picker to full height and scroll the GIF grid well past one screen",
+      "expected_result": "the tab highlight follows each tap, and '# general' stays visible above the picker",
+      "confirms_if": "the highlight does not move, or the channel name is covered with nothing else naming the place",
+      "overturns_if": "highlight moves with each tap and the channel name stays visible",
+      "observed_result": "the grey fill moved Emoji -> Stickers -> GIFs with each tap; at full height the top bar '# general' stayed visible, dimmed, above the sheet, and the tab row stayed pinned while the GIF grid scrolled two screens",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: the grey fill moved Emoji -> Stickers -> GIFs with each tap; at full height the top bar '# general' stayed visible, dimmed, above the sheet, and the tab row stayed pinned while the GIF grid scrolled two screens",
+  "recommendation": null,
+  "provisional": false
+}

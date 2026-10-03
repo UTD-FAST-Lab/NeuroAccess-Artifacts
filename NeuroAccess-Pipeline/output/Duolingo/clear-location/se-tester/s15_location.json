@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s15",
+  "state_str": "c046261059f061a08069fe0d84060a63",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185445.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s15_header_nav.png",
+  "name": "the widget offer over the Shop",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Add the Duolingo widget to your home screen to earn an XP Boost.",
+      "verdict_on_region": "content: describes an offer (the widget reward), not a place in the app"
+    }
+  ],
+  "identifier_found": "none that names a place: headline 'Add the Duolingo widget to your home screen to earn an XP Boost.' with ADD NOW / MAYBE LATER",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "a full-screen offer covering the Shop and its title; the headline describes an offer",
+  "test_cases": [
+    {
+      "id": "s15-tc1",
+      "type": "verification",
+      "precondition": "Shop open",
+      "action": "tap GET STARTED on Widget Reward, look for any title or close control, then tap MAYBE LATER",
+      "expected_result": "a title or the Shop header appears, or none does",
+      "confirms_if": "no title and the Shop header hidden",
+      "overturns_if": "a title naming the place appears",
+      "observed_result": "the offer filled the screen with no title and no X; the Shop header was hidden; MAYBE LATER returned to the Shop",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the headline names an offer, not a place; the way back is a text link (MAYBE LATER) rather than a close control",
+  "recommendation": "keep the Shop top bar (with its X) visible above the offer, or title it 'Widget reward'",
+  "provisional": false
+}

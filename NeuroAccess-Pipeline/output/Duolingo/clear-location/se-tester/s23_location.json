@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s23",
+  "state_str": "8c55c32e8cf30a09c2be2a4ca0534ee8",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185720.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s23_header_nav.png",
+  "name": "the Learn path (home)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SECTION 1, UNIT 1 / Order at a café",
+      "verdict_on_region": "content: names the course unit being studied, not a part of the app"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "the house tab highlighted in the bottom bar; unit banner 'SECTION 1, UNIT 1 / Order at a café'; a lesson pop-up 'Order at a café / Lesson 2 of 3 / CONTINUE +20 XP' sits over the path",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the bottom tab bar visibly highlights the house (Learn) tab; the unit banner names the course unit rather than the section, so the highlight carries the location",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the highlight moved with every tab tapped and stayed pinned with the banner while the path scrolled — a working active state, pixel-rendered though never declared selected:true; template carry from s5's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

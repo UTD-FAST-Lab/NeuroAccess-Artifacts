@@ -1,0 +1,575 @@
+{
+  "app": "PDFReader",
+  "screen": "screen1",
+  "image": "inputs/PDFReader/actionable-elements-highlighted/screen1_actionable_elements.png",
+  "elements": {
+    "screen1-a1": {
+      "kind": "icon",
+      "glyph": "gold crown with a red jewel",
+      "description": "gold crown picture in the top bar, left of the gear",
+      "location": "top right, first of two pictures",
+      "bounds": [
+        827,
+        78,
+        943,
+        194
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "resource_id iv_premium told me to watch for a premium/subscription page; no content_desc or talkback label exists; not used in the verdict",
+      "convention_relied_on": "a crown is used by some freemium apps to mark a paid tier, but it is not an established convention a first-time user of mobile apps would read as an action — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "no word anywhere near it, and a crown is decoration or a brand mark to a first-time user rather than a known control glyph",
+      "test_cases": [
+        {
+          "id": "screen1-a1-tc1",
+          "type": "verification",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "focus/long-press the crown to look for a tooltip or label, then tap it once and watch what opens",
+          "expected_result": "if a label, tooltip or caption appears on press, or the page it opens is plainly what a crown promises, the verdict changes",
+          "confirms_if": "no label or tooltip in any state, and the page it opens is not predictable from a crown",
+          "overturns_if": "a label/tooltip appears, or the outcome is what a first-time user would predict from the glyph",
+          "observed_result": "no label or tooltip appeared on press; the tap opened a full-screen subscription offer \"Try the Premium plan completely free\" with a \"Start Free Trial\" button and \"3 day free trial, then $29.99/year\" — nothing on the home screen said the crown leads to a paid-plan offer",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "no visible label in any state; the crown opened a paid subscription offer, which nothing on the screen announced",
+      "recommendation": "add a visible caption such as \"Premium\" (or \"Go Premium\") under or beside the crown",
+      "provisional": false
+    },
+    "screen1-a2": {
+      "kind": "icon",
+      "glyph": "gear with a wrench laid across it",
+      "description": "gear with a wrench laid across it, top bar far right",
+      "location": "top right corner",
+      "bounds": [
+        943,
+        78,
+        1059,
+        194
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "resource_id iv_setting told me to watch for a Settings page; no content_desc or talkback label; not used in the verdict",
+      "convention_relied_on": "gear = settings, an established mobile convention (the wrench overlay does not change the reading) — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but a gear is a widely known settings convention — common-icon exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a2-tc1",
+          "type": "verification",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the gear and observe",
+          "expected_result": "a settings page opens",
+          "confirms_if": "it opens something other than settings, making the convention misleading",
+          "overturns_if": "it opens a settings page",
+          "observed_result": "a page titled \"Settings\" opened with Keep screen on, Language, Set default reader, Add widget, Rate App, Share App, Privacy Policy, Terms of Use rows",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the gear opened the Settings page, exactly as the gear convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill-shaped chip reading \"PDF\" in the file-type row under the title (drawn as the current/selected item; tapping the current item changes nothing but the item carries the selected state, so it stays in scope)",
+      "location": "top, file-type row",
+      "bounds": [
+        32,
+        231,
+        221,
+        357
+      ],
+      "visible_text": "\"PDF\"",
+      "accessibility_text_consulted": "talkback_label \"PDF\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"PDF\" is a widely known document type; in a row of file types on a document reader the chip reads as \"show PDF files\", and the filled chip shows which is current",
+      "test_cases": [
+        {
+          "id": "screen1-a3-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the PDF chip",
+          "expected_result": "the PDF chip becomes the selected one and the list area switches to PDF documents",
+          "confirms_if": "the chip does something other than switch the file type",
+          "overturns_if": "the chip switches the selected file type",
+          "observed_result": "the PDF chip became the filled/selected chip and the content area showed the same no-file-access empty state (no files can be listed without access) — consistent with a file-type filter",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tap switched the selected file type to PDF, as the word on it predicts",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill-shaped chip reading \"HWP\" in the file-type row under the title",
+      "location": "top, second chip in the row",
+      "bounds": [
+        221,
+        231,
+        422,
+        357
+      ],
+      "visible_text": "\"HWP\"",
+      "accessibility_text_consulted": "talkback_label \"HWP\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "\"HWP\" is a file-format abbreviation (a Korean word-processor format) that a first-time user outside that market will not recognise; next to PDF/Word/Excel/PPT it reads as a file type, but nothing says which files or what pressing it changes",
+      "test_cases": [
+        {
+          "id": "screen1-a4-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the HWP chip and read what appears (reading: it shows HWP files)",
+          "expected_result": "the chip becomes selected and the list area shows, or explains, HWP files",
+          "confirms_if": "the tap only recolours the chip and nothing on screen says what HWP is or what changed",
+          "overturns_if": "the list area names or explains HWP files, disclosing the meaning of the abbreviation",
+          "observed_result": "the chip turned solid blue (the strip's SET button also turned blue); the content area stayed the identical \"To continue, please allow file access on your device.\" empty state; no text explained HWP",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "screen1-a4-tc2",
+          "type": "unexpected",
+          "precondition": "HWP chip already selected",
+          "action": "tap the HWP chip again",
+          "expected_result": "nothing further happens",
+          "confirms_if": "nothing happens and still nothing explains HWP",
+          "overturns_if": "a description or help appears on a second press",
+          "observed_result": "no change on screen after 50 s",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "pressing it only recoloured the chip; neither the chip nor the result ever says what \"HWP\" is",
+      "recommendation": "spell out the format, e.g. \"Hangul (HWP)\" or \"HWP documents\", or drop the chip in locales where the format is not used",
+      "provisional": false
+    },
+    "screen1-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill-shaped chip reading \"Word\" in the file-type row under the title",
+      "location": "top, file-type row",
+      "bounds": [
+        422,
+        231,
+        628,
+        357
+      ],
+      "visible_text": "\"Word\"",
+      "accessibility_text_consulted": "talkback_label \"Word\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"Word\" is a widely known document type; in a row of file types on a document reader the chip reads as \"show Word files\", and the filled chip shows which is current",
+      "test_cases": [
+        {
+          "id": "screen1-a5-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the Word chip",
+          "expected_result": "the Word chip becomes the selected one and the list area switches to Word documents",
+          "confirms_if": "the chip does something other than switch the file type",
+          "overturns_if": "the chip switches the selected file type",
+          "observed_result": "the Word chip became the filled/selected chip and the content area showed the same no-file-access empty state (no files can be listed without access) — consistent with a file-type filter",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tap switched the selected file type to Word, as the word on it predicts",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill-shaped chip reading \"Excel\" in the file-type row under the title",
+      "location": "top, file-type row",
+      "bounds": [
+        628,
+        231,
+        835,
+        357
+      ],
+      "visible_text": "\"Excel\"",
+      "accessibility_text_consulted": "talkback_label \"Excel\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"Excel\" is a widely known document type; in a row of file types on a document reader the chip reads as \"show Excel files\", and the filled chip shows which is current",
+      "test_cases": [
+        {
+          "id": "screen1-a6-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the Excel chip",
+          "expected_result": "the Excel chip becomes the selected one and the list area switches to Excel documents",
+          "confirms_if": "the chip does something other than switch the file type",
+          "overturns_if": "the chip switches the selected file type",
+          "observed_result": "the Excel chip became the filled/selected chip and the content area showed the same no-file-access empty state (no files can be listed without access) — consistent with a file-type filter",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tap switched the selected file type to Excel, as the word on it predicts",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill-shaped chip reading \"PPT\" in the file-type row under the title",
+      "location": "top, file-type row",
+      "bounds": [
+        835,
+        231,
+        1024,
+        357
+      ],
+      "visible_text": "\"PPT\"",
+      "accessibility_text_consulted": "talkback_label \"PPT\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"PPT\" is a widely known document type; in a row of file types on a document reader the chip reads as \"show PPT files\", and the filled chip shows which is current",
+      "test_cases": [
+        {
+          "id": "screen1-a7-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the PPT chip",
+          "expected_result": "the PPT chip becomes the selected one and the list area switches to PPT documents",
+          "confirms_if": "the chip does something other than switch the file type",
+          "overturns_if": "the chip switches the selected file type",
+          "observed_result": "the PPT chip became the filled/selected chip and the content area showed the same no-file-access empty state (no files can be listed without access) — consistent with a file-type filter",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the tap switched the selected file type to PPT, as the word on it predicts",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a8": {
+      "kind": "icon",
+      "glyph": "small thin light-grey X",
+      "description": "small faint grey X at the top-left corner of the \"Set as default reader\" strip",
+      "location": "left end of the strip under the chips",
+      "bounds": [
+        0,
+        378,
+        105,
+        483
+      ],
+      "visible_text": "none on the control; the strip it sits on reads \"Set as default reader\"",
+      "accessibility_text_consulted": "resource_id iv_alert_set_default_close told me to watch for the strip closing; no label; not used in the verdict",
+      "convention_relied_on": "X = close/dismiss, an established convention — my reading, confidence high (its faintness is a visibility matter, out of scope here)",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but an X on a banner is the standard dismiss convention — common-icon exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a8-tc1",
+          "type": "verification",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state), \"Set as default reader\" strip showing",
+          "action": "tap the X",
+          "expected_result": "the strip closes",
+          "confirms_if": "it does something else (opens a page, sets a default)",
+          "overturns_if": "the strip closes and nothing else happens",
+          "observed_result": "the \"Set as default reader\" strip disappeared and the page moved up; nothing else changed; the strip returned after the app was restarted",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X dismissed the strip, exactly as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "red pill \"SET\" at the right end of the \"Set as default reader\" strip",
+      "location": "right end of the strip under the chips",
+      "bounds": [
+        872,
+        378,
+        1080,
+        504
+      ],
+      "visible_text": "\"SET\", with the strip text \"Set as default reader\" beside it",
+      "accessibility_text_consulted": "talkback_label \"SET\" repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"SET\" alone is terse, but the strip it belongs to reads \"Set as default reader\", which tells the user what it sets",
+      "test_cases": [
+        {
+          "id": "screen1-a9-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state), strip showing",
+          "action": "tap SET",
+          "expected_result": "a step towards making this app the default PDF reader",
+          "confirms_if": "it does something unrelated to the default reader",
+          "overturns_if": "it starts the default-reader step",
+          "observed_result": "a bottom sheet opened: an illustration of the system \"Just once / Always\" chooser, \"The fastest way to read PDF files\", \"Set PDF Reader, PDF Viewer as your default app\", with \"Set as default\" and \"Later\" buttons",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "SET opened the default-reader sheet, which is what the strip text beside it announces",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a10": {
+      "kind": "button",
+      "glyph": null,
+      "description": "dark pill button \"Allow Access\" under the empty-state message",
+      "location": "centre of the screen",
+      "bounds": [
+        303,
+        1254,
+        776,
+        1380
+      ],
+      "visible_text": "\"Allow Access\", under the copy \"To continue, please allow file access on your device.\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the button text and the sentence above it say plainly that it grants file access",
+      "test_cases": [
+        {
+          "id": "screen1-a10-tc1",
+          "type": "expected",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap Allow Access, observe, then return with Back without toggling anything",
+          "expected_result": "a place to grant file access opens",
+          "confirms_if": "it opens something unrelated to file access",
+          "overturns_if": "the file-access permission place opens",
+          "observed_result": "the Android system page \"All files access\" opened directly, showing \"Allow access to manage all files\" (switch off); returned with Back without touching the switch",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the button took the user straight to the system file-access page it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a11": {
+      "kind": "icon",
+      "glyph": "white corner brackets with a horizontal line through the middle, on a black circle",
+      "description": "round black floating button with white corner brackets and a line through the middle",
+      "location": "lower right, above the bottom bar",
+      "bounds": [
+        870,
+        1860,
+        1038,
+        2028
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Scan to PDF\" told me to watch for a scanner; not used in the verdict",
+      "convention_relied_on": "four corner brackets with a line across = viewfinder / scan (QR or document) — an established scanning convention, my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled; the viewfinder glyph conventionally means \"scan\" — common-icon exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a11-tc1",
+          "type": "verification",
+          "precondition": "app open on the home screen (live app matches the capture: no file access granted, \"To continue, please allow file access on your device.\" empty state)",
+          "action": "tap the round button and observe (do not grant any permission)",
+          "expected_result": "a scanner / camera view opens",
+          "confirms_if": "it does something other than open a scanner",
+          "overturns_if": "a scanning screen opens, matching the viewfinder convention",
+          "observed_result": "no scanner opened: a dialog \"Request permission to access all files — To read and edit your document files, please allow \\\"PDF Reader, PDF Viewer\\\" to access all your files.\" with a single \"GO TO SET\" button appeared; nothing mentioned scanning; dismissed with Back",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "the viewfinder glyph promised scanning but the tap produced an all-files permission request that never mentions scanning, so neither the glyph nor its result tells the user what the button does",
+      "recommendation": "give the button a visible label such as \"Scan to PDF\" (an extended floating button), and if file access is a prerequisite say so in the prompt (\"To save scans, allow file access\")",
+      "provisional": false
+    },
+    "screen1-a12": {
+      "kind": "button",
+      "glyph": null,
+      "description": "bottom-bar item with a glyph above the caption \"Home\" (drawn as the current/selected item; tapping the current item changes nothing but the item carries the selected state, so it stays in scope)",
+      "location": "bottom navigation bar",
+      "bounds": [
+        0,
+        2083,
+        270,
+        2230
+      ],
+      "visible_text": "\"Home\" caption under the glyph",
+      "accessibility_text_consulted": "talkback_label \"Home\" repeats the caption; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a captioned bottom-bar tab; \"Home\" names the section it opens, and the dark/filled item shows which section is current",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it opened the Home section, as its caption says — tested once on screen17-a18; this is a duplicate of that control and the verdict is carried here",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a13": {
+      "kind": "button",
+      "glyph": null,
+      "description": "bottom-bar item with a glyph above the caption \"Recent\"",
+      "location": "bottom navigation bar",
+      "bounds": [
+        270,
+        2083,
+        540,
+        2230
+      ],
+      "visible_text": "\"Recent\" caption under the glyph",
+      "accessibility_text_consulted": "talkback_label \"Recent\" repeats the caption; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a captioned bottom-bar tab; \"Recent\" names the section it opens, and the dark/filled item shows which section is current",
+      "test_cases": [
+        {
+          "id": "screen1-a13-tc1",
+          "type": "expected",
+          "precondition": "app open on another bottom-bar section",
+          "action": "tap Recent",
+          "expected_result": "the Recent section opens and the item becomes the highlighted one",
+          "confirms_if": "it opens something other than that section",
+          "overturns_if": "the Recent section opens",
+          "observed_result": "Recent became the highlighted item; the page kept the chip row and showed the same no-file-access empty state (no floating button)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it opened the Recent section, as its caption says",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a14": {
+      "kind": "button",
+      "glyph": null,
+      "description": "bottom-bar item with a glyph above the caption \"Favorite\"",
+      "location": "bottom navigation bar",
+      "bounds": [
+        540,
+        2083,
+        810,
+        2230
+      ],
+      "visible_text": "\"Favorite\" caption under the glyph",
+      "accessibility_text_consulted": "talkback_label \"Favorite\" repeats the caption; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a captioned bottom-bar tab; \"Favorite\" names the section it opens, and the dark/filled item shows which section is current",
+      "test_cases": [
+        {
+          "id": "screen1-a14-tc1",
+          "type": "expected",
+          "precondition": "app open on another bottom-bar section",
+          "action": "tap Favorite",
+          "expected_result": "the Favorite section opens and the item becomes the highlighted one",
+          "confirms_if": "it opens something other than that section",
+          "overturns_if": "the Favorite section opens",
+          "observed_result": "Favorite became the highlighted item; same chip row and no-file-access empty state (no floating button)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it opened the Favorite section, as its caption says",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a15": {
+      "kind": "button",
+      "glyph": null,
+      "description": "bottom-bar item with a glyph above the caption \"Tools\"",
+      "location": "bottom navigation bar",
+      "bounds": [
+        810,
+        2083,
+        1080,
+        2230
+      ],
+      "visible_text": "\"Tools\" caption under the glyph",
+      "accessibility_text_consulted": "talkback_label \"Tools\" repeats the caption; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a captioned bottom-bar tab; \"Tools\" names the section it opens, and the dark/filled item shows which section is current",
+      "test_cases": [
+        {
+          "id": "screen1-a15-tc1",
+          "type": "expected",
+          "precondition": "app open on another bottom-bar section",
+          "action": "tap Tools",
+          "expected_result": "the Tools section opens and the item becomes the highlighted one",
+          "confirms_if": "it opens something other than that section",
+          "overturns_if": "the Tools section opens",
+          "observed_result": "the Tools page opened (Convert / Edit / Manage tiles) with Tools highlighted",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it opened the Tools section, as its caption says",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 15,
+    "issues": 3,
+    "missing_purpose": 1,
+    "unclear_purpose": 2,
+    "clear_purpose": 12,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 15,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 14,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s33",
+  "state_str": "a8e62e93c4967ed186dffa0244138959",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215639.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s33_header_nav.png",
+  "name": "#general with the Finish setting up your server sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Finish setting up your server!",
+      "verdict_on_region": "heading of a bottom sheet listing setup steps; names the sheet, with '# general' still visible dimmed behind — counted"
+    }
+  ],
+  "identifier_found": "\"general\"; \"Finish setting up your server!\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' names the channel and stays visible (dimmed where a sheet covers the lower screen); picker/sheet headings name the panel",
+  "test_cases": [
+    {
+      "id": "s33-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "#general channel",
+      "action": "tap 'Set up your server'",
+      "expected_result": "a sheet titled 'Finish setting up your server!' rises with '# general' visible behind",
+      "confirms_if": "the sheet covers every place name",
+      "overturns_if": "heading names the sheet and the channel stays visible",
+      "observed_result": "reproduced the capture: sheet heading 'Finish setting up your server!', 'You have completed 0 of 4 steps.', four step rows and 'Skip these steps'; top bar '# general' visible dimmed above",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: reproduced the capture: sheet heading 'Finish setting up your server!', 'You have completed 0 of 4 steps.', four step rows and 'Skip these steps'; top bar '# general' visible dimmed above",
+  "recommendation": null,
+  "provisional": false
+}

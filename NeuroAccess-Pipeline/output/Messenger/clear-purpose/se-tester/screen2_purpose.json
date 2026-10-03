@@ -1,0 +1,300 @@
+{
+ "app": "Messenger",
+ "screen": "screen2",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen2_actionable_elements.png",
+ "elements": {
+  "screen2-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Ally Cooper'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    63,
+    912,
+    252
+   ],
+   "visible_text": "'Ally Cooper'",
+   "accessibility_text_consulted": "content_desc 'Logged in as, Ally Cooper, Tap to switch profile' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the account name with a down-chevron beside it reads as an account picker",
+   "test_cases": [
+    {
+     "id": "screen2-a1-tc1",
+     "type": "expected",
+     "precondition": "side menu open",
+     "action": "tap the name with the down arrow",
+     "expected_result": "an account chooser opens",
+     "confirms_if": "it opens something unrelated to accounts",
+     "overturns_if": "an account chooser opens",
+     "observed_result": "a 'Switch profile' page opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the name opened 'Switch profile' (signed-in account, 'Log into another Meta Account')",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a2": {
+   "kind": "icon",
+   "glyph": "gear",
+   "description": "gear",
+   "location": "top, right",
+   "bounds": [
+    742,
+    69,
+    912,
+    248
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Settings' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "gear = settings - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a gear with no label; gear is the established settings convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen2-a2-tc1",
+     "type": "verification",
+     "precondition": "side menu open",
+     "action": "tap the gear",
+     "expected_result": "settings open",
+     "confirms_if": "something other than settings opens",
+     "overturns_if": "settings open",
+     "observed_result": "Messenger's settings page opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the gear opened the settings page, matching the convention",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Communities'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    253,
+    912,
+    400
+   ],
+   "visible_text": "'Communities'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Communities, 1 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [
+    {
+     "id": "screen2-a3-tc1",
+     "type": "expected",
+     "precondition": "side menu open",
+     "action": "tap each row in turn and come back",
+     "expected_result": "each opens what its label names",
+     "confirms_if": "a row opens something its label does not name",
+     "overturns_if": "each matches",
+     "observed_result": "Communities -> 'Build a chat-based community' intro; Message requests -> 'Message requests' list; Archive -> 'Archive' list; Friend requests -> 'Facebook friend requests'; Subscriptions -> 'Meta Account - Subscriptions'; Facebook Reels / Events / Dating -> the Facebook app",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a4": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Message requests Drop a thought'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    400,
+    912,
+    547
+   ],
+   "visible_text": "'Message requests Drop a thought'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Message requests, 2 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a5": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Archive'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    547,
+    912,
+    694
+   ],
+   "visible_text": "'Archive'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Archive, 3 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a6": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'You: awww so sweet! 💖 Friend requests'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    820,
+    912,
+    967
+   ],
+   "visible_text": "'You: awww so sweet! 💖 Friend requests'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Friend requests, 1 of 1, 2 new messages' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a7": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Subscriptions Unread Fra Mendy. Find and manage your Meta subscriptions'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1093,
+    912,
+    1240
+   ],
+   "visible_text": "'Subscriptions Unread Fra Mendy. Find and manage your Meta subscriptions'",
+   "accessibility_text_consulted": "content_desc 'Unselected, SubscriptionsFind and manage your Meta subscriptions, 1 of 4' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Facebook Reels'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1240,
+    912,
+    1387
+   ],
+   "visible_text": "'Facebook Reels'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Facebook Reels, 2 of 4' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a9": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Marco Peralta. New Facebook Events'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1387,
+    912,
+    1534
+   ],
+   "visible_text": "'Marco Peralta. New Facebook Events'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Facebook Events, 3 of 4' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen2-a10": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'People you may know Facebook Dating'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1534,
+    912,
+    1681
+   ],
+   "visible_text": "'People you may know Facebook Dating'",
+   "accessibility_text_consulted": "content_desc 'Unselected, Facebook Dating, 4 of 4' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "each menu row has a glyph and a plain label naming its destination",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "each row opened the page its label names (Communities intro, Message requests, Archive, Facebook friend requests, Subscriptions, Facebook Reels/Events/Dating in the Facebook app) [test run once on screen2-a3 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 10,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 10,
+  "clear_via_common_icon_exemption": 1,
+  "detection_false_positives": 0,
+  "test_cases_executed": 3,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 10,
+  "instincts_overturned": 0,
+  "provisional_verdicts": 0
+ }
+}

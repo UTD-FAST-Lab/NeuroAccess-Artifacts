@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s54",
+  "state_str": "9c8d54f4a002eade84fca33f58b81923",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190304.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s54_header_nav.png",
+  "name": "another user's Friends list",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Baron Laqeas’s Friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "worded tab row; the current tab (\"FOLLOWERS\") is declared selected and drawn with a coloured label and underline — locates the user within the screen"
+    }
+  ],
+  "identifier_found": "back arrow, 'Baron Laqeas’s Friends', FOLLOWING/FOLLOWERS tabs with one underlined",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title plus visibly selected tab",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title and visible tab selection",
+  "recommendation": null,
+  "provisional": false
+}

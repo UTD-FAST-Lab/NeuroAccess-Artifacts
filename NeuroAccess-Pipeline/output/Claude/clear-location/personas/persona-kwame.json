@@ -1,0 +1,999 @@
+{
+  "persona": "persona-kwame",
+  "app": "Claude",
+  "screens": {
+    "s1": {
+      "where": "the greeting page with the writing box at the bottom",
+      "expectation": "The start page for a new conversation with Claude, before anything has been written.",
+      "confidence": "guessing",
+      "cue": "The writing box that says 'Chat with Claude...', the empty middle, and the greeting 'Back at it, Ally Cooper'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only large words are 'Back at it, Ally Cooper'. That is a greeting to a person, not the name of a place. I work out from the empty space and the 'Chat with Claude...' box at the bottom that this is where I start a new conversation, but I have to reason my way there; nothing simply tells me. I read the greeting two or three times to check whether it is meant to be the page name.",
+        "solution": "Put a plain page name at the top, such as 'New chat', in the same spot where other screens put their name. Keep the greeting if you like, but not as the only words."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "Looking back, the big words now said 'Good afternoon, Ally Cooper', not 'Back at it, Ally Cooper' as in the picture. I still had to work out from the 'Chat with Claude...' box that this is where I start a new conversation. When I dragged up and down, nothing moved and no page name appeared anywhere. The greeting even changes its wording, so I cannot use it as a landmark either.",
+          "what_they_did": "The app was already on the greeting page. I looked away for a moment, looked back and said where I was before touching anything. Then I dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the phone the greeting even changes with the time of day, so I cannot learn it as a landmark, and dragging the page never shows a name; I still have to work out where I am from the writing box.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "the side menu with nothing shaded",
+      "expectation": "The main menu that slides out from the left, listing Chats, Projects, Code and Artifacts.",
+      "confidence": "sure",
+      "cue": "The menu list itself and the big word 'Claude' at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I can tell I am in the menu, but the big name at the top, 'Claude', is only the app's name, and none of the four rows is shaded, so the menu does not tell me which part of the app I have come from or am in. When I open a menu to reorient, that is the one thing I need it to say.",
+        "solution": "Shade or mark the row for the part I am currently in, clearly and not faintly, and perhaps say 'Menu' or 'You are in: New chat' at the top."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t2",
+          "subjects": [
+            "s2"
+          ],
+          "task": "From the page with the greeting, tap the three lines at the top left to open the menu. Say which row, if any, shows the part of the app you came from. Then tap Chats, wait for it to open, open the menu again the same way, and compare.",
+          "real_if": "when opened from the greeting page, no row shows where you came from",
+          "not_real_if": "a row clearly shows where you came from",
+          "persona_report": "Opened from the greeting page, none of the four rows (Chats, Projects, Code, Artifacts) was shaded. There is also a 'Recents' section with two chats both called 'Untitled', and neither of those was marked. So nothing told me where I had come from. Opened again from Chats, the Chats row had a pale band behind it.",
+          "what_they_did": "From the greeting page I tapped the three lines at the top left, looked at the menu, tapped Chats, then opened the menu again from Chats.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Opened from the greeting page, the menu marks no row at all, and the 'Recents' list shows two chats both called 'Untitled', so it tells me nothing about where I came from.",
+      "provisional": false
+    },
+    "s3": {
+      "where": "the incognito chat page with the ghost",
+      "expectation": "A private, incognito conversation that will not be saved to my history.",
+      "confidence": "sure",
+      "cue": "The words 'Incognito chat' at the top, the ghost picture, and the sentence 'Incognito chats stay out of your history and search...'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name is at the top and the sentence underneath explains it in plain words, so I did not have to guess. The top words are rather small and pale grey, but I could read them.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "the plan prices page with the X",
+      "expectation": "A page for choosing a paid plan, Pro or Max.",
+      "confidence": "sure",
+      "cue": "The big heading 'Get more Claude' and the line 'Choose the plan right for you'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "There is a clear heading at the top with an explanation right under it, and an X to close. I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "the 'Add to chat' panel over the greeting page",
+      "expectation": "A panel that has come up from the bottom for adding things to my message: camera, photos, files.",
+      "confidence": "sure",
+      "cue": "The words 'Add to chat' at the top of the panel, and the three choices below it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel names itself plainly and the X closes it. The greyed page behind is still there, so I understand this is on top of where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "the 'Select model' panel over the greeting page",
+      "expectation": "A panel for choosing which Claude model answers me; Haiku 4.5 is ticked.",
+      "confidence": "sure",
+      "cue": "The words 'Select model' at the top of the panel and the tick next to Haiku 4.5.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It says what it is and the tick shows the current choice. Clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "the voice introduction page with the big microphone drawing",
+      "expectation": "An introduction page for talking to Claude with my voice instead of typing, before I start.",
+      "confidence": "guessing",
+      "cue": "The microphone drawing and the sentence 'Send messages to Claude using your voice.'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words are a sentence describing a feature, not the name of a page. I think I am at the start of voice mode, but I cannot tell whether this is a settings page, a one-time introduction, or a step in a sequence, and there is no step indicator. I would read it several times to be sure.",
+        "solution": "A short name at the top such as 'Voice mode' or 'Set up voice', and if this is step one of several, say so, for example 'Step 1 of 2'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t4",
+          "subjects": [
+            "s7",
+            "s15"
+          ],
+          "task": "From the page with the greeting, tap the small grey microphone picture in the writing box. Read the page as it is. Say whether this is a one-time introduction, a settings page, or a step in a sequence, and what, if anything, on the page tells you. Do not press Continue and do not change the language. Leave with the X at the top left.",
+          "real_if": "nothing on the page tells you what kind of page this is or whether steps follow",
+          "not_real_if": "the page makes clear what it is",
+          "persona_report": "It was the same page as the picture: a microphone drawing, 'Send messages to Claude using your voice.', three short lines, the 'Speech Input Language' box and Continue. Nothing says whether it is a one-time introduction, a settings page or a step in a sequence, and there is no step count. It came up as a panel with an X, which makes me guess it is a one-off introduction, but that is my guess, not something written there.",
+          "what_they_did": "From the greeting page I tapped the small grey microphone in the writing box, read the page without pressing Continue or changing the language, and left with the X.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The page still does not say whether it is an introduction, a settings page or a step, and the only hint is that it slides up with an X, which is my guess, not something the page tells me.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "the Chats list, empty",
+      "expectation": "The list of my conversations, which is empty at the moment.",
+      "confidence": "sure",
+      "cue": "The word 'Chats' at the top, the search box, and 'Your chats with Claude will show up here.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page name is at the top in the usual place and the message in the middle agrees with it. This is simple and clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "the side menu with Chats shaded",
+      "expectation": "The main menu opened from the Chats page; Chats is the shaded row.",
+      "confidence": "guessing",
+      "cue": "A very pale grey band behind 'Chats', and the Chats page just visible behind the menu on the right.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The shading behind 'Chats' is so faint that I first read it as nothing, the same as the other rows. Once I looked carefully I saw it. The big word at the top is only 'Claude', the app's name, so it does not help me.",
+        "solution": "Make the current row obviously different: darker shading, a bold word, or a marker beside it. It should not take careful looking."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t3",
+          "subjects": [
+            "s9",
+            "s44"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Chats. When the Chats page is open, open the menu again and, at a normal glance and without studying it, say which row is marked. Then tap Code, and once that page is open, open the menu again and do the same.",
+          "real_if": "you have to look carefully, or cannot see which row is marked",
+          "not_real_if": "the marked row is plain to you at a glance each time",
+          "persona_report": "Both times I picked out the marked row at a normal glance: a light grey rounded band behind 'Chats', and then behind 'Code'. On the real phone it was easier to see than in the still picture, though it is still a pale tint on an off-white background, with no bold text or other marker.",
+          "what_they_did": "Opened Chats, opened the menu and glanced at it; then tapped Code, and once Code had opened, opened the menu and glanced again.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the real phone I did see the pale band behind Chats at a glance; it is still only a faint tint, and I would prefer something bolder, but I could find my place.",
+      "provisional": false
+    },
+    "s10": {
+      "where": "the Chats list with a small All / Pinned menu open",
+      "expectation": "The Chats list, with a small menu open for choosing between all chats and pinned chats; All is ticked.",
+      "confidence": "sure",
+      "cue": "The word 'Chats' at the top, and the tick and blue colour next to 'All'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page name is still visible and the little menu shows which choice is current.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s11": {
+      "where": "the 'Add to project' panel with the back arrow",
+      "expectation": "A panel for choosing which project to put this chat in; there are no projects yet.",
+      "confidence": "sure",
+      "cue": "The words 'Add to project' at the top of the panel, the back arrow, and 'Search projects'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It names itself, it has a back arrow so I know I came from somewhere I can return to, and the text in the middle explains what projects are.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "the 'Add to chat' panel filling the whole screen",
+      "expectation": "The panel for adding things to my message, stretched up to fill the screen; web search is now switched on.",
+      "confidence": "sure",
+      "cue": "The words 'Add to chat' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It still names itself clearly at the top, and it matches the smaller version I saw before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "the 'Upgrade to use Pro' panel",
+      "expectation": "A panel telling me the model I picked needs a paid Pro plan.",
+      "confidence": "sure",
+      "cue": "The heading 'Upgrade to use Pro' and the line 'This model requires a Pro plan.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading and the sentence say the same thing plainly, and there is a back arrow.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "the voice introduction page with the language list open",
+      "expectation": "The voice introduction page, with a list open for choosing which language I will speak in.",
+      "confidence": "guessing",
+      "cue": "The microphone drawing, the 'Speech Input Language' box peeking out below the list, and the list of languages.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The list has covered the sentence that described the page, and there is no name anywhere. I have to piece together where I am from the microphone drawing and the small grey words 'Speech Input Language' half hidden under the list. It is a guess, and it costs me effort.",
+        "solution": "Keep a page name at the top that the list cannot cover, and give the list its own short title, such as 'Choose your speaking language'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t5",
+          "subjects": [
+            "s14"
+          ],
+          "task": "From the page with the greeting, tap the small microphone picture in the writing box (the grey one, not the round black button at the far right). On the page that opens, tap the box headed 'Speech Input Language' so its list drops down. Without choosing anything, say where you are. Then press the phone's Back button once to close the list, and compare. Do not press Continue. Leave with the X at the top left.",
+          "real_if": "while the list is open nothing tells you what page this is",
+          "not_real_if": "you can still tell what page this is while the list is open",
+          "persona_report": "With the list open, the sentence describing the page was covered. But the small grey heading 'Speech Input Language' stayed fully visible just below the list, and the microphone drawing stayed above it. So I could tell I was choosing the language I would speak in on the voice page. In the picture I thought the heading was half hidden; on the phone it was not. Back closed the list and English was still chosen.",
+          "what_they_did": "On the same voice page I tapped the 'Speech Input Language' box so its list dropped down, said where I was without choosing anything, pressed the phone's Back button once to close it, and left with the X.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "With the list open, the words 'Speech Input Language' stayed fully visible under it, so I could tell what I was choosing; the page's own name is still covered, which is a smaller problem than I thought.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "the voice introduction page after choosing English (India)",
+      "expectation": "The same voice introduction page, now with English (India) chosen.",
+      "confidence": "guessing",
+      "cue": "The microphone drawing, the sentence 'Send messages to Claude using your voice.', and 'English (India)' in the language box.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as the first time I saw this page: the big words describe a feature rather than name a place, and I cannot tell whether this is a settings page or a first step.",
+        "solution": "A short page name at the top, such as 'Voice mode', and a step indicator if it is part of a sequence."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t4",
+          "subjects": [
+            "s7",
+            "s15"
+          ],
+          "task": "From the page with the greeting, tap the small grey microphone picture in the writing box. Read the page as it is. Say whether this is a one-time introduction, a settings page, or a step in a sequence, and what, if anything, on the page tells you. Do not press Continue and do not change the language. Leave with the X at the top left.",
+          "real_if": "nothing on the page tells you what kind of page this is or whether steps follow",
+          "not_real_if": "the page makes clear what it is",
+          "persona_report": "It was the same page as the picture: a microphone drawing, 'Send messages to Claude using your voice.', three short lines, the 'Speech Input Language' box and Continue. Nothing says whether it is a one-time introduction, a settings page or a step in a sequence, and there is no step count. It came up as a panel with an X, which makes me guess it is a one-off introduction, but that is my guess, not something written there.",
+          "what_they_did": "From the greeting page I tapped the small grey microphone in the writing box, read the page without pressing Continue or changing the language, and left with the X.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "This is the same voice page, and nothing on it tells me what kind of page it is or whether more steps follow.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "the greeting page with the microphone warning",
+      "expectation": "The start page for a new conversation, with a warning that the microphone is not allowed.",
+      "confidence": "guessing",
+      "cue": "The writing box at the bottom, the greeting 'Back at it, Ally Cooper', and the warning box.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only large words are 'Back at it, Ally Cooper'. That is a greeting to a person, not the name of a place. I work out from the empty space and the 'Chat with Claude...' box at the bottom that this is where I start a new conversation, but I have to reason my way there; nothing simply tells me. I read the greeting two or three times to check whether it is meant to be the page name. The warning box adds another thing to read, and it does not name the page either.",
+        "solution": "Put a plain page name at the top, such as 'New chat', in the same spot where other screens put their name. Keep the greeting if you like, but not as the only words."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "Looking back, the big words now said 'Good afternoon, Ally Cooper', not 'Back at it, Ally Cooper' as in the picture. I still had to work out from the 'Chat with Claude...' box that this is where I start a new conversation. When I dragged up and down, nothing moved and no page name appeared anywhere. The greeting even changes its wording, so I cannot use it as a landmark either.",
+          "what_they_did": "The app was already on the greeting page. I looked away for a moment, looked back and said where I was before touching anything. Then I dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It is the same page underneath the warning, and the phone showed that the greeting changes its words, so there is even less to hold on to than I thought.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "the Projects list, empty",
+      "expectation": "The list of my projects, which is empty.",
+      "confidence": "sure",
+      "cue": "The word 'Projects' at the top and 'Search projects' in the box.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear page name at the top, matching the search box and the explanation.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "the Projects list with a Yours / Archived menu open",
+      "expectation": "The Projects list, with a menu open for choosing my projects or archived ones; Yours is ticked.",
+      "confidence": "sure",
+      "cue": "The word 'Projects' at the top and the tick next to 'Yours'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Page name stays visible and the menu shows the current choice.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "the Projects page showing archived projects",
+      "expectation": "The archived part of Projects, which is empty.",
+      "confidence": "guessing",
+      "cue": "The words 'No archived projects' in the middle, and the blue round button at top right with a box picture.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top still says only 'Projects', exactly as it did before, so the heading does not tell me I am now in the archived section. I only learn it from the grey sentence in the middle, and that sentence would disappear if there were archived projects to show. The blue button suggests something is switched on, but I cannot tell what from the picture alone.",
+        "solution": "Change the heading to say 'Archived projects', or put a clear label under it such as 'Showing: Archived', in words and not only as a coloured picture."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t8",
+          "subjects": [
+            "s19"
+          ],
+          "task": "Open the menu and tap Projects. Tap the small picture at the top right and choose Archived. Look only at the top of the screen and say which part of Projects you are in. Then put it back: small picture at the top right, choose Yours.",
+          "real_if": "the top of the screen does not tell you that you are now looking at archived projects",
+          "not_real_if": "the top of the screen tells you which part of Projects you are in",
+          "persona_report": "With Archived chosen, the top of the screen still says only 'Projects'. The small picture at the right turned into a blue circle with a box drawing. The word 'Archived' appears only in the grey sentence in the middle, 'No archived projects'. Putting it back to Yours worked and the blue circle went away.",
+          "what_they_did": "I opened the menu, tapped Projects, tapped the small picture at the top right, chose Archived, looked at the top, then put it back to Yours the same way.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The top still says only 'Projects' with a blue box picture; I only learn that I am in the archived part from the sentence in the middle.",
+      "provisional": false
+    },
+    "s20": {
+      "where": "the page with the pretend coding chat and 'Upgrade for Claude Code'",
+      "expectation": "An advertisement page for Claude Code, which needs an upgrade; the top half is a sample conversation.",
+      "confidence": "guessing",
+      "cue": "The heading 'Upgrade for Claude Code' half way down, and the buttons 'Upgrade' and 'Return to chat'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top half looks exactly like a real conversation, with a message 'Make Clawd dance' and code, so at first I thought I was inside a chat. The only name is half way down the screen, and I only reached it after reading the code. Nothing at the top tells me this is the Code section.",
+        "solution": "Put the name 'Code' at the top where the other pages have theirs, and make the example conversation look clearly like a picture or an example, for example labelled 'Example'."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t6",
+          "subjects": [
+            "s20"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Code. When it opens, look only at the top third of the screen for a few seconds and say where you are. Then read the rest of the page. Then open the menu again and see which row is marked. Do not press Upgrade; leave by opening the menu and tapping Chats.",
+          "real_if": "the top of the page does not tell you where you are and you have to read down to the middle",
+          "not_real_if": "you can tell where you are from the top of the page",
+          "persona_report": "The top third showed only the three lines, a chat bubble 'Make Clawd dance' and the start of a reply with code. It looks exactly like a conversation, and nothing at the top names the page. I only found 'Upgrade for Claude Code' halfway down. The menu did show Code with the pale band, but I have to open the menu to learn that.",
+          "what_they_did": "I opened the menu, tapped Code, looked only at the top third for a few seconds, read the rest, opened the menu to see which row was marked, and left by tapping Chats. I did not press Upgrade.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The top third is a conversation about making Clawd dance, and the page name is halfway down; the menu marks Code, but I have to open it to find that out.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "the Artifacts list, empty",
+      "expectation": "The list of my artifacts, which is empty.",
+      "confidence": "sure",
+      "cue": "The word 'Artifacts' at the top and 'Search artifacts'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear page name at the top. I am not certain what an artifact is, but I know I am on the Artifacts page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "the Artifacts list with an All / Chat / Code menu open",
+      "expectation": "The Artifacts list with a menu open for filtering by All, Chat or Code; All is ticked.",
+      "confidence": "sure",
+      "cue": "The word 'Artifacts' at the top and the tick next to 'All'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page name is still there and the menu shows the current choice.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "the Artifacts list filtered to Chat",
+      "expectation": "The Artifacts page, showing only chat artifacts, and none match.",
+      "confidence": "sure",
+      "cue": "The word 'Artifacts' at the top, the small word 'Chat' beside the search box, and 'No artifacts match'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I know I am on the Artifacts page. The filter word 'Chat' is small and pale grey, so I had to look for it, but the page name itself is clear. (Out of scope: the filter word is small and faint.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s24": {
+      "where": "the Settings page, top",
+      "expectation": "The main Settings page.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name at the top, and the list below is plainly settings.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "the Profile page",
+      "expectation": "My profile inside Settings, where I can change my name and preferences.",
+      "confidence": "sure",
+      "cue": "The word 'Profile' at the top, the back arrow, and the section 'Account Actions' lower down.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It names itself at the top and the lower section has its own heading, which helps me know which part I am reading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "the first 'Delete account' warning over the Profile page",
+      "expectation": "A warning box about deleting my account, on top of the Profile page.",
+      "confidence": "sure",
+      "cue": "The heading 'Delete account' in the box and 'Profile' still visible behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box says what it is, and I can still see which page it came from.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "the Billing page",
+      "expectation": "The Billing page showing that I am on the Free plan.",
+      "confidence": "sure",
+      "cue": "The word 'Billing' at the top and 'Account Plan  Free'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name at top, very little else on the page. This is what I like.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s28": {
+      "where": "the plan prices page scrolled down to Max",
+      "expectation": "Further down the page for choosing a paid plan, at the Max plan.",
+      "confidence": "guessing",
+      "cue": "Only the prices, the words 'Max' and 'Get Max plan', and the X at the top. There is no page name.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading has scrolled away and only an X is left at the top. If I had come back to this after a moment away, I would have to work out from the prices that this is where I choose a plan. The text at the very top is cut off half way through a list, which disorients me further.",
+        "solution": "Keep the page name, 'Get more Claude' or 'Choose a plan', fixed at the top beside the X while I scroll."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t7",
+          "subjects": [
+            "s28"
+          ],
+          "task": "From the page with the greeting, tap 'Upgrade to Pro' in the grey strip above the writing box. When the page opens, drag it upward until you reach the bottom. Pause, look away for a moment, look back, and say where you are. Then drag it back down a little (not all the way to the top) and see whether a name for the page comes back. Do not tap any plan, price, circle or button; leave with the X at the top left.",
+          "real_if": "at the bottom, and after scrolling back a little, nothing names the page",
+          "not_real_if": "a name for the page stays or comes back while you scroll",
+          "persona_report": "At the top the page is named 'Get more Claude'. At the bottom, all that stayed at the top was the X, with a list cut off halfway and the Max plan below. When I dragged back down a little, still only the X and prices cut off at the top. The name did not come back until the very top. The X closed it and I was back on the greeting page.",
+          "what_they_did": "From the greeting page I tapped 'Upgrade to Pro', dragged the page up to the bottom, paused and looked back, dragged it down a little, and left with the X. I tapped no plan, price, circle or button.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Once I scroll down, only the X stays at the top, and the name 'Get more Claude' does not come back until I am at the very top again.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "the Capabilities page",
+      "expectation": "The Capabilities part of Settings, where I turn features like web search and memory on or off.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top, and the section headings 'Memory' and 'Tool access'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "the Capabilities page, code execution switched off",
+      "expectation": "The same Capabilities page, with one switch changed.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "the Capabilities page, artifacts switched off",
+      "expectation": "The same Capabilities page, with the Artifacts switch off.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "the Capabilities page with memory switched on",
+      "expectation": "The Capabilities page, with memory now on and a new line about sensitive topics.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top and the 'Memory' heading.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "the Capabilities page, another switch arrangement",
+      "expectation": "The same Capabilities page with a different set of switches.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "the Capabilities page, artifacts off and memory on",
+      "expectation": "The same Capabilities page with a different set of switches.",
+      "confidence": "sure",
+      "cue": "The word 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name 'Capabilities' is clear at the top and the sections 'Memory' and 'Tool access' have their own headings, so I know which part I am in. (Out of scope: this page is very full of grey explanatory text and switches, and reading it all tires me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "the Settings page, top, 3 enabled",
+      "expectation": "The main Settings page again.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "the Settings page scrolled a little",
+      "expectation": "The Settings page, a little way down the list.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' is still at the top after scrolling.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name stayed at the top when the list moved, which is exactly what I need.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "the Settings page scrolled to Log out",
+      "expectation": "The bottom of the Settings list.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' still at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Even at the bottom of the list the name is still there.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "the Permissions page",
+      "expectation": "The Permissions page in Settings, for location and calendar access.",
+      "confidence": "sure",
+      "cue": "The word 'Permissions' at the top and the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name, short page, plenty of space.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s39": {
+      "where": "the Voice settings page with 'Buttery'",
+      "expectation": "The Voice settings page, choosing how Claude's voice sounds; Buttery is in the middle.",
+      "confidence": "sure",
+      "cue": "The words 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The name is clear. I am not sure what 'Buttery' means as a voice, but I know which page I am on.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s40": {
+      "where": "the Voice settings page with 'Airy'",
+      "expectation": "The same Voice settings page, with Airy in the middle.",
+      "confidence": "sure",
+      "cue": "The words 'Voice settings' at the top and the second dot filled in.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same clear name; the dots show which card I am on.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "the Voice settings page with the long language list open",
+      "expectation": "The Voice settings page with a list open for choosing the voice language.",
+      "confidence": "sure",
+      "cue": "The words 'Voice settings' at the top, although the list is touching them.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The list covers the bottom edge of the letters of 'Voice settings', but I can still read it. I would have liked the list to have its own title; the word 'Language' is half hidden behind it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "the Voice settings page, English (India)",
+      "expectation": "Voice settings, now with English (India) chosen.",
+      "confidence": "sure",
+      "cue": "The words 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "the Voice settings page, Airy and English (India)",
+      "expectation": "Voice settings with Airy and English (India).",
+      "confidence": "sure",
+      "cue": "The words 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "the side menu with Code shaded",
+      "expectation": "The main menu opened from the Code page; Code is the shaded row.",
+      "confidence": "guessing",
+      "cue": "A very pale band behind 'Code', and bits of the code page visible on the right.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "As with the Chats version, the shading is so faint that I had to look carefully to see it, and the large word at the top is just the app's name 'Claude'.",
+        "solution": "A strong, obvious marker on the current row, in words or boldness, not only a pale tint."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t3",
+          "subjects": [
+            "s9",
+            "s44"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Chats. When the Chats page is open, open the menu again and, at a normal glance and without studying it, say which row is marked. Then tap Code, and once that page is open, open the menu again and do the same.",
+          "real_if": "you have to look carefully, or cannot see which row is marked",
+          "not_real_if": "the marked row is plain to you at a glance each time",
+          "persona_report": "Both times I picked out the marked row at a normal glance: a light grey rounded band behind 'Chats', and then behind 'Code'. On the real phone it was easier to see than in the still picture, though it is still a pale tint on an off-white background, with no bold text or other marker.",
+          "what_they_did": "Opened Chats, opened the menu and glanced at it; then tapped Code, and once Code had opened, opened the menu and glanced again.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same as with Chats: on the phone the band behind Code was visible at a glance, just pale.",
+      "provisional": false
+    },
+    "s45": {
+      "where": "the Artifacts list with an All / Pinned / Yours / Shared menu open",
+      "expectation": "The Artifacts page with a filter menu open; All is ticked.",
+      "confidence": "sure",
+      "cue": "The word 'Artifacts' at the top and the tick next to 'All'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Page name visible, current choice ticked.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "the Artifacts page with the blue pin button",
+      "expectation": "The Artifacts page, probably showing only pinned artifacts, of which there are none.",
+      "confidence": "guessing",
+      "cue": "The blue round button with a pin at top right, and 'No artifacts match'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The small word beside the search box says 'All', but the blue pin button suggests only pinned ones are showing, and the message says nothing matches. Those two things seem to contradict each other, and I cannot settle which is true. I would read it over and over.",
+        "solution": "Say in words under the heading what is being shown, for example 'Showing: Pinned', and make the 'All' word agree with it."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t9",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the top right became a blue circle with a pin, but the word beside the search box still said 'All', and the middle said 'No artifacts match'. Nothing said 'Pinned' in words. When I tapped the word 'All', a different little menu opened with All, Chat and Code. That explained my confusion: there are two separate filters, and both have a choice called 'All'. After choosing Code, the screen showed the blue pin circle and 'Code'. I could now work out that it means pinned code artifacts, but only because I had just set both. The 'Pinned' part is still only a picture. Both filters went back to All without trouble.",
+          "what_they_did": "I opened the menu, tapped Artifacts, chose Pinned from the small picture at the top right, then chose Code from the small word beside the search box. Afterwards I put the top-right filter back to All and the word beside the search box back to All.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Trying it showed me that 'All' belongs to a second, separate filter, which explains what looked like a contradiction; but 'Pinned' is still shown only as a blue picture and never in words.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "the Artifacts page with the blue pin button and 'Code'",
+      "expectation": "The Artifacts page, filtered to Code and possibly to pinned ones too; nothing matches.",
+      "confidence": "guessing",
+      "cue": "The blue pin button, the small word 'Code' beside the search box, and 'No artifacts match'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page name is clear, but there seem to be two filters on at once, one shown only as a blue pin picture and one as a small grey word. I am not confident what I am looking at within Artifacts.",
+        "solution": "One plain line under the heading listing what is switched on, such as 'Showing: Pinned, Code', with a way to clear it."
+      },
+      "test_cases": [
+        {
+          "id": "kwame-t9",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the top right became a blue circle with a pin, but the word beside the search box still said 'All', and the middle said 'No artifacts match'. Nothing said 'Pinned' in words. When I tapped the word 'All', a different little menu opened with All, Chat and Code. That explained my confusion: there are two separate filters, and both have a choice called 'All'. After choosing Code, the screen showed the blue pin circle and 'Code'. I could now work out that it means pinned code artifacts, but only because I had just set both. The 'Pinned' part is still only a picture. Both filters went back to All without trouble.",
+          "what_they_did": "I opened the menu, tapped Artifacts, chose Pinned from the small picture at the top right, then chose Code from the small word beside the search box. Afterwards I put the top-right filter back to All and the word beside the search box back to All.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could piece together 'pinned code artifacts' because I had just set both filters myself, but one filter is only a picture, and arriving cold I would still have to work it out.",
+      "provisional": false
+    },
+    "s48": {
+      "where": "the second 'Delete account' box, 'Are you sure'",
+      "expectation": "The final confirmation for deleting my account, on top of the Profile page.",
+      "confidence": "sure",
+      "cue": "The heading 'Delete account' and 'Are you sure you want to delete your account?', with 'Profile' visible behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It names itself and the question is direct. I can see the Profile page behind it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "the 'Turn off memory' panel over Capabilities",
+      "expectation": "A panel for turning off memory, over the Capabilities page.",
+      "confidence": "sure",
+      "cue": "The heading 'Turn off memory' in the panel, and 'Capabilities' behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading, and I can see where I came from.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "the 'Turn off sensitive topics' panel over Capabilities",
+      "expectation": "A panel for turning off sensitive topics in memory, over the Capabilities page.",
+      "confidence": "sure",
+      "cue": "The heading 'Turn off sensitive topics'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading on the panel, page name behind it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "the Connectors page, discovery on",
+      "expectation": "The Connectors page in Settings, with no connectors yet.",
+      "confidence": "sure",
+      "cue": "The word 'Connectors' at the top and the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear name, short page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "the Connectors page, discovery off",
+      "expectation": "The same Connectors page with discovery switched off.",
+      "confidence": "sure",
+      "cue": "The word 'Connectors' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear, same as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 52,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 40,
+      "guessing": 12,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 39,
+    "navigate_with_difficulty": 13,
+    "cannot_handle": 0,
+    "tests_run": 9,
+    "opinions": {
+      "unchanged": 6,
+      "hardened": 2,
+      "softened": 5,
+      "reversed": 0
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

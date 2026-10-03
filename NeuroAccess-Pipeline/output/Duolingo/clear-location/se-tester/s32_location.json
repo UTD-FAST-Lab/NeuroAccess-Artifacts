@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s32",
+  "state_str": "12f8f69bf798988fe1a950e2d40397eb",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185810.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s32_header_nav.png",
+  "name": "the user's own Profile",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Ally Cooper",
+      "verdict_on_region": "the account holder's own name — names a person, not the section (no 'Profile' title anywhere)"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar with no item highlighted — says where you could go, not where you are"
+    }
+  ],
+  "identifier_found": "the account holder's name 'Ally Cooper' top-left with share and settings icons; the tab bar (or, on s28, the avatar sheet) with no highlighted item",
+  "identifier_class": "none",
+  "accessibility_text": "tab content_descriptions 'Learn Tab', 'Goals Tab', 'Leagues Tab', 'News Tab', 'Upgrade' — none names the current screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the header names a person, not the section; no 'Profile' title; no tab is highlighted",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the only header is a person's name and the tab bar shows nothing current — the profile is reached through the ⋯ menu, whose menu item says 'Profile', but the screen itself never does; template carry from s28's test (same template; the header content does not change the answer)",
+  "recommendation": "title the screen 'Profile' (or 'Your profile') and highlight the ⋯ tab while it is shown",
+  "provisional": false
+}

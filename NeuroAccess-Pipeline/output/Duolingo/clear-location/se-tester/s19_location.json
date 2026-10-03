@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s19",
+  "state_str": "9db4d66b01358127abf8b3f14004efca",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185607.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s19_header_nav.png",
+  "name": "the Super subscription offer",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SUPER",
+      "verdict_on_region": "product wordmark of the subscription — branding, not a part of the app"
+    }
+  ],
+  "identifier_found": "none that names a place: a 'SUPER' wordmark top-right, an X top-left, and a marketing headline",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "'SUPER' is the product's wordmark; the headline sells a feature; nothing says where in the app this is",
+  "test_cases": [
+    {
+      "id": "s19-tc1",
+      "type": "verification",
+      "precondition": "Super offer page open",
+      "action": "reach this carousel frame, which the capture reached by tapping START MY FREE WEEK",
+      "expected_result": "a title appears or none does",
+      "confirms_if": "no title appears",
+      "overturns_if": "a title appears",
+      "observed_result": "not executed — reaching this frame requires tapping START MY FREE WEEK (a free-trial start), which the run forbids; live, the page did not advance on its own or on tapping the illustration (live app diverges from capture)",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "template carry from s12 (same structure_str, cg4): the SUPER wordmark and a marketing headline are all that name the page.  Not reachable without starting a trial — provisional.",
+  "recommendation": "give the page a plain title such as 'Super subscription' next to the X",
+  "provisional": true
+}

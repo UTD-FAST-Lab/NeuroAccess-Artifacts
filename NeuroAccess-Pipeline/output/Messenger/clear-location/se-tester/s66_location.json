@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s66",
+  "state_str": "e57b89d0d5b53897e749caf9d8f8fe01",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152625.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s66_header_nav.png",
+  "name": "Me",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Me",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    }
+  ],
+  "identifier_found": "\"Me\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s29 (same layout; content does not change the answer): \"Me\" stays pinned in the top bar through the whole list (to \"Meta Quest\" at the bottom) and back",
+  "recommendation": null,
+  "provisional": false
+}

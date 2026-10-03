@@ -1,0 +1,2641 @@
+{
+  "persona": "persona-amy",
+  "app": "ChatGPT",
+  "groups": {
+    "gg1": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg1.png",
+      "members": {
+        "screen1-f1": {
+          "where": "top-left corner of the top bar on screen 1, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen3-f1": {
+          "where": "top-left corner of the top bar on screen 3, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen4-f1": {
+          "where": "top-left corner of the top bar on screen 4, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen6-f1": {
+          "where": "top-left corner of the top bar on screen 6, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen8-f1": {
+          "where": "top-left corner of the top bar on screen 8, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen12-f1": {
+          "where": "top-left corner of the top bar on screen 12, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen14-f1": {
+          "where": "top-left corner of the top bar on screen 14, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen15-f1": {
+          "where": "top-left corner of the top bar on screen 15, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen22-f1": {
+          "where": "top-left corner of the top bar on screen 22, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen25-f1": {
+          "where": "top-left corner of the top bar on screen 25, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen26-f1": {
+          "where": "top-left corner of the top bar on screen 26, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen27-f1": {
+          "where": "top-left corner of the top bar on screen 27, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen28-f1": {
+          "where": "top-left corner of the top bar on screen 28, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen29-f1": {
+          "where": "top-left corner of the top bar on screen 29, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen30-f1": {
+          "where": "top-left corner of the top bar on screen 30, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen32-f1": {
+          "where": "top-left corner of the top bar on screen 32, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        },
+        "screen34-f1": {
+          "where": "top-left corner of the top bar on screen 34, a round button with two horizontal lines, the lower one shorter",
+          "expectation": "It opens the side menu with the list of sections and my past chats.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same two-line button in the same top-left position on every one of these screens.",
+      "affects_navigation": "Yes, a lot: this is the one thing I rely on to get to the rest of the app, so if it did something different on some screens I would lose my route.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is in exactly the same place on every screen and the two-line menu button is a convention I know; nothing about it changes from screen to screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg2": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg2.png",
+      "members": {
+        "screen1-f2": {
+          "where": "top bar on screen 1, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen3-f2": {
+          "where": "top bar on screen 3, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen4-f2": {
+          "where": "top bar on screen 4, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen6-f2": {
+          "where": "top bar on screen 6, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen8-f2": {
+          "where": "top bar on screen 8, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen12-f2": {
+          "where": "top bar on screen 12, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen14-f2": {
+          "where": "top bar on screen 14, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen15-f2": {
+          "where": "top bar on screen 15, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen22-f2": {
+          "where": "top bar on screen 22, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen26-f2": {
+          "where": "top bar on screen 26, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen27-f2": {
+          "where": "top bar on screen 27, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen28-f2": {
+          "where": "top bar on screen 28, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen29-f2": {
+          "where": "top bar on screen 29, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen30-f2": {
+          "where": "top bar on screen 30, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen32-f2": {
+          "where": "top bar on screen 32, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        },
+        "screen34-f2": {
+          "where": "top bar on screen 34, just right of the menu button, a light blue pill with a four-pointed star and the words 'Get Plus'",
+          "expectation": "It opens a page where I can buy the paid 'Plus' version of the app.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same pill with the same words in the same place each time.",
+      "affects_navigation": "Not much; it is a sales button and I do not need it to move around, but it should still always open the same page.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words 'Get Plus' tell me it is about getting something called Plus, and it sits in the same place on every screen. The star on its own means nothing to me, but the words carry it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg3": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg3.png",
+      "members": {
+        "screen1-f3": {
+          "where": "top-right corner of the top bar on screen 1, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen3-f3": {
+          "where": "top-right corner on screen 3, the same dashed speech bubble but drawn in faint grey, above the image tray",
+          "expectation": "The same as the black one, if it works at all. Faint grey usually means it is switched off, so pressing it might do nothing.",
+          "confidence": "no idea"
+        },
+        "screen4-f3": {
+          "where": "top-right corner of the top bar on screen 4, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen6-f3": {
+          "where": "top-right corner on screen 6, the dashed speech bubble with a tick inside; the middle of this screen says 'Temporary chat'",
+          "expectation": "The tick and the words 'Temporary chat' on the screen tell me a temporary chat mode is switched on. Pressing it would probably switch it off.",
+          "confidence": "guessing"
+        },
+        "screen8-f3": {
+          "where": "top-right corner of the top bar on screen 8, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen12-f3": {
+          "where": "top-right corner of the top bar on screen 12, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen14-f3": {
+          "where": "top-right corner on screen 14, the dashed speech bubble in faint grey",
+          "expectation": "Probably nothing; grey usually means disabled. I cannot tell.",
+          "confidence": "no idea"
+        },
+        "screen15-f3": {
+          "where": "top-right corner of the top bar on screen 15, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen22-f3": {
+          "where": "top-right corner on screen 22, the dashed speech bubble in faint grey",
+          "expectation": "Probably nothing, it looks disabled.",
+          "confidence": "no idea"
+        },
+        "screen26-f3": {
+          "where": "top-right corner of the top bar on screen 26, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen27-f3": {
+          "where": "top-right corner of the top bar on screen 27, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen28-f3": {
+          "where": "top-right corner of the top bar on screen 28, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen29-f3": {
+          "where": "top-right corner of the top bar on screen 29, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen30-f3": {
+          "where": "top-right corner of the top bar on screen 30, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        },
+        "screen32-f3": {
+          "where": "top-right corner on screen 32, the dashed speech bubble with a tick inside; this screen also says 'Temporary chat'",
+          "expectation": "Switches the temporary chat mode off, I think, because the tick suggests it is on now.",
+          "confidence": "guessing"
+        },
+        "screen34-f3": {
+          "where": "top-right corner of the top bar on screen 34, a round button with a speech bubble drawn in a dashed line",
+          "expectation": "I do not know. A dashed speech bubble is not a thing I can name. Maybe it starts some kind of chat that is not saved, but I am only guessing.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "They are drawn three different ways: black, faint grey, and with a tick inside, so I cannot tell if it is one button in different states or different buttons.",
+      "affects_navigation": "Yes; this is the only button in the top-right slot, and if it changes meaning when it changes colour I would stop trusting that corner of the screen.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The picture is an idea, not a thing, and it changes: black on most screens, faint grey on screens 3, 14 and 22, and with a tick on screens 6 and 32. Only screen 6 gives me a clue, because that screen says 'Temporary chat'. I would have to press it to find out, and I would not know whether the grey one works at all.",
+        "solution": "Put a word next to it, for example 'Temporary chat', and show 'on' and 'off' in words, so the tick version and the plain version are clearly the same switch in two states. If the grey one is switched off, say so."
+      },
+      "test_cases": [
+        {
+          "id": "amy-gg3-tc1",
+          "what_to_try": "On the empty new chat, press the speech-bubble button at the top right once and look at what changed on the screen. Press it again and look again. Then press 'Create an image or sticker' and press the same button while it looks grey. Finish with the button back in its first look.",
+          "real_if": "after pressing each look you still cannot tell what it did, what state you are in, or whether the grey one does anything",
+          "not_real_if": "after pressing, the screen tells you plainly what each look means, and you could tell the plain, ticked and grey looks apart as one switch",
+          "what_happened": "On the empty chat I pressed the dashed bubble. The bubble got a tick, and the middle of the screen said 'Temporary chat - This chat won't appear in history.' The typing box also changed to 'Temporary chat'. I pressed it again and everything went back to the normal empty chat with 'Ask ChatGPT'. Then I pressed 'Create an image or sticker'. The bubble turned faint grey, and when I pressed it a dark text box appeared: 'This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.' Nothing else changed. I finished with the bubble in its plain look. So the screen did tell me what each look means, but only after I pressed. Before pressing, the bubble on its own still tells me nothing.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "gg4": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg4.png",
+      "members": {
+        "screen1-f8": {
+          "where": "right end of the message box at the bottom of screen 1, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen3-f14": {
+          "where": "right end of the message box at the bottom of screen 3, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen4-f9": {
+          "where": "right end of the message box at the bottom of screen 4, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen6-f6": {
+          "where": "right end of the message box at the bottom of screen 6, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen8-f8": {
+          "where": "right end of the message box at the bottom of screen 8, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen12-f8": {
+          "where": "right end of the message box at the bottom of screen 12, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen14-f14": {
+          "where": "right end of the message box at the bottom of screen 14, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen15-f8": {
+          "where": "right end of the message box at the bottom of screen 15, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen22-f12": {
+          "where": "right end of the message box at the bottom of screen 22, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen25-f6": {
+          "where": "next to a blue square 'stop' button at the bottom of screen 25, the black microphone outline",
+          "expectation": "Speak instead of typing, the same as on the other screens.",
+          "confidence": "guessing"
+        },
+        "screen26-f8": {
+          "where": "right end of the message box at the bottom of screen 26, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen27-f8": {
+          "where": "right end of the message box at the bottom of screen 27, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen28-f5": {
+          "where": "right end of the message box at the bottom of screen 28, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen29-f5": {
+          "where": "right end of the message box at the bottom of screen 29, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen30-f5": {
+          "where": "right end of the message box at the bottom of screen 30, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen32-f6": {
+          "where": "right end of the message box at the bottom of screen 32, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        },
+        "screen34-f9": {
+          "where": "right end of the message box at the bottom of screen 34, a plain black microphone outline",
+          "expectation": "It lets me speak and the app writes what I say into the message box, so I do not have to type.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same microphone in the same place next to the message box on every screen.",
+      "affects_navigation": "Not greatly on its own, but it sits right next to the blue sound-wave button, and I need the two to stay distinct.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A microphone in a text box is the dictation convention and it is drawn the same way in the same place everywhere. My uncertainty is about the blue button next to it, not this one.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg5": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg5.png",
+      "members": {
+        "screen1-f7": {
+          "where": "left end of the message box at the bottom of screen 1, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen3-f13": {
+          "where": "left end of the message box at the bottom of screen 3, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen4-f8": {
+          "where": "left end of the message box at the bottom of screen 4, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen6-f5": {
+          "where": "left end of the message box at the bottom of screen 6, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen8-f7": {
+          "where": "left end of the message box at the bottom of screen 8, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen12-f7": {
+          "where": "left end of the message box at the bottom of screen 12, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen14-f13": {
+          "where": "left end of the message box at the bottom of screen 14, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen15-f7": {
+          "where": "left end of the message box at the bottom of screen 15, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen22-f11": {
+          "where": "left end of the message box at the bottom of screen 22, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen25-f5": {
+          "where": "left end of the message box at the bottom of screen 25, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen26-f7": {
+          "where": "left end of the message box at the bottom of screen 26, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen27-f7": {
+          "where": "left end of the message box at the bottom of screen 27, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen28-f4": {
+          "where": "left end of the message box at the bottom of screen 28, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen29-f4": {
+          "where": "left end of the message box at the bottom of screen 29, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen30-f4": {
+          "where": "left end of the message box at the bottom of screen 30, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen32-f5": {
+          "where": "left end of the message box at the bottom of screen 32, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        },
+        "screen34-f8": {
+          "where": "left end of the message box at the bottom of screen 34, a plus sign",
+          "expectation": "It opens a small menu for adding something to my message: camera, photos, files and similar.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same plus sign at the same end of the message box everywhere.",
+      "affects_navigation": "Yes, if it opened something different on some screens I would have to learn each screen separately.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I have seen on screen 9 that the plus opens a menu with Camera, Photos, Files, Plugins and Think harder, and the plus looks the same and sits in the same place on every screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg6": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg6.png",
+      "members": {
+        "screen3-f6": {
+          "where": "screen 3, the X at the right end of the row with 'Trending' and 'Templates', above the picture tiles",
+          "expectation": "It closes the tray of picture ideas and returns to the empty chat.",
+          "confidence": "sure"
+        },
+        "screen4-f4": {
+          "where": "screen 4, the X at the right of the heading 'Write or edit', above the three writing suggestions",
+          "expectation": "It closes the 'Write or edit' suggestion panel.",
+          "confidence": "sure"
+        },
+        "screen14-f6": {
+          "where": "screen 14, the X at the right end of the 'Trending' / 'Templates' row",
+          "expectation": "It closes the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen16-f12": {
+          "where": "screen 16, the X on the left of the white drawing panel, level with the pencil, shapes and eraser tools",
+          "expectation": "It closes the drawing panel. I am not sure whether it keeps or throws away what I drew.",
+          "confidence": "guessing"
+        },
+        "screen17-f2": {
+          "where": "screen 17, a white X in a dark circle on the top-right corner of the large '80s photo, next to a share button",
+          "expectation": "It closes the large photo preview and goes back to the tiles.",
+          "confidence": "sure"
+        },
+        "screen18-f1": {
+          "where": "screen 18, the X in the top-left corner above the sentence 'Create a 3D sticker pack...'",
+          "expectation": "It closes the sticker sentence screen without generating anything.",
+          "confidence": "sure"
+        },
+        "screen19-f2": {
+          "where": "screen 19, a white X in a circle on the top-right corner of the large cherry-blossom picture, next to a share button",
+          "expectation": "It closes the large picture preview.",
+          "confidence": "sure"
+        },
+        "screen22-f6": {
+          "where": "screen 22, the X at the right end of the 'Trending' / 'Templates' row",
+          "expectation": "It closes the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "screen 34, the X at the right of the heading 'Write or edit'",
+          "expectation": "It closes the 'Write or edit' panel.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "An X means close, and each one sits in the corner of a panel, so I expect each to close its own panel.",
+      "affects_navigation": "Yes, if one of them deleted my work instead of just closing I would become afraid of all of them.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Most of them are fine, each X is at the edge of one panel and closes that panel. Screen 16 is the problem: there are two X's on it, one at the top right for the image tray and one at the left above the drawing tools, and I have to work out which one closes which. I also cannot tell if the drawing X throws away my drawing without asking.",
+        "solution": "On screen 16, only show one X at a time, or put a word next to each, for example 'Close drawing' and 'Close image ideas'. If closing discards my drawing, ask first."
+      },
+      "test_cases": [
+        {
+          "id": "amy-gg6-tc1",
+          "what_to_try": "Press 'Create an image or sticker', then press the 'Sketch' picture so the drawing panel opens. With the drawing panel open, press the X at the top right beside Trending / Templates and see what closes. Then press 'Sketch' again and press the X at the left of the drawing tools and see what closes.",
+          "real_if": "one of the two X's closes something you did not expect, or you could not tell before pressing which one closes what",
+          "not_real_if": "each X closed what you expected it to close",
+          "what_happened": "I opened the picture tray and pressed 'Sketch', and the drawing panel came up from the bottom. Before pressing, I expected the top-right X, beside Trending / Templates, to close the picture tray. It did not. It closed the drawing panel and left the tray open. I opened 'Sketch' again and pressed the X on the left of the drawing tools. That also closed the drawing panel, which is what I expected. So both X's did the same thing while the drawing panel was open, and the top-right one did not close the tray it sits next to. I did not draw anything, so I still do not know whether closing throws a drawing away without asking. I could finish the test.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "hardened",
+      "provisional": false
+    },
+    "gg7": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg7.png",
+      "members": {
+        "screen7-f9": {
+          "where": "side menu on screen 7, first row below the divider line, above 'Polish writing', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen7-f13": {
+          "where": "side menu on screen 7, row below 'Shorten writing rewrite', the second 'Create image', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen7-f14": {
+          "where": "side menu on screen 7, the third 'Create image' row, plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen7-f15": {
+          "where": "side menu on screen 7, the fourth 'Create image' row, just above 'See all...', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen21-f9": {
+          "where": "side menu on screen 21, first row below the divider line, above 'Polish writing', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen21-f13": {
+          "where": "side menu on screen 21, row below 'Shorten writing rewrite', the second 'Create image', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen21-f14": {
+          "where": "side menu on screen 21, the third 'Create image' row, plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen21-f15": {
+          "where": "side menu on screen 21, the fourth 'Create image' row, just above 'See all...', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen33-f9": {
+          "where": "side menu on screen 33, first row below the divider line, above 'Polish writing', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen33-f13": {
+          "where": "side menu on screen 33, row below 'Shorten writing rewrite', the second 'Create image', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen33-f14": {
+          "where": "side menu on screen 33, the third 'Create image' row, plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        },
+        "screen33-f15": {
+          "where": "side menu on screen 33, the fourth 'Create image' row, just above 'See all...', plain text 'Create image'",
+          "expectation": "It opens a past chat called 'Create image', but I cannot tell which of the four.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "There are four rows with exactly the same words, so they must be four different past chats, and each will open a different one.",
+      "affects_navigation": "Yes: if I want to get back to one specific earlier chat, I cannot find it, because all four look identical. I would have to open them one by one.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Four rows in the same list all say 'Create image', with no date, no picture and no other difference. The list also has no heading, so I first have to guess that these are past chats and not commands. Then I cannot tell them apart.",
+        "solution": "Give the list a heading such as 'Your past chats', and give each chat a distinct title, or add the date or the first words of the chat under it."
+      },
+      "test_cases": [
+        {
+          "id": "amy-gg7-tc1",
+          "what_to_try": "Open the side menu with the two-line button at the top left. In the list of chats, find two rows with the same words (for example the two 'Greeting exchange' rows). Before pressing, say which one you think is which. Press the first, look, open the menu again and press the second.",
+          "real_if": "you could not tell the two rows apart before pressing, or one opened something you did not expect",
+          "not_real_if": "you could tell them apart, or what opened matched what you expected",
+          "what_happened": "The live list had two rows that both said 'Greeting exchange', with nothing else on them: no date, no preview. There were also 'Create red apple image' and 'Create Red Apple Image', which differ only in capital letters. The list still had no heading. Before pressing, I could not say which 'Greeting exchange' was which; I only guessed the upper one was newer. The upper one opened a chat where 'Hello' got 'Hello! How can I help you today?'. When I opened the menu again, that row was shaded, but the shading only tells me which one I am already in. The lower one opened a different chat: 'Hello', 'How can I help you tonight?', 'Thanks', 'You're very welcome!'. Neither chat shows its title at the top. I could finish, but only by opening them one at a time.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "unchanged",
+      "provisional": false
+    },
+    "gg8": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg8.png",
+      "members": {
+        "screen1-f9": {
+          "where": "right end of the message box at the bottom of screen 1, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen4-f10": {
+          "where": "right end of the message box at the bottom of screen 4, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen8-f9": {
+          "where": "right end of the message box at the bottom of screen 8, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen12-f9": {
+          "where": "right end of the message box at the bottom of screen 12, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen15-f9": {
+          "where": "right end of the message box at the bottom of screen 15, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen26-f9": {
+          "where": "right end of the message box at the bottom of screen 26, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen27-f9": {
+          "where": "right end of the message box at the bottom of screen 27, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        },
+        "screen34-f10": {
+          "where": "right end of the message box at the bottom of screen 34, a filled blue circle with vertical bars like a sound wave",
+          "expectation": "Something to do with sound. It might start talking out loud with the app, or it might record audio. I cannot tell how it differs from the microphone right next to it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same blue circle in the same place every time it appears.",
+      "affects_navigation": "Yes, because it sits next to the microphone, and if I press the wrong one of the two I get something I did not intend, possibly sound starting suddenly.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The blue sound-wave circle and the black microphone sit side by side and both mean 'sound' to me. The picture does not tell me what the difference is, and I really do not want a voice suddenly talking to me because I pressed the wrong one.",
+        "solution": "Put a word under it, for example 'Voice chat', or use the same headphones picture that the 'Start a voice chat' row uses, so I can connect the two."
+      },
+      "test_cases": [
+        {
+          "id": "amy-gg8-tc1",
+          "what_to_try": "On the empty new chat, look at the two round buttons at the right end of the typing bar. Without pressing the blue one (voice mode is not allowed on this phone), say what you think each one does. Then press only the black microphone, look at what appears, and press Cancel.",
+          "real_if": "after pressing the microphone you still could not say what the blue circle is for, or which of the two you would press to type by speaking",
+          "not_real_if": "you could tell the two apart without pressing the blue one",
+          "what_happened": "Before pressing, I said the black microphone probably lets me speak instead of typing, and I did not know what the blue sound-wave circle does, only that it is something with sound. I pressed only the black microphone. A dialog appeared: 'Enable ChatGPT to use your microphone? You will be redirected to Android settings...', with 'Cancel' and 'Open settings'. It does not say whether this button types what I say or starts a spoken conversation. I pressed Cancel and was back on the empty chat. I still cannot say what the blue circle is for, or be sure the microphone is the typing-by-speaking one.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "unchanged",
+      "provisional": false
+    },
+    "gg9": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg9.png",
+      "members": {
+        "screen3-f15": {
+          "where": "right end of the message box at the bottom of screen 3, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen6-f7": {
+          "where": "right end of the message box on screen 6, the upward arrow in faint grey",
+          "expectation": "Nothing until I type something; then it would send.",
+          "confidence": "sure"
+        },
+        "screen14-f15": {
+          "where": "right end of the message box at the bottom of screen 14, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen22-f13": {
+          "where": "right end of the message box at the bottom of screen 22, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen28-f6": {
+          "where": "right end of the message box at the bottom of screen 28, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen29-f6": {
+          "where": "right end of the message box at the bottom of screen 29, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen30-f6": {
+          "where": "right end of the message box at the bottom of screen 30, a blue circle with an upward arrow",
+          "expectation": "It sends the message I have typed.",
+          "confidence": "sure"
+        },
+        "screen32-f7": {
+          "where": "right end of the message box on screen 32, the upward arrow in faint grey",
+          "expectation": "Nothing until I type; then it sends.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same arrow in the same place; when it is grey it looks switched off because the box is empty.",
+      "affects_navigation": "Yes, sending is the most important action, so it must always do the same thing.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The send arrow is a convention I know, it is always in the same place, and the grey version is clearly the same button while there is nothing to send.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg10": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg10.png",
+      "members": {
+        "screen1-f4": {
+          "where": "list just above the message box on screen 1, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        },
+        "screen8-f4": {
+          "where": "list just above the message box on screen 8, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        },
+        "screen12-f4": {
+          "where": "list just above the message box on screen 12, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        },
+        "screen15-f4": {
+          "where": "list just above the message box on screen 15, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        },
+        "screen26-f4": {
+          "where": "list just above the message box on screen 26, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        },
+        "screen27-f4": {
+          "where": "list just above the message box on screen 27, a row with a headphones picture and the words 'Start a voice chat'",
+          "expectation": "It starts a spoken conversation with the app, where it talks back to me out loud.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same row with the same words in the same list on every screen.",
+      "affects_navigation": "Only a little; it is a shortcut, but it should behave the same everywhere.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words say exactly what it does. I would want to know first whether sound will start straight away, but the label itself is clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg11": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg11.png",
+      "members": {
+        "screen1-f5": {
+          "where": "list just above the message box on screen 1, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen8-f5": {
+          "where": "list just above the message box on screen 8, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen12-f5": {
+          "where": "list just above the message box on screen 12, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen15-f5": {
+          "where": "list just above the message box on screen 15, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen26-f5": {
+          "where": "list just above the message box on screen 26, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen27-f5": {
+          "where": "list just above the message box on screen 27, a row with a picture-frame icon and the words 'Create an image or sticker'",
+          "expectation": "It opens the tools for making a picture or a sticker, probably the tray of picture ideas.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same row with the same literal words everywhere.",
+      "affects_navigation": "Only a little; it is a shortcut.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal words, same place on every screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg12": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg12.png",
+      "members": {
+        "screen1-f6": {
+          "where": "list just above the message box on screen 1, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        },
+        "screen8-f6": {
+          "where": "list just above the message box on screen 8, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        },
+        "screen12-f6": {
+          "where": "list just above the message box on screen 12, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        },
+        "screen15-f6": {
+          "where": "list just above the message box on screen 15, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        },
+        "screen26-f6": {
+          "where": "list just above the message box on screen 26, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        },
+        "screen27-f6": {
+          "where": "list just above the message box on screen 27, a row with a pencil and the words 'Write or edit'",
+          "expectation": "It opens the panel of writing suggestions, the one I see on screen 4 with 'Clarify a confusing section' and similar.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same words, same position.",
+      "affects_navigation": "Only a little; it is a shortcut.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words say what it does and it is always in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg13": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg13.png",
+      "members": {
+        "screen7-f8": {
+          "where": "side menu on screen 7, in the top section list below 'Scheduled', a row with a circular symbol and 'Plugins'",
+          "expectation": "It opens a page listing the plugins I can use.",
+          "confidence": "guessing"
+        },
+        "screen9-f7": {
+          "where": "screen 9, in the menu that the plus opens above the message box, between 'Files' and 'Think harder', the 'Plugins' row",
+          "expectation": "It lets me choose a plugin to use for the message I am writing.",
+          "confidence": "guessing"
+        },
+        "screen21-f8": {
+          "where": "side menu on screen 21, below 'Scheduled', the 'Plugins' row",
+          "expectation": "It opens a page listing plugins.",
+          "confidence": "guessing"
+        },
+        "screen23-f15": {
+          "where": "screen 23, in the plus menu over the picture tiles, between 'Files' and 'Think harder', the 'Plugins' row",
+          "expectation": "It lets me choose a plugin for this message.",
+          "confidence": "guessing"
+        },
+        "screen33-f8": {
+          "where": "side menu on screen 33, below 'Scheduled', the 'Plugins' row",
+          "expectation": "It opens a page listing plugins.",
+          "confidence": "guessing"
+        },
+        "screen35-f10": {
+          "where": "screen 35, in the plus menu above the keyboard, between 'Files' and 'Think harder', the 'Plugins' row",
+          "expectation": "It lets me choose a plugin for this message.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "In the side menu I expect it to open a page listing plugins, and in the plus menu above the message box I expect it to let me pick a plugin for this one message; those are related but not identical.",
+      "affects_navigation": "Not much, because the place it sits tells me which of the two I am doing: the side menu is for going to sections, the plus menu is for adding something to my message.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "As a programmer I know what plugins are, the word is the same everywhere, and the menu it sits in tells me whether I am going to a page or adding to a message. The icon itself means nothing to me, but the word does the work.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg14": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg14.png",
+      "members": {
+        "screen3-f4": {
+          "where": "screen 3, the 'Trending' tab at the left of the row above the picture tiles",
+          "expectation": "It shows the currently popular picture ideas in the tiles below.",
+          "confidence": "sure"
+        },
+        "screen14-f4": {
+          "where": "screen 14, the 'Trending' tab in grey text, not selected, because 'Templates' is selected here",
+          "expectation": "Switches back to the popular picture ideas.",
+          "confidence": "sure"
+        },
+        "screen22-f4": {
+          "where": "screen 22, the 'Trending' tab at the left of the row above the picture tiles",
+          "expectation": "It shows the currently popular picture ideas in the tiles below.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word, same position, and the grey pill behind it just shows which tab is selected.",
+      "affects_navigation": "A little; tabs should switch the same content every time.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is a literal tab label and the selected one is marked with a grey pill background.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg15": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg15.png",
+      "members": {
+        "screen3-f5": {
+          "where": "screen 3, the 'Templates' tab next to 'Trending' above the picture tiles",
+          "expectation": "It shows a set of ready-made picture templates in place of the trending ones.",
+          "confidence": "sure"
+        },
+        "screen14-f5": {
+          "where": "screen 14, the 'Templates' tab, selected (dark text on a grey pill)",
+          "expectation": "Nothing new; it is already showing the templates.",
+          "confidence": "sure"
+        },
+        "screen22-f5": {
+          "where": "screen 22, the 'Templates' tab next to 'Trending' above the picture tiles",
+          "expectation": "It shows a set of ready-made picture templates in place of the trending ones.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same word in the same place, only the selected state changes.",
+      "affects_navigation": "A little; tabs should always switch the same content.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal tab label, and I can see which of the two tabs is selected.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg16": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg16.png",
+      "members": {
+        "screen2-f1": {
+          "where": "screen 2, the 'Cancel' button in a dialog asking me to enable microphone access in System Settings",
+          "expectation": "It closes the dialog and does not open the settings.",
+          "confidence": "sure"
+        },
+        "screen10-f1": {
+          "where": "screen 10, the 'Cancel' button in a dialog asking me to enable microphone access in System Settings",
+          "expectation": "It closes the dialog and does not open the settings.",
+          "confidence": "sure"
+        },
+        "screen11-f1": {
+          "where": "screen 11, the 'Cancel' button in a dialog asking me to enable microphone access in System Settings",
+          "expectation": "It closes the dialog and does not open the settings.",
+          "confidence": "sure"
+        },
+        "screen24-f1": {
+          "where": "screen 24, the 'Cancel' button in a dialog asking me to enable microphone access in System Settings",
+          "expectation": "It closes the dialog and does not open the settings.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The same dialog with the same button.",
+      "affects_navigation": "Only slightly.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dialog explains itself in plain words and 'Cancel' is literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg17": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg17.png",
+      "members": {
+        "screen2-f2": {
+          "where": "screen 2, the 'Open settings' button in the same microphone permission dialog",
+          "expectation": "It takes me to the Android settings to allow the microphone, as the dialog text says.",
+          "confidence": "sure"
+        },
+        "screen10-f2": {
+          "where": "screen 10, the 'Open settings' button in the same microphone permission dialog",
+          "expectation": "It takes me to the Android settings to allow the microphone, as the dialog text says.",
+          "confidence": "sure"
+        },
+        "screen11-f2": {
+          "where": "screen 11, the 'Open settings' button in the same microphone permission dialog",
+          "expectation": "It takes me to the Android settings to allow the microphone, as the dialog text says.",
+          "confidence": "sure"
+        },
+        "screen24-f2": {
+          "where": "screen 24, the 'Open settings' button in the same microphone permission dialog",
+          "expectation": "It takes me to the Android settings to allow the microphone, as the dialog text says.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same dialog, same button, and the text above it explains exactly where it sends me.",
+      "affects_navigation": "Only slightly.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dialog says in plain words that I will be sent to Android settings; the button does what it says.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg18": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg18.png",
+      "members": {
+        "screen3-f7": {
+          "where": "screen 3, the top-left picture tile: a hand-drawn flower with a bee, captioned 'Sketch'",
+          "expectation": "It opens a drawing area where I can sketch something for the app to turn into an image.",
+          "confidence": "guessing"
+        },
+        "screen22-f7": {
+          "where": "screen 22, the top-left picture tile: a hand-drawn flower with a bee, captioned 'Sketch'",
+          "expectation": "It opens a drawing area where I can sketch something for the app to turn into an image.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same tile with the same caption on both screens.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The caption 'Sketch' is literal and the drawing matches it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg19": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg19.png",
+      "members": {
+        "screen3-f8": {
+          "where": "screen 3, the top-right picture tile: a woman in 1980s clothes, captioned ''80s flashback'",
+          "expectation": "It probably makes a photo of me look as if it was taken in the 1980s. 'Flashback' is a figure of speech, so I am guessing from the picture.",
+          "confidence": "guessing"
+        },
+        "screen22-f8": {
+          "where": "screen 22, the top-right picture tile: a woman in 1980s clothes, captioned ''80s flashback'",
+          "expectation": "It probably makes a photo of me look as if it was taken in the 1980s. 'Flashback' is a figure of speech, so I am guessing from the picture.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The same tile with the same caption on both screens.",
+      "affects_navigation": "Not much, it is the same tile both times.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The two tiles are identical, so that part is fine. But ''80s flashback' is not a literal description; I have to guess from the photo what it does to my picture.",
+        "solution": "Use a literal caption such as 'Make my photo look like the 1980s'."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg20": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg20.png",
+      "members": {
+        "screen3-f9": {
+          "where": "screen 3, the picture tile with a cat, a plant and a bearded face sticker, captioned 'Stickers'",
+          "expectation": "It starts making stickers.",
+          "confidence": "sure"
+        },
+        "screen22-f9": {
+          "where": "screen 22, the 'Stickers' tile, but the keyboard and the message box cover most of it; the caption is hidden and only the cat and the plant show",
+          "expectation": "The same as on screen 3, if I can reach it; pressing where it is drawn would probably hit the keyboard instead.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tile, same caption.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Stickers' and the sticker pictures agree. On screen 22 most of the tile is hidden behind the message box and keyboard, which is a separate matter.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg21": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg21.png",
+      "members": {
+        "screen3-f10": {
+          "where": "screen 3, the picture tile with a cartoon woman holding an anatomy book, captioned 'Create a caricature'",
+          "expectation": "It creates a caricature, probably of me from a photo.",
+          "confidence": "sure"
+        },
+        "screen22-f10": {
+          "where": "screen 22, the same tile but mostly behind the keyboard and the message box, with the caption covered",
+          "expectation": "The same, but I cannot see enough of it and pressing there would hit the keyboard.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same tile, same caption.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The caption is literal. On screen 22 most of it is under the keyboard, which is a separate matter.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg22": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg22.png",
+      "members": {
+        "screen5-f1": {
+          "where": "top-left corner of the 'ChatGPT Plus' page on screen 5, a left-pointing arrow",
+          "expectation": "It goes back to the screen I came from.",
+          "confidence": "sure"
+        },
+        "screen20-f1": {
+          "where": "top-left corner of the 'ChatGPT Plus' page on screen 20, a left-pointing arrow",
+          "expectation": "It goes back to the screen I came from.",
+          "confidence": "sure"
+        },
+        "screen31-f1": {
+          "where": "top-left corner of the 'ChatGPT Plus' page on screen 31, a left-pointing arrow",
+          "expectation": "It goes back to the screen I came from.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The same back arrow in the same corner of the same page.",
+      "affects_navigation": "Yes, going back must always work the same way.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A back arrow in the top-left is a convention and it is the same each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg23": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg23.png",
+      "members": {
+        "screen5-f2": {
+          "where": "on the 'ChatGPT Plus' page on screen 5, the left half of a two-part switch, the word 'Go'",
+          "expectation": "I am not sure. 'Go' normally means 'start' or 'proceed', but here it sits next to 'Plus', so it might be the name of a cheaper plan.",
+          "confidence": "guessing"
+        },
+        "screen20-f2": {
+          "where": "on the 'ChatGPT Plus' page on screen 20, the left half of a two-part switch, the word 'Go'",
+          "expectation": "I am not sure. 'Go' normally means 'start' or 'proceed', but here it sits next to 'Plus', so it might be the name of a cheaper plan.",
+          "confidence": "guessing"
+        },
+        "screen31-f2": {
+          "where": "on the 'ChatGPT Plus' page on screen 31, the left half of a two-part switch, the word 'Go'",
+          "expectation": "I am not sure. 'Go' normally means 'start' or 'proceed', but here it sits next to 'Plus', so it might be the name of a cheaper plan.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same switch half in the same place on all three copies of the page.",
+      "affects_navigation": "Not much; it is the same page each time.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It is consistent, but the word 'Go' reads to me as an instruction, not as a name. Nothing on the switch says it is the name of a plan.",
+        "solution": "Write 'Go plan' and 'Plus plan', or put a heading such as 'Choose a plan' above the switch."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg24": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg24.png",
+      "members": {
+        "screen5-f3": {
+          "where": "on the 'ChatGPT Plus' page on screen 5, the right half of the two-part switch, the word 'Plus', shown in grey",
+          "expectation": "It shows the details of the Plus plan, which is probably what is already shown because the heading says 'ChatGPT Plus'.",
+          "confidence": "guessing"
+        },
+        "screen20-f3": {
+          "where": "on the 'ChatGPT Plus' page on screen 20, the right half of the two-part switch, the word 'Plus', shown in grey",
+          "expectation": "It shows the details of the Plus plan, which is probably what is already shown because the heading says 'ChatGPT Plus'.",
+          "confidence": "guessing"
+        },
+        "screen31-f3": {
+          "where": "on the 'ChatGPT Plus' page on screen 31, the right half of the two-part switch, the word 'Plus', shown in grey",
+          "expectation": "It shows the details of the Plus plan, which is probably what is already shown because the heading says 'ChatGPT Plus'.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same place, same word on each copy of the page.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It matches the page heading, so I can work out it is the selected plan.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg25": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg25.png",
+      "members": {
+        "screen5-f4": {
+          "where": "near the bottom of the 'ChatGPT Plus' page on screen 5, the text button 'Restore subscription'",
+          "expectation": "It looks for a subscription I already paid for and turns it back on.",
+          "confidence": "sure"
+        },
+        "screen20-f4": {
+          "where": "near the bottom of the 'ChatGPT Plus' page on screen 20, the text button 'Restore subscription'",
+          "expectation": "It looks for a subscription I already paid for and turns it back on.",
+          "confidence": "sure"
+        },
+        "screen31-f4": {
+          "where": "near the bottom of the 'ChatGPT Plus' page on screen 31, the text button 'Restore subscription'",
+          "expectation": "It looks for a subscription I already paid for and turns it back on.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button, same words.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg26": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg26.png",
+      "members": {
+        "screen5-f5": {
+          "where": "at the bottom of the 'ChatGPT Plus' page on screen 5, the black button 'Upgrade for $19.99'",
+          "expectation": "It starts paying $19.99 for the Plus plan; the line under it says it renews monthly.",
+          "confidence": "sure"
+        },
+        "screen20-f5": {
+          "where": "at the bottom of the 'ChatGPT Plus' page on screen 20, the black button 'Upgrade for $19.99'",
+          "expectation": "It starts paying $19.99 for the Plus plan; the line under it says it renews monthly.",
+          "confidence": "sure"
+        },
+        "screen31-f5": {
+          "where": "at the bottom of the 'ChatGPT Plus' page on screen 31, the black button 'Upgrade for $19.99'",
+          "expectation": "It starts paying $19.99 for the Plus plan; the line under it says it renews monthly.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button and same price each time.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It states the action and the price literally.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg27": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg27.png",
+      "members": {
+        "screen7-f1": {
+          "where": "screen 7, the dimmed grey strip on the right side of the screen, next to the open side menu, showing the chat screen behind it",
+          "expectation": "It probably closes the side menu and shows the chat screen again. It is not drawn as a button though; it is the screen behind the menu, greyed out.",
+          "confidence": "guessing"
+        },
+        "screen21-f1": {
+          "where": "screen 21, the dimmed strip to the right of the side menu; through the grey I can still see an X and the picture tiles of the screen behind",
+          "expectation": "Probably closes the side menu, but it could also press the X that shows through the grey. I cannot tell.",
+          "confidence": "guessing"
+        },
+        "screen33-f1": {
+          "where": "screen 33, the dimmed grey strip on the right side of the screen, next to the open side menu, showing the chat screen behind it",
+          "expectation": "It probably closes the side menu and shows the chat screen again. It is not drawn as a button though; it is the screen behind the menu, greyed out.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same greyed strip beside the same side menu each time.",
+      "affects_navigation": "A little; I would normally close the menu with a button I can see, not by pressing the greyed area.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It is not drawn as a control, it is the chat screen dimmed behind the menu. On screen 21 the dimmed area still shows an X and picture tiles through the grey, so I do not know if pressing there closes the menu or presses the X underneath.",
+        "solution": "Put a visible close button in the side menu itself, so I do not have to press the dimmed background."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg28": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg28.png",
+      "members": {
+        "screen7-f2": {
+          "where": "top of the side menu on screen 7, the word 'ChatGPT' in large bold letters",
+          "expectation": "I do not think it does anything. It looks like the title of the menu, not a button.",
+          "confidence": "no idea"
+        },
+        "screen21-f2": {
+          "where": "top of the side menu on screen 21, the word 'ChatGPT' in large bold letters",
+          "expectation": "I do not think it does anything. It looks like the title of the menu, not a button.",
+          "confidence": "no idea"
+        },
+        "screen33-f2": {
+          "where": "top of the side menu on screen 33, the word 'ChatGPT' in large bold letters",
+          "expectation": "I do not think it does anything. It looks like the title of the menu, not a button.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same title in the same place on each copy of the menu.",
+      "affects_navigation": "Not much, I would never press it anyway because it looks like a heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "If this is a button, nothing tells me: it is drawn exactly like a heading, and the name of the app does not describe an action.",
+        "solution": "If it does something, draw it as a button and label it with what it does, for example 'New chat'. If it does nothing, it is fine as a heading."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg29": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg29.png",
+      "members": {
+        "screen7-f3": {
+          "where": "top-right of the side menu on screen 7, a magnifying glass",
+          "expectation": "It searches, probably through my past chats.",
+          "confidence": "sure"
+        },
+        "screen21-f3": {
+          "where": "top-right of the side menu on screen 21, a magnifying glass",
+          "expectation": "It searches, probably through my past chats.",
+          "confidence": "sure"
+        },
+        "screen33-f3": {
+          "where": "top-right of the side menu on screen 33, a magnifying glass",
+          "expectation": "It searches, probably through my past chats.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same icon, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The magnifying glass is a real object and the search convention.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg30": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg30.png",
+      "members": {
+        "screen7-f4": {
+          "where": "side menu on screen 7, the first row: stacked pictures icon and the word 'Images'",
+          "expectation": "It opens a page with the images I have made.",
+          "confidence": "sure"
+        },
+        "screen21-f4": {
+          "where": "side menu on screen 21, the first row: stacked pictures icon and the word 'Images'",
+          "expectation": "It opens a page with the images I have made.",
+          "confidence": "sure"
+        },
+        "screen33-f4": {
+          "where": "side menu on screen 33, the first row: stacked pictures icon and the word 'Images'",
+          "expectation": "It opens a page with the images I have made.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same place, same word.",
+      "affects_navigation": "Yes, these rows are the main route through the app.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal word, same place every time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg31": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg31.png",
+      "members": {
+        "screen7-f5": {
+          "where": "side menu on screen 7, the second row: an icon like books on a shelf and the word 'Library'",
+          "expectation": "It opens a collection of things I have saved or made. I am not sure what exactly goes in it, compared with 'Images'.",
+          "confidence": "guessing"
+        },
+        "screen21-f5": {
+          "where": "side menu on screen 21, the second row: an icon like books on a shelf and the word 'Library'",
+          "expectation": "It opens a collection of things I have saved or made. I am not sure what exactly goes in it, compared with 'Images'.",
+          "confidence": "guessing"
+        },
+        "screen33-f5": {
+          "where": "side menu on screen 33, the second row: an icon like books on a shelf and the word 'Library'",
+          "expectation": "It opens a collection of things I have saved or made. I am not sure what exactly goes in it, compared with 'Images'.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same place.",
+      "affects_navigation": "Yes, it is one of the main sections.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is consistent. 'Library' is a little vague about what it contains, but it is always the same row.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg32": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg32.png",
+      "members": {
+        "screen7-f6": {
+          "where": "side menu on screen 7, the third row: a folder icon and the word 'Projects'",
+          "expectation": "It opens a page of projects, which are folders that group chats together.",
+          "confidence": "guessing"
+        },
+        "screen21-f6": {
+          "where": "side menu on screen 21, the third row: a folder icon and the word 'Projects'",
+          "expectation": "It opens a page of projects, which are folders that group chats together.",
+          "confidence": "guessing"
+        },
+        "screen33-f6": {
+          "where": "side menu on screen 33, the third row: a folder icon and the word 'Projects'",
+          "expectation": "It opens a page of projects, which are folders that group chats together.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same place.",
+      "affects_navigation": "Yes, it is one of the main sections.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same word in the same place each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg33": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg33.png",
+      "members": {
+        "screen7-f7": {
+          "where": "side menu on screen 7, the fourth row: a clock icon and the word 'Scheduled'",
+          "expectation": "It opens a list of tasks I have set to run at a certain time.",
+          "confidence": "guessing"
+        },
+        "screen21-f7": {
+          "where": "side menu on screen 21, the fourth row: a clock icon and the word 'Scheduled'",
+          "expectation": "It opens a list of tasks I have set to run at a certain time.",
+          "confidence": "guessing"
+        },
+        "screen33-f7": {
+          "where": "side menu on screen 33, the fourth row: a clock icon and the word 'Scheduled'",
+          "expectation": "It opens a list of tasks I have set to run at a certain time.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same place.",
+      "affects_navigation": "Yes, it is one of the main sections.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same word in the same place each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg34": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg34.png",
+      "members": {
+        "screen7-f10": {
+          "where": "side menu on screen 7, second row below the divider line, under the first 'Create image', plain text 'Polish writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'polish writing' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen21-f10": {
+          "where": "side menu on screen 21, second row below the divider line, under the first 'Create image', plain text 'Polish writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'polish writing' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen33-f10": {
+          "where": "side menu on screen 33, second row below the divider line, under the first 'Create image', plain text 'Polish writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'polish writing' to some text right now.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same row in the same place on each copy of the menu.",
+      "affects_navigation": "Yes, if I think these are commands and they are really old chats, I will open the wrong thing.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The row is consistent, but nothing says this list is my past chats. 'Polish writing' reads as an instruction, and 'polish' is not literal for writing, so I am not sure whether pressing it opens an old chat or starts a new task.",
+        "solution": "Put a heading above the list, for example 'Recent chats', so I know these are titles of chats and not commands."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg35": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg35.png",
+      "members": {
+        "screen7-f11": {
+          "where": "side menu on screen 7, third row below the divider line, plain text 'Proofread writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'proofread writing' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen21-f11": {
+          "where": "side menu on screen 21, third row below the divider line, plain text 'Proofread writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'proofread writing' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen33-f11": {
+          "where": "side menu on screen 33, third row below the divider line, plain text 'Proofread writing'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'proofread writing' to some text right now.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same row in the same place on each copy of the menu.",
+      "affects_navigation": "Yes, if I think these are commands and they are really old chats, I will open the wrong thing.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The row is consistent, but nothing says this list is my past chats. 'Proofread writing' reads as an instruction, so I am not sure whether pressing it opens an old chat or starts a new task.",
+        "solution": "Put a heading above the list, for example 'Recent chats', so I know these are titles of chats and not commands."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg36": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg36.png",
+      "members": {
+        "screen7-f12": {
+          "where": "side menu on screen 7, fourth row below the divider line, plain text 'Shorten writing rewrite'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'shorten writing rewrite' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen21-f12": {
+          "where": "side menu on screen 21, fourth row below the divider line, plain text 'Shorten writing rewrite'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'shorten writing rewrite' to some text right now.",
+          "confidence": "guessing"
+        },
+        "screen33-f12": {
+          "where": "side menu on screen 33, fourth row below the divider line, plain text 'Shorten writing rewrite'",
+          "expectation": "I think it opens a past chat with that title. But the list has no heading, so it could also be a command that does 'shorten writing rewrite' to some text right now.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "It is the same row in the same place on each copy of the menu.",
+      "affects_navigation": "Yes, if I think these are commands and they are really old chats, I will open the wrong thing.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The row is consistent, but nothing says this list is my past chats. 'Shorten writing rewrite' reads as an instruction, so I am not sure whether pressing it opens an old chat or starts a new task.",
+        "solution": "Put a heading above the list, for example 'Recent chats', so I know these are titles of chats and not commands."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg37": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg37.png",
+      "members": {
+        "screen7-f16": {
+          "where": "side menu on screen 7, the last row of the list, grey text 'See all...'",
+          "expectation": "It shows the full list of my past chats.",
+          "confidence": "guessing"
+        },
+        "screen21-f16": {
+          "where": "side menu on screen 21, the last row of the list, grey text 'See all...'",
+          "expectation": "It shows the full list of my past chats.",
+          "confidence": "guessing"
+        },
+        "screen33-f16": {
+          "where": "side menu on screen 33, the last row of the list, grey text 'See all...'",
+          "expectation": "It shows the full list of my past chats.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal enough; it clearly continues the list above it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg38": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg38.png",
+      "members": {
+        "screen7-f17": {
+          "where": "bottom-left of the side menu on screen 7, a blue button with a pencil-on-square icon and the word 'Chat'",
+          "expectation": "It starts a new, empty chat.",
+          "confidence": "guessing"
+        },
+        "screen21-f17": {
+          "where": "bottom-left of the side menu on screen 21, a blue button with a pencil-on-square icon and the word 'Chat'",
+          "expectation": "It starts a new, empty chat.",
+          "confidence": "guessing"
+        },
+        "screen33-f17": {
+          "where": "bottom-left of the side menu on screen 33, a blue button with a pencil-on-square icon and the word 'Chat'",
+          "expectation": "It starts a new, empty chat.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button, same place.",
+      "affects_navigation": "Yes, starting a chat is the main thing I do.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Chat' and the position are the same every time. 'New chat' would be more precise, but I can work it out.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg39": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg39.png",
+      "members": {
+        "screen7-f18": {
+          "where": "bottom-right of the side menu on screen 7, a green circle with the letters 'AT'",
+          "expectation": "It opens my account or profile settings; 'AT' must be my initials.",
+          "confidence": "guessing"
+        },
+        "screen21-f18": {
+          "where": "bottom-right of the side menu on screen 21, a green circle with the letters 'AT'",
+          "expectation": "It opens my account or profile settings; 'AT' must be my initials.",
+          "confidence": "guessing"
+        },
+        "screen33-f18": {
+          "where": "bottom-right of the side menu on screen 33, a green circle with the letters 'AT'",
+          "expectation": "It opens my account or profile settings; 'AT' must be my initials.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same circle, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Initials in a circle is the account convention and it is always in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg40": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg40.png",
+      "members": {
+        "screen9-f4": {
+          "where": "screen 9, the 'Camera' row with a camera icon in the menu the plus opens",
+          "expectation": "It opens the camera to take a photo to add to my message.",
+          "confidence": "sure"
+        },
+        "screen23-f11": {
+          "where": "screen 23, the 'Camera' row with a camera icon in the menu the plus opens",
+          "expectation": "It opens the camera to take a photo to add to my message.",
+          "confidence": "sure"
+        },
+        "screen35-f5": {
+          "where": "screen 35, the 'Camera' row with a camera icon in the menu the plus opens",
+          "expectation": "It opens the camera to take a photo to add to my message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same word, same menu.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The camera is a real object and the word is literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg41": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg41.png",
+      "members": {
+        "screen9-f5": {
+          "where": "screen 9, the 'Photos' row with a picture icon in the menu the plus opens",
+          "expectation": "It opens my photo gallery so I can add a photo to my message.",
+          "confidence": "sure"
+        },
+        "screen23-f12": {
+          "where": "screen 23, the 'Photos' row with a picture icon in the menu the plus opens",
+          "expectation": "It opens my photo gallery so I can add a photo to my message.",
+          "confidence": "sure"
+        },
+        "screen35-f6": {
+          "where": "screen 35, the 'Photos' row with a picture icon in the menu the plus opens",
+          "expectation": "It opens my photo gallery so I can add a photo to my message.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same word, same menu.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal word, same menu each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg42": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg42.png",
+      "members": {
+        "screen9-f6": {
+          "where": "screen 9, the 'Files' row with a paperclip icon in the menu the plus opens",
+          "expectation": "It lets me attach a file from my phone.",
+          "confidence": "sure"
+        },
+        "screen23-f14": {
+          "where": "screen 23, the 'Files' row with a paperclip icon in the menu the plus opens",
+          "expectation": "It lets me attach a file from my phone.",
+          "confidence": "sure"
+        },
+        "screen35-f9": {
+          "where": "screen 35, the 'Files' row with a paperclip icon in the menu the plus opens",
+          "expectation": "It lets me attach a file from my phone.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row, same word.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal word and the paperclip is the attachment convention.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg43": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg43.png",
+      "members": {
+        "screen9-f8": {
+          "where": "screen 9, the last row of the plus menu, an icon like a brain and the words 'Think harder'",
+          "expectation": "I guess it makes the app spend longer on its answer. I cannot tell whether it is a switch that stays on or something that happens once.",
+          "confidence": "guessing"
+        },
+        "screen23-f16": {
+          "where": "screen 23, the last row of the plus menu, an icon like a brain and the words 'Think harder'",
+          "expectation": "I guess it makes the app spend longer on its answer. I cannot tell whether it is a switch that stays on or something that happens once.",
+          "confidence": "guessing"
+        },
+        "screen35-f11": {
+          "where": "screen 35, the last row of the plus menu, an icon like a brain and the words 'Think harder'",
+          "expectation": "I guess it makes the app spend longer on its answer. I cannot tell whether it is a switch that stays on or something that happens once.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same row with the same words each time.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It is consistent, but 'Think harder' is not literal: software does not think, and it does not say what will change or for how long.",
+        "solution": "Say what it does literally, for example 'Slower, more detailed answer', and show whether it is switched on."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg44": {
+      "kind": "glyph_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/gg44.png",
+      "members": {
+        "screen3-f12": {
+          "where": "screen 3, the bottom-right picture tile: a cartoon man winking and pointing at me, with no caption visible because the message box covers the bottom of the tile",
+          "expectation": "I have no idea. There is no text, only a picture of a man pointing.",
+          "confidence": "no idea"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "There is only one of it, so there is nothing to compare.",
+      "affects_navigation": "It would not change my route; I would simply avoid it.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There is nothing on the tile that tells me what it does. The other tiles have a caption at the bottom; on this one the message box covers exactly that part.",
+        "solution": "Make sure the caption is visible, for example by leaving space above the message box so the last row of tiles is not covered."
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg45": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg45.png",
+      "members": {
+        "screen4-f5": {
+          "where": "screen 4, in the 'Write or edit' panel, a row with a pencil and 'Clarify a confusing section'",
+          "expectation": "It puts a request to clarify a confusing section into my message, or perhaps sends it straight away. I cannot tell which.",
+          "confidence": "guessing"
+        },
+        "screen34-f5": {
+          "where": "screen 34, in the 'Write or edit' panel, a row with a pencil and 'Clarify a confusing section'",
+          "expectation": "It puts a request to clarify a confusing section into my message, or perhaps sends it straight away. I cannot tell which.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same panel, same row, same words.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The words are literal. I would like to know whether it sends immediately, but it is the same on both screens.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg46": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg46.png",
+      "members": {
+        "screen4-f6": {
+          "where": "screen 4, in the 'Write or edit' panel, a row with a pencil and 'Proofread my writing'",
+          "expectation": "It starts a request to proofread text I give it.",
+          "confidence": "guessing"
+        },
+        "screen34-f6": {
+          "where": "screen 34, in the 'Write or edit' panel, a row with a pencil and 'Proofread my writing'",
+          "expectation": "It starts a request to proofread text I give it.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same panel, same row.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg47": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg47.png",
+      "members": {
+        "screen4-f7": {
+          "where": "screen 4, in the 'Write or edit' panel, a row with a pencil and 'Rewrite to be friendlier'",
+          "expectation": "It starts a request to rewrite my text in a friendlier tone.",
+          "confidence": "guessing"
+        },
+        "screen34-f7": {
+          "where": "screen 34, in the 'Write or edit' panel, a row with a pencil and 'Rewrite to be friendlier'",
+          "expectation": "It starts a request to rewrite my text in a friendlier tone.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same panel, same row.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg48": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg48.png",
+      "members": {
+        "screen6-f4": {
+          "where": "screen 6, the underlined words 'Learn more' after 'This chat won't appear in history.' under the heading 'Temporary chat'",
+          "expectation": "It opens an explanation of what a temporary chat is.",
+          "confidence": "sure"
+        },
+        "screen32-f4": {
+          "where": "screen 32, the underlined words 'Learn more' after 'This chat won't appear in history.' under the heading 'Temporary chat'",
+          "expectation": "It opens an explanation of what a temporary chat is.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same link, same sentence, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Underlined 'Learn more' after a sentence is a normal link and it is the same on both screens.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg49": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg49.png",
+      "members": {
+        "screen17-f1": {
+          "where": "screen 17, a share icon (three dots joined by lines) in a dark circle on the top-right of the large preview picture, left of the X",
+          "expectation": "It shares this picture, probably through the phone's share menu. I am not sure why I would share an example picture.",
+          "confidence": "guessing"
+        },
+        "screen19-f1": {
+          "where": "screen 19, a share icon (three dots joined by lines) in a dark circle on the top-right of the large preview picture, left of the X",
+          "expectation": "It shares this picture, probably through the phone's share menu. I am not sure why I would share an example picture.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same icon in the same corner of the preview.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The share symbol is a common convention and it is in the same place on both previews.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "gg50": {
+      "kind": "glyph_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/gg50.png",
+      "members": {
+        "screen17-f5": {
+          "where": "screen 17, the black 'Choose photo' button at the bottom of the preview sheet",
+          "expectation": "It opens my photo gallery so I can pick the photo to transform.",
+          "confidence": "sure"
+        },
+        "screen19-f4": {
+          "where": "screen 19, the black 'Choose photo' button at the bottom of the preview sheet",
+          "expectation": "It opens my photo gallery so I can pick the photo to transform.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same button, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg3": {
+      "kind": "function_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/fg3.png",
+      "members": {
+        "screen1-f4": {
+          "where": "screen 1, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen1-f9": {
+          "where": "screen 1, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen4-f10": {
+          "where": "screen 4, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen8-f4": {
+          "where": "screen 8, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen8-f9": {
+          "where": "screen 8, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen12-f4": {
+          "where": "screen 12, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen12-f9": {
+          "where": "screen 12, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen15-f4": {
+          "where": "screen 15, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen15-f9": {
+          "where": "screen 15, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen26-f4": {
+          "where": "screen 26, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen26-f9": {
+          "where": "screen 26, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen27-f4": {
+          "where": "screen 27, the row with a headphones picture and the words 'Start a voice chat' just above the message box",
+          "expectation": "Starts a spoken conversation with the app.",
+          "confidence": "sure"
+        },
+        "screen27-f9": {
+          "where": "screen 27, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        },
+        "screen34-f10": {
+          "where": "screen 34, the blue sound-wave circle at the right end of the message box, next to the microphone",
+          "expectation": "Something to do with sound; I would not guess it is the same as 'Start a voice chat'.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "no",
+      "same_expectation_why": "The row says 'Start a voice chat' with a headphones picture, and the blue circle has a sound-wave picture and no words; nothing tells me they are the same thing.",
+      "affects_navigation": "Yes: if I learned to start a voice chat from the row, I would not find it again on the screens where only the blue circle is there, and I might press the microphone instead.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The row with headphones and the words 'Start a voice chat' is clear. The blue sound-wave circle has no words and sits next to a microphone, so I would not connect it to the row. It is one action drawn two different ways, and the unlabelled way is the one that is on every screen.",
+        "solution": "Use the same headphones picture on the blue button, or put the words 'Voice chat' under it, so it clearly matches the row."
+      },
+      "test_cases": [
+        {
+          "id": "amy-fg3-tc1",
+          "what_to_try": "On the empty new chat, look for the row with headphones and 'Start a voice chat' (it may be gone on this phone). If it is there, do not press it (voice mode is not allowed): look at it and the blue circle together and say whether, seeing them live, you would take them for the same thing. If it is gone, record the test as not_executed.",
+          "real_if": "seeing them live, you would still not connect the row and the blue circle",
+          "not_real_if": "seeing them live, you would connect them",
+          "what_happened": "I opened the app on the empty new chat. The only rows above the typing bar were 'Create an image or sticker' and 'Write or edit'. There was no 'Start a voice chat' row, so I could not compare it with the blue circle. Not executed.",
+          "status": "not_executed"
+        }
+      ],
+      "opinion": null,
+      "provisional": true
+    },
+    "fg4": {
+      "kind": "function_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/fg4.png",
+      "members": {
+        "screen3-f6": {
+          "where": "screen 3, the X at the right end of the 'Trending' / 'Templates' row above the picture tiles",
+          "expectation": "It closes the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen14-f6": {
+          "where": "screen 14, the X at the right end of the 'Trending' / 'Templates' row above the picture tiles",
+          "expectation": "It closes the tray of picture ideas.",
+          "confidence": "sure"
+        },
+        "screen22-f6": {
+          "where": "screen 22, the X at the right end of the 'Trending' / 'Templates' row above the picture tiles",
+          "expectation": "It closes the tray of picture ideas.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same X, same row, same place on all three screens.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It is the same X in the same place, closing the same tray.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "fg8": {
+      "kind": "function_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/fg8.png",
+      "members": {
+        "screen4-f4": {
+          "where": "screen 4, the X at the right of the 'Write or edit' heading",
+          "expectation": "It closes the 'Write or edit' panel.",
+          "confidence": "sure"
+        },
+        "screen34-f4": {
+          "where": "screen 34, the X at the right of the 'Write or edit' heading",
+          "expectation": "It closes the 'Write or edit' panel.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "Same X, same heading, same place.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same X in the same place each time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    },
+    "cfg1": {
+      "kind": "function_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/cfg1.png",
+      "members": {
+        "screen7-f2": {
+          "where": "top of the side menu on screen 7, the large bold word 'ChatGPT'",
+          "expectation": "Nothing, I think; it looks like the menu title.",
+          "confidence": "no idea"
+        },
+        "screen7-f17": {
+          "where": "bottom-left of the side menu on screen 7, the blue 'Chat' button with the pencil-on-square icon",
+          "expectation": "It starts a new chat.",
+          "confidence": "guessing"
+        },
+        "screen21-f2": {
+          "where": "top of the side menu on screen 21, the large bold word 'ChatGPT'",
+          "expectation": "Nothing, I think; it looks like a title.",
+          "confidence": "no idea"
+        },
+        "screen21-f17": {
+          "where": "bottom-left of the side menu on screen 21, the blue 'Chat' button",
+          "expectation": "It starts a new chat.",
+          "confidence": "guessing"
+        },
+        "screen25-f2": {
+          "where": "top-right on screen 25, a pencil-on-square icon, left of a three-dot icon, above the '@Create image' bubble",
+          "expectation": "It starts a new chat. I connect it with the 'Chat' button in the side menu because the picture is the same.",
+          "confidence": "guessing"
+        },
+        "screen33-f2": {
+          "where": "top of the side menu on screen 33, the large bold word 'ChatGPT'",
+          "expectation": "Nothing, I think; it looks like a title.",
+          "confidence": "no idea"
+        },
+        "screen33-f17": {
+          "where": "bottom-left of the side menu on screen 33, the blue 'Chat' button",
+          "expectation": "It starts a new chat.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "The 'Chat' buttons and the unlabelled pencil-and-square icon share a picture, so I would expect those to do the same thing, probably start a new chat. The big 'ChatGPT' title does not look like it does anything.",
+      "affects_navigation": "Yes, if starting a new chat is sometimes a word button, sometimes a bare icon and sometimes a title, I would not know which to look for on each screen.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The 'Chat' button in the side menu is clear. On screen 25 the same pencil icon has no word, but I can connect it because the picture matches. The 'ChatGPT' title is the part I cannot connect: it looks like a heading, not like a way to start a chat.",
+        "solution": "Label the pencil icon 'New chat' everywhere, and if the 'ChatGPT' title also starts a new chat, make it look like a button or remove that behaviour."
+      },
+      "test_cases": [
+        {
+          "id": "amy-cfg1-tc1",
+          "what_to_try": "Open the side menu and open any past chat from the list. Open the side menu again and press the big 'ChatGPT' at the top of it; note where you land. Open a past chat again and press the pencil-in-a-square at the top right; note where you land. Open a past chat again, open the side menu and press the blue 'Chat' button; note where you land.",
+          "real_if": "one of the three took you somewhere you did not expect, or you could not have told beforehand that they do the same thing",
+          "not_real_if": "each of the three did what you expected",
+          "what_happened": "I opened a past chat ('Greeting exchange'), opened the side menu and pressed the big 'ChatGPT' at the top. I expected nothing, because it looks like a title. It left my chat and started a new empty chat with the keyboard open. Then I opened a past chat ('Hello Greeting') and pressed the pencil-in-a-square at the top right. That also gave me a new empty chat, which I expected. Then I opened 'Greeting Response', opened the menu and pressed the blue 'Chat' button. Again a new empty chat, as I expected. So all three do the same thing, but I could not have told that the 'ChatGPT' title was one of them. If I pressed that heading by accident, I would leave the chat I was in.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "unchanged",
+      "provisional": false
+    },
+    "cfg2": {
+      "kind": "function_group",
+      "sheet": "inputs/ChatGPT/functionality-groups/groups/cfg2.png",
+      "members": {
+        "screen7-f1": {
+          "where": "screen 7, the dimmed grey strip to the right of the open side menu",
+          "expectation": "Probably closes the side menu. It does not look like a button.",
+          "confidence": "guessing"
+        },
+        "screen16-f12": {
+          "where": "screen 16, the X on the left of the drawing panel, level with the drawing tools",
+          "expectation": "It closes the drawing panel; I do not know whether my drawing is kept.",
+          "confidence": "guessing"
+        },
+        "screen17-f2": {
+          "where": "screen 17, the white X in a dark circle on the top-right corner of the large '80s photo preview",
+          "expectation": "It closes the preview.",
+          "confidence": "sure"
+        },
+        "screen18-f1": {
+          "where": "screen 18, the X in the top-left corner above the sticker sentence",
+          "expectation": "It closes the sticker sentence screen.",
+          "confidence": "sure"
+        },
+        "screen19-f2": {
+          "where": "screen 19, the white X in a circle on the top-right corner of the cherry-blossom preview",
+          "expectation": "It closes the preview.",
+          "confidence": "sure"
+        },
+        "screen21-f1": {
+          "where": "screen 21, the dimmed strip to the right of the side menu, with an X and picture tiles showing through the grey",
+          "expectation": "Either closes the side menu or presses the X underneath. I cannot tell.",
+          "confidence": "guessing"
+        },
+        "screen33-f1": {
+          "where": "screen 33, the dimmed strip to the right of the side menu",
+          "expectation": "Probably closes the side menu.",
+          "confidence": "guessing"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "All of them close or dismiss whatever is on top: the X's close a preview or a panel, and the grey strip closes the side menu.",
+      "affects_navigation": "Yes, if one of them did something else than closing I would be afraid to press any of them.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The X's are clear. The grey strip beside the side menu is not drawn as anything I can press, and on screen 21 an X shows through the grey, so I cannot tell which of the two I would be pressing.",
+        "solution": "Give the side menu its own visible close button, and do not leave other controls showing through the dimmed area."
+      },
+      "test_cases": [
+        {
+          "id": "amy-cfg2-tc1",
+          "what_to_try": "Open the side menu with the two-line button at the top left, and then get back out of it without using that button again, in whatever way you would naturally try. Then press 'Create an image or sticker', press the 'Sketch' picture, and close the drawing panel the way you would naturally try.",
+          "real_if": "you could not find how to close the side menu or the drawing panel, or you ended up somewhere you did not expect",
+          "not_real_if": "you closed both without hunting and ended where you expected",
+          "what_happened": "I opened the side menu. There is no close button in it, so I pressed the phone's Back button. The menu closed and I was on the same empty chat. I also tried pressing the grey strip on the right once, and that closed the menu too. For the drawing panel, I pressed the X on the left of the drawing tools and the panel closed, leaving the picture tray. Both closed without hunting and I ended where I expected. The menu still has no visible close control of its own, and I did not try the case where an X shows through the grey.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "fg9": {
+      "kind": "function_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/fg9.png",
+      "members": {
+        "screen9-f5": {
+          "where": "screen 9, the 'Photos' row with a picture icon in the plus menu",
+          "expectation": "Opens my photo gallery to add a photo.",
+          "confidence": "sure"
+        },
+        "screen17-f5": {
+          "where": "screen 17, the black 'Choose photo' button at the bottom of the '80s preview sheet",
+          "expectation": "Opens my gallery to choose the photo to transform.",
+          "confidence": "sure"
+        },
+        "screen18-f3": {
+          "where": "screen 18, the grey rounded word 'Photo' inside the sentence 'Create a 3D sticker pack based on Photo'",
+          "expectation": "Maybe lets me pick a photo, maybe lets me change the word. It looks like a placeholder in the sentence.",
+          "confidence": "guessing"
+        },
+        "screen19-f4": {
+          "where": "screen 19, the black 'Choose photo' button at the bottom of the caricature preview sheet",
+          "expectation": "Opens my gallery to choose a photo.",
+          "confidence": "sure"
+        },
+        "screen23-f12": {
+          "where": "screen 23, the 'Photos' row in the plus menu over the tiles",
+          "expectation": "Opens my photo gallery.",
+          "confidence": "sure"
+        },
+        "screen35-f6": {
+          "where": "screen 35, the 'Photos' row in the plus menu above the keyboard",
+          "expectation": "Opens my photo gallery.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "unsure",
+      "same_expectation_why": "The 'Photos' rows and the 'Choose photo' buttons clearly both open my photos. The grey word 'Photo' inside the sentence on screen 18 looks like part of the sentence, so I am not sure it does the same.",
+      "affects_navigation": "Only a little; I would find my photos through the rows and buttons anyway.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The rows and buttons are fine and literal. On screen 18 the word 'Photo' is drawn as a grey word in a sentence, 'Create a 3D sticker pack based on Photo', and I would not know that pressing it lets me choose a photo, or whether it changes the word instead.",
+        "solution": "Make the 'Photo' part of the sentence look like a button, for example 'Choose photo' with the same picture icon as the 'Photos' row."
+      },
+      "test_cases": [
+        {
+          "id": "amy-fg9-tc1",
+          "what_to_try": "Press '+' at the left of the typing bar, press 'Photos', look, and come back with the phone's Back button without choosing anything. Then press 'Create an image or sticker', press the 'Stickers' picture, and in the sentence press the word 'Photo'; look at what appears. Press 'Choose photo' if offered, look, and come back without choosing anything. Close the sticker page with the X at the top left.",
+          "real_if": "before pressing it you would not have known the 'Photo' word in the sentence leads to choosing a photo like 'Photos' does",
+          "not_real_if": "you would have known, or the two led you to the same kind of place as you expected",
+          "what_happened": "I pressed '+', then 'Photos'. The phone's photo picker opened ('No photos yet') and I came back with Back without choosing anything. Then I opened the picture tray and pressed 'Stickers'. The page said 'Create a 3D sticker pack based on Photo, remixing with' and some emoji. Before pressing, I still would not have known that the grey word 'Photo' is a button. When I pressed it, a small menu appeared with 'Take photo' and 'Choose photo'. I pressed 'Choose photo' and it opened the same photo picker as 'Photos'. I came back with Back without choosing anything and closed the sticker page with the X at the top left, which took me back to the picture tray. Once pressed, it led to the same place as 'Photos' and was clearly worded. The only difficulty is knowing that the grey word can be pressed.",
+          "status": "executed"
+        }
+      ],
+      "opinion": "softened",
+      "provisional": false
+    },
+    "fg10": {
+      "kind": "function_group",
+      "sheet": "output/ChatGPT/functionality-detector/sheets/fg10.png",
+      "members": {
+        "screen9-f4": {
+          "where": "screen 9, the 'Camera' row with a camera icon in the plus menu",
+          "expectation": "Opens the camera to take a photo for my message.",
+          "confidence": "sure"
+        },
+        "screen17-f4": {
+          "where": "screen 17, the white 'Take photo' button above 'Choose photo' on the '80s preview sheet",
+          "expectation": "Opens the camera so I can take the photo to transform.",
+          "confidence": "sure"
+        },
+        "screen23-f11": {
+          "where": "screen 23, the 'Camera' row in the plus menu over the tiles",
+          "expectation": "Opens the camera.",
+          "confidence": "sure"
+        },
+        "screen35-f5": {
+          "where": "screen 35, the 'Camera' row in the plus menu above the keyboard",
+          "expectation": "Opens the camera.",
+          "confidence": "sure"
+        }
+      },
+      "disclosures": [],
+      "same_expectation": "yes",
+      "same_expectation_why": "The 'Camera' rows and the 'Take photo' button both say they use the camera.",
+      "affects_navigation": "Not much.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Camera' and 'Take photo' are different words but both are literal and both describe using the camera, so I can connect them.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "groups_reviewed": 57,
+    "no_problem": 40,
+    "navigate_with_difficulty": 16,
+    "cannot_handle": 1,
+    "same_expectation": {
+      "yes": 50,
+      "no": 3,
+      "unsure": 4
+    },
+    "tests_run": 7,
+    "opinions": {
+      "unchanged": 3,
+      "hardened": 1,
+      "softened": 3,
+      "reversed": 0
+    },
+    "out_of_scope": 15,
+    "not_executed": 1
+  },
+  "out_of_scope": [
+    {
+      "group": "gg3",
+      "why": "On screens 3, 14 and 22 the dashed speech bubble is drawn in very faint grey on a light background; I can barely see it.",
+      "category": "contrast"
+    },
+    {
+      "group": "gg20",
+      "why": "On screen 22 the 'Stickers' tile is mostly covered by the message box and the keyboard, so I cannot see its caption or press it safely.",
+      "category": "covered content"
+    },
+    {
+      "group": "gg21",
+      "why": "On screen 22 the 'Create a caricature' tile is mostly covered by the keyboard and the message box.",
+      "category": "covered content"
+    },
+    {
+      "group": "gg44",
+      "why": "The message box sits on top of the bottom of this tile, exactly where the caption would be.",
+      "category": "covered content"
+    },
+    {
+      "group": "gg27",
+      "why": "The dimmed grey strip is not drawn as a control at all; it is the previous screen greyed out.",
+      "category": "visual affordance"
+    },
+    {
+      "group": "gg19",
+      "why": "The two tiles are identical, so that part is fine. But ''80s flashback' is not a literal description; I have to guess from the photo what it does to my picture.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg23",
+      "why": "It is consistent, but the word 'Go' reads to me as an instruction, not as a name. Nothing on the switch says it is the name of a plan.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg27",
+      "why": "It is not drawn as a control, it is the chat screen dimmed behind the menu. On screen 21 the dimmed area still shows an X and picture tiles through the grey, so I do not know if pressing there closes the menu or presses the X underneath.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg28",
+      "why": "If this is a button, nothing tells me: it is drawn exactly like a heading, and the name of the app does not describe an action.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg34",
+      "why": "The row is consistent, but nothing says this list is my past chats. 'Polish writing' reads as an instruction, and 'polish' is not literal for writing, so I am not sure whether pressing it opens an old chat or starts a new task.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg35",
+      "why": "The row is consistent, but nothing says this list is my past chats. 'Proofread writing' reads as an instruction, so I am not sure whether pressing it opens an old chat or starts a new task.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg36",
+      "why": "The row is consistent, but nothing says this list is my past chats. 'Shorten writing rewrite' reads as an instruction, so I am not sure whether pressing it opens an old chat or starts a new task.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg43",
+      "why": "It is consistent, but 'Think harder' is not literal: software does not think, and it does not say what will change or for how long.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg44",
+      "why": "There is nothing on the tile that tells me what it does. The other tiles have a caption at the bottom; on this one the message box covers exactly that part.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    },
+    {
+      "group": "gg3",
+      "why": "The picture is an idea, not a thing, and it changes: black on most screens, faint grey on screens 3, 14 and 22, and with a tick on screens 6 and 32. Only screen 6 gives me a clue, because that screen says 'Temporary chat'. I would have to press it to find out, and I would not know whether the grey one works at all.",
+      "category": "purpose/legibility of a single control — Purpose phase"
+    }
+  ]
+}

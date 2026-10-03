@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s2",
+  "state_str": "5112ffd6724b0c4b888e0b33ea5da235",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185334.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s2_header_nav.png",
+  "name": "the course picker",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "What would you like to learn?",
+      "verdict_on_region": "a question naming the task of this screen (choosing a course) — with the course list below, the screen is self-evidently the course picker"
+    },
+    {
+      "kind": "header",
+      "text": "For English speakers",
+      "verdict_on_region": "content: labels the group of courses in the list, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "back arrow; the mascot asking 'What would you like to learn?'; the list 'For English speakers' Spanish, French, …; CONTINUE",
+  "identifier_class": "self-evident body copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "strict body-copy call: the question and the list make the screen self-evidently the course picker; 'For English speakers' labels the list",
+  "test_cases": [
+    {
+      "id": "s2-tc1",
+      "type": "unconventional_region",
+      "precondition": "Learn path",
+      "action": "reach the course picker and read 'For English speakers'",
+      "expected_result": "-",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "not executed — the picker is reached through '+ Course', which starts a new course set-up (forbidden)",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "relies on self-evident body copy (the detector never marks this kind); 'For English speakers' dismissed as content. Judged from the image",
+  "recommendation": null,
+  "provisional": false
+}

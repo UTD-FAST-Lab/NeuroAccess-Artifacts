@@ -1,0 +1,646 @@
+{
+  "app": "Discord",
+  "screen": "screen1",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen1_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen1_function_groups.png"
+  },
+  "elements": {
+    "screen1-f1": {
+      "kind": "icon",
+      "appearance": "speech bubble in a rounded square",
+      "state": "selected",
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        63,
+        189,
+        221
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "speech bubble = messages/conversations - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Direct Messages (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Direct Messages\"; talkback_label: \"Direct Messages\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom",
+      "observed_function": "opens the Messages (DM) home; on Messages it stays put",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen1-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f1 (speech bubble in a rounded square) at its captured position and record what happens",
+          "expected_result": "opens the Messages (DM) home; on Messages it stays put",
+          "confirms_if": "it does something unrelated to what the other members of gg3 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg3, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Messages (DM) home; on Messages it stays put",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f2": {
+      "kind": "icon",
+      "appearance": "magnifying glass",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        234,
+        192,
+        318,
+        276
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "magnifying glass = search - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Search (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Search\"; talkback_label: \"Search\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom",
+      "observed_function": "opens DM search: field \"Search in DMs\", tabs Recent/People/Media/Pins/Links/Files",
+      "glyph_group": "gg42",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg42-tc-screen1-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f2 (magnifying glass) at its captured position and record what happens",
+          "expected_result": "opens DM search: field \"Search in DMs\", tabs Recent/People/Media/Pins/Links/Files",
+          "confirms_if": "it does something unrelated to what the other members of gg42 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg42, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens DM search: field \"Search in DMs\", tabs Recent/People/Media/Pins/Links/Files",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg5-tc-screen1-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f2 (\"magnifying glass\") and compare its result with the other renderings in cfg5",
+          "expected_result": "hypothesis: both magnifiers open search",
+          "confirms_if": "both open search (scoped to where they sit)",
+          "overturns_if": "either opens something other than search",
+          "observed_result": "opens DM search: field \"Search in DMs\", tabs Recent/People/Media/Pins/Links/Files",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg42": "Consistent Functionality",
+        "cfg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f3": {
+      "kind": "icon+label",
+      "appearance": "person with a plus sign beside the words \"Add Friends\"",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        350,
+        192,
+        924,
+        276
+      ],
+      "visible_label": "Add Friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Add Friends (from label; status declared)",
+      "accessibility_text": "content_desc: \"Add Friends\"; talkback_label: \"Add Friends\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; carries its own visible words \"Add Friends\"",
+      "observed_function": "opens the screen titled \"Add Friends\"",
+      "glyph_group": "gg43",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg43-tc-screen1-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f3 (person with a plus sign beside the words \"Add Friends\") at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"Add Friends\"",
+          "confirms_if": "it does something unrelated to what the other members of gg43 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg43, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-tc-screen1-f3",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f3 (\"person with a plus sign beside the words \"Add Friends\"\") and compare its result with the other renderings in fg1",
+          "expected_result": "every rendering opens the same \"Add Friends\" screen",
+          "confirms_if": "they reach the same place and one rendering would not be recognised as Add Friends",
+          "overturns_if": "they reach different places, or both renderings carry the words \"Add Friends\" so each is recognisable",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg6-tc-screen1-f3",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f3 (\"person with a plus sign beside the words \"Add Friends\"\") and compare its result with the other renderings in cfg6",
+          "expected_result": "hypothesis: \"Add by Username\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something narrower or different",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg7-tc-screen1-f3",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f3 (\"person with a plus sign beside the words \"Add Friends\"\") and compare its result with the other renderings in cfg7",
+          "expected_result": "hypothesis: \"Find friends\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something different (e.g. contact sync)",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg43": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f4": {
+      "kind": "icon",
+      "appearance": "plus sign on a filled square",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        954,
+        192,
+        1038,
+        276
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus = create/add something new; what it creates is not conveyed by the glyph - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "New Message (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"New Message\"; talkback_label: \"New Message\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom",
+      "observed_function": "opens the screen titled \"New Message\"",
+      "glyph_group": "gg44",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg44-tc-screen1-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f4 (plus sign on a filled square) at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"New Message\"",
+          "confirms_if": "it does something unrelated to what the other members of gg44 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg44, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"New Message\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg44": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f5": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "unselected",
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        255,
+        189,
+        412
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen1-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f5 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen1-f5",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f5 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f6": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "unselected",
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        412,
+        189,
+        570
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen1-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f6 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen1-f6",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f6 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f7": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "unselected",
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        570,
+        189,
+        727
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen1-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f7 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen1-f7",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f7 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f8": {
+      "kind": "icon",
+      "appearance": "plus sign in a circle",
+      "state": null,
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        727,
+        189,
+        885
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "circled plus = add/create; at the foot of a rail of tiles it reads as \"add another of these\" - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Add a Server (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Add a Server\"; talkback_label: \"Add a Server\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom",
+      "observed_function": "opens the full-screen modal \"Create Your Server\"",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc-screen1-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f8 (plus sign in a circle) at its captured position and record what happens",
+          "expected_result": "opens the full-screen modal \"Create Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg4 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg4, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the full-screen modal \"Create Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f9": {
+      "kind": "button",
+      "appearance": "the words \"Add Friends\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        234,
+        1648,
+        1038,
+        1774
+      ],
+      "visible_label": "Add Friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Add Friends (from label; status declared)",
+      "accessibility_text": "content_desc: \"Add Friends\"; talkback_label: \"Add Friends\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; carries its own visible words \"Add Friends\"",
+      "observed_function": "opens the screen titled \"Add Friends\"",
+      "glyph_group": "gg21",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg21-tc-screen1-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f9 (the words \"Add Friends\") at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"Add Friends\"",
+          "confirms_if": "it does something unrelated to what the other members of gg21 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg21, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-tc-screen1-f9",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f9 (\"the words \"Add Friends\"\") and compare its result with the other renderings in fg1",
+          "expected_result": "every rendering opens the same \"Add Friends\" screen",
+          "confirms_if": "they reach the same place and one rendering would not be recognised as Add Friends",
+          "overturns_if": "they reach different places, or both renderings carry the words \"Add Friends\" so each is recognisable",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg6-tc-screen1-f9",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f9 (\"the words \"Add Friends\"\") and compare its result with the other renderings in cfg6",
+          "expected_result": "hypothesis: \"Add by Username\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something narrower or different",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg7-tc-screen1-f9",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f9 (\"the words \"Add Friends\"\") and compare its result with the other renderings in cfg7",
+          "expected_result": "hypothesis: \"Find friends\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something different (e.g. contact sync)",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f10": {
+      "kind": "icon",
+      "appearance": "round avatar of the mascot face with a status dot",
+      "state": "online",
+      "location": "bottom left of the screen",
+      "bounds": [
+        74,
+        2222,
+        158,
+        2306
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "own avatar = account/profile - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; in the bottom account panel beside the name",
+      "observed_function": "opens the user's own profile page",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc-screen1-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f10 (round avatar of the mascot face with a status dot) at its captured position and record what happens",
+          "expected_result": "opens the account/profile view",
+          "confirms_if": "it does something unrelated to what the other members of gg2 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg2, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen1-f10",
+          "type": "function_determination",
+          "precondition": "live app on the view this element was captured on",
+          "action": "tap screen1-f10 and record what it does, so it can be placed on the function axis",
+          "expected_result": "a determinable job",
+          "confirms_if": "n/a - placement test",
+          "overturns_if": "n/a - placement test",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg2-tc-screen1-f10",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f10 (\"round avatar of the mascot face with a status dot\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f11": {
+      "kind": "icon+label",
+      "appearance": "the name \"Accessibility Testing\" with a downward chevron above a status word",
+      "state": "online",
+      "location": "bottom centre of the screen",
+      "bounds": [
+        74,
+        2222,
+        891,
+        2306
+      ],
+      "visible_label": "Accessibility Testing, Online",
+      "convention_relied_on": "name with a downward chevron = opens a menu/switcher for that account - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Accessibility Testing, Online (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testing, Online\"; talkback_label: \"Accessibility Testing, Online\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom; the account panel at the bottom: name above the word \"Online\"/\"Idle\"",
+      "observed_function": "opens the user's own profile page",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc-screen1-f11",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f11 (the name \"Accessibility Testing\" with a downward chevron above a status word) at its captured position and record what happens",
+          "expected_result": "opens the user's own profile page",
+          "confirms_if": "it does something unrelated to what the other members of gg5 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg5, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc-screen1-f11",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen1 captured",
+          "action": "exercise screen1-f11 (\"the name \"Accessibility Testing\" with a downward chevron above a status word\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen1-f12": {
+      "kind": "icon",
+      "appearance": "bell",
+      "state": null,
+      "location": "bottom right of the screen",
+      "bounds": [
+        923,
+        2222,
+        1007,
+        2306
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "bell = notifications - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Notifications (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Notifications\"; talkback_label: \"Notifications\"",
+      "context_reading": "screen titled \"Messages\"; left rail of server tiles; account panel along the bottom",
+      "observed_function": "opens the screen titled \"Notifications\"",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc-screen1-f12",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen1 captured (screens 1, 2 and 14 are recaptures of the same Messages view); context noted before the tap",
+          "action": "tap screen1-f12 (bell) at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"Notifications\"",
+          "confirms_if": "it does something unrelated to what the other members of gg6 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg6, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"Notifications\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 12,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 25,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s19",
+  "state_str": "5673ba57f167a2a7345e212b64a178b1",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134116.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s19_header_nav.png",
+  "name": "the Projects list filtered to archived",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Projects",
+      "verdict_on_region": "title \u2014 names the section"
+    },
+    {
+      "kind": "header",
+      "text": "No archived projects",
+      "verdict_on_region": "unconventional (empty-state heading): names the filtered view (archived) inside Projects \u2014 accepted as a place, though the title already locates"
+    }
+  ],
+  "identifier_found": "\"Projects\" title plus \"No archived projects\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title present",
+  "test_cases": [
+    {
+      "id": "s19-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Projects list",
+      "action": "open the filter menu, choose Archived, read the screen, then reset to Yours",
+      "expected_result": "the empty-state text either names the view or reads as a status",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title disappears",
+      "observed_result": "\"Projects\" stayed in the top bar; \"No archived projects\" centred below an archive-box glyph \u2014 names the archived view within Projects",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: choosing Archived in the filter shows \"No archived projects\" under the unchanged \"Projects\" title; the filter was reset to \"Yours\" afterwards",
+  "recommendation": null,
+  "provisional": false
+}

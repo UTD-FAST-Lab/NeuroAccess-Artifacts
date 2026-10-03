@@ -1,0 +1,646 @@
+{
+  "app": "Messenger",
+  "screen": "screen21",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen21_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen21_function_groups.png"
+  },
+  "elements": {
+    "screen21-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines",
+      "state": null,
+      "location": "top left of screen21",
+      "bounds": [
+        42,
+        63,
+        168,
+        221
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines: menu (hamburger) — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "main menu",
+      "accessibility_text": "content_desc: 'Main menu'; talkback_label: 'Main menu'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the side menu",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen21-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the three horizontal lines at top left of screen21",
+          "expected_result": "the same result as the other members of gg8 (three horizontal lines)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the side menu",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f2": {
+      "kind": "icon",
+      "appearance": "square with a pencil",
+      "state": null,
+      "location": "top right of screen21",
+      "bounds": [
+        849,
+        100,
+        933,
+        184
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "square with a pencil: compose / new message — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "new message",
+      "accessibility_text": "content_desc: 'New message'; talkback_label: 'New message'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened 'New message' (New story / New note / Group chat)",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-tc-screen21-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the square with a pencil at top right of screen21",
+          "expected_result": "the same result as the other members of gg23 (square with a pencil)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened 'New message' (New story / New note / Group chat)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f3": {
+      "kind": "icon",
+      "appearance": "letter f in a circle",
+      "state": null,
+      "location": "top right of screen21",
+      "bounds": [
+        954,
+        100,
+        1038,
+        184
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter f in a circle: Facebook brand mark → Facebook — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "facebook app",
+      "accessibility_text": "content_desc: 'Facebook App'; talkback_label: 'Facebook App'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "switched to the Facebook app",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-tc-screen21-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the letter f in a circle at top right of screen21",
+          "expected_result": "the same result as the other members of gg24 (letter f in a circle)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "switched to the Facebook app",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f4": {
+      "kind": "button",
+      "appearance": "the words \"Notifications are currently off. Tap to turn on.\"",
+      "state": null,
+      "location": "top centre of screen21",
+      "bounds": [
+        0,
+        221,
+        1080,
+        289
+      ],
+      "visible_label": "Notifications are currently off. Tap to turn on.",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "notifications are currently off. tap to turn on",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Notifications are currently off. Tap to turn on.'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened Android Settings › Messenger notifications",
+      "glyph_group": "gg25",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg25-tc-screen21-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the the words \"Notifications are currently off. Tap to turn on.\" at top centre of screen21",
+          "expected_result": "the same result as the other members of gg25 (the words \"Notifications are currently off. Tap to turn on.\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened Android Settings › Messenger notifications",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f5": {
+      "kind": "icon+label",
+      "appearance": "thought bubble with the words \"What’s up?\"",
+      "state": null,
+      "location": "middle left of screen21",
+      "bounds": [
+        5,
+        411,
+        231,
+        579
+      ],
+      "visible_label": "What’s up?",
+      "convention_relied_on": "thought bubble with the words \"What’s up?\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "your note",
+      "accessibility_text": "content_desc: 'Your note'; talkback_label: 'Your note'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the full-screen 'New note' page",
+      "glyph_group": "gg27",
+      "function_group": "fg5",
+      "test_cases": [
+        {
+          "id": "gg27-tc-screen21-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the thought bubble with the words \"What’s up?\" at middle left of screen21",
+          "expected_result": "the same result as the other members of gg27 (thought bubble with the words \"What’s up?\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the full-screen 'New note' page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality",
+        "fg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f6": {
+      "kind": "icon+label",
+      "appearance": "grey person silhouette with the word \"You\"",
+      "state": null,
+      "location": "middle left of screen21",
+      "bounds": [
+        5,
+        579,
+        231,
+        747
+      ],
+      "visible_label": "You",
+      "convention_relied_on": "grey person silhouette with the word \"You\": the user's own avatar/story slot — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "your story",
+      "accessibility_text": "content_desc: 'Your story'; talkback_label: 'Your story'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the full-screen 'New note' page",
+      "glyph_group": "gg26",
+      "function_group": "fg5",
+      "test_cases": [
+        {
+          "id": "gg26-tc-screen21-f6",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the grey person silhouette with the word \"You\" at middle left of screen21",
+          "expected_result": "the same result as the other members of gg26 (grey person silhouette with the word \"You\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the full-screen 'New note' page",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg26": "Consistent Functionality",
+        "fg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f7": {
+      "kind": "icon",
+      "appearance": "letter i in a circle",
+      "state": "outline",
+      "location": "middle centre of screen21",
+      "bounds": [
+        402,
+        1343,
+        486,
+        1427
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter i in a circle: information about the item it is attached to — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "learn more",
+      "accessibility_text": "content_desc: 'Learn more'; talkback_label: 'Learn more'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the bottom sheet 'Explore Facebook friend suggestions' (explanation, Learn more, OK)",
+      "glyph_group": "gg2",
+      "function_group": "cfg4",
+      "test_cases": [
+        {
+          "id": "gg2-tc-screen21-f7",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the letter i in a circle at middle centre of screen21",
+          "expected_result": "the same result as the other members of gg2 (letter i in a circle)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the bottom sheet 'Explore Facebook friend suggestions' (explanation, Learn more, OK)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f8": {
+      "kind": "icon",
+      "appearance": "three dots in a row",
+      "state": null,
+      "location": "middle right of screen21",
+      "bounds": [
+        954,
+        1343,
+        1038,
+        1427
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three dots in a row: overflow / more options — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "more options menu",
+      "accessibility_text": "content_desc: 'More options menu'; talkback_label: 'More options menu'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened bottom sheet 'See more suggestions / Hide suggestions'",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc-screen21-f8",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the three dots in a row at middle right of screen21",
+          "expected_result": "the same result as the other members of gg6 (three dots in a row)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened bottom sheet 'See more suggestions / Hide suggestions'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen21-f9": {
+      "kind": "button",
+      "appearance": "the words \"Add friend\"",
+      "state": null,
+      "location": "middle right of screen21",
+      "bounds": [
+        781,
+        1487,
+        1038,
+        1582
+      ],
+      "visible_label": "Add friend",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "add friend",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Add friend'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": null,
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen21-f9",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the the words \"Add friend\" at middle right of screen21",
+          "expected_result": "the same result as the other members of gg1 (the words \"Add friend\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "friend-request control — sending or cancelling a friend request is forbidden on this real account",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen21-f10": {
+      "kind": "button",
+      "appearance": "the words \"Add friend\"",
+      "state": null,
+      "location": "middle right of screen21",
+      "bounds": [
+        781,
+        1676,
+        1038,
+        1771
+      ],
+      "visible_label": "Add friend",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "add friend",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Add friend'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": null,
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen21-f10",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the the words \"Add friend\" at middle right of screen21",
+          "expected_result": "the same result as the other members of gg1 (the words \"Add friend\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "friend-request control — sending or cancelling a friend request is forbidden on this real account",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen21-f11": {
+      "kind": "button",
+      "appearance": "the words \"Add friend\"",
+      "state": null,
+      "location": "bottom right of screen21",
+      "bounds": [
+        781,
+        1865,
+        1038,
+        1960
+      ],
+      "visible_label": "Add friend",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "add friend",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Add friend'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": null,
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen21-f11",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the the words \"Add friend\" at bottom right of screen21",
+          "expected_result": "the same result as the other members of gg1 (the words \"Add friend\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "friend-request control — sending or cancelling a friend request is forbidden on this real account",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen21-f12": {
+      "kind": "icon",
+      "appearance": "ring of purple dots",
+      "state": null,
+      "location": "bottom right of screen21",
+      "bounds": [
+        903,
+        2038,
+        1046,
+        2156
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "ring of purple dots: none — a product-specific Meta AI mark, not a convention — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "meta ai",
+      "accessibility_text": "content_desc: 'Meta AI'; talkback_label: 'Meta AI'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the Meta AI page",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc-screen21-f12",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the ring of purple dots at bottom right of screen21",
+          "expected_result": "the same result as the other members of gg9 (ring of purple dots)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the Meta AI page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f13": {
+      "kind": "button",
+      "appearance": "the words \"Add friend\"",
+      "state": null,
+      "location": "bottom right of screen21",
+      "bounds": [
+        781,
+        2054,
+        1038,
+        2149
+      ],
+      "visible_label": "Add friend",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "add friend",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Add friend'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": null,
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen21-f13",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the the words \"Add friend\" at bottom right of screen21",
+          "expected_result": "the same result as the other members of gg1 (the words \"Add friend\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "friend-request control — sending or cancelling a friend request is forbidden on this real account",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen21-f14": {
+      "kind": "icon+label",
+      "appearance": "speech bubble with the word \"Chats\"",
+      "state": "selected",
+      "location": "bottom left of screen21",
+      "bounds": [
+        0,
+        2190,
+        360,
+        2337
+      ],
+      "visible_label": "Chats",
+      "convention_relied_on": "speech bubble with the word \"Chats\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "chats",
+      "accessibility_text": "content_desc: 'Chats, Tab 1 of 3'; talkback_label: 'Chats, Tab 1 of 3'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "shows the Chats list",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-tc-screen21-f14",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the speech bubble with the word \"Chats\" at bottom left of screen21",
+          "expected_result": "the same result as the other members of gg10 (speech bubble with the word \"Chats\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "shows the Chats list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f15": {
+      "kind": "icon+label",
+      "appearance": "two people with the word \"People\"",
+      "state": "unselected",
+      "location": "bottom centre of screen21",
+      "bounds": [
+        360,
+        2190,
+        720,
+        2337
+      ],
+      "visible_label": "People",
+      "convention_relied_on": "two people with the word \"People\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "people",
+      "accessibility_text": "content_desc: 'People tab, Tab 2 of 3'; talkback_label: 'People tab, Tab 2 of 3'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the People tab",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc-screen21-f15",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the two people with the word \"People\" at bottom centre of screen21",
+          "expected_result": "the same result as the other members of gg11 (two people with the word \"People\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the People tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen21-f16": {
+      "kind": "icon+label",
+      "appearance": "bell with the word \"Notifications\"",
+      "state": "unselected",
+      "location": "bottom right of screen21",
+      "bounds": [
+        720,
+        2190,
+        1080,
+        2337
+      ],
+      "visible_label": "Notifications",
+      "convention_relied_on": "bell with the word \"Notifications\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "notifications",
+      "accessibility_text": "content_desc: 'Notifications, Tab 3 of 3'; talkback_label: 'Notifications, Tab 3 of 3'",
+      "context_reading": "Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Meta AI or search'; note/story tray (You, contacts); chat list; 'People you may know' with circled i and dots; Chats / People / Notifications tabs",
+      "observed_function": "opened the Notifications tab",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc-screen21-f16",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen21 (Chats home: hamburger, 'messenger' wordmark, pencil and f at top; blue 'Notifications are currently off' banner; 'Ask Me)",
+          "action": "note what is on screen, then tap the bell with the word \"Notifications\" at bottom right of screen21",
+          "expected_result": "the same result as the other members of gg12 (bell with the word \"Notifications\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the Notifications tab",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 16,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 12,
+    "test_cases_not_executed": 4,
+    "provisional_verdicts": 5
+  }
+}

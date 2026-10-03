@@ -1,0 +1,478 @@
+{
+  "app": "Messenger",
+  "screen": "screen18",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen18_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen18_function_groups.png"
+  },
+  "elements": {
+    "screen18-f1": {
+      "kind": "icon",
+      "appearance": "three dots in a row",
+      "state": null,
+      "location": "top right of screen18",
+      "bounds": [
+        827,
+        138,
+        922,
+        233
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three dots in a row: overflow / more options — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc-screen18-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the three dots in a row at top right of screen18",
+          "expected_result": "the same result as the other members of gg6 (three dots in a row)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f2": {
+      "kind": "icon",
+      "appearance": "letter X",
+      "state": null,
+      "location": "top right of screen18",
+      "bounds": [
+        943,
+        138,
+        1038,
+        233
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter X: close / dismiss — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "dismiss",
+      "accessibility_text": "content_desc: 'Dismiss'; talkback_label: 'Dismiss'",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg5",
+      "function_group": "fg9",
+      "test_cases": [
+        {
+          "id": "gg5-tc-screen18-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the letter X at top right of screen18",
+          "expected_result": "the same result as the other members of gg5 (letter X)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality",
+        "fg9": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f3": {
+      "kind": "button",
+      "appearance": "the word \"Deki\"",
+      "state": null,
+      "location": "top left of screen18",
+      "bounds": [
+        160,
+        150,
+        250,
+        205
+      ],
+      "visible_label": "Deki",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen18-f3",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the the word \"Deki\" at top left of screen18",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen18-f4": {
+      "kind": "button",
+      "appearance": "the words \"4h\"",
+      "state": null,
+      "location": "top left of screen18",
+      "bounds": [
+        252,
+        150,
+        305,
+        205
+      ],
+      "visible_label": "4h",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg52",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg52-tc-screen18-f4",
+          "type": "render_check",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "open the live screen, let it settle, look at the the words \"4h\"",
+          "expected_result": "the live screen, once settled, draws the same face as the other members",
+          "confirms_if": "the live app draws a different face too (a real difference)",
+          "overturns_if": "it draws like its siblings once loaded (capture artifact)",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg52": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f5": {
+      "kind": "button",
+      "appearance": "a grinning face and a smiling face",
+      "state": null,
+      "location": "bottom left of screen18",
+      "bounds": [
+        195,
+        2025,
+        363,
+        2125
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a grinning face and a smiling face: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen18-f5",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the a grinning face and a smiling face at bottom left of screen18",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen18-f6": {
+      "kind": "button",
+      "appearance": "three laughing faces",
+      "state": null,
+      "location": "bottom centre of screen18",
+      "bounds": [
+        386,
+        2025,
+        606,
+        2125
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three laughing faces: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen18-f6",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the three laughing faces at bottom centre of screen18",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen18-f7": {
+      "kind": "button",
+      "appearance": "a star-struck face",
+      "state": null,
+      "location": "bottom centre of screen18",
+      "bounds": [
+        629,
+        2025,
+        745,
+        2125
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a star-struck face: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen18-f7",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the a star-struck face at bottom centre of screen18",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen18-f8": {
+      "kind": "button",
+      "appearance": "a face crying with laughter",
+      "state": null,
+      "location": "bottom right of screen18",
+      "bounds": [
+        768,
+        2025,
+        884,
+        2125
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a face crying with laughter: no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen18-f8",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the a face crying with laughter at bottom right of screen18",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    },
+    "screen18-f9": {
+      "kind": "icon",
+      "appearance": "Messenger lightning-bolt speech bubble",
+      "state": null,
+      "location": "bottom left of screen18",
+      "bounds": [
+        22,
+        2211,
+        127,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "Messenger lightning-bolt speech bubble: none — product mark; reads as Messenger/message — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "message",
+      "accessibility_text": "content_desc: 'Message'; talkback_label: 'Message'",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg31",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg31-tc-screen18-f9",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the Messenger lightning-bolt speech bubble at bottom left of screen18",
+          "expected_result": "the same result as the other members of gg31 (Messenger lightning-bolt speech bubble)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg31": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f10": {
+      "kind": "icon",
+      "appearance": "red heart",
+      "state": null,
+      "location": "bottom right of screen18",
+      "bounds": [
+        700,
+        2211,
+        800,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "red heart: love reaction — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "❤️",
+      "accessibility_text": "content_desc: '❤️'; talkback_label: '❤️'",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg32",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg32-tc-screen18-f10",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the red heart at bottom right of screen18",
+          "expected_result": "the same result as the other members of gg32 (red heart)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg32": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f11": {
+      "kind": "icon",
+      "appearance": "laughing face with squinting eyes",
+      "state": null,
+      "location": "bottom right of screen18",
+      "bounds": [
+        832,
+        2211,
+        932,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "laughing face with squinting eyes: laugh reaction — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "😆",
+      "accessibility_text": "content_desc: '😆'; talkback_label: '😆'",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg33",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg33-tc-screen18-f11",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the laughing face with squinting eyes at bottom right of screen18",
+          "expected_result": "the same result as the other members of gg33 (laughing face with squinting eyes)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg33": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f12": {
+      "kind": "icon",
+      "appearance": "surprised face with open mouth",
+      "state": null,
+      "location": "bottom right of screen18",
+      "bounds": [
+        964,
+        2211,
+        1064,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "surprised face with open mouth: wow reaction — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "😮",
+      "accessibility_text": "content_desc: '😮'; talkback_label: '😮'",
+      "context_reading": "full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send message' with reactions at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg34",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg34-tc-screen18-f12",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen18 (full-screen story: author photo, name, age and song line top left; dots, speaker and X top right; reply chips and 'Send )",
+          "action": "note what is on screen, then tap the surprised face with open mouth at bottom right of screen18",
+          "expected_result": "the same result as the other members of gg34 (surprised face with open mouth)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "screen18 (Deki's story) could not be reached live: Deki has no story in the tray on the device, so this control could not be tapped",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg34": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 12,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 12,
+    "provisional_verdicts": 12
+  }
+}

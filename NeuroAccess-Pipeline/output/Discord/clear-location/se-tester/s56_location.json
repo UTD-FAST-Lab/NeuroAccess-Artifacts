@@ -1,0 +1,36 @@
+{
+  "app": "Discord",
+  "screen": "s56",
+  "state_str": "6ea8b029593aace7fb84b9aeccd9bb9c",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_220240.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s56_header_nav.png",
+  "name": "the #general channel with the emoji / GIF / sticker picker open",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Welcome to Accessibility Testin's server",
+      "verdict_on_region": "names the server, but as the opening greeting of the channel's message history, not as a screen title; it sits in the scrolling message stream and moves up and away as soon as messages exist (seen live) — content, not counted as an identifier"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Emoji / GIFs / Stickers tab row of the expression picker; the current tab is drawn with a grey fill (declared: 'GIFs') and the fill followed each tab tapped live — locates within the picker only, counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"general\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' names the channel and stays visible (dimmed where a sheet covers the lower screen); picker/sheet headings name the panel",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "template carry from s39: same layout and the same top header text, so the content does not change the answer",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,735 @@
+{
+ "app": "Messenger",
+ "screen": "screen10",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen10_actionable_elements.png",
+ "elements": {
+  "screen10-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "fp_toolbar",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    63,
+    1080,
+    210
+   ],
+   "visible_text": "none of its own (only the controls it encloses)",
+   "accessibility_text_consulted": "talkback_label 'Back Deki, Thread details Audio call Video call Thread details' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Missing Purpose",
+   "initial_rationale": "a layout band around the header controls, with no visible text or glyph of its own",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping the empty parts of the header band (between and around its controls) did nothing - no navigation, no focus, no state; the band is a layout container, not a control [test run once on screen7-a1 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a2": {
+   "kind": "icon",
+   "glyph": "arrow pointing left",
+   "description": "arrow pointing left",
+   "location": "top, left",
+   "bounds": [
+    11,
+    74,
+    137,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Back' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "left-pointing arrow at top left = go back - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a left arrow with no label; back arrow is the established convention; exemption pending a tap",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the left arrow returned to the previous screen [test run once on screen4-a2 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Deki Active now'",
+   "location": "top, left",
+   "bounds": [
+    148,
+    74,
+    432,
+    200
+   ],
+   "visible_text": "'Deki Active now'",
+   "accessibility_text_consulted": "content_desc 'Deki, Thread details' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the person's name (and 'Active now') in the chat header; a header name conventionally opens info about that person/chat",
+   "test_cases": [
+    {
+     "id": "screen10-a3-tc1",
+     "type": "expected",
+     "precondition": "a conversation open",
+     "action": "tap the person's name in the header",
+     "expected_result": "details about the person/chat open",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "details open",
+     "observed_result": "the chat details page opened (Profile, Nicknames, Search, Customize, Mute, ...)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the name opened the chat details page for that person",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a4": {
+   "kind": "icon",
+   "glyph": "telephone handset",
+   "description": "telephone handset",
+   "location": "top, right",
+   "bounds": [
+    691,
+    74,
+    817,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Audio call' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "telephone handset = voice call - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a telephone handset with no label; handset is the established voice-call convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a4-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the handset",
+     "expected_result": "a voice call starts",
+     "confirms_if": "something other than a call happens",
+     "overturns_if": "a call starts",
+     "observed_result": "not executed - it would start a real audio call, which the device safety rules forbid",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not tapped: starting a real call is forbidden by the run's safety rules; carried provisionally on the convention",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen10-a5": {
+   "kind": "icon",
+   "glyph": "video camera",
+   "description": "video camera",
+   "location": "top, right",
+   "bounds": [
+    817,
+    74,
+    943,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Video call' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "video camera = video call - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a video camera with no label; in a chat header this is the video-call convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a5-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the video camera",
+     "expected_result": "a video call starts",
+     "confirms_if": "something other than a call happens",
+     "overturns_if": "a video call starts",
+     "observed_result": "not executed - it would start a real video call, which the device safety rules forbid",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not tapped: starting a real video call is forbidden by the run's safety rules; carried provisionally on the convention",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen10-a6": {
+   "kind": "icon",
+   "glyph": "letter i in a filled circle",
+   "description": "letter i in a filled circle",
+   "location": "top, right",
+   "bounds": [
+    943,
+    74,
+    1069,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Thread details' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "'i' in a circle = information/details - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an 'i' in a filled circle at the end of the header; information convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a6-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the 'i'",
+     "expected_result": "details about the chat open",
+     "confirms_if": "something else happens",
+     "overturns_if": "details open",
+     "observed_result": "the chat details page opened with Profile, Nicknames, Search, Customize, Chat info and Actions",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the 'i' opened the chat details page",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a7": {
+   "kind": "icon",
+   "glyph": "circular profile photo",
+   "description": "circular profile photo",
+   "location": "top, left",
+   "bounds": [
+    148,
+    90,
+    243,
+    185
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Deki’s story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "person photo = that person",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the person's small photo in the chat header; photo = that person, expected to show the person's details like the name beside it",
+   "test_cases": [
+    {
+     "id": "screen10-a7-tc1",
+     "type": "expected",
+     "precondition": "a conversation open whose person has a story ring",
+     "action": "tap the small photo in the header",
+     "expected_result": "details about the person open (as the name does)",
+     "confirms_if": "it does something the name beside it does not",
+     "overturns_if": "it opens details",
+     "observed_result": "with a ring: the person's story opened full screen; in a chat with no ring the same tap opened chat details",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "the same header photo played the person's story when it wore a ring, but opened chat details when it did not - one picture, two outcomes, with only a thin ring to tell them apart",
+   "recommendation": "give the header photo one behaviour, or label the ring state ('Tap to see story')",
+   "provisional": false
+  },
+  "screen10-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "profile_block",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    210,
+    1080,
+    970
+   ],
+   "visible_text": "the person's photo, name, '@handle'/'You're friends on Facebook' lines and a 'View profile' button",
+   "accessibility_text_consulted": "talkback_label \"Chat profile Deki \\u202a@putra.shoppo\\u202c You're friends on Facebook Worked at Ladang Tuhan View profile\" - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "a card with the person's photo, name, 'You're friends on Facebook' and a 'View profile' button; the card itself names a person, not an action",
+   "test_cases": [
+    {
+     "id": "screen10-a8-tc1",
+     "type": "expected",
+     "precondition": "a conversation scrolled to the top",
+     "action": "tap an empty part of the person card (away from 'View profile')",
+     "expected_result": "something about the person opens",
+     "confirms_if": "nothing, or something unrelated",
+     "overturns_if": "person details open",
+     "observed_result": "the chat details page opened (photo, name, Profile, Nicknames, Search, Customize...)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "tapping empty parts of the card opened the chat details page about that person - the same thing as tapping the photo or name - which is what a card about the person leads one to expect",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a9": {
+   "kind": "icon",
+   "glyph": "circular profile photo",
+   "description": "circular profile photo",
+   "location": "top, centre",
+   "bounds": [
+    409,
+    295,
+    672,
+    558
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Chat profile' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "person photo = that person",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the person's large photo at the top of the chat; photo = that person",
+   "test_cases": [
+    {
+     "id": "screen10-a9-tc1",
+     "type": "verification",
+     "precondition": "a conversation scrolled to the top",
+     "action": "tap the large round photo",
+     "expected_result": "details about the person open",
+     "confirms_if": "something unrelated opens",
+     "overturns_if": "details open",
+     "observed_result": "the chat details page for that person opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the large photo opened the chat details page for that person",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a10": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'View profile'",
+   "location": "middle, centre",
+   "bounds": [
+    401,
+    865,
+    680,
+    949
+   ],
+   "visible_text": "'View profile'",
+   "accessibility_text_consulted": "content_desc 'View profile' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'View profile' under 'You're friends on Facebook'",
+   "test_cases": [
+    {
+     "id": "screen10-a10-tc1",
+     "type": "expected",
+     "precondition": "a conversation scrolled to the top",
+     "action": "tap 'View profile'",
+     "expected_result": "the person's profile opens",
+     "confirms_if": "something else opens",
+     "overturns_if": "the profile opens",
+     "observed_result": "the person's Facebook profile opened in the Facebook app",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "'View profile' opened that person's Facebook profile (in the Facebook app)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a11": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Learn more'",
+   "location": "middle, centre",
+   "bounds": [
+    565,
+    1220,
+    729,
+    1259
+   ],
+   "visible_text": "'Learn more'",
+   "accessibility_text_consulted": "talkback_label 'Learn more' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an inline 'Learn more' directly after the sentence about end-to-end encryption",
+   "test_cases": [
+    {
+     "id": "screen10-a11-tc1",
+     "type": "expected",
+     "precondition": "a conversation scrolled to the encryption notice",
+     "action": "tap 'Learn more'",
+     "expected_result": "more information about the encryption sentence appears",
+     "confirms_if": "something unrelated opens",
+     "overturns_if": "it explains encryption",
+     "observed_result": "a sheet 'End-to-end encryption and your privacy' opened (How it works / What to keep in mind / OK)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "'Learn more' opened an 'End-to-end encryption and your privacy' explanation sheet",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a12": {
+   "kind": "icon",
+   "glyph": "photo thumbnail",
+   "description": "photo thumbnail",
+   "location": "middle, right",
+   "bounds": [
+    681,
+    1418,
+    1059,
+    1985
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Image' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "photo in a chat = tap to view it larger - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a photo inside the conversation; tapping a photo conventionally shows it larger",
+   "test_cases": [
+    {
+     "id": "screen10-a12-tc1",
+     "type": "verification",
+     "precondition": "the conversation containing the photo",
+     "action": "tap the photo",
+     "expected_result": "it opens larger",
+     "confirms_if": "something else happens",
+     "overturns_if": "it opens larger",
+     "observed_result": "not executed - the live conversation no longer showed this photo (thread content had changed since the capture)",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not tapped: the live conversation no longer contained this photo; verdict carried provisionally on the convention",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen10-a13": {
+   "kind": "icon",
+   "glyph": "two smiling-face emoji",
+   "description": "control showing 'Ally, 😄😊'",
+   "location": "bottom, right",
+   "bounds": [
+    733,
+    1938,
+    1059,
+    2103
+   ],
+   "visible_text": "none - two emoji only (the record's 'Ally,' is not drawn)",
+   "accessibility_text_consulted": "content_desc 'Ally, 😄😊' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "message bubble = hold for message actions - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a sent message whose face is emoji; like any message bubble it conventionally offers message actions on hold",
+   "test_cases": [
+    {
+     "id": "screen10-a13-tc1",
+     "type": "verification",
+     "precondition": "the conversation containing this message",
+     "action": "press and hold the emoji message",
+     "expected_result": "message options appear",
+     "confirms_if": "nothing happens",
+     "overturns_if": "message options appear",
+     "observed_result": "not executed - the message was no longer in the live conversation",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "this exact message was no longer in the live conversation; verdict carried provisionally from the message-bubble test on screen19-a12",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen10-a14": {
+   "kind": "icon",
+   "glyph": "plus sign in a filled circle",
+   "description": "plus sign in a filled circle",
+   "location": "bottom, left",
+   "bounds": [
+    0,
+    2179,
+    106,
+    2337
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Show more options.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "plus = add / more options - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a plus in a filled circle at the left of the message bar; plus = add more; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a14-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the plus at the left of the message bar",
+     "expected_result": "a set of extra things to add appears",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "an add menu appears",
+     "observed_result": "a pop-up menu of additional items opened (dismissed with Back)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the plus opened a pop-up of extra things to add to the chat",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a15": {
+   "kind": "icon",
+   "glyph": "camera",
+   "description": "camera",
+   "location": "bottom, left",
+   "bounds": [
+    106,
+    2179,
+    212,
+    2337
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Open camera.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "camera = take a photo/video - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a camera glyph; camera = take a photo; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a15-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the camera",
+     "expected_result": "a camera opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "a camera opens",
+     "observed_result": "a camera composer opened asking for camera access (closed, no permission granted)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the camera glyph opened a camera/story composer (camera permission not granted)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a16": {
+   "kind": "icon",
+   "glyph": "landscape picture",
+   "description": "landscape picture",
+   "location": "bottom, left",
+   "bounds": [
+    212,
+    2179,
+    318,
+    2337
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Open photo gallery.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "landscape picture = photos/gallery - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a landscape picture glyph; picture = photos; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a16-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the picture glyph",
+     "expected_result": "the photo gallery opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "a gallery opens",
+     "observed_result": "a gallery panel opened asking to allow access to photos (closed, nothing granted)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the picture glyph opened a photo-gallery panel (asking for photo access)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a17": {
+   "kind": "icon",
+   "glyph": "microphone",
+   "description": "microphone",
+   "location": "bottom, centre",
+   "bounds": [
+    318,
+    2179,
+    424,
+    2337
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Open audio recorder.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "microphone = record audio - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a microphone glyph; microphone = record voice; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a17-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the microphone",
+     "expected_result": "voice recording starts or is requested",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "it asks to record audio",
+     "observed_result": "Android asked 'Allow Messenger to record audio?' (Don't allow); nothing was recorded or sent",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the microphone asked for permission to record audio, consistent with voice recording (permission denied)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a18": {
+   "kind": "icon",
+   "glyph": "thumbs up",
+   "description": "thumbs up",
+   "location": "bottom, right",
+   "bounds": [
+    964,
+    2179,
+    1080,
+    2337
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Send 👍' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "thumbs-up = like/approve - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "a thumbs-up at the right end of the message bar; its convention is 'like/approve', but its place is where a send button goes - it does not say whether it likes something or sends a thumbs-up",
+   "test_cases": [
+    {
+     "id": "screen10-a18-tc1",
+     "type": "expected",
+     "precondition": "a conversation open, message field empty",
+     "action": "tap the thumbs-up",
+     "expected_result": "a like is sent",
+     "confirms_if": "it does something a 'like' does not predict",
+     "overturns_if": "the outcome matches 'like'",
+     "observed_result": "not executed - it would send a thumbs-up to a real contact, which the device safety rules forbid",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not pressed: it would send a thumbs-up to a real person; the ambiguity stays and the verdict is carried provisionally",
+   "recommendation": "show a tooltip or label ('Send a like') or ask before sending",
+   "provisional": true
+  },
+  "screen10-a19": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'Message'",
+   "location": "bottom, centre",
+   "bounds": [
+    424,
+    2203,
+    870,
+    2313
+   ],
+   "visible_text": "placeholder: 'Message'",
+   "accessibility_text_consulted": "content_desc 'Type a message' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the field shows 'Message' in the message bar of a conversation - the conventional place to type a message",
+   "test_cases": [
+    {
+     "id": "screen10-a19-tc1",
+     "type": "expected",
+     "precondition": "a conversation open",
+     "action": "tap the field, type 'hello', then delete it",
+     "expected_result": "the text appears ready to send",
+     "confirms_if": "the field does something unexpected",
+     "overturns_if": "it behaves as a message box",
+     "observed_result": "'hello' appeared; the like changed to a send arrow; after deleting, the 'Message' hint returned; nothing was sent",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "text typed into the field appeared there and a send arrow replaced the like; deleting restored 'Message'; nothing was sent",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen10-a20": {
+   "kind": "icon",
+   "glyph": "smiling face",
+   "description": "smiling face",
+   "location": "bottom, right",
+   "bounds": [
+    870,
+    2211,
+    964,
+    2305
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Open sticker, emoji and GIF keyboard.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "smiling face = emoji - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a smiling face inside the message field; smiley = emoji; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen10-a20-tc1",
+     "type": "verification",
+     "precondition": "a conversation open",
+     "action": "tap the smiley inside the message field",
+     "expected_result": "an emoji/sticker chooser opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "an emoji chooser opens",
+     "observed_result": "an emoji/sticker/GIF panel opened (an 'AI stickers' intro appeared first; closed without choosing)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the smiley opened a sticker/emoji/GIF panel",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 20,
+  "issues": 2,
+  "missing_purpose": 0,
+  "unclear_purpose": 2,
+  "clear_purpose": 17,
+  "clear_via_common_icon_exemption": 12,
+  "detection_false_positives": 1,
+  "test_cases_executed": 13,
+  "test_cases_not_executed": 5,
+  "instincts_confirmed": 17,
+  "instincts_overturned": 3,
+  "provisional_verdicts": 5
+ }
+}

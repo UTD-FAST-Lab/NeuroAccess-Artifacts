@@ -1,0 +1,44 @@
+{
+  "app": "Messenger",
+  "screen": "s2",
+  "state_str": "64e2b80ef8be5b0207dfd9c78ee6ebf6",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151355.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s2_header_nav.png",
+  "name": "Chats home",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Messenger",
+      "verdict_on_region": "the Messenger wordmark — names the app, not the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Chats, People tab, Notifications",
+      "verdict_on_region": "bottom tab bar with \"Chats\" visibly highlighted (blue fill and caption) — locates the section"
+    }
+  ],
+  "identifier_found": "bottom bar \"Chats\" visibly highlighted (blue glyph and caption); the header is only the Messenger wordmark",
+  "identifier_class": "nav_active_state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s2-tc1",
+      "type": "active_state",
+      "precondition": "Chats tab open",
+      "action": "scroll the chat list two screens down; then tap People and Notifications and watch the bottom bar",
+      "expected_result": "the highlight moves with the section and survives scrolling, or stays fixed",
+      "confirms_if": "—",
+      "overturns_if": "the highlight never moves or vanishes on scroll",
+      "observed_result": "Chats highlighted blue and stays while scrolling (wordmark stays pinned, search bar scrolls off); tapping People moved the highlight to People with the \"People\" title; Notifications likewise. Live divergence: the Chats list now has All/Unread/Groups filter chips not in the capture",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: Chats highlighted blue and stays while scrolling (wordmark stays pinned, search bar scrolls off); tapping People moved the highlight to People with the \"People\" title; Notifications likewise. Live divergence: the Chats list now has All/Unread/Groups filter chips not in the capture; also lands a return transition from outside the app and names itself on arrival",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s11",
+  "state_str": "e8b86c212e155eba364feff9cf3286c3",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204302.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s11_header_nav.png",
+  "name": "a template detail sheet over the image gallery",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "See yourself underwater",
+      "verdict_on_region": "unconventional (bottom band) — the name of one template, i.e. a piece of content; dismissed as a place identifier"
+    },
+    {
+      "kind": "navigation",
+      "text": "Trending | Templates (dimmed behind scrim)",
+      "verdict_on_region": "still legible behind the scrim with the \"Trending\" pill visible"
+    }
+  ],
+  "identifier_found": "the dimmed \"Trending\" tab behind the sheet; the sheet title names the template",
+  "identifier_class": "navigation bar with visible active state (dimmed)",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet title is the name of a piece of content; the gallery tabs behind remain legible",
+  "test_cases": [
+    {
+      "id": "s11-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "image gallery",
+      "action": "open the \"Underwater\" template and read the sheet title",
+      "expected_result": "the title names the part of the app or names the template",
+      "confirms_if": "the title names only the template and nothing else on screen names the gallery",
+      "overturns_if": "the title names the part of the app the user is in, or the gallery stays legible",
+      "observed_result": "not run — the live Trending gallery no longer carries an \"Underwater\" card and photo templates now open a centred dialog rather than this sheet (live app diverges from capture)",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "\"See yourself underwater\" is the name of one template — content, not a place — and does not count; the verdict rests on the dimmed but legible \"Trending\" tab behind the sheet. Provisional: the sheet could not be reached on the live app.",
+  "recommendation": "keep the gallery name visible above the sheet (e.g. \"Images · Trending\")",
+  "provisional": true
+}

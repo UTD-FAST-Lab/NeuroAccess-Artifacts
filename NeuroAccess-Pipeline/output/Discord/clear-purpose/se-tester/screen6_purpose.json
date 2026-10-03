@@ -1,0 +1,263 @@
+{
+  "app": "Discord",
+  "screen": "screen6",
+  "image": "inputs/Discord/actionable-elements-highlighted/screen6_actionable_elements.png",
+  "elements": {
+    "screen6-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "top-left of the full-screen 'Create Your Server' panel",
+      "location": "top, left",
+      "bounds": [
+        71,
+        116,
+        134,
+        179
+      ],
+      "visible_text": "none (X glyph, top-left)",
+      "accessibility_text_consulted": "content_desc \"Close\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "X = close; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled close convention; exemption pending the tap",
+      "test_cases": [
+        {
+          "id": "screen6-a1-tc1",
+          "type": "verification",
+          "precondition": "'Create Your Server' open",
+          "action": "tap the X",
+          "expected_result": "the panel closes",
+          "confirms_if": "anything other than closing happens",
+          "overturns_if": "the panel closes",
+          "observed_result": "the panel closed and the server view returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the panel, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "row with an illustrated glyph and chevron",
+      "location": "top, centre",
+      "bounds": [
+        32,
+        511,
+        1049,
+        658
+      ],
+      "visible_text": "\"Create My Own\" under the heading 'Create Your Server'",
+      "accessibility_text_consulted": "content_desc \"Create My Own\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "heading and row text say what it does",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible text under 'Create Your Server'; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row under 'Start from a template'",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        795,
+        1049,
+        942
+      ],
+      "visible_text": "\"Gaming\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"Gaming\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the section caption says these are templates to start from",
+      "test_cases": [
+        {
+          "id": "screen6-a3-tc1",
+          "type": "verification",
+          "precondition": "'Create Your Server' open",
+          "action": "tap 'Gaming'",
+          "expected_result": "the server-creation flow continues from a gaming template",
+          "confirms_if": "something unrelated happens",
+          "overturns_if": "the creation flow continues",
+          "observed_result": "a next step 'Tell Us More About Your Server' opened (club/community vs. me and my friends)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the template row advanced the creation flow, as its caption promised",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        942,
+        1049,
+        1089
+      ],
+      "visible_text": "\"School Club\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"School Club\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "template row under a caption that explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same template row pattern as the tested 'Gaming' row (screen6-a3); visible caption 'Start from a template'",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        1089,
+        1049,
+        1236
+      ],
+      "visible_text": "\"Study Group\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"Study Group\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "template row under a caption that explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same template row pattern as the tested 'Gaming' row (screen6-a3); visible caption 'Start from a template'",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        1236,
+        1049,
+        1383
+      ],
+      "visible_text": "\"Friends\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"Friends\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "template row under a caption that explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same template row pattern as the tested 'Gaming' row (screen6-a3); visible caption 'Start from a template'",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        1383,
+        1049,
+        1530
+      ],
+      "visible_text": "\"Artists & Creators\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"Artists & Creators\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "template row under a caption that explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same template row pattern as the tested 'Gaming' row (screen6-a3); visible caption 'Start from a template'",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "template row",
+      "location": "middle, centre",
+      "bounds": [
+        32,
+        1530,
+        1049,
+        1677
+      ],
+      "visible_text": "\"Local Community\" under 'Start from a template'",
+      "accessibility_text_consulted": "content_desc \"Local Community\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "template row under a caption that explains it",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same template row pattern as the tested 'Gaming' row (screen6-a3); visible caption 'Start from a template'",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filled button under 'Have an invite already?'",
+      "location": "bottom, centre",
+      "bounds": [
+        42,
+        2190,
+        1038,
+        2295
+      ],
+      "visible_text": "\"Join a Server\" under 'Have an invite already?'",
+      "accessibility_text_consulted": "content_desc \"Join a Server\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the words and the question above state the purpose",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible text states the action; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 9,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 9,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

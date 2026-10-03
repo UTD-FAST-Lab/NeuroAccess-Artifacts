@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s25",
+  "state_str": "6b52ac6bc1008e774a83842c5aaa7677",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215441.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s25_header_nav.png",
+  "name": "search in DMs",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Search in DMs",
+      "verdict_on_region": "placeholder text of the search field, naming the scope; counted as captured, but seen live to vanish as soon as the user types"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Recent / People / Media / Pins / Links / Files tabs under the search field, 'Recent' underlined; locates within search results — counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"Search in DMs\"",
+  "identifier_class": "header + navigation with visible active state",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Search in DMs' names the scope, with Recent underlined in the tab row",
+  "test_cases": [
+    {
+      "id": "s25-tc1",
+      "type": "verification",
+      "precondition": "Messages home",
+      "action": "tap the search glyph, read the field, then type 'abc'",
+      "expected_result": "the scope label 'Search in DMs' stays visible, or it is only a placeholder",
+      "confirms_if": "n/a — captured state has the label; this checks how durable it is",
+      "overturns_if": "the label persists while typing",
+      "observed_result": "reproduced the capture: field placeholder 'Search in DMs', tabs Recent / People / Media / Pins / Links / Files with Recent underlined. On typing 'abc' the placeholder vanished and only the query remained; the tab row stayed. The same held on server search ('Search in Accessibility Testin's server' vanished on typing; on one screen state the tabs also disappeared, leaving only 'abc' and 'We searched far and wide...')",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: reproduced the capture: field placeholder 'Search in DMs', tabs Recent / People / Media / Pins / Links / Files with Recent underlined. On typing 'abc' the placeholder vanished and only the query remained; the tab row stayed. The same held on server search ('Search in Accessibility Testin's server' vanished on typing; on one screen state the tabs also disappeared, leaving only 'abc' and 'We searched far and wide...'); durability note: the scope text is placeholder only and disappears the moment the user types — not a scroll, so it carries no transition verdict here, but it is recorded in the recommendation",
+  "recommendation": "keep a visible label such as 'Searching Messages' above the field once the user types, rather than relying on placeholder text",
+  "provisional": false
+}

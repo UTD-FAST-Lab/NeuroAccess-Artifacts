@@ -1,0 +1,1109 @@
+{
+  "persona": "persona-gopal",
+  "app": "Claude",
+  "screens": {
+    "s1": {
+      "where": "the greeting page with the writing box at the bottom",
+      "expectation": "I believe this is the starting page, where one writes a message. It is only a belief.",
+      "confidence": "guessing",
+      "cue": "The words 'Chat with Claude...' in the box at the bottom. The large words in the middle, 'Back at it, Ally Cooper', are a greeting, not a name for the page.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The big line of text in the middle greets a person; it does not tell me what this page is. If I had been interrupted I would have to piece it together from the box at the bottom.",
+        "solution": "A plain heading at the top, such as 'New message' or 'Start a conversation', in place of the greeting."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "When I looked back, the large words in the middle said 'Coffee and Claude time?'. They are not the words I saw in the picture ('Back at it, Ally Cooper'). Later the same page said 'Good afternoon, Ally Cooper'. So the one large line changes from visit to visit, and none of its versions is a name for the page. I had to work out where I was from the box at the bottom that says 'Chat with Claude...'. Dragging up and down moved nothing, and no name for the page appeared anywhere.",
+          "what_they_did": "Opened the app on the page with the greeting, looked away and counted to ten, looked back, said where I was, then dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Worse than I thought: the big line in the middle is not even the same from one visit to the next, and none of its versions tells me where I am.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "the side list with Chats, Projects, Code and Artifacts",
+      "expectation": "A menu has slid out from the left, over something else. I cannot tell which of those parts I am in.",
+      "confidence": "guessing",
+      "cue": "The word 'Claude' at the top, which is only the name of the program, and the list of four words beneath it. Nothing in the list is marked.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "'Claude' tells me the program, not the place. None of the four items is highlighted, so I cannot tell which one I came from. 'Projects', 'Code' and 'Artifacts' are words I would have to learn here.",
+        "solution": "Mark the current item clearly, with a strong colour and perhaps the word 'You are here', and give the list a heading such as 'Menu'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t2",
+          "subjects": [
+            "s2"
+          ],
+          "task": "From the page with the greeting, tap the three lines at the top left to open the menu. Say which row, if any, shows the part of the app you came from. Then tap Chats, wait for it to open, open the menu again the same way, and compare.",
+          "real_if": "when opened from the greeting page, no row shows where you came from",
+          "not_real_if": "a row clearly shows where you came from",
+          "persona_report": "Opened from the greeting page, the menu shows Chats, Projects, Code, Artifacts and, below, 'Recents' with two rows both called 'Untitled'. No row is marked. Nothing says where I came from. Opened from the Chats page, the Chats row has a pale grey band behind it. I later noticed the same thing from the Settings page: no row was marked there either.",
+          "what_they_did": "From the greeting page I opened the menu with the three lines, looked for a marked row, then tapped Chats, opened the menu again and compared.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Opened from the greeting page, no row in the menu shows where I came from, just as in the picture.",
+      "provisional": false
+    },
+    "s3": {
+      "where": "the page with the little ghost and 'Incognito chat'",
+      "expectation": "I am starting a private conversation, one that is not kept.",
+      "confidence": "sure",
+      "cue": "The words 'Incognito chat' at the top, and the sentence under the ghost that says these chats stay out of my history.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Incognito' is an ordinary word I know, and the sentence beneath explains it. The heading is rather faint and small, but it is there.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "the page of prices, Pro and Max",
+      "expectation": "I am on a page to choose a paid plan.",
+      "confidence": "sure",
+      "cue": "The large heading 'Get more Claude' and the line 'Choose the plan right for you', with the prices.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading and the line below it together tell me plainly that this is about paying for a plan.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "the panel 'Add to chat' rising over the greeting page",
+      "expectation": "A panel has come up from the bottom for adding something to my message: a photograph, a file.",
+      "confidence": "sure",
+      "cue": "The heading 'Add to chat' at the top of the panel, and the labelled choices Camera, Photos, Files.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel has its own clear heading. If I looked away and came back I would read 'Add to chat' and know what I was doing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "the panel 'Select model' with Fable, Opus, Sonnet, Haiku",
+      "expectation": "A panel for choosing something called a 'model'. I do not know what a model is here.",
+      "confidence": "guessing",
+      "cue": "The heading 'Select model' and the list of names.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading exists, but 'model' is not a word I understand in this sense, and the names Fable, Opus, Sonnet and Haiku are invented. I know I am choosing something, not what.",
+        "solution": "A heading in ordinary words, for example 'Choose which version of the assistant answers you', and plain descriptions first, names second."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t8",
+          "subjects": [
+            "s6"
+          ],
+          "task": "From the page with the greeting, tap the button in the writing box that shows a name like 'Haiku 4.5'. Read the panel that opens and say, in your own words, where you are and what this panel is for. Do not choose anything; close it with the X.",
+          "real_if": "you cannot say where you are or what the panel is for",
+          "not_real_if": "you can say where you are and what the panel is for",
+          "persona_report": "The panel is headed 'Select model'. Reading the lines under each name ('For your toughest challenges', 'For complex work and everyday tasks', 'Most efficient for simpler tasks', 'Fastest for quick answers'), I could work out that I am choosing between kinds of answerer, some quicker and some more capable. I could say what it is for. The word 'model' and the names Fable, Opus, Sonnet and Haiku still mean nothing to me by themselves.",
+          "what_they_did": "From the greeting page I tapped the button showing 'Haiku 4.5', read the panel, and closed it with the X without choosing.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Reading the little descriptions under each name, I can say what the panel is for, though 'model' and the names still mean nothing to me.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "the voice page with the big drawn microphone",
+      "expectation": "I am on a page about speaking my messages aloud instead of typing them.",
+      "confidence": "sure",
+      "cue": "The large sentence 'Send messages to Claude using your voice.' under the microphone picture.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The sentence is large, plain and says exactly what this page is for.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "the empty Chats page with the search box",
+      "expectation": "I am on the list of my past conversations. It is empty.",
+      "confidence": "sure",
+      "cue": "The heading 'Chats' at the top, and the sentence 'Your chats with Claude will show up here.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is at the top where I expect it and it is an ordinary word.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "the side list again, with Chats lightly shaded",
+      "expectation": "The menu from the left again. Perhaps I was on Chats, because that row is very slightly shaded.",
+      "confidence": "guessing",
+      "cue": "A faint grey band behind the word 'Chats'. The word 'Claude' at the top is only the program's name.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The shading is so pale I nearly missed it. I would not trust it to tell me where I am.",
+        "solution": "A strong, obvious mark on the current item, and a heading for the menu."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t3",
+          "subjects": [
+            "s9",
+            "s44"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Chats. When the Chats page is open, open the menu again and, at a normal glance and without studying it, say which row is marked. Then tap Code, and once that page is open, open the menu again and do the same.",
+          "real_if": "you have to look carefully, or cannot see which row is marked",
+          "not_real_if": "the marked row is plain to you at a glance each time",
+          "persona_report": "On the real phone the pale grey band behind 'Chats', and later behind 'Code', was visible at a glance; I did not have to study it. It is still a faint shade rather than a strong mark, and it does not say in words 'you are here'. For me it is usable, but only just.",
+          "what_they_did": "Opened Chats, opened the menu and glanced at it; then tapped Code, opened the menu again and glanced.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the real phone the pale band behind Chats was visible at a glance; it is faint, but I could use it.",
+      "provisional": false
+    },
+    "s10": {
+      "where": "the Chats page with the little All / Pinned box open",
+      "expectation": "I am on the Chats page, and a small box of choices, 'All' and 'Pinned', has opened.",
+      "confidence": "guessing",
+      "cue": "The heading 'Chats' is still visible at the top. The little box itself has no heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know the page from its heading, but the small box does not say what it is for. If the phone rang, I would come back and not know why that box was open or what 'Pinned' was choosing.",
+        "solution": "Give the little box a heading of its own, such as 'Show which chats'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t9",
+          "subjects": [
+            "s10"
+          ],
+          "task": "Open the menu and tap Chats. Tap the small picture at the top right (the one with sliders) so a little box of choices opens. Look away and count to ten, look back, and say where you are and what the little box is choosing. Close the box with the phone's Back button without choosing.",
+          "real_if": "after looking away you cannot tell what the little box is for",
+          "not_real_if": "you can tell where you are and what the box is for",
+          "persona_report": "The heading 'Chats' was still at the top, so I knew the page. The little box said 'All', with a tick, and 'Pinned'. Since the list behind it was my chats, I reasoned that it chooses whether to show all chats or only pinned ones. I could tell, but only by reasoning; the box has no title of its own.",
+          "what_they_did": "Opened Chats, tapped the small sliders picture at the top right so the little box opened, looked away and counted to ten, looked back, and closed the box with Back.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "With the Chats heading still there, I could reason out what the little box chooses, though it has no title of its own.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "the panel 'Add to project' over the greeting page",
+      "expectation": "A panel for putting this conversation into a 'project'.",
+      "confidence": "guessing",
+      "cue": "The heading 'Add to project' and 'Search projects' below it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is clear and is in plain words. What a project is in this program I would not know, but I can tell where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "the 'Add to chat' panel filling the whole screen",
+      "expectation": "The panel for adding things to my message, now filling the screen.",
+      "confidence": "sure",
+      "cue": "The heading 'Add to chat' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading, labelled choices beneath it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "the panel 'Upgrade to use Pro' over the greeting page",
+      "expectation": "I am being told I must pay for something I chose.",
+      "confidence": "sure",
+      "cue": "The heading 'Upgrade to use Pro' and the sentence 'This model requires a Pro plan.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says plainly what this panel is about.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "the voice page with the list of languages open",
+      "expectation": "I am choosing a language, probably for speaking, but the list covers most of the page.",
+      "confidence": "guessing",
+      "cue": "The list of languages, and the small grey words 'Speech Input Language' below it. The large heading about my voice is hidden behind the list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The list has no heading of its own, and it covers the sentence that told me what the page was. I would have to deduce the purpose from the words underneath.",
+        "solution": "Give the list a heading, 'Choose the language you will speak in', and keep the page's own heading visible."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t4",
+          "subjects": [
+            "s14"
+          ],
+          "task": "From the page with the greeting, tap the small microphone picture in the writing box (the grey one, not the round black button at the far right). On the page that opens, tap the box headed 'Speech Input Language' so its list drops down. Without choosing anything, say where you are. Then press the phone's Back button once to close the list, and compare. Do not press Continue. Leave with the X at the top left.",
+          "real_if": "while the list is open nothing tells you what page this is",
+          "not_real_if": "you can still tell what page this is while the list is open",
+          "persona_report": "With the list open, the large sentence about sending messages with my voice is hidden behind the list, exactly as in the picture. What still shows is the drawn microphone at the top and the small grey words 'Speech Input Language' beneath the list. I could guess it is about speaking from the microphone drawing, but nothing in words told me which page I was on. When I pressed Back the list closed and the sentence came back.",
+          "what_they_did": "From the greeting page I tapped the small grey microphone, then tapped the box headed 'Speech Input Language' so the list dropped down, said where I was, pressed Back once, compared, and left with the X. I did not press Continue.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "While the list is open, only the microphone drawing hints at where I am; nothing says it in words.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "the voice page, with English (India) chosen",
+      "expectation": "The page about speaking my messages, with a language chosen.",
+      "confidence": "sure",
+      "cue": "The large sentence 'Send messages to Claude using your voice.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same clear sentence as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "the greeting page with the microphone warning",
+      "expectation": "The starting page again, with a warning about the microphone.",
+      "confidence": "guessing",
+      "cue": "The box at the bottom, 'Chat with Claude...', and the warning message. The greeting 'Back at it, Ally Cooper' does not name the page.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "As before, the only large words are a greeting. The warning tells me what went wrong, not where I am.",
+        "solution": "A plain heading naming this page at the top."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t1",
+          "subjects": [
+            "s1",
+            "s16"
+          ],
+          "task": "The app opens on the page with the large greeting in the middle and the writing box at the bottom (if it is not already there: open the menu with the three lines at the top left and tap the big word at the top of the menu). Put the phone down, look away and count slowly to ten, then look back at the screen and, before touching anything, say where you are. Then drag the page up and down and watch whether a name for this page shows up anywhere. (The picture with the microphone warning cannot be brought back without the phone's permission prompts, so answer for that picture from this same page.)",
+          "real_if": "you still have to work out where you are from the writing box, and no name for the page appears anywhere",
+          "not_real_if": "you know straight away where you are, or a name for the page shows up",
+          "persona_report": "When I looked back, the large words in the middle said 'Coffee and Claude time?'. They are not the words I saw in the picture ('Back at it, Ally Cooper'). Later the same page said 'Good afternoon, Ally Cooper'. So the one large line changes from visit to visit, and none of its versions is a name for the page. I had to work out where I was from the box at the bottom that says 'Chat with Claude...'. Dragging up and down moved nothing, and no name for the page appeared anywhere.",
+          "what_they_did": "Opened the app on the page with the greeting, looked away and counted to ten, looked back, said where I was, then dragged the page up and down.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Same page as s1, and the greeting keeps changing; the microphone warning does not help me know the place.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "the empty Projects page",
+      "expectation": "I am on a page listing my projects. There are none.",
+      "confidence": "sure",
+      "cue": "The heading 'Projects' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is at the top and is an ordinary word.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "the Projects page with the Yours / Archived box open",
+      "expectation": "The Projects page with a little box of choices open.",
+      "confidence": "guessing",
+      "cue": "The heading 'Projects' at the top; the small box has no heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page is named, but the box that has opened is not. If interrupted I would not know what I was choosing between.",
+        "solution": "A heading on the little box, such as 'Show which projects'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t10",
+          "subjects": [
+            "s18"
+          ],
+          "task": "Open the menu and tap Projects. Tap the small picture at the top right so a little box of choices opens. Look away and count to ten, look back, and say where you are and what the little box is choosing. Close the box with the phone's Back button without choosing.",
+          "real_if": "after looking away you cannot tell what the little box is for",
+          "not_real_if": "you can tell where you are and what the box is for",
+          "persona_report": "The heading 'Projects' stayed at the top. The box said 'Yours', with a tick, and 'Archived'. From the page heading I reasoned it chooses between my projects and the stored-away ones. I could tell, by reasoning; the box itself has no heading.",
+          "what_they_did": "Opened Projects, tapped the small picture at the top right so the little box opened, looked away and counted to ten, looked back, and closed it with Back.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The Projects heading stayed, and 'Yours' and 'Archived' let me reason out what the box chooses.",
+      "provisional": false
+    },
+    "s19": {
+      "where": "the Projects page showing 'No archived projects'",
+      "expectation": "I am on Projects, looking at the stored-away ones, of which there are none.",
+      "confidence": "sure",
+      "cue": "The heading 'Projects' at the top and the words 'No archived projects' in the middle.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The two sets of words together tell me where I am. I did not understand the blue round button at the top right, but that is another matter.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "the page with computer code and 'Upgrade for Claude Code'",
+      "expectation": "I am being offered something to buy called 'Claude Code', underneath a mass of computer writing.",
+      "confidence": "guessing",
+      "cue": "The large words 'Upgrade for Claude Code' in the middle of the screen, below the code.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Nothing at the top names this page; the top is filled with computer writing I cannot read. 'Claude Code' is a product name I do not know, and 'agentic' and 'codebase' are foreign to me.",
+        "solution": "A heading at the top in plain words, such as 'Paid feature: help with computer programming', and the sample code moved below it or removed."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t5",
+          "subjects": [
+            "s20"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Code. When it opens, look only at the top third of the screen for a few seconds and say where you are. Then read the rest of the page. Then open the menu again and see which row is marked. Do not press Upgrade; leave by opening the menu and tapping Chats.",
+          "real_if": "the top of the page does not tell you where you are and you have to read down to the middle",
+          "not_real_if": "you can tell where you are from the top of the page",
+          "persona_report": "The top third shows a grey bubble saying 'Make Clawd dance', a reply, and boxes of computer writing: 'Grep', 'Read', 'Edit' and lines of code. From the top alone I thought I was looking at somebody's conversation, not at a page of the program. Only when I read down to the middle did I find 'Upgrade for Claude Code', and even that names a product I do not know. When I opened the menu, the 'Code' row had the pale band, so that is the only place that told me where I was.",
+          "what_they_did": "Opened the menu and tapped Code. Looked only at the top third for a few seconds, then read the rest, then opened the menu and looked at the marked row, then left by tapping Chats. I did not press Upgrade.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "From the top of the page I thought I was reading someone's conversation; the page names itself only halfway down, with a product name I cannot learn.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "the empty Artifacts page",
+      "expectation": "A page called 'Artifacts'. I do not know what an artifact is in this program.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts' at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I can read the name, but the name is a term I would have to learn, and I cannot. To me an artifact is something in a museum.",
+        "solution": "A heading that says what is kept here in ordinary words, for example 'Things Claude has made for you'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t11",
+          "subjects": [
+            "s21",
+            "s22",
+            "s23",
+            "s45"
+          ],
+          "task": "Open the menu and tap Artifacts. Read everything on the page and say what you think is kept here. Tap the small word beside the search box, choose Chat, and say where you are; then set it back to All the same way. Tap the small picture at the top right, look at the little box, say what it is choosing, and close it with Back. Finally open the menu, go to Chats, then come back to Artifacts through the menu and say whether you recognise the page.",
+          "real_if": "you cannot tell what this page is, or what the little boxes are choosing, even after reading it",
+          "not_real_if": "after reading it you can tell where you are and what is kept here",
+          "persona_report": "The page says only 'Artifacts you've had with Claude will show up here.' That explains nothing: it uses the same word to explain itself. With 'Chat' chosen it said 'No artifacts match'. The box from the top-right picture offered 'All, Pinned, Yours, Shared with you', so there are two separate 'All's on this one page, choosing different things. When I came back I recognised the page only by reading the heading 'Artifacts' again; I could not tell you what is kept there. On my way back through the menu, my first tap on Chats landed me on the greeting page instead, and I had to try again.",
+          "what_they_did": "Opened Artifacts and read the page; set the word beside the search box to Chat and back to All; opened the small picture at the top right and looked at its box, then closed it; went to Chats through the menu and returned to Artifacts.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "After reading everything, I still cannot tell what is kept here; the page explains 'Artifacts' only with the word 'Artifacts'.",
+      "provisional": false
+    },
+    "s22": {
+      "where": "the Artifacts page with All / Chat / Code box open",
+      "expectation": "The Artifacts page with a small list of choices opened.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts'; the small box has no heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page name is a word I do not know, and the box that opened has no title of its own.",
+        "solution": "Plain page heading, and a heading on the little box saying what it chooses."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t11",
+          "subjects": [
+            "s21",
+            "s22",
+            "s23",
+            "s45"
+          ],
+          "task": "Open the menu and tap Artifacts. Read everything on the page and say what you think is kept here. Tap the small word beside the search box, choose Chat, and say where you are; then set it back to All the same way. Tap the small picture at the top right, look at the little box, say what it is choosing, and close it with Back. Finally open the menu, go to Chats, then come back to Artifacts through the menu and say whether you recognise the page.",
+          "real_if": "you cannot tell what this page is, or what the little boxes are choosing, even after reading it",
+          "not_real_if": "after reading it you can tell where you are and what is kept here",
+          "persona_report": "The page says only 'Artifacts you've had with Claude will show up here.' That explains nothing: it uses the same word to explain itself. With 'Chat' chosen it said 'No artifacts match'. The box from the top-right picture offered 'All, Pinned, Yours, Shared with you', so there are two separate 'All's on this one page, choosing different things. When I came back I recognised the page only by reading the heading 'Artifacts' again; I could not tell you what is kept there. On my way back through the menu, my first tap on Chats landed me on the greeting page instead, and I had to try again.",
+          "what_they_did": "Opened Artifacts and read the page; set the word beside the search box to Chat and back to All; opened the small picture at the top right and looked at its box, then closed it; went to Chats through the menu and returned to Artifacts.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The little box has no title, and the page name is still a word I cannot learn.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "the Artifacts page with 'Chat' chosen and 'No artifacts match'",
+      "expectation": "The Artifacts page, with something narrowed down to 'Chat', and nothing found.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts' and the word 'Chat' next to the search box.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same unfamiliar page name, and now the word 'Chat' by the search box, which confuses me further, because I thought chats were elsewhere.",
+        "solution": "A plain heading, and a sentence saying what is being shown, for example 'Showing: things made during chats'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t11",
+          "subjects": [
+            "s21",
+            "s22",
+            "s23",
+            "s45"
+          ],
+          "task": "Open the menu and tap Artifacts. Read everything on the page and say what you think is kept here. Tap the small word beside the search box, choose Chat, and say where you are; then set it back to All the same way. Tap the small picture at the top right, look at the little box, say what it is choosing, and close it with Back. Finally open the menu, go to Chats, then come back to Artifacts through the menu and say whether you recognise the page.",
+          "real_if": "you cannot tell what this page is, or what the little boxes are choosing, even after reading it",
+          "not_real_if": "after reading it you can tell where you are and what is kept here",
+          "persona_report": "The page says only 'Artifacts you've had with Claude will show up here.' That explains nothing: it uses the same word to explain itself. With 'Chat' chosen it said 'No artifacts match'. The box from the top-right picture offered 'All, Pinned, Yours, Shared with you', so there are two separate 'All's on this one page, choosing different things. When I came back I recognised the page only by reading the heading 'Artifacts' again; I could not tell you what is kept there. On my way back through the menu, my first tap on Chats landed me on the greeting page instead, and I had to try again.",
+          "what_they_did": "Opened Artifacts and read the page; set the word beside the search box to Chat and back to All; opened the small picture at the top right and looked at its box, then closed it; went to Chats through the menu and returned to Artifacts.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "'Chat' chosen on an Artifacts page, with 'No artifacts match', still does not tell me what I am looking at.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "the Settings page with my email at the top",
+      "expectation": "I am in the settings.",
+      "confidence": "sure",
+      "cue": "The heading 'Settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Familiar word, at the top, where I expect it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "the Profile page with my name in boxes",
+      "expectation": "I am on my own details page, my name and preferences.",
+      "confidence": "sure",
+      "cue": "The heading 'Profile' at the top and 'Full name' beneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading, ordinary word.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "the 'Delete account' warning box over the Profile page",
+      "expectation": "A warning box has come up asking me to confirm removing my account.",
+      "confidence": "sure",
+      "cue": "The heading 'Delete account' at the top of the box.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box has a clear heading. This is exactly what I need when a box pops up: it reminds me what I was doing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "the Billing page",
+      "expectation": "I am on the page about my payments.",
+      "confidence": "sure",
+      "cue": "The heading 'Billing' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear and familiar.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s28": {
+      "where": "the prices page scrolled down, showing Max",
+      "expectation": "I think this is a page of prices, but there is no heading now; only an X in the corner.",
+      "confidence": "guessing",
+      "cue": "The words 'Max', 'Get Max plan', and the dollar amounts. There is no heading at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading has scrolled away. If I came back to this screen I would have to read the prices to work out what I was doing.",
+        "solution": "Keep the heading, 'Choose a plan', fixed at the top as I scroll."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t6",
+          "subjects": [
+            "s28"
+          ],
+          "task": "From the page with the greeting, tap 'Upgrade to Pro' in the grey strip above the writing box. When the page opens, drag it upward until you reach the bottom. Pause, look away for a moment, look back, and say where you are. Then drag it back down a little (not all the way to the top) and see whether a name for the page comes back. Do not tap any plan, price, circle or button; leave with the X at the top left.",
+          "real_if": "at the bottom, and after scrolling back a little, nothing names the page",
+          "not_real_if": "a name for the page stays or comes back while you scroll",
+          "persona_report": "At the top the page was called 'Get more Claude'. At the bottom that heading had gone. There was only the X, the Max plan, the prices, and 'Terms' and 'Privacy Policy'. When I dragged back down a little, the Pro prices came back into view but the heading did not. Only the prices told me what I was doing.",
+          "what_they_did": "From the greeting page I tapped 'Upgrade to Pro', dragged the page up to the bottom, looked away and back, then dragged back down a little, and left with the X. I did not touch any plan, price, circle or button.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "At the bottom and on the way back up, nothing names the page; only the prices tell me what I am doing.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "the Capabilities page with switches",
+      "expectation": "A page called 'Capabilities', a list of things switched on and off.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is an ordinary word and it is at the top. The contents are full of words I do not know, such as 'Artifacts' and 'Inline visualizations', but I can tell which page I am on.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "the Capabilities page, one switch off",
+      "expectation": "The same Capabilities page.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same heading, still at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "the Capabilities page, Artifacts off",
+      "expectation": "The Capabilities page again.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same heading, still visible.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "the Capabilities page, with 'Include sensitive topics in memory'",
+      "expectation": "The Capabilities page, further down to the memory part.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top, and the smaller word 'Memory' partway down.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading has stayed at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "the Capabilities page, memory switched on",
+      "expectation": "The Capabilities page again.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "the Capabilities page, Artifacts off and memory on",
+      "expectation": "The Capabilities page again.",
+      "confidence": "sure",
+      "cue": "The heading 'Capabilities' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "the Settings page, '3 enabled'",
+      "expectation": "The settings page.",
+      "confidence": "sure",
+      "cue": "The heading 'Settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "the Settings page scrolled down a little",
+      "expectation": "Still the settings page, further down the list.",
+      "confidence": "sure",
+      "cue": "The heading 'Settings' has stayed at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading stayed where it was when the list moved. Good.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "the Settings page scrolled to 'Log out'",
+      "expectation": "The bottom of the settings list.",
+      "confidence": "sure",
+      "cue": "The heading 'Settings' still at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading stayed in place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "the Permissions page with Location and Calendar",
+      "expectation": "The page about what the program is allowed to use on my phone.",
+      "confidence": "sure",
+      "cue": "The heading 'Permissions' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Ordinary word, at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s39": {
+      "where": "the Voice settings page with 'Buttery'",
+      "expectation": "The page for the voice's settings.",
+      "confidence": "sure",
+      "cue": "The heading 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is plain. The large card saying 'Buttery' puzzles me, but I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s40": {
+      "where": "the Voice settings page with 'Airy'",
+      "expectation": "The voice settings page, another voice shown.",
+      "confidence": "sure",
+      "cue": "The heading 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same clear heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "the Voice settings page with the long list of languages",
+      "expectation": "Probably choosing a language for the voice, but the list covers the page.",
+      "confidence": "guessing",
+      "cue": "The top half of the words 'Voice settings', partly cut off by the list. The list has no heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The list sits over the heading and cuts it in half. The list itself does not say what it is for.",
+        "solution": "Give the list its own heading, 'Choose a language', and do not cover the page heading."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t12",
+          "subjects": [
+            "s41"
+          ],
+          "task": "Open the menu and tap the round badge with your initials at the bottom left. On that page tap Voice. On the next page tap the Language row so its list opens. Without choosing anything, say where you are. Press the phone's Back button once to close the list and compare. Do not tap the voice cards at the top.",
+          "real_if": "while the list is open you cannot tell where you are",
+          "not_real_if": "you can still tell where you are while the list is open",
+          "persona_report": "With the list open, the heading 'Voice settings' at the top is half covered by the list, and the list has no title of its own. To its left I could still see the word 'Language' on the row beneath, so I could piece together that I was choosing a language, on something to do with voice. Pressing Back closed the list and the heading was whole again. It is as it looked in the picture.",
+          "what_they_did": "Opened the menu, tapped my initials badge, tapped Voice, tapped the Language row so its list opened, said where I was, pressed Back once, and compared. I did not touch the voice cards. Note: when the page opened it showed a voice called 'Glassy' in the middle; I did not choose that.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The list half-covers the heading and has no title of its own; I pieced it together from 'Language' at the side, as in the picture.",
+      "provisional": false
+    },
+    "s42": {
+      "where": "the Voice settings page, English (India)",
+      "expectation": "The voice settings page.",
+      "confidence": "sure",
+      "cue": "The heading 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "the Voice settings page, 'Airy', English (India)",
+      "expectation": "The voice settings page.",
+      "confidence": "sure",
+      "cue": "The heading 'Voice settings' at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "the side list with Code lightly shaded",
+      "expectation": "The menu from the left. Perhaps I was on 'Code', since that row is faintly shaded.",
+      "confidence": "guessing",
+      "cue": "A pale grey band behind 'Code'. 'Claude' at the top is only the program's name.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The shading is faint, and 'Code' is not a place I understand in this program.",
+        "solution": "A strong mark on the current item and a heading for the menu."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t3",
+          "subjects": [
+            "s9",
+            "s44"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Chats. When the Chats page is open, open the menu again and, at a normal glance and without studying it, say which row is marked. Then tap Code, and once that page is open, open the menu again and do the same.",
+          "real_if": "you have to look carefully, or cannot see which row is marked",
+          "not_real_if": "the marked row is plain to you at a glance each time",
+          "persona_report": "On the real phone the pale grey band behind 'Chats', and later behind 'Code', was visible at a glance; I did not have to study it. It is still a faint shade rather than a strong mark, and it does not say in words 'you are here'. For me it is usable, but only just.",
+          "what_they_did": "Opened Chats, opened the menu and glanced at it; then tapped Code, opened the menu again and glanced.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The pale band behind Code was visible at a glance too; still faint, still not in words, but workable.",
+      "provisional": false
+    },
+    "s45": {
+      "where": "the Artifacts page with All / Pinned / Yours / Shared box open",
+      "expectation": "The Artifacts page with a list of choices open.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts'; the box has no heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page name is a word I cannot learn, and the box is untitled.",
+        "solution": "A plain page heading and a heading on the box."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t11",
+          "subjects": [
+            "s21",
+            "s22",
+            "s23",
+            "s45"
+          ],
+          "task": "Open the menu and tap Artifacts. Read everything on the page and say what you think is kept here. Tap the small word beside the search box, choose Chat, and say where you are; then set it back to All the same way. Tap the small picture at the top right, look at the little box, say what it is choosing, and close it with Back. Finally open the menu, go to Chats, then come back to Artifacts through the menu and say whether you recognise the page.",
+          "real_if": "you cannot tell what this page is, or what the little boxes are choosing, even after reading it",
+          "not_real_if": "after reading it you can tell where you are and what is kept here",
+          "persona_report": "The page says only 'Artifacts you've had with Claude will show up here.' That explains nothing: it uses the same word to explain itself. With 'Chat' chosen it said 'No artifacts match'. The box from the top-right picture offered 'All, Pinned, Yours, Shared with you', so there are two separate 'All's on this one page, choosing different things. When I came back I recognised the page only by reading the heading 'Artifacts' again; I could not tell you what is kept there. On my way back through the menu, my first tap on Chats landed me on the greeting page instead, and I had to try again.",
+          "what_they_did": "Opened Artifacts and read the page; set the word beside the search box to Chat and back to All; opened the small picture at the top right and looked at its box, then closed it; went to Chats through the menu and returned to Artifacts.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "This box has its own 'All', separate from the other 'All' beside the search box; two 'All's on one page choosing different things is worse than I thought.",
+      "provisional": false
+    },
+    "s46": {
+      "where": "the Artifacts page with the blue pin button, 'No artifacts match'",
+      "expectation": "The Artifacts page, something narrowed down, nothing found.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts', 'All' beside the search box, and a blue circle with a pin at the top right.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The page name is unfamiliar, and it says 'All' yet nothing matches; the blue pin suggests something else is chosen. I cannot tell what I am looking at.",
+        "solution": "A plain heading and one sentence saying what is being shown."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t7",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the word 'Pinned' appeared nowhere on the page. The small picture turned into a blue circle with a pin in it, and the word beside the search box still said 'All', with 'No artifacts match' in the middle. So the page said 'All' while it was showing only the pinned ones. After choosing Code the word said 'Code' and the blue pin stayed. Nothing in words told me I was looking at pinned items of the Code kind. Two separate controls, one shown only as a picture, and I could not hold them together.",
+          "what_they_did": "Opened Artifacts, tapped the small picture at the top right and chose Pinned, then tapped the small word beside the search box and chose Code. Afterwards I put both back to All, and checked they read All.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The page said 'All' while it was showing only the pinned ones; what is written contradicts what is shown.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "the Artifacts page with the blue pin and 'Code'",
+      "expectation": "The Artifacts page narrowed down again.",
+      "confidence": "guessing",
+      "cue": "The heading 'Artifacts', 'Code' beside the search box, and the blue pin circle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as before: unfamiliar page name and two separate things narrowing it that I cannot hold together.",
+        "solution": "A plain heading and a sentence saying what is being shown."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t7",
+          "subjects": [
+            "s46",
+            "s47"
+          ],
+          "task": "Open the menu (three lines, top left) and tap Artifacts. Tap the small picture at the top right and choose Pinned; say which list you are now looking at. Then tap the small word beside the search box and choose Code; say which list you are looking at now. Afterwards put both back: small picture at the top right, choose All; small word beside the search box, choose All.",
+          "real_if": "you cannot tell, from what is written, which list you are looking at",
+          "not_real_if": "what is written tells you plainly which list you are looking at",
+          "persona_report": "After choosing Pinned, the word 'Pinned' appeared nowhere on the page. The small picture turned into a blue circle with a pin in it, and the word beside the search box still said 'All', with 'No artifacts match' in the middle. So the page said 'All' while it was showing only the pinned ones. After choosing Code the word said 'Code' and the blue pin stayed. Nothing in words told me I was looking at pinned items of the Code kind. Two separate controls, one shown only as a picture, and I could not hold them together.",
+          "what_they_did": "Opened Artifacts, tapped the small picture at the top right and chose Pinned, then tapped the small word beside the search box and chose Code. Afterwards I put both back to All, and checked they read All.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Two separate controls, one only a picture, and nothing in words says which list I am looking at.",
+      "provisional": false
+    },
+    "s48": {
+      "where": "the 'Delete account' question box over Profile",
+      "expectation": "A box asking me to confirm deleting my account.",
+      "confidence": "sure",
+      "cue": "The heading 'Delete account' and 'Are you sure you want to delete your account?'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading and a clear question.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "the panel 'Turn off memory' over Capabilities",
+      "expectation": "A panel for turning off the program's memory.",
+      "confidence": "sure",
+      "cue": "The heading 'Turn off memory' at the top of the panel.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel has a heading in plain words.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "the panel 'Turn off sensitive topics' over Capabilities",
+      "expectation": "A panel for turning off something about sensitive topics.",
+      "confidence": "sure",
+      "cue": "The heading 'Turn off sensitive topics' at the top of the panel.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel has a clear heading.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "the Connectors page, switch on",
+      "expectation": "A page called 'Connectors'. I do not know what that means here.",
+      "confidence": "guessing",
+      "cue": "The heading 'Connectors' at the top, and the sentence 'Connectors let Claude use your apps and tools.'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name is a term I would have to learn. The sentence in the middle helps, but the heading alone would not tell me where I am if I came back to it.",
+        "solution": "A heading in ordinary words, such as 'Link to your other apps'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t13",
+          "subjects": [
+            "s51",
+            "s52"
+          ],
+          "task": "Open the menu and tap the round badge with your initials at the bottom left. On that page tap Connectors. Read the page and say where you are and what it is for. Do not touch the switch or the plus. Go back with the arrow at the top left, then open Connectors again and say whether you recognise it.",
+          "real_if": "you cannot tell where you are or what the page is for, even after reading it",
+          "not_real_if": "after reading it you can tell where you are",
+          "persona_report": "The page heading is 'Connectors', and in the middle it says 'No connectors yet. Connectors let Claude use your apps and tools.' Once I read that sentence I could say what the page is for: joining Claude to my other programs. When I opened it a second time I recognised it, but only by reading that sentence again, not from the heading. A mishap: the first time I tapped my initials badge the settings page opened under my finger, and my second tap turned off the 'Haptic feedback' switch. I noticed it and turned it back on at once; it is on again as before.",
+          "what_they_did": "Opened the menu, tapped my initials badge, tapped Connectors, read the page, went back with the arrow, and opened Connectors again. I did not touch the switch or the plus.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "After reading the sentence in the middle I could tell what the page is for, though the heading alone would not have told me.",
+      "provisional": false
+    },
+    "s52": {
+      "where": "the Connectors page, switch off",
+      "expectation": "The same Connectors page.",
+      "confidence": "guessing",
+      "cue": "The heading 'Connectors' and the sentence in the middle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same unfamiliar term as the heading.",
+        "solution": "A heading in ordinary words, such as 'Link to your other apps'."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-t13",
+          "subjects": [
+            "s51",
+            "s52"
+          ],
+          "task": "Open the menu and tap the round badge with your initials at the bottom left. On that page tap Connectors. Read the page and say where you are and what it is for. Do not touch the switch or the plus. Go back with the arrow at the top left, then open Connectors again and say whether you recognise it.",
+          "real_if": "you cannot tell where you are or what the page is for, even after reading it",
+          "not_real_if": "after reading it you can tell where you are",
+          "persona_report": "The page heading is 'Connectors', and in the middle it says 'No connectors yet. Connectors let Claude use your apps and tools.' Once I read that sentence I could say what the page is for: joining Claude to my other programs. When I opened it a second time I recognised it, but only by reading that sentence again, not from the heading. A mishap: the first time I tapped my initials badge the settings page opened under my finger, and my second tap turned off the 'Haptic feedback' switch. I noticed it and turned it back on at once; it is on again as before.",
+          "what_they_did": "Opened the menu, tapped my initials badge, tapped Connectors, read the page, went back with the arrow, and opened Connectors again. I did not touch the switch or the plus.",
+          "status": "executed",
+          "reason_not_executed": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same page, and I recognised it the second time, though by reading the sentence again rather than from the heading.",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 52,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 31,
+      "guessing": 21,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 32,
+    "navigate_with_difficulty": 20,
+    "cannot_handle": 0,
+    "tests_run": 13,
+    "opinions": {
+      "unchanged": 8,
+      "hardened": 5,
+      "softened": 7,
+      "reversed": 0
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "app": "Duolingo",
+  "screen": "screen29",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen29_actionable_elements.png",
+  "elements": {
+    "screen29-a1": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "left-pointing arrow at the top-left",
+      "location": "top-left of the page",
+      "bounds": [
+        21,
+        126,
+        105,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Back\"; not used in the verdict",
+      "convention_relied_on": "a left arrow at the top-left is the established 'back' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "back glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen29-a1-tc1",
+          "type": "verification",
+          "precondition": "music set-up question",
+          "action": "tap the left arrow",
+          "expected_result": "the previous step shows",
+          "confirms_if": "something else",
+          "overturns_if": "the previous step shows",
+          "observed_result": "returned to a 'What would you like to learn?' course list",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the arrow returned to the previous step, as the back convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen29-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "single-choice answer card under a question from the owl",
+      "location": "course set-up question",
+      "bounds": [
+        42,
+        577,
+        1038,
+        746
+      ],
+      "visible_text": "\"I’m new to music\"",
+      "accessibility_text_consulted": "content_desc holds a code (e.g. 'STUDENT'); not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a first-person answer under a plainly worded question",
+      "test_cases": [
+        {
+          "id": "screen29-a2-tc1",
+          "type": "expected",
+          "precondition": "music set-up question",
+          "action": "tap 'I’m new to music'",
+          "expected_result": "the card is chosen and CONTINUE activates",
+          "confirms_if": "nothing, or something else",
+          "overturns_if": "the card is selected",
+          "observed_result": "the card turned blue with blue text and CONTINUE turned green; did not continue (would add a course)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the card was selected (highlighted) and CONTINUE became active, as an answer choice should",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen29-a3": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "single-choice answer card under a question from the owl",
+      "location": "course set-up question",
+      "bounds": [
+        42,
+        778,
+        1038,
+        992
+      ],
+      "visible_text": "\"I learned some music, but it was a long time ago\"",
+      "accessibility_text_consulted": "content_desc holds a code (e.g. 'STUDENT'); not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a first-person answer under a plainly worded question",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling answer cards tested on the device (screen29-a2) — the card was selected (highlighted) and CONTINUE became active, as an answer choice should",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen29-a4": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "single-choice answer card under a question from the owl",
+      "location": "course set-up question",
+      "bounds": [
+        42,
+        1024,
+        1038,
+        1238
+      ],
+      "visible_text": "\"I have some music skills I want to keep sharp\"",
+      "accessibility_text_consulted": "content_desc holds a code (e.g. 'STUDENT'); not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a first-person answer under a plainly worded question",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling answer cards tested on the device (screen29-a2) — the card was selected (highlighted) and CONTINUE became active, as an answer choice should",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen29-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "grey bottom button",
+      "location": "bottom of the course set-up question",
+      "bounds": [
+        42,
+        2158,
+        1038,
+        2295
+      ],
+      "visible_text": "\"CONTINUE\" (greyed)",
+      "accessibility_text_consulted": "talkback \"CONTINUE\"; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "'CONTINUE' goes to the next step; greyed until an answer is chosen",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "observed turning green once an answer was chosen; not pressed (it would add a course)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 5,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

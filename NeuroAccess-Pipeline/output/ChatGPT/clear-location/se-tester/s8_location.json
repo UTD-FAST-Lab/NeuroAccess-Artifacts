@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s8",
+  "state_str": "fa414829b9577975eb30da2a867aabc5",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_203953.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s8_header_nav.png",
+  "name": "the temporary-chat settings sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Temporary chat",
+      "verdict_on_region": "dimmed mid-screen text of the screen behind; still legible; counted"
+    },
+    {
+      "kind": "header",
+      "text": "Temporary chat settings",
+      "verdict_on_region": "unconventional (middle band) — the sheet's own title; names where the user is"
+    }
+  ],
+  "identifier_found": "\"Temporary chat settings\" sheet title, with the dimmed \"Temporary chat\" behind",
+  "identifier_class": "header (sheet title)",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself and the screen behind stays legible",
+  "test_cases": [
+    {
+      "id": "s8-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "temporary chat open",
+      "action": "tap \"Personalized\" and read the sheet",
+      "expected_result": "the sheet title names a place or not",
+      "confirms_if": "no title / content only",
+      "overturns_if": "a title naming the sheet",
+      "observed_result": "sheet titled \"Temporary chat settings\" with Personalized / Unpersonalized options and \"Done\"; the dimmed \"Temporary chat\" text remains legible behind",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "both regions locate the user: the sheet names itself and the chat mode is legible behind it.",
+  "recommendation": null,
+  "provisional": false
+}

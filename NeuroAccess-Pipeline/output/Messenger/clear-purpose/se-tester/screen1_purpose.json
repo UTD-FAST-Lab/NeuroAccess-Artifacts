@@ -1,0 +1,1011 @@
+{
+ "app": "Messenger",
+ "screen": "screen1",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen1_actionable_elements.png",
+ "elements": {
+  "screen1-a1": {
+   "kind": "icon",
+   "glyph": "three horizontal lines",
+   "description": "three horizontal lines",
+   "location": "top, left",
+   "bounds": [
+    42,
+    63,
+    168,
+    221
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Main menu' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "three horizontal lines = open the main/side menu - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "no visible label, but three stacked lines is the established menu convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a1-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "tap the three-lines glyph at the top left",
+     "expected_result": "a side menu opens",
+     "confirms_if": "anything other than a menu opens",
+     "overturns_if": "a side menu opens",
+     "observed_result": "a side menu slid in from the left listing Communities, Message requests, Archive, Friend requests, Subscriptions and Facebook shortcuts",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the three-lines glyph slid in the side menu (profile name, Communities, Message requests, Archive, Friend requests...), exactly what the menu convention promises",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a2": {
+   "kind": "icon",
+   "glyph": "square with a pencil",
+   "description": "square with a pencil",
+   "location": "top, right",
+   "bounds": [
+    849,
+    100,
+    933,
+    184
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'New message' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "pencil over a square = write something new / compose - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "no visible label; a pencil on a square is the established compose/write-new convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a2-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "tap the pencil-on-square glyph at the top right",
+     "expected_result": "a screen for writing a new message opens",
+     "confirms_if": "it opens something unrelated to writing",
+     "overturns_if": "a compose screen opens",
+     "observed_result": "a 'New message' screen opened with a 'To:' field and options New story, New note, Group chat",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the pencil-on-square opened a 'New message' screen with a To: field, matching the compose convention",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a3": {
+   "kind": "icon",
+   "glyph": "letter f in a filled circle",
+   "description": "letter f in a filled circle",
+   "location": "top, right",
+   "bounds": [
+    954,
+    100,
+    1038,
+    184
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Facebook App' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "the Facebook 'f' logo = open Facebook - my reading; it is a brand mark rather than a generic action glyph",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "no visible word; the glyph is the Facebook brand mark, which a first-time user widely reads as 'go to Facebook'; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a3-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "tap the 'f' in a circle at the top right",
+     "expected_result": "the Facebook app or a Facebook page opens",
+     "confirms_if": "it does something unrelated to Facebook",
+     "overturns_if": "Facebook opens",
+     "observed_result": "the Facebook app launched and showed Android's 'Allow Facebook to send you notifications?' prompt over its Notifications page (dismissed with Don't allow)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the Facebook mark launched the Facebook app (its own notification prompt appeared), so the brand mark did what it shows",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a4": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Notifications are currently off. Tap to turn on.'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    221,
+    1080,
+    289
+   ],
+   "visible_text": "'Notifications are currently off. Tap to turn on.'",
+   "accessibility_text_consulted": "talkback_label 'Notifications are currently off. Tap to turn on.' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible sentence 'Notifications are currently off. Tap to turn on.' says both state and action",
+   "test_cases": [
+    {
+     "id": "screen1-a4-tc1",
+     "type": "expected",
+     "precondition": "Chats list open, notifications off",
+     "action": "tap the blue banner",
+     "expected_result": "a way to turn notifications on appears",
+     "confirms_if": "it opens something unrelated to notifications",
+     "overturns_if": "a notification setting appears",
+     "observed_result": "Android's app-notification page for Messenger opened with an 'All Messenger notifications' switch (left off; backed out)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the banner opened Android's notification settings page for Messenger, as the sentence says",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a5": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'Ask Meta AI or search'",
+   "location": "top, full width",
+   "bounds": [
+    42,
+    290,
+    1038,
+    395
+   ],
+   "visible_text": "placeholder: 'Ask Meta AI or search'",
+   "accessibility_text_consulted": "content_desc 'Ask Meta AI or search' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "the only text is the placeholder 'Ask Meta AI or search', which names two different jobs in one field and does not say what is searched; it is gone once typing starts",
+   "test_cases": [
+    {
+     "id": "screen1-a5-tc1",
+     "type": "expected",
+     "precondition": "search open, field empty",
+     "action": "type the literal text 'Deki'",
+     "expected_result": "people/chats named Deki are listed",
+     "confirms_if": "the placeholder gives no hint and results are unrelated",
+     "overturns_if": "matching people are listed and the field still shows what it is for",
+     "observed_result": "the placeholder disappeared on the first letter; results showed 'Deki - Connected' and a 'More people' list; an 'Ask' chip appeared inside the field",
+     "status": "executed",
+     "matched_expectation": true
+    },
+    {
+     "id": "screen1-a5-tc2",
+     "type": "expected",
+     "precondition": "search open, field empty",
+     "action": "type the literal text 'what is the weather today' (the 'Ask Meta AI' reading)",
+     "expected_result": "Meta AI answers, or the field makes clear the question goes to Meta AI",
+     "confirms_if": "a question is handled as a plain search with no answer",
+     "overturns_if": "the question is routed to Meta AI",
+     "observed_result": "no answer appeared; the list showed 'More people' accounts with names like 'What is the weather for today in san fernando'; only the small 'Ask' chip in the field pointed to Meta AI",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "a typed question was treated as a people search (accounts whose names resemble the words); reaching Meta AI needs a separate 'Ask' chip that only appears after typing, and the placeholder vanished on the first keystroke",
+   "recommendation": "give the field a persistent label such as 'Search people and chats' and a separate, always-visible 'Ask Meta AI' button, instead of one placeholder naming both jobs",
+   "provisional": false
+  },
+  "screen1-a6": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Drop a thought'",
+   "location": "top, left",
+   "bounds": [
+    5,
+    411,
+    231,
+    579
+   ],
+   "visible_text": "'Drop a thought'",
+   "accessibility_text_consulted": "content_desc 'Your note' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "the bubble shows a prompt phrase ('Drop a thought' / 'What's up?') - an idiom that does not say it posts a public note, or for how long",
+   "test_cases": [
+    {
+     "id": "screen1-a6-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap the speech bubble above the 'You' tile",
+     "expected_result": "a place to write a short status opens",
+     "confirms_if": "it opens something the phrase does not predict (a public post) without saying so",
+     "overturns_if": "the destination matches what the phrase suggests",
+     "observed_result": "a 'New note' composer opened with 'Share a thought...' and the footer 'Anyone can see your note on Messenger and Facebook for 24 hours. Change'; the bubble's own wording changed between visits ('Drop a thought', 'Share a song', 'Post a note...')",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the bubble opened a 'New note' composer whose footer says 'Anyone can see your note on Messenger and Facebook for 24 hours' - nothing on the bubble said it creates a public post",
+   "recommendation": "label the bubble 'Post a note' and say who sees it (e.g. 'Post a note - visible for 24 h')",
+   "provisional": false
+  },
+  "screen1-a7": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Deki'",
+   "location": "top, centre",
+   "bounds": [
+    247,
+    411,
+    473,
+    747
+   ],
+   "visible_text": "name under the photo: 'Deki'",
+   "accessibility_text_consulted": "content_desc 'Deki active now' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo with their first name under it; tapping a person conventionally goes to that person",
+   "test_cases": [
+    {
+     "id": "screen1-a7-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap a person tile that has no coloured ring",
+     "expected_result": "the chat with that person opens",
+     "confirms_if": "it opens something other than that person",
+     "overturns_if": "the chat with that person opens",
+     "observed_result": "the conversation with that person opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "an unringed person tile opened the conversation with that person",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Siquem'",
+   "location": "top, centre",
+   "bounds": [
+    473,
+    411,
+    699,
+    747
+   ],
+   "visible_text": "name under the photo: 'Siquem'",
+   "accessibility_text_consulted": "content_desc 'Siquem active now' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person tile with name; looks like the neighbouring person tiles",
+   "test_cases": [
+    {
+     "id": "screen1-a8-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap a person tile wearing a coloured ring",
+     "expected_result": "the chat with that person opens, like the other tiles",
+     "confirms_if": "it opens something different from the identical-looking tiles",
+     "overturns_if": "it opens the chat",
+     "observed_result": "the person's story opened full screen with progress bars, reactions and a 'Send message' field",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "a tile wearing a ring did not open the chat like its unringed neighbours - it played that person's full-screen story; the ring (drawn empty on several captures) is the only cue",
+   "recommendation": "mark story tiles explicitly (e.g. a 'Story' tag) or keep one behaviour for every person tile",
+   "provisional": false
+  },
+  "screen1-a9": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Krishna'",
+   "location": "top, right",
+   "bounds": [
+    699,
+    411,
+    925,
+    747
+   ],
+   "visible_text": "name under the photo: 'Krishna'",
+   "accessibility_text_consulted": "content_desc 'Krishna active now' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo with their first name under it; tapping a person conventionally goes to that person",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "an unringed person tile opened the conversation with that person [test run once on screen1-a7 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a10": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Marco'",
+   "location": "top, right",
+   "bounds": [
+    925,
+    411,
+    1080,
+    747
+   ],
+   "visible_text": "name under the photo: 'Marco'",
+   "accessibility_text_consulted": "content_desc 'Marco active now' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo with their first name under it; tapping a person conventionally goes to that person",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "an unringed person tile opened the conversation with that person [test run once on screen1-a7 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a11": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Siquem'",
+   "location": "middle, centre",
+   "bounds": [
+    473,
+    462,
+    699,
+    747
+   ],
+   "visible_text": "name under the photo: 'Siquem'",
+   "accessibility_text_consulted": "content_desc 'Siquem, unread story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person tile with name; looks like the neighbouring person tiles",
+   "test_cases": [],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "a tile wearing a ring did not open the chat like its unringed neighbours - it played that person's full-screen story; the ring (drawn empty on several captures) is the only cue [test run once on screen1-a8 and carried to this duplicate - same control type and appearance]",
+   "recommendation": "mark story tiles explicitly (e.g. a 'Story' tag) or keep one behaviour for every person tile",
+   "provisional": false
+  },
+  "screen1-a12": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'You'",
+   "location": "middle, left",
+   "bounds": [
+    5,
+    579,
+    231,
+    747
+   ],
+   "visible_text": "name under the photo: 'You'",
+   "accessibility_text_consulted": "content_desc 'Your story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "the tile says only 'You' under a grey avatar - it names a person, not an action",
+   "test_cases": [
+    {
+     "id": "screen1-a12-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap the 'You' tile at the left of the people row",
+     "expected_result": "something about my own profile opens",
+     "confirms_if": "it opens an unpredicted action",
+     "overturns_if": "my profile or story opens",
+     "observed_result": "the 'New note' composer opened (same as the bubble above it)",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping 'You' opened the 'New note' composer - neither the word nor the blank avatar predicts that",
+   "recommendation": "put an action label on the tile ('Add note' or 'Your story') instead of 'You'",
+   "provisional": false
+  },
+  "screen1-a13": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing '3:21 PM Krishna Bharti. You: awww so sweet! 💖'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    747,
+    1080,
+    936
+   ],
+   "visible_text": "'3:21 PM Krishna Bharti. You: awww so sweet! 💖'",
+   "accessibility_text_consulted": "content_desc 'Krishna Bharti, You: awww so sweet! 💖' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name, last message and time: a conversation row conventionally opens that conversation",
+   "test_cases": [
+    {
+     "id": "screen1-a13-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap the text area of a conversation row",
+     "expected_result": "the conversation opens",
+     "confirms_if": "something else opens",
+     "overturns_if": "the conversation opens",
+     "observed_result": "the conversation opened with the person's name in the header",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the row opened that conversation",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a14": {
+   "kind": "icon",
+   "glyph": "circular profile photo",
+   "description": "circular profile photo",
+   "location": "middle, left",
+   "bounds": [
+    42,
+    768,
+    189,
+    915
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Krishna’s story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "person photo = that person",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the photo is part of a conversation row; a first-time user expects it to open the same conversation",
+   "test_cases": [
+    {
+     "id": "screen1-a14-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap the ringed round photo at the left of a conversation row",
+     "expected_result": "the conversation opens, like the rest of the row",
+     "confirms_if": "it opens something different from the row",
+     "overturns_if": "it opens the conversation",
+     "observed_result": "the person's story opened full screen",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "tapping the ringed photo opened the person's story instead of the conversation the rest of the row opens",
+   "recommendation": "make the row photo open the same thing as the row, or label the ring 'View story'",
+   "provisional": false
+  },
+  "screen1-a15": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing '3:17 PM Deki. You: 😄😊'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    936,
+    1080,
+    1125
+   ],
+   "visible_text": "'3:17 PM Deki. You: 😄😊'",
+   "accessibility_text_consulted": "content_desc 'Deki, You: 😄😊' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name, last message and time: a conversation row conventionally opens that conversation",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the row opened that conversation [test run once on screen1-a13 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a16": {
+   "kind": "icon",
+   "glyph": "circular profile photo",
+   "description": "circular profile photo",
+   "location": "middle, left",
+   "bounds": [
+    42,
+    957,
+    189,
+    1104
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Deki’s story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "person photo = that person",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the photo is part of a conversation row; a first-time user expects it to open the same conversation",
+   "test_cases": [],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "tapping the ringed photo opened the person's story instead of the conversation the rest of the row opens [test run once on screen1-a14 and carried to this duplicate - same control type and appearance]",
+   "recommendation": "make the row photo open the same thing as the row, or label the ring 'View story'",
+   "provisional": false
+  },
+  "screen1-a17": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing '6:21 AM Unread Fra Mendy. How u doing'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1125,
+    1080,
+    1314
+   ],
+   "visible_text": "'6:21 AM Unread Fra Mendy. How u doing'",
+   "accessibility_text_consulted": "content_desc 'Fra Mendy, 1 new message, How u doing' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name, last message and time: a conversation row conventionally opens that conversation",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the row opened that conversation [test run once on screen1-a13 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a18": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'New Facebook friend Marco Peralta. New'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1314,
+    1080,
+    1503
+   ],
+   "visible_text": "'New Facebook friend Marco Peralta. New'",
+   "accessibility_text_consulted": "content_desc 'Marco Peralta' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name, last message and time: a conversation row conventionally opens that conversation",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the row opened that conversation [test run once on screen1-a13 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a19": {
+   "kind": "icon",
+   "glyph": "X in a filled circle",
+   "description": "X in a filled circle",
+   "location": "middle, right",
+   "bounds": [
+    959,
+    1366,
+    1043,
+    1450
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Archive new friend chat' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "X = close / dismiss this item - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "no visible label; an X in a circle is the established close/dismiss convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a19-tc1",
+     "type": "verification",
+     "precondition": "Chats list with the 'New Facebook friend' row",
+     "action": "tap the X at the right of the row",
+     "expected_result": "the row is dismissed",
+     "confirms_if": "something unrelated to dismissing happens",
+     "overturns_if": "the row is dismissed",
+     "observed_result": "not executed - the control would archive a real conversation, which the device safety rules forbid",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not tapped: per the run's safety rules the control would archive a real conversation; the verdict is carried provisionally from the glyph convention",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen1-a20": {
+   "kind": "icon",
+   "glyph": "letter i in a circle outline",
+   "description": "letter i in a circle outline",
+   "location": "middle, centre",
+   "bounds": [
+    402,
+    1532,
+    486,
+    1616
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Learn more' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "'i' in a circle = more information - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an 'i' in a circle next to the 'People you may know' heading is the information convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a20-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "tap the 'i' beside 'People you may know'",
+     "expected_result": "an explanation appears",
+     "confirms_if": "it acts on the suggestions instead of explaining",
+     "overturns_if": "an explanation appears",
+     "observed_result": "a bottom sheet 'Explore Facebook friend suggestions' opened with an explanation, a 'Learn more' link and OK",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the 'i' opened a sheet explaining 'Explore Facebook friend suggestions', matching the information convention",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a21": {
+   "kind": "icon",
+   "glyph": "three horizontal dots",
+   "description": "three horizontal dots",
+   "location": "middle, right",
+   "bounds": [
+    954,
+    1532,
+    1038,
+    1616
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'More options menu' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "three horizontal dots = more options - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "three dots at the end of a section heading is the 'more options' convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen1-a21-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "tap the three dots at the right of 'People you may know'",
+     "expected_result": "a menu of options appears",
+     "confirms_if": "something other than a menu happens",
+     "overturns_if": "a menu appears",
+     "observed_result": "a sheet opened with 'See more suggestions' and 'Hide suggestions'",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the dots opened a sheet with 'See more suggestions' and 'Hide suggestions', matching the more-options convention",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a22": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'South Pablito Add friend'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1629,
+    1080,
+    1818
+   ],
+   "visible_text": "'South Pablito Add friend'",
+   "accessibility_text_consulted": "content_desc 'South Pablito' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name of a suggested person with an 'Add friend'/'Request sent' state; tapping a person row conventionally shows that person",
+   "test_cases": [
+    {
+     "id": "screen1-a22-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap the name area of a suggested-person row",
+     "expected_result": "something about that person opens",
+     "confirms_if": "it acts (sends a request) instead of showing",
+     "overturns_if": "it shows the person",
+     "observed_result": "a sheet opened with the person's photo, name, 'Add friend', 'Profile', 'Message', 'About', 'Hide suggestions', 'Stop communication'; closed with its X",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the person row opened a profile sheet for that person (photo, name, Add friend / Profile / Message, Hide suggestions)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a23": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Add friend'",
+   "location": "middle, right",
+   "bounds": [
+    781,
+    1676,
+    1038,
+    1771
+   ],
+   "visible_text": "'Add friend'",
+   "accessibility_text_consulted": "talkback_label 'Add friend' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'Add friend' says exactly what pressing it does",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the words 'Add friend' state the action; not pressed, since it would send a real friend request",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a24": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'ศรัณยู พิมสะอาด Add friend'",
+   "location": "bottom, full width",
+   "bounds": [
+    0,
+    1818,
+    1080,
+    2007
+   ],
+   "visible_text": "'ศรัณยู พิมสะอาด Add friend'",
+   "accessibility_text_consulted": "content_desc 'ศรัณยู พิมสะอาด' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name of a suggested person with an 'Add friend'/'Request sent' state; tapping a person row conventionally shows that person",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the person row opened a profile sheet for that person (photo, name, Add friend / Profile / Message, Hide suggestions) [test run once on screen1-a22 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a25": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Add friend'",
+   "location": "bottom, right",
+   "bounds": [
+    781,
+    1865,
+    1038,
+    1960
+   ],
+   "visible_text": "'Add friend'",
+   "accessibility_text_consulted": "talkback_label 'Add friend' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'Add friend' says exactly what pressing it does",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the words 'Add friend' state the action; not pressed, since it would send a real friend request [test run once on screen1-a23 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a26": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Charles Goodrich Add friend'",
+   "location": "bottom, full width",
+   "bounds": [
+    0,
+    2007,
+    1080,
+    2190
+   ],
+   "visible_text": "'Charles Goodrich Add friend'",
+   "accessibility_text_consulted": "content_desc 'Charles Goodrich' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible name of a suggested person with an 'Add friend'/'Request sent' state; tapping a person row conventionally shows that person",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the person row opened a profile sheet for that person (photo, name, Add friend / Profile / Message, Hide suggestions) [test run once on screen1-a22 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a27": {
+   "kind": "icon",
+   "glyph": "ring of purple and blue ovals",
+   "description": "ring of purple and blue ovals",
+   "location": "bottom, right",
+   "bounds": [
+    903,
+    2038,
+    1046,
+    2156
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Meta AI' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Missing Purpose",
+   "initial_rationale": "a floating round button with a ring of coloured ovals and no word; the glyph is not an established convention",
+   "test_cases": [
+    {
+     "id": "screen1-a27-tc1",
+     "type": "verification",
+     "precondition": "Chats list open",
+     "action": "look for any visible label near the button, long-press it, then tap it",
+     "expected_result": "nothing visible names it (confirms Missing)",
+     "confirms_if": "a label/caption appears in some state, or the glyph proves conventional",
+     "overturns_if": "a label appears or the glyph is a known convention",
+     "observed_result": "no caption or tooltip appeared; the tap opened a 'Meta AI' chat with suggestion cards and an 'Ask anything...' field",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Missing Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "no label, tooltip or caption appeared in any state; tapping it opened a 'Meta AI' chat - something nothing on the list screen named",
+   "recommendation": "add a visible label under or beside the button, e.g. 'Ask Meta AI'",
+   "provisional": false
+  },
+  "screen1-a28": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Add friend'",
+   "location": "bottom, right",
+   "bounds": [
+    781,
+    2054,
+    1038,
+    2149
+   ],
+   "visible_text": "'Add' (the rest is hidden under the floating button)",
+   "accessibility_text_consulted": "talkback_label 'Add friend' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "only the word 'Add' is visible; the rest of the button is hidden under the floating round button, so it does not say what is added",
+   "test_cases": [
+    {
+     "id": "screen1-a28-tc1",
+     "type": "expected",
+     "precondition": "Chats list scrolled so the last suggestion sits under the floating button",
+     "action": "tap the visible 'Add' fragment",
+     "expected_result": "a friend request is sent",
+     "confirms_if": "the fragment cannot be read as 'Add friend'",
+     "overturns_if": "the full label becomes visible",
+     "observed_result": "not executed - pressing it would send a real friend request and may hit the floating button on top of it",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not pressed (it would send a real friend request and sits under another control); the visible fragment 'Add' remains the only text, so the verdict is carried provisionally",
+   "recommendation": "keep the floating button from covering list buttons (add bottom padding) so the full 'Add friend' label is visible",
+   "provisional": true
+  },
+  "screen1-a29": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Chats'",
+   "location": "bottom, left",
+   "bounds": [
+    0,
+    2190,
+    360,
+    2337
+   ],
+   "visible_text": "'Chats'",
+   "accessibility_text_consulted": "content_desc 'Chats, 1 unread message, Tab 1 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a glyph with the word under it (Chats / People / Notifications) in a bottom bar",
+   "test_cases": [
+    {
+     "id": "screen1-a29-tc1",
+     "type": "expected",
+     "precondition": "Chats list open",
+     "action": "tap 'People', then 'Notifications', then 'Chats'",
+     "expected_result": "each opens the page its word names",
+     "confirms_if": "a tab opens something its word does not name",
+     "overturns_if": "each matches",
+     "observed_result": "each tab opened the page titled with its word",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the People and Notifications tabs opened pages titled 'People' and 'Notifications'; Chats returned to the chats list",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a30": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'People'",
+   "location": "bottom, centre",
+   "bounds": [
+    360,
+    2190,
+    720,
+    2337
+   ],
+   "visible_text": "'People'",
+   "accessibility_text_consulted": "content_desc 'People tab, Tab 2 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a glyph with the word under it (Chats / People / Notifications) in a bottom bar",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the People and Notifications tabs opened pages titled 'People' and 'Notifications'; Chats returned to the chats list [test run once on screen1-a29 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen1-a31": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Notifications'",
+   "location": "bottom, right",
+   "bounds": [
+    720,
+    2190,
+    1080,
+    2337
+   ],
+   "visible_text": "'Notifications'",
+   "accessibility_text_consulted": "content_desc 'Notifications, Tab 3 of 3' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a glyph with the word under it (Chats / People / Notifications) in a bottom bar",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the People and Notifications tabs opened pages titled 'People' and 'Notifications'; Chats returned to the chats list [test run once on screen1-a29 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 31,
+  "issues": 9,
+  "missing_purpose": 1,
+  "unclear_purpose": 8,
+  "clear_purpose": 22,
+  "clear_via_common_icon_exemption": 6,
+  "detection_false_positives": 0,
+  "test_cases_executed": 17,
+  "test_cases_not_executed": 2,
+  "instincts_confirmed": 27,
+  "instincts_overturned": 4,
+  "provisional_verdicts": 2
+ }
+}

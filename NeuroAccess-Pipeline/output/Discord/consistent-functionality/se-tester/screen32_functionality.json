@@ -1,0 +1,803 @@
+{
+  "app": "Discord",
+  "screen": "screen32",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen32_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen32_function_groups.png"
+  },
+  "elements": {
+    "screen32-f1": {
+      "kind": "icon",
+      "appearance": "speech bubble in a rounded square",
+      "state": "unselected",
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        63,
+        189,
+        221
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "speech bubble = messages/conversations - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Direct Messages (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Direct Messages\"; talkback_label: \"Direct Messages\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom",
+      "observed_function": "opens the Messages (DM) home; on Messages it stays put",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen32-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f1 (speech bubble in a rounded square) at its captured position and record what happens",
+          "expected_result": "opens the Messages (DM) home; on Messages it stays put",
+          "confirms_if": "it does something unrelated to what the other members of gg3 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg3, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Messages (DM) home; on Messages it stays put",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f2": {
+      "kind": "icon+label",
+      "appearance": "the words \"Accessibility Testin's server\" with a right chevron",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        192,
+        108,
+        1080,
+        171
+      ],
+      "visible_label": "Accessibility Testin's server",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Accessibility Testin's server (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"Accessibility Testin's server\"",
+      "observed_function": "opens a server options sheet (Boost, Invite, Notifications, Settings, Mark As Read, Create Channel...)",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc-screen32-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f2 (the words \"Accessibility Testin's server\" with a right chevron) at its captured position and record what happens",
+          "expected_result": "opens a server options sheet (Boost, Invite, Notifications, Settings, Mark As Read, Create Channel...)",
+          "confirms_if": "it does something unrelated to what the other members of gg9 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg9, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens a server options sheet (Boost, Invite, Notifications, Settings, Mark As Read, Create Channel...)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen32-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f2 (\"the words \"Accessibility Testin's server\" with a right chevron\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "opens a server options sheet (Boost, Invite, Notifications, Settings, Mark As Read, Create Channel...)",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f3": {
+      "kind": "icon+label",
+      "appearance": "magnifying glass beside the word \"Search\"",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        234,
+        192,
+        807,
+        276
+      ],
+      "visible_label": "Search",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Search (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Search\"; talkback_label: \"Search\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"Search\"",
+      "observed_function": "opens search scoped to the server: field \"Search in Accessibility Testin's server\", tabs Recent/Members/Channels/Media/Pins/Links",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-tc-screen32-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f3 (magnifying glass beside the word \"Search\") at its captured position and record what happens",
+          "expected_result": "opens search scoped to the server: field \"Search in Accessibility Testin's server\", tabs Recent/Members/Channels/Media/Pins/Links",
+          "confirms_if": "it does something unrelated to what the other members of gg10 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg10, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens search scoped to the server: field \"Search in Accessibility Testin's server\", tabs Recent/Members/Channels/Media/Pins/Links",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg5-tc-screen32-f3",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f3 (\"magnifying glass beside the word \"Search\"\") and compare its result with the other renderings in cfg5",
+          "expected_result": "hypothesis: both magnifiers open search",
+          "confirms_if": "both open search (scoped to where they sit)",
+          "overturns_if": "either opens something other than search",
+          "observed_result": "opens search scoped to the server: field \"Search in Accessibility Testin's server\", tabs Recent/Members/Channels/Media/Pins/Links",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality",
+        "cfg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f4": {
+      "kind": "icon",
+      "appearance": "two people with a plus sign",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        839,
+        192,
+        923,
+        276
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "person-plus = invite/add people; two figures suggests a group invite - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Invite (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Invite\"; talkback_label: \"Invite\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom",
+      "observed_function": "opens the sheet \"Invite a friend\" (share row, invite link to this server)",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc-screen32-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f4 (two people with a plus sign) at its captured position and record what happens",
+          "expected_result": "opens the sheet \"Invite a friend\" (share row, invite link to this server)",
+          "confirms_if": "it does something unrelated to what the other members of gg11 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg11, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the sheet \"Invite a friend\" (share row, invite link to this server)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f5": {
+      "kind": "icon",
+      "appearance": "calendar",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        954,
+        192,
+        1038,
+        276
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "calendar = events/schedule - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Events (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Events\"; talkback_label: \"Events\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom",
+      "observed_function": "opens the sheet \"Events\" (\"There are no upcoming events.\")",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc-screen32-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f5 (calendar) at its captured position and record what happens",
+          "expected_result": "opens the sheet \"Events\" (\"There are no upcoming events.\")",
+          "confirms_if": "it does something unrelated to what the other members of gg12 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg12, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the sheet \"Events\" (\"There are no upcoming events.\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f6": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "selected",
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        255,
+        189,
+        412
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen32-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f6 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen32-f6",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f6 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f7": {
+      "kind": "icon+label",
+      "appearance": "hexagonal gem beside the words \"Server Boosts\"",
+      "state": null,
+      "location": "top centre of the screen",
+      "bounds": [
+        213,
+        343,
+        1059,
+        438
+      ],
+      "visible_label": "Server Boosts",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Server Boosts (from label; status declared)",
+      "accessibility_text": "content_desc: \"Server Boosts\"; talkback_label: \"Server Boosts\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"Server Boosts\"",
+      "observed_function": "opens the page \"Server Boosts\"",
+      "glyph_group": "gg13",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg13-tc-screen32-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f7 (hexagonal gem beside the words \"Server Boosts\") at its captured position and record what happens",
+          "expected_result": "opens the page \"Server Boosts\"",
+          "confirms_if": "it does something unrelated to what the other members of gg13 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg13, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the page \"Server Boosts\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f8": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "unselected",
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        412,
+        189,
+        570
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen32-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f8 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen32-f8",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f8 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f9": {
+      "kind": "icon+label",
+      "appearance": "the words \"Text Channels\" with a downward chevron",
+      "state": "expanded",
+      "location": "middle centre of the screen",
+      "bounds": [
+        192,
+        483,
+        1080,
+        549
+      ],
+      "visible_label": "Text Channels",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Text Channels (from label; status declared)",
+      "accessibility_text": "content_desc: \"Text Channels\"; talkback_label: \"Text Channels\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"Text Channels\"",
+      "observed_function": "collapses the Text Channels list (chevron turns right); a second tap expands it again",
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-tc-screen32-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f9 (the words \"Text Channels\" with a downward chevron) at its captured position and record what happens",
+          "expected_result": "collapses the Text Channels list (chevron turns right); a second tap expands it again",
+          "confirms_if": "it does something unrelated to what the other members of gg14 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg14, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "collapses the Text Channels list (chevron turns right); a second tap expands it again",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg14": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f10": {
+      "kind": "icon+label",
+      "appearance": "hash sign beside the word \"general\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        213,
+        561,
+        1059,
+        656
+      ],
+      "visible_label": "general",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "general (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"general (text channel)\"; talkback_label: \"general (text channel)\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"general\"",
+      "observed_function": "opens the #general text channel (\"Welcome to Accessibility Testin's server\", message box \"Message #general\")",
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-tc-screen32-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f10 (hash sign beside the word \"general\") at its captured position and record what happens",
+          "expected_result": "opens the #general text channel (\"Welcome to Accessibility Testin's server\", message box \"Message #general\")",
+          "confirms_if": "it does something unrelated to what the other members of gg15 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg15, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the #general text channel (\"Welcome to Accessibility Testin's server\", message box \"Message #general\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc-screen32-f10",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f10 (\"hash sign beside the word \"general\"\") and compare its result with the other renderings in cfg3",
+          "expected_result": "hypothesis: both \"general\" rows open the same channel",
+          "confirms_if": "both open the same channel",
+          "overturns_if": "the text row and the voice row open different things",
+          "observed_result": "opens the #general text channel (\"Welcome to Accessibility Testin's server\", message box \"Message #general\")",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg15": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f11": {
+      "kind": "icon",
+      "appearance": "the letters \"ATs\" in a rounded tile",
+      "state": "unselected",
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        570,
+        189,
+        727
+      ],
+      "visible_label": "ATs",
+      "convention_relied_on": "lettered tile in a left rail = a workspace/server switcher; recognised mainly by users of rail-based chat apps, not a first-time convention - my reading",
+      "convention_confidence": "low",
+      "declared_function": "Accessibility Testin's server (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testin's server\"; talkback_label: \"Accessibility Testin's server\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; one of several identical \"ATs\" tiles in the left rail; no visible name beside any of them",
+      "observed_function": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc-screen32-f11",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f11 (the letters \"ATs\" in a rounded tile) at its captured position and record what happens",
+          "expected_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "confirms_if": "it does something unrelated to what the other members of gg1 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg1, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-tc-screen32-f11",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f11 (\"the letters \"ATs\" in a rounded tile\") and compare its result with the other renderings in cfg1",
+          "expected_result": "hypothesis: the rail tiles and the server title open the same server",
+          "confirms_if": "all open the same server view",
+          "overturns_if": "the title does something other than opening the server",
+          "observed_result": "selects and opens that tile's server; every one of the live tiles opens a server named \"Accessibility Testin's server\" with the identical channel list, the selection bar moving to the tapped tile (live rail shows 4 \"ATs\" tiles, the capture 3); tapping an already-selected tile opens that server's #general channel",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f12": {
+      "kind": "icon+label",
+      "appearance": "the words \"Voice Channels\" with a downward chevron",
+      "state": "expanded",
+      "location": "middle centre of the screen",
+      "bounds": [
+        192,
+        689,
+        1080,
+        756
+      ],
+      "visible_label": "Voice Channels",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Voice Channels (from label; status declared)",
+      "accessibility_text": "content_desc: \"Voice Channels\"; talkback_label: \"Voice Channels\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"Voice Channels\"",
+      "observed_function": "collapses the Voice Channels list; a second tap expands it again",
+      "glyph_group": "gg16",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg16-tc-screen32-f12",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f12 (the words \"Voice Channels\" with a downward chevron) at its captured position and record what happens",
+          "expected_result": "collapses the Voice Channels list; a second tap expands it again",
+          "confirms_if": "it does something unrelated to what the other members of gg16 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg16, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "collapses the Voice Channels list; a second tap expands it again",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f13": {
+      "kind": "icon",
+      "appearance": "plus sign in a circle",
+      "state": null,
+      "location": "middle left of the screen",
+      "bounds": [
+        0,
+        727,
+        189,
+        885
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "circled plus = add/create; at the foot of a rail of tiles it reads as \"add another of these\" - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Add a Server (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Add a Server\"; talkback_label: \"Add a Server\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom",
+      "observed_function": "opens the full-screen modal \"Create Your Server\"",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc-screen32-f13",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f13 (plus sign in a circle) at its captured position and record what happens",
+          "expected_result": "opens the full-screen modal \"Create Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg4 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg4, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the full-screen modal \"Create Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f14": {
+      "kind": "icon+label",
+      "appearance": "speaker beside the word \"General\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        213,
+        767,
+        1059,
+        862
+      ],
+      "visible_label": "General",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "General (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"General (voice channel)\"; talkback_label: \"General (voice channel)\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; carries its own visible words \"General\"",
+      "observed_function": "opens the voice-channel panel \"General\" with \"No one's here yet!\" and a \"Join Voice\" button (does not join by itself)",
+      "glyph_group": "gg17",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg17-tc-screen32-f14",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f14 (speaker beside the word \"General\") at its captured position and record what happens",
+          "expected_result": "opens the voice-channel panel \"General\" with \"No one's here yet!\" and a \"Join Voice\" button (does not join by itself)",
+          "confirms_if": "it does something unrelated to what the other members of gg17 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg17, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the voice-channel panel \"General\" with \"No one's here yet!\" and a \"Join Voice\" button (does not join by itself)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg3-tc-screen32-f14",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f14 (\"speaker beside the word \"General\"\") and compare its result with the other renderings in cfg3",
+          "expected_result": "hypothesis: both \"general\" rows open the same channel",
+          "confirms_if": "both open the same channel",
+          "overturns_if": "the text row and the voice row open different things",
+          "observed_result": "opens the voice-channel panel \"General\" with \"No one's here yet!\" and a \"Join Voice\" button (does not join by itself)",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f15": {
+      "kind": "icon",
+      "appearance": "round avatar of the mascot face with a status dot",
+      "state": "online",
+      "location": "bottom left of the screen",
+      "bounds": [
+        74,
+        2222,
+        158,
+        2306
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "own avatar = account/profile - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; in the bottom account panel beside the name",
+      "observed_function": "opens the user's own profile page",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc-screen32-f15",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f15 (round avatar of the mascot face with a status dot) at its captured position and record what happens",
+          "expected_result": "opens the account/profile view",
+          "confirms_if": "it does something unrelated to what the other members of gg2 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg2, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen32-f15",
+          "type": "function_determination",
+          "precondition": "live app on the view this element was captured on",
+          "action": "tap screen32-f15 and record what it does, so it can be placed on the function axis",
+          "expected_result": "a determinable job",
+          "confirms_if": "n/a - placement test",
+          "overturns_if": "n/a - placement test",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg2-tc-screen32-f15",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f15 (\"round avatar of the mascot face with a status dot\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f16": {
+      "kind": "icon+label",
+      "appearance": "the name \"Accessibility Testing\" with a downward chevron above a status word",
+      "state": "online",
+      "location": "bottom centre of the screen",
+      "bounds": [
+        74,
+        2222,
+        891,
+        2306
+      ],
+      "visible_label": "Accessibility Testing, Online",
+      "convention_relied_on": "name with a downward chevron = opens a menu/switcher for that account - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Accessibility Testing, Online (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testing, Online\"; talkback_label: \"Accessibility Testing, Online\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom; the account panel at the bottom: name above the word \"Online\"/\"Idle\"",
+      "observed_function": "opens the user's own profile page",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc-screen32-f16",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f16 (the name \"Accessibility Testing\" with a downward chevron above a status word) at its captured position and record what happens",
+          "expected_result": "opens the user's own profile page",
+          "confirms_if": "it does something unrelated to what the other members of gg5 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg5, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc-screen32-f16",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen32 captured",
+          "action": "exercise screen32-f16 (\"the name \"Accessibility Testing\" with a downward chevron above a status word\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the user's own profile page",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen32-f17": {
+      "kind": "icon",
+      "appearance": "bell",
+      "state": null,
+      "location": "bottom right of the screen",
+      "bounds": [
+        923,
+        2222,
+        1007,
+        2306
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "bell = notifications - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Notifications (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Notifications\"; talkback_label: \"Notifications\"",
+      "context_reading": "server view titled \"Accessibility Testin's server\", channel list with \"Text Channels\"/\"Voice Channels\" headings, account panel along the bottom",
+      "observed_function": "opens the screen titled \"Notifications\"",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc-screen32-f17",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen32 captured (screens 26-35 are recaptures of the same server view); context noted before the tap",
+          "action": "tap screen32-f17 (bell) at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"Notifications\"",
+          "confirms_if": "it does something unrelated to what the other members of gg6 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg6, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"Notifications\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 17,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 27,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

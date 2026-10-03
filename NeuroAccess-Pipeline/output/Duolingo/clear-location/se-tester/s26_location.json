@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s26",
+  "state_str": "706e6bb57f48fbb3480fe576527aee5c",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185743.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s26_header_nav.png",
+  "name": "Leaderboards (empty)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Finish 2 lessons to start competing on Leaderboards!",
+      "verdict_on_region": "names the section (Leaderboards) in its own body copy — accepted as naming the place, though it reads as an instruction"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "trophy tab highlighted; body copy 'Finish 2 lessons to start competing on Leaderboards!' mid-screen",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "tab highlight plus the section name in the empty-state copy",
+  "test_cases": [
+    {
+      "id": "s26-tc1",
+      "type": "unconventional_region",
+      "precondition": "Learn path",
+      "action": "tap the trophy tab and read the screen",
+      "expected_result": "a title at the top, or only the mid-screen text",
+      "confirms_if": "the trophy highlight is absent",
+      "overturns_if": "-",
+      "observed_result": "no header at the top; the only text is 'Finish 2 lessons to start competing on Leaderboards!'; the trophy tab is boxed",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the mid-screen text names the section (accepted, though it reads as an instruction) and the trophy tab is highlighted",
+  "recommendation": null,
+  "provisional": false
+}

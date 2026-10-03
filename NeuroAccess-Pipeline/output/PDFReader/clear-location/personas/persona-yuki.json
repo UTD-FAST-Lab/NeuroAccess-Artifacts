@@ -1,0 +1,649 @@
+{
+  "persona": "persona-yuki",
+  "app": "PDFReader",
+  "screens": {
+    "s1": {
+      "where": "Loading screen at start-up",
+      "expectation": "I'm at the very start - the app is opening and loading.",
+      "confidence": "sure",
+      "cue": "The big red PDF logo with 'PDF Reader, PDF Viewer' under it, and the loading bar near the bottom that's only just started.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a start-up screen and it looks like one - logo, name, loading bar, nothing else to decide. The name is only the app's name, but on a loading screen that's all I need. Honestly my eye went more to 'This process may contain ads' and the empty grey strip at the very bottom, because it makes me brace for an ad popping in - that's not about knowing where I am, though.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "Loading screen at start-up",
+      "expectation": "I'm at the very start - the app is opening and loading.",
+      "confidence": "sure",
+      "cue": "The big red PDF logo with 'PDF Reader, PDF Viewer' under it, and the loading bar near the bottom that's already partly filled.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's a start-up screen and it looks like one - logo, name, loading bar, nothing else to decide. The name is only the app's name, but on a loading screen that's all I need. Honestly my eye went more to 'This process may contain ads' and the empty grey strip at the very bottom, because it makes me brace for an ad popping in - that's not about knowing where I am, though.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Home, PDF files tab",
+      "expectation": "I'm on the Home screen, looking at the PDF files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'PDF' pill is filled in colour and the other pills are just outlines.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, PDF is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. The 'Set as default reader' strip with its SET button sits right under the chips and pulls at me a bit. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "Rate-the-app pop-up over Settings",
+      "expectation": "I'm in Settings and a rate-the-app box has popped up over it.",
+      "confidence": "sure",
+      "cue": "Settings is still showing, dimmed, behind; the pop-up has five stars, 'We would be very grateful if you could rate us' and a 'Rate this App' button. The big heading just says 'Thank you for using PDF Reader, PDF Viewer!'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The big heading only thanks me and names the app, so on its own it tells me nothing - but the stars and 'rate us' make it obvious in a second, and I can still see 'Settings' through the dim so I know where I'll land when it goes away. The heart-eyes face and the orange 'The best rating for us' bubble are a bit pushy and grab my eye, but I'm not lost.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Add widget panel over Settings",
+      "expectation": "I'm in Settings and I've opened the 'Add widget' panel.",
+      "confidence": "sure",
+      "cue": "The bold 'Add widget' heading at the top of the panel, with Settings dimmed behind it - I remember 'Add widget' was a row in Settings.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel's name matches the row I would have tapped, and Settings is still visible behind, so I know exactly where I am. One thing that pulls at me: the row of dots under 'PDF Tools' looks like a slideshow of widget previews (here it's on the first dot). From a still picture I can't tell if it flips by itself - if it does, that's what my attention would be on, not the Add button.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Home, HWP files tab",
+      "expectation": "I'm on the Home screen, looking at the HWP files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'HWP' pill is filled in colour and the other pills are just outlines. I don't actually know what HWP is, but I can see it's the one that's chosen - and even the SET button changed to the same blue.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, HWP is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. The 'Set as default reader' strip with its SET button sits right under the chips and pulls at me a bit. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s11": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Add widget panel over Settings",
+      "expectation": "I'm in Settings and I've opened the 'Add widget' panel.",
+      "confidence": "sure",
+      "cue": "The bold 'Add widget' heading at the top of the panel, with Settings dimmed behind it - I remember 'Add widget' was a row in Settings.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel's name matches the row I would have tapped, and Settings is still visible behind, so I know exactly where I am. One thing that pulls at me: the row of dots under 'PDF Tools' looks like a slideshow of widget previews (here it's on the second dot and the icons have changed). From a still picture I can't tell if it flips by itself - if it does, that's what my attention would be on, not the Add button.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Home, Word files tab",
+      "expectation": "I'm on the Home screen, looking at the Word files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'Word' pill is filled in colour and the other pills are just outlines. The SET button turned the same blue as the Word pill, which backs it up.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, Word is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. The 'Set as default reader' strip with its SET button sits right under the chips and pulls at me a bit. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Home, Excel files tab",
+      "expectation": "I'm on the Home screen, looking at the Excel files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'Excel' pill is filled in colour and the other pills are just outlines. Everything went green - the Excel pill, the book icon and the SET button - so it's hard to miss.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, Excel is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. The 'Set as default reader' strip with its SET button sits right under the chips and pulls at me a bit. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "Home, PPT files tab",
+      "expectation": "I'm on the Home screen, looking at the PPT files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'PPT' pill is filled in colour and the other pills are just outlines. The orange PPT pill and the orange SET button match.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, PPT is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. The 'Set as default reader' strip with its SET button sits right under the chips and pulls at me a bit. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "'Set as default app' pop-up over Home",
+      "expectation": "I'm on Home and a pop-up is asking me to make this my default PDF app.",
+      "confidence": "guessing",
+      "cue": "Behind, dimmed, the 'PDF Reader' top and the file-type pills. In the pop-up: 'Set PDF Reader, PDF Viewer as your default app', the 'Set as default' button, and a picture with a hand pointing at 'Always'. The big heading says 'The fastest way to read PDF files'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a slogan, not a name for what this box is, so the first thing I read tells me nothing. I had to go down to the small line underneath to work out it's about setting a default app. Meanwhile the pointing hand with the glowing circle on 'Always' grabs my eye - it looks like it's meant to move - and behind it I can't see which bottom tab I was on, because it's covered. I got there, but it took effort.",
+        "solution": "Make the heading say what it is - 'Set as your default PDF app' - and keep the slogan small. And please no animated pointing hand; a still picture of the 'Always' button is enough."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc2",
+          "action": "On the main page, tap the red SET button. Glance at the panel for a few seconds and say what it is. Then tap Later and say where you landed. Never tap Set as default, Always or Just once.",
+          "confirms_if": "the first thing you read does not tell you what the panel is",
+          "overturns_if": "you can tell what the panel is at a glance",
+          "observed_result": "The red SET strip wasn't on the main page the first time, so I closed the app and opened it again. This time I got the Google Play 'This app needs an update' page, and I closed it with the X. Then the loading screen, then a test ad, which I left with 'Continue to app' at the top. After that the 'Set as default reader' strip with the red SET button was there, and I tapped SET. A panel slid up from the bottom, with the main page dimmed behind it. My eye went first to the big picture: a box saying 'PDF Reader, PDF Viewer', then 'Just once' and 'Always' with a cartoon hand and a glowing circle on Always. Then I read the bold line 'The fastest way to read PDF files'. That's a slogan, so it told me nothing. I only understood what the panel was for when I reached the smaller line 'Set PDF Reader, PDF Viewer as your default app' and the 'Set as default' button. That's the third or fourth thing I read, not the first. I looked twice a few seconds apart, and the hand was in the same place both times, so on this phone it didn't seem to be moving. I tapped Later. The panel went away and I was back on the main page as before: PDF pill red, Home picked, SET strip still there. I didn't touch Set as default, Always or Just once.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The heading part still holds. 'The fastest way to read PDF files' is the only bold line, and it's an advert, not a name, so I had to read further down to find out what the box was for. What got smaller: the hand didn't seem to move while I watched, and Later took me straight back to the main page, so I never lost my place. Put 'Set as your default PDF app' as the heading and this one's fine.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Home, PDF files tab",
+      "expectation": "I'm on the Home screen, looking at the PDF files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'PDF' pill is filled in colour and the other pills are just outlines.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, PDF is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. Without the 'Set as default reader' strip this one is calmer. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Home, HWP files tab",
+      "expectation": "I'm on the Home screen, looking at the HWP files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'HWP' pill is filled in colour and the other pills are just outlines. I don't know what HWP means, but I can see it's the chosen one.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, HWP is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. Without the 'Set as default reader' strip this one is calmer. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Premium free-trial offer page (no way out shown)",
+      "expectation": "I'm on the Premium free-trial sales page.",
+      "confidence": "sure",
+      "cue": "The big heading 'Try the Premium plan completely free' and the 'Start Free Trial' button.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know WHAT this is, but it's taken over the whole screen - no back arrow, no X, no Home bar, nothing that connects it to the rest of the app. So I know I'm on an advert, but I've lost where I was in the app and I can't see a way back. That kind of thing sends me straight into 'close the app and start again', and then I've lost my thread.",
+        "solution": "Show the close X straight away, top corner, and ideally a line like 'You'll go back to Home' so I know where I land. Even a small back arrow would do."
+      },
+      "test_cases": [
+        {
+          "id": "yuki-tc1",
+          "action": "On the main page, tap the crown picture at the top right. Watch the diamond page: say whether and when a way out appears, then leave it and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "no way out appears, or you cannot tell where leaving will put you",
+          "overturns_if": "a way out appears quickly and takes you back where you were",
+          "observed_result": "The app opened straight onto the main page with the PDF pill red and Home picked at the bottom. There was no update page and no ad that time. I tapped the little crown at the top right. My first look afterwards still showed the main page, so it took a moment. On my next look the diamond page had taken over the whole screen with 'Try the Premium plan completely free', and the round dark X was already sitting in the top-left corner. I never saw the page without it. I tapped the X. On my first look afterwards the diamond page was still there, but on the next look I was back on the main page exactly as I'd left it: PDF pill red, Home picked at the bottom. I didn't go near Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "The picture I was shown made it look like I'd be stuck. On the real phone the X was already there the first time I saw the page, and it put me right back where I'd been. I don't need a back arrow if the X turns up that fast and works like that. It's still a pushy page that takes over the whole screen, but I wasn't lost.",
+      "provisional": false
+    },
+    "s34": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Settings",
+      "expectation": "I'm in Settings.",
+      "confidence": "sure",
+      "cue": "'Settings' at the top next to a back arrow, and the list underneath is obviously settings - Keep screen on, Language, Set default reader and so on.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is a nice one: a clear name at the top, a back arrow right beside it, and a list with icons and short bold words I can scan in a second. The orange 'Upgrade to Premium' bar is the loudest thing on the screen and my eye lands there first, and the grey empty strip at the very bottom looks like an ad waiting - but neither stops me knowing I'm in Settings.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Home, Word files tab",
+      "expectation": "I'm on the Home screen, looking at the Word files tab.",
+      "confidence": "sure",
+      "cue": "At the bottom 'Home' is dark and bold with a filled house, the others are grey. At the top the 'Word' pill is filled in colour and the other pills are just outlines.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two quick signals and they agree: Home is picked at the bottom, Word is picked at the top, and the colour of the filled pill is easy to spot in a glance. The big 'PDF Reader' at the top is only the app's name, so it doesn't tell me anything by itself, but I don't need it with those two highlights. Without the 'Set as default reader' strip this one is calmer. The empty grey strip along the very bottom edge looks like an ad waiting to load - that's the thing that would pull my eyes, not a location problem.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Premium free-trial offer page (with a close X)",
+      "expectation": "I'm on a sales page trying to get me to start a Premium free trial.",
+      "confidence": "sure",
+      "cue": "The huge heading 'Try the Premium plan completely free', the 'Start Free Trial' button, the price line, and the X in the top-left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading shouts exactly what this is and the X up in the corner tells me I can get out. It's not really a 'place' in the app - it's an offer that took over the whole screen - but I know where I am and I know how to leave. The glowing diamond picture is loud and grabs my eye first, but in this picture it's still.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 36,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 35,
+      "guessing": 1,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 28,
+    "navigate_with_difficulty": 8,
+    "cannot_handle": 0,
+    "tests_run": 2,
+    "opinions": {
+      "unchanged": 0,
+      "hardened": 0,
+      "softened": 1,
+      "reversed": 7
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

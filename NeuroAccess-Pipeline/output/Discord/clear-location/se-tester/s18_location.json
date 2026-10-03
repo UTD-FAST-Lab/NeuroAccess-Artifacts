@@ -1,0 +1,31 @@
+{
+  "app": "Discord",
+  "screen": "s18",
+  "state_str": "6f0ec05e96fc4b3ee99335bd4768c102",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215353.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s18_header_nav.png",
+  "name": "Link Settings with the Max Uses sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Link Settings",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Max Uses",
+      "verdict_on_region": "heading of a bottom sheet choosing one invite-link setting; names the sheet, and 'Link Settings' stays visible dimmed behind — counted"
+    }
+  ],
+  "identifier_found": "\"Link Settings\"; \"Max Uses\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Link Settings' names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "the region the detector marked away from the top was read from the image and reasoned about; the screen's own title stays visible behind the overlay",
+  "recommendation": null,
+  "provisional": false
+}

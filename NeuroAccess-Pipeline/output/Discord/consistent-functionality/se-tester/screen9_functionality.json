@@ -1,0 +1,290 @@
+{
+  "app": "Discord",
+  "screen": "screen9",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen9_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen9_function_groups.png"
+  },
+  "elements": {
+    "screen9-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        42,
+        95,
+        126,
+        179
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "left arrow = back/up to the previous screen - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Back (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Back\"; talkback_label: \"Back\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"",
+      "observed_function": "returns to the screen the user came from",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen9-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen9 captured (screens 9 and 21 show the same Notifications header); context noted before the tap",
+          "action": "tap screen9-f1 (arrow pointing left) at its captured position and record what happens",
+          "expected_result": "returns to the screen the user came from",
+          "confirms_if": "it does something unrelated to what the other members of gg8 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg8, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc-screen9-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen9 captured",
+          "action": "exercise screen9-f1 (\"arrow pointing left\") and compare its result with the other renderings in cfg4",
+          "expected_result": "hypothesis: the profile X and every left arrow return to the previous screen",
+          "confirms_if": "all return to the previous screen",
+          "overturns_if": "any member does something other than returning",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f2": {
+      "kind": "icon",
+      "appearance": "bookmark ribbon",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        723,
+        95,
+        807,
+        179
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "bookmark ribbon = saved items/bookmarks - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Bookmarks (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Bookmarks\"; talkback_label: \"Bookmarks\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"",
+      "observed_function": "opens a Nitro upsell sheet \"Stay organized with bookmarks\" (Get Nitro / View all Nitro perks)",
+      "glyph_group": "gg54",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg54-tc-screen9-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen9 captured (screens 9 and 21 show the same Notifications header); context noted before the tap",
+          "action": "tap screen9-f2 (bookmark ribbon) at its captured position and record what happens",
+          "expected_result": "opens a Nitro upsell sheet \"Stay organized with bookmarks\" (Get Nitro / View all Nitro perks)",
+          "confirms_if": "it does something unrelated to what the other members of gg54 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg54, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens a Nitro upsell sheet \"Stay organized with bookmarks\" (Get Nitro / View all Nitro perks)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg54": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f3": {
+      "kind": "icon",
+      "appearance": "clock face",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        839,
+        95,
+        923,
+        179
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "clock = history/recent or reminders; ambiguous between the two - my reading",
+      "convention_confidence": "medium",
+      "declared_function": "Reminders (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Reminders\"; talkback_label: \"Reminders\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"; header icon between the bookmark and the three dots; no word beside it",
+      "observed_function": "opens the same Nitro upsell sheet \"Stay organized with bookmarks\" that the bookmark button opens",
+      "glyph_group": "gg55",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg55-tc-screen9-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen9 captured (screens 9 and 21 show the same Notifications header); context noted before the tap",
+          "action": "tap screen9-f3 (clock face) at its captured position and record what happens",
+          "expected_result": "opens the same Nitro upsell sheet \"Stay organized with bookmarks\" that the bookmark button opens",
+          "confirms_if": "it does something unrelated to what the other members of gg55 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg55, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the same Nitro upsell sheet \"Stay organized with bookmarks\" that the bookmark button opens",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg55": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f4": {
+      "kind": "icon",
+      "appearance": "three horizontal dots",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        954,
+        95,
+        1038,
+        179
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "horizontal ellipsis = more options/overflow - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "More (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"More\"; talkback_label: \"More\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"",
+      "observed_function": "opens a sheet titled \"Notifications\" (mention toggles; Bookmarks, Reminders, Notification Settings rows)",
+      "glyph_group": "gg56",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg56-tc-screen9-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen9 captured (screens 9 and 21 show the same Notifications header); context noted before the tap",
+          "action": "tap screen9-f4 (three horizontal dots) at its captured position and record what happens",
+          "expected_result": "opens a sheet titled \"Notifications\" (mention toggles; Bookmarks, Reminders, Notification Settings rows)",
+          "confirms_if": "it does something unrelated to what the other members of gg56 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg56, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens a sheet titled \"Notifications\" (mention toggles; Bookmarks, Reminders, Notification Settings rows)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg56": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f5": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "top right of the screen",
+      "bounds": [
+        1001,
+        252,
+        1049,
+        299
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close/dismiss the thing it sits on - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Dismiss (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Dismiss\"; talkback_label: \"Dismiss\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"; top-right corner of the banner \"Know when friends message you\"",
+      "observed_function": null,
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc-screen9-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen9 captured (screens 9 and 21 show the same Notifications header); context noted before the tap",
+          "action": "tap screen9-f5 (X) at its captured position and record what happens",
+          "expected_result": "closes or dismisses the thing it sits on",
+          "confirms_if": "it does something unrelated to what the other members of gg7 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg7, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Know when friends message you\" banner is no longer drawn on the live Notifications screen",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg9-tc-screen9-f5",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen9 captured",
+          "action": "exercise screen9-f5 (\"X\") and compare its result with the other renderings in cfg9",
+          "expected_result": "hypothesis: every X dismisses the card/banner it sits on",
+          "confirms_if": "all dismiss their own card",
+          "overturns_if": "any does something else",
+          "observed_result": "not reachable: the \"Know when friends message you\" banner is no longer drawn on the live Notifications screen",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg10-tc-screen9-f5",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen9 captured",
+          "action": "exercise screen9-f5 (\"X\") and compare its result with the other renderings in cfg10",
+          "expected_result": "hypothesis: each X closes the panel it sits on",
+          "confirms_if": "all close their own panel",
+          "overturns_if": "any does something else",
+          "observed_result": "not reachable: the \"Know when friends message you\" banner is no longer drawn on the live Notifications screen",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen9-f6": {
+      "kind": "button",
+      "appearance": "the words \"Enable Notifications\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        231,
+        453,
+        670,
+        558
+      ],
+      "visible_label": "Enable Notifications",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Enable Notifications (from label; status declared)",
+      "accessibility_text": "content_desc: \"Enable Notifications\"; talkback_label: \"Enable Notifications\"",
+      "context_reading": "screen titled \"Notifications\" with a banner \"Know when friends message you\"; carries its own visible words \"Enable Notifications\"",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "fg2-tc-screen9-f6",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen9 captured",
+          "action": "exercise screen9-f6 (\"the words \"Enable Notifications\"\") and compare its result with the other renderings in fg2",
+          "expected_result": "both wordings ask to enable notifications",
+          "confirms_if": "same job, and \"Enable\" would not be recognised as the \"Turn on\" job",
+          "overturns_if": "different scopes/objects, or the plain synonym wording is recognisable",
+          "observed_result": "not reachable: the \"Know when friends message you\" banner is no longer drawn on the live Notifications screen",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 4,
+    "provisional_verdicts": 2
+  }
+}

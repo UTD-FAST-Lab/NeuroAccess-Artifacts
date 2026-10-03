@@ -1,0 +1,51 @@
+{
+  "app": "Claude",
+  "screen": "s20",
+  "state_str": "b1249b43b15adabc092a0c918ab6fc2a",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134126.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s20_header_nav.png",
+  "name": "the Code section (an upgrade prompt for Claude Code)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Upgrade for Claude Code",
+      "verdict_on_region": "unconventional (mid-screen): an upsell headline naming a product offer, not the section the user is in \u2014 dismissed"
+    }
+  ],
+  "identifier_found": "none that names the section; the top bar is empty apart from the menu glyph; the only heading is an upsell",
+  "identifier_class": "none",
+  "accessibility_text": "only \"Open menu\"; nothing names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the drawer item the user chose was \"Code\", but nothing on the screen says \"Code\"; the mock chat bubble \"Make Clawd dance\" makes it look like a conversation",
+  "test_cases": [
+    {
+      "id": "s20-tc1",
+      "type": "verification",
+      "precondition": "drawer open",
+      "action": "tap Code; swipe up and down; open the drawer again",
+      "expected_result": "a title for the section appears somewhere, or none does",
+      "confirms_if": "no title appears in any position",
+      "overturns_if": "a title naming the Code section appears",
+      "observed_result": "no title in any position; visible text: \"Make Clawd dance\", a code diff, \"Upgrade for Claude Code\", \"Your agentic coding partner\u2026\", \"Upgrade\", \"Return to chat\"; the drawer then showed \"Code\" highlighted",
+      "status": "executed",
+      "matched_expectation": true
+    },
+    {
+      "id": "s20-tc2",
+      "type": "unconventional_region_read",
+      "precondition": "Code screen",
+      "action": "read the mid-screen headline",
+      "expected_result": "the headline names the section or an offer",
+      "confirms_if": "it names an offer rather than the section",
+      "overturns_if": "it names the section",
+      "observed_result": "\"Upgrade for Claude Code\" \u2014 a sales headline for a product; it does not tell the user they are in the Code section",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the screen matches the capture and does not scroll; no title appears; the drawer opened from here highlights \"Code\" (s44, contains_selected_view: true, selected_item_text \"Code\") \u2014 the app knows the section and does not show it on the screen itself.",
+  "recommendation": "put \"Code\" as the top-bar title (the drawer's own selected item text), keeping the upsell below it",
+  "provisional": false
+}

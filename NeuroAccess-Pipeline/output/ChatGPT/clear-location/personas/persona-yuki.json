@@ -1,0 +1,1036 @@
+{
+  "persona": "persona-yuki",
+  "app": "ChatGPT",
+  "screens": {
+    "s1": {
+      "where": "the start screen with the empty chat and the Ask ChatGPT box",
+      "expectation": "I think I'm on the main start page where you begin a new chat — the empty one you land on when you open the app.",
+      "confidence": "guessing",
+      "cue": "Nothing at the top names it. I got there from the 'Ask ChatGPT' box at the bottom and the three suggestions above it — 'Start a voice chat', 'Create an image or sticker', 'Write or edit'. The top bar only has the menu lines, a 'Get Plus' button and a round icon.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top of the screen is a big empty space with a 'Get Plus' button in it, which is an advert for upgrading, not a place name. I have to read the bottom of the screen to work out where I am, and my eyes go to the blue Get Plus first.",
+        "solution": "Put a short, bold name at the top — 'New chat' or 'Home' — where the Get Plus button is now, and move the upgrade button somewhere quieter."
+      },
+      "test_cases": [
+        {
+          "id": "Y1",
+          "designed_for": [
+            "s1"
+          ],
+          "action": "Open the app on your phone (if something else is showing, press the round-arrow home/back only as described below). Before tapping anything, say where you are and what told you. Then tap the three-line button at the top left, tap 'Library', come back with the arrow at the top left, and — if the side panel is showing — tap the dimmed area on the right to close it. Say again where you are.",
+          "real_if": "it is real if, both times, nothing on the page lets you name where you are",
+          "not_real_if": "it is not real if something on the page lets you name it",
+          "status": "executed",
+          "what_happened": "When I opened the app it didn't go to the first page at all. It opened straight onto the picture page with Trending and Templates. I tapped the X and got a panel headed 'Create an image' over the Ask ChatGPT box, then tapped the X again and finally reached the plain first page. There the top has just the menu lines, the blue 'Get Plus' and a round icon, and underneath are 'Create an image or sticker', 'Write or edit' and 'Ask ChatGPT'. Nothing names the page. I only know it's the start because it's empty and says 'Ask ChatGPT'. For a moment a little floating keyboard toolbar also popped up on the left. Then I opened the menu, tapped Library (which has 'Library' at the top, good) and pressed the back arrow. That put me back in the side menu, not on the page. I tapped the grey area and was back on the same first page, and again nothing on it tells me where I am.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The first page still has no name, and the app didn't even open there. I had to close two picture panels to find it, and the back arrow from Library dropped me in the menu, not on the page. It's harder to hold my place than I thought.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "a microphone permission pop-up over what looks like a voice chat screen",
+      "expectation": "I'm in the voice part of the app and it's stopped me with a box asking me to switch on the microphone.",
+      "confidence": "guessing",
+      "cue": "The pop-up text says 'to use Voice', and behind the grey I can see a crossed-out microphone and an X at the bottom. No box, no heading on the screen behind.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The pop-up tells me what it wants, but the screen underneath has no name at all — just two icons at the top — so I only know it's 'Voice' from one word in the middle of a paragraph. It also warns I'll be sent off to Android settings and have to come back, and that's exactly where I lose track.",
+        "solution": "A bold title on the pop-up like 'Microphone needed for Voice', and a name on the voice screen behind it so when I come back from settings I know I'm in the right place."
+      },
+      "test_cases": [
+        {
+          "id": "Y2",
+          "designed_for": [
+            "s2"
+          ],
+          "action": "(Not run: the entry that opened that box is no longer on the app's first page, and reaching it another way would mean starting voice, which is not allowed.)",
+          "real_if": null,
+          "not_real_if": null,
+          "status": "not_executed",
+          "what_happened": "",
+          "reason_not_run": "The tester said the way into that microphone box isn't on the first page any more, and reaching it another way would mean starting voice, which I'm not allowed to do."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I couldn't try this one, so my view from the picture stays as it was.",
+      "provisional": true
+    },
+    "s3": {
+      "where": "the image-making page, on the Trending tab",
+      "expectation": "I'm in the image creation area, looking at trending picture styles.",
+      "confidence": "sure",
+      "cue": "The 'Trending' and 'Templates' tabs with Trending shaded, the picture cards with names like 'Sketch' and 'Stickers', and the 'Create image' box at the bottom in blue.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The shaded 'Trending' tab tells me which bit I'm on and the 'Create image' box confirms it's the image area. There's no big title saying 'Images', but between the tab and the box I got it quickly.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "the Write or edit suggestions panel",
+      "expectation": "I'm in the 'Write or edit' part, picking what kind of writing help I want.",
+      "confidence": "sure",
+      "cue": "The bold 'Write or edit' heading with the X next to it, and the three pencil options under it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Short bold heading, three clear choices with the same icon — that's exactly how I like it. It's low on the screen, but it's the only bold thing there so my eye went straight to it.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "the ChatGPT Plus upgrade page",
+      "expectation": "I'm on the page for buying the Plus plan.",
+      "confidence": "sure",
+      "cue": "The huge 'ChatGPT Plus' at the top, and the 'Upgrade for $19.99' button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Big name at the top, and the Go/Plus switch below it. I had to double-check which half of the switch was chosen because the grey one is the chosen one, but the big heading answered it for me straight away.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "the ChatGPT Go upgrade page",
+      "expectation": "I'm on the page for the Go plan, the cheaper one.",
+      "confidence": "sure",
+      "cue": "The big 'ChatGPT Go' heading and 'Upgrade for $8.00'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as the Plus page — the heading changes with the switch, so I always know which plan I'm looking at.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "a temporary chat",
+      "expectation": "I'm in a temporary chat that won't be saved in my history.",
+      "confidence": "sure",
+      "cue": "'Temporary chat' in the middle, and the line under it 'This chat won't appear in history', plus 'Temporary chat' again in the typing box.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "It's in the middle of the screen instead of the top, but it's the only words there, so I found it in a second, and it's said twice.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "the settings panel for a temporary chat",
+      "expectation": "I've opened the settings for my temporary chat and I'm choosing Personalized or Unpersonalized.",
+      "confidence": "sure",
+      "cue": "The bold 'Temporary chat settings' heading at the top of the white panel, with 'Temporary chat' still showing faded behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Bold heading on the panel, two choices, one big Done button. Clear and calm.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "the side menu",
+      "expectation": "I've opened the main side menu of the app.",
+      "confidence": "sure",
+      "cue": "The list down the left — Images, Library, Projects, Scheduled, Plugins — with the app's name 'ChatGPT' at the top and the rest of the screen greyed out on the right.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "A slide-out list of places is a menu, I don't need a name for that. 'ChatGPT' at the top is just the app name, it doesn't tell me anything, and nothing in the list is highlighted, so it doesn't tell me which place I came from — but I know I'm in the menu.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "a drawing panel on top of the image page",
+      "expectation": "I'm in the image area and I've opened some kind of drawing or doodle tool — pencil, shapes, rubber, colours.",
+      "confidence": "guessing",
+      "cue": "The pencil, shapes and eraser buttons, the colour dots along the bottom, and the Trending/Templates tabs still showing above it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel that takes up most of the screen has no name at all. I'm guessing 'drawing' from the pencil and the colours. The only name-like thing is the Trending tab above, and that's for the page behind, not for this.",
+        "solution": "A short title on the panel like 'Draw' or 'Sketch' so I know what I've opened and why."
+      },
+      "test_cases": [
+        {
+          "id": "Y4",
+          "designed_for": [
+            "s10",
+            "t32",
+            "t43"
+          ],
+          "action": "Tap the three-line button, then 'Images', then the flower picture at the top left ('Sketch'). Say where you are. Swipe up once across the big white area. Say where you are now, and whether you are still on the same screen. Then tap the X at the top left of the panel and choose 'Discard' (that only throws away your own lines).",
+          "real_if": "it is real if you cannot say where you are on the panel, or if the swipe takes you somewhere else",
+          "not_real_if": "it is not real if you can name where you are before and after the swipe",
+          "status": "executed",
+          "what_happened": "I tapped the Sketch flower card and a white panel came up from the bottom: X, pencil/shapes/rubber, undo, colour dots and a tick. There's no name on the panel. I could see the 'Sketch' card peeking out above it, so I guessed 'the sketch thing'. I swiped up once across the white area and it just drew a black line. I stayed on exactly the same panel, and nothing jumped anywhere or went black. When I pressed the X it asked 'Discard sketch? Your sketch will be lost.' That's the first time the app actually named it. I chose Discard and I was back on the picture page.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The panel itself still has no name, and the app only calls it a 'sketch' when I try to leave. But the Sketch card I tapped stays visible just above it, so I knew what I'd opened.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "the 'See yourself underwater' picture template",
+      "expectation": "I've opened one of the image templates, the underwater portrait one, and it wants a photo from me.",
+      "confidence": "sure",
+      "cue": "The bold 'See yourself underwater' heading under the photo, and the 'Take photo' / 'Choose photo' buttons.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The big photo pulls my eye first, but the bold heading is right under it and the two buttons tell me what to do next.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "the image page with a message stuck over the top",
+      "expectation": "I'm in the image-making page on Trending — I think the same one as before, but with a back arrow now.",
+      "confidence": "guessing",
+      "cue": "The Trending/Templates tabs and 'Describe an image' at the bottom. At the very top there's a faded message 'Your generated images moved to Library ... from the sidebar' printed right over the clock and the back arrow.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "That message is jammed on top of the back button and the status bar, so the top of the screen is a jumble of overlapping text. My attention went straight to trying to read it and I lost the rest. And there's still no name for the page itself.",
+        "solution": "Show that message as its own clear box I can close, not printed over the back arrow, and give the page a short title like 'Images'."
+      },
+      "test_cases": [
+        {
+          "id": "Y3",
+          "designed_for": [
+            "s12",
+            "s13"
+          ],
+          "action": "Tap the three-line button at the top left, then 'Images'. Before scrolling, say where you are and what told you. Then scroll the pictures down a little, stop, and — without scrolling back — say where you are now.",
+          "real_if": "it is real if, after the small scroll, nothing on screen lets you name the page",
+          "not_real_if": "it is not real if you can still name it from what you see",
+          "status": "executed",
+          "what_happened": "Menu, then Images. It looked exactly like my picture: the faded 'Your generated images moved to Library…' message is still printed over the back arrow and the clock. Under it are the Trending and Templates tabs, and 'Describe an image' is at the bottom. Before scrolling I'd call it the image-making page, from the tabs and the bottom box, not from any title. After a small scroll the tabs and the messy message both slid away. That was actually calmer. Now all I had was the back arrow, the picture cards and the 'Describe an image' box, which stays put at the bottom. I could still say 'image page' because of that box, but only because of that box.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The messy message over the back arrow is really there, but one small scroll clears it away, and the 'Describe an image' box keeps telling me it's the image page. Still no title, but I can manage.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "the image page again, same overlapping message",
+      "expectation": "Image-making page, Trending tab — the same as the last one with the box at the bottom saying 'Create image'.",
+      "confidence": "guessing",
+      "cue": "The Trending tab and the blue 'Create image' in the box at the bottom. The same faded 'moved to Library' message is on top of the back arrow.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same problem — the overlapping message at the top grabs me and it's hard to read, and it covers the back arrow. I can get there from the bottom box, but the top of the screen is messy.",
+        "solution": "Same fix: move the notice into its own closable box and add a page title."
+      },
+      "test_cases": [
+        {
+          "id": "Y3",
+          "designed_for": [
+            "s12",
+            "s13"
+          ],
+          "action": "Tap the three-line button at the top left, then 'Images'. Before scrolling, say where you are and what told you. Then scroll the pictures down a little, stop, and — without scrolling back — say where you are now.",
+          "real_if": "it is real if, after the small scroll, nothing on screen lets you name the page",
+          "not_real_if": "it is not real if you can still name it from what you see",
+          "status": "executed",
+          "what_happened": "Menu, then Images. It looked exactly like my picture: the faded 'Your generated images moved to Library…' message is still printed over the back arrow and the clock. Under it are the Trending and Templates tabs, and 'Describe an image' is at the bottom. Before scrolling I'd call it the image-making page, from the tabs and the bottom box, not from any title. After a small scroll the tabs and the messy message both slid away. That was actually calmer. Now all I had was the back arrow, the picture cards and the 'Describe an image' box, which stays put at the bottom. I could still say 'image page' because of that box, but only because of that box.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Same as s12. The bottom box keeps me in the image area even when the tabs scroll off. A proper title would still help.",
+      "provisional": false
+    },
+    "s14": {
+      "where": "the 'Underwater' photo choice pop-up",
+      "expectation": "I've picked the Underwater style and it's asking how I want to add my photo.",
+      "confidence": "sure",
+      "cue": "The bold 'Underwater' heading on the pop-up, 'Choose how you'd like to add a photo', and the three buttons.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Bold short heading, one sentence, three buttons. The pop-up is what I'm looking at and it's named.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "the Library, All tab",
+      "expectation": "I'm in my Library looking at all my saved things — it's all pictures.",
+      "confidence": "sure",
+      "cue": "'Library' at the top middle, the All/Images/Files tabs with All shaded, and 'Search library' at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Name at the top, shaded tab, search box that says library too. Lovely and clear.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "the Library, Files tab",
+      "expectation": "Library, on the Files tab, and I haven't got any files yet.",
+      "confidence": "sure",
+      "cue": "'Library' at the top, 'Files' shaded, and 'Add your files' in the middle.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same header as before and the tab shows where I am. The empty message is short.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s17": {
+      "where": "a single picture opened full screen",
+      "expectation": "I've opened one of my pictures, the sunset one, full screen. I think it's from my Library, but I'm not sure.",
+      "confidence": "guessing",
+      "cue": "The big sunset in the middle on black, the X, Share and download at the top, and Edit, Resize, Remove at the bottom. No name anywhere.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It's just a picture on black. I can see what I can do with it but nothing tells me where it came from or where the X will take me back to. If I'd been distracted for a minute I would not know how I got here.",
+        "solution": "A small title at the top — even 'Library' or the picture's name — so I know which collection I'm in."
+      },
+      "test_cases": [
+        {
+          "id": "Y5",
+          "designed_for": [
+            "s17"
+          ],
+          "action": "Tap the three-line button, then 'Library', then any one picture. Say where you are. Then find your way back using only what you see (do NOT tap Share, the download arrow, the three dots, Edit, Resize or Remove), and say where you ended up.",
+          "real_if": "it is real if you cannot say where you are on the picture page, or cannot find the way back",
+          "not_real_if": "it is not real if you can say where you are and get back easily",
+          "status": "executed",
+          "what_happened": "Menu, then Library, then I tapped the red circle picture. It opened full screen on black with X, three dots, download and Share at the top and Edit, Resize, Remove at the bottom, and no name at all, same as before. I only knew it was from the Library because I had just come from there. I tapped the X and went straight back to the Library, right where I was, with 'Library' at the top. Getting back was easy.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The full-screen picture still has no name, but the X took me straight back to the Library where I was, so I didn't lose my place.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "the Edit image screen",
+      "expectation": "I'm editing the sunset picture.",
+      "confidence": "sure",
+      "cue": "'Edit image' at the top, and 'Describe general edits' at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Short name at the top, one picture, one box to type in. Calm and simple.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "choosing items in my library, Images tab",
+      "expectation": "I'm picking pictures in my library — the tick circles are on every picture, and I'm on the Images tab.",
+      "confidence": "guessing",
+      "cue": "'Select items' at the top, the circles on each picture, the All/Images/Files tabs with Images shaded, and the bin, download and Chat buttons at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Select items' tells me what I'm doing and the tabs are the same ones from the Library, so I can put it together. The word 'Library' has gone from the top, which is why I'm guessing the 'where', but I know I'm in picking mode.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "choosing items, Files tab, nothing there",
+      "expectation": "Same picking mode, but on the Files tab, and there are no files.",
+      "confidence": "guessing",
+      "cue": "'Select items' at the top, 'Files' shaded, 'Add your files' in the middle.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading and the shaded tab tell me enough. It's a bit odd to be selecting when there's nothing to select, but I know where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s21": {
+      "where": "choosing items in my library, one picture ticked",
+      "expectation": "I'm in picking mode in my library and I've ticked the sunset.",
+      "confidence": "guessing",
+      "cue": "'1 selected' at the top, the tick on the sunset picture, the All tab shaded.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The count and the tick match — I can see what I picked. The top has turned into a number instead of a name, so I'm guessing it's the library from the tabs, but it's fine while I'm in the middle of choosing.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "picking mode, Files tab, says 1 selected but shows nothing",
+      "expectation": "I'm still picking things in the library, but on the Files tab, which is empty.",
+      "confidence": "guessing",
+      "cue": "'1 selected' at the top, 'Files' shaded, 'Add your files' in the middle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "It says '1 selected' but there's nothing on the screen that's selected. I'd stop and wonder what I picked and whether I'm where I think I am. The top is a count, not a place, so there's nothing else to hold on to.",
+        "solution": "Keep the place name at the top ('Library') and put the count underneath, or say '1 selected in Images' so I know where my pick is."
+      },
+      "test_cases": [
+        {
+          "id": "Y6",
+          "designed_for": [
+            "s22"
+          ],
+          "action": "Tap the three-line button, then 'Library'. Tap the three dots at the top right, then 'Select'. Say where you are. Tap one picture so it gets a tick, and say where you are now. Then leave choosing with the X at the top right. Do NOT tap the bin, the download arrow or 'Chat' at the bottom.",
+          "real_if": "it is real if, while choosing, nothing on screen lets you name where you are",
+          "not_real_if": "it is not real if you can name it",
+          "status": "executed",
+          "what_happened": "In the Library I tapped the three dots and then 'Select'. The top changed to 'Select items', the back arrow disappeared, an X appeared on the right and circles came up on every picture. The tabs (Suggested, Favorites, Folders, Images) and a bin, download and 'Chat' at the bottom were still there. I tapped the top-left apple, it got a tick and a black outline, and the top changed to '1 selected'. Both times the word 'Library' was gone. Only the tabs link it back, and I knew because I'd just been there. I left with the X and was back on 'Library'. I didn't land on an empty tab this time, so I didn't see the '1 selected with nothing showing' situation again.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "While I'm choosing, 'Library' disappears from the top and becomes 'Select items' or '1 selected'. Only the tabs tell me where I am, and that's what I was worried about.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "Projects, All tab, empty",
+      "expectation": "I'm on the Projects page and I haven't made any yet.",
+      "confidence": "sure",
+      "cue": "'Projects' at the top, the All/Created by you/Shared with you tabs with All shaded, and 'Start your first project'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Name at the top, shaded tab, one big 'New project' button. Very clear.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Projects, Created by you tab",
+      "expectation": "Projects page, looking at the ones I've made — none yet.",
+      "confidence": "sure",
+      "cue": "'Projects' at the top and 'Created by you' shaded, 'No projects yet'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same heading, the shaded tab moved, easy.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Projects, Shared with you tab",
+      "expectation": "Projects page, looking at ones shared with me — none.",
+      "confidence": "sure",
+      "cue": "'Projects' at the top, 'Shared with you' shaded, 'No shared projects yet'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Clear heading and the tab shows which part I'm on.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "making a new project",
+      "expectation": "I'm setting up a new project and it wants a name.",
+      "confidence": "sure",
+      "cue": "'New Project' at the top, the name box 'E.g. Party planning', the Homework/Investing/Writing chips and the 'Create Project' button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says what I'm doing and there's one box and one button. The short line explaining projects is helpful.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "picking a colour and icon for the new project",
+      "expectation": "I'm choosing an icon and colour for my new project.",
+      "confidence": "guessing",
+      "cue": "'New Project' still readable at the top behind the grey, and the pop-up with the folder, colour circles, the grid of little icons and OK.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The pop-up has no title, but 'New Project' is still showing behind it and the big folder with colours makes it obvious I'm styling the project. Lots of little icons to look at, but one OK button.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s28": {
+      "where": "new project, named Homework",
+      "expectation": "Making a new project, I've picked Homework.",
+      "confidence": "sure",
+      "cue": "'New Project' at the top and 'Homework' in the name box with the book icon; 'Create Project' is black now.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same clear heading, and I can see my choice went in.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "new project, named Investing",
+      "expectation": "New project again, this time I've picked Investing.",
+      "confidence": "sure",
+      "cue": "'New Project' at the top and 'Investing' in the box with the dollar icon.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Heading is there, my choice is shown.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "new project, named Writing",
+      "expectation": "New project, Writing picked.",
+      "confidence": "sure",
+      "cue": "'New Project' at the top, 'Writing' in the box with the purple pen.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as before, clear.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "icon picker for the Writing project",
+      "expectation": "Choosing the icon and colour again, with the purple pen as the current one.",
+      "confidence": "guessing",
+      "cue": "'New Project' behind the grey, the purple pen at the top of the pop-up and 'Writing' in the name box behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same pop-up as before, the purple pen shows which project I'm styling, and 'New Project' is still visible.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "new project, named Health",
+      "expectation": "New project, I've picked Health.",
+      "confidence": "sure",
+      "cue": "'New Project' at the top, 'Health' with the red heart.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Heading and my choice both clear.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "project settings, memory options",
+      "expectation": "I'm in the settings for a project, choosing how its memory works.",
+      "confidence": "sure",
+      "cue": "'Project settings' at the top and the smaller 'Memory' label over the two cards.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title at the top, a little section label, two cards with the chosen one outlined in blue. Tidy.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "the Schedule a task page",
+      "expectation": "I'm on the page for scheduled tasks and I haven't made any.",
+      "confidence": "sure",
+      "cue": "The big bold 'Schedule a task' and 'ChatGPT can take care of ongoing tasks so you don't have to.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Huge bold heading, one sentence, lots of white space. I like that.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "a chat that's just starting to answer",
+      "expectation": "I'm in a chat and ChatGPT is starting to reply about scheduling something.",
+      "confidence": "guessing",
+      "cue": "The faded words 'Let's schedule a' still appearing, 'Reply to ChatGPT' at the bottom and the stop square. No name at the top — just a back arrow, a pencil and three dots.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The words are still fading in, so my eyes are stuck watching them come. There's no chat name at the top, so I'm reading the half-written answer to work out what this conversation even is.",
+        "solution": "Put the chat's name at the top, like 'Schedule a task', and let me turn off the word-by-word appearing so the text just shows up finished."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The conversation page never names the conversation. I have to read my own message or open the menu to find out.",
+      "provisional": false
+    },
+    "s36": {
+      "where": "a chat where a picture is being made, 3%",
+      "expectation": "I'm in a chat and it's making the picture I asked for.",
+      "confidence": "guessing",
+      "cue": "My '@Create image' bubble, 'Sketching it out', the dotted grid and the '3%' counter. No name at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Honestly my attention is on the percentage and the dots — that's a counter that keeps changing and I'll sit there watching it. There's also a 'Get Plus' advert right in the middle of the answer. Nothing at the top names the chat.",
+        "solution": "A name at the top of the chat, a still 'Making your image…' with no ticking number, and no upgrade advert inside the answer."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No name on the conversation page, just like I thought.",
+      "provisional": false
+    },
+    "s37": {
+      "where": "the same chat, picture at 19%",
+      "expectation": "Same chat, still making the picture.",
+      "confidence": "guessing",
+      "cue": "'Making the first draft', '19%', my '@Create image' bubble.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The words and the number have changed since the last one, so things are moving under me. Still no name at the top and still the Get Plus advert.",
+        "solution": "Same: a chat title, and a calm still message instead of changing words and a counter."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No name on the conversation page, just like I thought.",
+      "provisional": false
+    },
+    "s38": {
+      "where": "the same chat, picture at 30%",
+      "expectation": "Same chat, picture still being made.",
+      "confidence": "guessing",
+      "cue": "'Setting the scene', '30%', the dots getting darker on one side.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Changing message, changing number, changing dots — that's three moving things and zero place names. I'd be watching the number, not thinking about where I am.",
+        "solution": "Chat title at the top, and let me switch off the moving progress."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No name on the conversation page, just like I thought.",
+      "provisional": false
+    },
+    "s39": {
+      "where": "the same chat, picture at 37%",
+      "expectation": "Same chat, picture still coming.",
+      "confidence": "guessing",
+      "cue": "'Polishing details', '37%'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same again — the only words that change are the progress messages, nothing names the chat.",
+        "solution": "A chat name at the top and one still progress line."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No name on the conversation page, just like I thought.",
+      "provisional": false
+    },
+    "s40": {
+      "where": "the chat with the finished picture and an advert under it",
+      "expectation": "I'm in the chat where I made the sunset picture, and it's done.",
+      "confidence": "guessing",
+      "cue": "My '@Create image' bubble and the sunset picture. Then a big advert card — 'Runway AI, Inc.', 'Ad', 'Make a video in 2 min' with a picture of a burning house and its own progress bar.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "That advert is right under my picture, the burning house and the 'Generating video… 68%' bar in it grabbed me straight away, and for a second I thought it was part of my answer. There's no chat name at the top to pull me back.",
+        "solution": "A name at the top of the chat, and keep adverts out of the conversation — or at least let me hide them."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No name on the conversation page. The menu does shade the current one, but that's a trip away, and two chats there have almost the same name.",
+      "provisional": false
+    },
+    "s41": {
+      "where": "the same chat with the finished picture and the advert",
+      "expectation": "Same chat, sunset done, advert underneath.",
+      "confidence": "guessing",
+      "cue": "The sunset, my '@Create image' bubble, the Runway advert.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Identical to the last one — no name at the top, and the advert pulls my eye away from my own picture.",
+        "solution": "Chat title at the top and no advert in the middle of the conversation."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Same as s40: nothing on the page itself tells me which chat this is.",
+      "provisional": false
+    },
+    "s42": {
+      "where": "the same chat after I gave a thumbs up",
+      "expectation": "Same chat — I've pressed thumbs up and it's thanking me.",
+      "confidence": "guessing",
+      "cue": "The filled thumbs up, the black 'Thank you for your feedback!' bar near the bottom, the advert, the sunset.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Now there's a black pop-up bar as well as the advert, two things shouting at me, and still no chat name. I know I'm in a chat but not which one.",
+        "solution": "A chat title at the top, and let the thank-you bar be smaller or go quietly."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Same: nothing on the conversation page names it.",
+      "provisional": false
+    },
+    "s43": {
+      "where": "the same chat after the thank-you went away",
+      "expectation": "Same chat, thumbs up given.",
+      "confidence": "guessing",
+      "cue": "The filled thumbs up, the sunset, the advert.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Calmer than the last one, but still no name at the top and the advert is still the loudest thing on the screen.",
+        "solution": "Put the chat's name at the top and move the advert out of the conversation."
+      },
+      "test_cases": [
+        {
+          "id": "Y7",
+          "designed_for": [
+            "s35",
+            "s36",
+            "s37",
+            "s38",
+            "s39",
+            "s40",
+            "s41",
+            "s42",
+            "s43"
+          ],
+          "action": "Tap the three-line button, then any conversation name in the list below the line. When it opens, without opening the side panel again, say which conversation you are in and what told you. Scroll up and down once. Then open the side panel and see whether it tells you. Close it by tapping the dimmed area. Do NOT type anything.",
+          "real_if": "it is real if, on the conversation page itself, nothing tells you which conversation you are in",
+          "not_real_if": "it is not real if the conversation page itself names it",
+          "status": "executed",
+          "what_happened": "I opened 'Create red apple image' from the menu. The conversation page has the menu lines, a pencil-in-a-square and three dots at the top, then my bubble '@Create image a red apple', the word 'Stopped', and the 'Reply to ChatGPT' box. There's no conversation name anywhere on the page. I only worked it out from my own message. I scrolled down and up once, my bubble slid up under the top buttons, a faint spinning circle appeared near the bottom, and there was still no name. When I opened the side panel, the row 'Create red apple image' was shaded grey, so the panel does tell me. But right underneath it is 'Create Red Apple Image', almost exactly the same words, so I had to look twice. I closed it by tapping the grey area.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Same: nothing on the conversation page names it.",
+      "provisional": false
+    },
+    "s44": {
+      "where": "the side menu opened over the image page",
+      "expectation": "I've opened the side menu again, this time from the image page.",
+      "confidence": "sure",
+      "cue": "The list Images, Library, Projects, Scheduled, Plugins, the recent chats under it, and the image cards greyed out on the right.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I know a slide-out list when I see one. 'ChatGPT' at the top is only the app name, and 'Images' isn't highlighted even though that's the page behind — so it doesn't tell me where I came from — and I notice 'Create image' and 'Schedule a task' are listed twice. But I know I'm in the menu.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {
+    "t32": {
+      "where": "a single sunset picture full screen, after being on the drawing panel",
+      "action_sentence": "You stayed on this screen and scrolled up.",
+      "expectation": "I think I'm looking at one picture full screen now — but I don't see how scrolling up got me here from the drawing panel.",
+      "confidence": "no idea",
+      "cue": "Nothing. The first picture had the Trending tab and the drawing tools; the second is a black screen with a sunset, X, Share, Edit, Resize, Remove. Not one word or tab carried over.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "You say I stayed on the same screen and just scrolled, but everything I was holding on to — the Trending tab, the pencil and colour tools — is gone and there's no name on the new one. I'd honestly think I'd tapped something by mistake and ended up somewhere else, and I'd lose my thread completely.",
+        "solution": "Keep something from before on the screen — the tab or a title — and give the full-screen picture a small name at the top so I know I haven't left."
+      },
+      "test_cases": [
+        {
+          "id": "Y4",
+          "designed_for": [
+            "s10",
+            "t32",
+            "t43"
+          ],
+          "action": "Tap the three-line button, then 'Images', then the flower picture at the top left ('Sketch'). Say where you are. Swipe up once across the big white area. Say where you are now, and whether you are still on the same screen. Then tap the X at the top left of the panel and choose 'Discard' (that only throws away your own lines).",
+          "real_if": "it is real if you cannot say where you are on the panel, or if the swipe takes you somewhere else",
+          "not_real_if": "it is not real if you can name where you are before and after the swipe",
+          "status": "executed",
+          "what_happened": "I tapped the Sketch flower card and a white panel came up from the bottom: X, pencil/shapes/rubber, undo, colour dots and a tick. There's no name on the panel. I could see the 'Sketch' card peeking out above it, so I guessed 'the sketch thing'. I swiped up once across the white area and it just drew a black line. I stayed on exactly the same panel, and nothing jumped anywhere or went black. When I pressed the X it asked 'Discard sketch? Your sketch will be lost.' That's the first time the app actually named it. I chose Discard and I was back on the picture page.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "When I swiped up on the drawing panel it just drew a line and I stayed exactly where I was. It didn't throw me onto a black picture screen, so the jump I was scared of didn't happen.",
+      "provisional": false
+    },
+    "t43": {
+      "where": "back on the image page with the drawing panel",
+      "action_sentence": "You stayed on this screen and scrolled down.",
+      "expectation": "I'm back in the image-making area with the drawing panel open.",
+      "confidence": "guessing",
+      "cue": "The 'Trending' and 'Templates' tabs at the top, with Trending shaded, and the pencil/shapes/eraser tools and colour dots.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The Trending tab is back so I can tell I'm in the image area, but the big drawing panel still has no name, and after the black picture screen with nothing on it I'd be unsure whether this is the same place I was before.",
+        "solution": "A title on the drawing panel, and the same name staying at the top whether I'm on the picture or the panel."
+      },
+      "test_cases": [
+        {
+          "id": "Y4",
+          "designed_for": [
+            "s10",
+            "t32",
+            "t43"
+          ],
+          "action": "Tap the three-line button, then 'Images', then the flower picture at the top left ('Sketch'). Say where you are. Swipe up once across the big white area. Say where you are now, and whether you are still on the same screen. Then tap the X at the top left of the panel and choose 'Discard' (that only throws away your own lines).",
+          "real_if": "it is real if you cannot say where you are on the panel, or if the swipe takes you somewhere else",
+          "not_real_if": "it is not real if you can name where you are before and after the swipe",
+          "status": "executed",
+          "what_happened": "I tapped the Sketch flower card and a white panel came up from the bottom: X, pencil/shapes/rubber, undo, colour dots and a tick. There's no name on the panel. I could see the 'Sketch' card peeking out above it, so I guessed 'the sketch thing'. I swiped up once across the white area and it just drew a black line. I stayed on exactly the same panel, and nothing jumped anywhere or went black. When I pressed the X it asked 'Discard sketch? Your sketch will be lost.' That's the first time the app actually named it. I chose Discard and I was back on the picture page.",
+          "reason_not_run": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Same swipe, same panel, nothing changed under me. The move between those two pictures isn't what happens when I actually scroll there.",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "screens_reviewed": 44,
+    "transitions_reviewed": 2,
+    "confidence": {
+      "sure": 23,
+      "guessing": 22,
+      "no_idea": 1
+    },
+    "cue_nothing": 2,
+    "no_problem": 28,
+    "navigate_with_difficulty": 17,
+    "cannot_handle": 1,
+    "tests_run": 6,
+    "opinions": {
+      "unchanged": 11,
+      "hardened": 1,
+      "softened": 4,
+      "reversed": 2
+    },
+    "out_of_scope": 13,
+    "not_executed": 1
+  }
+}

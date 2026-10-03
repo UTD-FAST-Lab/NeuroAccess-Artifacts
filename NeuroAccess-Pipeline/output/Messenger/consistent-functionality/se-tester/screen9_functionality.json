@@ -1,0 +1,255 @@
+{
+  "app": "Messenger",
+  "screen": "screen9",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen9_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen9_function_groups.png"
+  },
+  "elements": {
+    "screen9-f1": {
+      "kind": "icon",
+      "appearance": "letter X",
+      "state": null,
+      "location": "top left of screen9",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter X: close / dismiss — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "close",
+      "accessibility_text": "content_desc: 'Close'; talkback_label: 'Close'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": "closed the New note page without posting",
+      "glyph_group": "gg5",
+      "function_group": "fg11",
+      "test_cases": [
+        {
+          "id": "gg5-tc-screen9-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the letter X at top left of screen9",
+          "expected_result": "the same result as the other members of gg5 (letter X)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "closed the New note page without posting",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality",
+        "fg11": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen9-f2": {
+      "kind": "button",
+      "appearance": "the word \"Share\"",
+      "state": "disabled",
+      "location": "top right of screen9",
+      "bounds": [
+        868,
+        85,
+        1048,
+        188
+      ],
+      "visible_label": "Share",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "share",
+      "accessibility_text": "content_desc: 'Share'; talkback_label: 'Share'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": null,
+      "glyph_group": "gg45",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg45-tc-screen9-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the the word \"Share\" at top right of screen9",
+          "expected_result": "the same result as the other members of gg45 (the word \"Share\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "Share would post the note publicly (and is greyed out until text is typed) — posting is forbidden",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg45": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen9-f3": {
+      "kind": "icon",
+      "appearance": "musical note",
+      "state": null,
+      "location": "middle centre of screen9",
+      "bounds": [
+        356,
+        924,
+        451,
+        1019
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "musical note: music — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "music note",
+      "accessibility_text": "content_desc: 'Music note'; talkback_label: 'Music note'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": "opens 'Search music' for the note.",
+      "glyph_group": "gg46",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg46-tc-screen9-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the musical note at middle centre of screen9",
+          "expected_result": "the same result as the other members of gg46 (musical note)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens 'Search music' for the note.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg46": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f4": {
+      "kind": "icon",
+      "appearance": "the letters GIF",
+      "state": null,
+      "location": "middle centre of screen9",
+      "bounds": [
+        493,
+        924,
+        588,
+        1019
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "the letters GIF: GIF picker — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "gif note",
+      "accessibility_text": "content_desc: 'GIF Note'; talkback_label: 'GIF Note'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": "opens a GIF search sheet for the note (nothing chosen).",
+      "glyph_group": "gg47",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg47-tc-screen9-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the the letters GIF at middle centre of screen9",
+          "expected_result": "the same result as the other members of gg47 (the letters GIF)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens a GIF search sheet for the note (nothing chosen).",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg47": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen9-f5": {
+      "kind": "icon",
+      "appearance": "smiling face",
+      "state": null,
+      "location": "middle centre of screen9",
+      "bounds": [
+        630,
+        924,
+        725,
+        1019
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "smiling face: emoji picker — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "mood note",
+      "accessibility_text": "content_desc: 'Mood note'; talkback_label: 'Mood note'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": "opened a 'Mood' emoji picker for the note (nothing chosen)",
+      "glyph_group": "gg4",
+      "function_group": "fg12",
+      "test_cases": [
+        {
+          "id": "gg4-tc-screen9-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the smiling face at middle centre of screen9",
+          "expected_result": "the same result as the other members of gg4 (smiling face)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened a 'Mood' emoji picker for the note (nothing chosen)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality",
+        "fg12": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen9-f6": {
+      "kind": "button",
+      "appearance": "the word \"Change\"",
+      "state": null,
+      "location": "middle centre of screen9",
+      "bounds": [
+        486,
+        1446,
+        595,
+        1485
+      ],
+      "visible_label": "Change",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "change",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Change'",
+      "context_reading": "full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette, music / GIF / smiley buttons, 'Anyone can see your note … Change'",
+      "observed_function": "opens 'Note settings' (who can see / duration); backed out without saving.",
+      "glyph_group": "gg48",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg48-tc-screen9-f6",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen9 (full-screen 'New note' page: X top left, greyed 'Share' top right, 'Share a thought…' bubble over the user's silhouette,)",
+          "action": "note what is on screen, then tap the the word \"Change\" at middle centre of screen9",
+          "expected_result": "the same result as the other members of gg48 (the word \"Change\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opens 'Note settings' (who can see / duration); backed out without saving.",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg48": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 3
+  }
+}

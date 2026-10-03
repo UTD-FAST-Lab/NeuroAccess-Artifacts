@@ -1,0 +1,26 @@
+{
+  "app": "Duolingo",
+  "screen": "s78",
+  "state_str": "64d3a3f996598b7a1e50f393d1cec348",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190754.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s78_header_nav.png",
+  "name": "a lesson exercise",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Select the correct image",
+      "verdict_on_region": "an exercise instruction — says what to do, not where you are"
+    }
+  ],
+  "identifier_found": "a lesson progress bar across the top with an X to quit, the energy count, and the instruction 'Select the correct image'",
+  "identifier_class": "progress indicator",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the progress bar and quit X say 'you are in a lesson'; the instruction says what to do. The detector boxed only the instruction; the progress bar has no region",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "relies on the progress indicator, not on the marked instruction; strict call: nothing names the lesson itself; template carry from s25's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,135 @@
+{
+  "app": "Messenger",
+  "screen": "screen22",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen22_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen22_function_groups.png"
+  },
+  "elements": {
+    "screen22-f1": {
+      "kind": "icon",
+      "appearance": "short horizontal bar",
+      "state": null,
+      "location": "middle centre of screen22",
+      "bounds": [
+        0,
+        1672,
+        1080,
+        1715
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "short horizontal bar: drag handle of a bottom sheet (drag, not tap) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "click to dismiss this bottom sheet",
+      "accessibility_text": "content_desc: 'Click to dismiss this bottom sheet'; talkback_label: 'Click to dismiss this bottom sheet'",
+      "context_reading": "bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more', blue OK",
+      "observed_function": "tapped twice and dragged down: nothing happened; the sheet stayed open (it closes only via OK / the dimmed area)",
+      "glyph_group": "gg28",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg28-tc-screen22-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen22 (bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more',)",
+          "action": "note what is on screen, then tap the short horizontal bar at middle centre of screen22",
+          "expected_result": "the same result as the other members of gg28 (short horizontal bar)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "tapped twice and dragged down: nothing happened; the sheet stayed open (it closes only via OK / the dimmed area)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": null
+      },
+      "provisional": true
+    },
+    "screen22-f2": {
+      "kind": "button",
+      "appearance": "the words \"Learn more\"",
+      "state": null,
+      "location": "bottom centre of screen22",
+      "bounds": [
+        540,
+        2060,
+        732,
+        2102
+      ],
+      "visible_label": "Learn more",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "learn more",
+      "accessibility_text": "nothing declared",
+      "context_reading": "bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more', blue OK",
+      "observed_function": "left Messenger for a Facebook help page about 'People You May Know'",
+      "glyph_group": "gg22",
+      "function_group": "cfg4",
+      "test_cases": [
+        {
+          "id": "gg22-tc-screen22-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen22 (bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more',)",
+          "action": "note what is on screen, then tap the the words \"Learn more\" at bottom centre of screen22",
+          "expected_result": "the same result as the other members of gg22 (the words \"Learn more\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "left Messenger for a Facebook help page about 'People You May Know'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen22-f3": {
+      "kind": "button",
+      "appearance": "the word \"OK\"",
+      "state": null,
+      "location": "bottom centre of screen22",
+      "bounds": [
+        74,
+        2190,
+        1006,
+        2295
+      ],
+      "visible_label": "OK",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "ok",
+      "accessibility_text": "content_desc: 'OK'; talkback_label: 'OK'",
+      "context_reading": "bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more', blue OK",
+      "observed_function": "closed the sheet",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen22-f3",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen22 (bottom sheet over the dimmed Chats home: grey bar, 'Explore Facebook friend suggestions', paragraph ending 'Learn more',)",
+          "action": "note what is on screen, then tap the the word \"OK\" at bottom centre of screen22",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "closed the sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 1,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 1
+  }
+}

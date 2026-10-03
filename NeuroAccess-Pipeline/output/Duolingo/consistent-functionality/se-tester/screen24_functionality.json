@@ -1,0 +1,121 @@
+{
+  "app": "Duolingo",
+  "screen": "screen24",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen24_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen24_function_groups.png"
+  },
+  "elements": {
+    "screen24-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the Spanish Score page",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-left of the Spanish Score page",
+      "observed_function": "closes the Spanish Score page, back to the home screen with the course drawer open",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen24-f1-fd1",
+          "type": "function_determination",
+          "precondition": "app open on the element's screen",
+          "action": "tap the element and record what happens",
+          "expected_result": "a determinable action",
+          "confirms_if": "a clear action occurs (function determined)",
+          "overturns_if": "nothing happens (not a control)",
+          "observed_result": "closes the Spanish Score page, back to the home screen with the course drawer open",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen24-f2": {
+      "kind": "icon",
+      "appearance": "square with an upward arrow out of it",
+      "state": null,
+      "location": "top-right of the Spanish Score page",
+      "bounds": [
+        943,
+        74,
+        1069,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a square with an upward arrow is the established share convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-right of the Spanish Score page",
+      "observed_function": "opens the \"SHARE SPANISH SCORE\" bottom sheet",
+      "glyph_group": "gg27",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg27-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each shares the thing its page is about",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a \"SHARE SPANISH SCORE\" bottom sheet with a score card preview and Instagram / Facebook / Messages / Save / More; opens a full-screen \"Share Streak\" page (streak card, Save / Instagram / Facebook / Messages / More)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen24-f2-fd1",
+          "type": "function_determination",
+          "precondition": "app open on the element's screen",
+          "action": "tap the element and record what happens",
+          "expected_result": "a determinable action",
+          "confirms_if": "a clear action occurs (function determined)",
+          "overturns_if": "nothing happens (not a control)",
+          "observed_result": "opens the \"SHARE SPANISH SCORE\" bottom sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 4,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

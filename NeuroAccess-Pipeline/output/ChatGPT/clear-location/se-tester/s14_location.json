@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s14",
+  "state_str": "cb07fb49c30d90410c3a974b671a2ae6",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204400.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s14_header_nav.png",
+  "name": "a template photo-choice dialog over the image gallery",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Underwater",
+      "verdict_on_region": "unconventional (middle band) — the name of the chosen template; content, dismissed"
+    },
+    {
+      "kind": "navigation",
+      "text": "Trending | Templates (dimmed behind scrim)",
+      "verdict_on_region": "legible behind the scrim"
+    }
+  ],
+  "identifier_found": "the dimmed \"Trending\" tab row behind the dialog",
+  "identifier_class": "navigation bar with visible active state (dimmed)",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "dialog title names a template; the gallery tabs remain legible behind",
+  "test_cases": [
+    {
+      "id": "s14-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "image gallery at the top",
+      "action": "tap the \"'80s flashback\" template (the live equivalent of \"Underwater\") and read the dialog",
+      "expected_result": "the dialog title names a place or a piece of content",
+      "confirms_if": "the title names only the template and nothing behind the dialog stays legible",
+      "overturns_if": "the gallery name or tab stays legible behind the dialog",
+      "observed_result": "a dialog titled \"'80s flashback\" with \"Choose how you'd like to add a photo.\", \"Choose photo\", \"Take photo\", \"Cancel\"; behind the scrim the \"Images\" title and the \"Trending\" tab stayed legible. The title is the template's name — content, not a place. Cancel returned to the gallery",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the dialog title is a template name and is dismissed as a place identifier; the gallery tabs (and on the live app the \"Images\" title) remain legible behind a modal that returns to the gallery.",
+  "recommendation": null,
+  "provisional": false
+}

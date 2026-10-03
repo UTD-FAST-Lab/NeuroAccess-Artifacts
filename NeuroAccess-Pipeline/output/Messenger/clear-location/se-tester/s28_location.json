@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s28",
+  "state_str": "958a18fbf5e7d658e73c311f9a172253",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151816.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s28_header_nav.png",
+  "name": "Communities intro",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Build a chat-based community on Messenger",
+      "verdict_on_region": "headline of the first card of a swipeable intro carousel — content; on the next card it reads \"Bring up to 5,000 real-world connections online\" and names no place"
+    }
+  ],
+  "identifier_found": "the only large text is the headline of the first card of an intro carousel; no \"Communities\" title anywhere on the page",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "initially read the large headline \"Build a chat-based community on Messenger\" as naming the Communities page",
+  "test_cases": [
+    {
+      "id": "s28-tc1",
+      "type": "verification",
+      "precondition": "side drawer open",
+      "action": "tap Communities; swipe the intro carousel to the next card",
+      "expected_result": "the page names Communities somewhere persistent, or the only naming text is the swiping headline",
+      "confirms_if": "no persistent title; the headline changes and stops naming the place",
+      "overturns_if": "a persistent \"Communities\" title or a headline that keeps naming communities on every card",
+      "observed_result": "page has only a back arrow at top; card 1 headline \"Build a chat-based community on Messenger\"; card 2 headline \"Bring up to 5,000 real-world connections online\"; the only persistent naming text is the small \"About communities\" link under \"Get started\"",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "overturned",
+  "deciding_evidence": "overturned: the headline is the first card of a carousel; the next card's headline names no place and there is no persistent \"Communities\" title; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "add a persistent \"Communities\" title in the top bar above the carousel",
+  "provisional": false
+}

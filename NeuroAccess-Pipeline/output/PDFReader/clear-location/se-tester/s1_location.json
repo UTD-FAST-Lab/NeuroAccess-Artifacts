@@ -1,0 +1,39 @@
+{
+  "app": "PDFReader",
+  "screen": "s1",
+  "state_str": "a2db9de171dd2ca5ae0d05cabfb1b4ba",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180408.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s1_header_nav.png",
+  "name": "the launch screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "PDF Reader, PDF Viewer",
+      "verdict_on_region": "unconventional position (centred); names the app, not the place -- dismissed as a location signal"
+    }
+  ],
+  "identifier_found": "none that names the place; the only words are the app's name and \"This process may contain ads\"",
+  "identifier_class": "none",
+  "accessibility_text": "none -- no content_description on any view",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "logo, app name and an unlabelled progress indicator; no title, no nav bar, no phrase saying the app is starting",
+  "test_cases": [
+    {
+      "id": "s1-tc1",
+      "type": "verification",
+      "precondition": "app force-stopped on Medium_Phone",
+      "action": "launch the app and watch the launch screen until it hands over, reading every visible word",
+      "expected_result": "either some visible text says this is a start-up/loading screen, or only the app name and \"This process may contain ads\" appear",
+      "confirms_if": "no text other than the app name and the ads notice appears at any moment of the launch screen",
+      "overturns_if": "a visible title or phrase (e.g. \"Loading\") names the screen",
+      "observed_result": "the launch screen showed the logo, \"PDF Reader, PDF Viewer\" and \"This process may contain ads\" with first a spinner and then a progress bar; no other words at any moment; nothing scrolls",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "no text other than the app's own name appears in any moment of the live launch screen; the splash exception applies to a disappearing-identifier transition, not to whether this screen names itself, and no scroll transition touches it. Low impact: transient, and it hands over by itself",
+  "recommendation": "label the progress indicator, e.g. \"Starting PDF Reader...\" or \"Loading\", so the screen says what it is",
+  "provisional": false
+}

@@ -1,0 +1,39 @@
+{
+  "app": "Duolingo",
+  "screen": "s70",
+  "state_str": "2284edd6625b4bd71ee4618f821e4dc3",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190506.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s70_header_nav.png",
+  "name": "a quest-reward sequence",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Quest complete!",
+      "verdict_on_region": "content: reports an event, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "none that names a place: 'Quest complete!' / 'You earned a Double XP Boost…' / 'XP Boost activated!…' with CONTINUE or CLAIM NOW",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "outcome headlines only, no title, no tab bar",
+  "test_cases": [
+    {
+      "id": "s70-tc1",
+      "type": "verification",
+      "precondition": "a quest just completed",
+      "action": "reach the reward sequence",
+      "expected_result": "-",
+      "confirms_if": "no title",
+      "overturns_if": "a title appears",
+      "observed_result": "not executed — the one-time 'Follow your first friend' quest reward has been consumed, and completing another would require adding a friend (forbidden) — live app diverges from capture",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "judged from the image only: each headline reports an outcome. Provisional",
+  "recommendation": "add a 'Quests' title bar over the reward sequence",
+  "provisional": true
+}

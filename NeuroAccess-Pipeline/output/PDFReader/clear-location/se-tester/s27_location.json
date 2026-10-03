@@ -1,0 +1,49 @@
+{
+  "app": "PDFReader",
+  "screen": "s27",
+  "state_str": "ae4de8e4708f130239d372fd02503d76",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_182206.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s27_header_nav.png",
+  "name": "the set-as-default sheet over Home",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "PDF Reader",
+      "verdict_on_region": "the Home header behind the dim; names the app, not the place"
+    },
+    {
+      "kind": "header",
+      "text": "The fastest way to read PDF files",
+      "verdict_on_region": "unconventional position (bottom sheet); a claim about the app, not the name of a place -- dismissed"
+    },
+    {
+      "kind": "navigation",
+      "text": "PDF / HWP / Word / Excel / PPT pill row (PDF drawn filled; detector reading, no selected flag in the dump)",
+      "verdict_on_region": "a file-type filter behind the dim, not a place"
+    }
+  ],
+  "identifier_found": "none that names the place: the sheet heading is a slogan, the only header behind is the app's name, and the Home tab bar is covered by the sheet",
+  "identifier_class": "none",
+  "accessibility_text": "none -- no content_description in this state",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "bottom sheet covers the tab bar (the only location signal on Home); its heading does not say what the sheet is",
+  "test_cases": [
+    {
+      "id": "s27-tc1",
+      "type": "verification",
+      "precondition": "Home open with the \"Set as default reader\" banner",
+      "action": "tap SET, read every visible word on the sheet and behind it, then tap Later",
+      "expected_result": "some visible text names this sheet or the place behind it, or nothing does; Later returns or does not",
+      "confirms_if": "no visible text names the sheet or the section behind it (tab bar covered, header only the app name)",
+      "overturns_if": "the sheet or the underlay carries a title naming the place",
+      "observed_result": "the sheet showed an illustration of a chooser, \"The fastest way to read PDF files\", \"Set PDF Reader, PDF Viewer as your default app\", \"Set as default\" and \"Later\"; behind it only \"PDF Reader\" and the filter pills were legible; the tab bar was covered; the sheet did not scroll; Later returned to Home. The sheet never states it is the set-default prompt in a heading -- only in the body sentence and button",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "on the live app no visible heading names the sheet or the section behind it; its purpose is only in the body sentence \"Set PDF Reader, PDF Viewer as your default app\" and the \"Set as default\" button. A modal with a clear way back (Later, verified) -- but that excuses a transition, not a screen that does not name itself. No transition verdict lands here (t10 is a touch, not evaluated)",
+  "recommendation": "head the sheet \"Set as default reader\" -- the words already on the Home banner that opens it -- instead of \"The fastest way to read PDF files\"",
+  "provisional": false
+}

@@ -1,0 +1,26 @@
+{
+  "app": "Discord",
+  "screen": "s14",
+  "state_str": "7ce9cb7194f80d9e14e1dc0756d333ff",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215321.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s14_header_nav.png",
+  "name": "Add some people after Copy Invite Link, system clipboard preview showing",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Add some people",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    }
+  ],
+  "identifier_found": "\"Add some people\" (header intact above the system clipboard preview)",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Add some people' names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "system_overlay state: Android's clipboard preview covers only the bottom-left corner; the app's own header is fully visible, so the screen is judged",
+  "recommendation": null,
+  "provisional": false
+}

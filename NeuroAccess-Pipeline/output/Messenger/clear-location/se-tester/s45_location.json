@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s45",
+  "state_str": "96390550f98fd2675808025f2cb583ed",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152054.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s45_header_nav.png",
+  "name": "Pinned messages",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Pinned messages",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    },
+    {
+      "kind": "header",
+      "text": "No pinned messages",
+      "verdict_on_region": "empty-state heading naming what this place holds — supports the top-bar title"
+    }
+  ],
+  "identifier_found": "\"Pinned messages\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,33 @@
+{
+  "app": "Messenger",
+  "screen": "s20",
+  "state_str": "9884d35a3d310713ccea448f4befc927",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151713.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s20_header_nav.png",
+  "name": "search",
+  "regions_read": [],
+  "identifier_found": "the top bar holds only a back arrow and a search input \"Ask Meta AI or search\"; section labels below are content",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the top bar holds only a back arrow and a search input \"Ask Meta AI or search\"; section labels below are content",
+  "test_cases": [
+    {
+      "id": "s20-tc1",
+      "type": "verification",
+      "precondition": "Chats tab at top",
+      "action": "tap \"Ask Meta AI or search\", hide the keyboard, scroll the results down and back",
+      "expected_result": "a title appears in some state, or never",
+      "confirms_if": "no title in any state",
+      "overturns_if": "a title such as \"Search\" appears",
+      "observed_result": "search screen shows back arrow + \"Ask Meta AI or search\" field; below: \"Recent searches\", \"Suggested\", \"People you may know\"; scrolling keeps the field pinned and no title ever appears",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed on the device: the top bar holds only a back arrow and a search input \"Ask Meta AI or search\"; section labels below are content; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "add a \"Search\" title or keep a visible label above the field",
+  "provisional": false
+}

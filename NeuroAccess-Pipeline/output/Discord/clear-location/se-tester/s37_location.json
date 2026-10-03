@@ -1,0 +1,31 @@
+{
+  "app": "Discord",
+  "screen": "s37",
+  "state_str": "df1d7d2e1e4b16626ddad1d1ca6da029",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215715.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s37_header_nav.png",
+  "name": "Gift a new Nitro membership with the Gifting Badge sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Gift a new Nitro membership",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Gifting Badge",
+      "verdict_on_region": "heading of a bottom sheet about the gifting badge; names the sheet, with 'Gift a new Nitro membership' visible dimmed behind — counted"
+    }
+  ],
+  "identifier_found": "\"Gift a new Nitro membership\"; \"Gifting Badge\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Gift a new Nitro membership' names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "the region the detector marked away from the top was read from the image and reasoned about; the screen's own title stays visible behind the overlay",
+  "recommendation": null,
+  "provisional": false
+}

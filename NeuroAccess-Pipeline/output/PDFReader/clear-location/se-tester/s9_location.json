@@ -1,0 +1,44 @@
+{
+  "app": "PDFReader",
+  "screen": "s9",
+  "state_str": "a86963b3ada3ce659a33952656adf3db",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180906.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s9_header_nav.png",
+  "name": "the Add widget sheet over Settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Settings",
+      "verdict_on_region": "names the section behind the sheet; legible through the dim"
+    },
+    {
+      "kind": "header",
+      "text": "Add widget",
+      "verdict_on_region": "unconventional position (top of a bottom sheet, mid-screen); names the sheet, in the same words as the Settings row that opened it -- accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Add widget\" -- the sheet heading, with \"Settings\" legible behind",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet is headed with the name of the row that opened it",
+  "test_cases": [
+    {
+      "id": "s9-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Settings open",
+      "action": "tap Add widget (never Add), read the sheet heading, then tap outside the sheet",
+      "expected_result": "the heading names the sheet the user opened, or names content inside it",
+      "confirms_if": "\"Add widget\" matches the row the user tapped and names the sheet",
+      "overturns_if": "the heading names something other than what the user opened",
+      "observed_result": "the sheet opened headed \"Add widget\", the same words as the Settings row tapped; \"Settings\" legible above it through the dim; tapping outside closed it back to Settings",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "heading matches the tapped row; tapping outside returns to Settings (s9-tc1)",
+  "recommendation": null,
+  "provisional": false
+}

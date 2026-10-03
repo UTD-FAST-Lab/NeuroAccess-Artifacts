@@ -1,0 +1,39 @@
+{
+  "app": "PDFReader",
+  "screen": "s6",
+  "state_str": "dc2a24097a77fa8be307c26d6c321522",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180447.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s6_header_nav.png",
+  "name": "the Premium plan offer (close X shown)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Try the Premium plan completely free",
+      "verdict_on_region": "unconventional position (mid-screen, below the hero image); names the whole screen's subject, the Premium plan offer, which is where the crown icon and 'Upgrade to Premium' lead -- accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Try the Premium plan completely free\" -- mid-screen heading naming the offer the whole screen is about",
+  "identifier_class": "self_evident_content",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "relies on self-evident content: the whole screen is one offer, named in its heading and its \"Start Free Trial\" button; no header bar or nav",
+  "test_cases": [
+    {
+      "id": "s6-tc1",
+      "type": "exception_verification",
+      "precondition": "Premium offer open, X visible top-left",
+      "action": "tap the X",
+      "expected_result": "the X returns the user to the screen they came from",
+      "confirms_if": "the X does nothing or leads elsewhere",
+      "overturns_if": "the X returns to Home",
+      "observed_result": "tapping the X returned to Home with the tab bar and Home highlight as before",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the heading is the screen's single subject and names it; the X is visible and returns to the screen the user came from (s6-tc1). Rests on the self-evident-content class, stated as such",
+  "recommendation": null,
+  "provisional": false
+}

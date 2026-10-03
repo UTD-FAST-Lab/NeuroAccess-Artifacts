@@ -1,0 +1,799 @@
+{
+  "persona": "persona-amy",
+  "app": "PDFReader",
+  "screens": {
+    "s1": {
+      "where": "Start-up screen, loading",
+      "expectation": "I think the app is starting up, before I get to any real screen. I am guessing, because nothing says so.",
+      "confidence": "guessing",
+      "cue": "The large app icon in the middle, the words \"PDF Reader, PDF Viewer\" under it, and the sentence \"This process may contain ads\". There is a grey track near the bottom with only a tiny dark sliver at its left end; I cannot be sure that is a progress bar.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only boxed text is the app's name. That tells me which app I opened, not where I am in it. Nothing says \"Loading\" or \"Starting\". The progress bar is almost empty, so it reads as a small mark, not as progress. \"This process\" does not say which process. There is also a grey placeholder block at the very bottom with a circle and bars that shows nothing I can name.",
+        "solution": "Put a literal word under the name, such as \"Loading...\", and make the progress bar visibly a bar from the first moment. Replace \"This process\" with what the process is, for example \"Starting the app may show ads\"."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc1",
+          "action": "Close the app completely (terminate it) and open it again. Watch the very first screen until it moves on by itself. Then, without going back, say in one sentence what that first screen was and whether any words on it told you so.",
+          "confirms_if": "nothing on the first screen says what it is -- you had to work it out from the picture or the bar",
+          "overturns_if": "some words on the first screen say plainly what is happening (for example that the app is starting)",
+          "observed_result": "I terminated the app and launched it again. The first screen was the red PDF icon, the words \"PDF Reader, PDF Viewer\" under it, and \"This process may contain ads\" at the bottom. On the live phone the progress bar I saw in the pictures was not there at first. Instead there was a spinning circle above that sentence. Then a white panel slid across and Google Play's \"This app needs an update\" page appeared. I closed it with its X. The same start-up screen came back, this time with a progress bar about a quarter filled and an empty grey block at the very bottom. Then a full-screen test advertisement appeared with a video already playing. I closed it with \"Continue to app\". In one sentence: the first screen was the app starting up, and no words on it said so. I worked that out from the spinner and later the bar, not from any text. The only words are the app's name and a sentence about ads.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The live start-up screen still has no words saying what it is. It shows a spinner or a bar, the app's name, and a vague sentence about \"this process\". Seeing it live also added things the pictures did not show: the loading indicator changed from a spinner to a bar, a store page slid in over it, and a video advertisement started playing without me pressing anything. A single literal word, \"Loading\", would settle what the screen is.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "Start-up screen, loading",
+      "expectation": "The app is starting up and loading.",
+      "confidence": "sure",
+      "cue": "The app icon and name in the middle, and the progress bar near the bottom, which is now about a third filled so I can see it is a bar that is filling.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The boxed text is only the app's name, but on this picture the filling progress bar makes it plain that this is the app starting. I know I am not anywhere in the app yet. The empty grey block at the bottom is still unexplained, but it does not change where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Home, PDF files tab",
+      "expectation": "I am on the Home screen, looking at the PDF files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"PDF\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two separate things agree: \"Home\" is the highlighted item in the bottom bar and \"PDF\" is the highlighted pill. The big text at the top, \"PDF Reader\", is the app's name, not the place, but here it does not contradict anything. The layout is the same as the other Home pictures, so I recognise it. The \"Set as default reader\" strip with \"SET\" is extra clutter between the tabs and the content, but it does not hide where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "Rate-the-app popup over Settings",
+      "expectation": "I am still in Settings, and a panel has come up from the bottom asking me to rate the app.",
+      "confidence": "sure",
+      "cue": "The dimmed \"Settings\" title and list behind the panel, the panel's sentence \"We would be very grateful if you could rate us.\", the five stars and the button \"Rate this App\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dimmed Settings page behind tells me where I am underneath, and the sentence and button tell me literally what the panel is for. The boxed heading \"Thank you for using PDF Reader, PDF Viewer!\" is a thank-you, not a name, and it thanks me for something I have not done yet, but the rest of the panel names its purpose clearly. The orange label \"The best rating for us\" pointing at the fifth star is pressure, not information, and the heart-eyes face is decoration I would rather not have.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Add widget panel over Settings",
+      "expectation": "I am in Settings and a panel for adding a home-screen widget is open over it.",
+      "confidence": "sure",
+      "cue": "The heading \"Add widget\" at the top of the panel, which is the same words as the \"Add widget\" row in the dimmed Settings list behind it, and the \"Add\" button at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel title is literal and repeats the exact wording of the row that opens it, so I can connect the two. The dimmed Settings page behind confirms where I am underneath. \"PDF Tools\" under the preview is a second heading, but it reads as the name of this particular widget, not of the place. The six dots under it tell me there are six widgets to page through; I would want to page through them myself and not have them change on their own.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Home, HWP files tab",
+      "expectation": "I am on the Home screen, looking at the HWP files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"HWP\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"HWP\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the HWP section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the HWP pill is dark blue, and the \"SET\" button and the book icon in the banner change to dark blue too. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"HWP files\" under or instead of \"PDF Reader\", or show a line like \"Showing HWP files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Add widget panel over Settings",
+      "expectation": "I am in Settings and a panel for adding a home-screen widget is open over it.",
+      "confidence": "sure",
+      "cue": "The heading \"Add widget\" at the top of the panel, which is the same words as the \"Add widget\" row in the dimmed Settings list behind it, and the \"Add\" button at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel title is literal and repeats the exact wording of the row that opens it, so I can connect the two. The dimmed Settings page behind confirms where I am underneath. \"PDF Tools\" under the preview is a second heading, but it reads as the name of this particular widget, not of the place. This is the second of the six dots, so I have paged to another widget design. The preview icons changed from Home/Recent/Bookmarks/Edit PDF to PDF/Word/Excel/PPT while the text \"PDF Tools\" and \"One-tap access to common features\" stayed the same, which makes me unsure the description belongs to this widget, but it does not affect where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Home, Word files tab",
+      "expectation": "I am on the Home screen, looking at the Word files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"Word\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"Word\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the Word section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the Word pill is bright blue, and the \"SET\" button and the book icon in the banner change to bright blue too. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"Word files\" under or instead of \"PDF Reader\", or show a line like \"Showing Word files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Home, Excel files tab",
+      "expectation": "I am on the Home screen, looking at the Excel files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"Excel\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"Excel\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the Excel section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the Excel pill is green, and the \"SET\" button and the book icon in the banner change to green too. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"Excel files\" under or instead of \"PDF Reader\", or show a line like \"Showing Excel files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s20": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "Home, PPT files tab",
+      "expectation": "I am on the Home screen, looking at the PPT files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"PPT\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"PPT\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the PPT section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the PPT pill is orange, and the \"SET\" button and the book icon in the banner change to orange too. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"PPT files\" under or instead of \"PDF Reader\", or show a line like \"Showing PPT files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "Set-as-default panel over Home",
+      "expectation": "I am on the Home screen, PDF section, and a panel has come up asking me to make this app my default for opening PDF files.",
+      "confidence": "guessing",
+      "cue": "The dimmed \"PDF Reader\" title and pill row behind the panel, with \"PDF\" still red; the sentence \"Set PDF Reader, PDF Viewer as your default app\"; the buttons \"Set as default\" and \"Later\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The boxed heading \"The fastest way to read PDF files\" is a slogan, not a name for this panel; the sentence under it is what actually tells me the purpose. The upper half of the panel is a picture of a different dialog, with \"Just once\" and \"Always\" and a cartoon hand pressing \"Always\". It looks like real buttons, so I cannot tell which parts of this panel I can press and which are only a picture. In the dimmed background the pill row no longer shows a clear selection label, so the page underneath is only recognisable from memory of the Home layout.",
+        "solution": "Title the panel literally, for example \"Set as default PDF app\". Put a caption on the illustration such as \"Example: what you will see next\" and make it clearly not a set of buttons."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc4",
+          "action": "On the main page, tap the red SET button on the 'Set as default reader' strip. Read the panel that comes up and say what it is and where you are. Then tap Later and say where you landed. Never tap Set as default, Always or Just once.",
+          "confirms_if": "the panel's biggest words do not tell you what it is and you rely on the small line",
+          "overturns_if": "you can tell at once what the panel is and where you are",
+          "observed_result": "On the main page I tapped the red SET on the \"Set as default reader\" strip. After a short delay a panel slid up over the dimmed main page. Its top half is a picture of an app chooser showing \"PDF Reader, PDF Viewer\", \"Just once\" and a red-outlined \"Always\", with a cartoon hand pressing \"Always\". In two screenshots a few seconds apart the hand had not moved. The biggest words are \"The fastest way to read PDF files\", which is a slogan and does not say what the panel is. The small line under it, \"Set PDF Reader, PDF Viewer as your default app\", is what told me literally, and so did the fact that I had just pressed SET on a strip that says \"Set as default reader\". I knew where I was because the main page with PDF selected was still visible, dimmed, behind the panel. I tapped Later. The first tap seemed to do nothing, then the panel closed and I was on the main page with Home and PDF highlighted, where I started. I did not tap Set as default, Always or Just once.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Live, I knew at once where I was, because I had just pressed SET and the main page stayed visible behind the panel, and Later returned me there. That part is fine. The concern about the panel itself holds: its biggest words are a slogan, and I had to read the small line to confirm what it is. The picture of \"Just once\" and \"Always\" with a hand pressing one still looks like buttons I am meant to press.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Home, PDF files tab",
+      "expectation": "I am on the Home screen, looking at the PDF files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"PDF\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Two separate things agree: \"Home\" is the highlighted item in the bottom bar and \"PDF\" is the highlighted pill. The big text at the top, \"PDF Reader\", is the app's name, not the place, but here it does not contradict anything. The layout is the same as the other Home pictures, so I recognise it.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Home, HWP files tab",
+      "expectation": "I am on the Home screen, looking at the HWP files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"HWP\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"HWP\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the HWP section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the HWP pill is dark blue. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"HWP files\" under or instead of \"PDF Reader\", or show a line like \"Showing HWP files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Premium subscription offer",
+      "expectation": "I think this is an offer to subscribe to a paid Premium plan. I am not sure whether it is a screen of the app itself or a full-screen advertisement.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the three steps \"Today\", \"Day 2\", \"Day 3\", the price line \"3 day free trial, then $29.99/year\", and the button \"Start Free Trial\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales sentence, not the name of a place. It also contradicts itself: it says \"completely free\" and further down it says $29.99 a year. There is no back arrow, no close button and none of the app's bars, so I cannot tell whether I am still inside the app or where I would go from here. The large picture of a diamond with a \"V\" on it does not represent anything I can name. \"Day 2\" and \"Day 3\" have exactly the same sentence, which makes me doubt I am reading it correctly.",
+        "solution": "Give the page a plain title such as \"Premium subscription\" and a visible close or back button in the same place as on other screens. Drop \"completely\" or state the price in the heading so the title is literally true."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s34": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Settings",
+      "expectation": "I am on the Settings page.",
+      "confidence": "sure",
+      "cue": "The word \"Settings\" at the top next to the back arrow, and the list below: \"Keep screen on\", \"Language\", \"Set default reader\", \"Add widget\", \"Rate App\", \"Share App\", \"Privacy Policy\", \"Terms of Use\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is a literal name for the place and it sits where a title should be, next to a back arrow. The list under it is exactly what I expect on a settings page, so the title and the content agree. The orange \"Upgrade to Premium\" banner at the top is an advertisement inside the settings, which I would hide if I could, but it does not confuse me about where I am.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Home, Word files tab",
+      "expectation": "I am on the Home screen, looking at the Word files section. It is empty because the app has no file access yet.",
+      "confidence": "sure",
+      "cue": "The bottom bar: the house icon and the word \"Home\" are dark and the other three (\"Recent\", \"Favorite\", \"Tools\") are grey. In the row of pill buttons at the top, \"Word\" is filled with colour and the others are only outlined. The message \"To continue, please allow file access on your device.\" explains why there is no list.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The highlights do tell me: \"Home\" in the bottom bar and \"Word\" in the pill row. But the largest text on the screen still says \"PDF Reader\" while I am in the Word section, so the biggest words and the selected pill say two different things. The whole colour scheme also changes with the tab — the Word pill is bright blue. The body underneath is identical on every tab, so nothing in the content confirms which one I am on; I have to rely on the pill alone.",
+        "solution": "Put the section name in the page title, for example \"Word files\" under or instead of \"PDF Reader\", or show a line like \"Showing Word files\" above the list area. Keep one highlight colour for the selected pill on every tab so the selection marker looks the same wherever I am."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc3",
+          "action": "On the main page, tap Word in the row of buttons near the top. Look at the big words at the very top and the chosen button, then say where you are. Then tap Excel and do the same. Finish by tapping PDF.",
+          "confirms_if": "the big words at the top and the chosen button still tell you two different things, so you cannot settle where you are",
+          "overturns_if": "once you are on the live screen, the chosen button and the rest of the page make it plain where you are",
+          "observed_result": "On the main page I tapped Word. The screen did not change for about a second, then the Word pill turned bright blue and the \"Set as default reader\" book icon and SET button turned blue as well. The big words at the top still said \"PDF Reader\", with \"PDF\" in red. I tapped Excel. Again there was a short delay, then the Excel pill turned green, and the book icon and SET turned green. The top still said \"PDF Reader\". I tapped PDF and everything went back to red. The body of the page, the empty-files picture with \"To continue, please allow file access on your device\", was identical on all three. On the live phone I could settle where I was each time: Home, then the Word or Excel section, because only one pill is filled. But the big words at the top and the chosen pill still said two different things every time, and the highlight colour was different for every section.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "On the live screen the filled pill is enough for me to tell which section I am in. So I can settle where I am, which is less than I feared. The contradiction is real, though: the largest words always say \"PDF Reader\", with PDF in red, even while I am in Word or Excel. The highlight colour is different for every section, so the marker of \"you are here\" never looks the same twice. The delay of about a second after each tap made me doubt that my tap had worked.",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Premium subscription offer",
+      "expectation": "An offer to subscribe to a paid Premium plan. The X at the top left tells me I can close it, so I think it is laid over the app.",
+      "confidence": "guessing",
+      "cue": "The boxed heading \"Try the Premium plan completely free\", the price line \"3 day free trial, then $29.99/year\", the \"Start Free Trial\" button, and the round X button at the top left.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I know what the page is selling, but the heading is a slogan, not a name for this place, and it is not literally true because the price line says $29.99 a year. The X helps: I can see an exit. But nothing tells me whether this is part of the app or an advertisement, or where closing it will take me. The diamond with a \"V\" is an abstract image that does not depict anything I can name.",
+        "solution": "A plain title such as \"Premium subscription\" and a heading that states the real price. Label the X with text, for example \"Close\", so I know it returns me to where I was."
+      },
+      "test_cases": [
+        {
+          "id": "amy-tc2",
+          "action": "On the main page, tap the crown picture at the top right. When the page with the diamond appears, look away for a few seconds, then look back and say in one sentence where in the app you are. Then leave the page using whatever you can see (or the phone's Back button if you can see nothing) and say where you landed. Never tap Start Free Trial.",
+          "confirms_if": "after looking back you cannot say where in the app you are, or you cannot tell where leaving will take you",
+          "overturns_if": "you can say where you are, and leaving takes you back where you came from as you expected",
+          "observed_result": "On the main page I tapped the crown at the top right. My first tap showed the Settings page, not the diamond page. I cannot tell whether I touched the gear next to it or the app responded strangely. I pressed Back, which returned me to the main page with a \"Press again to exit\" message, and I tapped the crown again. For about two seconds nothing happened, then the diamond page appeared, already with the round X at the top left. I took my eyes off it and looked back. It was unchanged and nothing on it moved. I could say where I was: the Premium subscription offer that the crown opens. I could say that because I had just pressed the crown, not because the page names itself. The heading is still \"Try the Premium plan completely free\", and $29.99/year is printed under it. I tapped the X. After a moment I was back on the main page with \"Home\" and \"PDF\" highlighted, exactly where I started. I did not touch Start Free Trial.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I open this page myself from the crown, I know where I am, and the X took me back exactly where I came from. That part of my concern does not hold. What stays is the heading: it is a sales slogan, not a name, and it is not literally true with $29.99/year printed under it. The unlabelled X only worked because I guessed it meant close. If this page appeared without my pressing anything, I would still be unsure whether it was the app or an advertisement.",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 36,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 19,
+      "guessing": 17,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 13,
+    "navigate_with_difficulty": 23,
+    "cannot_handle": 0,
+    "tests_run": 4,
+    "opinions": {
+      "unchanged": 1,
+      "hardened": 0,
+      "softened": 22,
+      "reversed": 0
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

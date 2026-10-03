@@ -1,0 +1,147 @@
+{
+  "app": "Discord",
+  "screen": "screen24",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen24_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen24_function_groups.png"
+  },
+  "elements": {
+    "screen24-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        0,
+        63,
+        147,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "left arrow = back/up to the previous screen - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Navigate up (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Navigate up\"; talkback_label: \"Navigate up\"",
+      "context_reading": "screen titled \"New Message\" with a \"To:\" field and the empty-state text \"No one's around to play with Wumpus.\"",
+      "observed_function": "returns to the screen the user came from",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc-screen24-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen24 captured (screens 12 and 24 are recaptures of the same New Message view); context noted before the tap",
+          "action": "tap screen24-f1 (arrow pointing left) at its captured position and record what happens",
+          "expected_result": "returns to the screen the user came from",
+          "confirms_if": "it does something unrelated to what the other members of gg8 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg8, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc-screen24-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen24 captured",
+          "action": "exercise screen24-f1 (\"arrow pointing left\") and compare its result with the other renderings in cfg4",
+          "expected_result": "hypothesis: the profile X and every left arrow return to the previous screen",
+          "confirms_if": "all return to the previous screen",
+          "overturns_if": "any member does something other than returning",
+          "observed_result": "returns to the screen the user came from",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen24-f2": {
+      "kind": "button",
+      "appearance": "the words \"Add Friends\"",
+      "state": null,
+      "location": "bottom centre of the screen",
+      "bounds": [
+        42,
+        2169,
+        1038,
+        2295
+      ],
+      "visible_label": "Add Friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Add Friends (from label; status declared)",
+      "accessibility_text": "content_desc: \"Add Friends\"; talkback_label: \"Add Friends\"",
+      "context_reading": "screen titled \"New Message\" with a \"To:\" field and the empty-state text \"No one's around to play with Wumpus.\"; carries its own visible words \"Add Friends\"",
+      "observed_function": "opens the screen titled \"Add Friends\"",
+      "glyph_group": "gg21",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg21-tc-screen24-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen24 captured (screens 12 and 24 are recaptures of the same New Message view); context noted before the tap",
+          "action": "tap screen24-f2 (the words \"Add Friends\") at its captured position and record what happens",
+          "expected_result": "opens the screen titled \"Add Friends\"",
+          "confirms_if": "it does something unrelated to what the other members of gg21 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg21, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-tc-screen24-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen24 captured",
+          "action": "exercise screen24-f2 (\"the words \"Add Friends\"\") and compare its result with the other renderings in fg1",
+          "expected_result": "every rendering opens the same \"Add Friends\" screen",
+          "confirms_if": "they reach the same place and one rendering would not be recognised as Add Friends",
+          "overturns_if": "they reach different places, or both renderings carry the words \"Add Friends\" so each is recognisable",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg6-tc-screen24-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen24 captured",
+          "action": "exercise screen24-f2 (\"the words \"Add Friends\"\") and compare its result with the other renderings in cfg6",
+          "expected_result": "hypothesis: \"Add by Username\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something narrower or different",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg7-tc-screen24-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen24 captured",
+          "action": "exercise screen24-f2 (\"the words \"Add Friends\"\") and compare its result with the other renderings in cfg7",
+          "expected_result": "hypothesis: \"Find friends\" does the Add Friends job",
+          "confirms_if": "it opens the same Add Friends destination",
+          "overturns_if": "it opens something different (e.g. contact sync)",
+          "observed_result": "opens the screen titled \"Add Friends\"",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 6,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

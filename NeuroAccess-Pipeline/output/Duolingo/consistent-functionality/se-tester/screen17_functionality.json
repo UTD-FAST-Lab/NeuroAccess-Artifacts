@@ -1,0 +1,304 @@
+{
+  "app": "Duolingo",
+  "screen": "screen17",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen17_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen17_function_groups.png"
+  },
+  "elements": {
+    "screen17-f1": {
+      "kind": "button",
+      "appearance": "the words \"ADD FRIENDS\"",
+      "state": null,
+      "location": "Feed page",
+      "bounds": [
+        84,
+        1309,
+        996,
+        1435
+      ],
+      "visible_label": "ADD FRIENDS",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"ADD FRIENDS\"",
+      "context_reading": "Feed page",
+      "observed_function": "opens the \"Find your friends\" page",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "cfg8-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these both open the same add-a-friend flow?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "FIND A FRIEND (Quests) and ADD FRIENDS (Feed) both open the \"Find your friends\" page (Choose from contacts / Search by name / Share follow link); from Quests it also carries a greyed CLAIM REWARD button",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg8-tc2",
+          "type": "mixed_appearance",
+          "precondition": "candidate confirmed by tc1",
+          "action": "from the screen carrying one rendering, look for the job on the screen carrying the other and judge whether it is recognizable before tapping",
+          "expected_result": "the second rendering is recognizable as the same job",
+          "confirms_if": "a user who learned one rendering would not recognize the other on its surface",
+          "overturns_if": "surface, scope or explicit wording makes the second rendering recognizable",
+          "observed_result": "from a candidate: both tapped live and open the same \"Find your friends\" page. Different surfaces (a quest row on Quests vs a promo card on Feed); both are worded buttons naming \"FRIEND(S)\" with near-synonym verbs (FIND / ADD), so a user who learned one would recognize the other. Justification: different surfaces, both explicit",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "cfg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f2": {
+      "kind": "icon",
+      "appearance": "colourful bird",
+      "state": "inactive",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        733,
+        2162,
+        862,
+        2291
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no convention: a colourful bird does not conventionally mean anything; recognized only from this product — my reading, confidence n/a",
+      "convention_confidence": "low",
+      "declared_function": "upgrade",
+      "accessibility_text": "content_desc: \"Upgrade\"; talkback_label: \"Upgrade\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens the Subscription tab (\"Subscription / Compare plans\": Super, Super Family, Lite, each with TRY FOR $0.00)",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the subscription tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Subscription tab (\"Subscription / Compare plans\": Super, Super Family, Lite, each with TRY FOR $0.00)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f3": {
+      "kind": "icon",
+      "appearance": "house",
+      "state": "inactive",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        46,
+        2164,
+        172,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a house is the established home convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "learn",
+      "accessibility_text": "content_desc: \"Learn Tab\"; talkback_label: \"Learn Tab\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens the learning path (home)",
+      "glyph_group": "gg8",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg8-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "returns to the learning path",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the learning path (home); scrolls the learning path back to the current lesson",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f4": {
+      "kind": "icon",
+      "appearance": "treasure chest seen from the front",
+      "state": "inactive",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        218,
+        2164,
+        344,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a treasure chest for quests/rewards is a game convention, not a first-time-user one — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "goals",
+      "accessibility_text": "content_desc: \"Goals Tab\"; talkback_label: \"Goals Tab\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens the Quests tab (\"Quests / Complete quests to earn rewards!\")",
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the Quests tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Quests tab (\"Quests / Complete quests to earn rewards!\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f5": {
+      "kind": "icon",
+      "appearance": "trophy cup",
+      "state": "inactive",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        390,
+        2164,
+        516,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a trophy cup reads as competition/leaderboard — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "leagues",
+      "accessibility_text": "content_desc: \"Leagues Tab\"; talkback_label: \"Leagues Tab\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens the Leagues tab (\"Finish 2 lessons to start competing on Leaderboards!\")",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens leagues",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Leagues tab (\"Finish 2 lessons to start competing on Leaderboards!\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f6": {
+      "kind": "icon",
+      "appearance": "heart in a speech bubble",
+      "state": "active (highlighted)",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        561,
+        2164,
+        687,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a heart in a speech bubble reads as social/likes; not a settled convention for a feed — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "news",
+      "accessibility_text": "content_desc: \"News Tab\"; talkback_label: \"News Tab\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens the Feed tab (title \"Feed\", friend streak slots, ADD FRIENDS card, posts)",
+      "glyph_group": "gg11",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg11-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the feed",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Feed tab (title \"Feed\", friend streak slots, ADD FRIENDS card, posts)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen17-f7": {
+      "kind": "icon",
+      "appearance": "speech bubble with three dots",
+      "state": "inactive",
+      "location": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "bounds": [
+        908,
+        2164,
+        1034,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a bubble with three dots reads as \"more\"/overflow; confidence medium (the bubble shape also suggests chat) — my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "bottom tab bar, on the Feed screen (title \"Feed\")",
+      "observed_function": "opens a bottom sheet with Profile and Video Call over the current tab; pressing it again closes the sheet",
+      "glyph_group": "gg12",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg12-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens a \"more\" menu from every tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a bottom sheet with Profile and Video Call over the current tab; pressing it again closes the sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg12": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 8,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

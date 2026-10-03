@@ -1,0 +1,130 @@
+{
+  "app": "Claude",
+  "screen": "screen13",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen13_actionable_elements.png",
+  "elements": {
+    "screen13-a1": {
+      "kind": "icon",
+      "glyph": "three horizontal lines of decreasing length",
+      "description": "three stacked lines control in the top-left corner of the toolbar",
+      "location": "top-left",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Open menu\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "three stacked horizontal lines (hamburger) is an established convention for opening the app's navigation menu — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but the hamburger glyph is a widely-known convention; common-icon exemption applies pending the behavioural test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same control as screen1-a1 (identical appearance, words and position in the same repeated state); tested once there and the verdict carried: tapping the hamburger opened the side navigation panel, exactly what the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen13-a2": {
+      "kind": "icon",
+      "glyph": "three vertical lines with knobs at different heights",
+      "description": "sliders glyph in the top-right of the Projects screen",
+      "location": "top-right",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Filter projects\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a sliders glyph is an established 'filter / adjust' convention — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "filter convention on a list screen; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen13-a2-tc1",
+          "type": "verification",
+          "precondition": "Projects screen",
+          "action": "tap the sliders glyph",
+          "expected_result": "a filter choice appears",
+          "confirms_if": "something other than a filter opens",
+          "overturns_if": "a filter menu opens",
+          "observed_result": "a small menu opened with 'Yours' (checked) and 'Archived'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened a list filter, matching the convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen13-a3": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "search box with placeholder 'Search projects'",
+      "location": "top",
+      "bounds": [
+        32,
+        253,
+        1048,
+        379
+      ],
+      "visible_text": "placeholder \"Search projects\" with a magnifier",
+      "accessibility_text_consulted": "content_desc \"Search projects; Search\"; talkback_label \"Search projects Search\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit placeholder naming both the action and the scope",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the placeholder names the action and scope; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen13-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black pill with a plus and the words 'New project'",
+      "location": "bottom-right",
+      "bounds": [
+        638,
+        2174,
+        1038,
+        2300
+      ],
+      "visible_text": "\"New project\" with a plus sign",
+      "accessibility_text_consulted": "content_desc \"New project\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit verb-object label",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words say what it does; not pressed because creating projects is out of bounds for this run; no test required",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 4,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s34",
+  "state_str": "cdf8edb335c965e0819393608431bb95",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_205158.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s34_header_nav.png",
+  "name": "Schedule a task",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Schedule a task",
+      "verdict_on_region": "large title; names the screen"
+    }
+  ],
+  "identifier_found": "\"Schedule a task\" title",
+  "identifier_class": "header",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title names the screen",
+  "test_cases": [
+    {
+      "id": "s34-tc1",
+      "type": "observation",
+      "precondition": "side menu",
+      "action": "tap \"Scheduled\"",
+      "expected_result": "title present or not",
+      "confirms_if": "no title on the live screen",
+      "overturns_if": "\"Schedule a task\" or another title is shown",
+      "observed_result": "the screen shows \"Schedule a task\" with \"ChatGPT can take care of ongoing tasks so you don't have to.\"; the menu entry is worded \"Scheduled\", the title \"Schedule a task\"",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title names the screen (the menu calls it \"Scheduled\").",
+  "recommendation": null,
+  "provisional": false
+}

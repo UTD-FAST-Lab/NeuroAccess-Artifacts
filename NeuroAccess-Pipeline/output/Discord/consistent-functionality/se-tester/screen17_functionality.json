@@ -1,0 +1,110 @@
+{
+  "app": "Discord",
+  "screen": "screen17",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen17_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen17_function_groups.png"
+  },
+  "elements": {
+    "screen17-f1": {
+      "kind": "button",
+      "appearance": "the words \"Turn on Notifications\"",
+      "state": null,
+      "location": "bottom centre of the screen",
+      "bounds": [
+        63,
+        2054,
+        1017,
+        2159
+      ],
+      "visible_label": "Turn on Notifications",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Turn on Notifications (from label; status declared)",
+      "accessibility_text": "content_desc: \"Turn on Notifications\"; talkback_label: \"Turn on Notifications\"",
+      "context_reading": "bottom sheet titled \"Keep up with Accessibility Testin's server\" drawn over the server view; carries its own visible words \"Turn on Notifications\"",
+      "observed_function": null,
+      "glyph_group": "gg19",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg19-tc-screen17-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen17 captured (screens 3-5 and 15-17 are recaptures of the same sheet); context noted before the tap",
+          "action": "tap screen17-f1 (the words \"Turn on Notifications\") at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg19 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg19, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Keep up with Accessibility Testin's server\" sheet no longer appears on entering the server (one-time prompt already answered; notification permission is denied/user-set on the device)",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "fg2-tc-screen17-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen17 captured",
+          "action": "exercise screen17-f1 (\"the words \"Turn on Notifications\"\") and compare its result with the other renderings in fg2",
+          "expected_result": "both wordings ask to enable notifications",
+          "confirms_if": "same job, and \"Enable\" would not be recognised as the \"Turn on\" job",
+          "overturns_if": "different scopes/objects, or the plain synonym wording is recognisable",
+          "observed_result": "not reachable: the \"Keep up with Accessibility Testin's server\" sheet no longer appears on entering the server (one-time prompt already answered; notification permission is denied/user-set on the device)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen17-f2": {
+      "kind": "button",
+      "appearance": "the words \"Not Now\"",
+      "state": null,
+      "location": "bottom centre of the screen",
+      "bounds": [
+        63,
+        2180,
+        1017,
+        2285
+      ],
+      "visible_label": "Not Now",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Not Now (from label; status declared)",
+      "accessibility_text": "content_desc: \"Not Now\"; talkback_label: \"Not Now\"",
+      "context_reading": "bottom sheet titled \"Keep up with Accessibility Testin's server\" drawn over the server view; carries its own visible words \"Not Now\"",
+      "observed_function": null,
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-tc-screen17-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen17 captured (screens 3-5 and 15-17 are recaptures of the same sheet); context noted before the tap",
+          "action": "tap screen17-f2 (the words \"Not Now\") at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg20 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg20, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Keep up with Accessibility Testin's server\" sheet no longer appears on entering the server (one-time prompt already answered; notification permission is denied/user-set on the device)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 3,
+    "provisional_verdicts": 2
+  }
+}

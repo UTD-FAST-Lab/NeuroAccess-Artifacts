@@ -1,0 +1,49 @@
+{
+  "app": "Discord",
+  "screen": "s43",
+  "state_str": "809af05425fdedbad874df597ae98d71",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_220037.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s43_header_nav.png",
+  "name": "#general with the GIF picker expanded on Trending",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "general",
+      "verdict_on_region": "names the channel the user is in ('# general' in the top bar, with the '#' channel sign) — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Trending",
+      "verdict_on_region": "names the GIF category open inside the picker, beside a back chevron; locates within the picker, while '# general' stays visible dimmed above — counted as a sub-location"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "Emoji / GIFs / Stickers tab row of the expression picker; the current tab is drawn with a grey fill (declared: 'GIFs') and the fill followed each tab tapped live — locates within the picker only, counted as a sub-location"
+    }
+  ],
+  "identifier_found": "\"general\"; \"Trending\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "top bar '# general' names the channel and stays visible (dimmed where a sheet covers the lower screen); picker/sheet headings name the panel",
+  "test_cases": [
+    {
+      "id": "s43-tc1",
+      "type": "verification",
+      "precondition": "#general with the picker open on GIFs",
+      "action": "drag the picker to full height, scroll the GIF grid two screens, then scroll back",
+      "expected_result": "'# general' stays visible above the sheet and the GIFs tab stays highlighted",
+      "confirms_if": "the channel name is covered with no other place name, and does not return",
+      "overturns_if": "channel name stays visible or returns",
+      "observed_result": "'# general' stayed visible, dimmed, above the full-height sheet throughout; the Emoji / GIFs / Stickers row stayed pinned with GIFs filled while the grid scrolled; nothing was lost",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: '# general' stayed visible, dimmed, above the full-height sheet throughout; the Emoji / GIFs / Stickers row stayed pinned with GIFs filled while the grid scrolled; nothing was lost",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s8",
+  "state_str": "2421631281f86822d1605ffafd6b444c",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185400.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s8_header_nav.png",
+  "name": "the Learn path (home)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SECTION 1, UNIT 1 / Order at a café",
+      "verdict_on_region": "content: names the course unit being studied, not a part of the app"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "the house tab drawn inside a light-blue rounded box in the bottom bar; above the path the unit banner 'SECTION 1, UNIT 1 / Order at a café'",
+  "identifier_class": "navigation bar (active state)",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the bottom tab bar visibly highlights the house (Learn) tab; the unit banner names the course unit rather than the section, so the highlight carries the location",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the highlight moved with every tab tapped and stayed pinned with the banner while the path scrolled — a working active state, pixel-rendered though never declared selected:true; template carry from s5's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

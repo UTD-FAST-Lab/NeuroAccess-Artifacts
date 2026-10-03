@@ -1,0 +1,41 @@
+{
+  "app": "Duolingo",
+  "screen": "s37",
+  "state_str": "ce207a7ce40a7691460ae47d562d5929",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190050.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s37_header_nav.png",
+  "name": "the Streak page (Personal tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Streak",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Streak Calendar",
+      "verdict_on_region": "sub-section heading inside the Streak page; names part of the page, not the screen — not counted"
+    },
+    {
+      "kind": "header",
+      "text": "Streak Society",
+      "verdict_on_region": "sub-section heading inside the Streak page; names part of the page, not the screen — not counted"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "worded tab row; the current tab (\"PERSONAL\") is declared selected and drawn with a coloured label and underline — locates the user within the screen"
+    }
+  ],
+  "identifier_found": "'Streak' centred in the top bar with an X; PERSONAL/FRIENDS tabs with PERSONAL in blue and underlined",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a header naming the section and a worded tab row with a visible selected tab",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Streak Calendar' and 'Streak Society' are sub-section headings and not counted; the pinned 'Streak' title and the moving underline carry the location; template carry from s6's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,265 @@
+{
+  "app": "Claude",
+  "screen": "screen6",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen6_actionable_elements.png",
+  "elements": {
+    "screen6-a1": {
+      "kind": "icon",
+      "glyph": "short horizontal grey bar",
+      "description": "short grey bar at the top edge of the bottom sheet",
+      "location": "top-centre of the sheet",
+      "bounds": [
+        477,
+        1190,
+        604,
+        1313
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Drag handle\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "a short grey bar at the top of a bottom sheet is the platform drag-handle convention (grab to resize or pull down) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "drag-handle convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen6-a1-tc1",
+          "type": "verification",
+          "precondition": "'Add to chat' sheet open at half height",
+          "action": "tap the grey bar",
+          "expected_result": "the sheet changes size (handle behaviour)",
+          "confirms_if": "it does something unrelated to moving/resizing the sheet",
+          "overturns_if": "the sheet resizes",
+          "observed_result": "the sheet expanded to full height, showing all its rows; it behaves as a handle",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the handle resized the sheet, matching the drag-handle convention",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a2": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "X glyph at the top-left of the bottom sheet",
+      "location": "top-left of the sheet",
+      "bounds": [
+        37,
+        1281,
+        163,
+        1407
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Close\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "an X is an established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen6-a2-tc1",
+          "type": "verification",
+          "precondition": "sheet open",
+          "action": "tap the X",
+          "expected_result": "the sheet closes",
+          "confirms_if": "it does anything other than close",
+          "overturns_if": "the sheet closes",
+          "observed_result": "the sheet closed and the screen beneath returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the sheet",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Camera' tile with a glyph in a grey circle in the 'Add to chat' sheet",
+      "location": "sheet, first row",
+      "bounds": [
+        32,
+        1447,
+        356,
+        1720
+      ],
+      "visible_text": "\"Camera\" under the sheet title \"Add to chat\"",
+      "accessibility_text_consulted": "talkback_label \"Camera\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain word under the heading 'Add to chat': add something from the camera",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "word plus sheet heading say what it adds; not pressed because it would attach content or request a permission; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Photos' tile with a glyph in a grey circle in the 'Add to chat' sheet",
+      "location": "sheet, first row",
+      "bounds": [
+        377,
+        1447,
+        702,
+        1720
+      ],
+      "visible_text": "\"Photos\" under the sheet title \"Add to chat\"",
+      "accessibility_text_consulted": "talkback_label \"Photos\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain word under the heading 'Add to chat': add something from the photos",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "word plus sheet heading say what it adds; not pressed because it would attach content or request a permission; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Files' tile with a glyph in a grey circle in the 'Add to chat' sheet",
+      "location": "sheet, first row",
+      "bounds": [
+        723,
+        1447,
+        1048,
+        1720
+      ],
+      "visible_text": "\"Files\" under the sheet title \"Add to chat\"",
+      "accessibility_text_consulted": "talkback_label \"Files\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain word under the heading 'Add to chat': add something from the files",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "word plus sheet heading say what it adds; not pressed because it would attach content or request a permission; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Add to project' row with value 'None' and a chevron",
+      "location": "sheet, second row",
+      "bounds": [
+        32,
+        1752,
+        1048,
+        1918
+      ],
+      "visible_text": "\"Add to project\" / \"None\"",
+      "accessibility_text_consulted": "talkback_label \"Add to project None\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit action with current value",
+      "test_cases": [
+        {
+          "id": "screen6-a6-tc1",
+          "type": "expected",
+          "precondition": "'Add to chat' sheet open",
+          "action": "tap the row",
+          "expected_result": "a project picker opens",
+          "confirms_if": "something unrelated opens",
+          "overturns_if": "a project picker opens",
+          "observed_result": "an 'Add to project' page opened with 'Search projects' and an empty-state explanation of projects; backed out without creating anything",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened the project picker it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a7": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "'Web search' row with a switch",
+      "location": "sheet",
+      "bounds": [
+        32,
+        1950,
+        1048,
+        2097
+      ],
+      "visible_text": "\"Web search\" with an on/off switch",
+      "accessibility_text_consulted": "talkback_label \"Web search\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "switch labelled with the feature it turns on or off",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "label plus switch say what it controls; not toggled (settings change); no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'Connectors' row with a paperclip-like glyph and a chevron",
+      "location": "sheet / settings list",
+      "bounds": [
+        32,
+        2102,
+        1048,
+        2249
+      ],
+      "visible_text": "\"Connectors\"",
+      "accessibility_text_consulted": "talkback_label \"Connectors\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Connectors' is jargon; nothing says what gets connected to what",
+      "test_cases": [
+        {
+          "id": "screen6-a8-tc1",
+          "type": "expected",
+          "precondition": "'Add to chat' sheet open",
+          "action": "tap 'Connectors'",
+          "expected_result": "if the word conveyed the purpose, the page would hold no surprise",
+          "confirms_if": "the meaning is given only after opening",
+          "overturns_if": "the row itself explains what a connector is",
+          "observed_result": "a 'Connectors' page opened; only there does it say 'Connectors let Claude use your apps and tools.'",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the explanation of the term exists only on the page the row opens; the row gives the bare jargon word",
+      "recommendation": "add a caption to the row, e.g. 'Connectors — let Claude use your other apps and tools'",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 4,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 8,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

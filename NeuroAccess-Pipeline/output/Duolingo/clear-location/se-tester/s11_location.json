@@ -1,0 +1,49 @@
+{
+  "app": "Duolingo",
+  "screen": "s11",
+  "state_str": "e4889575db135b2b02b23ffcaaabbb21",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185423.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s11_header_nav.png",
+  "name": "the Shop",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Shop",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Special Offers",
+      "verdict_on_region": "sub-section heading of the Shop list; names a group of items, not the screen — not counted"
+    },
+    {
+      "kind": "header",
+      "text": "Streak",
+      "verdict_on_region": "sub-section heading of the Shop list (streak items for sale); names a group of items, not the screen, and shares its word with the Streak screen — not counted"
+    }
+  ],
+  "identifier_found": "'Shop' centred in the top bar (light grey) with an X and the gem count",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a header naming the section; the bold headings below name groups of items",
+  "test_cases": [
+    {
+      "id": "s11-tc1",
+      "type": "scroll_persistence",
+      "precondition": "Shop open from the gem counter on Learn",
+      "action": "scroll down through Special Offers, Streak and Gems, twice the captured distance, and back",
+      "expected_result": "the 'Shop' title stays or returns",
+      "confirms_if": "'Shop' scrolls away and does not return",
+      "overturns_if": "it stays pinned",
+      "observed_result": "'Shop' stayed pinned in the top bar at every scroll position while 'Special Offers', 'Streak' and 'Gems' scrolled under it",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Special Offers', 'Streak', 'Energy', 'Promo Code' are list headings, not counted; 'Streak' as a shop heading shares its word with the Streak screen. The title itself is drawn in light grey, weaker than the bold section headings under it",
+  "recommendation": null,
+  "provisional": false
+}

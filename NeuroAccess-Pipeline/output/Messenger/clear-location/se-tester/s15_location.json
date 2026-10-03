@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s15",
+  "state_str": "9fe9638b63a3dadf0201433fc8f0b6ea",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151620.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s15_header_nav.png",
+  "name": "subscription feature-tour sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Facebook Plus",
+      "verdict_on_region": "kicker naming the plan whose feature tour this sheet is; it stays on every card — accepted as naming the place (that plan's feature tour)"
+    },
+    {
+      "kind": "header",
+      "text": "Extend your story's expiration",
+      "verdict_on_region": "title of one feature card in a swipeable carousel — names a piece of content, changes on every swipe; dismissed"
+    }
+  ],
+  "identifier_found": "kicker \"Facebook Plus\" above the feature card, naming the plan whose tour this is",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s9 (same layout; content does not change the answer): sheet shows kicker \"Instagram Plus\" over \"Get story rewatch insights\"; next card keeps the kicker and changes the title to \"Search your story viewer list\". Kicker accepted, card titles dismissed as content",
+  "recommendation": null,
+  "provisional": false
+}

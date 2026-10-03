@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s50",
+  "state_str": "0f5c1cd1f6a86ad05e39b50b03d3c1aa",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_135128.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s50_header_nav.png",
+  "name": "the Turn off sensitive topics sheet over Capabilities",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Capabilities",
+      "verdict_on_region": "title of the page underneath, dimmed"
+    },
+    {
+      "kind": "header",
+      "text": "Turn off sensitive topics",
+      "verdict_on_region": "unconventional (sheet title): names the sheet \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Turn off sensitive topics\" sheet title",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself",
+  "test_cases": [
+    {
+      "id": "s50-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Capabilities, sensitive topics on",
+      "action": "tap the Include sensitive topics row, read the sheet, tap Cancel",
+      "expected_result": "the title names the sheet",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the sheet is untitled",
+      "observed_result": "\"Turn off sensitive topics\" heads the sheet; Cancel returned with the setting unchanged",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the sheet opened titled \"Turn off sensitive topics\"; Cancel closed it and the setting stayed on (tested separately from s49 because the title is the part that differs)",
+  "recommendation": null,
+  "provisional": false
+}

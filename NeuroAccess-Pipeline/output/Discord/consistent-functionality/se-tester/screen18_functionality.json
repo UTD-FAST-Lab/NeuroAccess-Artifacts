@@ -1,0 +1,394 @@
+{
+  "app": "Discord",
+  "screen": "screen18",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen18_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen18_function_groups.png"
+  },
+  "elements": {
+    "screen18-f1": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        71,
+        116,
+        134,
+        179
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close/dismiss the thing it sits on - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Close (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Close\"; talkback_label: \"Close\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; top-left corner of the modal, above the heading \"Create Your Server\"",
+      "observed_function": "closes the \"Create Your Server\" modal and returns to the screen beneath",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc-screen18-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f1 (X) at its captured position and record what happens",
+          "expected_result": "closes or dismisses the thing it sits on",
+          "confirms_if": "it does something unrelated to what the other members of gg7 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg7, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "closes the \"Create Your Server\" modal and returns to the screen beneath",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg10-tc-screen18-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen18 captured",
+          "action": "exercise screen18-f1 (\"X\") and compare its result with the other renderings in cfg10",
+          "expected_result": "hypothesis: each X closes the panel it sits on",
+          "confirms_if": "all close their own panel",
+          "overturns_if": "any does something else",
+          "observed_result": "closes the \"Create Your Server\" modal and returns to the screen beneath",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen18-f2": {
+      "kind": "icon+label",
+      "appearance": "small pixel-art figure beside the words \"Create My Own\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        511,
+        1049,
+        658
+      ],
+      "visible_label": "Create My Own",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Create My Own (from label; status declared)",
+      "accessibility_text": "content_desc: \"Create My Own\"; talkback_label: \"Create My Own\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Create My Own\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg45",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg45-tc-screen18-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f2 (small pixel-art figure beside the words \"Create My Own\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg45 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg45, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg45": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f3": {
+      "kind": "icon+label",
+      "appearance": "game controller beside the word \"Gaming\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        795,
+        1049,
+        942
+      ],
+      "visible_label": "Gaming",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Gaming (from label; status declared)",
+      "accessibility_text": "content_desc: \"Gaming\"; talkback_label: \"Gaming\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Gaming\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg46",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg46-tc-screen18-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f3 (game controller beside the word \"Gaming\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg46 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg46, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg46": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f4": {
+      "kind": "icon+label",
+      "appearance": "blue book beside the words \"School Club\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        942,
+        1049,
+        1089
+      ],
+      "visible_label": "School Club",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "School Club (from label; status declared)",
+      "accessibility_text": "content_desc: \"School Club\"; talkback_label: \"School Club\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"School Club\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg47",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg47-tc-screen18-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f4 (blue book beside the words \"School Club\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg47 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg47, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg47": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f5": {
+      "kind": "icon+label",
+      "appearance": "pink round fruit beside the words \"Study Group\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        1089,
+        1049,
+        1236
+      ],
+      "visible_label": "Study Group",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Study Group (from label; status declared)",
+      "accessibility_text": "content_desc: \"Study Group\"; talkback_label: \"Study Group\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Study Group\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg48",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg48-tc-screen18-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f5 (pink round fruit beside the words \"Study Group\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg48 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg48, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg48": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f6": {
+      "kind": "icon+label",
+      "appearance": "pink heart beside the word \"Friends\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        1236,
+        1049,
+        1383
+      ],
+      "visible_label": "Friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Friends (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Friends\"; talkback_label: \"Friends\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Friends\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg49",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg49-tc-screen18-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f6 (pink heart beside the word \"Friends\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg49 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg49, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg8-tc-screen18-f6",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen18 captured",
+          "action": "exercise screen18-f6 (\"pink heart beside the word \"Friends\"\") and compare its result with the other renderings in cfg8",
+          "expected_result": "hypothesis: both \"Friends\" rows open your friends",
+          "confirms_if": "both open the friends list",
+          "overturns_if": "the template row does something else",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg49": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f7": {
+      "kind": "icon+label",
+      "appearance": "painter's palette beside the words \"Artists & Creators\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        1383,
+        1049,
+        1530
+      ],
+      "visible_label": "Artists & Creators",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Artists & Creators (from label; status declared)",
+      "accessibility_text": "content_desc: \"Artists & Creators\"; talkback_label: \"Artists & Creators\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Artists & Creators\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg50",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg50-tc-screen18-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f7 (painter's palette beside the words \"Artists & Creators\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg50 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg50, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg50": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f8": {
+      "kind": "icon+label",
+      "appearance": "green leaf beside the words \"Local Community\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        32,
+        1530,
+        1049,
+        1677
+      ],
+      "visible_label": "Local Community",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Local Community (from label; status declared)",
+      "accessibility_text": "content_desc: \"Local Community\"; talkback_label: \"Local Community\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Local Community\"",
+      "observed_function": "advances server creation to \"Tell Us More About Your Server\"",
+      "glyph_group": "gg51",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg51-tc-screen18-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f8 (green leaf beside the words \"Local Community\") at its captured position and record what happens",
+          "expected_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "confirms_if": "it does something unrelated to what the other members of gg51 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg51, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "advances server creation to \"Tell Us More About Your Server\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg51": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f9": {
+      "kind": "button",
+      "appearance": "the words \"Join a Server\"",
+      "state": null,
+      "location": "bottom centre of the screen",
+      "bounds": [
+        42,
+        2190,
+        1038,
+        2295
+      ],
+      "visible_label": "Join a Server",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Join a Server (from label; status declared)",
+      "accessibility_text": "content_desc: \"Join a Server\"; talkback_label: \"Join a Server\"",
+      "context_reading": "full-screen modal titled \"Create Your Server\"; carries its own visible words \"Join a Server\"",
+      "observed_function": "opens \"Join an existing server\" (invite-link field)",
+      "glyph_group": "gg52",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg52-tc-screen18-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen18 captured (screens 6 and 18 are recaptures of the same modal); context noted before the tap",
+          "action": "tap screen18-f9 (the words \"Join a Server\") at its captured position and record what happens",
+          "expected_result": "opens \"Join an existing server\" (invite-link field)",
+          "confirms_if": "it does something unrelated to what the other members of gg52 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg52, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens \"Join an existing server\" (invite-link field)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg52": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 11,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 1
+  }
+}

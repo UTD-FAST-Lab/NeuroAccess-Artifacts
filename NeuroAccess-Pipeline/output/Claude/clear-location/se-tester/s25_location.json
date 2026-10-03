@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s25",
+  "state_str": "b2af924c8843bf2910f2ddfad871e4cb",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134207.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s25_header_nav.png",
+  "name": "Profile",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Profile",
+      "verdict_on_region": "title \u2014 names the screen"
+    },
+    {
+      "kind": "header",
+      "text": "Account Actions",
+      "verdict_on_region": "unconventional (bottom): a section heading over the Delete Account row \u2014 names a group of controls, not the screen; dismissed"
+    }
+  ],
+  "identifier_found": "\"Profile\" title with back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title",
+  "test_cases": [
+    {
+      "id": "s25-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Settings",
+      "action": "open Profile and read the lower heading",
+      "expected_result": "the heading names the screen or a group of controls",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title is absent",
+      "observed_result": "\"Account Actions\" labels the group holding \"Delete Account\"; the screen is named by the \"Profile\" title",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: title \"Profile\" with back arrow; \"Account Actions\" is a small section heading above \"Delete Account\"",
+  "recommendation": null,
+  "provisional": false
+}

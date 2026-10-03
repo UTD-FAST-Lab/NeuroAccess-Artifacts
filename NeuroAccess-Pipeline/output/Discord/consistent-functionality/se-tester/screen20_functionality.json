@@ -1,0 +1,803 @@
+{
+  "app": "Discord",
+  "screen": "screen20",
+  "images": {
+    "glyph_groups": "inputs/Discord/functionality-groups/screen20_glyph_groups.png",
+    "function_groups": "inputs/Discord/functionality-groups/screen20_function_groups.png"
+  },
+  "elements": {
+    "screen20-f1": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "top left of the screen",
+      "bounds": [
+        42,
+        74,
+        126,
+        158
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close/dismiss the thing it sits on - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": "Back (from talkback_label; status uncertain)",
+      "accessibility_text": "content_desc: \"Back\"; talkback_label: \"Back\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); top-left corner over the dark profile banner; no title beside it",
+      "observed_function": "closes the profile page and returns to the screen it was opened from",
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc-screen20-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f1 (X) at its captured position and record what happens",
+          "expected_result": "closes or dismisses the thing it sits on",
+          "confirms_if": "it does something unrelated to what the other members of gg7 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg7, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "closes the profile page and returns to the screen it was opened from",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-tc-screen20-f1",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f1 (\"X\") and compare its result with the other renderings in cfg4",
+          "expected_result": "hypothesis: the profile X and every left arrow return to the previous screen",
+          "confirms_if": "all return to the previous screen",
+          "overturns_if": "any member does something other than returning",
+          "observed_result": "closes the profile page and returns to the screen it was opened from",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f2": {
+      "kind": "icon",
+      "appearance": "round avatar of the mascot face with a status dot",
+      "state": "online",
+      "location": "middle left of the screen",
+      "bounds": [
+        42,
+        378,
+        252,
+        483
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "own avatar = account/profile - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); large avatar at the top of the profile page; the only visible cue is a small green status dot; nothing names status",
+      "observed_function": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible)",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc-screen20-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f2 (round avatar of the mascot face with a status dot) at its captured position and record what happens",
+          "expected_result": "opens the account/profile view",
+          "confirms_if": "it does something unrelated to what the other members of gg2 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg2, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible)",
+          "status": "executed",
+          "matched_expectation": false
+        },
+        {
+          "id": "fd-screen20-f2",
+          "type": "function_determination",
+          "precondition": "live app on the view this element was captured on",
+          "action": "tap screen20-f2 and record what it does, so it can be placed on the function axis",
+          "expected_result": "a determinable job",
+          "confirms_if": "n/a - placement test",
+          "overturns_if": "n/a - placement test",
+          "observed_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible)",
+          "status": "executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg2-tc-screen20-f2",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f2 (\"round avatar of the mascot face with a status dot\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible)",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f3": {
+      "kind": "icon+label",
+      "appearance": "plus sign in a circle beside the words \"What have you been playing?\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        312,
+        378,
+        883,
+        442
+      ],
+      "visible_label": "What have you been playing?",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Add custom status (from talkback_label; status declared)",
+      "accessibility_text": "content_desc: \"Add custom status\"; talkback_label: \"Add custom status\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"What have you been playing?\"",
+      "observed_function": "opens the editor \"Set your status\"",
+      "glyph_group": null,
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "fg3-tc-screen20-f3",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f3 (\"plus sign in a circle beside the words \"What have you been playing?\"\") and compare its result with the other renderings in fg3",
+          "expected_result": "every prompt bubble opens the status editor",
+          "confirms_if": "same job but the changing prompt makes the bubble unrecognisable",
+          "overturns_if": "different results, or the fixed bubble/plus shape keeps it recognisable",
+          "observed_result": "opens the editor \"Set your status\"",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f4": {
+      "kind": "icon+label",
+      "appearance": "the name \"Accessibility Testing\" with a downward chevron",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        531,
+        1038,
+        610
+      ],
+      "visible_label": "Accessibility Testing",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Accessibility Testing (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Accessibility Testing\"; talkback_label: \"Accessibility Testing\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); the profile name itself, directly under the avatar; nothing beside it names status",
+      "observed_function": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible, \"Set a custom status\")",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-tc-screen20-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f4 (the name \"Accessibility Testing\" with a downward chevron) at its captured position and record what happens",
+          "expected_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible, \"Set a custom status\")",
+          "confirms_if": "it does something unrelated to what the other members of gg22 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg22, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible, \"Set a custom status\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc-screen20-f4",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f4 (\"the name \"Accessibility Testing\" with a downward chevron\") and compare its result with the other renderings in cfg2",
+          "expected_result": "hypothesis: every avatar and name opens the same account view",
+          "confirms_if": "all open the same view",
+          "overturns_if": "any member opens something else",
+          "observed_result": "opens the sheet \"Change Online Status\" (Online / Idle / Do Not Disturb / Invisible, \"Set a custom status\")",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f5": {
+      "kind": "icon+label",
+      "appearance": "pencil beside the words \"Edit Profile\"",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        737,
+        1038,
+        842
+      ],
+      "visible_label": "Edit Profile",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Edit Profile (from label; status declared)",
+      "accessibility_text": "content_desc: \"Edit Profile\"; talkback_label: \"Edit Profile\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Edit Profile\"",
+      "observed_function": "opens the profile editor titled \"Profile\"",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-tc-screen20-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f5 (pencil beside the words \"Edit Profile\") at its captured position and record what happens",
+          "expected_result": "opens the profile editor titled \"Profile\"",
+          "confirms_if": "it does something unrelated to what the other members of gg23 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg23, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the profile editor titled \"Profile\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f6": {
+      "kind": "button",
+      "appearance": "the word \"Main\"",
+      "state": "selected",
+      "location": "middle left of the screen",
+      "bounds": [
+        84,
+        904,
+        485,
+        989
+      ],
+      "visible_label": "Main",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Main (from label; status declared)",
+      "accessibility_text": "content_desc: \"Main\"; talkback_label: \"Main\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Main\"",
+      "observed_function": "selects the Main tab of the profile",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-tc-screen20-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f6 (the word \"Main\") at its captured position and record what happens",
+          "expected_result": "selects the Main tab of the profile",
+          "confirms_if": "it does something unrelated to what the other members of gg24 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg24, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Main tab of the profile",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f7": {
+      "kind": "button",
+      "appearance": "the word \"Wishlist\"",
+      "state": "unselected",
+      "location": "middle right of the screen",
+      "bounds": [
+        548,
+        904,
+        996,
+        989
+      ],
+      "visible_label": "Wishlist",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Wishlist (from label; status declared)",
+      "accessibility_text": "content_desc: \"Wishlist\"; talkback_label: \"Wishlist\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Wishlist\"",
+      "observed_function": "selects the Wishlist tab (\"No hearts yet\")",
+      "glyph_group": "gg25",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg25-tc-screen20-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f7 (the word \"Wishlist\") at its captured position and record what happens",
+          "expected_result": "selects the Wishlist tab (\"No hearts yet\")",
+          "confirms_if": "it does something unrelated to what the other members of gg25 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg25, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "selects the Wishlist tab (\"No hearts yet\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f8": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "middle right of the screen",
+      "bounds": [
+        954,
+        1080,
+        1001,
+        1128
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close/dismiss the thing it sits on - established convention - my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); top-right corner of the promo card \"Amp up your profile\"",
+      "observed_function": null,
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-tc-screen20-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f8 (X) at its captured position and record what happens",
+          "expected_result": "closes or dismisses the thing it sits on",
+          "confirms_if": "it does something unrelated to what the other members of gg7 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg7, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session)",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "fd-screen20-f8",
+          "type": "function_determination",
+          "precondition": "live app on the view this element was captured on",
+          "action": "tap screen20-f8 and record what it does, so it can be placed on the function axis",
+          "expected_result": "a determinable job",
+          "confirms_if": "n/a - placement test",
+          "overturns_if": "n/a - placement test",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session)",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "rc-screen20-f8",
+          "type": "render_check",
+          "precondition": "reach the live profile page and let it settle",
+          "action": "look at the slot where screen20-f8 was drawn and compare it with the sibling captures",
+          "expected_result": "the promo card and its control drawn in full, matching screens 7, 8 and 19",
+          "confirms_if": "it draws differently from the siblings once loaded (real difference)",
+          "overturns_if": "it draws like the siblings once loaded (capture artifact)",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session); the slot cannot be compared, so the cause stays unresolved",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg9-tc-screen20-f8",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f8 (\"X\") and compare its result with the other renderings in cfg9",
+          "expected_result": "hypothesis: every X dismisses the card/banner it sits on",
+          "confirms_if": "all dismiss their own card",
+          "overturns_if": "any does something else",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f9": {
+      "kind": "icon+label",
+      "appearance": "circle-with-swoosh glyph beside the words \"Get Nitro\"",
+      "state": null,
+      "location": "middle left of the screen",
+      "bounds": [
+        79,
+        1160,
+        527,
+        1265
+      ],
+      "visible_label": "Get Nitro",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Get Nitro (from label; status declared)",
+      "accessibility_text": "nothing declared",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Get Nitro\"",
+      "observed_function": null,
+      "glyph_group": "gg26",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg26-tc-screen20-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f9 (circle-with-swoosh glyph beside the words \"Get Nitro\") at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg26 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg26, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session)",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "rc-screen20-f9",
+          "type": "render_check",
+          "precondition": "reach the live profile page and let it settle",
+          "action": "look at the slot where screen20-f9 was drawn and compare it with the sibling captures",
+          "expected_result": "the promo card and its control drawn in full, matching screens 7, 8 and 19",
+          "confirms_if": "it draws differently from the siblings once loaded (real difference)",
+          "overturns_if": "it draws like the siblings once loaded (capture artifact)",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session); the slot cannot be compared, so the cause stays unresolved",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg26": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f10": {
+      "kind": "icon+label",
+      "appearance": "storefront with the word \"Shop\"",
+      "state": null,
+      "location": "middle right of the screen",
+      "bounds": [
+        553,
+        1160,
+        1001,
+        1265
+      ],
+      "visible_label": "Shop",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Shop (from label; status declared)",
+      "accessibility_text": "nothing declared",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Shop\"",
+      "observed_function": null,
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-tc-screen20-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f10 (storefront with the word \"Shop\") at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg18 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg18, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session)",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "rc-screen20-f10",
+          "type": "render_check",
+          "precondition": "reach the live profile page and let it settle",
+          "action": "look at the slot where screen20-f10 was drawn and compare it with the sibling captures",
+          "expected_result": "the promo card and its control drawn in full, matching screens 7, 8 and 19",
+          "confirms_if": "it draws differently from the siblings once loaded (real difference)",
+          "overturns_if": "it draws like the siblings once loaded (capture artifact)",
+          "observed_result": "not reachable: the \"Amp up your profile\" promo card is no longer drawn on the live profile page (dismissed in an earlier session); the slot cannot be compared, so the cause stays unresolved",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f11": {
+      "kind": "icon+label",
+      "appearance": "the words \"Orbs Balance\" with a row of dots",
+      "state": "loading",
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        1354,
+        1038,
+        1495
+      ],
+      "visible_label": "Orbs Balance",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Orbs Balance (from label; status declared)",
+      "accessibility_text": "content_desc: \"Orbs balance: Loading, busy\"; talkback_label: \"Orbs balance: Loading, busy\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Orbs Balance\"",
+      "observed_function": "opens an Orbs sheet (balance 0, \"Redeem Orbs in Shop\", \"Earn Orbs\")",
+      "glyph_group": "gg27",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg27-tc-screen20-f11",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f11 (the words \"Orbs Balance\" with a row of dots) at its captured position and record what happens",
+          "expected_result": "opens an Orbs sheet (balance 0, \"Redeem Orbs in Shop\", \"Earn Orbs\")",
+          "confirms_if": "it does something unrelated to what the other members of gg27 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg27, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens an Orbs sheet (balance 0, \"Redeem Orbs in Shop\", \"Earn Orbs\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f12": {
+      "kind": "icon+label",
+      "appearance": "the word \"Friends\" with a right chevron",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        1744,
+        1038,
+        1882
+      ],
+      "visible_label": "Friends",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Friends (from label; status uncertain)",
+      "accessibility_text": "content_desc: \"Friends\"; talkback_label: \"Friends\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Friends\"",
+      "observed_function": "opens the Friends list screen (\"Wumpus is waiting on friends...\")",
+      "glyph_group": "gg28",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg28-tc-screen20-f12",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f12 (the word \"Friends\" with a right chevron) at its captured position and record what happens",
+          "expected_result": "opens the Friends list screen (\"Wumpus is waiting on friends...\")",
+          "confirms_if": "it does something unrelated to what the other members of gg28 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg28, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Friends list screen (\"Wumpus is waiting on friends...\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg8-tc-screen20-f12",
+          "type": "mixed_appearance",
+          "precondition": "live app on the view screen20 captured",
+          "action": "exercise screen20-f12 (\"the word \"Friends\" with a right chevron\") and compare its result with the other renderings in cfg8",
+          "expected_result": "hypothesis: both \"Friends\" rows open your friends",
+          "confirms_if": "both open the friends list",
+          "overturns_if": "the template row does something else",
+          "observed_result": "opens the Friends list screen (\"Wumpus is waiting on friends...\")",
+          "status": "executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f13": {
+      "kind": "icon+label",
+      "appearance": "the words \"Note (only visible to you)\" with a notepad glyph",
+      "state": null,
+      "location": "middle centre of the screen",
+      "bounds": [
+        42,
+        1923,
+        1038,
+        1971
+      ],
+      "visible_label": "Note (only visible to you)",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Note (only visible to you) (from label; status declared)",
+      "accessibility_text": "content_desc: \"Note (only visible to you)\"; talkback_label: \"Note (only visible to you)\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Note (only visible to you)\"",
+      "observed_function": "opens \"Edit Note\" with a text field",
+      "glyph_group": "gg29",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg29-tc-screen20-f13",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f13 (the words \"Note (only visible to you)\" with a notepad glyph) at its captured position and record what happens",
+          "expected_result": "opens \"Edit Note\" with a text field",
+          "confirms_if": "it does something unrelated to what the other members of gg29 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg29, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens \"Edit Note\" with a text field",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f14": {
+      "kind": "icon+label",
+      "appearance": "game controller in a laurel with the word \"Quests\"",
+      "state": "badged",
+      "location": "bottom left of the screen",
+      "bounds": [
+        251,
+        2167,
+        370,
+        2304
+      ],
+      "visible_label": "Quests",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Quests (from label; status declared)",
+      "accessibility_text": "content_desc: \"Quests, new\"; talkback_label: \"Quests, new\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Quests\"",
+      "observed_function": "opens the Quests page",
+      "glyph_group": "gg30",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg30-tc-screen20-f14",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f14 (game controller in a laurel with the word \"Quests\") at its captured position and record what happens",
+          "expected_result": "opens the Quests page",
+          "confirms_if": "it does something unrelated to what the other members of gg30 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg30, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Quests page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg30": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f15": {
+      "kind": "icon+label",
+      "appearance": "storefront with the word \"Shop\"",
+      "state": "badged",
+      "location": "bottom centre of the screen",
+      "bounds": [
+        433,
+        2167,
+        526,
+        2304
+      ],
+      "visible_label": "Shop",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Shop (from label; status declared)",
+      "accessibility_text": "content_desc: \"Shop, new\"; talkback_label: \"Shop, new\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Shop\"",
+      "observed_function": "opens the Shop page",
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-tc-screen20-f15",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f15 (storefront with the word \"Shop\") at its captured position and record what happens",
+          "expected_result": "performs the declared job",
+          "confirms_if": "it does something unrelated to what the other members of gg18 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg18, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Shop page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen20-f16": {
+      "kind": "icon+label",
+      "appearance": "circle-with-swoosh glyph with the word \"Nitro\"",
+      "state": null,
+      "location": "bottom centre of the screen",
+      "bounds": [
+        589,
+        2167,
+        683,
+        2304
+      ],
+      "visible_label": "Nitro",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Nitro (from label; status declared)",
+      "accessibility_text": "content_desc: \"Nitro\"; talkback_label: \"Nitro\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Nitro\"",
+      "observed_function": "opens the Nitro plans page (\"Unleash more fun on Discord\")",
+      "glyph_group": "gg31",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg31-tc-screen20-f16",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f16 (circle-with-swoosh glyph with the word \"Nitro\") at its captured position and record what happens",
+          "expected_result": "opens the Nitro plans page (\"Unleash more fun on Discord\")",
+          "confirms_if": "it does something unrelated to what the other members of gg31 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg31, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Nitro plans page (\"Unleash more fun on Discord\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg31": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen20-f17": {
+      "kind": "icon+label",
+      "appearance": "gear with the word \"Settings\"",
+      "state": null,
+      "location": "bottom right of the screen",
+      "bounds": [
+        746,
+        2167,
+        883,
+        2304
+      ],
+      "visible_label": "Settings",
+      "convention_relied_on": "worded control - the visible words carry the job; no glyph convention relied on - my reading",
+      "convention_confidence": "n/a",
+      "declared_function": "Settings (from label; status declared)",
+      "accessibility_text": "content_desc: \"Settings\"; talkback_label: \"Settings\"",
+      "context_reading": "own profile page (name \"Accessibility Testing\", \"Edit Profile\" button, tab row \"Main\"/\"Wishlist\", bottom bar \"Quests/Shop/Nitro/Settings\"); carries its own visible words \"Settings\"",
+      "observed_function": "opens the Settings page",
+      "glyph_group": "gg32",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg32-tc-screen20-f17",
+          "type": "same_appearance",
+          "precondition": "app open on the live view that screen20 captured (screens 7, 8, 19 and 20 are recaptures of the same profile page); context noted before the tap",
+          "action": "tap screen20-f17 (gear with the word \"Settings\") at its captured position and record what happens",
+          "expected_result": "opens the Settings page",
+          "confirms_if": "it does something unrelated to what the other members of gg32 do in the same visual state, and nothing visible beside it says so before the tap",
+          "overturns_if": "it does the same job as the other members of gg32, or the difference is a state toggle, a screen-scoped variant, or named by visible context on all four criteria",
+          "observed_result": "opens the Settings page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg32": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 17,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 19,
+    "test_cases_not_executed": 8,
+    "provisional_verdicts": 5
+  }
+}

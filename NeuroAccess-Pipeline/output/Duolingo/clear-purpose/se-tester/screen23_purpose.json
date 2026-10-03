@@ -1,0 +1,300 @@
+{
+  "app": "Duolingo",
+  "screen": "screen23",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen23_actionable_elements.png",
+  "elements": {
+    "screen23-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        21,
+        126,
+        105,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc/talkback \"Close Page\" — read only to know what to test; not used in the verdict",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen23-a1-tc1",
+          "type": "verification",
+          "precondition": "course picker 'What would you like to learn?'",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the course picker closed and the home path returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "section header with an upward chevron at its right end",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        577,
+        1038,
+        742
+      ],
+      "visible_text": "\"New Courses\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": "an up/down chevron at the end of a header is the established collapse/expand convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "header text plus collapse chevron",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen23-a6 (same header component), tested once: tapping the header collapsed its list and flipped the chevron, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        742,
+        1038,
+        910
+      ],
+      "visible_text": "\"Music\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        942,
+        1038,
+        1110
+      ],
+      "visible_text": "\"Math\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [
+        {
+          "id": "screen23-a4-tc1",
+          "type": "expected",
+          "precondition": "course picker",
+          "action": "tap the Math row",
+          "expected_result": "a Math course starts or its set-up begins",
+          "confirms_if": "something else",
+          "overturns_if": "Math set-up begins",
+          "observed_result": "opened the set-up question 'What best describes you?' with two answer cards; backed out without adding the course",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        1142,
+        1038,
+        1310
+      ],
+      "visible_text": "\"Chess\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "section header with an upward chevron at its right end",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        1342,
+        1038,
+        1507
+      ],
+      "visible_text": "\"For English speakers\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": "an up/down chevron at the end of a header is the established collapse/expand convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "header text plus collapse chevron",
+      "test_cases": [
+        {
+          "id": "screen23-a6-tc1",
+          "type": "verification",
+          "precondition": "course picker (reached via Back from a course set-up question)",
+          "action": "tap the 'For English speakers' header",
+          "expected_result": "the list under it collapses",
+          "confirms_if": "something else",
+          "overturns_if": "the list collapses",
+          "observed_result": "the list collapsed and the page showed a column of collapsed 'For … speakers' headers with down chevrons",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping the header collapsed its list and flipped the chevron, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        1507,
+        1038,
+        1675
+      ],
+      "visible_text": "\"Spanish\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        1707,
+        1038,
+        1875
+      ],
+      "visible_text": "\"French\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        1907,
+        1038,
+        2075
+      ],
+      "visible_text": "\"German\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen23-a10": {
+      "kind": "button",
+      "glyph": null,
+      "description": "course row with a picture/flag and a subject or language name",
+      "location": "course picker list",
+      "bounds": [
+        42,
+        2107,
+        1038,
+        2275
+      ],
+      "visible_text": "\"Italian\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a named course under 'What would you like to learn?'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; sibling rows tested (Math opened the course set-up question 'What best describes you?')",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 10,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 10,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

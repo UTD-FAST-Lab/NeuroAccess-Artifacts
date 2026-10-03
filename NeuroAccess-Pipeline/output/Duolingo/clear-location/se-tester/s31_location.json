@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s31",
+  "state_str": "c99800749d7936b97bcae81619d854bf",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185807.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s31_header_nav.png",
+  "name": "the user's Friends list",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "worded tab row; the current tab (\"FOLLOWING\") is declared selected and drawn with a coloured label and underline — locates the user within the screen"
+    }
+  ],
+  "identifier_found": "back arrow, 'Friends' (light grey), FOLLOWING/FOLLOWERS tabs with the current one blue and underlined",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title plus visibly selected tab",
+  "test_cases": [
+    {
+      "id": "s31-tc1",
+      "type": "active_state",
+      "precondition": "Profile",
+      "action": "tap the Following count",
+      "expected_result": "'Friends' title with FOLLOWING underlined",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "'Friends' title, FOLLOWING blue and underlined, empty state 'Learning is more fun…'",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "title and declared, visibly rendered tab selection",
+  "recommendation": null,
+  "provisional": false
+}

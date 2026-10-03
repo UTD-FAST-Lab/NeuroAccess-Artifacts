@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s41",
+  "state_str": "487d6a4f1ae4d3c3a1fd70eec9c58680",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152016.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s41_header_nav.png",
+  "name": "New note with Delete draft dialog",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "New note",
+      "verdict_on_region": "page title readable but dimmed behind a scrim — still locates the page under the overlay"
+    },
+    {
+      "kind": "header",
+      "text": "Delete draft?",
+      "verdict_on_region": "title of the sheet/dialog drawn over the screen — names the overlay; the page title stays readable behind the scrim"
+    }
+  ],
+  "identifier_found": "\"New note\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,33 @@
+{
+  "app": "ChatGPT",
+  "screen": "s36",
+  "state_str": "f749ea9dddf809e33ecf123e19e1bd1b",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_205231.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s36_header_nav.png",
+  "name": "a chat conversation",
+  "regions_read": [],
+  "identifier_found": "none; the top bar holds a back arrow and two icon buttons; everything else is the conversation (the user's \"@Create image\" bubble, the reply, progress text, an upsell or an ad card)",
+  "identifier_class": "none",
+  "accessibility_text": "none — the live chat screen carries no accessible screen name either",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "no title; the user's own message is content, not a place name — the detector's decision not to mark the bubble or streaming reply is upheld",
+  "test_cases": [
+    {
+      "id": "s36-tc1",
+      "type": "verification",
+      "precondition": "side menu showing chat history",
+      "action": "open the chats \"Create red apple image\" and \"Greeting exchange\" from the history list; scroll each down and up, looking for the chat name",
+      "expected_result": "the chat's title appears in some state, or never does",
+      "confirms_if": "no title in any scroll state",
+      "overturns_if": "the chat title appears",
+      "observed_result": "neither chat showed its name anywhere on screen in any scroll position; the top bar held only the menu, new-chat and ⋮ icons. The chat name appears only in the side menu, where the current chat's row gets a grey highlight",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the chat's own title exists only in the drawer's history list; nothing on the chat screen shows it. Verified live.",
+  "recommendation": "show the chat's title (the one listed in the side menu, e.g. \"Create red apple image\") in the top bar",
+  "provisional": false
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s13",
+  "state_str": "11e80c1f9ac70a08755e0c14e58c653e",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133919.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s13_header_nav.png",
+  "name": "the Upgrade to use Pro sheet over the home screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Back at it, Ally Cooper",
+      "verdict_on_region": "greeting on the home screen dimmed behind the sheet's scrim; names the user, not a place \u2014 does not count"
+    },
+    {
+      "kind": "header",
+      "text": "Upgrade to use Pro",
+      "verdict_on_region": "unconventional (sheet title): names what the sheet is for \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Upgrade to use Pro\" with a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself",
+  "test_cases": [
+    {
+      "id": "s13-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Select model sheet open",
+      "action": "tap the Pro-only model row (no purchase) and read the sheet title",
+      "expected_result": "the title names the sheet",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title is absent or names content",
+      "observed_result": "\"Upgrade to use Pro\" heads the sheet; back arrow returned to \"Select model\"; nothing was purchased",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: tapping a Pro-only model opens the sheet titled \"Upgrade to use Pro\" with \"This model requires a Pro plan.\" and a back arrow",
+  "recommendation": null,
+  "provisional": false
+}

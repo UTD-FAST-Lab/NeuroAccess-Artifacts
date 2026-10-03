@@ -1,0 +1,39 @@
+{
+  "app": "PDFReader",
+  "screen": "s7",
+  "state_str": "96bb515604a349b828d65bd3c14bd123",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180756.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s7_header_nav.png",
+  "name": "Settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Settings",
+      "verdict_on_region": "names the section; paired with a back arrow"
+    }
+  ],
+  "identifier_found": "\"Settings\" -- screen title beside a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a plain screen title naming the section, with a back arrow",
+  "test_cases": [
+    {
+      "id": "s7-tc1",
+      "type": "scroll_persistence",
+      "precondition": "Settings open from the gear icon",
+      "action": "scroll down twice and back",
+      "expected_result": "\"Settings\" stays, or leaves and returns",
+      "confirms_if": "\"Settings\" leaves and does not return",
+      "overturns_if": "\"Settings\" stays",
+      "observed_result": "the Settings list fits the screen and does not move; \"Settings\" and the back arrow stayed in place. Recorded as a note",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "\"Settings\" with a back arrow at the top; the list does not scroll so the title never leaves (s7-tc1)",
+  "recommendation": null,
+  "provisional": false
+}

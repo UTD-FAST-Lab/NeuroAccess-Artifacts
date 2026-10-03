@@ -1,0 +1,183 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen18",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen18_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen18_function_groups.png"
+  },
+  "elements": {
+    "screen18-f1": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        43,
+        85,
+        169,
+        211
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close / dismiss - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\", talkback: \"Close\"",
+      "context_reading": "sticker prompt editor \"Create a 3D sticker pack based on Photo ...\" with Generate",
+      "observed_function": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+      "glyph_group": "gg6",
+      "function_group": "cfg2",
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "closes its own surface",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality",
+        "cfg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f2": {
+      "kind": "button",
+      "appearance": "the word \"3D\" in a rounded box",
+      "state": null,
+      "location": "top centre",
+      "bounds": [
+        296,
+        242,
+        438,
+        368
+      ],
+      "visible_label": "3D",
+      "convention_relied_on": "worded control (\"3D\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\", talkback: \"3D\"",
+      "context_reading": "sticker prompt editor \"Create a 3D sticker pack based on Photo ...\" with Generate",
+      "observed_function": "opens a \"Choose style\" list (3D, Hand-drawn, Chibi, ...)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen18-f2-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "opens a \"Choose style\" list (3D, Hand-drawn, Chibi, ...)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen18-f3": {
+      "kind": "button",
+      "appearance": "the word \"Photo\" in a rounded box",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        470,
+        347,
+        703,
+        473
+      ],
+      "visible_label": "Photo",
+      "convention_relied_on": "worded control (\"Photo\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Add reference image\", talkback: \"Add reference image Photo\"",
+      "context_reading": "sticker prompt editor \"Create a 3D sticker pack based on Photo ...\" with Generate",
+      "observed_function": "opens a small menu \"Take photo / Choose photo\"; \"Choose photo\" opens the system photo picker",
+      "glyph_group": null,
+      "function_group": "fg9",
+      "test_cases": [
+        {
+          "id": "screen18-f3-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "opens a small menu \"Take photo / Choose photo\"; \"Choose photo\" opens the system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg9-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "system photo picker",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "fg9": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen18-f4": {
+      "kind": "button",
+      "appearance": "the word \"Generate\"",
+      "state": "inactive",
+      "location": "middle centre",
+      "bounds": [
+        42,
+        1291,
+        1038,
+        1433
+      ],
+      "visible_label": "Generate",
+      "convention_relied_on": "worded control (\"Generate\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Generate",
+      "accessibility_text": "content_desc: \"\", talkback: \"Generate\"",
+      "context_reading": "sticker prompt editor \"Create a 3D sticker pack based on Photo ...\" with Generate",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 4,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

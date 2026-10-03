@@ -1,0 +1,1838 @@
+{
+  "persona": "persona-amy",
+  "app": "Messenger",
+  "screens": {
+    "s1": {
+      "where": "A full-screen notification permission prompt with a bell picture and two buttons.",
+      "expectation": "A screen asking me to turn on notifications, before I reach the main part of the app.",
+      "confidence": "sure",
+      "cue": "The heading \"Turn on notifications from Messenger\" and the buttons \"Turn on notifications\" and \"Not now\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says literally what this screen is for. There is no navigation, but it is a single question and I know what it is asking.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "The main chat list, with the bottom tabs Chats, People, Notifications.",
+      "expectation": "I am on the chat list, the Chats tab.",
+      "confidence": "sure",
+      "cue": "The word \"Chats\" in the bottom bar is blue and the others are grey. The large \"messenger\" logo at the top is only the app's name, so that did not help.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The bottom bar states the current section in text and marks it with colour. That is enough. The top logo only says which app I am in, which I already knew.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s3": {
+      "where": "Side menu over the chat list, heading \"Ally Cooper\", list starting with Communities.",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s3-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Panel with a small \"Meta\" logo and a large \"Subscriptions\" heading, listing Facebook Plus and Meta One.",
+      "expectation": "The Subscriptions page, where Meta subscriptions are listed.",
+      "confidence": "sure",
+      "cue": "The large heading \"Subscriptions\" and the sentence \"Find and manage your subscriptions all in one place.\"",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "\"Subscriptions\" is a literal name for the page and the content matches it. The small \"Meta\" text above is a company name, but the large heading is enough.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Blue full-screen offer with a Facebook logo, heading \"Try Facebook Plus free for one week\", button \"Start your free week\".",
+      "expectation": "An advert for a paid Facebook Plus subscription, opened from the subscriptions list.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try Facebook Plus free for one week\" and the price \"$3.99/month\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a sales pitch, not the name of a place. The large Facebook logo makes me think I may have left Messenger and be inside Facebook. Only the X at the top suggests I can go back.",
+        "solution": "A plain title such as \"Facebook Plus subscription\" at the top, and a note saying whether I am still in Messenger."
+      },
+      "test_cases": [
+        {
+          "id": "s5-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row; read the top; tap the first \"View all benefits\"; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with \"Meta\" at the top. Without my doing anything, that changed to \"Meta Account\" a moment later. The second row, Meta One, opened a page with the large words \"Meta One\" and \"Choose your plan\", which I could read as a plan selection page. \"View all benefits\" showed a grey loading skeleton first, then a page headed \"Try Meta One Core free for one month\". In the capture it said one week; now it says one month. The X at the top left was clearly visible this time. Each X took me back exactly one step: Meta One, then Subscriptions, then the chat list. I never saw the Facebook Plus page, because the try used the second row. So it is partly real. I could always leave, but the headings are product and sales words, and nothing says whether I am still in Messenger.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I only saw the Meta One pages, not the Facebook Plus page; I could leave easily but the headings are sales words.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Page with heading \"Meta One\", a second heading \"Choose your plan\", and two plan cards, Core and Premium.",
+      "expectation": "A plan selection page for a subscription called Meta One.",
+      "confidence": "guessing",
+      "cue": "The two boxed texts \"Meta One\" and \"Choose your plan\", and the prices on the cards.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"Choose your plan\" is literal, but \"Meta One\" is a brand name and I cannot tell what it is in relation to Messenger. There are two headings, so I have to decide which one names the page.",
+        "solution": "One heading that states the page in plain words, for example \"Meta One subscription plans\"."
+      },
+      "test_cases": [
+        {
+          "id": "s6-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row; read the top; tap the first \"View all benefits\"; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with \"Meta\" at the top. Without my doing anything, that changed to \"Meta Account\" a moment later. The second row, Meta One, opened a page with the large words \"Meta One\" and \"Choose your plan\", which I could read as a plan selection page. \"View all benefits\" showed a grey loading skeleton first, then a page headed \"Try Meta One Core free for one month\". In the capture it said one week; now it says one month. The X at the top left was clearly visible this time. Each X took me back exactly one step: Meta One, then Subscriptions, then the chat list. I never saw the Facebook Plus page, because the try used the second row. So it is partly real. I could always leave, but the headings are product and sales words, and nothing says whether I am still in Messenger.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could always get out with the X, but the headings sell products instead of naming places.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Offer page with heading \"Try Meta One Core free for one week\", a list of features and \"Start your free week\".",
+      "expectation": "An advert for the Core plan of Meta One.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try Meta One Core free for one week\" and \"View all plans\" in the top corner.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is a promotion, not a place name. The close X is partly hidden behind the heading, so I am not sure how to get back. \"Meta One Core\" is three brand words I cannot decode.",
+        "solution": "A plain page title such as \"Meta One Core plan\" and a clearly visible back or close control."
+      },
+      "test_cases": [
+        {
+          "id": "s7-C",
+          "try": "C",
+          "task": "Side panel > Subscriptions > second row; read the top; tap the first \"View all benefits\"; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened as a sheet with \"Meta\" at the top. Without my doing anything, that changed to \"Meta Account\" a moment later. The second row, Meta One, opened a page with the large words \"Meta One\" and \"Choose your plan\", which I could read as a plan selection page. \"View all benefits\" showed a grey loading skeleton first, then a page headed \"Try Meta One Core free for one month\". In the capture it said one week; now it says one month. The X at the top left was clearly visible this time. Each X took me back exactly one step: Meta One, then Subscriptions, then the chat list. I never saw the Facebook Plus page, because the try used the second row. So it is partly real. I could always leave, but the headings are product and sales words, and nothing says whether I am still in Messenger.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "I could always get out with the X, but the headings sell products instead of naming places.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "Pop-up panel over the offer page with heading \"More image and video creation\" and a half-hidden small label \"Meta AI\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"More image and video creation\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"More image and video creation\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several. The small \"Meta AI\" label is cut off and covered by another box.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s8-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Pop-up panel with heading \"Get story rewatch insights\" and small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Get story rewatch insights\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Get story rewatch insights\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s9-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Pop-up panel with heading \"Search your story viewer list\" and small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Search your story viewer list\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Search your story viewer list\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s10-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "The offer page scrolled down: X and \"View all plans\" at the top, then a list of features and sections for Instagram Plus and WhatsApp Plus.",
+      "expectation": "Somewhere in a subscription offer. I cannot say which one.",
+      "confidence": "no idea",
+      "cue": "Nothing names the page. I see \"Instagram Plus\" and \"WhatsApp Plus\" as section titles and \"Start your free week\" at the bottom.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There is no title on the screen. The section names are Instagram and WhatsApp, which are other apps, so I cannot tell whether I am in Messenger, in an offer for Meta One, or somewhere else.",
+        "solution": "Keep a fixed title bar at the top naming the page, for example \"Meta One Core plan\", that stays visible when I scroll."
+      },
+      "test_cases": [
+        {
+          "id": "s11-D",
+          "try": "D",
+          "task": "On the Meta One Core offer page, scroll down two screens and back up halfway, looking at the top each time; leave with the X.",
+          "real_if": "There is no page name at the top until you are back at the very top.",
+          "not_real_if": "A page name stays or comes back as soon as you scroll back a little.",
+          "what_happened": "After the first scroll, only the X and \"View all plans\" were at the top. The list showed \"Facebook Plus\", \"Instagram Plus\" and \"WhatsApp Plus\" sections. After the second scroll it was the same, with \"Create better content with more AI\". Scrolling back up halfway brought no name back. The top never named the page until I would have been at the very top. Real.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Once I scroll, nothing at the top tells me which offer page I am on.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Pop-up panel with heading \"Choose a custom app icon\" and small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Choose a custom app icon\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Choose a custom app icon\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s12-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Same pop-up panel as before: \"Choose a custom app icon\" with \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Choose a custom app icon\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Choose a custom app icon\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s13-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Pop-up panel with heading \"Super react to stories\", heart pictures, small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Super react to stories\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Super react to stories\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several. \"Super react\" is not a term I can read literally.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s14-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Pop-up panel with heading \"Extend your story's expiration\" and small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Extend your story's expiration\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Extend your story's expiration\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s15-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Pop-up panel with heading \"Message with custom fonts\" and small text \"Facebook Plus\".",
+      "expectation": "A pop-up panel advertising a paid subscription feature called \"Message with custom fonts\". It sits on top of an offer page.",
+      "confidence": "guessing",
+      "cue": "The large heading \"Message with custom fonts\" and the small \"Facebook Plus\" text above it. The dots at the bottom say this is one card of several.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a part of the app. The two labels overlap each other and I have to work out which one is the title. Nothing says whether I am still in Messenger, in Facebook, or in a shop.",
+        "solution": "Give the panel a fixed title such as \"Facebook Plus features\" in the same place on every card, and show which card I am on, for example \"2 of 5\"."
+      },
+      "test_cases": [
+        {
+          "id": "s16-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Side menu over the chat list, heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s17-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Page titled \"Message requests\" with two tabs \"You may know\" and \"Spam\", and the bottom bar with Chats.",
+      "expectation": "Message requests, the \"You may know\" tab.",
+      "confidence": "sure",
+      "cue": "The title \"Message requests\" at the top and the grey background on the \"You may know\" tab.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and the selected tab is marked. One oddity: the bottom bar still shows \"Chats\" as selected, which does not match the title. The title is clear enough that I am not lost.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Page titled \"New message\" with a \"To:\" field and a list of suggested people.",
+      "expectation": "Starting a new message.",
+      "confidence": "sure",
+      "cue": "The title \"New message\" and the \"To: Type a name or group\" field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says exactly what this screen is and the content matches it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "Screen with a back arrow and a search box \"Ask Meta AI or search\", then lists \"You may have missed\", \"Suggested\", \"People you may know\".",
+      "expectation": "A search screen, I think.",
+      "confidence": "guessing",
+      "cue": "Only the search box text \"Ask Meta AI or search\". Nothing is marked as a heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no title. I can guess from the input field that this is search, but the placeholder also says \"Ask Meta AI\", so it could be a chat with an AI. The lists below are not search results, so the screen does not confirm it.",
+        "solution": "A title such as \"Search\" above the field."
+      },
+      "test_cases": [
+        {
+          "id": "s20-F",
+          "try": "F",
+          "task": "Tap the search box on Chats, press Back once to hide the keyboard, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "The keyboard opened. After one Back, I could see a section heading \"Recent searches\" with an \"Edit\" link, then \"Suggested\". \"Recent searches\" tells me literally that this is search, so I am no longer guessing. When I scrolled down, \"Recent searches\" went out of view and only the box was left at the top. It came back when I scrolled up. There is still no page title, but the screen does say what it is when I first open it. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The \"Recent searches\" heading tells me this is search; a real title would still be better.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Page titled \"New note\" with a \"Share a thought...\" bubble and a Share button.",
+      "expectation": "Writing a new note.",
+      "confidence": "sure",
+      "cue": "The title \"New note\" at the top centre.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and matches what is on the screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Full-screen photo with \"Deki 4h\" at the top, a progress line, emoji reply bubbles and a \"Send message\" field.",
+      "expectation": "Viewing a story posted by Deki.",
+      "confidence": "guessing",
+      "cue": "The name \"Deki\" with \"4h\" next to it, and the progress line at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only label is a person's name. It does not say this is a story, and I only know the word \"story\" from other screens. The progress line suggests the screen will change on its own, which unsettles me. (Out of scope: the screen advances by itself.)",
+        "solution": "A label such as \"Deki's story\" and a visible pause control."
+      },
+      "test_cases": [
+        {
+          "id": "s22-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card > watch the top for about five seconds > tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's card. The top showed \"Krishna Bharti 21h\", a line of song text, three dots, a crossed-out speaker and an X. The progress line at the top moved forward while I watched. Nothing says \"story\". When I tapped X, the screen had already moved on by itself to Siquem Lsm's picture, so the name at the top changed under me, and I needed a second X to get back to People. I could say whose it was only until it changed to someone else without my doing anything. Hardened.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s22-G-oos",
+          "try": "G",
+          "task": "Story screens: motion and sound",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "On the phone the progress line moved and the story switched to another person on its own. A crossed-out speaker icon was shown. Out of scope for this phase.",
+          "status": "out_of_scope",
+          "reason": "The story advances by itself and has a sound control; this is about motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The story moved on to someone else by itself, so the only label I had, the name, changed under me.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "Full-screen photo of boats with a black bar at the top reading \"Sent to Deki\" and a close X.",
+      "expectation": "Still in a story. Something has been sent to Deki.",
+      "confidence": "guessing",
+      "cue": "The bar \"Sent to Deki\". The photo below is different from the previous one.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"Sent to Deki\" is a status message, not the name of the screen. It replaced the name at the top, so I no longer know whose story this is. It also tells me something was sent that I did not decide to send.",
+        "solution": "Keep the story owner's name in its place and show confirmations separately, for example as a message at the bottom that does not cover the title."
+      },
+      "test_cases": [
+        {
+          "id": "s23-H",
+          "try": "H",
+          "task": "Not tried: see reason.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I did not try this.",
+          "status": "not_executed",
+          "reason": "This needs a reply to be sent to a real person, which the house rules forbid."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s24": {
+      "where": "Conversation with Siquem Lsm: name and photo in the top bar, a large name in the middle, \"View profile\", and the message field at the bottom.",
+      "expectation": "A chat with Siquem Lsm.",
+      "confidence": "sure",
+      "cue": "The name \"Siquem Lsm\" in the top bar, and the \"Message\" field at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The top bar names the person and the message field confirms it is a conversation. The name appears twice, but both say the same thing.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "The main chat list, with the bottom tabs Chats, People, Notifications.",
+      "expectation": "I am on the chat list, the Chats tab.",
+      "confidence": "sure",
+      "cue": "The word \"Chats\" in the bottom bar is blue and the others are grey. The large \"messenger\" logo at the top is only the app's name, so that did not help.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The bottom bar states the current section in text and marks it with colour. That is enough. The top logo only says which app I am in, which I already knew.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Side menu over the chat list, heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s26-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s27": {
+      "where": "The main chat list, with the bottom tabs Chats, People, Notifications.",
+      "expectation": "I am on the chat list, the Chats tab.",
+      "confidence": "sure",
+      "cue": "The word \"Chats\" in the bottom bar is blue and the others are grey. The large \"messenger\" logo at the top is only the app's name, so that did not help.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The bottom bar states the current section in text and marks it with colour. That is enough. The top logo only says which app I am in, which I already knew.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Page with a back arrow, an illustration, heading \"Build a chat-based community on Messenger\", dots, and \"Get started\".",
+      "expectation": "An introduction to Communities, I think.",
+      "confidence": "guessing",
+      "cue": "The heading \"Build a chat-based community on Messenger\" and the link \"About communities\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an instruction, not a page name. It sits in the middle of the screen and the top bar is empty apart from the back arrow, so I have to read the whole page to work out where I am.",
+        "solution": "Put \"Communities\" in the top bar next to the back arrow."
+      },
+      "test_cases": [
+        {
+          "id": "s28-I",
+          "try": "I",
+          "task": "Side panel > Communities; read the top and the large words; swipe the picture once; read again; leave with the arrow.",
+          "real_if": "No page name stays on screen; the large words change and stop naming a place.",
+          "not_real_if": "A name for the place stays put.",
+          "what_happened": "The top bar has only a back arrow. The large words were \"Build a chat-based community on Messenger\". After one swipe they changed to \"Bring up to 5,000 real-world connections online\", which names nothing. The only word that stayed was \"communities\" in the small link \"About communities\" at the bottom. The arrow took me back to the side panel. Real.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The big words change as I swipe and never say \"Communities\".",
+      "provisional": false
+    },
+    "s29": {
+      "where": "Page titled \"Me\" with a back arrow, my profile, and a list of account settings.",
+      "expectation": "My own profile and settings page.",
+      "confidence": "sure",
+      "cue": "The title \"Me\" at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "\"Me\" is short, but read literally it means my own page, and the content is my account and settings. It is consistent with the other settings pages.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Page titled \"Message requests\" with tabs \"You may know\" and \"Spam\", and the bottom bar.",
+      "expectation": "Message requests, the \"You may know\" tab.",
+      "confidence": "sure",
+      "cue": "The title \"Message requests\" and the selected \"You may know\" tab.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and the selected tab is marked. The bottom bar still marks \"Chats\", which does not match, but the title is enough.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Page titled \"Archive\" saying \"Your archive is empty\", with the bottom bar showing Chats.",
+      "expectation": "The Archive.",
+      "confidence": "sure",
+      "cue": "The title \"Archive\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and matches the message on the page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Page titled \"New story\" with a Camera tile.",
+      "expectation": "Creating a new story.",
+      "confidence": "sure",
+      "cue": "The title \"New story\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says what the screen is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "New note screen with a panel on top saying \"Share your notes with everyone\".",
+      "expectation": "Still on New note, with an information panel over it.",
+      "confidence": "guessing",
+      "cue": "The \"New note\" title behind and the panel heading.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel heading is a promotion, not a name, and it covers most of the screen. I can work it out from the title behind it, but I have to look past the panel to do so.",
+        "solution": "Give the panel a plain heading such as \"About notes\"."
+      },
+      "test_cases": [
+        {
+          "id": "s33-L",
+          "try": "L",
+          "task": "Not tried: see reason.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I did not try this.",
+          "status": "not_executed",
+          "reason": "These need a public note to be posted or the GIF panel to be opened, which the house rules forbid."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s34": {
+      "where": "Page titled \"New note\" with \"Share a thought...\".",
+      "expectation": "Writing a new note.",
+      "confidence": "sure",
+      "cue": "The title \"New note\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title that matches the content.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Page titled \"New group\" with a search field and a suggested list.",
+      "expectation": "Creating a new group chat.",
+      "confidence": "sure",
+      "cue": "The title \"New group\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title that matches the content.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Conversation screen: top bar \"Ally\", a large \"Ally Cooper\" in the middle, \"View profile\", and the message field.",
+      "expectation": "A chat with Ally Cooper. That seems to be my own account, so I think this is a chat with myself.",
+      "confidence": "guessing",
+      "cue": "\"Ally\" in the top bar and \"Ally Cooper\" in the middle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top bar and the middle show two different strings for the same person. Ally Cooper is the name at the top of the menu, which I took to be me, so I am unsure whose conversation this is.",
+        "solution": "Use the same full name in the top bar, and mark it clearly if it is a chat with myself."
+      },
+      "test_cases": [
+        {
+          "id": "s36-J",
+          "try": "J",
+          "task": "Search box > tap the account-name row (Ally Cooper) > look at the top of the conversation > leave with the arrow.",
+          "real_if": "The top does not make it plain whose conversation this is.",
+          "not_real_if": "It does.",
+          "what_happened": "The top bar says \"Ally\" and the middle says \"Ally Cooper\", with \"View profile\". Nothing says that this is my own account or a chat with myself, even though Ally Cooper is the name at the top of my side panel. Real. Side effect: when I went back, \"Ally\" had been added to \"Recent searches\", which I did not intend.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Nothing says this conversation is with my own account.",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Screen with a back arrow and the search box \"Ask Meta AI or search\", then lists of people.",
+      "expectation": "A search screen, I think.",
+      "confidence": "guessing",
+      "cue": "Only the search box text.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no title. The placeholder mixes search with asking an AI, so I cannot be sure what this screen is.",
+        "solution": "A title such as \"Search\"."
+      },
+      "test_cases": [
+        {
+          "id": "s37-F",
+          "try": "F",
+          "task": "Tap the search box on Chats, press Back once to hide the keyboard, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "The keyboard opened. After one Back, I could see a section heading \"Recent searches\" with an \"Edit\" link, then \"Suggested\". \"Recent searches\" tells me literally that this is search, so I am no longer guessing. When I scrolled down, \"Recent searches\" went out of view and only the box was left at the top. It came back when I scrolled up. There is still no page title, but the screen does say what it is when I first open it. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The \"Recent searches\" heading tells me this is search; a real title would still be better.",
+      "provisional": false
+    },
+    "s38": {
+      "where": "New note screen with a panel \"GIF notes for any mood\" and buttons \"Try it\" and \"Not now\".",
+      "expectation": "New note, with an advert panel over it.",
+      "confidence": "guessing",
+      "cue": "The panel heading and the \"New note\" title behind it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"for any mood\" is a slogan and does not tell me where I am. \"Try it\" does not say what will happen.",
+        "solution": "Plain wording such as \"Add a GIF to your note\" and a button that names the action."
+      },
+      "test_cases": [
+        {
+          "id": "s38-L",
+          "try": "L",
+          "task": "Not tried: see reason.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I did not try this.",
+          "status": "not_executed",
+          "reason": "These need a public note to be posted or the GIF panel to be opened, which the house rules forbid."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s39": {
+      "where": "A panel with a search field \"Search gifs across apps...\", grey empty tiles, and a row of seven icons without text at the bottom.",
+      "expectation": "Some kind of GIF picker, I think.",
+      "confidence": "guessing",
+      "cue": "Only the placeholder text in the search field. The tiles are grey and empty.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There is no title. The tiles have not loaded, and the row of icons at the bottom has no words, so I cannot tell which section is selected or what the sections are.",
+        "solution": "A title such as \"Choose a GIF\" and text labels under each icon in the bottom row."
+      },
+      "test_cases": [
+        {
+          "id": "s39-L",
+          "try": "L",
+          "task": "Not tried: see reason.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I did not try this.",
+          "status": "not_executed",
+          "reason": "These need a public note to be posted or the GIF panel to be opened, which the house rules forbid."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s40": {
+      "where": "New note screen with a GIF picture added and the Share button.",
+      "expectation": "Writing a new note with a GIF attached.",
+      "confidence": "sure",
+      "cue": "The title \"New note\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is still there and still literal. (Out of scope: the GIF moves by itself, which distracts me.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "New note screen with a dialog \"Delete draft?\".",
+      "expectation": "New note, being asked whether to delete my draft.",
+      "confidence": "sure",
+      "cue": "The dialog heading \"Delete draft?\" and the New note screen behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dialog asks a literal question and I can see what it belongs to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "Conversation with Deki: top bar \"Deki\", \"Active now\", a large \"Deki\" in the middle, and the message field.",
+      "expectation": "A chat with Deki.",
+      "confidence": "sure",
+      "cue": "The name \"Deki\" in the top bar and the message field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The top bar names the conversation and stays consistent with the other chats.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "Conversation with Marco Peralta.",
+      "expectation": "A chat with Marco Peralta.",
+      "confidence": "sure",
+      "cue": "The name in the top bar and the message field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same layout as the other conversations; the top bar names the person.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "A page with a back arrow, no title in the top bar, the name \"Marco Peralta\" in the middle, buttons Profile, Nicknames, Search, Customize, and a section \"Chat info\".",
+      "expectation": "Details about the chat with Marco Peralta.",
+      "confidence": "guessing",
+      "cue": "The section heading \"Chat info\" lower down and the name in the middle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top bar is empty. The person's name tells me who but not what this page is. I only found \"Chat info\" by reading down the page.",
+        "solution": "Put a title such as \"Chat info\" in the top bar next to the back arrow."
+      },
+      "test_cases": [
+        {
+          "id": "s44-K",
+          "try": "K",
+          "task": "Chats > tap \"Krishna Bharti\" > tap only the \"i\" at the top right > read the top > scroll down two screens > read the top > leave with the arrow twice.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "The \"i\" opened a page whose top bar has only a back arrow and three dots. The name \"Krishna Bharti\" is in the middle, with \"Chat info\" as a small section heading. After two scrolls the top bar was still empty, and now even the name was gone. The visible headings were \"Privacy & support\", \"Block\", \"Restrict\", \"Report\" and \"Delete chat\". Nothing on screen said whose chat or which page this was. Two arrows took me back to Chats. Real, and worse than I expected.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "After scrolling, the page has no name at all, not even the person's.",
+      "provisional": false
+    },
+    "s45": {
+      "where": "Page titled \"Pinned messages\" with \"No pinned messages\".",
+      "expectation": "The pinned messages list for a chat.",
+      "confidence": "sure",
+      "cue": "The title \"Pinned messages\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title that matches the content.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "Full-screen story with \"Krishna Bharti 3h\", a line about music, a progress line and a sound icon.",
+      "expectation": "Viewing Krishna Bharti's story.",
+      "confidence": "guessing",
+      "cue": "The name and the progress line.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Only a person's name labels the screen. It does not say this is a story. (Out of scope: it advances on its own and appears to have music.)",
+        "solution": "A label such as \"Krishna Bharti's story\" and a visible pause and mute control."
+      },
+      "test_cases": [
+        {
+          "id": "s46-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card > watch the top for about five seconds > tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's card. The top showed \"Krishna Bharti 21h\", a line of song text, three dots, a crossed-out speaker and an X. The progress line at the top moved forward while I watched. Nothing says \"story\". When I tapped X, the screen had already moved on by itself to Siquem Lsm's picture, so the name at the top changed under me, and I needed a second X to get back to People. I could say whose it was only until it changed to someone else without my doing anything. Hardened.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s46-G-oos",
+          "try": "G",
+          "task": "Story screens: motion and sound",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "On the phone the progress line moved and the story switched to another person on its own. A crossed-out speaker icon was shown. Out of scope for this phase.",
+          "status": "out_of_scope",
+          "reason": "The story advances by itself and has a sound control; this is about motion, not about knowing where I am."
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The story moved on to someone else by itself, so the only label I had, the name, changed under me.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "Story screen with a bar \"Sent to Krishna\" at the top.",
+      "expectation": "Still in a story; something was sent.",
+      "confidence": "guessing",
+      "cue": "The bar \"Sent to Krishna\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The status message took the place of the name, so the screen no longer names whose story this is.",
+        "solution": "Keep the owner's name visible and show the confirmation somewhere else."
+      },
+      "test_cases": [
+        {
+          "id": "s47-H",
+          "try": "H",
+          "task": "Not tried: see reason.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I did not try this.",
+          "status": "not_executed",
+          "reason": "This needs a reply to be sent to a real person, which the house rules forbid."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s48": {
+      "where": "Conversation with Krishna Bharti.",
+      "expectation": "A chat with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name in the top bar and the message field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Consistent conversation layout with the name at the top.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "Chat details page for Krishna Bharti, same layout as for Marco: empty top bar, name in the middle, \"Chat info\" section lower down.",
+      "expectation": "Details about the chat with Krishna Bharti.",
+      "confidence": "guessing",
+      "cue": "The \"Chat info\" section heading and the name.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as the other details page: the top bar has no title.",
+        "solution": "Put \"Chat info\" in the top bar."
+      },
+      "test_cases": [
+        {
+          "id": "s49-K",
+          "try": "K",
+          "task": "Chats > tap \"Krishna Bharti\" > tap only the \"i\" at the top right > read the top > scroll down two screens > read the top > leave with the arrow twice.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "The \"i\" opened a page whose top bar has only a back arrow and three dots. The name \"Krishna Bharti\" is in the middle, with \"Chat info\" as a small section heading. After two scrolls the top bar was still empty, and now even the name was gone. The visible headings were \"Privacy & support\", \"Block\", \"Restrict\", \"Report\" and \"Delete chat\". Nothing on screen said whose chat or which page this was. Two arrows took me back to Chats. Real, and worse than I expected.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "After scrolling, the page has no name at all, not even the person's.",
+      "provisional": false
+    },
+    "s50": {
+      "where": "Conversation with Krishna Bharti, showing \"Delivered\".",
+      "expectation": "A chat with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name in the top bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same layout as the other chats.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "Conversation with Krishna Bharti, same as the previous picture.",
+      "expectation": "A chat with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name in the top bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same layout as the other chats.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "The main chat list, with the bottom tabs Chats, People, Notifications.",
+      "expectation": "I am on the chat list, the Chats tab.",
+      "confidence": "sure",
+      "cue": "The word \"Chats\" in the bottom bar is blue and the others are grey. The large \"messenger\" logo at the top is only the app's name, so that did not help.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The bottom bar states the current section in text and marks it with colour. That is enough. The top logo only says which app I am in, which I already knew.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s53": {
+      "where": "Side menu with heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s53-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s54": {
+      "where": "A Facebook Plus advert with a carousel about \"Preview stories\" and dots.",
+      "expectation": "A subscription advert.",
+      "confidence": "guessing",
+      "cue": "The feature heading and the dots.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading names a feature for sale, not a place, and nothing tells me whether I am in Messenger.",
+        "solution": "A fixed title naming the page, for example \"Facebook Plus features\"."
+      },
+      "test_cases": [
+        {
+          "id": "s54-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row (\"Get story rewatch insights\"), read above the large words, swipe the card sideways twice, close with X, leave with X.",
+          "real_if": "Nothing on the card tells you which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "A card slid up with \"Facebook Plus\" in small letters above \"Get story rewatch insights\". I swiped twice and got \"Search your story viewer list\", then \"Choose a custom app icon\". \"Facebook Plus\" stayed above the large words each time, in the same place. So something stable does name the offer, which is better than I thought from the pictures, where the two boxes overlapped. It is still the name of a product for sale, not a place in Messenger, and the dots do not say which card I am on. The X on the card closed it, and the X on the page took me out. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "\"Facebook Plus\" stays fixed above every card, which helps, but it names a product, not a place in Messenger.",
+      "provisional": false
+    },
+    "s56": {
+      "where": "Page titled \"Notifications\" with the bottom bar showing Notifications selected.",
+      "expectation": "The Notifications section.",
+      "confidence": "sure",
+      "cue": "The title \"Notifications\" and the blue \"Notifications\" tab in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and bottom bar agree.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "Side menu over the Notifications page, heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s57-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s58": {
+      "where": "The Notifications page scrolled down, bottom bar with Notifications selected.",
+      "expectation": "The Notifications section.",
+      "confidence": "sure",
+      "cue": "The blue \"Notifications\" tab in the bottom bar.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The bottom bar keeps naming the section even after scrolling.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "Side menu with heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s59-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s60": {
+      "where": "Page titled \"Archive\" while the bottom bar shows \"Notifications\" selected.",
+      "expectation": "The Archive, I think. But the bottom bar says Notifications.",
+      "confidence": "guessing",
+      "cue": "The title \"Archive\" and the blue \"Notifications\" tab.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The two location signals contradict each other. The title says Archive and the bottom bar says Notifications. I have to decide which one to believe.",
+        "solution": "Make the bottom bar match the page, or do not highlight any tab on a page that is not one of the tabs."
+      },
+      "test_cases": [
+        {
+          "id": "s60-M",
+          "try": "M",
+          "task": "Tap the right item of the bottom row; look at which is coloured; open the side panel; tap Archive; read the top and the bottom row; leave with the arrow.",
+          "real_if": "The top and the bottom row name different places.",
+          "not_real_if": "They agree.",
+          "what_happened": "On Notifications, the title was \"Notifications\" and the bottom bar marked \"Notifications\" in blue, so they agreed. Then I opened the panel and tapped Archive. The title says \"Archive\" while the bottom bar still marks \"Notifications\" in blue. They disagree. The arrow took me back to Notifications. Real.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The title and the bottom bar contradict each other on Archive.",
+      "provisional": false
+    },
+    "s61": {
+      "where": "Page titled \"People\" with stories, tabs, and the bottom bar showing People selected.",
+      "expectation": "The People section.",
+      "confidence": "sure",
+      "cue": "The title \"People\" and the blue \"People\" tab.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title and bottom bar agree.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "Side menu over the People page, heading \"Ally Cooper\".",
+      "expectation": "A side menu that has slid over the chat list. I think it is the main menu.",
+      "confidence": "guessing",
+      "cue": "The panel covers about two-thirds of the screen and I can see the chat list behind it. At the top it says \"Ally Cooper\", which is a person's name. I assume it is my account.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only heading is a person's name. A name does not say that this is a menu. No item in the list is marked as the current one, so I cannot tell where I came from or where I am in it.",
+        "solution": "Put a heading such as \"Menu\" at the top of the panel, and mark the item for the screen I am currently on."
+      },
+      "test_cases": [
+        {
+          "id": "s62-B",
+          "try": "B",
+          "task": "Open the side panel from Chats, read it, close with Back; open it again from People and read it again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from Chats. The top says \"Ally Cooper\" with a down arrow and a gear, then the list. There is no word like \"Menu\", and nothing in the list is highlighted. I closed it with Back, went to People and opened it again. It looked exactly the same, and nothing marked People as where I came from. So it is real: the panel never names itself and never shows where I was. One extra problem: my first tap after opening the panel landed on the \"Ally Cooper\" row, and a \"Switch profile\" page opened that I did not intend. I left it without changing anything.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel is the same from every section and never says what it is or where I came from.",
+      "provisional": false
+    },
+    "s63": {
+      "where": "A story opening over the People page; the People title is still faintly visible behind it.",
+      "expectation": "Opening Deki's story from the People page.",
+      "confidence": "guessing",
+      "cue": "The faint \"People\" title and the story picture.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Two screens are drawn at once and the story has no title of its own. I cannot tell which one I am on.",
+        "solution": "Label the story clearly, for example \"Deki's story\"."
+      },
+      "test_cases": [
+        {
+          "id": "s63-G",
+          "try": "G",
+          "task": "People tab > tap a tall picture card > watch the top for about five seconds > tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's card. The top showed \"Krishna Bharti 21h\", a line of song text, three dots, a crossed-out speaker and an X. The progress line at the top moved forward while I watched. Nothing says \"story\". When I tapped X, the screen had already moved on by itself to Siquem Lsm's picture, so the name at the top changed under me, and I needed a second X to get back to People. I could say whose it was only until it changed to someone else without my doing anything. Hardened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The story moved on to someone else by itself, so the only label I had, the name, changed under me.",
+      "provisional": false
+    },
+    "s64": {
+      "where": "The \"Me\" page scrolled so that \"Manage accounts\" is near the top; the \"Me\" title stays in the top bar.",
+      "expectation": "My own page, further down.",
+      "confidence": "sure",
+      "cue": "The title \"Me\" stays at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stays fixed while the content scrolls.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "The \"Me\" page scrolled a short way, \"View security alerts\" near the top.",
+      "expectation": "My own page.",
+      "confidence": "sure",
+      "cue": "The title \"Me\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stays fixed.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "The \"Me\" page scrolled further, showing Profile and Preferences settings.",
+      "expectation": "My own page, the settings part.",
+      "confidence": "sure",
+      "cue": "The title \"Me\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title stays fixed.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s67": {
+      "where": "Page titled \"Switch profile\".",
+      "expectation": "The page for switching accounts.",
+      "confidence": "sure",
+      "cue": "The title \"Switch profile\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "Page titled \"Dark mode\" with Off, On, System options.",
+      "expectation": "The Dark mode setting.",
+      "confidence": "sure",
+      "cue": "The title \"Dark mode\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "Page titled \"Active status\" with a switch.",
+      "expectation": "The Active status setting.",
+      "confidence": "sure",
+      "cue": "The title \"Active status\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s70": {
+      "where": "The \"Me\" page with a bottom panel showing \"m.me/\", \"Edit username\" and \"Copy link\".",
+      "expectation": "My page, with a panel about my username open.",
+      "confidence": "guessing",
+      "cue": "The \"Me\" title behind and the \"Edit username\" item in the panel.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The panel has no heading, only \"m.me/\", which is part of a web address and not a name. I worked out it is about my username from the first option.",
+        "solution": "A heading on the panel such as \"Username\"."
+      },
+      "test_cases": [
+        {
+          "id": "s70-N",
+          "try": "N",
+          "task": "Side panel > gear > Username; read the panel; close with Back; leave with the arrow.",
+          "real_if": "The panel never says what it is.",
+          "not_real_if": "Something on it, or behind it, tells you where you are.",
+          "what_happened": "The panel still has no heading, only \"m.me/\", then \"Edit username\" and \"Copy link\". But on the phone the panel only covers the bottom part. Above it, the dimmed \"Me\" title and the \"Username\" row I had just tapped are still visible. So I can tell it is the username panel from what is behind it. Back closed it. Softened.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The panel has no heading, but the Username row behind it tells me what it is.",
+      "provisional": false
+    },
+    "s71": {
+      "where": "A panel with an illustration and a heading in the middle, \"Supervision for Teen Accounts\", with Continue and Learn more.",
+      "expectation": "The teen supervision feature, opened from Family Center.",
+      "confidence": "sure",
+      "cue": "The heading \"Supervision for Teen Accounts\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is literal. It is lower on the screen than usual, but it is large and clear.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s72": {
+      "where": "A page headed \"Select the profiles you want to supervise\", with a search field and a list of people with check boxes.",
+      "expectation": "Choosing which teens to supervise.",
+      "confidence": "sure",
+      "cue": "The heading \"Select the profiles you want to supervise\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me exactly what this step is.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s73": {
+      "where": "A page headed \"Here's your link\" with an invite link and \"Share link\" / \"Cancel invite\".",
+      "expectation": "The step that gives me an invite link for supervision.",
+      "confidence": "sure",
+      "cue": "The heading and the sentence about inviting teens.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading and the sentence under it are literal.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s74": {
+      "where": "A page with a magnifying glass picture and the heading \"Cancel invite?\", with Cancel and Don't cancel.",
+      "expectation": "Confirming whether to cancel the supervision invite.",
+      "confidence": "sure",
+      "cue": "The heading \"Cancel invite?\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The question is literal. (Out of scope: the magnifying glass picture means search to me and has nothing to do with cancelling.)",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s75": {
+      "where": "The \"Select the profiles you want to supervise\" page with a message \"Invite canceled\" at the bottom.",
+      "expectation": "Back on the profile selection step after cancelling.",
+      "confidence": "sure",
+      "cue": "The heading and the message \"Invite canceled\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is the same as before and the message tells me what happened.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s76": {
+      "where": "Page titled \"Avatar\" with a group picture and \"Make your avatar\".",
+      "expectation": "The Avatar setting.",
+      "confidence": "sure",
+      "cue": "The title \"Avatar\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s77": {
+      "where": "Page titled \"App icon\" with a grid of icons.",
+      "expectation": "The App icon setting.",
+      "confidence": "sure",
+      "cue": "The title \"App icon\" and \"Choose the icon for your device home screen.\"",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title and explanation.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "Page titled \"Notifications & sounds\" with an Off switch.",
+      "expectation": "The notifications setting.",
+      "confidence": "sure",
+      "cue": "The title.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "Page titled \"Accessibility\" with Reduce motion and Color filter.",
+      "expectation": "The accessibility settings.",
+      "confidence": "sure",
+      "cue": "The title.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "Page titled \"Privacy & safety\" with a long settings list.",
+      "expectation": "Privacy and safety settings.",
+      "confidence": "sure",
+      "cue": "The title.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s81": {
+      "where": "Page titled \"Language identification\" with a switch.",
+      "expectation": "The language identification setting.",
+      "confidence": "sure",
+      "cue": "The title.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s82": {
+      "where": "Page titled \"Photos & media\" with switches.",
+      "expectation": "The photos and media setting.",
+      "confidence": "sure",
+      "cue": "The title.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "The \"Me\" page with a dialog \"Turn on notifications\" and buttons Cancel / Go to settings.",
+      "expectation": "My settings page, with a question about notifications.",
+      "confidence": "sure",
+      "cue": "The \"Me\" title behind and the dialog heading.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dialog is literal and I can see the page it belongs to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "Full-screen avatar picture, three dots, heading \"Make your own avatar\", button \"Create your avatar\".",
+      "expectation": "An avatar introduction screen, opened from the Avatar setting, I think.",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" and the button \"Create your avatar\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an instruction in the middle of the screen, not a page name. Only an X is at the top. The large picture changes between captures, so the screen seems to move on its own (out of scope, but it distracts me).",
+        "solution": "A title at the top such as \"Create an avatar\", and a carousel that only changes when I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s84-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap \"Make your avatar\"; read; tap X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a literal title, \"Avatar\". Tapping \"Make your avatar\" opened a full-screen page with only an X at the top and the large words \"Make your own avatar\". Because I had just tapped \"Make your avatar\" and the words match, I knew where I was. The X took me back to Avatar and the arrow back to Me. Softened. The figure in the picture moved by itself; I record that separately as out of scope.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s84-O-oos",
+          "try": "O",
+          "task": "Avatar intro: moving picture",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Between two screenshots a few seconds apart, the figure changed pose and the phone moved in her hand. Nothing started it. Out of scope for this phase.",
+          "status": "out_of_scope",
+          "reason": "The figure in the large picture animates by itself; this is motion, not location."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The heading repeats the words I tapped, so I know where I am.",
+      "provisional": false
+    },
+    "s85": {
+      "where": "Same avatar screen with a different picture: one figure holding a phone.",
+      "expectation": "An avatar introduction screen, opened from the Avatar setting, I think.",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" and the button \"Create your avatar\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an instruction in the middle of the screen, not a page name. Only an X is at the top. The large picture changes between captures, so the screen seems to move on its own (out of scope, but it distracts me).",
+        "solution": "A title at the top such as \"Create an avatar\", and a carousel that only changes when I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s85-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap \"Make your avatar\"; read; tap X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a literal title, \"Avatar\". Tapping \"Make your avatar\" opened a full-screen page with only an X at the top and the large words \"Make your own avatar\". Because I had just tapped \"Make your avatar\" and the words match, I knew where I was. The X took me back to Avatar and the arrow back to Me. Softened. The figure in the picture moved by itself; I record that separately as out of scope.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s85-O-oos",
+          "try": "O",
+          "task": "Avatar intro: moving picture",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Between two screenshots a few seconds apart, the figure changed pose and the phone moved in her hand. Nothing started it. Out of scope for this phase.",
+          "status": "out_of_scope",
+          "reason": "The figure in the large picture animates by itself; this is motion, not location."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The heading repeats the words I tapped, so I know where I am.",
+      "provisional": false
+    },
+    "s86": {
+      "where": "Same avatar screen as the previous one.",
+      "expectation": "An avatar introduction screen, opened from the Avatar setting, I think.",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" and the button \"Create your avatar\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an instruction in the middle of the screen, not a page name. Only an X is at the top. The large picture changes between captures, so the screen seems to move on its own (out of scope, but it distracts me).",
+        "solution": "A title at the top such as \"Create an avatar\", and a carousel that only changes when I swipe."
+      },
+      "test_cases": [
+        {
+          "id": "s86-O",
+          "try": "O",
+          "task": "Side panel > gear > Avatar; read the top; tap \"Make your avatar\"; read; tap X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "The Avatar page has a literal title, \"Avatar\". Tapping \"Make your avatar\" opened a full-screen page with only an X at the top and the large words \"Make your own avatar\". Because I had just tapped \"Make your avatar\" and the words match, I knew where I was. The X took me back to Avatar and the arrow back to Me. Softened. The figure in the picture moved by itself; I record that separately as out of scope.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s86-O-oos",
+          "try": "O",
+          "task": "Avatar intro: moving picture",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Between two screenshots a few seconds apart, the figure changed pose and the phone moved in her hand. Nothing started it. Out of scope for this phase.",
+          "status": "out_of_scope",
+          "reason": "The figure in the large picture animates by itself; this is motion, not location."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The heading repeats the words I tapped, so I know where I am.",
+      "provisional": false
+    }
+  },
+  "transitions": {
+    "t132": {
+      "where": "First picture: the \"Me\" page scrolled to the Profile and Preferences settings. Second picture: a page titled \"Avatar\" with \"Make your avatar\".",
+      "action_sentence": "You stayed on this screen and scrolled up.",
+      "expectation": "The second picture says I am on the Avatar page. That is not the page I was on, and I was told I stayed on the same screen.",
+      "confidence": "guessing",
+      "cue": "The title \"Avatar\" in the top bar, in the place where \"Me\" was.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The title is clear on its own, but it contradicts the sentence. If I only scrolled up, the title should still say \"Me\". Instead it says \"Avatar\" and the list of settings is gone. Either the scroll opened the Avatar item, which I did not intend, or the title changed under me. In both cases the screen did something I did not choose.",
+        "solution": "Scrolling up should only move the list. The \"Me\" title should stay in the top bar, and a page should only open when I tap an item."
+      },
+      "test_cases": [
+        {
+          "id": "t132-R",
+          "try": "R",
+          "task": "Side panel > gear > scroll the Me list up and down several times on the blank right side without tapping; watch the top.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "I scrolled down twice and up twice on the blank right side. The top said \"Me\" every time and no other page opened. The list just moved. So scrolling alone does not take me to Avatar. What I was shown in the pictures did not happen when I only scrolled. Reversed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Scrolling only moved the list; the \"Me\" title stayed and no page opened.",
+      "provisional": false
+    },
+    "t133": {
+      "where": "First picture: the \"Me\" page scrolled to the Profile and Preferences settings. Second picture: a page titled \"Avatar\" with \"Make your avatar\".",
+      "action_sentence": "You stayed on this screen and scrolled down.",
+      "expectation": "The second picture says I am on the Avatar page. That is not the page I was on, and I was told I stayed on the same screen.",
+      "confidence": "guessing",
+      "cue": "The title \"Avatar\" in the top bar, in the place where \"Me\" was.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The title is clear on its own, but it contradicts the sentence. If I only scrolled down, the title should still say \"Me\". Instead it says \"Avatar\" and the list of settings is gone. Either the scroll opened the Avatar item, which I did not intend, or the title changed under me. In both cases the screen did something I did not choose.",
+        "solution": "Scrolling down should only move the list. The \"Me\" title should stay in the top bar, and a page should only open when I tap an item."
+      },
+      "test_cases": [
+        {
+          "id": "t133-R",
+          "try": "R",
+          "task": "Side panel > gear > scroll the Me list up and down several times on the blank right side without tapping; watch the top.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "I scrolled down twice and up twice on the blank right side. The top said \"Me\" every time and no other page opened. The list just moved. So scrolling alone does not take me to Avatar. What I was shown in the pictures did not happen when I only scrolled. Reversed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Scrolling only moved the list; the \"Me\" title stayed and no page opened.",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "screens_reviewed": 85,
+    "transitions_reviewed": 2,
+    "confidence": {
+      "sure": 46,
+      "guessing": 40,
+      "no_idea": 1
+    },
+    "cue_nothing": 1,
+    "no_problem": 46,
+    "navigate_with_difficulty": 39,
+    "cannot_handle": 2,
+    "tests_run": 13,
+    "opinions": {
+      "unchanged": 17,
+      "hardened": 5,
+      "softened": 17,
+      "reversed": 2
+    },
+    "out_of_scope": 5,
+    "not_executed": 5
+  }
+}

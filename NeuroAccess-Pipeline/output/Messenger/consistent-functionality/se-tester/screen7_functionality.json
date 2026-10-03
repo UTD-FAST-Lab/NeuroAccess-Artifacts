@@ -1,0 +1,59 @@
+{
+  "app": "Messenger",
+  "screen": "screen7",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen7_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen7_function_groups.png"
+  },
+  "elements": {
+    "screen7-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of screen7",
+      "bounds": [
+        21,
+        94,
+        105,
+        178
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "arrow pointing left: back — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "back",
+      "accessibility_text": "content_desc: 'Back'; talkback_label: 'Back'",
+      "context_reading": "'Facebook friend requests' page with back arrow",
+      "observed_function": "returned to the previous screen (Chats home)",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen7-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen7 ('Facebook friend requests' page with back arrow)",
+          "action": "note what is on screen, then tap the arrow pointing left at top left of screen7",
+          "expected_result": "the same result as the other members of gg3 (arrow pointing left)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "returned to the previous screen (Chats home)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 1,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

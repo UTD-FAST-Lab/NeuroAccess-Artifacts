@@ -1,0 +1,659 @@
+{
+  "persona": "persona-gopal",
+  "app": "PDFReader",
+  "screens": {
+    "s1": {
+      "where": "The opening screen while the app starts",
+      "expectation": "I believe the application is starting up. I am at its front door, not yet anywhere inside it.",
+      "confidence": "guessing",
+      "cue": "The large picture of a red document with a pencil, the words 'PDF Reader, PDF Viewer' in the middle, a grey bar near the bottom that seems to be filling, and the line 'This process may contain ads'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only words that are large on the screen are the name of the application. That tells me which programme I have opened, but not what is happening. Nothing says 'starting' or 'please wait'. I am inferring it from the bar at the bottom, and I would not trust myself to remember that inference if I looked away. The word 'process' in 'This process may contain ads' does not tell me which process.",
+        "solution": "A plain sentence under the name, such as 'Opening PDF Reader, please wait', so that I know I have not yet arrived anywhere and need do nothing."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc1",
+          "action": "Close the app completely (terminate it) and open it again. Watch the very first screen until it moves on by itself. Then, without going back, say in one sentence what that first screen was and whether any words on it told you so.",
+          "confirms_if": "nothing on the first screen says what it is -- you had to work it out from the picture or the bar",
+          "overturns_if": "some words on the first screen say plainly what is happening (for example that the app is starting)",
+          "observed_result": "I closed the application completely and opened it again, and watched the first screen. It showed the red document picture, the name 'PDF Reader, PDF Viewer' and 'This process may contain ads'. First there was a spinning circle, then a grey bar that began to fill. Then, on its own, it moved to a Google Play page, 'This app needs an update', which I closed with the cross. Next came a test advertisement, which I left with 'Continue to app', and I arrived at the main page. In one sentence: the first screen was the application starting up, and no words on it said so; I worked it out from the spinning circle and the bar. The only words were the application's name and the remark about ads.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the real phone the first screen shows a spinning circle before the bar, and still no word says the application is starting. It is also followed at once by a Google Play page and an advertisement, so I pass through three screens before I arrive anywhere. A plain 'Opening PDF Reader, please wait' would have told me I was only at the door.",
+      "provisional": false
+    },
+    "s2": {
+      "where": "The opening screen while the app starts",
+      "expectation": "I believe the application is starting up. I am at its front door, not yet anywhere inside it.",
+      "confidence": "guessing",
+      "cue": "The large picture of a red document with a pencil, the words 'PDF Reader, PDF Viewer' in the middle, a grey bar near the bottom that seems to be filling, and the line 'This process may contain ads'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only words that are large on the screen are the name of the application. That tells me which programme I have opened, but not what is happening. Nothing says 'starting' or 'please wait'. I am inferring it from the bar at the bottom, and I would not trust myself to remember that inference if I looked away. The word 'process' in 'This process may contain ads' does not tell me which process.",
+        "solution": "A plain sentence under the name, such as 'Opening PDF Reader, please wait', so that I know I have not yet arrived anywhere and need do nothing."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc1",
+          "action": "Close the app completely (terminate it) and open it again. Watch the very first screen until it moves on by itself. Then, without going back, say in one sentence what that first screen was and whether any words on it told you so.",
+          "confirms_if": "nothing on the first screen says what it is -- you had to work it out from the picture or the bar",
+          "overturns_if": "some words on the first screen say plainly what is happening (for example that the app is starting)",
+          "observed_result": "I closed the application completely and opened it again, and watched the first screen. It showed the red document picture, the name 'PDF Reader, PDF Viewer' and 'This process may contain ads'. First there was a spinning circle, then a grey bar that began to fill. Then, on its own, it moved to a Google Play page, 'This app needs an update', which I closed with the cross. Next came a test advertisement, which I left with 'Continue to app', and I arrived at the main page. In one sentence: the first screen was the application starting up, and no words on it said so; I worked it out from the spinning circle and the bar. The only words were the application's name and the remark about ads.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "On the real phone the first screen shows a spinning circle before the bar, and still no word says the application is starting. It is also followed at once by a Google Play page and an advertisement, so I pass through three screens before I arrive anywhere. A plain 'Opening PDF Reader, please wait' would have told me I was only at the door.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "The main page, with 'PDF' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'PDF' button at the top is chosen.",
+      "confidence": "sure",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'PDF' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. 'PDF' is the kind of document this application is named for, and it is coloured red, so I would find my place again after an interruption.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "A box asking me to give the app stars, on top of Settings",
+      "expectation": "A box has come up from the bottom asking me to give the application a rating with stars. Behind it, greyed out, is the Settings page.",
+      "confidence": "guessing",
+      "cue": "The large words 'Thank you for using PDF Reader, PDF Viewer!', the smaller line 'We would be very grateful if you could rate us', five stars with 'The best rating for us' pointing at the last one, and 'Settings' still visible, dimmed, at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The largest words in the box are a thank-you and the name of the application. They do not say what the box is for. I only work out that I am being asked to rate it from the smaller sentence underneath and from the stars. The button at the bottom, 'Rate this App', is so pale I can hardly read it. If I were interrupted, I would come back to a box that thanks me, and I would not remember what it wanted from me. The dimmed word 'Settings' behind helps a little, because it tells me where I was before the box appeared.",
+        "solution": "Give the box a heading that names the task, such as 'Rate this app', and put the thank-you underneath it in smaller type."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc2",
+          "action": "On the main page, tap the gear picture at the top right, then tap Rate App. Look away from the phone for about ten seconds, as if the telephone rang. Look back and say what you were doing and where you are. Do not touch the stars; leave with the phone's Back button and say where you landed.",
+          "confirms_if": "when you look back, the box does not remind you what you were doing",
+          "overturns_if": "when you look back, the box reminds you plainly what you were doing",
+          "observed_result": "From the main page I tapped the gear picture and arrived at a page headed 'Settings'. I tapped 'Rate App'. A box rose from the bottom, and I looked away for about ten seconds. When I looked back, the large words were still 'Thank you for using PDF Reader, PDF Viewer!', with the smaller line 'We would be very grateful if you could rate us.' and five stars beneath. The 'Rate this App' button at the bottom was so pale I could barely read it. What reminded me was the smaller sentence, and the fact that just above the box, dimmed but readable, I could see the row 'Rate App' that I had pressed. The heading itself told me nothing about what I was doing. I did not touch the stars. I pressed the phone's Back button and landed back on the 'Settings' page.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "When I looked back, the dimmed 'Rate App' row showing just above the box, and the smaller sentence asking me to rate, did remind me what I had been doing. So I was not as lost as I feared. But the heading is still a thank-you, and the 'Rate this App' button is almost invisible. A heading that simply said 'Rate this app' would settle it.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "A panel called 'Add widget', on top of Settings",
+      "expectation": "A panel has slid up over the Settings page, headed 'Add widget'. It seems to offer small shortcuts, 'PDF Tools', that I could put somewhere.",
+      "confidence": "guessing",
+      "cue": "The heading 'Add widget' at the top of the panel, the words 'PDF Tools' and 'One-tap access to common features', a row of pictures with names underneath ('Home', 'Recent', 'Bookmarks', 'Edit PDF'), a row of dots, and a large 'Add' button. 'Settings' is dimmed behind.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is a heading, and it is in the right place, which I appreciate. But 'widget' is not a word I know in this sense. I cannot learn it now and I will not remember it tomorrow. So the heading names the place in a word that means nothing to me. I can tell I am in some part of Settings, because I can see that word behind the panel, but not what this panel does. The row of dots suggests there are several more pages to this panel, and I would lose count of which one I was on.",
+        "solution": "Name it in ordinary words, for example 'Add a shortcut to your home screen', and say in one sentence where the shortcut will appear."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc3",
+          "action": "On the main page, tap the gear picture, then tap Add widget. Look away for about ten seconds, then look back and say where you are and what this panel is for. Leave by tapping the dim area above the panel. Never tap Add.",
+          "confirms_if": "after looking back, the heading does not tell you where you are in words you can use",
+          "overturns_if": "after looking back, you can say where you are and what the panel is for",
+          "observed_result": "I was already on 'Settings', so I tapped 'Add widget'. A panel rose, headed 'Add widget'. I looked away for about ten seconds. When I looked back, the heading still said 'Add widget', with 'Home', 'Recent', 'Bookmarks' and 'Edit PDF' pictures, the words 'PDF Tools' and 'One-tap access to common features', a row of dots and an 'Add' button. I could say I was in Settings, because 'Settings' was still visible dimmed above. But I could not say in my own words what the panel was for: 'widget' means nothing to me, and 'One-tap access to common features' does not say where that access would appear. My first tap just above the panel did nothing. My second tap, higher in the dim area, closed it, and I believe that same tap went through to the Settings list, because I found myself on a page headed 'Language'. I chose nothing there and pressed Back. Back took me not to Settings but straight to the main page. I never touched 'Add'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The heading is where a heading should be, and I knew I was still in Settings. But 'Add widget' does not tell me what the panel is for in words I can use, and I will not remember what a widget is next time. Leaving it also went wrong for me: tapping the dim area landed me on a 'Language' page I had not asked for, and Back from there skipped Settings altogether. (Out of scope: that stray landing on Language, and Back skipping Settings, are about how the app moves me around, not about the heading.)",
+      "provisional": false
+    },
+    "s10": {
+      "where": "The main page, with 'HWP' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'HWP' button at the top is chosen.",
+      "confidence": "guessing",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'HWP' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. But the chosen button reads 'HWP', and I do not know what those letters stand for. I cannot learn a new set of initials. So I know I am on the main page, but I cannot say what I am looking at, and if I came back after the phone rang I would see a blue 'HWP' and have no idea how I got there or whether it was what I wanted.",
+        "solution": "Spell out what the letters mean on the button, or underneath it, in plain words, so the chosen section has a name I can read rather than initials."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc4",
+          "action": "On the main page, tap HWP in the row of buttons near the top. Look away for a few seconds, then look back and say where you are. Then tap PPT and do the same. Finish by tapping PDF.",
+          "confirms_if": "after looking back, you cannot name where you are because of the letters on the chosen button",
+          "overturns_if": "after looking back, the page tells you where you are well enough without knowing the letters",
+          "observed_result": "On the main page I tapped 'HWP'. The button turned blue, the 'SET' button and the small book picture turned blue too, and nothing else on the page changed: same picture, same 'To continue, please allow file access on your device', same 'Home' at the bottom. After looking away and back, I could say I was on the main page ('Home' is dark at the bottom), but not what part of it: the only thing that had changed was a blue button reading 'HWP', and I do not know what that is. I then tapped 'PPT'. It turned orange, again with nothing else different. After looking back, the same: main page, but a section I could only name by its initials. I finished by tapping 'PDF', which turned red again, and I was back where I started.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Trying it showed that choosing 'HWP' or 'PPT' changes nothing on the page except the colour of one button. So the letters on that button are the only thing telling me where I am within the main page, and I cannot read them as names. 'Home' at the bottom keeps me on the main page, but no more than that.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "A panel called 'Add widget', on top of Settings",
+      "expectation": "A panel has slid up over the Settings page, headed 'Add widget'. It seems to offer small shortcuts, 'PDF Tools', that I could put somewhere.",
+      "confidence": "guessing",
+      "cue": "The heading 'Add widget' at the top of the panel, the words 'PDF Tools' and 'One-tap access to common features', a row of pictures with names underneath ('PDF', 'Word', 'Excel', 'PPT') and a square of four small shapes beside the search box, a row of dots, and a large 'Add' button. 'Settings' is dimmed behind.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is a heading, and it is in the right place, which I appreciate. But 'widget' is not a word I know in this sense. I cannot learn it now and I will not remember it tomorrow. So the heading names the place in a word that means nothing to me. I can tell I am in some part of Settings, because I can see that word behind the panel, but not what this panel does. The row of dots suggests there are several more pages to this panel, and I would lose count of which one I was on.",
+        "solution": "Name it in ordinary words, for example 'Add a shortcut to your home screen', and say in one sentence where the shortcut will appear."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc3",
+          "action": "On the main page, tap the gear picture, then tap Add widget. Look away for about ten seconds, then look back and say where you are and what this panel is for. Leave by tapping the dim area above the panel. Never tap Add.",
+          "confirms_if": "after looking back, the heading does not tell you where you are in words you can use",
+          "overturns_if": "after looking back, you can say where you are and what the panel is for",
+          "observed_result": "I was already on 'Settings', so I tapped 'Add widget'. A panel rose, headed 'Add widget'. I looked away for about ten seconds. When I looked back, the heading still said 'Add widget', with 'Home', 'Recent', 'Bookmarks' and 'Edit PDF' pictures, the words 'PDF Tools' and 'One-tap access to common features', a row of dots and an 'Add' button. I could say I was in Settings, because 'Settings' was still visible dimmed above. But I could not say in my own words what the panel was for: 'widget' means nothing to me, and 'One-tap access to common features' does not say where that access would appear. My first tap just above the panel did nothing. My second tap, higher in the dim area, closed it, and I believe that same tap went through to the Settings list, because I found myself on a page headed 'Language'. I chose nothing there and pressed Back. Back took me not to Settings but straight to the main page. I never touched 'Add'.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The heading is where a heading should be, and I knew I was still in Settings. But 'Add widget' does not tell me what the panel is for in words I can use, and I will not remember what a widget is next time. Leaving it also went wrong for me: tapping the dim area landed me on a 'Language' page I had not asked for, and Back from there skipped Settings altogether. (Out of scope: that stray landing on Language, and Back skipping Settings, are about how the app moves me around, not about the heading.)",
+      "provisional": false
+    },
+    "s15": {
+      "where": "The main page, with 'Word' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'Word' button at the top is chosen.",
+      "confidence": "sure",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'Word' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. 'Word' is a name I know for letters and documents, and it is filled in blue. It sits a little oddly under the large heading 'PDF Reader', since I would not expect Word documents in a PDF reader, but the blue button is clear enough that I would know where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s17": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "The main page, with 'Excel' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'Excel' button at the top is chosen.",
+      "confidence": "sure",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'Excel' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. 'Excel' is a name I know for spreadsheets, and it is filled in green. The large heading still says 'PDF Reader', which does not match, but the green button tells me which part I am in.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s21": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s23": {
+      "where": "The main page, with 'PPT' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'PPT' button at the top is chosen.",
+      "confidence": "guessing",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'PPT' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. The chosen button reads 'PPT'. Those are initials, and I have to stop and try to work out what they stand for. I think it may be the slide programme, but I am not sure, and I would not remember having worked it out if I looked away. The heading above still says 'PDF Reader', which does not help.",
+        "solution": "Write the full name on the chosen button, for example 'Slides' or 'PowerPoint', rather than the initials, and let the heading at the top name the section I am in."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc4",
+          "action": "On the main page, tap HWP in the row of buttons near the top. Look away for a few seconds, then look back and say where you are. Then tap PPT and do the same. Finish by tapping PDF.",
+          "confirms_if": "after looking back, you cannot name where you are because of the letters on the chosen button",
+          "overturns_if": "after looking back, the page tells you where you are well enough without knowing the letters",
+          "observed_result": "On the main page I tapped 'HWP'. The button turned blue, the 'SET' button and the small book picture turned blue too, and nothing else on the page changed: same picture, same 'To continue, please allow file access on your device', same 'Home' at the bottom. After looking away and back, I could say I was on the main page ('Home' is dark at the bottom), but not what part of it: the only thing that had changed was a blue button reading 'HWP', and I do not know what that is. I then tapped 'PPT'. It turned orange, again with nothing else different. After looking back, the same: main page, but a section I could only name by its initials. I finished by tapping 'PDF', which turned red again, and I was back where I started.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Trying it showed that choosing 'HWP' or 'PPT' changes nothing on the page except the colour of one button. So the letters on that button are the only thing telling me where I am within the main page, and I cannot read them as names. 'Home' at the bottom keeps me on the main page, but no more than that.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "A box asking me to make this the usual app for PDF files, on top of the main page",
+      "expectation": "A box has come up over the main page asking me to make this application the one my telephone always uses to open PDF files.",
+      "confidence": "guessing",
+      "cue": "The line in large type 'The fastest way to read PDF files', the sentence below it 'Set PDF Reader, PDF Viewer as your default app', the button 'Set as default' and the word 'Later'. Above that is a drawing of another box with 'Just once' and 'Always' and a hand pointing at 'Always'.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The largest line in the box is a boast, 'The fastest way to read PDF files'. It does not tell me what the box is asking. I only understand the request from the smaller sentence under it. Worse, the top half of the box is a picture of another box, with its own buttons 'Just once' and 'Always' and a hand pressing one. I could easily mistake the picture for real buttons and not know which box I am in. If I looked away and came back, I would see two boxes, one inside the other, and would not know which one wanted me.",
+        "solution": "Head the box with what it asks, for example 'Open PDF files with this app every time?'. Make it plain that the drawing is only an example, or leave it out."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc5",
+          "action": "On the main page, tap the red SET button. Look away for about ten seconds, then look back and say what the panel is asking and where you are. Then tap Later and say where you landed. Never tap Set as default, Always or Just once.",
+          "confirms_if": "after looking back, the panel's heading does not remind you what it is asking",
+          "overturns_if": "after looking back, you can tell at once what the panel is asking",
+          "observed_result": "On the main page I tapped the red 'SET' button. A panel rose from the bottom, and I looked away for about ten seconds. When I looked back, the top half of the panel was the drawing of another box, with 'PDF Reader, PDF Viewer' circled in red, 'Just once' and 'Always' buttons, and a hand pressing 'Always'. Below that came the bold line 'The fastest way to read PDF files', then 'Set PDF Reader, PDF Viewer as your default app', then 'Set as default' and 'Later'. I could work out what it was asking, but only from the second, smaller sentence, and from the strip 'Set as default reader' that I could still see dimmed behind the panel; the bold heading did not tell me. My eye went first to the drawn 'Always' button with the hand on it, and I had to stop and ask myself whether that was a real button. I did not touch 'Set as default', 'Always' or 'Just once'. I tapped 'Later'. The first moment it seemed nothing happened; a second later the panel had gone and I was on the main page with 'PDF' chosen.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I could tell what it was asking only by reading past the bold boast to the smaller sentence, helped by the dimmed 'Set as default reader' strip behind it. The drawing of the 'Always' button with a hand on it still caught my eye first, and I had to stop and decide it was not real. A heading such as 'Open PDF files with this app every time?' would tell me at once.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "The main page, with 'PDF' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'PDF' button at the top is chosen.",
+      "confidence": "sure",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'PDF' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. 'PDF' is the kind of document this application is named for, and it is coloured red, so I would find my place again after an interruption. The strip saying 'Set as default reader' is gone from this picture, which leaves less to read.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "The main page, with 'HWP' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'HWP' button at the top is chosen.",
+      "confidence": "guessing",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'HWP' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. But the chosen button reads 'HWP', and I do not know what those letters stand for. I cannot learn a new set of initials. So I know I am on the main page, but I cannot say what I am looking at, and if I came back after the phone rang I would see a blue 'HWP' and have no idea how I got there or whether it was what I wanted.",
+        "solution": "Spell out what the letters mean on the button, or underneath it, in plain words, so the chosen section has a name I can read rather than initials."
+      },
+      "test_cases": [
+        {
+          "id": "gopal-tc4",
+          "action": "On the main page, tap HWP in the row of buttons near the top. Look away for a few seconds, then look back and say where you are. Then tap PPT and do the same. Finish by tapping PDF.",
+          "confirms_if": "after looking back, you cannot name where you are because of the letters on the chosen button",
+          "overturns_if": "after looking back, the page tells you where you are well enough without knowing the letters",
+          "observed_result": "On the main page I tapped 'HWP'. The button turned blue, the 'SET' button and the small book picture turned blue too, and nothing else on the page changed: same picture, same 'To continue, please allow file access on your device', same 'Home' at the bottom. After looking away and back, I could say I was on the main page ('Home' is dark at the bottom), but not what part of it: the only thing that had changed was a blue button reading 'HWP', and I do not know what that is. I then tapped 'PPT'. It turned orange, again with nothing else different. After looking back, the same: main page, but a section I could only name by its initials. I finished by tapping 'PDF', which turned red again, and I was back where I started.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Trying it showed that choosing 'HWP' or 'PPT' changes nothing on the page except the colour of one button. So the letters on that button are the only thing telling me where I am within the main page, and I cannot read them as names. 'Home' at the bottom keeps me on the main page, but no more than that.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents. (Out of scope: on this picture I can see no way to leave the page. There is no cross and no 'No thanks'. That frightens me more than the heading does, because I would worry that the only way on is to press 'Start Free Trial'.)",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "Settings",
+      "expectation": "I am in the Settings of the application, where one changes how it behaves.",
+      "confidence": "sure",
+      "cue": "The word 'Settings' at the top beside an arrow pointing left, and a list of ordinary choices underneath: 'Keep screen on', 'Language', 'Set default reader', 'Rate App', 'Privacy Policy'.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "'Settings' is a word I have known for many years and it means the same here as everywhere else. It sits where a title belongs, at the top, and the list beneath it agrees with it. If the telephone rang and I came back, that word would tell me at once where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "The main page, with 'Word' chosen",
+      "expectation": "I am on the main page of the application ('Home'), and the 'Word' button at the top is chosen.",
+      "confidence": "sure",
+      "cue": "'PDF Reader' in large letters at the top, the row of buttons 'PDF', 'HWP', 'Word', 'Excel', 'PPT' with 'Word' filled in with colour, and at the bottom 'Home' in dark lettering while 'Recent', 'Favorite' and 'Tools' are grey. In the middle it says 'To continue, please allow file access on your device.'",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The word 'Home' at the bottom is familiar to me and it is darker than its neighbours, so I understand I am at the main page. The large words at the top are only the name of the application; they would read the same wherever I was. What tells me which part of the main page I am on is the coloured button in the row at the top. 'Word' is a name I know for letters and documents, and it is filled in blue. It sits a little oddly under the large heading 'PDF Reader', since I would not expect Word documents in a PDF reader, but the blue button is clear enough that I would know where I was.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "A page selling the paid version of the app",
+      "expectation": "I am on a page asking me to take out a paid subscription, starting with a free trial.",
+      "confidence": "sure",
+      "cue": "The heading in large letters, 'Try the Premium plan completely free', the price line '3 day free trial, then $29.99/year' and the large button 'Start Free Trial'. There is also a dark round button with a cross in the top left corner.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading tells me plainly what this page is: an offer to pay for a better version, with the first days free. The words are ordinary English and I do not have to learn anything to read it. If I looked away and came back, that heading would remind me that I am being asked to buy something. It does not tell me where in the application I came from, but it does tell me what I am looking at, and that is enough for me to know I have not reached my documents.",
+        "solution": ""
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 36,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 27,
+      "guessing": 9,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 27,
+    "navigate_with_difficulty": 9,
+    "cannot_handle": 0,
+    "tests_run": 5,
+    "opinions": {
+      "unchanged": 3,
+      "hardened": 5,
+      "softened": 1,
+      "reversed": 0
+    },
+    "out_of_scope": 8,
+    "not_executed": 0
+  }
+}

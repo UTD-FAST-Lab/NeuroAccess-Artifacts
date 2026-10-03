@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s26",
+  "state_str": "a9c922236b92a50e06411d1c29dca3d2",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_134216.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s26_header_nav.png",
+  "name": "the first Delete account dialog over Profile",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Profile",
+      "verdict_on_region": "title of the page underneath, dimmed but legible"
+    },
+    {
+      "kind": "header",
+      "text": "Delete account",
+      "verdict_on_region": "unconventional (dialog title): names the dialog \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Delete account\" dialog title over the dimmed \"Profile\" title",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the dialog names itself; the page title shows behind it",
+  "test_cases": [
+    {
+      "id": "s26-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Profile",
+      "action": "tap Delete Account, read the dialog, tap Cancel",
+      "expected_result": "the dialog title names it; Cancel returns",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the dialog is untitled",
+      "observed_result": "\"Delete account\" title, body \"Deleting your account is permanent\u2026\"; Cancel returned to Profile with the title \"Profile\"",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: dialog titled \"Delete account\" with Cancel and I Understand; Cancel returned to Profile. Nothing was confirmed.",
+  "recommendation": null,
+  "provisional": false
+}

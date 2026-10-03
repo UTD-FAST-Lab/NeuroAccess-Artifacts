@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s23",
+  "state_str": "64ad24901520d54c8bb9ae605c93b356",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151736.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s23_header_nav.png",
+  "name": "story viewer after a reply",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Sent to Deki",
+      "verdict_on_region": "status line saying a reply was sent — names an event, not a place; it replaces the author name"
+    }
+  ],
+  "identifier_found": "the story viewer's author name is replaced by \"Sent to Deki\", which reports an event, not a place",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the story viewer's author name is replaced by \"Sent to Deki\", which reports an event, not a place",
+  "test_cases": [
+    {
+      "id": "s23-tc1",
+      "type": "verification",
+      "precondition": "a story open in the viewer",
+      "action": "reply to the story and watch the top bar",
+      "expected_result": "\"Sent to …\" replaces the name and reverts, or stays",
+      "confirms_if": "the status line replaces the author name with no other locating text",
+      "overturns_if": "the author name stays or returns at once",
+      "observed_result": "not run — replying to a story sends a message to a real contact, which is forbidden on this device",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "provisional — test not executed (forbidden action); the story viewer's author name is replaced by \"Sent to Deki\", which reports an event, not a place; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "keep the story author's name in the top chrome and show \"Sent\" as a separate transient toast",
+  "provisional": true
+}

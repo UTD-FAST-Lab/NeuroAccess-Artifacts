@@ -1,0 +1,888 @@
+{
+  "app": "PDFReader",
+  "screen": "screen33",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen33_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen33_function_groups.png"
+  },
+  "elements": {
+    "screen33-f1": {
+      "kind": "icon",
+      "appearance": "golden crown",
+      "state": null,
+      "location": "top right of the \"PDF Reader\" header, left of the gear",
+      "bounds": [
+        827,
+        78,
+        943,
+        194
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a crown is a widely used mobile convention for \"premium / upgrade\" — my reading, confidence medium (common in freemium apps, not something every first-time user knows)",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "sits in the app header next to the title \"PDF Reader\"; no word beside it",
+      "observed_function": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+      "glyph_group": "gg1",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen33-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f1 (golden crown) once",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg1-screen33-f1",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f1 (golden crown) once",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen33-f1",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen33-f1 and record what happens (no function string in any field)",
+          "expected_result": "opens a premium / upgrade offer",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "opened the full-screen Premium paywall (\"Try the Premium plan completely free\", with \"Start Free Trial\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f2": {
+      "kind": "icon",
+      "appearance": "gear with a wrench across it",
+      "state": null,
+      "location": "top right corner of the \"PDF Reader\" header",
+      "bounds": [
+        943,
+        78,
+        1059,
+        194
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a gear is the established convention for settings; the wrench across it can also read as \"tools\" — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\" — nothing declared",
+      "context_reading": "app header, far right; no word beside it; the bottom bar has a separate \"Tools\" tab",
+      "observed_function": "opened the Settings screen",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen33-f2",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f2 (gear with a wrench across it) once",
+          "expected_result": "opens Settings",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the Settings screen",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fd-screen33-f2",
+          "type": "function_determination",
+          "precondition": "same live state as the tap above",
+          "action": "tap screen33-f2 and record what happens (no function string in any field)",
+          "expected_result": "opens Settings",
+          "confirms_if": "the tap produces an observable effect that places the element in a group",
+          "overturns_if": "nothing happens and no state changes (not a control)",
+          "observed_result": "opened the Settings screen",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f3": {
+      "kind": "icon+label",
+      "appearance": "blue document inside scan-frame corners with the words \"Scan to PDF\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        0,
+        314,
+        360,
+        603
+      ],
+      "visible_label": "Scan to PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "scan to pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Scan to PDF\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"Scan to PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg32",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg32-screen33-f3",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f3 (Scan to PDF) once",
+          "expected_result": "starts the \"Scan to PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "fg1-screen33-f3",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f3 (Scan to PDF) once",
+          "expected_result": "starts the \"Scan to PDF\" tool",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg32": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f4": {
+      "kind": "icon+label",
+      "appearance": "blue document with an orange OCR tag with the word \"OCR\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        360,
+        314,
+        720,
+        603
+      ],
+      "visible_label": "OCR",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "ocr",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"OCR\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"OCR\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg33",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg33-screen33-f4",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f4 (OCR) once",
+          "expected_result": "starts the \"OCR\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg33": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f5": {
+      "kind": "icon+label",
+      "appearance": "blue globe with the words \"Web to PDF\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        720,
+        314,
+        1080,
+        603
+      ],
+      "visible_label": "Web to PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "web to pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Web to PDF\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"Web to PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg34",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg34-screen33-f5",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f5 (Web to PDF) once",
+          "expected_result": "starts the \"Web to PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg34": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f6": {
+      "kind": "icon+label",
+      "appearance": "blue document marked DOC with the words \"Word to PDF\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        0,
+        603,
+        360,
+        892
+      ],
+      "visible_label": "Word to PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "word to pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Word to PDF\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"Word to PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg35",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg35-screen33-f6",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f6 (Word to PDF) once",
+          "expected_result": "starts the \"Word to PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg35": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f7": {
+      "kind": "icon+label",
+      "appearance": "picture document marked JPG, pale with the words \"Image to PDF\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        360,
+        603,
+        720,
+        892
+      ],
+      "visible_label": "Image to PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "image to pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Image to PDF\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"Image to PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg36",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg36-screen33-f7",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f7 (Image to PDF) once",
+          "expected_result": "starts the \"Image to PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg36": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f8": {
+      "kind": "icon+label",
+      "appearance": "picture document with a green JPG tag with the words \"PDF to Image\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        720,
+        603,
+        1080,
+        892
+      ],
+      "visible_label": "PDF to Image",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "pdf to image",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"PDF to Image\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"PDF to Image\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg37",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg37-screen33-f8",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f8 (PDF to Image) once",
+          "expected_result": "starts the \"PDF to Image\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg37": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f9": {
+      "kind": "icon+label",
+      "appearance": "picture document with a green JPG tag with the words \"PDF to long image\"",
+      "state": null,
+      "location": "tile in the \"Convert\" section of the Tools tab",
+      "bounds": [
+        0,
+        892,
+        360,
+        1181
+      ],
+      "visible_label": "PDF to long image",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "pdf to long image",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"PDF to long image\"",
+      "context_reading": "under the section heading \"Convert\"; carries its own words \"PDF to long image\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg38",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg38-screen33-f9",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f9 (PDF to long image) once",
+          "expected_result": "starts the \"PDF to long image\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg38": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f10": {
+      "kind": "icon+label",
+      "appearance": "scissors cutting a blue document with the words \"Split PDF\"",
+      "state": null,
+      "location": "tile in the \"Edit\" section of the Tools tab",
+      "bounds": [
+        0,
+        1285,
+        360,
+        1574
+      ],
+      "visible_label": "Split PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "split pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Split PDF\"",
+      "context_reading": "under the section heading \"Edit\"; carries its own words \"Split PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg39",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg39-screen33-f10",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f10 (Split PDF) once",
+          "expected_result": "starts the \"Split PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg39": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f11": {
+      "kind": "icon+label",
+      "appearance": "two red PDF documents overlapping with the words \"Merge PDF\"",
+      "state": null,
+      "location": "tile in the \"Edit\" section of the Tools tab",
+      "bounds": [
+        360,
+        1285,
+        720,
+        1574
+      ],
+      "visible_label": "Merge PDF",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "merge pdf",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Merge PDF\"",
+      "context_reading": "under the section heading \"Edit\"; carries its own words \"Merge PDF\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg40",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg40-screen33-f11",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f11 (Merge PDF) once",
+          "expected_result": "starts the \"Merge PDF\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg40": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f12": {
+      "kind": "icon+label",
+      "appearance": "blue stamp with the word \"Watermark\"",
+      "state": null,
+      "location": "tile in the \"Edit\" section of the Tools tab",
+      "bounds": [
+        720,
+        1285,
+        1080,
+        1574
+      ],
+      "visible_label": "Watermark",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "watermark",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Watermark\"",
+      "context_reading": "under the section heading \"Edit\"; carries its own words \"Watermark\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg41",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg41-screen33-f12",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f12 (Watermark) once",
+          "expected_result": "starts the \"Watermark\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg41": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f13": {
+      "kind": "icon+label",
+      "appearance": "blue document with up and down arrows with the word \"Reorder\"",
+      "state": null,
+      "location": "tile in the \"Edit\" section of the Tools tab",
+      "bounds": [
+        0,
+        1574,
+        360,
+        1863
+      ],
+      "visible_label": "Reorder",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "reorder",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Reorder\"",
+      "context_reading": "under the section heading \"Edit\"; carries its own words \"Reorder\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg42",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg42-screen33-f13",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f13 (Reorder) once",
+          "expected_result": "starts the \"Reorder\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg42": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f14": {
+      "kind": "icon+label",
+      "appearance": "green document with the numeral 1 with the words \"Add page numbers\"",
+      "state": null,
+      "location": "tile in the \"Edit\" section of the Tools tab",
+      "bounds": [
+        360,
+        1574,
+        720,
+        1863
+      ],
+      "visible_label": "Add page numbers",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "add page numbers",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Add page numbers\"",
+      "context_reading": "under the section heading \"Edit\"; carries its own words \"Add page numbers\"",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg43",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg43-screen33-f14",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f14 (Add page numbers) once",
+          "expected_result": "starts the \"Add page numbers\" tool",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg43": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f15": {
+      "kind": "icon",
+      "appearance": "top half of a document with a picture and text lines, cut off",
+      "state": null,
+      "location": "tile in the \"Manage\" section of the Tools tab, cut off by the bottom bar",
+      "bounds": [
+        0,
+        1967,
+        360,
+        2083
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no word visible in the captured position; picture only partly visible",
+      "convention_confidence": "low",
+      "declared_function": "import files",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Import files\"",
+      "context_reading": "under the section heading \"Manage\"; the tile's own word is below the bottom bar in this scroll position",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg44",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg44-screen33-f15",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f15 (top half of a document with a picture and text lines, cut off) once",
+          "expected_result": "starts a Manage tool (words hidden in this position)",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg44": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f16": {
+      "kind": "icon",
+      "appearance": "top half of an orange printer with a sheet, cut off",
+      "state": null,
+      "location": "tile in the \"Manage\" section of the Tools tab, cut off by the bottom bar",
+      "bounds": [
+        360,
+        1967,
+        720,
+        2083
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no word visible in the captured position; picture only partly visible",
+      "convention_confidence": "low",
+      "declared_function": "print",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Print\"",
+      "context_reading": "under the section heading \"Manage\"; the tile's own word is below the bottom bar in this scroll position",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg45",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg45-screen33-f16",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f16 (top half of an orange printer with a sheet, cut off) once",
+          "expected_result": "starts a Manage tool (words hidden in this position)",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg45": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f17": {
+      "kind": "icon",
+      "appearance": "top half of a blue padlock, cut off",
+      "state": null,
+      "location": "tile in the \"Manage\" section of the Tools tab, cut off by the bottom bar",
+      "bounds": [
+        720,
+        1967,
+        1080,
+        2083
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no word visible in the captured position; picture only partly visible",
+      "convention_confidence": "low",
+      "declared_function": "lock",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Lock\"",
+      "context_reading": "under the section heading \"Manage\"; the tile's own word is below the bottom bar in this scroll position",
+      "observed_function": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+      "glyph_group": "gg46",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg46-screen33-f17",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f17 (top half of a blue padlock, cut off) once",
+          "expected_result": "starts a Manage tool (words hidden in this position)",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "opened the dialog \"Request permission to access all files\" with the button \"GO TO SET\" (dismissed with Back)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg46": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f18": {
+      "kind": "icon+label",
+      "appearance": "house above the word \"Home\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        0,
+        2083,
+        270,
+        2230
+      ],
+      "visible_label": "Home",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "home",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Home\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Home\"",
+      "observed_function": "switched to the Home tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-screen33-f18",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f18 (Home) once",
+          "expected_result": "switches to the Home tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Home tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f19": {
+      "kind": "icon+label",
+      "appearance": "clock above the word \"Recent\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        270,
+        2083,
+        540,
+        2230
+      ],
+      "visible_label": "Recent",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "recent",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Recent\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Recent\"",
+      "observed_function": "switched to the Recent tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-screen33-f19",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f19 (Recent) once",
+          "expected_result": "switches to the Recent tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Recent tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f20": {
+      "kind": "icon+label",
+      "appearance": "five-point star above the word \"Favorite\"",
+      "state": "unselected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        540,
+        2083,
+        810,
+        2230
+      ],
+      "visible_label": "Favorite",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "favorite",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Favorite\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Favorite\"",
+      "observed_function": "switched to the Favorite tab (its icon turned solid and its word dark)",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-screen33-f20",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f20 (Favorite) once",
+          "expected_result": "switches to the Favorite tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "switched to the Favorite tab (its icon turned solid and its word dark)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen33-f21": {
+      "kind": "icon+label",
+      "appearance": "four small squares in a grid above the word \"Tools\"",
+      "state": "selected",
+      "location": "bottom navigation bar",
+      "bounds": [
+        810,
+        2083,
+        1080,
+        2230
+      ],
+      "visible_label": "Tools",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "tools",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Tools\"",
+      "context_reading": "bottom tab bar \"Home Recent Favorite Tools\"; carries its own word \"Tools\"",
+      "observed_function": "kept the current selection (it was already selected); the screen stayed as it was",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-screen33-f21",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen33 (MAIN tab=Tools chip=[] nobanner noallow nofab)",
+          "action": "note what is on screen, then tap screen33-f21 (Tools) once",
+          "expected_result": "switches to the Tools tab",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "kept the current selection (it was already selected); the screen stayed as it was",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 21,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 25,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

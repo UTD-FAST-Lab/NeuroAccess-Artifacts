@@ -1,0 +1,71 @@
+{
+  "app": "PDFReader",
+  "screen": "screen30",
+  "images": {
+    "glyph_groups": "inputs/PDFReader/functionality-groups/screen30_glyph_groups.png",
+    "function_groups": "inputs/PDFReader/functionality-groups/screen30_function_groups.png"
+  },
+  "elements": {
+    "screen30-f1": {
+      "kind": "button",
+      "appearance": "the words \"GO TO SET\"",
+      "state": null,
+      "location": "the only button of the dialog \"Request permission to access all files\"",
+      "bounds": [
+        79,
+        2085,
+        1001,
+        2211
+      ],
+      "visible_label": "GO TO SET",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "declared_function": "go to set",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"GO TO SET\"",
+      "context_reading": "dialog text: \"To read and edit your document files, please allow \"PDF Reader, PDF Viewer\" to access all your files.\"",
+      "observed_function": "left the app for Android's \"All files access\" page for this app (\"Allow access to manage all files\" switch, off); returned with Back, nothing toggled",
+      "glyph_group": "gg31",
+      "function_group": "cfg4",
+      "test_cases": [
+        {
+          "id": "gg31-screen30-f1",
+          "type": "same_appearance",
+          "precondition": "app open on the live state matching screen30 (\"Request permission to access all files\" dialog opened from the floating scan button)",
+          "action": "note what is on screen, then tap screen30-f1 (GO TO SET) once",
+          "expected_result": "opens the system page for file access",
+          "confirms_if": "two members in the same visual state reach unrelated destinations and nothing visible on screen says so in advance",
+          "overturns_if": "every member reaches the same destination, or the difference is a state face / screen-scoped variant, or visible context distinguishes them on all four criteria",
+          "observed_result": "left the app for Android's \"All files access\" page for this app (\"Allow access to manage all files\" switch, off); returned with Back, nothing toggled",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg4-screen30-f1",
+          "type": "mixed_appearance",
+          "precondition": "app open on the live state matching screen30 (\"Request permission to access all files\" dialog opened from the floating scan button)",
+          "action": "note what is on screen, then tap screen30-f1 (GO TO SET) once",
+          "expected_result": "opens the system page for file access",
+          "confirms_if": "the renderings do the same thing at the same scope and a user who learned one would not recognise the other",
+          "overturns_if": "the renderings do different things (the group is wrong), or surface, scope or explicitness justify the difference and the job stays recognisable",
+          "observed_result": "left the app for Android's \"All files access\" page for this app (\"Allow access to manage all files\" switch, off); returned with Back, nothing toggled",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg31": "Consistent Functionality",
+        "cfg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 1,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

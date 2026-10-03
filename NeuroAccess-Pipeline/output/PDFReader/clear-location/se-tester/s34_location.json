@@ -1,0 +1,26 @@
+{
+  "app": "PDFReader",
+  "screen": "s34",
+  "state_str": "a515a4f13a60c1cd77fe34c8e539b1d4",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_182544.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s34_header_nav.png",
+  "name": "the Premium plan offer (close X shown)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Try the Premium plan completely free",
+      "verdict_on_region": "unconventional position (mid-screen, below the hero image); names the whole screen's subject, the Premium plan offer, which is where the crown icon and 'Upgrade to Premium' lead -- accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Try the Premium plan completely free\" -- mid-screen heading naming the offer the whole screen is about",
+  "identifier_class": "self_evident_content",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "relies on self-evident content: the whole screen is one offer, named in its heading and its \"Start Free Trial\" button; no header bar or nav",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "template carry from s30 (same structure_str 82464c180b9d426d89165ceade7840c3); identical visible content and heading. Rests on the self-evident-content class, stated as such",
+  "recommendation": null,
+  "provisional": false
+}

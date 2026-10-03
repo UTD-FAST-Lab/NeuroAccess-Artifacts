@@ -1,0 +1,564 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen16",
+  "images": {
+    "glyph_groups": "inputs/ChatGPT/functionality-groups/screen16_glyph_groups.png",
+    "function_groups": "inputs/ChatGPT/functionality-groups/screen16_function_groups.png"
+  },
+  "elements": {
+    "screen16-f1": {
+      "kind": "icon",
+      "appearance": "two horizontal lines, the lower one shorter",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "two-line menu (\"hamburger\" family) glyph - established menu convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg1",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg1-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the side panel (ChatGPT wordmark, search, Images / Library / Projects / Scheduled / Plugins, past chats, \"Chat\" pill)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f2": {
+      "kind": "icon+label",
+      "appearance": "four-pointed sparkle with the words \"Get Plus\"",
+      "state": null,
+      "location": "top left",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_label": "Get Plus",
+      "convention_relied_on": "worded control (\"Get Plus\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Get Plus",
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the \"ChatGPT Plus\" plan page (Go / Plus switch, feature table, \"Upgrade for $19.99\")",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f3": {
+      "kind": "icon",
+      "appearance": "speech bubble with a broken outline",
+      "state": "off, greyed",
+      "location": "top right",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "no established convention for a broken-outline bubble; product-specific, not a convention",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "toggles temporary chat: off -> on (glyph gains a check, placeholder becomes \"Temporary chat\", \"This chat won't appear in history.\"), on -> off; in its greyed face (image suggestions open) it shows the tooltip \"This model does not support temporary chat. To use this model, start a new chat or pick a different model for your temporary chat.\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f4": {
+      "kind": "button",
+      "appearance": "the word \"Trending\"",
+      "state": "selected",
+      "location": "top left",
+      "bounds": [
+        42,
+        285,
+        296,
+        411
+      ],
+      "visible_label": "Trending",
+      "convention_relied_on": "worded control (\"Trending\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Trending",
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "selects the Trending tab (tapping it while already selected changes nothing)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f5": {
+      "kind": "button",
+      "appearance": "the word \"Templates\"",
+      "state": "unselected",
+      "location": "top centre",
+      "bounds": [
+        317,
+        285,
+        606,
+        411
+      ],
+      "visible_label": "Templates",
+      "convention_relied_on": "worded control (\"Templates\"); no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "Templates",
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "selects the Templates tab (tapping it while already selected changes nothing)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f6": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top right",
+      "bounds": [
+        913,
+        286,
+        1039,
+        412
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close / dismiss - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f7": {
+      "kind": "button",
+      "appearance": "picture tile: line drawing of a flower with an orange centre",
+      "state": null,
+      "location": "middle left",
+      "bounds": [
+        42,
+        453,
+        519,
+        960
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the drawing sheet (pencil / shapes / eraser, undo, colours, check)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (not tapped individually; the same overlay state was exercised on its neighbours (menu glyph, microphone, a tile) and every one only closed the overlay); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f8": {
+      "kind": "button",
+      "appearance": "picture tile: photo of a woman in sunglasses and a denim jacket",
+      "state": null,
+      "location": "middle right",
+      "bounds": [
+        561,
+        453,
+        1038,
+        960
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "worded tile (caption on the picture)",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "opens the preview sheet \"Give your photos an '80s look\" with the prompt, \"Take photo\" and \"Choose photo\"",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "in the captured state this control is unreachable: while the drawing sheet (pencil / shapes / eraser, colour row) is open, the first tap outside it only closes the overlay and never reaches this control (tapped on the live app in this state); the control is visible but unreachable in the captured state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f9": {
+      "kind": "icon",
+      "appearance": "pencil",
+      "state": "selected",
+      "location": "middle centre",
+      "bounds": [
+        356,
+        1003,
+        482,
+        1128
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "pencil in a drawing toolbar = draw tool - established; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "selects the pencil tool on the drawing sheet",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen16-f9-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "selects the pencil tool on the drawing sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f10": {
+      "kind": "icon",
+      "appearance": "square, diamond and two squares in a grid",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        482,
+        1003,
+        600,
+        1128
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "grid of shapes = shapes tool - moderately established; my reading",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "opens a shape picker (line, arrow, square, circle, triangle, diamond, star, heart)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen16-f10-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "opens a shape picker (line, arrow, square, circle, triangle, diamond, star, heart)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f11": {
+      "kind": "icon",
+      "appearance": "eraser",
+      "state": null,
+      "location": "middle centre",
+      "bounds": [
+        600,
+        1003,
+        722,
+        1128
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "eraser = erase tool - established; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "selects the eraser tool",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen16-f11-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "selects the eraser tool",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f12": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "middle left",
+      "bounds": [
+        42,
+        1007,
+        158,
+        1123
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X = close / dismiss - established convention; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+      "glyph_group": "gg6",
+      "function_group": "cfg2",
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on the screen that carries the member, reached live; context on screen noted before the tap",
+          "action": "tap the member once and record what the app does",
+          "expected_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible on screen said so in advance",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own surface, with the distinguishing context visible before the tap",
+          "observed_result": "closes the surface it sits on: the image suggestions panel (screens 3/14/22), the write-or-edit suggestions (4/34), the drawing sheet (16-f12), the template preview sheets (17/19) and the sticker prompt editor (18)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "each rendering reached live on its own screen",
+          "action": "exercise every distinct appearance and compare destinations; then ask whether the second rendering would be recognised as the same job",
+          "expected_result": "the same destination or effect",
+          "confirms_if": "same job, and a user who learned one rendering would not recognise the other",
+          "overturns_if": "different jobs, or surface/scope/explicitness justify the difference",
+          "observed_result": "closes its own surface",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality",
+        "cfg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen16-f13": {
+      "kind": "icon",
+      "appearance": "arrow curving back to the left",
+      "state": "inactive",
+      "location": "middle right",
+      "bounds": [
+        922,
+        1007,
+        1038,
+        1123
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "curved back arrow = undo - established; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "undoes the last stroke; inert while greyed (no strokes)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen16-f13-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "undoes the last stroke; inert while greyed (no strokes)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen16-f14": {
+      "kind": "icon",
+      "appearance": "checkmark in a circle",
+      "state": "inactive",
+      "location": "bottom right",
+      "bounds": [
+        922,
+        2220,
+        1038,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "check = done / confirm - established; my reading",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "nothing declared",
+      "context_reading": "drawing sheet open over the image suggestions panel",
+      "observed_function": "inert while greyed (captured state); turns blue after a stroke - the active tap (submitting the drawing) was not executed",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "screen16-f14-fd1",
+          "type": "function_determination",
+          "precondition": "the surface that holds it, live",
+          "action": "tap it once in the captured state and record what happens",
+          "expected_result": "a determinable function",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "inert while greyed (captured state); turns blue after a stroke - the active tap (submitting the drawing) was not executed",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "screen16-f14-fd2",
+          "type": "function_determination",
+          "precondition": "a stroke drawn so the check turns blue",
+          "action": "tap the active check",
+          "expected_result": "the drawing is submitted to the composer",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": null,
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 14,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 6,
+    "detection_false_positives": 8,
+    "test_cases_executed": 14,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 0
+  }
+}

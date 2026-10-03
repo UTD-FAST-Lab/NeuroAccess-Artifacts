@@ -1,0 +1,67 @@
+{
+  "app": "Duolingo",
+  "screen": "screen13",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen13_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen13_function_groups.png"
+  },
+  "elements": {
+    "screen13-f1": {
+      "kind": "icon+label",
+      "appearance": "the words \"CLAIM ON BRAWL STARS\" with a box-and-arrow glyph",
+      "state": null,
+      "location": "Brawl Stars Quest claim page (capture only)",
+      "bounds": [
+        42,
+        2000,
+        1038,
+        2127
+      ],
+      "visible_label": "CLAIM ON BRAWL STARS",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": "claim on brawl stars",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"CLAIM ON BRAWL STARS button icon\"",
+      "context_reading": "Brawl Stars Quest claim page (capture only)",
+      "observed_function": "not tested: ungrouped element outside every subject of this phase (screen not reachable live: the quest page has changed)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen13-f2": {
+      "kind": "button",
+      "appearance": "the words \"CLAIM LATER\"",
+      "state": null,
+      "location": "Brawl Stars Quest claim page (capture only)",
+      "bounds": [
+        63,
+        2148,
+        1017,
+        2274
+      ],
+      "visible_label": "CLAIM LATER",
+      "convention_relied_on": "worded or card element; no glyph convention relied on",
+      "convention_confidence": "n/a",
+      "declared_function": "claim later",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"CLAIM LATER\"",
+      "context_reading": "Brawl Stars Quest claim page (capture only)",
+      "observed_function": "not tested: ungrouped element outside every subject of this phase (screen not reachable live: the quest page has changed)",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [],
+      "inherited_verdicts": {},
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

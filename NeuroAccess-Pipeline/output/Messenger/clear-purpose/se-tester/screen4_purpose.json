@@ -1,0 +1,338 @@
+{
+ "app": "Messenger",
+ "screen": "screen4",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen4_actionable_elements.png",
+ "elements": {
+  "screen4-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'New message'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    63,
+    1080,
+    210
+   ],
+   "visible_text": "'New message'",
+   "accessibility_text_consulted": "talkback_label 'Back New message' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the band carries the title 'New message'",
+   "test_cases": [
+    {
+     "id": "screen4-a1-tc1",
+     "type": "verification",
+     "precondition": "New message open",
+     "action": "tap the title text 'New message' and the empty right side of the band",
+     "expected_result": "a tap opens something",
+     "confirms_if": "nothing happens",
+     "overturns_if": "it proves inert",
+     "observed_result": "nothing happened; the screen stayed unchanged",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping the 'New message' title band did nothing; it is a heading, not a control",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a2": {
+   "kind": "icon",
+   "glyph": "arrow pointing left",
+   "description": "arrow pointing left",
+   "location": "top, left",
+   "bounds": [
+    11,
+    74,
+    137,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Back' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "left-pointing arrow at top left = go back - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a left arrow with no label; back arrow is the established convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen4-a2-tc1",
+     "type": "verification",
+     "precondition": "a sub-screen open",
+     "action": "tap the left arrow at the top left",
+     "expected_result": "the previous screen returns",
+     "confirms_if": "something other than going back happens",
+     "overturns_if": "it goes back",
+     "observed_result": "the previous screen returned",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the left arrow returned to the previous screen",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a3": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'Type a name or group'",
+   "location": "top, centre",
+   "bounds": [
+    131,
+    231,
+    985,
+    336
+   ],
+   "visible_text": "label 'To:' and placeholder 'Type a name or group'",
+   "accessibility_text_consulted": "talkback_label 'Type a name or group' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the field has a visible 'To:' label and the hint 'Type a name or group'",
+   "test_cases": [
+    {
+     "id": "screen4-a3-tc1",
+     "type": "expected",
+     "precondition": "New message open",
+     "action": "type the literal text 'Fra'",
+     "expected_result": "matching people are listed",
+     "confirms_if": "the field does not treat it as a recipient name",
+     "overturns_if": "matching people are listed",
+     "observed_result": "'Fra Mendy' was listed first, then 'More people' named Fra...; 'To:' stayed visible beside the typed text",
+     "status": "executed",
+     "matched_expectation": true
+    },
+    {
+     "id": "screen4-a3-tc2",
+     "type": "unexpected",
+     "precondition": "New message open",
+     "action": "type 'Frazzqx'",
+     "expected_result": "no recipient matches",
+     "confirms_if": "it accepts nonsense silently as a recipient",
+     "overturns_if": "no matches shown",
+     "observed_result": "'No results found - Try again with a different spelling or combination of terms.' appeared; nothing was selected; text cleared afterwards",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the field filtered people as letters were typed and showed no match for nonsense; 'To:' stayed visible",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a4": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'New story'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    357,
+    1080,
+    504
+   ],
+   "visible_text": "'New story'",
+   "accessibility_text_consulted": "content_desc 'New story' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "rows with a glyph and plain words: 'New story', 'New note', 'Group chat'",
+   "test_cases": [
+    {
+     "id": "screen4-a4-tc1",
+     "type": "expected",
+     "precondition": "New message open",
+     "action": "tap each row and come back",
+     "expected_result": "each opens what it names",
+     "confirms_if": "a row opens something else",
+     "overturns_if": "each matches",
+     "observed_result": "New story -> 'New story' composer; New note -> 'New note'; Group chat -> a contact picker for several people",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "New story opened a story composer, New note opened the note composer, Group chat opened a multi-select contact picker",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a5": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'New note'",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    504,
+    1080,
+    651
+   ],
+   "visible_text": "'New note'",
+   "accessibility_text_consulted": "content_desc 'New note' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "rows with a glyph and plain words: 'New story', 'New note', 'Group chat'",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "New story opened a story composer, New note opened the note composer, Group chat opened a multi-select contact picker [test run once on screen4-a4 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a6": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Group chat'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    651,
+    1080,
+    798
+   ],
+   "visible_text": "'Group chat'",
+   "accessibility_text_consulted": "content_desc 'Group chat' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "rows with a glyph and plain words: 'New story', 'New note', 'Group chat'",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "New story opened a story composer, New note opened the note composer, Group chat opened a multi-select contact picker [test run once on screen4-a4 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a7": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Ally Cooper'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    926,
+    1080,
+    1073
+   ],
+   "visible_text": "'Ally Cooper'",
+   "accessibility_text_consulted": "content_desc 'Ally Cooper' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo and full name in a list; tapping conventionally opens that person's chat",
+   "test_cases": [
+    {
+     "id": "screen4-a7-tc1",
+     "type": "expected",
+     "precondition": "a list of people open",
+     "action": "tap a person's name row",
+     "expected_result": "their conversation opens",
+     "confirms_if": "something else opens",
+     "overturns_if": "their conversation opens",
+     "observed_result": "the conversation with that person opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping a contact row opened the conversation with that person",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Fra Mendy'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1073,
+    1080,
+    1220
+   ],
+   "visible_text": "'Fra Mendy'",
+   "accessibility_text_consulted": "content_desc 'Fra Mendy' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo and full name in a list; tapping conventionally opens that person's chat",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping a contact row opened the conversation with that person [test run once on screen4-a7 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a9": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Deki'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1220,
+    1080,
+    1367
+   ],
+   "visible_text": "'Deki'",
+   "accessibility_text_consulted": "content_desc 'Deki' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo and full name in a list; tapping conventionally opens that person's chat",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping a contact row opened the conversation with that person [test run once on screen4-a7 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen4-a10": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Sholeh Ahmad'",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1367,
+    1080,
+    1514
+   ],
+   "visible_text": "'Sholeh Ahmad'",
+   "accessibility_text_consulted": "content_desc 'Sholeh Ahmad' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a person's photo and full name in a list; tapping conventionally opens that person's chat",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping a contact row opened the conversation with that person [test run once on screen4-a7 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 10,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 9,
+  "clear_via_common_icon_exemption": 1,
+  "detection_false_positives": 1,
+  "test_cases_executed": 6,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 9,
+  "instincts_overturned": 1,
+  "provisional_verdicts": 0
+ }
+}

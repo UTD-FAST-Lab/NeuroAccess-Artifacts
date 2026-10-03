@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s11",
+  "state_str": "ac2ed1192552320f5875549bc0b33c88",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133854.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s11_header_nav.png",
+  "name": "the Add to project sheet over the home screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Back at it, Ally Cooper",
+      "verdict_on_region": "greeting on the home screen dimmed behind the sheet's scrim; names the user, not a place \u2014 does not count"
+    },
+    {
+      "kind": "header",
+      "text": "Add to project",
+      "verdict_on_region": "unconventional (sheet title): names the panel \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Add to project\" sheet title with a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself and offers a back arrow",
+  "test_cases": [
+    {
+      "id": "s11-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Add to chat sheet open",
+      "action": "tap \"Add to project\" and read the title; tap the back arrow",
+      "expected_result": "the title names the panel and the arrow returns",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title is absent or names content",
+      "observed_result": "\"Add to project\" titles the sheet; the back arrow returned to the \"Add to chat\" sheet",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: \"Add to project\" heads the sheet beside a back arrow that returns to \"Add to chat\"",
+  "recommendation": null,
+  "provisional": false
+}

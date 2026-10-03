@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s28",
+  "state_str": "a7d10107eaabbe3dfc2ff3e045f02663",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185753.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s28_header_nav.png",
+  "name": "the user's own Profile",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Ally Cooper",
+      "verdict_on_region": "the account holder's own name — names a person, not the section (no 'Profile' title anywhere)"
+    },
+    {
+      "kind": "header",
+      "text": "Create your avatar!",
+      "verdict_on_region": "content: the prompt of a bottom sheet offering avatar creation, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "the account holder's name 'Ally Cooper' top-left with share and settings icons; the tab bar (or, on s28, the avatar sheet) with no highlighted item",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the header names a person, not the section; no 'Profile' title; no tab is highlighted",
+  "test_cases": [
+    {
+      "id": "s28-tc1",
+      "type": "verification",
+      "precondition": "Learn path",
+      "action": "tap ⋯ then Profile; dismiss the avatar sheet with MAYBE LATER; scroll the profile down and back",
+      "expected_result": "a 'Profile' title or a highlighted tab appears, or none does",
+      "confirms_if": "none appears in any state",
+      "overturns_if": "a title or highlight appears",
+      "observed_result": "'Create your avatar!' sheet covered the lower half (no tab bar); MAYBE LATER revealed the profile with the tab bar and no tab boxed; scrolling kept 'Ally Cooper' pinned and never showed a 'Profile' title",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the only header is a person's name and the tab bar shows nothing current — the profile is reached through the ⋯ menu, whose menu item says 'Profile', but the screen itself never does; on s28 the 'Create your avatar!' sheet (dismissed as content) hides the tab bar entirely",
+  "recommendation": "title the screen 'Profile' (or 'Your profile') and highlight the ⋯ tab while it is shown",
+  "provisional": false
+}

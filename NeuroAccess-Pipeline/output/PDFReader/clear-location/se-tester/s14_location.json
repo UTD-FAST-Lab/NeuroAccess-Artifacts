@@ -1,0 +1,44 @@
+{
+  "app": "PDFReader",
+  "screen": "s14",
+  "state_str": "1d42a34aa32ce69c20897a4391722ab9",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_181217.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s14_header_nav.png",
+  "name": "the Add widget sheet over Settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Settings",
+      "verdict_on_region": "names the section behind the sheet; legible through the dim"
+    },
+    {
+      "kind": "header",
+      "text": "Add widget",
+      "verdict_on_region": "unconventional position (top of a bottom sheet, mid-screen); names the sheet, in the same words as the Settings row that opened it -- accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Add widget\" -- the sheet heading, with \"Settings\" legible behind",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet is headed with the name of the row that opened it",
+  "test_cases": [
+    {
+      "id": "s14-tc1",
+      "type": "scroll_persistence",
+      "precondition": "Add widget sheet open",
+      "action": "swipe the widget preview left (horizontal carousel)",
+      "expected_result": "the heading stays, or it moves with the carousel",
+      "confirms_if": "\"Add widget\" leaves with the carousel",
+      "overturns_if": "\"Add widget\" stays",
+      "observed_result": "the preview changed to the PDF/Word/Excel/PPT widget and the page dots advanced; \"Add widget\" and the dim \"Settings\" stayed put",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the heading stays while the widget carousel is swiped sideways (s14-tc1); s14 differs from s9 only by the carousel page",
+  "recommendation": null,
+  "provisional": false
+}

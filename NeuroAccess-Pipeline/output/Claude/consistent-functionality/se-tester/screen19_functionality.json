@@ -1,0 +1,294 @@
+{
+  "app": "Claude",
+  "screen": "screen19",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen19_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen19_function_groups.png"
+  },
+  "elements": {
+    "screen19-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen19 (home)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen19-f1",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen19 (home)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f2": {
+      "kind": "icon",
+      "appearance": "ghost outline",
+      "state": "inactive",
+      "location": "top right of screen19 (home)",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a ghost for incognito/private mode is not an established first-time-user convention — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "incognito chat",
+      "accessibility_text": "content_desc: \"Incognito chat\"; talkback_label: \"Incognito chat\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "switches the chat to incognito: the ghost becomes an X, \"Incognito chat\" and the incognito explanation appear",
+      "glyph_group": "gg8",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg8-screen19-f2",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap ghost outline at top right of screen19 (home)",
+          "expected_result": "all switch the chat to incognito",
+          "confirms_if": "it reaches something unrelated to what the other members of gg8 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "switches the chat to incognito: the ghost becomes an X, \"Incognito chat\" and the incognito explanation appear",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg8": "Consistent Functionality",
+        "fg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f3": {
+      "kind": "button",
+      "appearance": "the words \"Upgrade to Pro\"",
+      "state": null,
+      "location": "bottom right of screen19 (home)",
+      "bounds": [
+        761,
+        1915,
+        985,
+        2041
+      ],
+      "visible_label": "Upgrade to Pro",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "upgrade to pro",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Upgrade to Pro\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "opens the full-page plans screen \"Get more Claude\"",
+      "glyph_group": "gg3",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg3-screen19-f3",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap the words \"Upgrade to Pro\" at bottom right of screen19 (home)",
+          "expected_result": "all open the upgrade/plans page",
+          "confirms_if": "it reaches something unrelated to what the other members of gg3 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the full-page plans screen \"Get more Claude\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f4": {
+      "kind": "icon",
+      "appearance": "plus sign in a grey circle",
+      "state": null,
+      "location": "bottom left of screen19 (home)",
+      "bounds": [
+        48,
+        2164,
+        174,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus in a circle beside a composer conventionally adds/attaches — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "add to chat",
+      "accessibility_text": "content_desc: \"Add to chat\"; talkback_label: \"Add to chat\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "opens the \"Add to chat\" bottom sheet",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-screen19-f4",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap plus sign in a grey circle at bottom left of screen19 (home)",
+          "expected_result": "all open the attach/add sheet for this chat",
+          "confirms_if": "it reaches something unrelated to what the other members of gg4 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the \"Add to chat\" bottom sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f5": {
+      "kind": "button",
+      "appearance": "the words \"Haiku 4.5\"",
+      "state": null,
+      "location": "bottom centre of screen19 (home)",
+      "bounds": [
+        179,
+        2164,
+        410,
+        2290
+      ],
+      "visible_label": "Haiku 4.5",
+      "convention_relied_on": "a pill showing a current value conventionally opens a picker — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Haiku 4.5\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "opens the \"Select model\" bottom sheet",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-screen19-f5",
+          "type": "function_determination",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap the words \"Haiku 4.5\" at bottom centre of screen19 (home)",
+          "expected_result": "a pill showing the current model name conventionally opens a picker of models",
+          "confirms_if": "it does something other than the predicted job, or nothing",
+          "overturns_if": "it does the predicted job",
+          "observed_result": "opens the \"Select model\" bottom sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f6": {
+      "kind": "icon",
+      "appearance": "microphone in a grey circle",
+      "state": null,
+      "location": "bottom right of screen19 (home)",
+      "bounds": [
+        791,
+        2164,
+        907,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone is the established voice-input convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "start speech input",
+      "accessibility_text": "content_desc: \"Start speech input\"; talkback_label: \"Start speech input\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": "opens the page \"Send messages to Claude using your voice.\" (speech-input introduction)",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-screen19-f6",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap microphone in a grey circle at bottom right of screen19 (home)",
+          "expected_result": "all start speech input (dictation)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg6 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the page \"Send messages to Claude using your voice.\" (speech-input introduction)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f7": {
+      "kind": "icon",
+      "appearance": "vertical sound-wave bars in a black circle",
+      "state": null,
+      "location": "bottom right of screen19 (home)",
+      "bounds": [
+        907,
+        2164,
+        1033,
+        2290
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "sound-wave bars are a recognisable voice/audio convention but not a firm first-time-user one — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "voice mode",
+      "accessibility_text": "content_desc: \"Voice Mode\"; talkback_label: \"Voice Mode\" — evidence of intent only",
+      "context_reading": "home composer screen; no screen title, only the greeting line in the middle and the composer at the bottom with the banner \"Get more with Claude Pro\"",
+      "observed_function": null,
+      "glyph_group": "gg7",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg7-screen19-f7",
+          "type": "same_appearance",
+          "precondition": "app open on home (live equivalent of screen19); context noted before the tap",
+          "action": "tap vertical sound-wave bars in a black circle at bottom right of screen19 (home)",
+          "expected_result": "all start voice mode (spoken conversation)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg7 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "not executed — starting voice mode is not allowed on the test devices",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 6,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

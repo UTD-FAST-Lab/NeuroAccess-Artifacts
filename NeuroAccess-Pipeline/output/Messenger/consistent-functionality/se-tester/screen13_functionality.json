@@ -1,0 +1,572 @@
+{
+  "app": "Messenger",
+  "screen": "screen13",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen13_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen13_function_groups.png"
+  },
+  "elements": {
+    "screen13-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top left of screen13",
+      "bounds": [
+        11,
+        74,
+        137,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "arrow pointing left: back — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "back",
+      "accessibility_text": "content_desc: 'Back'; talkback_label: 'Back'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "returned to the previous screen (Chats home (or the Archive list for Marco Peralta))",
+      "glyph_group": "gg3",
+      "function_group": "fg2",
+      "test_cases": [
+        {
+          "id": "gg3-tc-screen13-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the arrow pointing left at top left of screen13",
+          "expected_result": "the same result as the other members of gg3 (arrow pointing left)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "returned to the previous screen (Chats home (or the Archive list for Marco Peralta))",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality",
+        "fg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f2": {
+      "kind": "icon+label",
+      "appearance": "small contact photo with the contact's name beside it",
+      "state": null,
+      "location": "top left of screen13",
+      "bounds": [
+        148,
+        74,
+        544,
+        200
+      ],
+      "visible_label": "Krishna Bharti",
+      "convention_relied_on": "small contact photo with the contact's name beside it: chat title — conventionally opens conversation details — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "thread details",
+      "accessibility_text": "content_desc: 'Krishna Bharti, Thread details'; talkback_label: 'Krishna Bharti, Thread details'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "the small photo opened this contact's full-screen story; the name beside it opened 'Thread details'",
+      "glyph_group": "gg13",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg13-tc-screen13-f2",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the small contact photo with the contact's name beside it at top left of screen13",
+          "expected_result": "the same result as the other members of gg13 (small contact photo with the contact's name beside it)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "the small photo opened this contact's full-screen story; the name beside it opened 'Thread details'",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg13": "Inconsistent Functionality",
+        "fg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f3": {
+      "kind": "icon",
+      "appearance": "telephone handset",
+      "state": null,
+      "location": "top right of screen13",
+      "bounds": [
+        691,
+        74,
+        817,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "telephone handset: audio call — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "audio call",
+      "accessibility_text": "content_desc: 'Audio call'; talkback_label: 'Audio call'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg14",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg14-tc-screen13-f3",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the telephone handset at top right of screen13",
+          "expected_result": "the same result as the other members of gg14 (telephone handset)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "call control — the run must never start an audio or video call",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg14": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f4": {
+      "kind": "icon",
+      "appearance": "video camera",
+      "state": null,
+      "location": "top right of screen13",
+      "bounds": [
+        817,
+        74,
+        943,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "video camera: video call — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "video call",
+      "accessibility_text": "content_desc: 'Video call'; talkback_label: 'Video call'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg15",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg15-tc-screen13-f4",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the video camera at top right of screen13",
+          "expected_result": "the same result as the other members of gg15 (video camera)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "call control — the run must never start an audio or video call",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg15": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f5": {
+      "kind": "icon",
+      "appearance": "letter i in a circle",
+      "state": "filled",
+      "location": "top right of screen13",
+      "bounds": [
+        943,
+        74,
+        1069,
+        200
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "letter i in a circle: information about the item it is attached to — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "thread details",
+      "accessibility_text": "content_desc: 'Thread details'; talkback_label: 'Thread details'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "opened the 'Thread details' page for this chat (large photo, name, Profile / Nicknames / Search / Customize, Mute, Notifications & sounds ...)",
+      "glyph_group": "gg2",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg2-tc-screen13-f5",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the letter i in a circle at top right of screen13",
+          "expected_result": "the same result as the other members of gg2 (letter i in a circle)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the 'Thread details' page for this chat (large photo, name, Profile / Nicknames / Search / Customize, Mute, Notifications & sounds ...)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality",
+        "fg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f6": {
+      "kind": "icon",
+      "appearance": "circular photo of the contact",
+      "state": null,
+      "location": "middle centre of screen13",
+      "bounds": [
+        409,
+        295,
+        672,
+        558
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "circular photo of the contact: the person — conventionally their profile — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "chat profile",
+      "accessibility_text": "content_desc: 'Chat profile'; talkback_label: 'Chat profile'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "opened the 'Thread details' page for this chat (large photo, name, Profile / Nicknames / Search / Customize, Mute, Notifications & sounds ...)",
+      "glyph_group": "gg7",
+      "function_group": "fg1",
+      "test_cases": [
+        {
+          "id": "gg7-tc-screen13-f6",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the circular photo of the contact at middle centre of screen13",
+          "expected_result": "the same result as the other members of gg7 (circular photo of the contact)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened the 'Thread details' page for this chat (large photo, name, Profile / Nicknames / Search / Customize, Mute, Notifications & sounds ...)",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg7": "Inconsistent Functionality",
+        "fg1": "Inconsistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f7": {
+      "kind": "button",
+      "appearance": "the words \"View profile\"",
+      "state": null,
+      "location": "middle centre of screen13",
+      "bounds": [
+        401,
+        865,
+        680,
+        949
+      ],
+      "visible_label": "View profile",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "view profile",
+      "accessibility_text": "content_desc: 'View profile'; talkback_label: 'View profile'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "left Messenger for the contact's profile in the Facebook app",
+      "glyph_group": "gg16",
+      "function_group": "fg3",
+      "test_cases": [
+        {
+          "id": "gg16-tc-screen13-f7",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the the words \"View profile\" at middle centre of screen13",
+          "expected_result": "the same result as the other members of gg16 (the words \"View profile\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "left Messenger for the contact's profile in the Facebook app",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg16": "Consistent Functionality",
+        "fg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f8": {
+      "kind": "button",
+      "appearance": "the words \"Learn more\"",
+      "state": null,
+      "location": "middle centre of screen13",
+      "bounds": [
+        565,
+        1290,
+        729,
+        1329
+      ],
+      "visible_label": "Learn more",
+      "convention_relied_on": "worded control — the visible words carry the meaning, no glyph convention needed",
+      "convention_confidence": "high",
+      "declared_function": "learn more",
+      "accessibility_text": "content_desc: ''; talkback_label: 'Learn more'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": "opened bottom sheet 'End-to-end encryption and your privacy' (OK)",
+      "glyph_group": "gg22",
+      "function_group": "cfg4",
+      "test_cases": [
+        {
+          "id": "gg22-tc-screen13-f8",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the the words \"Learn more\" at middle centre of screen13",
+          "expected_result": "the same result as the other members of gg22 (the words \"Learn more\")",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "opened bottom sheet 'End-to-end encryption and your privacy' (OK)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality",
+        "cfg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen13-f9": {
+      "kind": "icon",
+      "appearance": "plus sign in a filled circle",
+      "state": null,
+      "location": "bottom left of screen13",
+      "bounds": [
+        0,
+        2179,
+        106,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "plus sign in a filled circle: add / more attachment options — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "show more options",
+      "accessibility_text": "content_desc: 'Show more options.'; talkback_label: 'Show more options.'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg17",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg17-tc-screen13-f9",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the plus sign in a filled circle at bottom left of screen13",
+          "expected_result": "the same result as the other members of gg17 (plus sign in a filled circle)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg17": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f10": {
+      "kind": "icon",
+      "appearance": "camera",
+      "state": null,
+      "location": "bottom left of screen13",
+      "bounds": [
+        106,
+        2179,
+        212,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "camera: take a photo — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open camera",
+      "accessibility_text": "content_desc: 'Open camera.'; talkback_label: 'Open camera.'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg18",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg18-tc-screen13-f10",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the camera at bottom left of screen13",
+          "expected_result": "the same result as the other members of gg18 (camera)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg18": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f11": {
+      "kind": "icon",
+      "appearance": "picture in a frame",
+      "state": null,
+      "location": "bottom left of screen13",
+      "bounds": [
+        212,
+        2179,
+        318,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "picture in a frame: photo gallery — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open photo gallery",
+      "accessibility_text": "content_desc: 'Open photo gallery.'; talkback_label: 'Open photo gallery.'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc-screen13-f11",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the picture in a frame at bottom left of screen13",
+          "expected_result": "the same result as the other members of gg19 (picture in a frame)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f12": {
+      "kind": "icon",
+      "appearance": "microphone",
+      "state": null,
+      "location": "bottom centre of screen13",
+      "bounds": [
+        318,
+        2179,
+        424,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "microphone: voice / audio recording — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open audio recorder",
+      "accessibility_text": "content_desc: 'Open audio recorder.'; talkback_label: 'Open audio recorder.'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-tc-screen13-f12",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the microphone at bottom centre of screen13",
+          "expected_result": "the same result as the other members of gg20 (microphone)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f13": {
+      "kind": "icon",
+      "appearance": "thumbs up",
+      "state": null,
+      "location": "bottom right of screen13",
+      "bounds": [
+        964,
+        2179,
+        1080,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "thumbs up: like — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "send 👍",
+      "accessibility_text": "content_desc: 'Send 👍'; talkback_label: 'Send 👍'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg21",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg21-tc-screen13-f13",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the thumbs up at bottom right of screen13",
+          "expected_result": "the same result as the other members of gg21 (thumbs up)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen13-f14": {
+      "kind": "icon",
+      "appearance": "smiling face",
+      "state": null,
+      "location": "bottom right of screen13",
+      "bounds": [
+        870,
+        2211,
+        964,
+        2305
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "smiling face: emoji picker — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open sticker emoji and gif keyboard",
+      "accessibility_text": "content_desc: 'Open sticker, emoji and GIF keyboard.'; talkback_label: 'Open sticker, emoji and GIF keyboard.'",
+      "context_reading": "chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the contact's intro card (large photo, name, 'View profile'); encryption notice ending 'Learn more'; messages; composer row at the bottom",
+      "observed_function": null,
+      "glyph_group": "gg4",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg4-tc-screen13-f14",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen13 (chat with Krishna Bharti: chat header: back arrow, contact photo + name, phone, video camera and circled i; below it the)",
+          "action": "note what is on screen, then tap the smiling face at bottom right of screen13",
+          "expected_result": "the same result as the other members of gg4 (smiling face)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "composer/reaction control — could send to a real contact",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality",
+        "fg4": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 14,
+    "elements_in_issue_groups": 3,
+    "functions_determined_by_testing": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 6,
+    "test_cases_not_executed": 8,
+    "provisional_verdicts": 8
+  }
+}

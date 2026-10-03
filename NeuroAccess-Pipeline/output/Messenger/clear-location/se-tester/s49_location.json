@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s49",
+  "state_str": "92efdf2b403e5f2afad74e8b042a9947",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152134.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s49_header_nav.png",
+  "name": "thread settings",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Krishna Bharti.",
+      "verdict_on_region": "contact name heading the page — names a person, not which page this is (chat, profile or chat settings); it also scrolls away with the content and the top bar stays empty"
+    }
+  ],
+  "identifier_found": "same thread-settings template as s44: empty top bar, contact name as content",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "same thread-settings template as s44: empty top bar, contact name as content",
+  "test_cases": [
+    {
+      "id": "s49-tc1",
+      "type": "verification",
+      "precondition": "a conversation open (Krishna Bharti) with its name in the top bar",
+      "action": "tap the info (i) icon; scroll the settings page down and back",
+      "expected_result": "a title appears in the top bar on scroll, or the top bar stays empty",
+      "confirms_if": "top bar has only Back and a menu in every scroll state",
+      "overturns_if": "a collapsing top bar shows the contact name or a page title on scroll",
+      "observed_result": "thread settings opened with a back arrow and three-dot menu only; the large \"Krishna Bharti\" heading scrolled off with the content and the top bar stayed empty while \"Actions\", \"Privacy & support\" rows were shown; no title in any state (tested on the Krishna Bharti thread — same template as Marco Peralta's)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed on the device: same thread-settings template as s44: empty top bar, contact name as content; template carry from s44 (tested on the Krishna Bharti thread, which is s49's own thread); also a return-transition landing screen (b14, harness relaunch); no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "put a title in the empty top bar, e.g. \"Chat settings — Krishna Bharti\", and keep it when the heading scrolls away",
+  "provisional": false
+}

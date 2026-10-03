@@ -1,0 +1,45 @@
+{
+ "app": "Messenger",
+ "screen": "screen28",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen28_actionable_elements.png",
+ "elements": {
+  "screen28-a1": {
+   "kind": "icon",
+   "glyph": "short horizontal bar",
+   "description": "short horizontal bar",
+   "location": "top, full width",
+   "bounds": [
+    0,
+    300,
+    1080,
+    343
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Click to dismiss this bottom sheet' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "short bar at the top of a sheet = drag handle - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a short grey bar at the top of a sheet is the drag-handle convention (pull down to close)",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping the bar did nothing and dragging it down did not move or close the sheet; it is a decoration, not a control [test run once on screen22-a1 and carried to this duplicate - same control type and appearance]; on this capture the sheet's content had not finished loading (spinner) and the handle is the only marked element",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 1,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 0,
+  "clear_via_common_icon_exemption": 0,
+  "detection_false_positives": 1,
+  "test_cases_executed": 0,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 0,
+  "instincts_overturned": 1,
+  "provisional_verdicts": 0
+ }
+}

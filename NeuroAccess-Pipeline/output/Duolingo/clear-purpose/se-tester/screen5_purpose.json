@@ -1,0 +1,230 @@
+{
+  "app": "Duolingo",
+  "screen": "screen5",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen5_actionable_elements.png",
+  "elements": {
+    "screen5-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        0,
+        63,
+        144,
+        207
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc/talkback \"Close\" — read only to know what to test; not used in the verdict",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen5-a1-tc1",
+          "type": "verification",
+          "precondition": "Energy page",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the Energy page closed and the home path returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "row with an infinity-battery picture and 'FREE TRIAL' at the right",
+      "location": "Energy page, first row",
+      "bounds": [
+        42,
+        412,
+        1038,
+        711
+      ],
+      "visible_text": "\"SUPER\" / \"Unlimited\" / \"FREE TRIAL\"",
+      "accessibility_text_consulted": "talkback \"Unlimited FREE TRIAL\"; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a free trial of unlimited energy under a 'SUPER' header on the Energy page",
+      "test_cases": [
+        {
+          "id": "screen5-a2-tc1",
+          "type": "expected",
+          "precondition": "Energy page",
+          "action": "tap the row",
+          "expected_result": "a trial offer",
+          "confirms_if": "something else",
+          "overturns_if": "a trial offer",
+          "observed_result": "not run: would start a free trial (safety rule)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test was required and running it would start a trial",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "greyed row with a '25' battery picture and a grey gem with 350",
+      "location": "Energy page, second row",
+      "bounds": [
+        42,
+        774,
+        1038,
+        989
+      ],
+      "visible_text": "\"Recharge\" / \"350\" (with a grey gem glyph)",
+      "accessibility_text_consulted": "talkback \"Recharge 350\"; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Recharge' does not say what is recharged, and '350' next to a gem does not say it is a price; the row is greyed with no reason given",
+      "test_cases": [
+        {
+          "id": "screen5-a3-tc1",
+          "type": "expected",
+          "precondition": "Energy page with energy full (row greyed)",
+          "action": "tap the row",
+          "expected_result": "reading 1: nothing (disabled); reading 2: it spends 350 gems on a refill",
+          "confirms_if": "it spends gems with nothing visible having said so",
+          "overturns_if": "a confirmation naming the cost appears first",
+          "observed_result": "not run: tapping could spend 350 gems (safety rule: no spending currency)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "PROVISIONAL — not tested (would risk spending gems); visible text does not say what is recharged or that 350 is a price",
+      "recommendation": "spell it out: 'Refill energy to 25 — 350 gems', and say why it is unavailable when greyed ('Energy is full')",
+      "provisional": true
+    },
+    "screen5-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "row with a NEW badge and blue 'INSTALL' at the right",
+      "location": "Energy page, third row",
+      "bounds": [
+        42,
+        1052,
+        1038,
+        1267
+      ],
+      "visible_text": "\"Widget Boost\" / \"INSTALL\"",
+      "accessibility_text_consulted": "talkback \"Widget Boost INSTALL\"; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Widget Boost' is jargon; INSTALL could mean installing an app, an update or a widget",
+      "test_cases": [
+        {
+          "id": "screen5-a4-tc1",
+          "type": "expected",
+          "precondition": "Energy page",
+          "action": "tap INSTALL",
+          "expected_result": "reading: something about installing a widget",
+          "confirms_if": "it installs or downloads something else, or does something unrelated",
+          "overturns_if": "it explains/offers adding a widget",
+          "observed_result": "opened a page 'Add the widget to get +8 energy every hour!' with ADD WIDGET / NOT NOW; closed with NOT NOW",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "INSTALL opened a plain explanation of adding a home-screen widget, which is what the words 'Widget … INSTALL' lead to",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "greyed row",
+      "location": "Energy page, fourth row",
+      "bounds": [
+        42,
+        1330,
+        1038,
+        1545
+      ],
+      "visible_text": "\"+5 energy\" / \"WATCH AD\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "watching an ad gives five energy",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Clear on the visible text; no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen5-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "greyed row",
+      "location": "Energy page, fifth row",
+      "bounds": [
+        42,
+        1608,
+        1038,
+        1823
+      ],
+      "visible_text": "\"+5 energy\" / \"FREE\"",
+      "accessibility_text_consulted": "talkback repeats visible text; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "five energy for free; greyed = unavailable now",
+      "test_cases": [
+        {
+          "id": "screen5-a6-tc1",
+          "type": "expected",
+          "precondition": "Energy page, energy full",
+          "action": "tap the greyed row",
+          "expected_result": "nothing (unavailable)",
+          "confirms_if": "something is granted or spent",
+          "overturns_if": "nothing happens",
+          "observed_result": "nothing happened; the row stayed greyed",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the row says what it gives and, greyed, did nothing when energy was full",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 6,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 5,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 2,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 1
+  }
+}

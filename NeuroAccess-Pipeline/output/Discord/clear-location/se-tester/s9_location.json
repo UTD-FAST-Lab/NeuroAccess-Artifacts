@@ -1,0 +1,44 @@
+{
+  "app": "Discord",
+  "screen": "s9",
+  "state_str": "5cee3f73cbca9b2c81875208571bfba8",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215225.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s9_header_nav.png",
+  "name": "Create Your Server with an Enable Permissions dialog",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Create Your Server",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    },
+    {
+      "kind": "header",
+      "text": "Enable Permissions",
+      "verdict_on_region": "title of a modal dialog raised over the create-server form; names the dialog's own purpose, with 'Create Your Server' still visible dimmed behind — counted for the dialog"
+    }
+  ],
+  "identifier_found": "\"Create Your Server\"; \"Enable Permissions\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Create Your Server' stays visible dimmed above the 'Enable Permissions' dialog, which names itself and closes back to the form",
+  "test_cases": [
+    {
+      "id": "s9-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Create Your Server form",
+      "action": "tap Upload with photo permission denied to raise 'Enable Permissions'",
+      "expected_result": "dialog titled 'Enable Permissions' over the dimmed form",
+      "confirms_if": "the dialog covers every place name",
+      "overturns_if": "heading names the dialog and 'Create Your Server' stays visible",
+      "observed_result": "not run: reaching this state needs the create-server flow, whose next step creates a real server on the shared account, and a photo-permission denial the live devices no longer hold; judged from the marked image",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "the region the detector marked away from the top was read from the image and reasoned about; the screen's own title stays visible behind the overlay",
+  "recommendation": null,
+  "provisional": false
+}

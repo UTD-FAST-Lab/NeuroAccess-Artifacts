@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s74",
+  "state_str": "4cfbd8b30ab81dc504b9df9874a0ee9c",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152735.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s74_header_nav.png",
+  "name": "cancel-invite confirmation",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Cancel invite?",
+      "verdict_on_region": "names a yes/no question, not a place; nothing says which invite or which part of the app"
+    }
+  ],
+  "identifier_found": "\"Cancel invite?\" names a question; nothing says which invite or that this is Family Center supervision",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "\"Cancel invite?\" names a question; nothing says which invite or that this is Family Center supervision",
+  "test_cases": [
+    {
+      "id": "s74-tc1",
+      "type": "verification",
+      "precondition": "Family Center supervision invite created",
+      "action": "tap \"Cancel invite\" and look for a title naming the flow",
+      "expected_result": "a title naming the invite/flow appears, or not",
+      "confirms_if": "only \"Cancel invite?\" with no context",
+      "overturns_if": "a title or step indicator names the flow",
+      "observed_result": "not run — reaching it requires creating a real supervision invite link, a change to the account",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "provisional — test not executed (forbidden action); \"Cancel invite?\" names a question; nothing says which invite or that this is Family Center supervision; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "name the flow in the title, e.g. \"Cancel supervision invite?\" under a \"Family Center\" header",
+  "provisional": true
+}

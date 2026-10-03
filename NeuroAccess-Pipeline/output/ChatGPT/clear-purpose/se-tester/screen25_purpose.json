@@ -1,0 +1,302 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen25",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen25_actionable_elements.png",
+  "elements": {
+    "screen25-a1": {
+      "kind": "icon",
+      "glyph": "two horizontal lines, the lower one shorter",
+      "description": "top-left",
+      "location": "top-left",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Menu\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "two/three stacked lines = open the main menu (hamburger) - my reading; the two-line variant is slightly less canonical than three lines",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "no label, but two stacked horizontal lines is a recognizable variant of the hamburger menu convention - common-icon exemption pending the behavioural test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it slid a navigation drawer in from the left, exactly what the menu convention promises; the missing label is not a barrier; tested once on screen1-a1 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a2": {
+      "kind": "icon",
+      "glyph": "square with a pencil across its top-right corner",
+      "description": "top-right, left of the three dots",
+      "location": "top-right, left of the three dots",
+      "bounds": [
+        800,
+        90,
+        922,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"New chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "square with a pencil = compose something new - my reading",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled square with a pencil; the compose / new-item convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen25-a2-tc1",
+          "type": "verification",
+          "precondition": "inside an existing chat",
+          "action": "tap the square-with-pencil glyph",
+          "expected_result": "a new chat starts",
+          "confirms_if": "something else happens",
+          "overturns_if": "a new chat starts",
+          "observed_result": "a blank new-chat screen with the suggestions opened",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a fresh new chat - the compose convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a3": {
+      "kind": "icon",
+      "glyph": "three vertical dots",
+      "description": "top-right corner",
+      "location": "top-right corner",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Edit Menu\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "three vertical dots = more options - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "three vertical dots; the overflow/more-options convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen25-a3-tc1",
+          "type": "verification",
+          "precondition": "inside an existing chat",
+          "action": "tap the three dots",
+          "expected_result": "an options menu opens",
+          "confirms_if": "something else happens",
+          "overturns_if": "a menu opens",
+          "observed_result": "a menu opened: Share, Pin, Add to project, Uploaded files, Find in chat, Add to home, Archive, Delete; closed with Back without choosing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a menu of chat options (Share, Pin, Add to project, Archive, Delete...) - the convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "the user's sent message bubble, blue text '@Create image'; clickable",
+      "location": "the user's sent message bubble, blue text '@Create image'",
+      "bounds": [
+        659,
+        275,
+        1038,
+        402
+      ],
+      "visible_text": "\"@Create image\"",
+      "accessibility_text_consulted": "talkback_label \"@Create image\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "the user's own sent message '@Create image'; the words are message content and say nothing about any action",
+      "test_cases": [
+        {
+          "id": "screen25-a4-tc1",
+          "type": "expected",
+          "precondition": "chat with a sent @Create image message",
+          "action": "tap the bubble; then long-press it",
+          "expected_result": "a tap does something, or a visible cue exists",
+          "confirms_if": "actions exist only behind a long-press with no cue",
+          "overturns_if": "a visible cue names the actions",
+          "observed_result": "the tap did nothing; a long-press opened a menu with Copy, Select text, Edit message",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "a tap did nothing; only a long-press revealed Copy / Select text / Edit message - an action no visible cue announces",
+      "recommendation": "show a visible edit/copy affordance on sent messages (e.g. a small pencil on the bubble)",
+      "provisional": false
+    },
+    "screen25-a5": {
+      "kind": "icon",
+      "glyph": "rectangle filled with a grid of faint blue dots",
+      "description": "image area in the reply under grey text 'Sketching it out' — the image is still being generated (placeholder dot grid, mid-load); lower part is behind the composer",
+      "location": "image area in the reply under grey text 'Sketching it out' — the image is still being generated (placeholder dot grid, m",
+      "bounds": [
+        42,
+        550,
+        746,
+        1359
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a dot-grid placeholder with no word on it",
+      "test_cases": [
+        {
+          "id": "screen25-a5-tc1",
+          "type": "verification",
+          "precondition": "screen reached on the live app",
+          "action": "tap the element (and long-press where relevant) and observe",
+          "expected_result": "if actionable, something opens or changes",
+          "confirms_if": "it performs its own action with nothing naming it",
+          "overturns_if": "it performs no action of its own in this state",
+          "observed_result": "tapped the dot-grid placeholder twice while the image was being generated: nothing opened; in the captured mid-load state it takes no action (a finished image does open a viewer)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the dot-grid placeholder twice while the image was being generated: nothing opened; in the captured mid-load state it takes no action (a finished image does open a viewer)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a6": {
+      "kind": "icon",
+      "glyph": "plus sign",
+      "description": "left end of the message composer",
+      "location": "left end of the message composer",
+      "bounds": [
+        32,
+        1359,
+        158,
+        1485
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Attachment\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "plus sign = add / attach - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled plus sign; + = add something is an established convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened an add menu (Camera, Photos, Files, Plugins, Think harder) - adding things to the message, as the plus convention promises; tested once on screen1-a7 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a7": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "message composer; visible placeholder/content 'Reply to ChatGPT'",
+      "location": "message composer",
+      "bounds": [
+        158,
+        1359,
+        791,
+        1485
+      ],
+      "visible_text": "placeholder: \"Reply to ChatGPT\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "placeholder 'Reply to ChatGPT' says what to type",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the placeholder names the expected content; not a finding",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a8": {
+      "kind": "icon",
+      "glyph": "microphone",
+      "description": "composer control",
+      "location": "composer control",
+      "bounds": [
+        791,
+        1359,
+        917,
+        1485
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Dictation\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "microphone = speak instead of typing - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled microphone; microphone = speak / voice input is an established convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping raised the system request to record audio - the microphone convention held (permission was denied per safety rules); tested once on screen1-a9 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen25-a9": {
+      "kind": "icon",
+      "glyph": "blue filled circle with a white square inside",
+      "description": "right end of the composer",
+      "location": "right end of the composer",
+      "bounds": [
+        917,
+        1359,
+        1043,
+        1485
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Stop\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "filled square = stop - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "white square in a blue circle while an image is generating; the stop convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen25-a9-tc1",
+          "type": "verification",
+          "precondition": "image generating ('Sketching it out')",
+          "action": "tap the square",
+          "expected_result": "generation stops",
+          "confirms_if": "something else happens",
+          "overturns_if": "it stops",
+          "observed_result": "the dot-grid placeholder vanished and the reply read 'Error creating image'; generation was stopped",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it during generation stopped the image - the stop convention held",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 6,
+    "detection_false_positives": 1,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 8,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

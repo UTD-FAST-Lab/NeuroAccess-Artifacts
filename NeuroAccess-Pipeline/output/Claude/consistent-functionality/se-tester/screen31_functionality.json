@@ -1,0 +1,137 @@
+{
+  "app": "Claude",
+  "screen": "screen31",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen31_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen31_function_groups.png"
+  },
+  "elements": {
+    "screen31-f1": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "top left of screen31 (plans)",
+      "bounds": [
+        37,
+        113,
+        163,
+        239
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X is the established close/dismiss convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\"; talkback_label: \"Close\" — evidence of intent only",
+      "context_reading": "full-page plans screen titled \"Get more Claude\" / \"Choose the plan right for you\"; X at the top left of the page",
+      "observed_function": "closes the surface and returns to the home composer underneath",
+      "glyph_group": "gg1",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen31-f1",
+          "type": "same_appearance",
+          "precondition": "app open on plans (live equivalent of screen31); context noted before the tap",
+          "action": "tap X at top left of screen31 (plans)",
+          "expected_result": "every X dismisses the surface it sits on and returns to what was underneath; the three incognito-screen X marks are the \"on\" face of the incognito toggle and should take the user back out of incognito",
+          "confirms_if": "it reaches something unrelated to what the other members of gg1 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "closes the surface and returns to the home composer underneath",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen31-f2": {
+      "kind": "button",
+      "appearance": "the words \"Get Pro plan\"",
+      "state": null,
+      "location": "middle centre of screen31 (plans)",
+      "bounds": [
+        126,
+        1112,
+        954,
+        1238
+      ],
+      "visible_label": "Get Pro plan",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "get pro plan",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Get Pro plan\" — evidence of intent only",
+      "context_reading": "full-page plans screen titled \"Get more Claude\" / \"Choose the plan right for you\"; X at the top left of the page",
+      "observed_function": null,
+      "glyph_group": "gg9",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg9-screen31-f2",
+          "type": "same_appearance",
+          "precondition": "app open on plans (live equivalent of screen31); context noted before the tap",
+          "action": "tap the words \"Get Pro plan\" at middle centre of screen31 (plans)",
+          "expected_result": "all start the purchase of the Pro plan",
+          "confirms_if": "it reaches something unrelated to what the other members of gg9 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "not executed — pressing it starts a purchase/plan selection, which is not allowed",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg9": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen31-f3": {
+      "kind": "button",
+      "appearance": "the words \"Limits apply\" underlined",
+      "state": null,
+      "location": "middle left of screen31 (plans)",
+      "bounds": [
+        116,
+        1749,
+        333,
+        1875
+      ],
+      "visible_label": "Limits apply",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "limits apply",
+      "accessibility_text": "content_desc: \"Limits apply for Pro\"; talkback_label: \"Limits apply for Pro\" — evidence of intent only",
+      "context_reading": "full-page plans screen titled \"Get more Claude\" / \"Choose the plan right for you\"; X at the top left of the page",
+      "observed_function": "hands off to the Chrome browser (Chrome's first-run screen appeared); returned with one Back",
+      "glyph_group": "gg10",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg10-screen31-f3",
+          "type": "same_appearance",
+          "precondition": "app open on plans (live equivalent of screen31); context noted before the tap",
+          "action": "tap the words \"Limits apply\" underlined at middle left of screen31 (plans)",
+          "expected_result": "all open the terms of the usage limits",
+          "confirms_if": "it reaches something unrelated to what the other members of gg10 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "hands off to the Chrome browser (Chrome's first-run screen appeared); returned with one Back",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg10": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

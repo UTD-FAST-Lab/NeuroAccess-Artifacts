@@ -1,0 +1,31 @@
+{
+  "app": "ChatGPT",
+  "screen": "s24",
+  "state_str": "f4fdfe1a3dc9bf22c37b5991d89f9629",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204902.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s24_header_nav.png",
+  "name": "Projects (\"Created by you\" tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Projects",
+      "verdict_on_region": "top-bar title; names the section"
+    },
+    {
+      "kind": "navigation",
+      "text": "All | Created by you | Shared with you (Created by you selected)",
+      "verdict_on_region": "visible pill on the current tab"
+    }
+  ],
+  "identifier_found": "\"Projects\" title plus highlighted tab",
+  "identifier_class": "header and navigation bar with visible active state",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title names the section",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "plain title in the image, confirmed live (\"Projects\" top bar). Live list now holds a \"Homework\" project (capture divergence).",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s50",
+  "state_str": "b1f9669de9e46135f1ed90b19e91d5d4",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152200.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s50_header_nav.png",
+  "name": "a conversation",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Krishna Bharti",
+      "verdict_on_region": "contact name in the conversation top bar beside a back arrow — names the thread you are in"
+    },
+    {
+      "kind": "header",
+      "text": "Krishna Bharti",
+      "verdict_on_region": "contact name repeated in the profile card at the start of the thread — content; the thread is named by the top bar, so this box adds nothing"
+    }
+  ],
+  "identifier_found": "\"Krishna Bharti\"",
+  "identifier_class": "back_affordance_with_title",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

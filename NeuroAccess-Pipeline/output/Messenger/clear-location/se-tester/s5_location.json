@@ -1,0 +1,26 @@
+{
+  "app": "Messenger",
+  "screen": "s5",
+  "state_str": "a790efe9e475cccd22dace40f65cf799",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151405.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s5_header_nav.png",
+  "name": "Facebook Plus offer sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Try Facebook Plus free for one week",
+      "verdict_on_region": "large title naming the full-screen page or sheet the user is on — accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Try Facebook Plus free for one week\"",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions; also lands a return transition from outside the app and names itself on arrival",
+  "recommendation": null,
+  "provisional": false
+}

@@ -1,0 +1,39 @@
+{
+  "app": "PDFReader",
+  "screen": "s5",
+  "state_str": "107a0eb89b5acf13ec47c06a8d48a7ba",
+  "image": "inputs/PDFReader/droidbot_output/states/screen_2026-09-21_180438.png",
+  "marked_image": "inputs/PDFReader/location-graph/marked/s5_header_nav.png",
+  "name": "the Premium plan offer (before the close X appears)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Try the Premium plan completely free",
+      "verdict_on_region": "unconventional position (mid-screen, below the hero image); names the whole screen's subject, the Premium plan offer, which is where the crown icon and 'Upgrade to Premium' lead -- accepted as naming the place"
+    }
+  ],
+  "identifier_found": "\"Try the Premium plan completely free\" -- mid-screen heading naming the offer the whole screen is about",
+  "identifier_class": "self_evident_content",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "relies on self-evident content: the whole screen is one offer, named in its heading and its \"Start Free Trial\" button; no header bar or nav",
+  "test_cases": [
+    {
+      "id": "s5-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "Home open",
+      "action": "tap the crown icon, read the mid-screen heading, try to scroll, and press Back before any close control appears",
+      "expected_result": "the heading names the offer screen as a whole, or it names only one item within it; Back returns or traps",
+      "confirms_if": "the heading is the screen’s only subject and names it",
+      "overturns_if": "the heading turns out to name one item among several, or nothing names the screen",
+      "observed_result": "the full-screen offer opened with \"Try the Premium plan completely free\" under the diamond image and no close control; the screen does not scroll; after about 3 s an X appeared top-left; pressing Back before the X appeared returned to Home",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the heading is the screen's single subject and names it; no close control is drawn for about 3 s after opening, but the screen still names itself; Back returns to Home (s5-tc1). Rests on the self-evident-content class, stated as such",
+  "recommendation": null,
+  "provisional": false
+}

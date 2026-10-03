@@ -1,0 +1,26 @@
+{
+  "app": "Duolingo",
+  "screen": "s89",
+  "state_str": "227535620116a5d4eb6c49476a30f384",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_191137.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s89_header_nav.png",
+  "name": "the free-chest reward screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "You earned 9 gems!",
+      "verdict_on_region": "content: reports a reward outcome, not a place — dismissed"
+    }
+  ],
+  "identifier_found": "none that names a place: 'You earned 6 gems!' / 'Next free chest will be available in 1 minute' / DONE",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the headline reports an outcome",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "outcome headline only; DONE returns to the Shop; template carry from s42's test (same template; the header content does not change the answer)",
+  "recommendation": "add the Shop top bar or a 'Free chest' title above the reward",
+  "provisional": false
+}

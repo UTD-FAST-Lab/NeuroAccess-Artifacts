@@ -1,0 +1,69 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen11",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen11_actionable_elements.png",
+  "elements": {
+    "screen11-a1": {
+      "kind": "button",
+      "glyph": null,
+      "description": "button inside the centred microphone-permission dialog ('Please enable microphone access in System Settings to use Voice.')",
+      "location": "button inside the centred microphone-permission dialog ('Please enable microphone access in System Settings to use Voice",
+      "bounds": [
+        407,
+        1329,
+        584,
+        1455
+      ],
+      "visible_text": "\"Cancel\"",
+      "accessibility_text_consulted": "talkback_label \"Cancel\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "button 'Cancel' in a permission dialog",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping closed the dialog and returned to the chat, as 'Cancel' says; tested once on screen2-a1 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen11-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "button inside the centred microphone-permission dialog ('Please enable microphone access in System Settings to use Voice.')",
+      "location": "button inside the centred microphone-permission dialog ('Please enable microphone access in System Settings to use Voice",
+      "bounds": [
+        605,
+        1329,
+        897,
+        1455
+      ],
+      "visible_text": "\"Open settings\"",
+      "accessibility_text_consulted": "talkback_label \"Open settings\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "button 'Open settings' under text saying you will be redirected to Android settings",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words and the dialog text state the action; not exercised (would leave the app to system settings)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 2,
+    "clear_via_common_icon_exemption": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 2,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

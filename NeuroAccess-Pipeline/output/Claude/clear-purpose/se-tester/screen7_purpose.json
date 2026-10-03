@@ -1,0 +1,280 @@
+{
+  "app": "Claude",
+  "screen": "screen7",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen7_actionable_elements.png",
+  "elements": {
+    "screen7-a1": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "X glyph at the top-left of the bottom sheet",
+      "location": "top-left of the sheet",
+      "bounds": [
+        37,
+        1147,
+        163,
+        1273
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Close\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "an X is an established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close convention; exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen7-a1-tc1",
+          "type": "verification",
+          "precondition": "sheet open",
+          "action": "tap the X",
+          "expected_result": "the sheet closes",
+          "confirms_if": "it does anything other than close",
+          "overturns_if": "the sheet closes",
+          "observed_result": "the sheet closed and the screen beneath returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the sheet",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "model row 'Fable 5.1' with a 'Pro or Max' badge and 'For your toughest challenges'",
+      "location": "Select model sheet, first row",
+      "bounds": [
+        32,
+        1313,
+        1048,
+        1471
+      ],
+      "visible_text": "\"Fable 5.1\" badge \"Pro or Max\", \"For your toughest challenges\"",
+      "accessibility_text_consulted": "talkback_label \"Fable 5.1 Pro or Max For your toughest challenges\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "in a sheet titled 'Select model' the row reads as a model you can select; the badge 'Pro or Max' does not say it is locked to paid plans",
+      "test_cases": [
+        {
+          "id": "screen7-a2-tc1",
+          "type": "expected",
+          "precondition": "Select model sheet open, Haiku selected",
+          "action": "tap the row",
+          "expected_result": "the model is selected (as the sheet title promises)",
+          "confirms_if": "tapping does not select the model",
+          "overturns_if": "the model is selected",
+          "observed_result": "the row did not select; the sheet changed to 'Upgrade to use Pro — This model requires a Pro plan.' with an Upgrade button",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the row sits under 'Select model' but leads to an upgrade prompt; the badge does not convey 'requires a paid plan'",
+      "recommendation": "mark locked rows explicitly, e.g. a lock glyph and 'Requires Pro or Max'",
+      "provisional": false
+    },
+    "screen7-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "model row 'Opus 5.5' with a 'Pro' badge and a one-line description",
+      "location": "Select model sheet, second row",
+      "bounds": [
+        32,
+        1476,
+        1048,
+        1634
+      ],
+      "visible_text": "\"Opus 5.5\" badge \"Pro\", \"Most capable for ambitious work\"",
+      "accessibility_text_consulted": "talkback_label \"Opus 5.5 Pro Most capable for ambitious work\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "reads as a selectable model; the 'Pro' badge could mean 'professional' and does not say the model is locked",
+      "test_cases": [
+        {
+          "id": "screen7-a3-tc1",
+          "type": "expected",
+          "precondition": "Select model sheet open, Haiku selected",
+          "action": "tap the row",
+          "expected_result": "the model is selected",
+          "confirms_if": "tapping does not select the model",
+          "overturns_if": "the model is selected",
+          "observed_result": "the row did not select; the sheet changed to 'Upgrade to use Pro — This model requires a Pro plan.'",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "selecting leads to an upgrade prompt that the 'Pro' badge does not convey",
+      "recommendation": "mark locked rows explicitly, e.g. a lock glyph and 'Requires Pro'",
+      "provisional": false
+    },
+    "screen7-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "model row 'Sonnet 5' with a one-line description",
+      "location": "Select model sheet, third row",
+      "bounds": [
+        32,
+        1639,
+        1048,
+        1797
+      ],
+      "visible_text": "\"Sonnet 5\", \"Most efficient for everyday tasks\"",
+      "accessibility_text_consulted": "talkback_label \"Sonnet 5 Most efficient for everyday tasks\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a selectable option under 'Select model' with a plain description",
+      "test_cases": [
+        {
+          "id": "screen7-a4-tc1",
+          "type": "expected",
+          "precondition": "Select model sheet open, Haiku selected",
+          "action": "tap the row, then reselect Haiku to revert",
+          "expected_result": "the model is selected and shown on the pill",
+          "confirms_if": "something other than selection happens",
+          "overturns_if": "it is selected",
+          "observed_result": "the sheet closed and the pill changed to 'Sonnet 5.5 Medium' (live name); reopened the sheet and reselected Haiku 4.5",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "selecting the row changed the model, as the sheet title says",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "model row 'Haiku 4.5' with a check mark (current selection)",
+      "location": "Select model sheet, fourth row",
+      "bounds": [
+        32,
+        1802,
+        1048,
+        1960
+      ],
+      "visible_text": "\"Haiku 4.5\", \"Fastest for quick answers\", check mark",
+      "accessibility_text_consulted": "talkback_label \"Haiku 4.5 Fastest for quick answers\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the selected option in a model list, with a description; detector flagged actionability as uncertain (focusable, not clickable), so tested",
+      "test_cases": [
+        {
+          "id": "screen7-a5-tc1",
+          "type": "verification",
+          "precondition": "Select model sheet open, Haiku selected",
+          "action": "tap the checked row",
+          "expected_result": "the selection is kept and the sheet closes (actionable) — or nothing happens (not actionable)",
+          "confirms_if": "nothing happens, making it a detection false positive",
+          "overturns_if": "the tap is acted on",
+          "observed_result": "the sheet closed with Haiku 4.5 still selected on the pill — the row is actionable (re-confirms the choice)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the checked row is actionable and re-selects the model it names",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a6": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "'Extended' row with the caption 'Always uses deep reasoning' and a switch",
+      "location": "Select model sheet",
+      "bounds": [
+        32,
+        1992,
+        1048,
+        2158
+      ],
+      "visible_text": "\"Extended\" / \"Always uses deep reasoning\" with an on/off switch",
+      "accessibility_text_consulted": "talkback_label \"Extended Always uses deep reasoning\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "'Extended' does not say what is extended; 'deep reasoning' is jargon, and nothing says what changes for the user (speed, answer length)",
+      "test_cases": [
+        {
+          "id": "screen7-a6-tc1",
+          "type": "expected",
+          "precondition": "Select model sheet open, switch off",
+          "action": "turn the switch on, look for any explanation, then turn it off again",
+          "expected_result": "an explanation of the effect appears",
+          "confirms_if": "the switch flips with no further explanation",
+          "overturns_if": "an explanation of what it changes appears",
+          "observed_result": "the switch turned on with no message, hint or change elsewhere in the sheet; turned it off again and confirmed it stayed off",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "flipping the switch reveals nothing more; the effect on the user is never stated",
+      "recommendation": "caption the effect in plain words, e.g. 'Extended thinking — Claude thinks longer before answering (slower, more thorough)'",
+      "provisional": false
+    },
+    "screen7-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "'More models' row with a chevron",
+      "location": "Select model sheet, last row",
+      "bounds": [
+        32,
+        2190,
+        1048,
+        2337
+      ],
+      "visible_text": "\"More models\"",
+      "accessibility_text_consulted": "talkback_label \"More models\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain words in a model sheet",
+      "test_cases": [
+        {
+          "id": "screen7-a7-tc1",
+          "type": "expected",
+          "precondition": "Select model sheet open",
+          "action": "tap 'More models'",
+          "expected_result": "a longer list of models opens",
+          "confirms_if": "something else opens",
+          "overturns_if": "a list opens",
+          "observed_result": "a 'More models' list opened (Fable 5, Opus 5, Opus 4.8 …, Sonnet 5, Sonnet 4.6)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "opened the list it names",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 7,
+    "issues": 3,
+    "missing_purpose": 0,
+    "unclear_purpose": 3,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 7,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 7,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

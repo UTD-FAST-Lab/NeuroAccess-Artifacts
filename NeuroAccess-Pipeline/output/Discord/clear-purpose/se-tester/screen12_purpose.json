@@ -1,0 +1,106 @@
+{
+  "app": "Discord",
+  "screen": "screen12",
+  "image": "inputs/Discord/actionable-elements-highlighted/screen12_actionable_elements.png",
+  "elements": {
+    "screen12-a1": {
+      "kind": "icon",
+      "glyph": "arrow pointing left",
+      "description": "top-left of the 'New Message' header",
+      "location": "top, left",
+      "bounds": [
+        0,
+        63,
+        147,
+        210
+      ],
+      "visible_text": "none (left arrow)",
+      "accessibility_text_consulted": "content_desc \"Navigate up\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": "left arrow = back; my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "back convention; exemption pending the tap",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "carried from screen11-a1 (same control, tested once): the arrow went back, as the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen12-a2": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "recipient field after the visible prefix 'To:'",
+      "location": "top, centre",
+      "bounds": [
+        133,
+        231,
+        1026,
+        294
+      ],
+      "visible_text": "prefix \"To:\" and placeholder \"Search your friends\"",
+      "accessibility_text_consulted": "content_desc \"Search\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the persistent 'To:' prefix and the placeholder say who goes here",
+      "test_cases": [
+        {
+          "id": "screen12-a2-tc1",
+          "type": "expected",
+          "precondition": "'New Message' open",
+          "action": "tap the field and type 'alex'",
+          "expected_result": "the 'To:' label stays and matching friends are listed",
+          "confirms_if": "no persistent label remains while typing",
+          "overturns_if": "'To:' stays visible",
+          "observed_result": "'To:' stayed visible while typing; the list filtered (showed 'Group DMs: Accessibility Testing's Group', then 'Unfortunately, no results were found... Add a Friend')",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the 'To:' prefix survives focus and typing, so the purpose stays on screen",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen12-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "filled button at the bottom",
+      "location": "bottom, centre",
+      "bounds": [
+        42,
+        2169,
+        1038,
+        2295
+      ],
+      "visible_text": "\"Add Friends\" under 'No one's around to play with Wumpus. Add some friends to start chatting...'",
+      "accessibility_text_consulted": "content_desc \"Add Friends\"; talkback_label (same) — used only to know what to watch for when tapping; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the words and copy state the purpose",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "visible text names the action; same destination wording as the tested pill (screen1-a3)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 3,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 3,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

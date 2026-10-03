@@ -1,0 +1,58 @@
+{
+  "app": "Duolingo",
+  "screen": "screen12",
+  "image": "inputs/Duolingo/actionable-elements-highlighted/screen12_actionable_elements.png",
+  "elements": {
+    "screen12-a1": {
+      "kind": "icon",
+      "glyph": "X",
+      "description": "X at the top-left of the page",
+      "location": "top-left of the page",
+      "bounds": [
+        21,
+        84,
+        105,
+        168
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc/talkback \"Close Page\" — read only to know what to test; not used in the verdict",
+      "convention_relied_on": "X is the established 'close' convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "close glyph, exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen12-a1-tc1",
+          "type": "verification",
+          "precondition": "unit notes page (the screen captured mid-load)",
+          "action": "tap the X",
+          "expected_result": "the page closes",
+          "confirms_if": "it does something other than close",
+          "overturns_if": "the page closes",
+          "observed_result": "the unit notes page closed and the home path returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the X closed the page and returned to the previous screen, as the close convention promises",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 1,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 1,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 1,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

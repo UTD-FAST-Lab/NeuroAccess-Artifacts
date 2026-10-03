@@ -1,0 +1,97 @@
+{
+  "app": "Duolingo",
+  "screen": "screen29",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen29_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen29_function_groups.png"
+  },
+  "elements": {
+    "screen29-f1": {
+      "kind": "icon",
+      "appearance": "arrow pointing left",
+      "state": null,
+      "location": "top-left of a new-course setup question",
+      "bounds": [
+        21,
+        126,
+        105,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a left arrow is the established back convention — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "back",
+      "accessibility_text": "content_desc: \"Back\"; talkback_label: \"Back\"",
+      "context_reading": "top-left of a new-course setup question",
+      "observed_function": "returns to the previous setup step (from the first course question to \"What would you like to learn?\")",
+      "glyph_group": "gg49",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg49-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "goes back one step",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "returns to the previous setup step (from the first course question to \"What would you like to learn?\")",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg49": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen29-f2": {
+      "kind": "button",
+      "appearance": "the word \"CONTINUE\"",
+      "state": "disabled-looking (grey)",
+      "location": "full-width button at the foot of a new-course setup question",
+      "bounds": [
+        42,
+        2158,
+        1038,
+        2295
+      ],
+      "visible_label": "CONTINUE",
+      "convention_relied_on": "worded button — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "continue",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"CONTINUE\"",
+      "context_reading": "full-width button at the foot of a new-course setup question",
+      "observed_function": "grey and unresponsive until an answer is picked; then green, and advances to the next setup step",
+      "glyph_group": "gg50",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg50-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "advances the setup once an answer is chosen",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "grey and unresponsive until an answer is picked; then green, and advances to the next setup step",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg50": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

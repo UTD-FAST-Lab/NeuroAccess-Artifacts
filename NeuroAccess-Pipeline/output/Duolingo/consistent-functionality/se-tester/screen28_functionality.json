@@ -1,0 +1,472 @@
+{
+  "app": "Duolingo",
+  "screen": "screen28",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen28_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen28_function_groups.png"
+  },
+  "elements": {
+    "screen28-f1": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "bounds": [
+        63,
+        63,
+        227,
+        189
+      ],
+      "visible_label": "1",
+      "convention_relied_on": "a country flag with a number is the course switcher in language apps; flag = language is common, the drawer it opens is not predictable — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "learning spanish",
+      "accessibility_text": "content_desc: \"Learning Spanish\"; talkback_label: \"Learning Spanish\"",
+      "context_reading": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "observed_function": "closes the open course drawer",
+      "glyph_group": "gg3",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg3-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the course drawer; where the drawer is already open, closes it",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the open course drawer; opens the course drawer (Spanish / + Course / \"Your Spanish Score is 1\" / New Courses: Math, Music, Chess)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg3": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f2": {
+      "kind": "icon+label",
+      "appearance": "flame with a number beside it",
+      "state": "inactive (grey)",
+      "location": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "bounds": [
+        298,
+        63,
+        455,
+        189
+      ],
+      "visible_label": "1",
+      "convention_relied_on": "a flame with a count is a widely used streak indicator — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "day streak",
+      "accessibility_text": "content_desc: \"1 day streak\"; talkback_label: \"1 day streak\"",
+      "context_reading": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "observed_function": "opens the Streak page (PERSONAL / FRIENDS tabs, \"day streak!\", Streak Calendar)",
+      "glyph_group": "gg4",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg4-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the streak page from every capture",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Streak page (PERSONAL / FRIENDS tabs, \"day streak!\", Streak Calendar)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg4": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f3": {
+      "kind": "icon+label",
+      "appearance": "blue gem with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "bounds": [
+        525,
+        63,
+        754,
+        189
+      ],
+      "visible_label": "520",
+      "convention_relied_on": "a gem with a count reads as an in-app currency balance; that it opens the Shop is not conventional — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"520\"",
+      "context_reading": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "observed_function": "opens the Shop page (SUPER banner, Special Offers, Streak)",
+      "glyph_group": "gg5",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg5-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the shop",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Shop page (SUPER banner, Special Offers, Streak)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the gem counter and the lightning-bolt counter at the top both open the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "the gem counter opens the Shop page; the lightning-bolt counter opens the Energy page",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg5": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f4": {
+      "kind": "icon+label",
+      "appearance": "pink lightning bolt with a number beside it",
+      "state": null,
+      "location": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "bounds": [
+        825,
+        63,
+        1017,
+        189
+      ],
+      "visible_label": "25",
+      "convention_relied_on": "a lightning bolt with a count reads as energy/power; not a first-time-user convention for a page — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"520 gems\"; talkback_label: \"520 gems\"",
+      "context_reading": "top counter bar of the home screen with the course drawer (Spanish / Course / score / New Courses) open beneath it",
+      "observed_function": "opens the Energy page (25 / 25 bar, SUPER Unlimited FREE TRIAL, Recharge, Widget Boost, +5 energy rows)",
+      "glyph_group": "gg6",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg6-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens an energy sheet",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Energy page (25 / 25 bar, SUPER Unlimited FREE TRIAL, Recharge, Widget Boost, +5 energy rows)",
+          "status": "executed",
+          "matched_expectation": true
+        },
+        {
+          "id": "cfg2-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do the gem counter and the lightning-bolt counter at the top both open the same thing?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "the gem counter opens the Shop page; the lightning-bolt counter opens the Energy page",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "inherited_verdicts": {
+        "gg6": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f5": {
+      "kind": "icon+label",
+      "appearance": "Spanish flag with the word Spanish",
+      "state": "selected (blue outline)",
+      "location": "first tile of the course drawer, under the top counters",
+      "bounds": [
+        0,
+        210,
+        268,
+        519
+      ],
+      "visible_label": "Spanish",
+      "convention_relied_on": "a flag with the language name; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "spanish",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Spanish\"",
+      "context_reading": "first tile of the course drawer, under the top counters",
+      "observed_function": "closes the drawer and stays on the Spanish course learning path",
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both go to the Spanish course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the drawer and stays on the Spanish course learning path; returns to the Spanish course learning path",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f6": {
+      "kind": "icon+label",
+      "appearance": "plus sign with the word Course",
+      "state": null,
+      "location": "second tile of the course drawer, beside the Spanish tile",
+      "bounds": [
+        268,
+        210,
+        536,
+        519
+      ],
+      "visible_label": "Course",
+      "convention_relied_on": "a plus sign with the word \"Course\" — add convention, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "course",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Course\"",
+      "context_reading": "second tile of the course drawer, beside the Spanish tile",
+      "observed_function": "opens the course picker \"What would you like to learn?\"",
+      "glyph_group": "gg24",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg24-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the course picker",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the course picker \"What would you like to learn?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg24": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f7": {
+      "kind": "button",
+      "appearance": "the words \"MORE ABOUT SCORE\"",
+      "state": null,
+      "location": "under \"Your Spanish Score is 1\" in the course drawer",
+      "bounds": [
+        314,
+        749,
+        768,
+        875
+      ],
+      "visible_label": "MORE ABOUT SCORE",
+      "convention_relied_on": "worded link — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "more about score",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"MORE ABOUT SCORE\"",
+      "context_reading": "under \"Your Spanish Score is 1\" in the course drawer",
+      "observed_function": "opens the \"Spanish Score\" page (score progress list, share icon)",
+      "glyph_group": "gg25",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg25-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "opens the score explanation",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the \"Spanish Score\" page (score progress list, share icon)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg25": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f8": {
+      "kind": "icon+label",
+      "appearance": "arithmetic signs with the word Math",
+      "state": null,
+      "location": "tile under \"New Courses\" in the course drawer",
+      "bounds": [
+        0,
+        1091,
+        268,
+        1400
+      ],
+      "visible_label": "Math",
+      "convention_relied_on": "Math glyph with the word \"Math\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "math",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Math\"",
+      "context_reading": "tile under \"New Courses\" in the course drawer",
+      "observed_function": "opens the Math course setup question \"What best describes you?\"",
+      "glyph_group": "gg21",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg21-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Math course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Math course setup question \"What best describes you?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg21": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f9": {
+      "kind": "icon+label",
+      "appearance": "musical note with the word Music",
+      "state": null,
+      "location": "tile under \"New Courses\" in the course drawer",
+      "bounds": [
+        268,
+        1091,
+        536,
+        1400
+      ],
+      "visible_label": "Music",
+      "convention_relied_on": "Music glyph with the word \"Music\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "music",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Music\"",
+      "context_reading": "tile under \"New Courses\" in the course drawer",
+      "observed_function": "opens the Music course setup question \"Do you have any music experience?\"",
+      "glyph_group": "gg22",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg22-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Music course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Music course setup question \"Do you have any music experience?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg22": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f10": {
+      "kind": "icon+label",
+      "appearance": "chess rook with the word Chess",
+      "state": null,
+      "location": "tile under \"New Courses\" in the course drawer",
+      "bounds": [
+        536,
+        1091,
+        804,
+        1400
+      ],
+      "visible_label": "Chess",
+      "convention_relied_on": "Chess glyph with the word \"Chess\"; explicit word — confidence high",
+      "convention_confidence": "high",
+      "declared_function": "chess",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Chess\"",
+      "context_reading": "tile under \"New Courses\" in the course drawer",
+      "observed_function": "opens the Chess course setup question \"How much chess do you know?\"",
+      "glyph_group": "gg23",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg23-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "both start the Chess course",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens the Chess course setup question \"How much chess do you know?\"",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg23": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen28-f11": {
+      "kind": "button",
+      "appearance": "grey translucent scrim",
+      "state": null,
+      "location": "the dimmed learning path below the open course drawer",
+      "bounds": [
+        0,
+        1421,
+        1080,
+        2337
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a dimmed layer below a drawer conventionally dismisses it on tap — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "the dimmed learning path below the open course drawer",
+      "observed_function": "closes the course drawer",
+      "glyph_group": "gg26",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg26-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "closes the drawer",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the course drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg26": "Consistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 11,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 12,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

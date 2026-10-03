@@ -1,0 +1,39 @@
+{
+  "app": "Discord",
+  "screen": "s36",
+  "state_str": "cbd40f255812e6f88fe2e9fddc917ab5",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215711.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s36_header_nav.png",
+  "name": "Gift a new Nitro membership",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Gift a new Nitro membership",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    }
+  ],
+  "identifier_found": "\"Gift a new Nitro membership\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Gift a new Nitro membership' names the place",
+  "test_cases": [
+    {
+      "id": "s36-tc1",
+      "type": "verification",
+      "precondition": "#general channel",
+      "action": "tap the gift glyph in the composer",
+      "expected_result": "a full-screen page titled 'Gift a new Nitro membership' with a close X",
+      "confirms_if": "no title on the page",
+      "overturns_if": "title and close X visible",
+      "observed_result": "reproduced the capture: 'Gift a new Nitro membership' in large white type at the top, close X top-left, which returned to #general when tapped",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "tested live: reproduced the capture: 'Gift a new Nitro membership' in large white type at the top, close X top-left, which returned to #general when tapped",
+  "recommendation": null,
+  "provisional": false
+}

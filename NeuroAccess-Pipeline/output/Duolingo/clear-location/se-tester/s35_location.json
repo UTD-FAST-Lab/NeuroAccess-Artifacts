@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s35",
+  "state_str": "12a233351cfb1e53e7db148e5391b94b",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185849.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s35_header_nav.png",
+  "name": "Find your friends",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Find your friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Friend suggestions",
+      "verdict_on_region": "sub-section heading naming a list of people, not the screen — not counted"
+    }
+  ],
+  "identifier_found": "'Find your friends' at the top with a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title naming the screen",
+  "test_cases": [
+    {
+      "id": "s35-tc1",
+      "type": "unconventional_region",
+      "precondition": "Feed",
+      "action": "tap ADD FRIENDS and read the screen",
+      "expected_result": "'Find your friends' plus 'Friend suggestions'",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "'Find your friends' with back arrow; Choose from contacts / Search by name / Share follow link; no 'Friend suggestions' list live (live app diverges from capture)",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Friend suggestions' is a list heading, not counted; not present live",
+  "recommendation": null,
+  "provisional": false
+}

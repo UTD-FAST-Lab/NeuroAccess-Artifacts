@@ -1,0 +1,132 @@
+{
+ "app": "Messenger",
+ "screen": "screen22",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen22_actionable_elements.png",
+ "elements": {
+  "screen22-a1": {
+   "kind": "icon",
+   "glyph": "short horizontal bar",
+   "description": "short horizontal bar",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    1672,
+    1080,
+    1715
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Click to dismiss this bottom sheet' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "short bar at the top of a sheet = drag handle - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a short grey bar at the top of a sheet is the drag-handle convention (pull down to close)",
+   "test_cases": [
+    {
+     "id": "screen22-a1-tc1",
+     "type": "verification",
+     "precondition": "a bottom sheet open",
+     "action": "tap the short bar, then drag it downward",
+     "expected_result": "the sheet closes or moves",
+     "confirms_if": "nothing happens on tap or drag",
+     "overturns_if": "it proves inert",
+     "observed_result": "nothing happened on tap; dragging it down did not move or close the sheet",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping the bar did nothing and dragging it down did not move or close the sheet; it is a decoration, not a control",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen22-a2": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Learn more'",
+   "location": "bottom, centre",
+   "bounds": [
+    540,
+    2062,
+    731,
+    2102
+   ],
+   "visible_text": "'Learn more'",
+   "accessibility_text_consulted": null,
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an inline 'Learn more' at the end of the explanation text",
+   "test_cases": [
+    {
+     "id": "screen22-a2-tc1",
+     "type": "expected",
+     "precondition": "the explanation sheet open",
+     "action": "tap 'Learn more'",
+     "expected_result": "more information appears",
+     "confirms_if": "something unrelated opens",
+     "overturns_if": "information appears",
+     "observed_result": "a Facebook help page opened in the Facebook app",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "'Learn more' opened a help article in the Facebook app",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen22-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'OK'",
+   "location": "bottom, full width",
+   "bounds": [
+    74,
+    2190,
+    1006,
+    2295
+   ],
+   "visible_text": "'OK'",
+   "accessibility_text_consulted": "content_desc 'OK' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'OK' at the end of an explanation sheet",
+   "test_cases": [
+    {
+     "id": "screen22-a3-tc1",
+     "type": "expected",
+     "precondition": "the friend-suggestions explanation sheet open",
+     "action": "tap OK",
+     "expected_result": "the sheet closes",
+     "confirms_if": "something else happens",
+     "overturns_if": "it closes",
+     "observed_result": "the sheet closed",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "OK closed the sheet",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 3,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 2,
+  "clear_via_common_icon_exemption": 0,
+  "detection_false_positives": 1,
+  "test_cases_executed": 3,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 2,
+  "instincts_overturned": 1,
+  "provisional_verdicts": 0
+ }
+}

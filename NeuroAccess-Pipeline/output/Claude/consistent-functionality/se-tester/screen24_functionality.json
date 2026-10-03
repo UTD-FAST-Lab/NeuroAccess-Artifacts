@@ -1,0 +1,98 @@
+{
+  "app": "Claude",
+  "screen": "screen24",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen24_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen24_function_groups.png"
+  },
+  "elements": {
+    "screen24-f1": {
+      "kind": "icon",
+      "appearance": "X",
+      "state": null,
+      "location": "top left of screen24 (incog voiceintro)",
+      "bounds": [
+        37,
+        113,
+        163,
+        239
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "X is the established close/dismiss convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"Close\"; talkback_label: \"Close\" — evidence of intent only",
+      "context_reading": "same voice introduction page, reached from the incognito composer; X at the top left",
+      "observed_function": "closes the surface and returns to the incognito composer underneath",
+      "glyph_group": "gg1",
+      "function_group": "cfg1",
+      "test_cases": [
+        {
+          "id": "gg1-screen24-f1",
+          "type": "same_appearance",
+          "precondition": "app open on incog voiceintro (live equivalent of screen24); context noted before the tap",
+          "action": "tap X at top left of screen24 (incog voiceintro)",
+          "expected_result": "every X dismisses the surface it sits on and returns to what was underneath; the three incognito-screen X marks are the \"on\" face of the incognito toggle and should take the user back out of incognito",
+          "confirms_if": "it reaches something unrelated to what the other members of gg1 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "closes the surface and returns to the incognito composer underneath",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg1": "Consistent Functionality",
+        "cfg1": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen24-f2": {
+      "kind": "button",
+      "appearance": "the word \"Continue\"",
+      "state": null,
+      "location": "bottom centre of screen24 (incog voiceintro)",
+      "bounds": [
+        63,
+        2222,
+        1017,
+        2348
+      ],
+      "visible_label": "Continue",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "continue",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Continue\" — evidence of intent only",
+      "context_reading": "same voice introduction page, reached from the incognito composer; X at the top left",
+      "observed_function": null,
+      "glyph_group": "gg27",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg27-screen24-f2",
+          "type": "same_appearance",
+          "precondition": "app open on incog voiceintro (live equivalent of screen24); context noted before the tap",
+          "action": "tap the word \"Continue\" at bottom centre of screen24 (incog voiceintro)",
+          "expected_result": "both continue into speech input (microphone permission)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg27 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "not executed — tap blocked by the session permission classifier; it leads to the microphone permission request, which may not be granted",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality"
+      },
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 1
+  }
+}

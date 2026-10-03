@@ -1,0 +1,33 @@
+{
+  "app": "ChatGPT",
+  "screen": "s1",
+  "state_str": "4e4cbbca2ffc03c1e74a9133778f6d80",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_203900.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s1_header_nav.png",
+  "name": "the new-chat home screen",
+  "regions_read": [],
+  "identifier_found": "none; the top bar holds \"Get Plus\" (an upgrade button) and two icon buttons; the rest is suggestion rows and the \"Ask ChatGPT\" composer",
+  "identifier_class": "none",
+  "accessibility_text": "none — the root and top bar carry no screen name; the icon buttons are labelled \"Menu\" and \"Temporary chat\"",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "no header, no nav bar; the suggestion rows (\"Create an image or sticker\", \"Write or edit\") are actions, not a place name",
+  "test_cases": [
+    {
+      "id": "s1-tc1",
+      "type": "verification",
+      "precondition": "app freshly launched on the home screen",
+      "action": "dismiss the keyboard, swipe down and then up across the whole screen, watching for any title or collapsing app bar",
+      "expected_result": "either a title appears in some scroll state, or none exists anywhere",
+      "confirms_if": "no title appears in any state",
+      "overturns_if": "a title naming the screen appears",
+      "observed_result": "no title in any state; the top bar stays \"Get Plus\" plus two icon buttons; the live home no longer shows the \"Start a voice chat\" row (capture divergence) — the answer is unchanged",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "no identifier exists in any state of the live home screen; the only chrome is an upgrade button and two unlabeled icons. No evaluated transition lands here.",
+  "recommendation": "give the home a visible title in the top bar, e.g. \"New chat\", so the start screen names itself",
+  "provisional": false
+}

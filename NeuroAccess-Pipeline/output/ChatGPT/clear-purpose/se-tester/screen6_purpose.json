@@ -1,0 +1,302 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen6",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen6_actionable_elements.png",
+  "elements": {
+    "screen6-a1": {
+      "kind": "icon",
+      "glyph": "two horizontal lines, the lower one shorter",
+      "description": "top-left header control",
+      "location": "top-left header control",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Menu\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "two/three stacked lines = open the main menu (hamburger) - my reading; the two-line variant is slightly less canonical than three lines",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "no label, but two stacked horizontal lines is a recognizable variant of the hamburger menu convention - common-icon exemption pending the behavioural test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it slid a navigation drawer in from the left, exactly what the menu convention promises; the missing label is not a barrier; tested once on screen1-a1 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill in the header with a sparkle glyph and the words 'Get Plus'",
+      "location": "pill in the header with a sparkle glyph and the words 'Get Plus'",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_text": "\"Get Plus\"",
+      "accessibility_text_consulted": "talkback_label \"Get Plus\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "visible words 'Get Plus' with a sparkle; 'Plus' is a product name a first-time user has no way to decode, and nothing says it costs money",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a paywall ('ChatGPT Plus', 'Upgrade for $19.99', 'Renews monthly') - a paid monthly subscription the words 'Get Plus' never mentioned; tested once on screen1-a2 and carried to this identical control",
+      "recommendation": "say what it is and that it is paid, e.g. 'Upgrade to Plus (paid plan)'",
+      "provisional": false
+    },
+    "screen6-a3": {
+      "kind": "icon",
+      "glyph": "speech bubble with a checkmark inside",
+      "description": "top-right header control",
+      "location": "top-right header control",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Temporary chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a speech bubble with a checkmark inside is not an established convention and carries no label",
+      "test_cases": [
+        {
+          "id": "screen6-a3-tc1",
+          "type": "verification",
+          "precondition": "temporary chat active (heading 'Temporary chat' shown)",
+          "action": "tap the checkmark-bubble glyph at top right",
+          "expected_result": "something visible names what the control does",
+          "confirms_if": "it changes state with nothing naming what it controls",
+          "overturns_if": "a visible label or confirmation names the action",
+          "observed_result": "the 'Temporary chat' heading disappeared and the screen returned to a normal new chat; the glyph reverted to the broken-outline bubble; no label or message named the change",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it silently turned temporary chat off - the heading vanished and the glyph reverted; nothing on the control ever said it was an on/off switch or what it switched",
+      "recommendation": "make it a labelled toggle, e.g. 'Temporary chat: On' with a visible switch",
+      "provisional": false
+    },
+    "screen6-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "underlined words at the end of the sentence 'This chat won’t appear in history.'; no record",
+      "location": "underlined words at the end of the sentence 'This chat won’t appear in history.'",
+      "bounds": [
+        749,
+        1120,
+        962,
+        1172
+      ],
+      "visible_text": "\"Learn more\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "underlined 'Learn more' at the end of 'This chat won't appear in history.'",
+      "test_cases": [
+        {
+          "id": "screen6-a4-tc1",
+          "type": "expected",
+          "precondition": "temporary chat screen",
+          "action": "tap 'Learn more'",
+          "expected_result": "an explanation of temporary chat appears",
+          "confirms_if": "something unrelated opens",
+          "overturns_if": "an explanation appears",
+          "observed_result": "a dialog titled 'Temporary chat' explained it won't appear in history or train models, with an OK button",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a 'Temporary chat' explanation dialog - more about the sentence it follows",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a5": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "dropdown: grey word 'Personalized' followed by a small downward chevron",
+      "location": "dropdown: grey word 'Personalized' followed by a small downward chevron",
+      "bounds": [
+        332,
+        1224,
+        748,
+        1350
+      ],
+      "visible_text": "content: \"Personalized\"",
+      "accessibility_text_consulted": "talkback_label \"Temporary chat personalization Personalized\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "grey word 'Personalized' with a chevron names a state, not what the control changes",
+      "test_cases": [
+        {
+          "id": "screen6-a5-tc1",
+          "type": "expected",
+          "precondition": "temporary chat screen",
+          "action": "tap 'Personalized'",
+          "expected_result": "what it controls becomes clear",
+          "confirms_if": "the explanation exists only after opening",
+          "overturns_if": "the closed control already says what it changes",
+          "observed_result": "a sheet 'Temporary chat settings' opened: 'Personalized - This chat can reference memory, plugins, and custom instructions' / 'Unpersonalized'; I pressed Done without changing it",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "only after tapping does a sheet ('Temporary chat settings') explain that it chooses whether the chat uses memory, plugins and custom instructions",
+      "recommendation": "label it with what it controls, e.g. 'Use my memory: Personalized'",
+      "provisional": false
+    },
+    "screen6-a6": {
+      "kind": "icon",
+      "glyph": "plus sign",
+      "description": "left end of the message composer",
+      "location": "left end of the message composer",
+      "bounds": [
+        32,
+        2179,
+        158,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Attachment\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "plus sign = add / attach - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled plus sign; + = add something is an established convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened an add menu (Camera, Photos, Files, Plugins, Think harder) - adding things to the message, as the plus convention promises; tested once on screen1-a7 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a7": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "message composer; visible placeholder/content 'Temporary chat'",
+      "location": "message composer",
+      "bounds": [
+        158,
+        2179,
+        791,
+        2305
+      ],
+      "visible_text": "placeholder: \"Temporary chat\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "placeholder 'Temporary chat' names the mode, not what to type",
+      "test_cases": [
+        {
+          "id": "screen6-a7-tc1",
+          "type": "expected",
+          "precondition": "temporary chat, empty composer",
+          "action": "type 'Hello' and send",
+          "expected_result": "accepted as a chat message",
+          "confirms_if": "it expects something other than a message",
+          "overturns_if": "it behaves as a normal message box",
+          "observed_result": "'Hello' was accepted and sent; ChatGPT replied 'Hello! How can I help you tonight?'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "the box behaved as an ordinary message box - typing 'Hello' and sending produced a reply - and with the 'Temporary chat' heading above, a message is plainly what it wants",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a8": {
+      "kind": "icon",
+      "glyph": "microphone",
+      "description": "composer control",
+      "location": "composer control",
+      "bounds": [
+        791,
+        2179,
+        917,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Dictation\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "microphone = speak instead of typing - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled microphone; microphone = speak / voice input is an established convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping raised the system request to record audio - the microphone convention held (permission was denied per safety rules); tested once on screen1-a9 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen6-a9": {
+      "kind": "icon",
+      "glyph": "grey filled circle with an upward arrow",
+      "description": "right end of the composer; drawn greyed-out and focusable:false — may be disabled until text is entered",
+      "location": "right end of the composer",
+      "bounds": [
+        917,
+        2179,
+        1043,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Send Message\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "greyed upward arrow = send, disabled until there is text - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "greyed upward arrow at the end of a chat composer; send convention, greyed = not yet available - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen6-a9-tc1",
+          "type": "verification",
+          "precondition": "temporary chat, empty composer",
+          "action": "tap the grey arrow; then type Hello and look at it again",
+          "expected_result": "nothing while empty; enabled once text exists",
+          "confirms_if": "it does something else",
+          "overturns_if": "it behaves as a disabled send that enables",
+          "observed_result": "the empty tap did nothing; after typing Hello the arrow turned blue and tapping it sent the message",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "empty: tapping did nothing; after typing it turned blue and sent - the greyed send convention held",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 9,
+    "issues": 3,
+    "missing_purpose": 1,
+    "unclear_purpose": 2,
+    "clear_purpose": 6,
+    "clear_via_common_icon_exemption": 4,
+    "detection_false_positives": 0,
+    "test_cases_executed": 5,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 8,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

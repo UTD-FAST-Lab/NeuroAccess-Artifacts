@@ -1,0 +1,343 @@
+{
+  "app": "Duolingo",
+  "screen": "screen19",
+  "images": {
+    "glyph_groups": "inputs/Duolingo/functionality-groups/screen19_glyph_groups.png",
+    "function_groups": "inputs/Duolingo/functionality-groups/screen19_function_groups.png"
+  },
+  "elements": {
+    "screen19-f1": {
+      "kind": "icon",
+      "appearance": "square with an upward arrow out of it",
+      "state": null,
+      "location": "top-right of the Streak page",
+      "bounds": [
+        975,
+        93,
+        1038,
+        159
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a square with an upward arrow is the established share convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-right of the Streak page",
+      "observed_function": "opens a full-screen \"Share Streak\" page (streak card, Save / Instagram / Facebook / Messages / More)",
+      "glyph_group": "gg27",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg27-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "each shares the thing its page is about",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "opens a \"SHARE SPANISH SCORE\" bottom sheet with a score card preview and Instagram / Facebook / Messages / Save / More; opens a full-screen \"Share Streak\" page (streak card, Save / Instagram / Facebook / Messages / More)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg27": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f2": {
+      "kind": "icon",
+      "appearance": "X (cross)",
+      "state": null,
+      "location": "top-left of the Streak page",
+      "bounds": [
+        42,
+        95,
+        105,
+        158
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "an X is the established close convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "top-left of the Streak page",
+      "observed_function": "closes the Streak page, back to home",
+      "glyph_group": "gg19",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg19-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "every X closes the page or sheet it sits on and returns to where the user came from",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "closes the Energy page, back to home; closes the Shop page, back to home (the X is drawn faded but works); closes the Spanish Course section list, back to home; closes the Spanish Score page, back to the home screen with the course drawer open; closes the Streak page, back to home; closes the course picker, back to home; closes the unit guidebook, back to home",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg19": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f3": {
+      "kind": "button",
+      "appearance": "the word \"PERSONAL\"",
+      "state": "active (blue, underlined)",
+      "location": "left tab under the Streak title",
+      "bounds": [
+        0,
+        189,
+        540,
+        315
+      ],
+      "visible_label": "PERSONAL",
+      "convention_relied_on": "worded tab — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "personal",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"PERSONAL\"",
+      "context_reading": "left tab under the Streak title",
+      "observed_function": "switches the Streak page to its PERSONAL view (already selected in the capture, so pressing it there changes nothing)",
+      "glyph_group": "gg28",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg28-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "switches to the PERSONAL tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "switches the Streak page to its PERSONAL view (already selected in the capture, so pressing it there changes nothing)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f4": {
+      "kind": "button",
+      "appearance": "the word \"FRIENDS\"",
+      "state": "inactive",
+      "location": "right tab under the Streak title",
+      "bounds": [
+        540,
+        189,
+        1080,
+        315
+      ],
+      "visible_label": "FRIENDS",
+      "convention_relied_on": "worded tab — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": "friends",
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"FRIENDS\"",
+      "context_reading": "right tab under the Streak title",
+      "observed_function": "switches the Streak page to its FRIENDS view (\"Start Friend Streaks…\", ADD FRIENDS)",
+      "glyph_group": "gg29",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg29-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "switches to the FRIENDS tab",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "switches the Streak page to its FRIENDS view (\"Start Friend Streaks…\", ADD FRIENDS)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg29": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f5": {
+      "kind": "icon+label",
+      "appearance": "stopwatch with the words \"START LESSON\"",
+      "state": null,
+      "location": "card under \"day streak!\" on the Streak page",
+      "bounds": [
+        42,
+        750,
+        1038,
+        981
+      ],
+      "visible_label": "Do a lesson today to extend your streak! START LESSON",
+      "convention_relied_on": "worded card — confidence n/a",
+      "convention_confidence": "n/a",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"Do a lesson today to extend your streak! START LESSON\"",
+      "context_reading": "card under \"day streak!\" on the Streak page",
+      "observed_function": "not observed: the card is not shown on the live Streak page (its place is taken by \"You're out of Streak Freezes! GET MORE\")",
+      "glyph_group": "gg30",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg30-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "starts a lesson",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "not_executed: live/capture divergence — the START LESSON card no longer appears on the Streak page, so neither member could be tapped. The two members are one card photographed twice on the same page, so no appearance or function difference is expected; carried provisionally",
+          "status": "not_executed",
+          "matched_expectation": null
+        },
+        {
+          "id": "cfg6-tc1",
+          "type": "mixed_appearance",
+          "precondition": "app open on each member's screen",
+          "action": "tap one live instance of every distinct appearance in the candidate and compare destinations",
+          "expected_result": "do these both start the next lesson?",
+          "confirms_if": "every appearance reaches the same destination at the same scope",
+          "overturns_if": "the appearances reach different destinations",
+          "observed_result": "CONTINUE +20 XP opens the lesson start (\"Great to see you again! Ready to dive in? LET'S DO IT\"); START LESSON could not be reached — the card is not shown on the live Streak page — not_executed for START LESSON: the card is absent on the live Streak page",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {
+        "gg30": "Consistent Functionality"
+      },
+      "provisional": true
+    },
+    "screen19-f6": {
+      "kind": "icon",
+      "appearance": "chevron pointing left",
+      "state": null,
+      "location": "left of the month name in the Streak Calendar",
+      "bounds": [
+        84,
+        1227,
+        179,
+        1322
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a left chevron is the established previous convention — confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "left of the month name in the Streak Calendar",
+      "observed_function": "shows the previous month in the Streak Calendar (September 2026 → August 2026)",
+      "glyph_group": "gg31",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg31-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "shows the previous month",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "shows the previous month in the Streak Calendar (September 2026 → August 2026)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg31": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f7": {
+      "kind": "icon",
+      "appearance": "chevron pointing right",
+      "state": null,
+      "location": "right of the month name in the Streak Calendar",
+      "bounds": [
+        901,
+        1227,
+        996,
+        1322
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a right chevron is the established next convention — confidence high",
+      "convention_confidence": "high",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "right of the month name in the Streak Calendar",
+      "observed_function": "shows the next month in the Streak Calendar (August 2026 → September 2026)",
+      "glyph_group": "gg32",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg32-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "shows the next month",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "shows the next month in the Streak Calendar (August 2026 → September 2026)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg32": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen19-f8": {
+      "kind": "button",
+      "appearance": "calendar grid of day numbers",
+      "state": null,
+      "location": "the day grid of the Streak Calendar",
+      "bounds": [
+        42,
+        1301,
+        1038,
+        1973
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "a calendar grid; day cells are sometimes tappable, often not — confidence low",
+      "convention_confidence": "low",
+      "declared_function": null,
+      "accessibility_text": "content_desc: \"\"; talkback_label: \"\"",
+      "context_reading": "the day grid of the Streak Calendar",
+      "observed_function": "nothing: tapping day cells (23, 16) changed nothing",
+      "glyph_group": "gg33",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg33-tc1",
+          "type": "same_appearance",
+          "precondition": "app open on a screen carrying the member; screen allowed to settle; prior sheets closed",
+          "action": "note the on-screen context, then tap each live instance of the control in turn (every capture of the same live control is tapped as that control, in each distinct state it was captured in)",
+          "expected_result": "possibly nothing",
+          "confirms_if": "two members in the same visual state do unrelated things and nothing visible before the tap says so",
+          "overturns_if": "every member does the same thing, or the difference is a state face or the same job scoped to its own page",
+          "observed_result": "nothing: tapping day cells (23, 16) changed nothing",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg33": null
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 8,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 1,
+    "test_cases_executed": 7,
+    "test_cases_not_executed": 2,
+    "provisional_verdicts": 1
+  }
+}

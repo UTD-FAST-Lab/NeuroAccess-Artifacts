@@ -1,0 +1,49 @@
+{
+  "app": "Duolingo",
+  "screen": "s58",
+  "state_str": "15090bf6b3bfd97e99b66a4ee3e44667",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190338.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s58_header_nav.png",
+  "name": "another user's Achievements",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Baron Laqeas’s Achievements",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Personal Records",
+      "verdict_on_region": "sub-section heading of the achievements page — not counted"
+    },
+    {
+      "kind": "header",
+      "text": "Awards",
+      "verdict_on_region": "sub-section heading of the achievements page — not counted"
+    }
+  ],
+  "identifier_found": "back arrow with 'Baron Laqeas’s Achievements'; 'Personal Records' and 'Awards' headings",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "title naming the screen",
+  "test_cases": [
+    {
+      "id": "s58-tc1",
+      "type": "unconventional_region",
+      "precondition": "another user's profile",
+      "action": "open Achievements and read 'Awards'",
+      "expected_result": "-",
+      "confirms_if": "-",
+      "overturns_if": "-",
+      "observed_result": "not executed — the other user's profile could not be reached: the live Find-your-friends screen shows no suggestions, and searching by name (typing into the app) was refused on this run",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Personal Records' and 'Awards' are sub-section headings (judged from the image, not counted); the title names the screen",
+  "recommendation": null,
+  "provisional": false
+}

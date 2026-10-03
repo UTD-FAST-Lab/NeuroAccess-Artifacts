@@ -1,0 +1,137 @@
+{
+  "app": "Claude",
+  "screen": "screen12",
+  "images": {
+    "glyph_groups": "inputs/Claude/functionality-groups/screen12_glyph_groups.png",
+    "function_groups": "inputs/Claude/functionality-groups/screen12_function_groups.png"
+  },
+  "elements": {
+    "screen12-f1": {
+      "kind": "icon",
+      "appearance": "three horizontal lines, the lower ones shorter",
+      "state": null,
+      "location": "top left of screen12 (chats)",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "three horizontal lines is the established menu/drawer convention — my reading, confidence high",
+      "convention_confidence": "high",
+      "declared_function": "open menu",
+      "accessibility_text": "content_desc: \"Open menu\"; talkback_label: \"Open menu\" — evidence of intent only",
+      "context_reading": "screen titled \"Chats\" with a search field and the chat list; \"+ New chat\" floating at the bottom right",
+      "observed_function": "opens the navigation drawer",
+      "glyph_group": "gg2",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg2-screen12-f1",
+          "type": "same_appearance",
+          "precondition": "app open on chats (live equivalent of screen12); context noted before the tap",
+          "action": "tap three horizontal lines, the lower ones shorter at top left of screen12 (chats)",
+          "expected_result": "all open the navigation drawer",
+          "confirms_if": "it reaches something unrelated to what the other members of gg2 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opens the navigation drawer",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg2": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f2": {
+      "kind": "icon",
+      "appearance": "three vertical sliders",
+      "state": null,
+      "location": "top right of screen12 (chats)",
+      "bounds": [
+        954,
+        84,
+        1080,
+        210
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "the sliders glyph conventionally means filter or adjust — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "filter",
+      "accessibility_text": "content_desc: \"Filter\"; talkback_label: \"Filter\" — evidence of intent only",
+      "context_reading": "screen titled \"Chats\" with a search field and the chat list; \"+ New chat\" floating at the bottom right",
+      "observed_function": "opened a dropdown \"All ✓ / Pinned\" under the icon",
+      "glyph_group": "gg20",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg20-screen12-f2",
+          "type": "same_appearance",
+          "precondition": "app open on chats (live equivalent of screen12); context noted before the tap",
+          "action": "tap three vertical sliders at top right of screen12 (chats)",
+          "expected_result": "each opens a filter for the list on its own screen (chats / projects / artifacts)",
+          "confirms_if": "it reaches something unrelated to what the other members of gg20 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened a dropdown \"All ✓ / Pinned\" under the icon",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg20": "Consistent Functionality"
+      },
+      "provisional": false
+    },
+    "screen12-f3": {
+      "kind": "icon+label",
+      "appearance": "plus sign with the words \"New chat\"",
+      "state": null,
+      "location": "bottom right of screen12 (chats)",
+      "bounds": [
+        690,
+        2174,
+        1038,
+        2300
+      ],
+      "visible_label": "New chat",
+      "convention_relied_on": "worded control — no glyph convention relied on",
+      "convention_confidence": null,
+      "declared_function": "new chat",
+      "accessibility_text": "content_desc: \"New chat\"; talkback_label: \"New chat\" — evidence of intent only",
+      "context_reading": "screen titled \"Chats\" with a search field and the chat list; \"+ New chat\" floating at the bottom right",
+      "observed_function": "opened a new empty chat composer (with a back arrow to Chats)",
+      "glyph_group": "gg11",
+      "function_group": "fg4",
+      "test_cases": [
+        {
+          "id": "gg11-screen12-f3",
+          "type": "same_appearance",
+          "precondition": "app open on chats (live equivalent of screen12); context noted before the tap",
+          "action": "tap plus sign with the words \"New chat\" at bottom right of screen12 (chats)",
+          "expected_result": "all start a new chat",
+          "confirms_if": "it reaches something unrelated to what the other members of gg11 reach, and nothing visible on screen said so in advance",
+          "overturns_if": "it does the same job as the other members (or a screen-scoped variant of it, or a toggle face), or visible context names the difference before the tap",
+          "observed_result": "opened a new empty chat composer (with a back arrow to Chats)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg11": "Consistent Functionality",
+        "fg4": "Inconsistent Functionality"
+      },
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 1,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 3,
+    "test_cases_not_executed": 0,
+    "provisional_verdicts": 0
+  }
+}

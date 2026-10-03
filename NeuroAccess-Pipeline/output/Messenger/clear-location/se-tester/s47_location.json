@@ -1,0 +1,39 @@
+{
+  "app": "Messenger",
+  "screen": "s47",
+  "state_str": "bff5cc50113cbf5b5a41d9a00bb917d5",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_152122.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s47_header_nav.png",
+  "name": "story viewer after a reply",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Sent to Krishna",
+      "verdict_on_region": "status line saying a reply was sent — names an event, not a place; it replaces the author name"
+    }
+  ],
+  "identifier_found": "same reply-sent state as s23: \"Sent to Krishna\" replaces the author name",
+  "identifier_class": "none",
+  "accessibility_text": null,
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "same reply-sent state as s23: \"Sent to Krishna\" replaces the author name",
+  "test_cases": [
+    {
+      "id": "s47-tc1",
+      "type": "verification",
+      "precondition": "a story open in the viewer",
+      "action": "reply to the story and watch the top bar",
+      "expected_result": "\"Sent to …\" replaces the name and reverts, or stays",
+      "confirms_if": "the status line replaces the author name with no other locating text",
+      "overturns_if": "the author name stays or returns at once",
+      "observed_result": "not run — replying to a story sends a message to a real contact, which is forbidden on this device",
+      "status": "not_executed",
+      "matched_expectation": null
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "provisional — test not executed (forbidden action); same reply-sent state as s23: \"Sent to Krishna\" replaces the author name; no confirmed Disappearing View Identifier transition lands here",
+  "recommendation": "keep the story author's name in the top chrome and show \"Sent\" as a separate transient toast",
+  "provisional": true
+}

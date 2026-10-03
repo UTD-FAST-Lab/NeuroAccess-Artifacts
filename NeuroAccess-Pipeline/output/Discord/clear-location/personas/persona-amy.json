@@ -1,0 +1,1504 @@
+{
+  "persona": "persona-amy",
+  "app": "Discord",
+  "screens": {
+    "s1": {
+      "where": "#general channel chat",
+      "expectation": "I am inside the text channel called general, in the server called Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "The top bar says \"# general\" and the message box says \"Message #general\". The big line in the middle says \"Welcome to Accessibility Testin's server\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top where I expect it and the message field repeats it. Two sources agree, so I trust it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "#general channel chat",
+      "expectation": "Same as before: the general text channel in Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, \"Message #general\" in the input field, the welcome line naming the server.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel name at the top, repeated in the input. That is enough for me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s3": {
+      "where": "Channel list of Accessibility Testin's server",
+      "expectation": "I am looking at the list of channels for the server Accessibility Testin's server. The channel general is the one highlighted.",
+      "confidence": "sure",
+      "cue": "The title \"Accessibility Testin's server\" at the top, the grey highlight on \"# general\", and the blue filled \"ATs\" square on the left strip.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The server name is written out at the top, and the highlight shows which channel is current. The three identical \"ATs\" squares on the left are ambiguous by themselves, but the title resolves it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s4": {
+      "where": "Messages (direct messages) list",
+      "expectation": "I am in Messages, the list of my direct messages. It is empty.",
+      "confidence": "sure",
+      "cue": "The title \"Messages\" at the top and the speech-bubble square on the left strip is filled blue.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "One literal word at the top says where I am, and the left strip highlight agrees with it. The heading \"DMs with superpowers\" is a slogan and I do not know what superpowers means here, but it does not change where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "Channel list of Accessibility Testin's server",
+      "expectation": "The channel list of Accessibility Testin's server again, general highlighted.",
+      "confidence": "sure",
+      "cue": "Title \"Accessibility Testin's server\", highlighted \"# general\", blue \"ATs\" square.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same layout as before, same title in the same place. Consistent.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s6": {
+      "where": "Create Your Server - first choice",
+      "expectation": "I am starting to create a new server. This is the first page where I pick to make my own or use a template.",
+      "confidence": "sure",
+      "cue": "The big title \"Create Your Server\" and the list \"Create My Own\" and \"Start from a template\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and says exactly what this page is for.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s7": {
+      "where": "Create server - Tell Us More About Your Server step",
+      "expectation": "I am in the server creation process, on a step asking whether the server is for friends or for a community.",
+      "confidence": "sure",
+      "cue": "The title \"Tell Us More About Your Server\" and the question text under it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title says what the page wants. There is no step number, so I do not know how many steps remain, but I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s8": {
+      "where": "Create Your Server - name and icon step",
+      "expectation": "I am in the server creation process, on the page where I give the server a name and a picture.",
+      "confidence": "sure",
+      "cue": "Title \"Create Your Server\", the \"Server Name\" field and the \"Create Server\" button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title plus the form tells me what I am doing. It uses the same title as the first page of this process, which is slightly odd since it is a different step, but the form makes it plain.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s9": {
+      "where": "Enable Permissions dialog over Create Your Server",
+      "expectation": "I am still on Create Your Server, and a dialog box called Enable Permissions has opened on top about photo access.",
+      "confidence": "sure",
+      "cue": "The dialog title \"Enable Permissions\" and the dimmed \"Create Your Server\" page behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The dialog has its own literal title and the page behind is still readable. \"Take me there\" does not say where \"there\" is, but that is about the button, not about where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s10": {
+      "where": "Create Your Server - name step, empty",
+      "expectation": "Server creation, the name and picture page, with the name field empty.",
+      "confidence": "sure",
+      "cue": "Title \"Create Your Server\", \"Server Name\" label, greyed \"Create Server\" button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place as the previous version of this page.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s11": {
+      "where": "Enable Permissions dialog over Create Your Server",
+      "expectation": "The Enable Permissions dialog again, on top of the server creation page.",
+      "confidence": "sure",
+      "cue": "Dialog title \"Enable Permissions\", \"Create Your Server\" visible behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the dialog and the page behind it are named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s12": {
+      "where": "Add some people - invite step after creating a server",
+      "expectation": "I have made the server and this is the step for inviting people with a link.",
+      "confidence": "sure",
+      "cue": "The title \"Add some people\", the invite link and \"Share Link\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal. It does not name which server, but the sentence under it says \"your server\", and I just made one.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s13": {
+      "where": "Add some people - invite step",
+      "expectation": "Same invite step as before.",
+      "confidence": "sure",
+      "cue": "Title \"Add some people\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Identical to the previous picture, title in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s14": {
+      "where": "Add some people - after copying the link",
+      "expectation": "Still on the Add some people page. I have copied the link, and the phone's own clipboard panel popped up at the bottom.",
+      "confidence": "sure",
+      "cue": "Title \"Add some people\", the \"Link Copied!\" pill, and \"Skip\" changed to \"Done\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title did not move. The pop-ups are distracting but they do not hide where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s15": {
+      "where": "Link Settings for the invite link",
+      "expectation": "I am in the settings for the invite link, for the #general channel of Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "Title \"Link Settings\" and the \"Invite Channel\" row showing #general and the server name.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal and the first row tells me which link.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s16": {
+      "where": "Add some people - invite step, Done state",
+      "expectation": "Back on the Add some people invite page, now with Done at the top right.",
+      "confidence": "sure",
+      "cue": "Title \"Add some people\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same title in the same place as before.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s17": {
+      "where": "Expire After choice over Link Settings",
+      "expectation": "I am in Link Settings and a panel has opened from the bottom to choose when the link expires.",
+      "confidence": "sure",
+      "cue": "The panel title \"Expire After\", and \"Link Settings\" still visible dimmed at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel title matches the row I would have tapped, and the page title is still there.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s18": {
+      "where": "Max Uses choice over Link Settings",
+      "expectation": "Link Settings, with a bottom panel open to choose how many times the link can be used.",
+      "confidence": "sure",
+      "cue": "Panel title \"Max Uses\", \"Link Settings\" dimmed at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same pattern as the Expire After panel. Consistent.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "Link Settings with Temporary Membership on",
+      "expectation": "Link Settings, with Temporary Membership switched on and a Save button now showing.",
+      "confidence": "sure",
+      "cue": "Title \"Link Settings\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title unchanged and in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "#general channel chat",
+      "expectation": "The general channel of Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top, \"Message #general\" in the input, the welcome line naming the server.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel name at the top, same as the other times I saw this screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s21": {
+      "where": "Channel list of Accessibility Testin's server, with Setup Progress",
+      "expectation": "The channel list for Accessibility Testin's server, general highlighted. A Setup Progress card is now above the channels, and there are four \"ATs\" squares on the left instead of three.",
+      "confidence": "sure",
+      "cue": "Title \"Accessibility Testin's server\", highlighted \"# general\", blue first \"ATs\" square.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title and the channel highlight tell me where I am. The extra card pushed the channel list down, but the title stayed in the same place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "My profile page",
+      "expectation": "I think this is my own profile, for the account called Accessibility Testing, on the Main tab.",
+      "confidence": "guessing",
+      "cue": "The big name \"Accessibility Testing\" (the same name as in the bottom bar on the server screens), the \"Edit Profile\" button, and \"Main\" underlined in blue.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The boxed title is a person's name, not the name of a place. Nothing says \"Profile\" or \"Your profile\". I had to work it out from the Edit Profile button. The bubble text \"Can't wait for...\" is a half sentence and I do not know what it is.",
+        "solution": "Put a literal title such as \"Your profile\" at the top, above or next to the name."
+      },
+      "test_cases": [
+        {
+          "id": "amy-T_PROFILE",
+          "action": "Open the page that has your own name as its big heading: tap your name at the bottom-left of the column of rooms, beside the round picture. Scroll the page down and back up. Then look away for a few seconds, look back, and say, from the top of the screen only, which page you are on. Leave with the X at the top-left.",
+          "real_if": "at every scroll position nothing at the top names the page",
+          "not_real_if": "a page name appears somewhere as you scroll, or you can say which page it is from the top alone",
+          "observed_result": "I tapped my name, \"Accessibility Testing\", at the bottom of the column, and a page slid up. At the top there is only an X on a black band, then my round picture, then a bubble that now says \"Favorite NPC companion?\". That is a third different phrase after \"Can't wait for...\" and \"Shower thought?\". Below that are my name, \"Edit Profile\", and the tabs Main and Wishlist. I scrolled down: the X and the black band went off the top and my name moved up. I scrolled back up. At no scroll position does any word name the page. There is no \"Profile\" and no \"Your profile\". After looking away and back, the top of the screen alone only told me \"there is a close button\". I worked out that it is my profile from my own name and the Edit Profile button, as before. The X closed it and returned me to the server channel list.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "No page name at any scroll position. The only place label is my own name, which names a person, not a page. A plain title such as \"Your profile\" would fix it.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "My profile page",
+      "expectation": "My own profile again, Main tab.",
+      "confidence": "guessing",
+      "cue": "The name \"Accessibility Testing\", \"Edit Profile\", \"Main\" tab underlined.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Same as before: the title is my name, not the page name. Also the bubble text changed from \"Can't wait for...\" to \"Shower thought?\" between visits, so the same screen does not look the same twice, and \"Shower thought?\" is not literal. That made me check whether I was somewhere else.",
+        "solution": "A fixed literal page title like \"Your profile\", and keep the bubble text the same each time, or say plainly what it is, for example \"Add a status\"."
+      },
+      "test_cases": [
+        {
+          "id": "amy-T_PROFILE",
+          "action": "Open the page that has your own name as its big heading: tap your name at the bottom-left of the column of rooms, beside the round picture. Scroll the page down and back up. Then look away for a few seconds, look back, and say, from the top of the screen only, which page you are on. Leave with the X at the top-left.",
+          "real_if": "at every scroll position nothing at the top names the page",
+          "not_real_if": "a page name appears somewhere as you scroll, or you can say which page it is from the top alone",
+          "observed_result": "I tapped my name, \"Accessibility Testing\", at the bottom of the column, and a page slid up. At the top there is only an X on a black band, then my round picture, then a bubble that now says \"Favorite NPC companion?\". That is a third different phrase after \"Can't wait for...\" and \"Shower thought?\". Below that are my name, \"Edit Profile\", and the tabs Main and Wishlist. I scrolled down: the X and the black band went off the top and my name moved up. I scrolled back up. At no scroll position does any word name the page. There is no \"Profile\" and no \"Your profile\". After looking away and back, the top of the screen alone only told me \"there is a close button\". I worked out that it is my profile from my own name and the Edit Profile button, as before. The X closed it and returned me to the server channel list.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Same missing title, and the bubble changed wording again on the phone (\"Favorite NPC companion?\"). This screen looks different each time I open it, and that is exactly what makes me check whether I am somewhere else.",
+      "provisional": false
+    },
+    "s24": {
+      "where": "Notifications",
+      "expectation": "I am in Notifications.",
+      "confidence": "sure",
+      "cue": "The title \"Notifications\" at the top next to the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "One literal word at the top, where titles go.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "Search in direct messages, Recent tab",
+      "expectation": "I am searching in my direct messages, on the Recent tab.",
+      "confidence": "sure",
+      "cue": "The search box text \"Search in DMs\" and \"Recent\" in blue with an underline.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "I can tell right now. But the only place name is grey hint text inside the search box, and I expect it to vanish as soon as I type, which would leave only the tab names. \"We searched far and wide\" is a figure of speech; I would rather it said \"No results\".",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s26": {
+      "where": "Add Friends",
+      "expectation": "I am on the Add Friends page.",
+      "confidence": "sure",
+      "cue": "The title \"Add Friends\" at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Literal title, top centre.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s27": {
+      "where": "Add Friends, after Copy Link",
+      "expectation": "I think I am still on Add Friends and I just copied a link.",
+      "confidence": "guessing",
+      "cue": "The same row of buttons as the Add Friends page, and the notice \"Link Copied!\". The title itself is not visible.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The \"Link Copied!\" notice is drawn exactly on top of the page title, so the title is gone. I only know where I am because I recognise the buttons from the previous screen. Also the phone clipboard panel appeared at the bottom without me asking.",
+        "solution": "Show the \"Link Copied!\" notice somewhere that does not cover the page title, for example lower on the screen."
+      },
+      "test_cases": [
+        {
+          "id": "amy-T_COPYLINK",
+          "action": "Tap the speech-bubble square at the very top of the left column to reach the page titled 'Messages'. Tap 'Add Friends', then tap 'Copy Link'. Watch the top of the screen for a few seconds. Leave with the back arrow at the top-left.",
+          "real_if": "the page name stays covered long enough that you would lose track of where you are",
+          "not_real_if": "the page name comes back within a second or two and stays",
+          "observed_result": "I tapped the speech-bubble square and got the page titled \"Messages\", then tapped \"Add Friends\" and got the page titled \"Add Friends\". I tapped \"Copy Link\", looked at the screen three times over a few seconds, then tapped it again and looked twice more. Every time, \"Add Friends\" was at the top centre, clear and uncovered. I never saw the \"Link Copied!\" notice at all, so either it came and went between my looks or the tap gave no visible feedback. I cannot tell which. The back arrow then took me to Messages as expected.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "On the phone the \"Add Friends\" title was visible every time I looked, including straight after tapping Copy Link. Whatever covered it in the picture did not stay long enough to lose me. Separately, I got no visible confirmation that the link was copied, but that is not about where I am.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "Channel list of Accessibility Testin's server",
+      "expectation": "Channel list for Accessibility Testin's server, first server selected, general highlighted.",
+      "confidence": "sure",
+      "cue": "Title \"Accessibility Testin's server\", blue first \"ATs\" square, highlighted \"# general\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title in the usual place, highlight on the channel.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s29": {
+      "where": "#general channel chat",
+      "expectation": "The general channel of Accessibility Testin's server.",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top, \"Message #general\", the welcome line.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same as every other time I saw this screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "Channel list of one of the four Accessibility Testin's servers",
+      "expectation": "I am in a server's channel list. The second \"ATs\" square is highlighted now, not the first, but the title says \"Accessibility Testin's server\" exactly as before. I cannot tell which of the four servers this is.",
+      "confidence": "guessing",
+      "cue": "The blue highlight moved to the second \"ATs\" square; the title and channel list are identical to the first server.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Four squares all say \"ATs\" and the title is identical, so the only thing that tells me which server I am in is the position of the blue square on the left. The title does not distinguish them.",
+        "solution": "Give each server a distinct name, or show something in the title that differs between them. At minimum, show the full server name next to the square on the left."
+      },
+      "test_cases": [
+        {
+          "id": "amy-T_TILES",
+          "action": "On the page with the column of 'ATs' squares down the left, tap each 'ATs' square in turn (not the + at the bottom). After each tap, say which server you are in, using only what the screen shows.",
+          "real_if": "nothing on the screen lets you tell the squares apart or say which one you are in",
+          "not_real_if": "something on the screen tells them apart and says which one you are in",
+          "observed_result": "On the channel list I tapped each of the four \"ATs\" squares in turn. After each tap the blue fill moved to the square I tapped, and a small dark bar appeared at its left edge. The title said \"Accessibility Testin's server\" every time. The channels were # general and General every time. The first server has a \"Setup Progress\" card. The second, third and fourth were pixel-identical to each other. Nothing on the screen told the squares apart except their position in the column. For squares two, three and four I could only say \"the second / third / fourth one down\", not which server it is.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "Worse than I thought. Three of the four servers are completely identical: same \"ATs\" square, same title, same channels. The position of the blue square is the only difference. Each server needs a distinct visible name.",
+      "provisional": false
+    },
+    "s31": {
+      "where": "general channel details, Members tab",
+      "expectation": "I am on the details page for the general text channel, looking at the Members tab.",
+      "confidence": "sure",
+      "cue": "The name \"general\" with \"Text Channel\" under it, the # symbol, and \"Members\" in blue as the selected tab.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name and its type are written, and the selected tab is marked. It does not say \"details\" or \"info\", but the tab row makes it plain this is a page about the channel, not the chat.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "Search inside general, Members tab",
+      "expectation": "I think I am searching inside the general channel, and the Members tab is selected.",
+      "confidence": "guessing",
+      "cue": "A search box with a magnifying glass and a grey chip that says \"in: general\", and the tab \"Members\" in blue.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The only place name is \"in: general\", which is search syntax inside a text field, not a title. The word \"Search\" is not written anywhere. The results below are identical to the channel details page, so I had to compare carefully to see that this is a different screen.",
+        "solution": "Put a literal title such as \"Search in #general\" above the search box, outside the field, so it stays when I type."
+      },
+      "test_cases": [
+        {
+          "id": "amy-T_SEARCHCH",
+          "action": "Open the 'general' room (tap an 'ATs' square, then '# general'). Tap the magnifying glass at the top-right. Type the word hello and nothing else. Look away for a few seconds, look back, and say where you are. Leave with the back arrow.",
+          "real_if": "nothing on the screen tells you that you are searching, and in which room",
+          "not_real_if": "you can say from the screen that you are searching, and where",
+          "observed_result": "In #general I tapped the magnifying glass. The screen changed to a search field holding a grey chip \"in: general\", with the tabs Members, Media, Pins, Threads, Links and Files under it. I typed hello. The tabs disappeared and the field then read \"in: general hello\", with the message \"We searched far and wide. Unfortunately, no results were found.\" in the middle. After looking away and back I could say it: I am searching for hello inside the general channel. The magnifying glass and the \"in: general\" chip stayed in the field the whole time, so the room did not get lost. The word \"Search\" still appears nowhere, and \"We searched far and wide\" is a figure of speech where \"No results\" would do. The back arrow returned me to #general.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "Once I typed, the \"in: general\" chip and the magnifying glass stayed and the results area changed, so I could say I was searching in general. It is still carried only by text inside the field; a literal title like \"Search in #general\" would remove the guesswork.",
+      "provisional": false
+    },
+    "s33": {
+      "where": "Finish setting up your server panel, over #general",
+      "expectation": "I am in the general channel and a panel opened from the bottom listing server setup steps.",
+      "confidence": "sure",
+      "cue": "Panel title \"Finish setting up your server!\" and \"You have completed 0 of 4 steps\"; \"# general\" dimmed at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel has a literal title and a step count, and the page behind is still named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "#general chat with the attachment panel open",
+      "expectation": "The general channel, with the plus menu open at the bottom showing Photos, Poll, Thread, Apps, Files.",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top, \"Message #general\" in the input.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel title is still at the top. The panel does not have its own title, but its buttons are labelled.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "New Thread in #general",
+      "expectation": "I am creating a new thread inside the general channel.",
+      "confidence": "sure",
+      "cue": "Title \"New Thread\" with \"general\" under it, the \"Thread Name\" field.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Title says what I am doing and the line under it says in which channel.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "Gift a new Nitro membership",
+      "expectation": "I am on a page for buying Nitro as a gift for someone.",
+      "confidence": "sure",
+      "cue": "The big title \"Gift a new Nitro membership\" and the \"Gift Nitro\" button.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The title is literal. \"Nitro\" is a product name I would have to look up, and \"Warning: gift may cause uncontrollable happiness!\" is a joke I do not want in a warning, but I know where I am. There is a second card cut off at the right edge and two dots below, which means there is more sideways that I cannot see.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s37": {
+      "where": "Gifting Badge panel over Gift Nitro page",
+      "expectation": "Still on the Gift Nitro page; a bottom panel called Gifting Badge is open explaining the badge levels.",
+      "confidence": "sure",
+      "cue": "Panel title \"Gifting Badge\", and the dimmed \"Gift a new Nitro membership\" title behind.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both layers are named.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s38": {
+      "where": "Error dialog over Gift Nitro page",
+      "expectation": "I am on the Gift Nitro page and an error box appeared.",
+      "confidence": "sure",
+      "cue": "The dialog \"Oops, something went wrong...\" and the dimmed \"Gift a new Nitro membership\" title behind it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The page title behind the dialog is still readable. The dialog itself names an error, not a place, and \"Give it another try?\" does not say what failed, but that is not about where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s39": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "The general channel, with the emoji picker open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top; \"Emoji\" tab shaded as selected.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Channel title at the top, selected tab visibly shaded.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s40": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "The general channel, picker open on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top; \"GIFs\" tab shaded as selected.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Same layout as the Emoji tab, highlight moved to GIFs. Consistent. \"Search Klipy\" is a name I do not know, but it is not about where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The message field is still empty and says \"Message #general\", which confirms the channel a third time.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. Most of the sticker row is empty grey circles, as if they had not loaded yet. That is odd but it does not change where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general channel, in the GIFs tab of the picker, inside a sub-list called Trending.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar dimmed behind the panel, the GIFs tab shaded, and the word \"Trending\" with a back arrow under the tabs.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The panel has grown to cover almost the whole screen, but the channel name is still visible at the top and \"Trending\" tells me the sub-list. The GIFs are moving pictures that I did not start, which is distracting, but they do not hide where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. Same as the first Emoji picker screen; nothing moved.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s45": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general channel, GIFs tab, and I have searched for \"hello\".",
+      "confidence": "sure",
+      "cue": "\"# general\" at the top, GIFs tab shaded, and my search word \"hello\" in the search box.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name and the selected tab tell me where I am, and the search word tells me what list this is. The only place the search is named is inside the field, but I typed it, so I know. The results are all moving GIFs, which is distracting, but that is not about location.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s47": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s48": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s50": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s53": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s54": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s55": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s56": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s58": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s60": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s61": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s63": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s64": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s67": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s70": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s71": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s72": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s73": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The message has wrapped to two lines and the middle content moved up a little, but the channel name at the top did not move.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s74": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps. The message has wrapped to two lines and the middle content moved up a little, but the channel name at the top did not move.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s75": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers. The message has wrapped to two lines and the middle content moved up a little, but the channel name at the top did not move.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s76": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s77": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s81": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s82": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. This looks identical to the previous picture; I checked the tab and the title again and nothing changed.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s85": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s86": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s87": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s88": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s89": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s90": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s91": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The orange tag here just says \"navigation\" without naming the selected tab, but I can see Stickers is shaded, so I read it from the screen.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s92": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s93": {
+      "where": "#general chat with the GIFs picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the GIFs tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the GIFs tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The GIF tiles (\"Trending GIFs\", \"hello\", \"lol\", \"love\") are labelled with words, which helps.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s94": {
+      "where": "#general chat with the Stickers picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Stickers tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Stickers tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. \"Mallow The Rascal\" is the name of a sticker set, not a place; I read it as a label for the stickers.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s95": {
+      "where": "#general chat with the Emoji picker open",
+      "expectation": "I am in the general text channel of Accessibility Testin's server, with the picker panel open at the bottom on the Emoji tab.",
+      "confidence": "sure",
+      "cue": "\"# general\" in the top bar, the big line \"Welcome to Accessibility Testin's server\" in the middle, and the Emoji tab shaded grey in the Emoji / GIFs / Stickers row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The channel name is at the top in the same place as every other visit, the server name is written in the middle, and the shaded tab tells me which part of the picker I am in. The row of 100 symbols in the message field keeps getting longer between pictures, but that is my draft, not the place.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    }
+  },
+  "transitions": {},
+  "summary": {
+    "screens_reviewed": 95,
+    "transitions_reviewed": 0,
+    "confidence": {
+      "sure": 90,
+      "guessing": 5,
+      "no_idea": 0
+    },
+    "cue_nothing": 0,
+    "no_problem": 90,
+    "navigate_with_difficulty": 5,
+    "cannot_handle": 0,
+    "tests_run": 4,
+    "opinions": {
+      "unchanged": 1,
+      "hardened": 2,
+      "softened": 1,
+      "reversed": 1
+    },
+    "out_of_scope": 0,
+    "not_executed": 0
+  }
+}

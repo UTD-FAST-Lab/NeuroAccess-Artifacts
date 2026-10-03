@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s44",
+  "state_str": "cd1f2d08e58599144b939acf0721e8d1",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_205504.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s44_header_nav.png",
+  "name": "the side menu (opened from the \"Schedule a task\" screen)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "ChatGPT",
+      "verdict_on_region": "the app's own wordmark; names the app, not the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "Images | Library | Projects | Scheduled | Plugins",
+      "verdict_on_region": "section list with no visible current-item indication (contains_selected_view false)"
+    }
+  ],
+  "identifier_found": "none that names the section; the header is the app wordmark \"ChatGPT\" and no section entry is highlighted",
+  "identifier_class": "none",
+  "accessibility_text": "the wordmark's content_description is \"New chat\"; the nav list declares no selected item",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the only header text is the app name; the section list says where you could go, not where you are",
+  "test_cases": [
+    {
+      "id": "s44-tc1",
+      "type": "active_state",
+      "precondition": "app open",
+      "action": "open the side menu from a chat, from Images (via its back arrow), from Library and from \"Schedule a task\", and watch whether any section entry is highlighted",
+      "expected_result": "either the entry for the section just left is highlighted, or none ever is",
+      "confirms_if": "no section entry is ever highlighted",
+      "overturns_if": "the current section is highlighted",
+      "observed_result": "no section entry (Images, Library, Projects, Scheduled, Plugins) was ever highlighted, whichever section the menu was opened from; the only highlight the menu ever showed was a grey fill on the current chat's row in the history list when the menu was opened from that chat",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "header region is the app name only; the section list never shows the current section. Carried from s9 (same structure c65c85d5) and checked live from \"Schedule a task\": \"Scheduled\" was not highlighted.",
+  "recommendation": "highlight the current section in the menu (it already highlights the current chat row) and replace the wordmark with a menu heading such as \"Menu\"",
+  "provisional": false
+}

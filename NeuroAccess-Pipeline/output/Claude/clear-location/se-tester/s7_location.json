@@ -1,0 +1,39 @@
+{
+  "app": "Claude",
+  "screen": "s7",
+  "state_str": "51afe46480804cdb02522ae220ec0eb6",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133641.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s7_header_nav.png",
+  "name": "the voice-input introduction page",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Send messages to Claude using your voice.",
+      "verdict_on_region": "unconventional (mid-screen): a sentence describing the voice-input feature; the whole page is about that feature \u2014 accepted as naming the place, strictly as self-evident body copy"
+    }
+  ],
+  "identifier_found": "\"Send messages to Claude using your voice.\" with feature bullets and a Speech Input Language field",
+  "identifier_class": "self_evident_body",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "no title bar, but the entire page is unmistakably the voice-input set-up, named in its own headline",
+  "test_cases": [
+    {
+      "id": "s7-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "home screen",
+      "action": "tap the microphone glyph in the composer and read the headline",
+      "expected_result": "the headline either names the feature page or describes content",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the headline does not locate the user",
+      "observed_result": "\"Send messages to Claude using your voice.\" under a microphone illustration, with a close X top-left; the page is about nothing else",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: the page matches the capture; the headline and the three bullets (\"Choose a language to speak in\", \u2026) make the page self-evidently the voice-input set-up; a close X is visible top-left. This relies on body copy, not a title, and is flagged as such.",
+  "recommendation": null,
+  "provisional": false
+}

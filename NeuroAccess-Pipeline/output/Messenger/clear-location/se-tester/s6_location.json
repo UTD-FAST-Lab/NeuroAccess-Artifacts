@@ -1,0 +1,31 @@
+{
+  "app": "Messenger",
+  "screen": "s6",
+  "state_str": "e6f416b4d81967024dd93f46197a2926",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151411.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s6_header_nav.png",
+  "name": "Meta One plan picker",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Meta One",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    },
+    {
+      "kind": "header",
+      "text": "Choose your plan",
+      "verdict_on_region": "sub-heading naming the step under the \"Meta One\" title — supports it"
+    }
+  ],
+  "identifier_found": "\"Meta One\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing suspicious; verdict reached from the image and regions",
+  "recommendation": null,
+  "provisional": false
+}

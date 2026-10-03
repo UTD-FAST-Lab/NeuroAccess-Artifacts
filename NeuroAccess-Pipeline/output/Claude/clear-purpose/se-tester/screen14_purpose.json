@@ -1,0 +1,106 @@
+{
+  "app": "Claude",
+  "screen": "screen14",
+  "image": "inputs/Claude/actionable-elements-highlighted/screen14_actionable_elements.png",
+  "elements": {
+    "screen14-a1": {
+      "kind": "icon",
+      "glyph": "three horizontal lines of decreasing length",
+      "description": "three stacked lines control in the top-left corner of the toolbar",
+      "location": "top-left",
+      "bounds": [
+        1,
+        84,
+        127,
+        210
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "content_desc \"Open menu\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": "three stacked horizontal lines (hamburger) is an established convention for opening the app's navigation menu — my reading, confidence high",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled, but the hamburger glyph is a widely-known convention; common-icon exemption applies pending the behavioural test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "same control as screen1-a1 (identical appearance, words and position in the same repeated state); tested once there and the verdict carried: tapping the hamburger opened the side navigation panel, exactly what the convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen14-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black 'Upgrade' button under 'Upgrade for Claude Code'",
+      "location": "bottom",
+      "bounds": [
+        42,
+        2022,
+        1038,
+        2148
+      ],
+      "visible_text": "\"Upgrade\" under the heading \"Upgrade for Claude Code\"",
+      "accessibility_text_consulted": "talkback_label \"Upgrade\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "heading and button together say it upgrades to get Claude Code",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "heading supplies the object of 'Upgrade'; not pressed (purchase flow); no test required",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen14-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "outlined 'Return to chat' button",
+      "location": "bottom",
+      "bounds": [
+        42,
+        2169,
+        1038,
+        2295
+      ],
+      "visible_text": "\"Return to chat\"",
+      "accessibility_text_consulted": "talkback_label \"Return to chat\" — read only to know what to tap for and watch for; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "explicit: go back to the chat",
+      "test_cases": [
+        {
+          "id": "screen14-a3-tc1",
+          "type": "expected",
+          "precondition": "reached this page from the side panel while on an empty home chat",
+          "action": "tap 'Return to chat'",
+          "expected_result": "the user is returned to the chat they were in",
+          "confirms_if": "they land somewhere other than their chat",
+          "overturns_if": "they are returned to their chat",
+          "observed_result": "the app opened the 'Chats' list screen, not the chat the user had been on",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "'Return to chat' promises going back to a chat, but it lands on the Chats list — the words do not match where it goes",
+      "recommendation": "either return to the previous conversation, or relabel it to match where it goes, e.g. 'Go to your chats'",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 2,
+    "clear_via_common_icon_exemption": 1,
+    "detection_false_positives": 0,
+    "test_cases_executed": 1,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 2,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Claude",
+  "screen": "s6",
+  "state_str": "363fa73ed0349f796f4d2a1964906f84",
+  "image": "inputs/Claude/droidbot_output/states/screen_2026-09-27_133635.png",
+  "marked_image": "inputs/Claude/location-graph/marked/s6_header_nav.png",
+  "name": "the Select model sheet over the home screen",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Back at it, Ally Cooper",
+      "verdict_on_region": "greeting on the home screen dimmed behind the sheet's scrim; names the user, not a place \u2014 does not count"
+    },
+    {
+      "kind": "header",
+      "text": "Select model",
+      "verdict_on_region": "unconventional (sheet title): names the open panel \u2014 accepted"
+    }
+  ],
+  "identifier_found": "\"Select model\" sheet title with a close X",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the sheet names itself",
+  "test_cases": [
+    {
+      "id": "s6-tc1",
+      "type": "unconventional_region_read",
+      "precondition": "home screen",
+      "action": "tap the model chip and read the sheet title",
+      "expected_result": "the title names the panel",
+      "confirms_if": "not applicable \u2014 confirming a Sufficient read",
+      "overturns_if": "the title is absent or names content",
+      "observed_result": "\"Select model\" centred in the sheet header beside a close X",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "live: \"Select model\" heads the sheet (live model list now shows \"Sonnet 5.5\"; content differs from the capture, the title does not)",
+  "recommendation": null,
+  "provisional": false
+}

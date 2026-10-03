@@ -1,0 +1,583 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen7",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen7_actionable_elements.png",
+  "elements": {
+    "screen7-a1": {
+      "kind": "icon",
+      "glyph": "none (plain grey dimmed strip)",
+      "description": "the dimmed grey strip to the right of the open drawer (the drawer's scrim); nothing is drawn on it but the dimmed screen underneath",
+      "location": "the dimmed grey strip to the right of the open drawer (the drawer's scrim)",
+      "bounds": [
+        864,
+        0,
+        1080,
+        2400
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Close\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "dimmed area outside a drawer or sheet = tap to close it - my reading",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a dimmed strip beside an open drawer; 'tap the dimmed area to close' is an established mobile convention, though nothing is drawn on it - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen7-a1-tc1",
+          "type": "verification",
+          "precondition": "drawer open",
+          "action": "tap the dimmed strip to the right of the drawer",
+          "expected_result": "the drawer closes",
+          "confirms_if": "it does something else or nothing",
+          "overturns_if": "the drawer closes",
+          "observed_result": "the drawer slid away and the chat screen returned",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping the dimmed strip closed the drawer - the dismiss-by-tapping-outside convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer top-left: the word 'ChatGPT' in bold; ImageView whose content_desc says something else",
+      "location": "navigation drawer top-left: the word 'ChatGPT' in bold",
+      "bounds": [
+        53,
+        90,
+        358,
+        216
+      ],
+      "visible_text": "the word \"ChatGPT\" (drawn as the drawer title)",
+      "accessibility_text_consulted": "talkback_label \"New chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "bold word 'ChatGPT' at the top of the drawer reads as a title, not as a control, and nothing says what pressing it does",
+      "test_cases": [
+        {
+          "id": "screen7-a2-tc1",
+          "type": "expected",
+          "precondition": "drawer open while in an existing chat",
+          "action": "tap the word 'ChatGPT'",
+          "expected_result": "if it is a title, nothing",
+          "confirms_if": "it performs an action the word does not name",
+          "overturns_if": "nothing happens or the outcome is what the word says",
+          "observed_result": "the drawer closed and a fresh new-chat screen opened",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping the title word started a new chat - an action nothing about the word predicts",
+      "recommendation": "replace the title with a labelled 'New chat' control, or add a visible 'New chat' label",
+      "provisional": false
+    },
+    "screen7-a3": {
+      "kind": "icon",
+      "glyph": "magnifying glass",
+      "description": "navigation drawer header, right",
+      "location": "navigation drawer header, right",
+      "bounds": [
+        680,
+        90,
+        806,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Search\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "magnifying glass = search - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled magnifying glass; search convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen7-a3-tc1",
+          "type": "verification",
+          "precondition": "drawer open",
+          "action": "tap the magnifying glass",
+          "expected_result": "a search screen opens",
+          "confirms_if": "something else opens",
+          "overturns_if": "search opens",
+          "observed_result": "a search screen with 'Recent files' and a Search box opened",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a search screen with a Search box - the convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer entry: outline glyph then word",
+      "location": "navigation drawer entry: outline glyph then word",
+      "bounds": [
+        0,
+        242,
+        864,
+        368
+      ],
+      "visible_text": "\"Images\"",
+      "accessibility_text_consulted": "talkback_label \"Images\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "drawer row 'Images' with a pictures glyph",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the word names the section; not a finding",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer entry: outline glyph then word",
+      "location": "navigation drawer entry: outline glyph then word",
+      "bounds": [
+        0,
+        368,
+        864,
+        494
+      ],
+      "visible_text": "\"Library\"",
+      "accessibility_text_consulted": "talkback_label \"Library\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "drawer row 'Library' - library of what is not said",
+      "test_cases": [
+        {
+          "id": "screen7-a5-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap 'Library'",
+          "expected_result": "a collection of the user's things opens",
+          "confirms_if": "it opens something the word would not suggest",
+          "overturns_if": "it is the user's saved items",
+          "observed_result": "a 'Library' page opened with Suggested / Favorites / Folders / Images tabs over the user's generated images",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "overturned",
+      "deciding_evidence": "tapping opened 'Library', a gallery of the user's own images and files - the everyday meaning of the word, so the label did its job",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer entry: outline glyph then word",
+      "location": "navigation drawer entry: outline glyph then word",
+      "bounds": [
+        0,
+        494,
+        864,
+        620
+      ],
+      "visible_text": "\"Projects\"",
+      "accessibility_text_consulted": "talkback_label \"Projects\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "drawer row 'Projects' with a folder glyph",
+      "test_cases": [
+        {
+          "id": "screen7-a6-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap 'Projects'",
+          "expected_result": "a list of projects opens",
+          "confirms_if": "something unrelated opens",
+          "overturns_if": "a projects list opens",
+          "observed_result": "a 'Projects' page opened listing one project",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a 'Projects' list (All / Created by you / Shared with you) - as the word says",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer entry: outline glyph then word",
+      "location": "navigation drawer entry: outline glyph then word",
+      "bounds": [
+        0,
+        620,
+        864,
+        746
+      ],
+      "visible_text": "\"Scheduled\"",
+      "accessibility_text_consulted": "talkback_label \"Scheduled\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "drawer row 'Scheduled' - scheduled what is not said",
+      "test_cases": [
+        {
+          "id": "screen7-a7-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap 'Scheduled'",
+          "expected_result": "what is scheduled becomes clear",
+          "confirms_if": "the meaning appears only after opening",
+          "overturns_if": "the word alone predicted the page",
+          "observed_result": "a page 'Schedule a task - ChatGPT can take care of ongoing tasks so you don't have to.' opened",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "only the opened page explains it ('Schedule a task - ChatGPT can take care of ongoing tasks'); the word alone does not",
+      "recommendation": "label it 'Scheduled tasks'",
+      "provisional": false
+    },
+    "screen7-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer entry: outline glyph then word",
+      "location": "navigation drawer entry: outline glyph then word",
+      "bounds": [
+        0,
+        746,
+        864,
+        872
+      ],
+      "visible_text": "\"Plugins\"",
+      "accessibility_text_consulted": "talkback_label \"Plugins\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "drawer row 'Plugins' - technical jargon for a first-time user",
+      "test_cases": [
+        {
+          "id": "screen7-a8-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap 'Plugins'",
+          "expected_result": "a first-time user can predict the page",
+          "confirms_if": "the page is something the word does not explain",
+          "overturns_if": "the page matches the word for a lay reader",
+          "observed_result": "a 'Plugins' page opened with Installed, Popular (Gmail, Health, Google Drive, GitHub) and New & Noteworthy lists",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "it opens a directory of connected apps (Gmail, Google Drive, GitHub...), which the word does not convey; and the same word in the + menu does something different",
+      "recommendation": "label it 'Connected apps' with a short line such as 'Link Gmail, Drive and more'",
+      "provisional": false
+    },
+    "screen7-a9": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1001,
+        864,
+        1127
+      ],
+      "visible_text": "\"Create image\"",
+      "accessibility_text_consulted": "talkback_label \"Create image\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a10": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1127,
+        864,
+        1253
+      ],
+      "visible_text": "\"Polish writing\"",
+      "accessibility_text_consulted": "talkback_label \"Polish writing\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a11": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1253,
+        864,
+        1379
+      ],
+      "visible_text": "\"Proofread writing\"",
+      "accessibility_text_consulted": "talkback_label \"Proofread writing\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a12": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1379,
+        864,
+        1505
+      ],
+      "visible_text": "\"Shorten writing rewrite\"",
+      "accessibility_text_consulted": "talkback_label \"Shorten writing rewrite\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a13": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1505,
+        864,
+        1631
+      ],
+      "visible_text": "\"Create image\"",
+      "accessibility_text_consulted": "talkback_label \"Create image\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [
+        {
+          "id": "screen7-a13-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap a row reading 'Create image'",
+          "expected_result": "if a command: image creation starts",
+          "confirms_if": "it opens a past conversation instead",
+          "overturns_if": "it starts image creation as the words say",
+          "observed_result": "an existing conversation opened showing a previously generated apple image",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a14": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1631,
+        864,
+        1757
+      ],
+      "visible_text": "\"Create image\"",
+      "accessibility_text_consulted": "talkback_label \"Create image\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a15": {
+      "kind": "button",
+      "glyph": null,
+      "description": "navigation drawer list row (text only)",
+      "location": "navigation drawer list row (text only)",
+      "bounds": [
+        0,
+        1757,
+        864,
+        1883
+      ],
+      "visible_text": "\"Create image\"",
+      "accessibility_text_consulted": "talkback_label \"Create image\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "plain rows such as 'Create image', 'Polish writing', repeated 'Create image' - no heading says these are past chats, and they read as commands; four identical rows cannot be told apart",
+      "test_cases": [],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping a 'Create image' row opened an old conversation (an existing apple image), not image creation - the wording reads as an action and misleads; tested once on screen7-a13 and carried to this identical control",
+      "recommendation": "add a 'Recent chats' heading above the list and show a date or first line so identical titles can be told apart",
+      "provisional": false
+    },
+    "screen7-a16": {
+      "kind": "button",
+      "glyph": null,
+      "description": "grey text at the bottom of the drawer list",
+      "location": "grey text at the bottom of the drawer list",
+      "bounds": [
+        0,
+        1883,
+        864,
+        2009
+      ],
+      "visible_text": "\"See all…\"",
+      "accessibility_text_consulted": "talkback_label \"See all…\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "grey 'See all...' under an unlabeled list - see all of what is not said",
+      "test_cases": [
+        {
+          "id": "screen7-a16-tc1",
+          "type": "expected",
+          "precondition": "drawer open",
+          "action": "tap 'See all...'",
+          "expected_result": "it shows everything of a named kind",
+          "confirms_if": "it expands the same ambiguous list",
+          "overturns_if": "it names what is shown",
+          "observed_result": "the list extended with more title rows (Create apple image, Create Abstract Artwork...) with no heading",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping only lengthened the same unheaded list of titles; nothing named what the list is",
+      "recommendation": "say what it shows, e.g. 'See all chats'",
+      "provisional": false
+    },
+    "screen7-a17": {
+      "kind": "button",
+      "glyph": null,
+      "description": "blue pill at the drawer's bottom-left: square-with-pencil glyph then the word 'Chat'",
+      "location": "blue pill at the drawer's bottom-left: square-with-pencil glyph then the word 'Chat'",
+      "bounds": [
+        84,
+        2179,
+        373,
+        2305
+      ],
+      "visible_text": "\"Chat\"",
+      "accessibility_text_consulted": "talkback_label \"Chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "blue pill 'Chat' with a compose glyph",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the word and compose glyph say start chatting; not a finding",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen7-a18": {
+      "kind": "icon",
+      "glyph": "green filled circle containing the initials 'AT'",
+      "description": "drawer bottom-right",
+      "location": "drawer bottom-right",
+      "bounds": [
+        675,
+        2179,
+        801,
+        2305
+      ],
+      "visible_text": "initials \"AT\" only",
+      "accessibility_text_consulted": "talkback_label \"Account settings\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "circle with the user's initials = my account / profile - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "circle with the user's initials; the profile/account convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen7-a18-tc1",
+          "type": "verification",
+          "precondition": "drawer open",
+          "action": "tap the AT circle",
+          "expected_result": "account or profile opens",
+          "confirms_if": "something else opens",
+          "overturns_if": "account opens",
+          "observed_result": "an account page opened headed 'Accessibility Testing' with My ChatGPT and Account sections; nothing was changed",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened the account page (Personalization, Memory, Account, Email) - the initials-avatar convention held",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 18,
+    "issues": 11,
+    "missing_purpose": 0,
+    "unclear_purpose": 11,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 10,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 17,
+    "instincts_overturned": 1,
+    "provisional_verdicts": 0
+  }
+}

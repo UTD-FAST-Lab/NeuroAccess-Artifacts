@@ -1,0 +1,20 @@
+{
+  "app": "Duolingo",
+  "screen": "s88",
+  "state_str": "9281ea7499f45d88673d810377d02e92",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_191134.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s88_header_nav.png",
+  "name": "a full-screen video advert",
+  "regions_read": [],
+  "identifier_found": "none: an advertiser's video with a countdown ring or an X and an advertiser strip",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "nothing of the app is visible; nothing names a place",
+  "test_cases": [],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing names a place in any state; for the first ~25 s there is no way back at all; template carry from s39's test (same template; the header content does not change the answer)",
+  "recommendation": "show a thin app bar ('Free chest — ad') with the remaining time over the video",
+  "provisional": false
+}

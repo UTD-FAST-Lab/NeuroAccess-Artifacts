@@ -1,0 +1,44 @@
+{
+  "app": "ChatGPT",
+  "screen": "s19",
+  "state_str": "53bc3151fa0117dcd4ef6ee90828c2bc",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204736.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s19_header_nav.png",
+  "name": "the Library in selection mode (\"Select items\", \"Images\" tab)",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Select items",
+      "verdict_on_region": "names a selection mode/count, not a place; the \"Library\" title it replaced is gone"
+    },
+    {
+      "kind": "navigation",
+      "text": "All | Images | Files (Images selected)",
+      "verdict_on_region": "visible pill on a filter tab; names a content type, not the section"
+    }
+  ],
+  "identifier_found": "none that names the section; \"Select items\" replaces the \"Library\" title and the highlighted tab names a filter (\"Images\")",
+  "identifier_class": "none",
+  "accessibility_text": "n/a",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the header names what the user is doing, not where; the filter tab is not the section name — nothing says Library",
+  "test_cases": [
+    {
+      "id": "s19-tc1",
+      "type": "verification",
+      "precondition": "Library open",
+      "action": "open ⋮ > \"Select\", then scroll to the top and down, looking for the word \"Library\" or any section name",
+      "expected_result": "the section name appears in some state, or never does",
+      "confirms_if": "no section name in any state",
+      "overturns_if": "\"Library\" appears somewhere",
+      "observed_result": "in selection mode the top bar reads \"Select items\" with an X; at the top the tab row is visible, scrolled down only \"Select items\" remains; \"Library\" appears nowhere. (Live tab labels differ from the capture: \"Suggested / Favorites / Folders / Images\")",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "entering selection mode replaces the section name with \"Select items\"; a filter tab (\"Images\") does not name the part of the app. Verified live.",
+  "recommendation": "keep the section in the title while selecting, e.g. \"Library — select items\"",
+  "provisional": false
+}

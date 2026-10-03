@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s22",
+  "state_str": "1c8d259c57ae284a71149db651dfcb69",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185713.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s22_header_nav.png",
+  "name": "Quests",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Quests",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar; the current tab is drawn inside a light-blue rounded box — pixel-read active state (never declared selected:true)"
+    }
+  ],
+  "identifier_found": "'Quests' in the purple banner; chest tab highlighted",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title plus a visibly highlighted tab",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "confirmed live under the Learn active-state test: the highlight moved to the chest on Quests",
+  "recommendation": null,
+  "provisional": false
+}

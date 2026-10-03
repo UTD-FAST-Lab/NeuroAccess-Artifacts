@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s3",
+  "state_str": "dfb0351ab91b50e7bc1bc676088d6a11",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_203910.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s3_header_nav.png",
+  "name": "the image-creation gallery opened from the home screen",
+  "regions_read": [
+    {
+      "kind": "navigation",
+      "text": "Trending | Templates (Trending selected)",
+      "verdict_on_region": "a tab pair with a visible grey pill on \"Trending\"; names the sub-section of the image gallery the user is in"
+    }
+  ],
+  "identifier_found": "\"Trending\" tab drawn with a filled grey pill beside \"Templates\", above a grid of image templates, with a \"Create image\" composer",
+  "identifier_class": "navigation bar with visible active state",
+  "accessibility_text": "contains_selected_view true, selected_item_text \"Trending\"",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the active tab is visibly highlighted and, with the template grid and \"Create image\" composer, tells the user they are in the trending image templates",
+  "test_cases": [
+    {
+      "id": "s3-tc1",
+      "type": "active_state",
+      "precondition": "image gallery open with \"Trending\" selected",
+      "action": "tap \"Templates\" and watch the highlight",
+      "expected_result": "the grey pill either moves to \"Templates\" or stays put",
+      "confirms_if": "the pill does not move",
+      "overturns_if": "the pill moves with the selection",
+      "observed_result": "the grey pill moved to \"Templates\" and the grid changed to Poster / Interior design / Logo / Illustration; the highlight tracks the section",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the highlight moves with the selected tab on the live app, so it is a real active state. Note: on the live gallery the tab row scrolls away with the grid and returns only at the top — no scroll edge for this screen is in the capture, so it is recorded here for location-graph-detector, not verdicted.",
+  "recommendation": null,
+  "provisional": false
+}

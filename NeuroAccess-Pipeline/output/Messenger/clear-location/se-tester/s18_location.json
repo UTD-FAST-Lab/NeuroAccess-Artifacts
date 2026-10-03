@@ -1,0 +1,36 @@
+{
+  "app": "Messenger",
+  "screen": "s18",
+  "state_str": "e57d93d81ab8ac747cd26f1b4132b66f",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151650.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s18_header_nav.png",
+  "name": "Message requests",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Message requests",
+      "verdict_on_region": "screen title in the top bar — names the place"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: You may know, Spam",
+      "verdict_on_region": "segmented sub-tabs under the title, \"You may know\" visibly selected — locates within Message requests"
+    },
+    {
+      "kind": "navigation",
+      "text": "nav: Chats, People tab, Notifications",
+      "verdict_on_region": "bottom tab bar with \"Chats\" visibly highlighted although the page is not that tab — the highlight shows the tab you came from, not this page"
+    }
+  ],
+  "identifier_found": "\"Message requests\"",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; template carry from s31 (same layout; content does not change the answer): \"Archive\" and \"Message requests\" titles shown; the bottom bar still highlights \"People\" (the tab the drawer was opened from) — the highlight shows origin, the title locates. Live divergence: Archive now holds three chats (capture: empty); the bottom bar highlights the tab the drawer was opened from, not this page — the title is what locates",
+  "recommendation": null,
+  "provisional": false
+}

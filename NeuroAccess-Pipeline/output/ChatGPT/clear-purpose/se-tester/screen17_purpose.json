@@ -1,0 +1,180 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen17",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen17_actionable_elements.png",
+  "elements": {
+    "screen17-a1": {
+      "kind": "icon",
+      "glyph": "three small circles joined by two lines",
+      "description": "top-right of the photo in the bottom sheet, on a dark translucent circle",
+      "location": "top-right of the photo in the bottom sheet, on a dark translucent circle",
+      "bounds": [
+        780,
+        831,
+        906,
+        957
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Share\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "three circles joined by lines = share - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled three joined circles; share convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen17-a1-tc1",
+          "type": "verification",
+          "precondition": "template sheet open",
+          "action": "tap the share glyph",
+          "expected_result": "a share sheet opens",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "not run: sharing is not allowed under the safety rules",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: the glyph is the established share symbol, but tapping it was not allowed (sharing is outside the safety rules), so the exemption is untested",
+      "recommendation": null,
+      "provisional": true
+    },
+    "screen17-a2": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "top-right corner of the bottom sheet's photo, white on a dark translucent circle",
+      "location": "top-right corner of the bottom sheet's photo, white on a dark translucent circle",
+      "bounds": [
+        917,
+        831,
+        1043,
+        957
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Close\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "X = close - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled X on the sheet photo; close convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen17-a2-tc1",
+          "type": "verification",
+          "precondition": "template sheet open",
+          "action": "tap the X on the photo",
+          "expected_result": "the sheet closes",
+          "confirms_if": "something else happens",
+          "overturns_if": "it closes",
+          "observed_result": "the sheet slid away, back to the tile grid",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping closed the template sheet - the close convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen17-a3": {
+      "kind": "button",
+      "glyph": null,
+      "description": "block of centred prompt text under the heading, ending in '…'; clickable",
+      "location": "block of centred prompt text under the heading, ending in '…'",
+      "bounds": [
+        42,
+        1757,
+        1038,
+        1906
+      ],
+      "visible_text": "\"Using my uploaded photo, show me what I would have looked like around 1985. Preserve my identity, facial features, skin tone, age, and recog\"",
+      "accessibility_text_consulted": "talkback_label \"Using my uploaded photo, show me what I would have looked like around 1985. Pres\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "block of centred prompt text ending in '...'; it looks like body text, and only the ellipsis hints there is more",
+      "test_cases": [
+        {
+          "id": "screen17-a3-tc1",
+          "type": "expected",
+          "precondition": "template sheet with truncated prompt text",
+          "action": "tap the text block",
+          "expected_result": "if body text: nothing",
+          "confirms_if": "it performs an action nothing names",
+          "overturns_if": "nothing happens",
+          "observed_result": "the sheet grew to show the whole prompt (several paragraphs and two numbered questions)",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping expanded the block to the full multi-paragraph prompt - an action with no visible cue except a trailing '...'",
+      "recommendation": "add a visible 'Show full prompt' link after the truncated text",
+      "provisional": false
+    },
+    "screen17-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "white outlined full-width button",
+      "location": "white outlined full-width button",
+      "bounds": [
+        42,
+        1969,
+        1038,
+        2111
+      ],
+      "visible_text": "\"Take photo\"",
+      "accessibility_text_consulted": "talkback_label \"Take photo\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "button 'Take photo'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words state the action; not exercised (camera access is not allowed)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen17-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "black full-width button",
+      "location": "black full-width button",
+      "bounds": [
+        42,
+        2132,
+        1038,
+        2274
+      ],
+      "visible_text": "\"Choose photo\"",
+      "accessibility_text_consulted": "talkback_label \"Choose photo\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "button 'Choose photo'",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the words state the action; not exercised (choosing a photo would attach it)",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 5,
+    "issues": 1,
+    "missing_purpose": 0,
+    "unclear_purpose": 1,
+    "clear_purpose": 4,
+    "clear_via_common_icon_exemption": 2,
+    "detection_false_positives": 0,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 5,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 1
+  }
+}

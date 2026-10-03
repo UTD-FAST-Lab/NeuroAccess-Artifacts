@@ -1,0 +1,44 @@
+{
+  "app": "Messenger",
+  "screen": "s9",
+  "state_str": "0220a28da14e86532bf73df8f418e17d",
+  "image": "inputs/Messenger/droidbot_output/states/screen_2026-09-25_151431.png",
+  "marked_image": "inputs/Messenger/location-graph/marked/s9_header_nav.png",
+  "name": "subscription feature-tour sheet",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Facebook Plus",
+      "verdict_on_region": "kicker naming the plan whose feature tour this sheet is; it stays on every card — accepted as naming the place (that plan's feature tour)"
+    },
+    {
+      "kind": "header",
+      "text": "Get story rewatch insights",
+      "verdict_on_region": "title of one feature card in a swipeable carousel — names a piece of content, changes on every swipe; dismissed"
+    }
+  ],
+  "identifier_found": "kicker \"Facebook Plus\" above the feature card, naming the plan whose tour this is",
+  "identifier_class": "body_copy",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a visible title or highlighted section names the place",
+  "test_cases": [
+    {
+      "id": "s9-tc1",
+      "type": "unconventional_region",
+      "precondition": "Meta One offer page",
+      "action": "tap \"Get story rewatch insights\"; swipe to the next card",
+      "expected_result": "kicker persists across cards; card title changes",
+      "confirms_if": "—",
+      "overturns_if": "—",
+      "observed_result": "sheet shows kicker \"Instagram Plus\" over \"Get story rewatch insights\"; next card keeps the kicker and changes the title to \"Search your story viewer list\". Kicker accepted, card titles dismissed as content",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "verdict reached from the image and regions; device check: sheet shows kicker \"Instagram Plus\" over \"Get story rewatch insights\"; next card keeps the kicker and changes the title to \"Search your story viewer list\". Kicker accepted, card titles dismissed as content",
+  "recommendation": null,
+  "provisional": false
+}

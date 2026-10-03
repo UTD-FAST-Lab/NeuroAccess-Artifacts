@@ -1,0 +1,1933 @@
+{
+  "persona": "persona-gopal",
+  "app": "Messenger",
+  "screens": {
+    "s1": {
+      "where": "A white page with a bell picture and the large words \"Turn on notifications from Messenger\", with two buttons below.",
+      "expectation": "Messenger is asking me whether I want it to tell me when messages arrive.",
+      "confidence": "sure",
+      "cue": "The large heading \"Turn on notifications from Messenger\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading says in plain words what the page is asking. If I looked away, it would remind me at once.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s2": {
+      "where": "The opening list of my conversations, with the word \"messenger\" at the top and \"Chats\" lit up in blue at the bottom.",
+      "expectation": "I am in Messenger, looking at the list of my conversations with people.",
+      "confidence": "guessing",
+      "cue": "The word \"messenger\" at the top, and the word \"Chats\" coloured blue in the row at the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only tells me which program I am in, not which page of it. I have to look down to the small blue word \"Chats\" and work out that it is the one picked. If the phone rang, the top of the screen would not remind me what I was doing.",
+        "solution": "Put a plain heading at the top that says \"Chats\" or \"Your conversations\", not only the name of the program."
+      },
+      "test_cases": [
+        {
+          "id": "s2-A",
+          "try": "A",
+          "task": "On the first screen, scroll down two screens, look away and count to ten, name the place; then tap the middle and right items of the bottom row and come back with the left one.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the first screen down two screens. When I looked back I saw only a long column of strangers' names with blue \"Add friend\" buttons, \"messenger\" at the top, and a small blue \"Chats\" at the bottom. Nothing there looked like my conversations, so I had to guess that I was still on the chats list. When I tapped \"People\" and then \"Notifications\", each page had its name in large letters at the top: \"People\" and \"Notifications\". That only showed me how bare the first screen is. Tapping \"Chats\" took me back, still scrolled down among the strangers.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The other two pages name themselves in large letters; the first screen does not, and once I scrolled it did not even look like my conversations.",
+      "provisional": false
+    },
+    "s3": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s3-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s4": {
+      "where": "A white card with \"Meta\" at the top and the large heading \"Subscriptions\", listing \"Facebook Plus\" and \"Meta One\".",
+      "expectation": "I am on a page about subscriptions, things one pays for.",
+      "confidence": "sure",
+      "cue": "The large word \"Subscriptions\" and the line \"Find and manage your subscriptions all in one place.\"",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "\"Subscriptions\" is an ordinary word and it is the largest thing on the page. The two products listed mean nothing to me, but I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s5": {
+      "where": "A bright blue page with a large Facebook \"f\" and, halfway down, \"Try Facebook Plus free for one week\", with a price and a \"Start your free week\" button.",
+      "expectation": "Someone is trying to sell me something called \"Facebook Plus\". I am not sure I am still in Messenger.",
+      "confidence": "guessing",
+      "cue": "The heading \"Try Facebook Plus free for one week\", the price, and the big Facebook letter.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an advertisement, not the name of a place, and it sits halfway down the page. \"Facebook Plus\" is a name I do not know. The big \"f\" makes me think I have left Messenger. If the phone rang, I would come back unsure whether I had agreed to pay.",
+        "solution": "A heading at the very top saying plainly \"Offer: paid extra for Facebook\", and a large \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s5-C",
+          "try": "C",
+          "task": "Side panel, Subscriptions, second row; read the top; tap the first 'View all benefits'; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened a card with \"Meta Account\" at the top. The second row opened a page headed \"Meta One\". \"View all benefits\" opened \"Try Meta One Core free for one month\" (on the phone it said month, not week). None of these pages mentions Messenger, and I could not say what part of the program I was in. The X at the top left did take me out each time, back through \"Meta One\" and \"Subscriptions\" to the first screen.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s5-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I also worried that I might have agreed to pay. That is about what the button does, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I could get out, but I could never have told you which part of the program I was in.",
+      "provisional": false
+    },
+    "s6": {
+      "where": "A page with the heading \"Meta One\" and the grey words \"Choose your plan\", then two boxes, \"Core\" and \"Premium\", with monthly prices.",
+      "expectation": "I am being asked to choose a paid plan for something called \"Meta One\".",
+      "confidence": "guessing",
+      "cue": "\"Meta One\" in large letters and \"Choose your plan\" below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"Meta One\", \"Core\" and \"Premium\" are invented names. I cannot learn them, so the heading names a place I do not recognise. \"Choose your plan\" is plain enough, but it is small and grey.",
+        "solution": "Put the plain words first, for example \"Choose a paid plan\", and explain in ordinary words what each plan is."
+      },
+      "test_cases": [
+        {
+          "id": "s6-C",
+          "try": "C",
+          "task": "Side panel, Subscriptions, second row; read the top; tap the first 'View all benefits'; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened a card with \"Meta Account\" at the top. The second row opened a page headed \"Meta One\". \"View all benefits\" opened \"Try Meta One Core free for one month\" (on the phone it said month, not week). None of these pages mentions Messenger, and I could not say what part of the program I was in. The X at the top left did take me out each time, back through \"Meta One\" and \"Subscriptions\" to the first screen.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s6-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I also said \"Meta One\", \"Core\" and \"Premium\" are invented names I cannot learn. That is about the words themselves, not about knowing where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I could get out, but I could never have told you which part of the program I was in.",
+      "provisional": false
+    },
+    "s7": {
+      "where": "A pink-tinted page headed \"Try Meta One Core free for one week\", listing features under \"Meta AI\" and \"Facebook Plus\", with \"Start your free week\" at the bottom.",
+      "expectation": "Another sales page, for something called \"Meta One Core\".",
+      "confidence": "guessing",
+      "cue": "The large heading \"Try Meta One Core free for one week\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is an offer with invented product names. I can tell I am being sold something, but not where in the program I am or how I got here.",
+        "solution": "A plain heading such as \"Paid plan offer\" and a clearly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s7-C",
+          "try": "C",
+          "task": "Side panel, Subscriptions, second row; read the top; tap the first 'View all benefits'; read the top; leave with the X on each page.",
+          "real_if": "You cannot say which part of the app these pages belong to, or cannot find the way out.",
+          "not_real_if": "You can name where you are and leave without trouble.",
+          "what_happened": "Subscriptions opened a card with \"Meta Account\" at the top. The second row opened a page headed \"Meta One\". \"View all benefits\" opened \"Try Meta One Core free for one month\" (on the phone it said month, not week). None of these pages mentions Messenger, and I could not say what part of the program I was in. The X at the top left did take me out each time, back through \"Meta One\" and \"Subscriptions\" to the first screen.",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s7-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I also said \"Meta One Core\" is an invented product name I cannot learn. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "I could get out, but I could never have told you which part of the program I was in.",
+      "provisional": false
+    },
+    "s8": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"More image and video creation\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"More image and video creation\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"More image and video creation\" and the small words \"Meta AI\" half hidden behind them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s8-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s9": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Get story rewatch insights\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Get story rewatch insights\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Get story rewatch insights\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s9-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s10": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Search your story viewer list\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Search your story viewer list\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Search your story viewer list\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s10-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s11": {
+      "where": "The same sales page scrolled down: a long list of features such as \"Choose a custom app icon\", \"Super react to stories\", \"Instagram Plus\", \"WhatsApp Plus\", with \"View all plans\" and \"Start your free week\". No box is drawn.",
+      "expectation": "I am somewhere in a long list of things for sale, but I cannot say where.",
+      "confidence": "no idea",
+      "cue": "Nothing. There is no heading on the page at all, only lists of feature names.",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "The heading has gone off the top. All I have is a mass of feature names I do not know and a large blue button asking me to start something. If I looked away, I would have no idea what this was or whether I should press anything.",
+        "solution": "Keep a heading fixed at the top while the list moves, saying plainly what this page is, for example \"Paid plan offer\"."
+      },
+      "test_cases": [
+        {
+          "id": "s11-D",
+          "try": "D",
+          "task": "On the second offer page, scroll down two screens and back up halfway, looking at the top for a page name each time; leave with the X.",
+          "real_if": "There is no page name at the top until you are back at the very top.",
+          "not_real_if": "A page name stays or comes back as soon as you scroll back a little.",
+          "what_happened": "I scrolled the offer page down two screens. The top had only an X and \"View all plans\", and no page name. Halfway back up, there was still no name, only lists headed \"Facebook Plus\", \"Instagram Plus\" and \"WhatsApp Plus\". The X took me out.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "Once the heading has gone off the top, nothing brings it back until I reach the very top again.",
+      "provisional": false
+    },
+    "s12": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Choose a custom app icon\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Choose a custom app icon\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Choose a custom app icon\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s12-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s13": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Choose a custom app icon\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Choose a custom app icon\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Choose a custom app icon\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s13-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s14": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Super react to stories\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Super react to stories\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Super react to stories\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s14-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s15": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Extend your story's expiration\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Extend your story's expiration\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Extend your story's expiration\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s15-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s16": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Message with custom fonts\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Message with custom fonts\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Message with custom fonts\" and \"Facebook Plus\" above them, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s16-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s17": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s17-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s18": {
+      "where": "A page headed \"Message requests\" with two tabs, \"You may know\" and \"Spam\", and the usual row at the bottom with \"Chats\" lit up.",
+      "expectation": "I am looking at messages from people who have asked to write to me.",
+      "confidence": "sure",
+      "cue": "The heading \"Message requests\" at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is in plain words at the top. The bottom row lights up \"Chats\", which is a little odd since the heading says something else, but the heading is what I read first.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s19": {
+      "where": "A page headed \"New message\" with a \"To:\" line and a list of people below.",
+      "expectation": "I am starting a new message and choosing whom to send it to.",
+      "confidence": "sure",
+      "cue": "The heading \"New message\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New message\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s20": {
+      "where": "A page with a search box at the top reading \"Ask Meta AI or search\", and lists headed \"You may have missed\" and \"Suggested\". No box is drawn.",
+      "expectation": "I think I am searching for someone.",
+      "confidence": "guessing",
+      "cue": "The search box at the top, with the magnifying glass.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no heading. The search box is familiar, but it also offers \"Meta AI\", which I do not know. If I came back after an interruption, I would have to work out again what I had been about to do.",
+        "solution": "A heading such as \"Search\" above the box, and a plain description in the box, for example \"Type a name to search\"."
+      },
+      "test_cases": [
+        {
+          "id": "s20-F",
+          "try": "F",
+          "task": "On the first screen, tap the long grey box near the top, hide the keyboard with one Back, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "Tapping the grey box opened a page with the keyboard. After one Back, there was only the box \"Ask Meta AI or search\" at the top, an arrow, and a list headed \"Suggested\". Scrolling down showed \"People you may know\". There was no page name at all. The arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "A search box alone is not a page name.",
+      "provisional": false
+    },
+    "s21": {
+      "where": "A page headed \"New note\" in the middle of the top bar.",
+      "expectation": "I am writing a new note.",
+      "confidence": "sure",
+      "cue": "The heading \"New note\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New note\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s22": {
+      "where": "A full-screen photograph with the small words \"Deki\" and a time at the very top, and a row of reaction faces at the bottom.",
+      "expectation": "I am looking at a photograph Deki has put up. I believe this is what they call a \"story\", but the screen does not say so.",
+      "confidence": "guessing",
+      "cue": "The small name \"Deki\" in the corner at the top, and the photograph filling the screen.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Only a person's name tells me anything. Nothing says what kind of screen this is or how to get back. The picture also moves on by itself, so if I looked away it would be something else when I looked back.",
+        "solution": "A clear heading such as \"Photo from Deki\" and a large \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s22-G",
+          "try": "G",
+          "task": "Tap the middle item of the bottom row, tap a tall picture card, watch the top for five seconds, say where you are, then tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's tall card on People. For a moment the screen was half People page and half black. Then Krishna's photograph filled the screen with \"Krishna Bharti 21h\" in small letters at the top. Nothing said what kind of screen this was. When I went to press the X, it had already moved on by itself to someone else, \"Siquem Lsm\". A second press of the X took me back to People.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It changed to someone else's picture under my finger before I could leave. That is exactly how I lose my place.",
+      "provisional": false
+    },
+    "s23": {
+      "where": "A black bar at the top reading \"Sent to Deki\" with a cross, over a large photograph, and a reply box at the bottom.",
+      "expectation": "Something has been sent to Deki, perhaps by me. I am still looking at Deki's photograph.",
+      "confidence": "guessing",
+      "cue": "The words \"Sent to Deki\" in the bar at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"Sent to Deki\" tells me something happened, not where I am. I would worry that I had sent something without meaning to, and I could not say what screen this is.",
+        "solution": "A heading naming the screen, for example \"Deki's photo\", and a separate plain message saying exactly what was sent."
+      },
+      "test_cases": [
+        {
+          "id": "s23-H",
+          "try": "H",
+          "task": "The 'Sent to ...' pictures: would need a reply sent to a real person.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried: it would mean sending a reply to a real person, which I must not do.",
+          "status": "not_executed",
+          "reason": "It would need something the house rules forbid (sending to a real person, making a note public, opening the moving-picture panel, or creating an invitation)."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s24": {
+      "where": "A conversation with Siquem Lsm, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Siquem Lsm.",
+      "confidence": "sure",
+      "cue": "The name \"Siquem Lsm\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s25": {
+      "where": "The opening list of my conversations, with the word \"messenger\" at the top and \"Chats\" lit up in blue at the bottom.",
+      "expectation": "I am in Messenger, looking at the list of my conversations with people.",
+      "confidence": "guessing",
+      "cue": "The word \"messenger\" at the top, and the word \"Chats\" coloured blue in the row at the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only tells me which program I am in, not which page of it. I have to look down to the small blue word \"Chats\" and work out that it is the one picked. If the phone rang, the top of the screen would not remind me what I was doing.",
+        "solution": "Put a plain heading at the top that says \"Chats\" or \"Your conversations\", not only the name of the program."
+      },
+      "test_cases": [
+        {
+          "id": "s25-A",
+          "try": "A",
+          "task": "On the first screen, scroll down two screens, look away and count to ten, name the place; then tap the middle and right items of the bottom row and come back with the left one.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the first screen down two screens. When I looked back I saw only a long column of strangers' names with blue \"Add friend\" buttons, \"messenger\" at the top, and a small blue \"Chats\" at the bottom. Nothing there looked like my conversations, so I had to guess that I was still on the chats list. When I tapped \"People\" and then \"Notifications\", each page had its name in large letters at the top: \"People\" and \"Notifications\". That only showed me how bare the first screen is. Tapping \"Chats\" took me back, still scrolled down among the strangers.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The other two pages name themselves in large letters; the first screen does not, and once I scrolled it did not even look like my conversations.",
+      "provisional": false
+    },
+    "s26": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s26-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s27": {
+      "where": "The opening list of my conversations, with the word \"messenger\" at the top and \"Chats\" lit up in blue at the bottom.",
+      "expectation": "I am in Messenger, looking at the list of my conversations with people.",
+      "confidence": "guessing",
+      "cue": "The word \"messenger\" at the top, and the word \"Chats\" coloured blue in the row at the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only tells me which program I am in, not which page of it. I have to look down to the small blue word \"Chats\" and work out that it is the one picked. If the phone rang, the top of the screen would not remind me what I was doing.",
+        "solution": "Put a plain heading at the top that says \"Chats\" or \"Your conversations\", not only the name of the program."
+      },
+      "test_cases": [
+        {
+          "id": "s27-A",
+          "try": "A",
+          "task": "On the first screen, scroll down two screens, look away and count to ten, name the place; then tap the middle and right items of the bottom row and come back with the left one.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the first screen down two screens. When I looked back I saw only a long column of strangers' names with blue \"Add friend\" buttons, \"messenger\" at the top, and a small blue \"Chats\" at the bottom. Nothing there looked like my conversations, so I had to guess that I was still on the chats list. When I tapped \"People\" and then \"Notifications\", each page had its name in large letters at the top: \"People\" and \"Notifications\". That only showed me how bare the first screen is. Tapping \"Chats\" took me back, still scrolled down among the strangers.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The other two pages name themselves in large letters; the first screen does not, and once I scrolled it did not even look like my conversations.",
+      "provisional": false
+    },
+    "s28": {
+      "where": "A page with a back arrow, a picture, and the large words \"Build a chat-based community on Messenger\" halfway down.",
+      "expectation": "Messenger is telling me about something called a \"community\".",
+      "confidence": "guessing",
+      "cue": "The large words halfway down the page.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no heading at the top, only a back arrow. The words in the middle are an invitation, not the name of a place, and \"chat-based community\" is a phrase I do not know.",
+        "solution": "A heading at the top such as \"Communities\" and a plain sentence saying what a community is."
+      },
+      "test_cases": [
+        {
+          "id": "s28-I",
+          "try": "I",
+          "task": "Side panel, first row; read the top and the large words; swipe the picture once and read again; leave with the arrow.",
+          "real_if": "No page name stays on screen; the large words change and stop naming a place.",
+          "not_real_if": "A name for the place stays put.",
+          "what_happened": "The panel's first row opened a page with only a back arrow at the top and the large words \"Build a chat-based community on Messenger\". After one sideways swipe, the large words became \"Bring up to 5,000 real-world connections online\", which names no place at all. Only the small link \"About communities\" at the bottom hints at where I am. The arrow took me back to the panel.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The large words changed with one swipe and stopped naming anything.",
+      "provisional": false
+    },
+    "s29": {
+      "where": "A page headed \"Me\" with my name in large letters and a list of settings below.",
+      "expectation": "I am on a page about my own account and settings.",
+      "confidence": "sure",
+      "cue": "The heading \"Me\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "\"Me\" is short but it is plain, and my own name in large letters below confirms it. I would know where I was if I looked back.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s30": {
+      "where": "The same \"Message requests\" page with the tabs \"You may know\" and \"Spam\".",
+      "expectation": "I am looking at messages from people who have asked to write to me.",
+      "confidence": "sure",
+      "cue": "The heading \"Message requests\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Message requests\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s31": {
+      "where": "A page headed \"Archive\" saying \"Your archive is empty\", with the bottom row and \"Chats\" lit up.",
+      "expectation": "I am in the place where old conversations are put away, and it is empty.",
+      "confidence": "sure",
+      "cue": "The heading \"Archive\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "\"Archive\" is a word I know, and \"Your archive is empty\" confirms it. The heading is at the top where I look.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s32": {
+      "where": "A page headed \"New story\" with a camera view and a request to turn on storage.",
+      "expectation": "I am being asked to make a new \"story\", which I believe means a photograph to show people.",
+      "confidence": "sure",
+      "cue": "The heading \"New story\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New story\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s33": {
+      "where": "The \"New note\" page with a white card at the bottom headed \"Share your notes with everyone\" and buttons \"Make my notes public\" and \"Not now\".",
+      "expectation": "I am writing a note and the program is asking whether everyone may see my notes.",
+      "confidence": "sure",
+      "cue": "The heading \"New note\" and the card's own heading \"Share your notes with everyone\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Both the page and the card have plain headings. If I looked away I could read the card's heading and remember the question.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s34": {
+      "where": "A page headed \"New note\".",
+      "expectation": "I am writing a new note.",
+      "confidence": "sure",
+      "cue": "The heading \"New note\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New note\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s35": {
+      "where": "A page headed \"New group\" with a search box and a list of people to tick.",
+      "expectation": "I am making a new group of people to message together.",
+      "confidence": "sure",
+      "cue": "The heading \"New group\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New group\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s36": {
+      "where": "A conversation whose name at the top is \"Ally\", with \"Ally Cooper\" in large letters below.",
+      "expectation": "I appear to be in a conversation with myself.",
+      "confidence": "guessing",
+      "cue": "The name \"Ally\" at the top and \"Ally Cooper\" below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name is my own. I can see this is a conversation, but I cannot understand why I would be writing to myself, so I am not sure where I am.",
+        "solution": "A heading that says plainly what this is, for example \"Notes to yourself\"."
+      },
+      "test_cases": [
+        {
+          "id": "s36-J",
+          "try": "J",
+          "task": "From the long grey box on the first screen, open the conversation with my own account name; look at the top only; leave with the arrow.",
+          "real_if": "The top does not make it plain whose conversation this is.",
+          "not_real_if": "It does.",
+          "what_happened": "My own name was in the list under the grey box, so I opened it. The top of the conversation said just \"Ally\", with \"Ally Cooper\" in large letters below and \"Waiting for network\". Nothing says it is a conversation with myself. The arrow took me back, and the search page now showed \"Ally\" under \"Recent searches\".",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "My own name at the top does not tell me that I am writing to myself.",
+      "provisional": false
+    },
+    "s37": {
+      "where": "The search page again, with \"Ask Meta AI or search\" at the top and no heading. No box is drawn.",
+      "expectation": "I think I am searching for someone.",
+      "confidence": "guessing",
+      "cue": "The search box at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There is no heading, only the search box and the unfamiliar words \"Meta AI\". After an interruption I would have to work it out again.",
+        "solution": "A heading such as \"Search\" above the box."
+      },
+      "test_cases": [
+        {
+          "id": "s37-F",
+          "try": "F",
+          "task": "On the first screen, tap the long grey box near the top, hide the keyboard with one Back, look for a page name, scroll down and back, leave with the arrow.",
+          "real_if": "Nothing but the box tells you where you are.",
+          "not_real_if": "Something names the screen.",
+          "what_happened": "Tapping the grey box opened a page with the keyboard. After one Back, there was only the box \"Ask Meta AI or search\" at the top, an arrow, and a list headed \"Suggested\". Scrolling down showed \"People you may know\". There was no page name at all. The arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "A search box alone is not a page name.",
+      "provisional": false
+    },
+    "s38": {
+      "where": "The \"New note\" page with a card headed \"GIF notes for any mood\".",
+      "expectation": "I am writing a note and the program is showing me something called a \"GIF\".",
+      "confidence": "guessing",
+      "cue": "The heading \"New note\" and the card heading \"GIF notes for any mood\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"New note\" I understand. \"GIF\" is a word I do not know and cannot learn, so the card's heading does not tell me what is happening.",
+        "solution": "Plain words on the card, for example \"Add a moving picture to your note\"."
+      },
+      "test_cases": [
+        {
+          "id": "s38-L",
+          "try": "L",
+          "task": "Pages needing a public note, the moving-picture panel, or an invitation.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried: it would need a note made public, the moving-picture panel opened, or an invitation created, which I must not do.",
+          "status": "not_executed",
+          "reason": "It would need something the house rules forbid (sending to a real person, making a note public, opening the moving-picture panel, or creating an invitation)."
+        },
+        {
+          "id": "s38-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "\"GIF\" is a word I do not know. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s39": {
+      "where": "A panel with a search box reading \"Search gifs across apps\", rows of grey squares that have not filled in, and a row of small pictures at the bottom. No heading.",
+      "expectation": "I have no idea. Something is loading.",
+      "confidence": "no idea",
+      "cue": "Nothing I understand. The grey squares and the word \"gifs\".",
+      "first_pass": {
+        "verdict": "cannot handle it at all",
+        "why": "There is no heading, the squares are empty, and the only word is \"gifs\", which I do not know. If I looked away, I would not know what I had opened or how to leave it.",
+        "solution": "A heading at the top in plain words, for example \"Choose a moving picture\", and a labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s39-L",
+          "try": "L",
+          "task": "Pages needing a public note, the moving-picture panel, or an invitation.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried: it would need a note made public, the moving-picture panel opened, or an invitation created, which I must not do.",
+          "status": "not_executed",
+          "reason": "It would need something the house rules forbid (sending to a real person, making a note public, opening the moving-picture panel, or creating an invitation)."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s40": {
+      "where": "The \"New note\" page with a picture of a man in the note and a blue \"Share\" button.",
+      "expectation": "I am writing a note with a picture in it.",
+      "confidence": "sure",
+      "cue": "The heading \"New note\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"New note\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s41": {
+      "where": "The \"New note\" page with a box in the middle headed \"Delete draft?\" and buttons \"Cancel\" and \"Delete\".",
+      "expectation": "I am being asked whether to throw away the note I was writing.",
+      "confidence": "sure",
+      "cue": "The box heading \"Delete draft?\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box has its own plain heading, so I know what I am being asked even if I look away.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s42": {
+      "where": "A conversation with Deki, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Deki.",
+      "confidence": "sure",
+      "cue": "The name \"Deki\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s43": {
+      "where": "A conversation with Marco Peralta, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Marco Peralta.",
+      "confidence": "sure",
+      "cue": "The name \"Marco Peralta\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s44": {
+      "where": "A page with a back arrow, a large picture and the name \"Marco Peralta\", buttons \"Profile\", \"Nicknames\", \"Search\", \"Customize\", and lists headed \"Chat info\" and \"Actions\".",
+      "expectation": "I think I am looking at details about my conversation with Marco Peralta.",
+      "confidence": "guessing",
+      "cue": "The large name \"Marco Peralta\" and the small grey words \"Chat info\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name tells me who, but not what page this is. It looks very like the conversation itself, and only the small grey words \"Chat info\" halfway down hint that it is something else.",
+        "solution": "A heading at the top such as \"Settings for your chat with Marco Peralta\"."
+      },
+      "test_cases": [
+        {
+          "id": "s44-K",
+          "try": "K",
+          "task": "Open the Krishna Bharti conversation, tap only the 'i' in a circle; read the top; scroll down two screens and read the top again; leave with the arrow twice.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "In Krishna Bharti's conversation I tapped only the \"i\". The new page had an arrow and three dots at the top and no page name. Below were Krishna's picture and name, then \"Chat info\" and \"Actions\". After I scrolled down two screens, even the name had gone. There were rows such as \"Block\", \"Restrict\" and \"Delete chat\", with nothing to say whose chat they belonged to. Two presses of the arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It is worse than I thought: once I scroll, even the person's name goes, and I am left among \"Block\" and \"Delete chat\" with no idea whose they are.",
+      "provisional": false
+    },
+    "s45": {
+      "where": "A page headed \"Pinned messages\" saying there are none.",
+      "expectation": "I am looking at messages that have been pinned, and there are none.",
+      "confidence": "sure",
+      "cue": "The heading \"Pinned messages\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Pinned messages\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s46": {
+      "where": "A full-screen photograph with the small words \"Krishna Bharti\" and a time at the very top, and a row of reaction faces at the bottom.",
+      "expectation": "I am looking at a photograph Krishna Bharti has put up. I believe this is what they call a \"story\", but the screen does not say so.",
+      "confidence": "guessing",
+      "cue": "The small name \"Krishna Bharti\" in the corner at the top, and the photograph filling the screen.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "Only a person's name tells me anything. Nothing says what kind of screen this is or how to get back. The picture also moves on by itself, so if I looked away it would be something else when I looked back.",
+        "solution": "A clear heading such as \"Photo from Krishna Bharti\" and a large \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s46-G",
+          "try": "G",
+          "task": "Tap the middle item of the bottom row, tap a tall picture card, watch the top for five seconds, say where you are, then tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's tall card on People. For a moment the screen was half People page and half black. Then Krishna's photograph filled the screen with \"Krishna Bharti 21h\" in small letters at the top. Nothing said what kind of screen this was. When I went to press the X, it had already moved on by itself to someone else, \"Siquem Lsm\". A second press of the X took me back to People.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It changed to someone else's picture under my finger before I could leave. That is exactly how I lose my place.",
+      "provisional": false
+    },
+    "s47": {
+      "where": "A black bar reading \"Sent to Krishna\" over a large photograph of three men, with \"Send message\" and reaction faces at the bottom.",
+      "expectation": "Something has been sent to Krishna, and I am still on his photograph.",
+      "confidence": "guessing",
+      "cue": "The words \"Sent to Krishna\" at the top.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "\"Sent to Krishna\" says something happened, not where I am. I would worry that I had sent something by mistake.",
+        "solution": "A heading naming the screen, for example \"Krishna's photo\", and a separate plain message saying what was sent."
+      },
+      "test_cases": [
+        {
+          "id": "s47-H",
+          "try": "H",
+          "task": "The 'Sent to ...' pictures: would need a reply sent to a real person.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "Not tried: it would mean sending a reply to a real person, which I must not do.",
+          "status": "not_executed",
+          "reason": "It would need something the house rules forbid (sending to a real person, making a note public, opening the moving-picture panel, or creating an invitation)."
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "",
+      "provisional": true
+    },
+    "s48": {
+      "where": "A conversation with Krishna Bharti, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name \"Krishna Bharti\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s49": {
+      "where": "A page with a back arrow, a large picture and the name \"Krishna Bharti\", buttons \"Profile\", \"Nicknames\", \"Search\", \"Customize\", and lists under \"Chat info\" and \"Actions\".",
+      "expectation": "I think I am looking at details about my conversation with Krishna Bharti.",
+      "confidence": "guessing",
+      "cue": "The large name and the small grey words \"Chat info\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The name tells me who, not what page this is. It looks like the top of the conversation, and only the small grey words \"Chat info\" suggest otherwise.",
+        "solution": "A heading at the top such as \"Settings for your chat with Krishna Bharti\"."
+      },
+      "test_cases": [
+        {
+          "id": "s49-K",
+          "try": "K",
+          "task": "Open the Krishna Bharti conversation, tap only the 'i' in a circle; read the top; scroll down two screens and read the top again; leave with the arrow twice.",
+          "real_if": "The top never names this page, so you take it for the conversation, or cannot name it.",
+          "not_real_if": "Something at the top names it.",
+          "what_happened": "In Krishna Bharti's conversation I tapped only the \"i\". The new page had an arrow and three dots at the top and no page name. Below were Krishna's picture and name, then \"Chat info\" and \"Actions\". After I scrolled down two screens, even the name had gone. There were rows such as \"Block\", \"Restrict\" and \"Delete chat\", with nothing to say whose chat they belonged to. Two presses of the arrow took me back.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It is worse than I thought: once I scroll, even the person's name goes, and I am left among \"Block\" and \"Delete chat\" with no idea whose they are.",
+      "provisional": false
+    },
+    "s50": {
+      "where": "A conversation with Krishna Bharti, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name \"Krishna Bharti\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s51": {
+      "where": "A conversation with Krishna Bharti, with the name at the top beside a picture, and the messages below.",
+      "expectation": "I am in my conversation with Krishna Bharti.",
+      "confidence": "sure",
+      "cue": "The name \"Krishna Bharti\" at the top, next to the back arrow, with the messages underneath.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "This is laid out like any conversation: the person's name at the top and the messages below. If I looked away I would see the name again and know whom I was writing to.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s52": {
+      "where": "The opening list of my conversations, with the word \"messenger\" at the top and \"Chats\" lit up in blue at the bottom.",
+      "expectation": "I am in Messenger, looking at the list of my conversations with people.",
+      "confidence": "guessing",
+      "cue": "The word \"messenger\" at the top, and the word \"Chats\" coloured blue in the row at the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The top only tells me which program I am in, not which page of it. I have to look down to the small blue word \"Chats\" and work out that it is the one picked. If the phone rang, the top of the screen would not remind me what I was doing.",
+        "solution": "Put a plain heading at the top that says \"Chats\" or \"Your conversations\", not only the name of the program."
+      },
+      "test_cases": [
+        {
+          "id": "s52-A",
+          "try": "A",
+          "task": "On the first screen, scroll down two screens, look away and count to ten, name the place; then tap the middle and right items of the bottom row and come back with the left one.",
+          "real_if": "You have to hunt or guess to name the place after the pause.",
+          "not_real_if": "You can name it at once from what is on screen.",
+          "what_happened": "I scrolled the first screen down two screens. When I looked back I saw only a long column of strangers' names with blue \"Add friend\" buttons, \"messenger\" at the top, and a small blue \"Chats\" at the bottom. Nothing there looked like my conversations, so I had to guess that I was still on the chats list. When I tapped \"People\" and then \"Notifications\", each page had its name in large letters at the top: \"People\" and \"Notifications\". That only showed me how bare the first screen is. Tapping \"Chats\" took me back, still scrolled down among the strangers.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "The other two pages name themselves in large letters; the first screen does not, and once I scrolled it did not even look like my conversations.",
+      "provisional": false
+    },
+    "s53": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s53-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s54": {
+      "where": "A white card rising from the bottom of a sales page, with a picture and the large words \"Preview stories\", and a smaller product name above it.",
+      "expectation": "I am reading an advertisement for a paid extra called \"Preview stories\". I am not sure whether I am still in Messenger or have gone into something to do with Facebook.",
+      "confidence": "guessing",
+      "cue": "The large words \"Preview stories\" and \"Facebook Plus\" above them, over a dark blue page with a Facebook letter, and the dark page behind the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The large words describe a feature for sale, not a place in the program. The small name above it, such as \"Facebook Plus\", is a product name I do not know and cannot learn. If I were interrupted I would not know how I got here or whether I had agreed to buy something.",
+        "solution": "A heading at the top of the card that says plainly what this is, for example \"Paid extras - information only\", and one clear \"Close\" button with the word on it."
+      },
+      "test_cases": [
+        {
+          "id": "s54-E",
+          "try": "E",
+          "task": "On the offer page, tap a grey row with an arrow; read above the large words; swipe the card sideways twice; close with its X and leave.",
+          "real_if": "Nothing on the card tells you which part of the app or which offer you are in, or it changes as you swipe.",
+          "not_real_if": "A name for where you are stays the same on every card.",
+          "what_happened": "I tapped \"Get story rewatch insights\". A card rose with \"Facebook Plus\" in small letters above the large words. I swiped it twice and the large words changed to \"Search your story viewer list\" and then \"Choose a custom app icon\". The small \"Facebook Plus\" stayed the same on every card. The card's X was at the top left and worked, though the card moved as I tapped, so my first tap missed.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The small words \"Facebook Plus\" do stay on every card, which is fairer than I thought. But they name something for sale, not a place in the program, and I cannot learn them.",
+      "provisional": false
+    },
+    "s56": {
+      "where": "A page headed \"Notifications\" in large letters, listing friend requests and mentions, with \"Notifications\" lit up in the bottom row.",
+      "expectation": "I am on the Notifications page.",
+      "confidence": "sure",
+      "cue": "The large heading \"Notifications\" and the lit-up bell with \"Notifications\" at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is large, plain and at the top, and the bottom row agrees with it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s57": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s57-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s58": {
+      "where": "The \"Notifications\" page moved further down the list, with the heading still at the top.",
+      "expectation": "I am on the Notifications page.",
+      "confidence": "sure",
+      "cue": "The heading \"Notifications\", still at the top, and the bottom row.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "Even though the list has moved, the heading stayed in place, so I still know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s59": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s59-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s60": {
+      "where": "A page headed \"Archive\" saying \"Your archive is empty\", but the bottom row has the bell \"Notifications\" lit up, and \"Chats\" also in blue.",
+      "expectation": "I am in the Archive, I think, though the bottom says Notifications.",
+      "confidence": "guessing",
+      "cue": "The heading \"Archive\", and the lit-up \"Notifications\" in the bottom row.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading and the bottom row disagree. The top says \"Archive\" and the bottom lights up \"Notifications\". I would not know which to believe.",
+        "solution": "Make the bottom row agree with the heading, or leave the bottom row off this page."
+      },
+      "test_cases": [
+        {
+          "id": "s60-M",
+          "try": "M",
+          "task": "Tap the right item of the bottom row and see which is coloured; open the side panel and tap Archive; read the top and the bottom row; leave with the arrow.",
+          "real_if": "The top and the bottom row name different places.",
+          "not_real_if": "They agree.",
+          "what_happened": "On the Notifications page only the bell \"Notifications\" was coloured at the bottom. (On the phone \"Chats\" was not also blue, as it was in the picture.) I opened the panel from there and tapped \"Archive\". The top said \"Archive\", but the bottom row still had \"Notifications\" lit up. The top and the bottom named different places. The arrow took me back to Notifications.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "On the phone the top and the bottom still disagree, exactly as in the picture.",
+      "provisional": false
+    },
+    "s61": {
+      "where": "A page headed \"People\" with photographs along the top, tabs \"1 active\", \"Friend requests\", \"All\", \"Current city\", and \"People\" lit up in the bottom row.",
+      "expectation": "I am on the People page, looking at people I know.",
+      "confidence": "sure",
+      "cue": "The large heading \"People\" and the lit-up \"People\" at the bottom.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is plain and at the top, and the bottom row agrees with it. \"Chats\" is also blue at the bottom, which is a little odd, but the heading settles it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s62": {
+      "where": "A white panel slid over from the left with my own name, \"Ally Cooper\", at the top and a list: Communities, Message requests, Archive, Friend requests, Subscriptions, Facebook Reels and so on.",
+      "expectation": "Some sort of list of places I could go, opened over the main screen. I think it is a menu, but nothing says so.",
+      "confidence": "guessing",
+      "cue": "My name at the top, and the list of words below it.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is my own name. That tells me whose account it is, not where I am. Nothing says \"Menu\". I can read every line in the list, but if I looked away I would not know how this panel came to be open or how to put it away.",
+        "solution": "A heading such as \"Menu\" at the top of the panel, and a plainly labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s62-B",
+          "try": "B",
+          "task": "Open the side panel with the three lines, read it, close it with Back; open it again from the middle item of the bottom row and look again.",
+          "real_if": "The panel never names itself and never marks where you came from.",
+          "not_real_if": "Something on it tells you what it is and where you are.",
+          "what_happened": "I opened the panel from the first screen and later from the Notifications page. Both times it looked exactly the same: my name \"Ally Cooper\" at the top, then Communities, Message requests, Archive and so on. Nothing says \"Menu\", and nothing marks Chats or Notifications as where I had come from. Back closed it without trouble.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "unchanged",
+      "closing_comment": "The panel opens and closes easily, but it never tells me what it is or where I came from.",
+      "provisional": false
+    },
+    "s63": {
+      "where": "Half of the screen is the \"People\" page, and a photograph from \"Deki\" is rising over the lower part, with \"Deki 4h\" and a cross.",
+      "expectation": "I am somewhere between the People page and a photograph from Deki.",
+      "confidence": "guessing",
+      "cue": "The heading \"People\" at the top and the name \"Deki\" in the middle.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "There are two headings at once: \"People\" above and \"Deki\" in the middle. I cannot tell which page I am really on.",
+        "solution": "Show one screen at a time, with one heading that says what it is."
+      },
+      "test_cases": [
+        {
+          "id": "s63-G",
+          "try": "G",
+          "task": "Tap the middle item of the bottom row, tap a tall picture card, watch the top for five seconds, say where you are, then tap the X at the top right.",
+          "real_if": "You cannot say what kind of screen it is or how to leave it.",
+          "not_real_if": "You can say whose it is and what it is, and the X takes you back.",
+          "what_happened": "I tapped Krishna Bharti's tall card on People. For a moment the screen was half People page and half black. Then Krishna's photograph filled the screen with \"Krishna Bharti 21h\" in small letters at the top. Nothing said what kind of screen this was. When I went to press the X, it had already moved on by itself to someone else, \"Siquem Lsm\". A second press of the X took me back to People.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "hardened",
+      "closing_comment": "It changed to someone else's picture under my finger before I could leave. That is exactly how I lose my place.",
+      "provisional": false
+    },
+    "s64": {
+      "where": "The \"Me\" page moved down to \"Meta Account\", \"Manage accounts\" and the settings.",
+      "expectation": "I am on the page about my own account and settings.",
+      "confidence": "sure",
+      "cue": "The heading \"Me\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Me\" stays at the top while the list moves, so I still know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s65": {
+      "where": "The \"Me\" page moved a little, with my name half cut off at the top and \"View security alerts\" below.",
+      "expectation": "I am on the page about my own account and settings.",
+      "confidence": "sure",
+      "cue": "The heading \"Me\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Me\" stays at the top while the list moves, so I still know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s66": {
+      "where": "The \"Me\" page moved down to \"Profile\" and \"Preferences\" settings.",
+      "expectation": "I am on the page about my own account and settings.",
+      "confidence": "sure",
+      "cue": "The heading \"Me\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Me\" stays at the top while the list moves, so I still know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s67": {
+      "where": "A page headed \"Switch profile\" showing my name as signed in and \"Log into another Meta Account\".",
+      "expectation": "I am on a page for changing which account I use.",
+      "confidence": "sure",
+      "cue": "The heading \"Switch profile\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Switch profile\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s68": {
+      "where": "A page headed \"Dark mode\" with choices \"Off\", \"On\" and \"System\".",
+      "expectation": "I am on the setting for dark mode.",
+      "confidence": "sure",
+      "cue": "The heading \"Dark mode\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Dark mode\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s69": {
+      "where": "A page headed \"Active status\" with a switch \"Show when you're active\".",
+      "expectation": "I am on the setting that shows people when I am using the program.",
+      "confidence": "sure",
+      "cue": "The heading \"Active status\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Active status\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s70": {
+      "where": "The \"Me\" page greyed out, with a white card at the bottom showing \"m.me/\" and the choices \"Edit username\" and \"Copy link\".",
+      "expectation": "I am on my own page and something has popped up about my username.",
+      "confidence": "guessing",
+      "cue": "The heading \"Me\" behind, and the words \"Edit username\" on the card.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The card has no heading. \"m.me/\" means nothing to me. I can see I am still on \"Me\", but I do not know what this card is.",
+        "solution": "Give the card its own heading, for example \"Your username\"."
+      },
+      "test_cases": [
+        {
+          "id": "s70-N",
+          "try": "N",
+          "task": "Side panel, gear, tap 'Username'; read the panel that slides up; close it with one Back; leave with the arrow.",
+          "real_if": "The panel never says what it is.",
+          "not_real_if": "Something on it, or behind it, tells you where you are.",
+          "what_happened": "Tapping \"Username\" raised a white panel with \"m.me/\", \"Edit username\" and \"Copy link\". The panel has no heading of its own. Behind it, though, I could still read \"Me\" at the top and the \"Username\" row I had just pressed. One Back closed it.",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The little panel has no heading, but I can still see \"Me\" and \"Username\" behind it, so I am less lost than I feared.",
+      "provisional": false
+    },
+    "s71": {
+      "where": "A white card with a cross, a picture of two people, and the heading \"Supervision for Teen Accounts\" halfway down, with \"Continue\" and \"Learn more\".",
+      "expectation": "I am on a page about supervising a teenager's account.",
+      "confidence": "sure",
+      "cue": "The heading \"Supervision for Teen Accounts\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is plain and large. It is halfway down beneath a picture, but I would still read it first.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s72": {
+      "where": "A page with a back arrow and the heading \"Select the profiles you want to supervise\", a search box and a list of people with tick boxes.",
+      "expectation": "I am choosing which young people's accounts I want to watch over.",
+      "confidence": "sure",
+      "cue": "The heading \"Select the profiles you want to supervise\" at the top.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Select the profiles you want to supervise\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s73": {
+      "where": "A page headed \"Here's your link\" with a web address and buttons \"Share link\" and \"Cancel invite\".",
+      "expectation": "I am being given a link to send to a teenager.",
+      "confidence": "sure",
+      "cue": "The heading \"Here's your link\" and the sentence below it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Here's your link\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s74": {
+      "where": "A page with a magnifying glass picture and the heading \"Cancel invite?\" in the middle, with \"Cancel\" and \"Don't cancel\".",
+      "expectation": "I am being asked whether to cancel the invitation.",
+      "confidence": "sure",
+      "cue": "The heading \"Cancel invite?\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading asks the question plainly. It sits in the middle, not the top, but nothing else competes with it.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s75": {
+      "where": "The same list of people with tick boxes, now with a cross in the corner and a black bar at the bottom saying \"Invite canceled\".",
+      "expectation": "I am back choosing young people's accounts, and the invitation has been cancelled.",
+      "confidence": "sure",
+      "cue": "The heading at the top and the message \"Invite canceled\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Select the profiles you want to supervise\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s76": {
+      "where": "A page headed \"Avatar\" with a picture of cartoon figures and the words \"Make your avatar\".",
+      "expectation": "I am on a page called \"Avatar\". I do not know what that is.",
+      "confidence": "guessing",
+      "cue": "The heading \"Avatar\" and the picture of cartoon figures.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is there and at the top, but \"Avatar\" is a word I do not know. A heading in a word I cannot understand does not tell me where I am.",
+        "solution": "Use plain words, for example \"Cartoon picture of yourself\"."
+      },
+      "test_cases": [
+        {
+          "id": "s76-O",
+          "try": "O",
+          "task": "Side panel, gear, scroll, tap 'Avatar'; read the top; tap 'Make your avatar'; read; tap the X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "Tapping \"Avatar\" opened a page headed \"Avatar\" at the top. The picture was grey at first and then filled with cartoon figures. Tapping \"Make your avatar\" opened a full-page picture of a cartoon woman with an X at the top left. The heading \"Make your own avatar\" was near the bottom, and the dots and pictures change as it moves. The X took me back to \"Avatar\", and the arrow took me back to \"Me\". I never pressed \"Create your avatar\".",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s76-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "\"Avatar\" is a word I do not know and cannot learn. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The page is named and the name stays at the top, so I can say where I am. My trouble is that I do not know the word \"avatar\".",
+      "provisional": false
+    },
+    "s77": {
+      "where": "A page headed \"App icon\" saying \"Choose the icon for your device home screen\", with seven pictures to choose from.",
+      "expectation": "I am choosing the little picture that shows on my telephone's main screen.",
+      "confidence": "sure",
+      "cue": "The heading \"App icon\" and the sentence under it.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading is at the top, and the sentence below it explains it in plain words, so I know where I am.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s78": {
+      "where": "A page headed \"Notifications & sounds\" with a switch set to \"Off\".",
+      "expectation": "I am on the setting for alerts and sounds.",
+      "confidence": "sure",
+      "cue": "The heading \"Notifications & sounds\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Notifications & sounds\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s79": {
+      "where": "A page headed \"Accessibility\" with \"Reduce motion\" and \"Color filter\".",
+      "expectation": "I am on the settings that make the program easier to use.",
+      "confidence": "sure",
+      "cue": "The heading \"Accessibility\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Accessibility\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s80": {
+      "where": "A page headed \"Privacy & safety\" with a list of security settings.",
+      "expectation": "I am on the privacy and safety settings.",
+      "confidence": "sure",
+      "cue": "The heading \"Privacy & safety\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Privacy & safety\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s81": {
+      "where": "A page headed \"Language identification\" with a switch of the same name and a sentence about detecting message language.",
+      "expectation": "I am on a setting page, but I do not understand what this one is for.",
+      "confidence": "guessing",
+      "cue": "The heading \"Language identification\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is in its proper place, but the phrase means nothing to me, so it names a place I cannot recognise.",
+        "solution": "Plain words, for example \"Offer to translate messages\"."
+      },
+      "test_cases": [
+        {
+          "id": "s81-P",
+          "try": "P",
+          "task": "Side panel, gear, scroll down, tap 'Language identification'; read the top; leave with the arrow.",
+          "real_if": "The heading does not tell you where you are.",
+          "not_real_if": "It does.",
+          "what_happened": "The page has \"Language identification\" at the top beside the arrow, a switch with the same words, and a sentence about translation options. I changed nothing, and the arrow took me back to \"Me\".",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s81-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "I do not understand what \"Language identification\" means. That is about the phrase, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The heading is there and stays. My trouble is with the phrase itself, not with where I am.",
+      "provisional": false
+    },
+    "s82": {
+      "where": "A page headed \"Photos & media\" with switches for saving photos and opening links.",
+      "expectation": "I am on the settings for photographs.",
+      "confidence": "sure",
+      "cue": "The heading \"Photos & media\" at the top beside the back arrow.",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The heading \"Photos & media\" is in ordinary words and sits at the top where I expect it. If I looked away it would still tell me where I was.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s83": {
+      "where": "The \"Me\" page greyed out behind a box headed \"Turn on notifications\", with \"Cancel\" and \"Go to settings\".",
+      "expectation": "I am on my own page and a box is asking me to turn on alerts.",
+      "confidence": "sure",
+      "cue": "The box heading \"Turn on notifications\".",
+      "first_pass": {
+        "verdict": "no problem",
+        "why": "The box has its own plain heading, and I can see \"Me\" behind it. If I looked away the heading would remind me.",
+        "solution": null
+      },
+      "test_cases": [],
+      "opinion": null,
+      "closing_comment": "",
+      "provisional": false
+    },
+    "s84": {
+      "where": "A full-page picture of cartoon figures with a cross in the corner, three small dots, and the heading \"Make your own avatar\" near the bottom with a \"Create your avatar\" button.",
+      "expectation": "I am being asked to make something called an \"avatar\".",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" near the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is near the bottom under a large picture, and \"avatar\" is a word I do not know. I can see I am being invited to make something, but not what or where I am.",
+        "solution": "A plain heading at the top, for example \"Make a cartoon picture of yourself\", with a labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s84-O",
+          "try": "O",
+          "task": "Side panel, gear, scroll, tap 'Avatar'; read the top; tap 'Make your avatar'; read; tap the X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "Tapping \"Avatar\" opened a page headed \"Avatar\" at the top. The picture was grey at first and then filled with cartoon figures. Tapping \"Make your avatar\" opened a full-page picture of a cartoon woman with an X at the top left. The heading \"Make your own avatar\" was near the bottom, and the dots and pictures change as it moves. The X took me back to \"Avatar\", and the arrow took me back to \"Me\". I never pressed \"Create your avatar\".",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s84-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "\"Avatar\" is a word I do not know and cannot learn. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The page is named and the name stays at the top, so I can say where I am. My trouble is that I do not know the word \"avatar\".",
+      "provisional": false
+    },
+    "s85": {
+      "where": "A full-page picture of cartoon figures with a cross in the corner, three small dots, and the heading \"Make your own avatar\" near the bottom with a \"Create your avatar\" button.",
+      "expectation": "I am being asked to make something called an \"avatar\".",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" near the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is near the bottom under a large picture, and \"avatar\" is a word I do not know. I can see I am being invited to make something, but not what or where I am.",
+        "solution": "A plain heading at the top, for example \"Make a cartoon picture of yourself\", with a labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s85-O",
+          "try": "O",
+          "task": "Side panel, gear, scroll, tap 'Avatar'; read the top; tap 'Make your avatar'; read; tap the X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "Tapping \"Avatar\" opened a page headed \"Avatar\" at the top. The picture was grey at first and then filled with cartoon figures. Tapping \"Make your avatar\" opened a full-page picture of a cartoon woman with an X at the top left. The heading \"Make your own avatar\" was near the bottom, and the dots and pictures change as it moves. The X took me back to \"Avatar\", and the arrow took me back to \"Me\". I never pressed \"Create your avatar\".",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s85-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "\"Avatar\" is a word I do not know and cannot learn. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The page is named and the name stays at the top, so I can say where I am. My trouble is that I do not know the word \"avatar\".",
+      "provisional": false
+    },
+    "s86": {
+      "where": "A full-page picture of cartoon figures with a cross in the corner, three small dots, and the heading \"Make your own avatar\" near the bottom with a \"Create your avatar\" button.",
+      "expectation": "I am being asked to make something called an \"avatar\".",
+      "confidence": "guessing",
+      "cue": "The heading \"Make your own avatar\" near the bottom.",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "The heading is near the bottom under a large picture, and \"avatar\" is a word I do not know. I can see I am being invited to make something, but not what or where I am.",
+        "solution": "A plain heading at the top, for example \"Make a cartoon picture of yourself\", with a labelled \"Close\" button."
+      },
+      "test_cases": [
+        {
+          "id": "s86-O",
+          "try": "O",
+          "task": "Side panel, gear, scroll, tap 'Avatar'; read the top; tap 'Make your avatar'; read; tap the X; leave with the arrow.",
+          "real_if": "You cannot say where you are on these pages, or the word on top does not help you.",
+          "not_real_if": "You can.",
+          "what_happened": "Tapping \"Avatar\" opened a page headed \"Avatar\" at the top. The picture was grey at first and then filled with cartoon figures. Tapping \"Make your avatar\" opened a full-page picture of a cartoon woman with an X at the top left. The heading \"Make your own avatar\" was near the bottom, and the dots and pictures change as it moves. The X took me back to \"Avatar\", and the arrow took me back to \"Me\". I never pressed \"Create your avatar\".",
+          "status": "executed",
+          "reason": null
+        },
+        {
+          "id": "s86-oos",
+          "try": null,
+          "task": "Part of my first answer that is not about knowing where I am.",
+          "real_if": null,
+          "not_real_if": null,
+          "what_happened": "\"Avatar\" is a word I do not know and cannot learn. That is about the word, not about where I am.",
+          "status": "out_of_scope",
+          "reason": "Not about knowing where I am."
+        }
+      ],
+      "opinion": "softened",
+      "closing_comment": "The page is named and the name stays at the top, so I can say where I am. My trouble is that I do not know the word \"avatar\".",
+      "provisional": false
+    }
+  },
+  "transitions": {
+    "t132": {
+      "where": "The second picture is a different page, headed \"Avatar\", with cartoon figures and \"Make your avatar\". The first was the \"Me\" settings page.",
+      "action_sentence": "You stayed on this screen and scrolled up.",
+      "expectation": "The heading says I am on a page called \"Avatar\", though I was told I stayed where I was.",
+      "confidence": "guessing",
+      "cue": "The heading \"Avatar\" at the top, which replaced \"Me\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I was told I stayed on the same screen and only scrolled up, but the heading changed from \"Me\" to \"Avatar\" and everything below is different. Either I have gone somewhere without meaning to, or the heading is wrong. Also, \"Avatar\" is a word I do not know, so even the new heading does not tell me where I am.",
+        "solution": "If I only moved the list, keep the same heading, \"Me\". If a new page has opened, say so plainly and name it in words I know."
+      },
+      "test_cases": [
+        {
+          "id": "t132-R",
+          "try": "R",
+          "task": "Side panel, gear; on the 'Me' page scroll up and down several times without tapping any row, watching the top; leave with the arrow.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "I scrolled the \"Me\" page up and down several times, starting on the blank right side. Each time the top kept the name \"Me\" and I stayed on the same page. No \"Avatar\" page opened. The \"Avatar\" page only appeared later, when I tapped the row named \"Avatar\".",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Trying it showed I was wrong to worry here. Scrolling never took me anywhere, and the heading stayed \"Me\". The \"Avatar\" page opens only when that row is pressed.",
+      "provisional": false
+    },
+    "t133": {
+      "where": "The second picture is a different page, headed \"Avatar\", with cartoon figures and \"Make your avatar\". The first was the \"Me\" settings page.",
+      "action_sentence": "You stayed on this screen and scrolled down.",
+      "expectation": "The heading says I am on a page called \"Avatar\", though I was told I stayed where I was.",
+      "confidence": "guessing",
+      "cue": "The heading \"Avatar\" at the top, which replaced \"Me\".",
+      "first_pass": {
+        "verdict": "navigate with difficulty",
+        "why": "I was told I stayed on the same screen and only scrolled down, but the heading changed from \"Me\" to \"Avatar\" and everything below is different. Either I have gone somewhere without meaning to, or the heading is wrong. Also, \"Avatar\" is a word I do not know, so even the new heading does not tell me where I am.",
+        "solution": "If I only moved the list, keep the same heading, \"Me\". If a new page has opened, say so plainly and name it in words I know."
+      },
+      "test_cases": [
+        {
+          "id": "t133-R",
+          "try": "R",
+          "task": "Side panel, gear; on the 'Me' page scroll up and down several times without tapping any row, watching the top; leave with the arrow.",
+          "real_if": "The name at the top changes or a different page opens while you only scroll.",
+          "not_real_if": "The top keeps the same name and you stay on the same page.",
+          "what_happened": "I scrolled the \"Me\" page up and down several times, starting on the blank right side. Each time the top kept the name \"Me\" and I stayed on the same page. No \"Avatar\" page opened. The \"Avatar\" page only appeared later, when I tapped the row named \"Avatar\".",
+          "status": "executed",
+          "reason": null
+        }
+      ],
+      "opinion": "reversed",
+      "closing_comment": "Trying it showed I was wrong to worry here. Scrolling never took me anywhere, and the heading stayed \"Me\". The \"Avatar\" page opens only when that row is pressed.",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "screens_reviewed": 85,
+    "transitions_reviewed": 2,
+    "confidence": {
+      "sure": 41,
+      "guessing": 44,
+      "no_idea": 2
+    },
+    "cue_nothing": 2,
+    "no_problem": 41,
+    "navigate_with_difficulty": 44,
+    "cannot_handle": 2,
+    "tests_run": 15,
+    "opinions": {
+      "unchanged": 19,
+      "hardened": 10,
+      "softened": 15,
+      "reversed": 2
+    },
+    "out_of_scope": 9,
+    "not_executed": 4
+  }
+}

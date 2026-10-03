@@ -1,0 +1,132 @@
+{
+  "app": "Messenger",
+  "screen": "screen23",
+  "images": {
+    "glyph_groups": "inputs/Messenger/functionality-groups/screen23_glyph_groups.png",
+    "function_groups": "inputs/Messenger/functionality-groups/screen23_function_groups.png"
+  },
+  "elements": {
+    "screen23-f1": {
+      "kind": "icon",
+      "appearance": "short horizontal bar",
+      "state": null,
+      "location": "bottom centre of screen23",
+      "bounds": [
+        0,
+        1978,
+        1080,
+        2021
+      ],
+      "visible_label": "none",
+      "convention_relied_on": "short horizontal bar: drag handle of a bottom sheet (drag, not tap) — my reading, confidence medium",
+      "convention_confidence": "medium",
+      "declared_function": "click to dismiss this bottom sheet",
+      "accessibility_text": "content_desc: 'Click to dismiss this bottom sheet'; talkback_label: 'Click to dismiss this bottom sheet'",
+      "context_reading": "bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions'",
+      "observed_function": "tapped twice and dragged down: nothing happened; the sheet stayed open (it closes only via OK / the dimmed area)",
+      "glyph_group": "gg28",
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "gg28-tc-screen23-f1",
+          "type": "same_appearance",
+          "precondition": "Messenger open on the live equivalent of screen23 (bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions')",
+          "action": "note what is on screen, then tap the short horizontal bar at bottom centre of screen23",
+          "expected_result": "the same result as the other members of gg28 (short horizontal bar)",
+          "confirms_if": "it does something unrelated to the other members in the same visual state, with nothing on screen saying so before the tap",
+          "overturns_if": "it does the same thing, or the difference is a state toggle / screen-scoped variant, or visible attached context names the difference before the tap",
+          "observed_result": "tapped twice and dragged down: nothing happened; the sheet stayed open (it closes only via OK / the dimmed area)",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {
+        "gg28": null
+      },
+      "provisional": true
+    },
+    "screen23-f2": {
+      "kind": "icon+label",
+      "appearance": "bulleted list with the words \"See more suggestions\"",
+      "state": null,
+      "location": "bottom centre of screen23",
+      "bounds": [
+        0,
+        2022,
+        1080,
+        2169
+      ],
+      "visible_label": "See more suggestions",
+      "convention_relied_on": "bulleted list with the words \"See more suggestions\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "see more suggestions",
+      "accessibility_text": "content_desc: 'See more suggestions'; talkback_label: 'See more suggestions'",
+      "context_reading": "bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions'",
+      "observed_function": "opened a full 'People you may know' page",
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen23-f2",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen23 (bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions')",
+          "action": "note what is on screen, then tap the bulleted list with the words \"See more suggestions\" at bottom centre of screen23",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "opened a full 'People you may know' page",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": false
+    },
+    "screen23-f3": {
+      "kind": "icon+label",
+      "appearance": "crossed-out eye with the words \"Hide suggestions\"",
+      "state": null,
+      "location": "bottom centre of screen23",
+      "bounds": [
+        0,
+        2169,
+        1080,
+        2316
+      ],
+      "visible_label": "Hide suggestions",
+      "convention_relied_on": "crossed-out eye with the words \"Hide suggestions\": no established convention relied on — my reading, confidence low",
+      "convention_confidence": "low",
+      "declared_function": "hide suggestions",
+      "accessibility_text": "content_desc: 'Hide suggestions'; talkback_label: 'Hide suggestions'",
+      "context_reading": "bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions'",
+      "observed_function": null,
+      "glyph_group": null,
+      "function_group": null,
+      "test_cases": [
+        {
+          "id": "none-tc-screen23-f3",
+          "type": "function_determination",
+          "precondition": "Messenger open on the live equivalent of screen23 (bottom sheet: grey bar, 'See more suggestions', 'Hide suggestions')",
+          "action": "note what is on screen, then tap the crossed-out eye with the words \"Hide suggestions\" at bottom centre of screen23",
+          "expected_result": "some observable action that places the element",
+          "confirms_if": "(placement test) an action that joins or contradicts an existing group",
+          "overturns_if": "nothing happens (not a control) or it does a job no group holds",
+          "observed_result": "would hide suggestions — a settings change",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "inherited_verdicts": {},
+      "provisional": true
+    }
+  },
+  "summary": {
+    "elements_evaluated": 3,
+    "elements_in_issue_groups": 0,
+    "functions_determined_by_testing": 0,
+    "detection_false_positives": 1,
+    "test_cases_executed": 2,
+    "test_cases_not_executed": 1,
+    "provisional_verdicts": 2
+  }
+}

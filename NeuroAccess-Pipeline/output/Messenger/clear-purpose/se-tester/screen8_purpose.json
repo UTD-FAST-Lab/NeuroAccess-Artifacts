@@ -1,0 +1,317 @@
+{
+ "app": "Messenger",
+ "screen": "screen8",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen8_actionable_elements.png",
+ "elements": {
+  "screen8-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "fp_notepanel",
+   "location": "middle, full width",
+   "bounds": [
+    0,
+    63,
+    1080,
+    1517
+   ],
+   "visible_text": "none of its own (only the controls it encloses)",
+   "accessibility_text_consulted": null,
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Missing Purpose",
+   "initial_rationale": "the whole note composer area is marked; it has no visible text of its own",
+   "test_cases": [
+    {
+     "id": "screen8-a1-tc1",
+     "type": "verification",
+     "precondition": "New note open",
+     "action": "tap empty white areas of the composer",
+     "expected_result": "a tap does something identifiable",
+     "confirms_if": "nothing happens",
+     "overturns_if": "it proves inert",
+     "observed_result": "nothing opened or changed (the text cursor merely left the bubble)",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping empty parts of the note composer only took the cursor out of the text bubble - no action and no state; it is the panel's container",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a2": {
+   "kind": "icon",
+   "glyph": "X shape",
+   "description": "X shape",
+   "location": "top, left",
+   "bounds": [
+    11,
+    74,
+    137,
+    200
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Close' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "X = close - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an X at the top left of a composer is the close convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen8-a2-tc1",
+     "type": "verification",
+     "precondition": "New note open, nothing typed",
+     "action": "tap the X",
+     "expected_result": "the composer closes",
+     "confirms_if": "something else happens",
+     "overturns_if": "it closes",
+     "observed_result": "the composer closed and the previous screen returned; nothing was posted",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the X closed the composer without posting",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Share'",
+   "location": "top, right",
+   "bounds": [
+    868,
+    85,
+    1048,
+    188
+   ],
+   "visible_text": "'Share'",
+   "accessibility_text_consulted": "content_desc 'Share' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible word 'Share' (greyed) at the top right of 'New note'",
+   "test_cases": [
+    {
+     "id": "screen8-a3-tc1",
+     "type": "expected",
+     "precondition": "New note open, nothing typed",
+     "action": "tap the greyed 'Share'",
+     "expected_result": "nothing is posted while empty",
+     "confirms_if": "it posts or does something else",
+     "overturns_if": "it stays inactive",
+     "observed_result": "nothing happened; the button stayed greyed",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "with nothing typed the greyed 'Share' did nothing, consistent with a share button waiting for content; not pressed with text (it would post a real note)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a4": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'Share a thought…'",
+   "location": "top, centre",
+   "bounds": [
+    379,
+    538,
+    701,
+    589
+   ],
+   "visible_text": "placeholder: 'Share a thought…'",
+   "accessibility_text_consulted": "talkback_label 'Share a thought…' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the bubble reads 'Share a thought...' and sits on the user's avatar above a footer saying who sees it",
+   "test_cases": [
+    {
+     "id": "screen8-a4-tc1",
+     "type": "expected",
+     "precondition": "New note open",
+     "action": "tap the bubble and type 'hello', then delete it",
+     "expected_result": "the text appears in the bubble and stays understandable",
+     "confirms_if": "the hint vanishes leaving nothing to say what this is",
+     "overturns_if": "the bubble and footer keep it understandable",
+     "observed_result": "'hello' appeared in the bubble, 'Share' turned active; after deleting, the hint returned; nothing was posted",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "typing replaced the hint with the text inside the same bubble; the footer about visibility stayed, so the purpose survived typing",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a5": {
+   "kind": "icon",
+   "glyph": "musical note",
+   "description": "musical note",
+   "location": "middle, centre",
+   "bounds": [
+    356,
+    924,
+    451,
+    1019
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Music note' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "musical note = music - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a musical note with no label; music note is a widely-known 'music' glyph; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen8-a5-tc1",
+     "type": "verification",
+     "precondition": "New note open",
+     "action": "tap the musical note",
+     "expected_result": "a music/song chooser opens",
+     "confirms_if": "something unrelated opens",
+     "overturns_if": "a song chooser opens",
+     "observed_result": "a song picker opened (backed out without choosing)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the music note opened a song picker",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a6": {
+   "kind": "icon",
+   "glyph": "rounded square with the letters GIF",
+   "description": "rounded square with the letters GIF",
+   "location": "middle, centre",
+   "bounds": [
+    493,
+    924,
+    588,
+    1019
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'GIF Note' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the glyph contains the visible letters 'GIF'",
+   "test_cases": [
+    {
+     "id": "screen8-a6-tc1",
+     "type": "expected",
+     "precondition": "New note open",
+     "action": "tap 'GIF'",
+     "expected_result": "a GIF chooser opens",
+     "confirms_if": "something else opens",
+     "overturns_if": "it matches",
+     "observed_result": "a GIF picker opened (backed out without choosing)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the GIF button opened a GIF picker",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a7": {
+   "kind": "icon",
+   "glyph": "smiling face",
+   "description": "smiling face",
+   "location": "middle, centre",
+   "bounds": [
+    630,
+    924,
+    725,
+    1019
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Mood note' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "smiling face = emoji - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a smiling face with no label; smiley is the emoji convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen8-a7-tc1",
+     "type": "verification",
+     "precondition": "New note open",
+     "action": "tap the smiling face",
+     "expected_result": "an emoji chooser opens",
+     "confirms_if": "something unrelated opens",
+     "overturns_if": "an emoji chooser opens",
+     "observed_result": "a 'Mood' bubble with an emoji keyboard opened (closed without choosing)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the smiley opened a 'Mood' emoji picker",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen8-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Change'",
+   "location": "middle, centre",
+   "bounds": [
+    486,
+    1446,
+    595,
+    1485
+   ],
+   "visible_text": "'Change'",
+   "accessibility_text_consulted": "talkback_label 'Change' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "a lone 'Change' link; the sentence before it mentions who can see the note, where, and for how long - it is not obvious which of these 'Change' changes",
+   "test_cases": [
+    {
+     "id": "screen8-a8-tc1",
+     "type": "expected",
+     "precondition": "New note open",
+     "action": "tap 'Change'",
+     "expected_result": "it opens settings for what the sentence describes",
+     "confirms_if": "it changes only part of it, or something else",
+     "overturns_if": "it opens settings for audience and duration",
+     "observed_result": "'Note settings' opened: 'Who can see your note?' (Public, Friends and connections, Friends, Custom) and 'Show note for' (24/12/6/3 hours); backed out without saving",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "'Change' opened 'Note settings' with exactly the two things the sentence describes - who can see the note and how long it shows - so the preceding sentence did make it clear",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 8,
+  "issues": 0,
+  "missing_purpose": 0,
+  "unclear_purpose": 0,
+  "clear_purpose": 7,
+  "clear_via_common_icon_exemption": 3,
+  "detection_false_positives": 1,
+  "test_cases_executed": 8,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 6,
+  "instincts_overturned": 2,
+  "provisional_verdicts": 0
+ }
+}

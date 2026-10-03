@@ -1,0 +1,39 @@
+{
+  "app": "ChatGPT",
+  "screen": "s13",
+  "state_str": "983749c3e9e9d29f08fe6bd86d2d9d8f",
+  "image": "inputs/ChatGPT/droidbot_output/states/screen_2026-09-19_204344.png",
+  "marked_image": "inputs/ChatGPT/location-graph/marked/s13_header_nav.png",
+  "name": "the image gallery (\"Images\") opened from the side menu, scrolled slightly",
+  "regions_read": [
+    {
+      "kind": "navigation",
+      "text": "Trending | Templates (Trending selected)",
+      "verdict_on_region": "visible grey pill on \"Trending\"; names the sub-section of the gallery"
+    }
+  ],
+  "identifier_found": "\"Trending\" tab with a filled pill; a back arrow; the notice \"Your generated images moved to Library\" overlapping the top bar",
+  "identifier_class": "navigation bar with visible active state",
+  "accessibility_text": "contains_selected_view true, selected_item_text \"Trending\"",
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "the active tab is visibly highlighted and the grid is plainly the image templates",
+  "test_cases": [
+    {
+      "id": "s13-tc1",
+      "type": "verification",
+      "precondition": "side menu open",
+      "action": "tap \"Images\", then scroll the gallery a little and back to the very top",
+      "expected_result": "a title either appears at the top or never does",
+      "confirms_if": "no title in any state",
+      "overturns_if": "a title appears when scrolled to the top",
+      "observed_result": "at the very top the gallery shows a centred \"Images\" title in the top bar above the notice card; a short scroll (the state this capture holds) slides the notice card over it and the title is gone, returning only when the list is back at the top",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the active tab is a real, moving highlight (tested on s3, same tab row — template carry declared: s3, s12 and s13 share structure 260c7ba9 and the tab row is identical); in addition a hidden \"Images\" title exists at the top of this screen. The captured state is the slightly scrolled one in which that title has already scrolled away — a scroll loss the capture holds no scroll edge for; flagged for location-graph-detector.",
+  "recommendation": "pin the \"Images\" title in the top bar rather than letting the notice card slide over it",
+  "provisional": false
+}

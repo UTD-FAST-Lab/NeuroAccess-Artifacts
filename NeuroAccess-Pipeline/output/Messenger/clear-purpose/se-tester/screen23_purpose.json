@@ -1,0 +1,106 @@
+{
+ "app": "Messenger",
+ "screen": "screen23",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen23_actionable_elements.png",
+ "elements": {
+  "screen23-a1": {
+   "kind": "icon",
+   "glyph": "short horizontal bar",
+   "description": "short horizontal bar",
+   "location": "bottom, full width",
+   "bounds": [
+    0,
+    1978,
+    1080,
+    2021
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Click to dismiss this bottom sheet' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "short bar at the top of a sheet = drag handle - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a short grey bar at the top of a sheet is the drag-handle convention (pull down to close)",
+   "test_cases": [],
+   "final_verdict": null,
+   "instinct": "overturned",
+   "deciding_evidence": "DETECTION FALSE POSITIVE: tapping the bar did nothing and dragging it down did not move or close the sheet; it is a decoration, not a control [test run once on screen22-a1 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen23-a2": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'See more suggestions'",
+   "location": "bottom, full width",
+   "bounds": [
+    0,
+    2022,
+    1080,
+    2169
+   ],
+   "visible_text": "'See more suggestions'",
+   "accessibility_text_consulted": "content_desc 'See more suggestions' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'See more suggestions' with a list glyph",
+   "test_cases": [
+    {
+     "id": "screen23-a2-tc1",
+     "type": "expected",
+     "precondition": "the suggestions options sheet open",
+     "action": "tap 'See more suggestions'",
+     "expected_result": "a longer list of suggestions opens",
+     "confirms_if": "it opens something the label does not name",
+     "overturns_if": "the list opens",
+     "observed_result": "a full-screen prompt 'Find Your Phone Contacts on Messenger' (Turn on / Not now) appeared first; backing out showed 'People you may know'",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "overturned",
+   "deciding_evidence": "the label promises more suggestions, but the first thing it opened was 'Find Your Phone Contacts on Messenger' asking to upload contacts; the list only appeared after backing out",
+   "recommendation": "open the suggestion list directly, or label the step ('See more - we'll ask to use your contacts')",
+   "provisional": false
+  },
+  "screen23-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Hide suggestions'",
+   "location": "bottom, full width",
+   "bounds": [
+    0,
+    2169,
+    1080,
+    2316
+   ],
+   "visible_text": "'Hide suggestions'",
+   "accessibility_text_consulted": "content_desc 'Hide suggestions' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "visible 'Hide suggestions' with a crossed-out eye",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the words state the action; not pressed, since hiding would change the account's list",
+   "recommendation": null,
+   "provisional": false
+  }
+ },
+ "summary": {
+  "elements_evaluated": 3,
+  "issues": 1,
+  "missing_purpose": 0,
+  "unclear_purpose": 1,
+  "clear_purpose": 1,
+  "clear_via_common_icon_exemption": 0,
+  "detection_false_positives": 1,
+  "test_cases_executed": 1,
+  "test_cases_not_executed": 0,
+  "instincts_confirmed": 1,
+  "instincts_overturned": 2,
+  "provisional_verdicts": 0
+ }
+}

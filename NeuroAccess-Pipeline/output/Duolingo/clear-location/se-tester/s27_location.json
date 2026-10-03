@@ -1,0 +1,44 @@
+{
+  "app": "Duolingo",
+  "screen": "s27",
+  "state_str": "5c69b72754e19bdba1de101e5db5cb1a",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_185750.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s27_header_nav.png",
+  "name": "the Learn path with no tab highlighted",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "SECTION 1, UNIT 1 / Order at a café",
+      "verdict_on_region": "content: names the course unit being studied, not a part of the app"
+    },
+    {
+      "kind": "navigation",
+      "text": null,
+      "verdict_on_region": "icon-only bottom tab bar with no item highlighted — says where you could go, not where you are"
+    }
+  ],
+  "identifier_found": "none: the bottom bar shows no highlighted item; the only header is the unit banner 'SECTION 1, UNIT 1 / Order at a café', which names course content",
+  "identifier_class": "none",
+  "accessibility_text": "tab content_descriptions 'Learn Tab', 'Goals Tab', 'Leagues Tab', 'News Tab', 'Upgrade' — none names the current screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "the same path as the Learn home but the light-blue box is absent from every tab; the banner names the unit, not a part of the app",
+  "test_cases": [
+    {
+      "id": "s27-tc1",
+      "type": "verification",
+      "precondition": "Learn path shown; Leaderboards and Feed reachable",
+      "action": "tap the ⋯ tab from Learn and from Feed and watch the bar before and after the menu appears",
+      "expected_result": "either some tab always stays highlighted, or a state with no highlighted tab appears",
+      "confirms_if": "no tab is highlighted while the menu opens or the Profile loads",
+      "overturns_if": "a tab remains highlighted in every state",
+      "observed_result": "from Learn the house stayed boxed while the Profile/Video Call menu slid up; from Feed the menu opened with no tab boxed at all (neither the heart nor the ⋯); on the Profile itself no tab is boxed. A bar with no active item is reachable live",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "the live app does produce a tab bar with nothing highlighted around the ⋯ menu and on the Profile; with the highlight gone the unit banner (content) is all that remains. Probably a frame on the way to the Profile (the next captured state, s28, is the Profile)",
+  "recommendation": "keep the current tab highlighted until the next screen has drawn, and give the ⋯/Profile destination its own highlighted state",
+  "provisional": false
+}

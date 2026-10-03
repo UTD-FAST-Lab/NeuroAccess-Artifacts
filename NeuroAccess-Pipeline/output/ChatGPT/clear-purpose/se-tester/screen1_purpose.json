@@ -1,0 +1,378 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen1",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen1_actionable_elements.png",
+  "elements": {
+    "screen1-a1": {
+      "kind": "icon",
+      "glyph": "two horizontal lines, the lower one shorter",
+      "description": "top-left header control",
+      "location": "top-left header control",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Menu\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "two/three stacked lines = open the main menu (hamburger) - my reading; the two-line variant is slightly less canonical than three lines",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "no label, but two stacked horizontal lines is a recognizable variant of the hamburger menu convention - common-icon exemption pending the behavioural test",
+      "test_cases": [
+        {
+          "id": "screen1-a1-tc1",
+          "type": "verification",
+          "precondition": "app open on a new chat",
+          "action": "tap the two-line glyph at top left and watch",
+          "expected_result": "a menu or navigation panel opens",
+          "confirms_if": "it does something other than open a menu",
+          "overturns_if": "a navigation drawer opens",
+          "observed_result": "a navigation drawer slid in from the left listing Images, Library, Projects, Scheduled, Plugins and past chats; the taps registered about 3-5 s late",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping it slid a navigation drawer in from the left, exactly what the menu convention promises; the missing label is not a barrier",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "pill in the header with a sparkle glyph and the words 'Get Plus'",
+      "location": "pill in the header with a sparkle glyph and the words 'Get Plus'",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_text": "\"Get Plus\"",
+      "accessibility_text_consulted": "talkback_label \"Get Plus\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Unclear Purpose",
+      "initial_rationale": "visible words 'Get Plus' with a sparkle; 'Plus' is a product name a first-time user has no way to decode, and nothing says it costs money",
+      "test_cases": [
+        {
+          "id": "screen1-a2-tc1",
+          "type": "expected",
+          "precondition": "new chat screen",
+          "action": "tap 'Get Plus'",
+          "expected_result": "the label predicts getting something called Plus",
+          "confirms_if": "the outcome is a paid subscription the words did not predict",
+          "overturns_if": "the outcome is plainly what a first-time user would expect from the words",
+          "observed_result": "opened a full-screen 'ChatGPT Plus' page with a Free/Plus feature table and a black 'Upgrade for $19.99' button, 'Renews monthly. Cancel anytime.'",
+          "status": "executed",
+          "matched_expectation": false
+        }
+      ],
+      "final_verdict": "Unclear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a paywall ('ChatGPT Plus', 'Upgrade for $19.99', 'Renews monthly') - a paid monthly subscription the words 'Get Plus' never mentioned",
+      "recommendation": "say what it is and that it is paid, e.g. 'Upgrade to Plus (paid plan)'",
+      "provisional": false
+    },
+    "screen1-a3": {
+      "kind": "icon",
+      "glyph": "speech bubble drawn with a broken outline",
+      "description": "top-right header control",
+      "location": "top-right header control",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Temporary chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a speech bubble drawn with a broken outline is not an established convention and carries no label",
+      "test_cases": [
+        {
+          "id": "screen1-a3-tc1",
+          "type": "verification",
+          "precondition": "new chat screen",
+          "action": "long-press the glyph for 1.2 s looking for a tooltip, then observe",
+          "expected_result": "a tooltip or label appears",
+          "confirms_if": "no label appears in any state before the tap",
+          "overturns_if": "a tooltip or visible caption names the control",
+          "observed_result": "no tooltip appeared; the long-press acted as a tap and switched the screen to a 'Temporary chat' view ('This chat won't appear in history.') with the glyph now showing a checkmark - the name appears only after activation",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "no tooltip on long-press and no visible text in any state before activation; the words 'Temporary chat' appear only on the screen the tap opens",
+      "recommendation": "add a visible label beside or under the glyph, e.g. 'Temporary chat (not saved)'",
+      "provisional": false
+    },
+    "screen1-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "suggestion row: outline glyph at left followed by the words",
+      "location": "suggestion row: outline glyph at left followed by the words",
+      "bounds": [
+        0,
+        1754,
+        1080,
+        1885
+      ],
+      "visible_text": "\"Start a voice chat\"",
+      "accessibility_text_consulted": "talkback_label \"Start a voice chat\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "row reads 'Start a voice chat' with a headphones glyph - the words say what happens",
+      "test_cases": [
+        {
+          "id": "screen1-a4-tc1",
+          "type": "expected",
+          "precondition": "new chat screen",
+          "action": "tap 'Start a voice chat'",
+          "expected_result": "a voice conversation starts",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "not run: starting voice mode is not allowed; the row is also absent from the current live build",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the visible words 'Start a voice chat' state the action; not exercised because starting voice mode is outside the safety rules, and the row no longer appears on the live build",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "suggestion row: outline glyph at left followed by the words",
+      "location": "suggestion row: outline glyph at left followed by the words",
+      "bounds": [
+        0,
+        1885,
+        1080,
+        2016
+      ],
+      "visible_text": "\"Create an image or sticker\"",
+      "accessibility_text_consulted": "talkback_label \"Create an image or sticker\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "row reads 'Create an image or sticker' with a picture glyph",
+      "test_cases": [
+        {
+          "id": "screen1-a5-tc1",
+          "type": "expected",
+          "precondition": "new chat screen",
+          "action": "tap 'Create an image or sticker'",
+          "expected_result": "an image-creation mode or screen opens",
+          "confirms_if": "something unrelated happens",
+          "overturns_if": "image creation opens",
+          "observed_result": "the composer showed a blue 'Create image' token and a Trending/Templates grid of captioned image tiles appeared",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping switched the screen into image creation: a 'Create image' token in the composer and a grid of style tiles - what the words promise",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a6": {
+      "kind": "button",
+      "glyph": null,
+      "description": "suggestion row: outline glyph at left followed by the words",
+      "location": "suggestion row: outline glyph at left followed by the words",
+      "bounds": [
+        0,
+        2016,
+        1080,
+        2147
+      ],
+      "visible_text": "\"Write or edit\"",
+      "accessibility_text_consulted": "talkback_label \"Write or edit\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "row reads 'Write or edit' with a pencil glyph",
+      "test_cases": [
+        {
+          "id": "screen1-a6-tc1",
+          "type": "expected",
+          "precondition": "new chat screen",
+          "action": "tap 'Write or edit'",
+          "expected_result": "writing help appears",
+          "confirms_if": "something unrelated happens",
+          "overturns_if": "writing suggestions appear",
+          "observed_result": "a panel headed 'Write or edit' with three pencil-glyph suggestions appeared and the composer placeholder changed to 'Write anything'",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a 'Write or edit' panel of writing suggestions above the composer - consistent with the words",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a7": {
+      "kind": "icon",
+      "glyph": "plus sign",
+      "description": "left end of the message composer",
+      "location": "left end of the message composer",
+      "bounds": [
+        32,
+        2179,
+        158,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Attachment\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "plus sign = add / attach - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled plus sign; + = add something is an established convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen1-a7-tc1",
+          "type": "verification",
+          "precondition": "new chat composer",
+          "action": "tap the plus glyph",
+          "expected_result": "a menu of things to add opens",
+          "confirms_if": "it does something other than add",
+          "overturns_if": "an add/attach menu opens",
+          "observed_result": "a pop-up card opened with Camera, Photos, Files, Plugins and Think harder",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened an add menu (Camera, Photos, Files, Plugins, Think harder) - adding things to the message, as the plus convention promises",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a8": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "message composer; visible placeholder/content 'Ask ChatGPT'",
+      "location": "message composer",
+      "bounds": [
+        158,
+        2179,
+        791,
+        2305
+      ],
+      "visible_text": "placeholder: \"Ask ChatGPT\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "placeholder 'Ask ChatGPT' in the bottom text box names what to put in: a question for ChatGPT",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the placeholder names the expected content, and a chat composer's own text is self-describing once typing starts; not a finding",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a9": {
+      "kind": "icon",
+      "glyph": "microphone",
+      "description": "composer control",
+      "location": "composer control",
+      "bounds": [
+        791,
+        2179,
+        917,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Dictation\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": "microphone = speak instead of typing - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "unlabeled microphone; microphone = speak / voice input is an established convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen1-a9-tc1",
+          "type": "verification",
+          "precondition": "chat composer",
+          "action": "tap the microphone glyph",
+          "expected_result": "voice input starts or microphone access is requested",
+          "confirms_if": "it does something unrelated to speaking",
+          "overturns_if": "it starts listening or asks for the microphone",
+          "observed_result": "Android's 'Allow ChatGPT to record audio?' dialog appeared; I chose 'Don't allow' and returned to the chat",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping raised the system request to record audio - the microphone convention held (permission was denied per safety rules)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen1-a10": {
+      "kind": "icon",
+      "glyph": "blue filled circle with vertical sound-wave bars",
+      "description": "right end of the composer",
+      "location": "right end of the composer",
+      "bounds": [
+        917,
+        2179,
+        1043,
+        2305
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "talkback_label \"Start a voice conversation\" - read only to know what to watch for when testing; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a filled circle with vertical sound-wave bars is not an established convention a first-time user would read, and it carries no label",
+      "test_cases": [
+        {
+          "id": "screen1-a10-tc1",
+          "type": "verification",
+          "precondition": "new chat screen",
+          "action": "tap the blue sound-wave circle and observe; check for any label before and after",
+          "expected_result": "something visible names the action",
+          "confirms_if": "no label exists before the tap",
+          "overturns_if": "a visible label names it",
+          "observed_result": "the whole screen changed to a grey voice layout, then Android's record-audio request appeared; after denying, a dialog read 'Please enable microphone access in System Settings to use Voice.' - the word Voice appears only after activation",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "no label in any state before the tap; only after tapping does a dialog mention 'Voice', and the control sits right beside a microphone, so the two voice controls are not told apart",
+      "recommendation": "label it, e.g. 'Talk with ChatGPT' beside the glyph, and distinguish it from the dictation microphone",
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 10,
+    "issues": 3,
+    "missing_purpose": 2,
+    "unclear_purpose": 1,
+    "clear_purpose": 7,
+    "clear_via_common_icon_exemption": 3,
+    "detection_false_positives": 0,
+    "test_cases_executed": 8,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 10,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

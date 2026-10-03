@@ -1,0 +1,69 @@
+{
+  "app": "PDFReader",
+  "screen": "screen27",
+  "image": "inputs/PDFReader/actionable-elements-highlighted/screen27_actionable_elements.png",
+  "elements": {
+    "screen27-a1": {
+      "kind": "button",
+      "glyph": null,
+      "description": "dark full-width button \"Set as default\"",
+      "location": "bottom sheet, primary button",
+      "bounds": [
+        42,
+        2127,
+        1038,
+        2253
+      ],
+      "visible_text": "\"Set as default\", under \"Set PDF Reader, PDF Viewer as your default app\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible words; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "the button and the sentence above it say it makes this app the default PDF app",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "the button and the sentence above it say it makes this app the default PDF app (not tested: judged Clear on its visible text, and tapping it would start a purchase/billing flow or change a setting) — tested once on screen11-a1; this is a duplicate of that control and the verdict is carried here",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen27-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "plain grey text button \"Later\"",
+      "location": "bottom sheet, under the primary button",
+      "bounds": [
+        42,
+        2274,
+        1038,
+        2358
+      ],
+      "visible_text": "\"Later\"",
+      "accessibility_text_consulted": "talkback_label repeats the visible word; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "\"Later\" under a set-as-default offer is the familiar \"not now\" dismissal",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "Later closed the sheet without setting anything, as the word promises — tested once on screen11-a2; this is a duplicate of that control and the verdict is carried here",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 2,
+    "issues": 0,
+    "missing_purpose": 0,
+    "unclear_purpose": 0,
+    "clear_purpose": 2,
+    "clear_via_common_icon_exemption": 0,
+    "detection_false_positives": 0,
+    "test_cases_executed": 0,
+    "test_cases_not_executed": 0,
+    "instincts_confirmed": 2,
+    "instincts_overturned": 0,
+    "provisional_verdicts": 0
+  }
+}

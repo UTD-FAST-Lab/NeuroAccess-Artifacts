@@ -1,0 +1,476 @@
+{
+ "app": "Messenger",
+ "screen": "screen12",
+ "image": "inputs/Messenger/actionable-elements-highlighted/screen12_actionable_elements.png",
+ "elements": {
+  "screen12-a1": {
+   "kind": "button",
+   "glyph": null,
+   "description": "story_header_wrap",
+   "location": "top, left",
+   "bounds": [
+    0,
+    100,
+    711,
+    271
+   ],
+   "visible_text": "the author's name and age inside it",
+   "accessibility_text_consulted": "talkback_label 'Siquem Lsm Siquem Lsm 5 hours' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the author strip (photo, name, age) at the top of a story; leads to the author",
+   "test_cases": [
+    {
+     "id": "screen12-a1-tc1",
+     "type": "expected",
+     "precondition": "a story playing",
+     "action": "tap the empty right-hand part of the author strip",
+     "expected_result": "the author's chat or profile opens",
+     "confirms_if": "nothing, or something unrelated",
+     "overturns_if": "it leads to the author",
+     "observed_result": "the author's conversation opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping an empty part of the author strip opened the author's conversation, the same as the name",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a2": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'Siquem Lsm'",
+   "location": "top, left",
+   "bounds": [
+    163,
+    133,
+    381,
+    186
+   ],
+   "visible_text": "'Siquem Lsm'",
+   "accessibility_text_consulted": "talkback_label 'Siquem Lsm' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the author's name at the top of a story; a name conventionally leads to that person",
+   "test_cases": [
+    {
+     "id": "screen12-a2-tc1",
+     "type": "expected",
+     "precondition": "a story playing",
+     "action": "tap the author's name",
+     "expected_result": "something about that person opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "it leads to the person",
+     "observed_result": "the conversation with the author opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the author's name left the story and opened the conversation with that person",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a3": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing '5h'",
+   "location": "top, centre",
+   "bounds": [
+    381,
+    133,
+    457,
+    186
+   ],
+   "visible_text": "'5h'",
+   "accessibility_text_consulted": "content_desc '5 hours' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "a time label ('5h', '4h') drawn like plain information; nothing suggests it does anything",
+   "test_cases": [
+    {
+     "id": "screen12-a3-tc1",
+     "type": "expected",
+     "precondition": "a story playing",
+     "action": "tap the age label next to the name",
+     "expected_result": "nothing, or story details",
+     "confirms_if": "it navigates away somewhere unpredicted",
+     "overturns_if": "nothing happens / details shown",
+     "observed_result": "the story closed and the author's conversation opened",
+     "status": "executed",
+     "matched_expectation": false
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the age label left the story and opened the author's conversation - a time stamp gives no hint of that",
+   "recommendation": "do not make the time stamp a tap target, or make the whole author area visibly a single 'Open chat' link",
+   "provisional": false
+  },
+  "screen12-a4": {
+   "kind": "icon",
+   "glyph": "three horizontal dots",
+   "description": "three horizontal dots",
+   "location": "top, right",
+   "bounds": [
+    711,
+    138,
+    806,
+    233
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'More options' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "three horizontal dots = more options - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "three dots in the story header; more-options convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen12-a4-tc1",
+     "type": "verification",
+     "precondition": "a story playing",
+     "action": "tap the three dots",
+     "expected_result": "a menu of options appears",
+     "confirms_if": "something else happens",
+     "overturns_if": "a menu appears",
+     "observed_result": "a menu opened with 'Something's wrong' and 'Mute <name>'s story' (dismissed with Back, nothing chosen)",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the dots opened a menu of story options",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a5": {
+   "kind": "icon",
+   "glyph": "speaker with sound waves",
+   "description": "speaker with sound waves",
+   "location": "top, right",
+   "bounds": [
+    827,
+    138,
+    922,
+    233
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Mute' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "speaker = sound on/off - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a speaker with sound waves; speaker = sound on/off; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen12-a5-tc1",
+     "type": "verification",
+     "precondition": "a video story playing",
+     "action": "tap the speaker twice",
+     "expected_result": "sound turns off then on",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "sound toggles",
+     "observed_result": "the glyph switched to a muted speaker and back; the story kept playing",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the speaker toggled the story's sound (the glyph switched to its muted form and back)",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a6": {
+   "kind": "icon",
+   "glyph": "X shape",
+   "description": "X shape",
+   "location": "top, right",
+   "bounds": [
+    943,
+    138,
+    1038,
+    233
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Dismiss' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "X = close - my reading",
+   "convention_confidence": "high",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "an X at the top right of a story; close convention; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen12-a6-tc1",
+     "type": "verification",
+     "precondition": "a story playing",
+     "action": "tap the X",
+     "expected_result": "the story closes",
+     "confirms_if": "something else happens",
+     "overturns_if": "it closes",
+     "observed_result": "the story closed and the previous list returned",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the X closed the story and returned to the list",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a7": {
+   "kind": "icon",
+   "glyph": "circular profile photo",
+   "description": "circular profile photo",
+   "location": "top, left",
+   "bounds": [
+    42,
+    141,
+    131,
+    230
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Siquem Lsm' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "person photo = that person",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "the author's small photo at the top left of a story; photo = that person",
+   "test_cases": [
+    {
+     "id": "screen12-a7-tc1",
+     "type": "verification",
+     "precondition": "a story playing",
+     "action": "tap the author's small photo",
+     "expected_result": "something about the author opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "it leads to the author",
+     "observed_result": "the author's conversation opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the photo opened the author's conversation",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a8": {
+   "kind": "button",
+   "glyph": null,
+   "description": "control showing 'OUTRO · M83'",
+   "location": "top, centre",
+   "bounds": [
+    163,
+    186,
+    711,
+    270
+   ],
+   "visible_text": "'OUTRO · M83'",
+   "accessibility_text_consulted": "talkback_label 'OUTRO · M83' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Unclear Purpose",
+   "initial_rationale": "a song title line ('OUTRO - M83 >') with a chevron; it does not say whether pressing plays, shows or shares the song",
+   "test_cases": [
+    {
+     "id": "screen12-a8-tc1",
+     "type": "expected",
+     "precondition": "a story with a song line playing",
+     "action": "tap the song line",
+     "expected_result": "song details open",
+     "confirms_if": "something unpredicted happens",
+     "overturns_if": "song details open",
+     "observed_result": "not executed - the attempt coincided with the story auto-advancing, so no reliable outcome was observed",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Unclear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the tap was attempted but the story auto-advanced while it ran, so the outcome could not be observed reliably; carried provisionally",
+   "recommendation": "add a verb ('Listen on ...' / 'Song info') to the song line",
+   "provisional": true
+  },
+  "screen12-a9": {
+   "kind": "icon",
+   "glyph": "speech bubble with a zigzag",
+   "description": "speech bubble with a zigzag",
+   "location": "bottom, left",
+   "bounds": [
+    22,
+    2211,
+    127,
+    2305
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc 'Message' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "speech bubble = messages/chat - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a speech bubble (with a zigzag) at the left of the reply bar; speech bubble = message/chat; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen12-a9-tc1",
+     "type": "verification",
+     "precondition": "a story playing",
+     "action": "tap the speech bubble at the bottom left",
+     "expected_result": "the chat with the author opens",
+     "confirms_if": "something unrelated happens",
+     "overturns_if": "the chat opens",
+     "observed_result": "the author's conversation opened",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "the speech bubble opened the conversation with the story's author",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a10": {
+   "kind": "input field",
+   "glyph": null,
+   "description": "control showing 'Send message'",
+   "location": "bottom, centre",
+   "bounds": [
+    138,
+    2211,
+    642,
+    2305
+   ],
+   "visible_text": "placeholder: 'Send message'",
+   "accessibility_text_consulted": "talkback_label 'Send message' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": null,
+   "convention_confidence": null,
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "a pill reading 'Send message' at the bottom of a person's story - the place to write to them",
+   "test_cases": [
+    {
+     "id": "screen12-a10-tc1",
+     "type": "expected",
+     "precondition": "a story playing",
+     "action": "tap 'Send message'",
+     "expected_result": "a message box opens addressed to the author",
+     "confirms_if": "something else happens",
+     "overturns_if": "a message box opens",
+     "observed_result": "a text field with the keyboard and a send arrow opened, quick reactions above it; closed with Back, nothing typed or sent",
+     "status": "executed",
+     "matched_expectation": true
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "tapping the pill opened the keyboard with a 'Send message' field and a send arrow; the hint stayed until typing; nothing was sent",
+   "recommendation": null,
+   "provisional": false
+  },
+  "screen12-a11": {
+   "kind": "icon",
+   "glyph": "red heart",
+   "description": "red heart",
+   "location": "bottom, right",
+   "bounds": [
+    700,
+    2211,
+    800,
+    2305
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc '❤️' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "emoji next to content = react with it - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "large emoji (heart, laughing, surprised) beside the reply field; emoji beside a story = react; exemption pending a tap",
+   "test_cases": [
+    {
+     "id": "screen12-a11-tc1",
+     "type": "verification",
+     "precondition": "a story playing",
+     "action": "tap the heart",
+     "expected_result": "a reaction is sent",
+     "confirms_if": "something else happens",
+     "overturns_if": "a reaction is sent",
+     "observed_result": "not executed - it would send a real reaction, which the device safety rules forbid",
+     "status": "not_executed",
+     "matched_expectation": null
+    }
+   ],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not pressed: it would send a real reaction; carried provisionally on the convention",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen12-a12": {
+   "kind": "icon",
+   "glyph": "grinning face with squinting eyes",
+   "description": "grinning face with squinting eyes",
+   "location": "bottom, right",
+   "bounds": [
+    832,
+    2211,
+    932,
+    2305
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc '😆' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "emoji next to content = react with it - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "large emoji (heart, laughing, surprised) beside the reply field; emoji beside a story = react; exemption pending a tap",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not pressed: it would send a real reaction; carried provisionally on the convention [test run once on screen12-a11 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": true
+  },
+  "screen12-a13": {
+   "kind": "icon",
+   "glyph": "face with open mouth",
+   "description": "face with open mouth",
+   "location": "bottom, right",
+   "bounds": [
+    964,
+    2211,
+    1064,
+    2305
+   ],
+   "visible_text": "none",
+   "accessibility_text_consulted": "content_desc '😮' - read only to know what to test for; not used in the verdict",
+   "convention_relied_on": "emoji next to content = react with it - my reading",
+   "convention_confidence": "medium",
+   "initial_verdict": "Clear Purpose",
+   "initial_rationale": "large emoji (heart, laughing, surprised) beside the reply field; emoji beside a story = react; exemption pending a tap",
+   "test_cases": [],
+   "final_verdict": "Clear Purpose",
+   "instinct": "confirmed",
+   "deciding_evidence": "not pressed: it would send a real reaction; carried provisionally on the convention [test run once on screen12-a11 and carried to this duplicate - same control type and appearance]",
+   "recommendation": null,
+   "provisional": true
+  }
+ },
+ "summary": {
+  "elements_evaluated": 13,
+  "issues": 2,
+  "missing_purpose": 0,
+  "unclear_purpose": 2,
+  "clear_purpose": 11,
+  "clear_via_common_icon_exemption": 8,
+  "detection_false_positives": 0,
+  "test_cases_executed": 9,
+  "test_cases_not_executed": 2,
+  "instincts_confirmed": 13,
+  "instincts_overturned": 0,
+  "provisional_verdicts": 4
+ }
+}

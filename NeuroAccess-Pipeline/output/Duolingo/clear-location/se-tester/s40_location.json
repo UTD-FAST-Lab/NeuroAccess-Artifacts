@@ -1,0 +1,33 @@
+{
+  "app": "Duolingo",
+  "screen": "s40",
+  "state_str": "7567295896b0b2ccfef23a1470704ec3",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190109.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s40_header_nav.png",
+  "name": "a full-screen video advert",
+  "regions_read": [],
+  "identifier_found": "none: an advertiser's video with a countdown ring or an X and an advertiser strip",
+  "identifier_class": "none",
+  "accessibility_text": "none that names the screen",
+  "initial_verdict": "Missing View Identifier",
+  "initial_rationale": "nothing of the app is visible; nothing names a place",
+  "test_cases": [
+    {
+      "id": "s40-tc1",
+      "type": "verification",
+      "precondition": "Shop",
+      "action": "tap CLAIM CHEST on Free Chest and watch the ad to its end, then tap X",
+      "expected_result": "an app title appears, or none does; a way out appears",
+      "confirms_if": "no title and no way out",
+      "overturns_if": "an app title is visible",
+      "observed_result": "a different advertiser's video ('Disney+ Hulu', live app diverges from capture) with only a countdown ring and a sound icon — no close control for ~25 s; then an X appeared on a black frame; X led to 'You earned 6 gems!'",
+      "status": "executed",
+      "matched_expectation": true
+    }
+  ],
+  "final_verdict": "Missing View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "nothing names a place in any state; for the first ~25 s there is no way back at all",
+  "recommendation": "show a thin app bar ('Free chest — ad') with the remaining time over the video",
+  "provisional": false
+}

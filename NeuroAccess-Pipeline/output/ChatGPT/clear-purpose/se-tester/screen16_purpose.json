@@ -1,0 +1,716 @@
+{
+  "app": "ChatGPT",
+  "screen": "screen16",
+  "image": "inputs/ChatGPT/actionable-elements-highlighted/screen16_actionable_elements.png",
+  "elements": {
+    "screen16-a1": {
+      "kind": "icon",
+      "glyph": "two horizontal lines, the lower one shorter",
+      "description": "header, visible above the drawing sheet (not dimmed); whether it responds while the sheet is open is unverified",
+      "location": "header, visible above the drawing sheet (not dimmed)",
+      "bounds": [
+        32,
+        90,
+        158,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [
+        {
+          "id": "screen16-a1-tc1",
+          "type": "verification",
+          "precondition": "screen reached on the live app",
+          "action": "tap the element (and long-press where relevant) and observe",
+          "expected_result": "if actionable, something opens or changes",
+          "confirms_if": "it performs its own action with nothing naming it",
+          "overturns_if": "it performs no action of its own in this state",
+          "observed_result": "tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a2": {
+      "kind": "button",
+      "glyph": null,
+      "description": "header pill, visible above the sheet; reachability while the sheet is open unverified",
+      "location": "header pill, visible above the sheet",
+      "bounds": [
+        174,
+        90,
+        473,
+        216
+      ],
+      "visible_text": "\"Get Plus\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a3": {
+      "kind": "icon",
+      "glyph": "speech bubble drawn with a broken outline",
+      "description": "header top-right, light grey; reachability while the sheet is open unverified",
+      "location": "header top-right, light grey",
+      "bounds": [
+        922,
+        90,
+        1048,
+        216
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a4": {
+      "kind": "button",
+      "glyph": null,
+      "description": "selected tab chip above the sheet; reachability unverified",
+      "location": "selected tab chip above the sheet",
+      "bounds": [
+        42,
+        285,
+        296,
+        411
+      ],
+      "visible_text": "\"Trending\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a5": {
+      "kind": "button",
+      "glyph": null,
+      "description": "unselected tab above the sheet; reachability unverified",
+      "location": "unselected tab above the sheet",
+      "bounds": [
+        317,
+        285,
+        606,
+        411
+      ],
+      "visible_text": "\"Templates\"",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a6": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "right end of the tab row above the sheet; reachability unverified",
+      "location": "right end of the tab row above the sheet",
+      "bounds": [
+        913,
+        286,
+        1039,
+        412
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a7": {
+      "kind": "button",
+      "glyph": null,
+      "description": "image tile (flower sketch); lower part and caption hidden behind the drawing sheet — clipped",
+      "location": "image tile (flower sketch)",
+      "bounds": [
+        42,
+        453,
+        519,
+        960
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a8": {
+      "kind": "button",
+      "glyph": null,
+      "description": "image tile (woman in sunglasses); lower part and caption hidden behind the drawing sheet — clipped",
+      "location": "image tile (woman in sunglasses)",
+      "bounds": [
+        561,
+        453,
+        1038,
+        960
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "visible above the drawing sheet and judged as on the other screens, pending a reachability check",
+      "test_cases": [],
+      "final_verdict": null,
+      "instinct": "overturned",
+      "deciding_evidence": "DETECTION FALSE POSITIVE: tapped the menu glyph (and the tile behind) while the drawing sheet was open: the tap only dismissed the sheet; the control's own action did not occur - these header, tab and tile controls are covered by the sheet's invisible scrim in this state (tested on screen16-a1; carried to this element, which sits under the same sheet)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a9": {
+      "kind": "icon",
+      "glyph": "pencil",
+      "description": "first of three tools in a pill-shaped segmented control; shown selected (grey fill)",
+      "location": "first of three tools in a pill-shaped segmented control",
+      "bounds": [
+        356,
+        1004,
+        480,
+        1128
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "pencil = draw - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "pencil glyph, shown selected, in a drawing toolbar; draw convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a9-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open",
+          "action": "select the pencil and drag across the white area",
+          "expected_result": "a line is drawn",
+          "confirms_if": "something else happens",
+          "overturns_if": "a line appears",
+          "observed_result": "a black line was drawn; a thicker red line after choosing red",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "with the pencil selected, dragging on the sheet drew a line",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a10": {
+      "kind": "icon",
+      "glyph": "three squares and a diamond in a 2x2 grid",
+      "description": "second tool in the segmented control",
+      "location": "second tool in the segmented control. Part of the white drawing sheet that rises from the bottom (top edge y≈960). The c",
+      "bounds": [
+        480,
+        1004,
+        600,
+        1128
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "three squares and a diamond in a grid is not a convention a first-time user reads, and it has no label",
+      "test_cases": [
+        {
+          "id": "screen16-a10-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open",
+          "action": "tap the grid glyph and check for any label",
+          "expected_result": "a label or tooltip names it",
+          "confirms_if": "no label; purpose visible only after tapping",
+          "overturns_if": "a label names it",
+          "observed_result": "a pop-up palette of eight shapes appeared; no label or tooltip at any point",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened a palette of shapes (line, arrow, square, circle, triangle, diamond, star, heart) - nothing visible said so before the tap",
+      "recommendation": "add a word under it, e.g. 'Shapes'",
+      "provisional": false
+    },
+    "screen16-a11": {
+      "kind": "icon",
+      "glyph": "tilted rectangle divided by a diagonal line",
+      "description": "third tool in the segmented control",
+      "location": "third tool in the segmented control. Part of the white drawing sheet that rises from the bottom (top edge y≈960). The ca",
+      "bounds": [
+        600,
+        1004,
+        720,
+        1128
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "tilted block = eraser - my reading; less universal than the pencil",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "a tilted rectangle split by a line; the eraser glyph convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a11-tc1",
+          "type": "verification",
+          "precondition": "drawing with a black stroke",
+          "action": "select the glyph and drag over the stroke",
+          "expected_result": "the stroke is erased",
+          "confirms_if": "something else happens",
+          "overturns_if": "it erases",
+          "observed_result": "the black stroke was erased where dragged",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "with it selected, dragging over a stroke erased it - the convention held",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a12": {
+      "kind": "icon",
+      "glyph": "X made of two crossed diagonal lines",
+      "description": "sheet top-left, in an outlined circle",
+      "location": "sheet top-left, in an outlined circle. Part of the white drawing sheet that rises from the bottom (top edge y≈960). The ",
+      "bounds": [
+        42,
+        1008,
+        157,
+        1122
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "X = close - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "X in a circle at the sheet top-left; close convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a12-tc1",
+          "type": "verification",
+          "precondition": "sketch with strokes",
+          "action": "tap the X",
+          "expected_result": "the sheet closes (possibly with a warning)",
+          "confirms_if": "something else happens",
+          "overturns_if": "it closes",
+          "observed_result": "a dialog 'Discard sketch?' appeared; Discard closed the sheet",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping asked 'Discard sketch? Your sketch will be lost.' and Discard closed the sheet",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a13": {
+      "kind": "icon",
+      "glyph": "curved arrow pointing left",
+      "description": "sheet top-right, in an outlined circle",
+      "location": "sheet top-right, in an outlined circle. Part of the white drawing sheet that rises from the bottom (top edge y≈960). The",
+      "bounds": [
+        922,
+        1008,
+        1037,
+        1122
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "curved left arrow = undo - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "curved arrow pointing left; undo convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a13-tc1",
+          "type": "verification",
+          "precondition": "a stroke just erased",
+          "action": "tap the curved arrow",
+          "expected_result": "the last action is undone",
+          "confirms_if": "something else happens",
+          "overturns_if": "it undoes",
+          "observed_result": "the erased stroke came back",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping restored the stroke I had just erased",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a14": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "blank white drawing surface (drag to draw); nothing on it says so",
+      "location": "blank white drawing surface (drag to draw)",
+      "bounds": [
+        160,
+        1160,
+        1080,
+        2200
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a blank white area with nothing on it saying draw here",
+      "test_cases": [
+        {
+          "id": "screen16-a14-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open, canvas empty",
+          "action": "look for any hint, then drag a finger across the white area",
+          "expected_result": "a hint names the area",
+          "confirms_if": "no hint; the purpose shows only by trying",
+          "overturns_if": "a visible hint exists",
+          "observed_result": "no hint was shown; dragging drew a line",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "dragging drew a line, so it is a drawing surface - but no visible text in any state names it; the only word ('Sketch') was on the tile now hidden behind the sheet",
+      "recommendation": "add a faint hint on the empty canvas, e.g. 'Draw here'",
+      "provisional": false
+    },
+    "screen16-a15": {
+      "kind": "input field",
+      "glyph": null,
+      "description": "vertical slider: thin grey track with a round white knob at its lower end; no label",
+      "location": "vertical slider: thin grey track with a round white knob at its lower end",
+      "bounds": [
+        55,
+        1420,
+        140,
+        1980
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": null,
+      "convention_confidence": null,
+      "initial_verdict": "Missing Purpose",
+      "initial_rationale": "a thin vertical track with a knob and no label",
+      "test_cases": [
+        {
+          "id": "screen16-a15-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open",
+          "action": "drag the knob up, then draw",
+          "expected_result": "something visible names it",
+          "confirms_if": "no label; purpose found only by trying",
+          "overturns_if": "a label names it",
+          "observed_result": "the knob moved up; the next stroke was much thicker; no label appeared",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Missing Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "dragging the knob up made the next stroke much thicker - brush size - but nothing visible says so",
+      "recommendation": "label it 'Size' with small/large dots at the ends",
+      "provisional": false
+    },
+    "screen16-a16": {
+      "kind": "icon",
+      "glyph": "checkmark in a grey filled circle",
+      "description": "bottom-right of the sheet, greyed",
+      "location": "bottom-right of the sheet, greyed. Part of the white drawing sheet that rises from the bottom (top edge y≈960). The capt",
+      "bounds": [
+        922,
+        2222,
+        1037,
+        2336
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "checkmark = done / confirm - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "greyed checkmark in a circle at bottom right; done/confirm convention, greyed = not yet available - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a16-tc1",
+          "type": "verification",
+          "precondition": "sketch drawn, check now blue",
+          "action": "tap the check",
+          "expected_result": "the sketch is accepted",
+          "confirms_if": "n/a",
+          "overturns_if": "n/a",
+          "observed_result": "not run: it would attach the drawing to the message (treated as attaching an image)",
+          "status": "not_executed",
+          "matched_expectation": null
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "provisional: it turned blue after drawing, consistent with done; tapping it was not run because it would attach the sketch to a message",
+      "recommendation": null,
+      "provisional": true
+    },
+    "screen16-a17": {
+      "kind": "icon",
+      "glyph": "rainbow-ringed circle with a black centre",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        52,
+        2232,
+        148,
+        2328
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "rainbow ring = pick any colour - my reading",
+      "convention_confidence": "medium",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "rainbow-ringed circle among colour dots; colour-picker convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a17-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open",
+          "action": "tap the rainbow circle",
+          "expected_result": "a colour picker opens",
+          "confirms_if": "something else happens",
+          "overturns_if": "a picker opens",
+          "observed_result": "a sheet 'Pick a color' with a colour wheel and brightness bar opened; Cancel closed it",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "tapping opened 'Pick a color' with a colour wheel",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a18": {
+      "kind": "icon",
+      "glyph": "black filled circle with a blue ring",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        182,
+        2232,
+        278,
+        2328
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row); tested once on screen16-a20 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a19": {
+      "kind": "icon",
+      "glyph": "grey filled circle",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        322,
+        2240,
+        404,
+        2322
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row); tested once on screen16-a20 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a20": {
+      "kind": "icon",
+      "glyph": "red filled circle",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        452,
+        2240,
+        534,
+        2322
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [
+        {
+          "id": "screen16-a20-tc1",
+          "type": "verification",
+          "precondition": "drawing sheet open",
+          "action": "tap the red dot, select pencil, draw",
+          "expected_result": "the stroke is red",
+          "confirms_if": "something else happens",
+          "overturns_if": "it draws red",
+          "observed_result": "a red stroke was drawn and the red dot showed a ring",
+          "status": "executed",
+          "matched_expectation": true
+        }
+      ],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row)",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a21": {
+      "kind": "icon",
+      "glyph": "orange filled circle",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        584,
+        2240,
+        666,
+        2322
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row); tested once on screen16-a20 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a22": {
+      "kind": "icon",
+      "glyph": "yellow filled circle",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        714,
+        2240,
+        796,
+        2322
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row); tested once on screen16-a20 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    },
+    "screen16-a23": {
+      "kind": "icon",
+      "glyph": "green filled circle, cut off at its right edge",
+      "description": "colour swatch in the row along the sheet's bottom",
+      "location": "colour swatch in the row along the sheet's bottom. Part of the white drawing sheet that rises from the bottom (top edge ",
+      "bounds": [
+        846,
+        2240,
+        902,
+        2322
+      ],
+      "visible_text": "none",
+      "accessibility_text_consulted": "no strings on the record; not used in the verdict",
+      "convention_relied_on": "colour dot in a drawing tool = draw in this colour - my reading",
+      "convention_confidence": "high",
+      "initial_verdict": "Clear Purpose",
+      "initial_rationale": "plain colour dot in a row of colour dots in a drawing tool; choose-this-colour convention - exemption pending test",
+      "test_cases": [],
+      "final_verdict": "Clear Purpose",
+      "instinct": "confirmed",
+      "deciding_evidence": "choosing the red dot made the next stroke red - colour dots pick the colour (tested on red, carried to the row); tested once on screen16-a20 and carried to this identical control",
+      "recommendation": null,
+      "provisional": false
+    }
+  },
+  "summary": {
+    "elements_evaluated": 23,
+    "issues": 3,
+    "missing_purpose": 3,
+    "unclear_purpose": 0,
+    "clear_purpose": 12,
+    "clear_via_common_icon_exemption": 12,
+    "detection_false_positives": 8,
+    "test_cases_executed": 10,
+    "test_cases_not_executed": 1,
+    "instincts_confirmed": 15,
+    "instincts_overturned": 8,
+    "provisional_verdicts": 1
+  }
+}

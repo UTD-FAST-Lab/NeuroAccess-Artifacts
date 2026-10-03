@@ -1,0 +1,26 @@
+{
+  "app": "Discord",
+  "screen": "s27",
+  "state_str": "222dcc4178a85344f21cf4dd9fbb5595",
+  "image": "inputs/Discord/droidbot_output/states/screen_2026-09-25_215509.png",
+  "marked_image": "inputs/Discord/location-graph/marked/s27_header_nav.png",
+  "name": "Add Friends after Copy Link, system clipboard preview showing",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Add Friends",
+      "verdict_on_region": "screen title naming this screen — a place name, counted"
+    }
+  ],
+  "identifier_found": "\"Add Friends\" (header intact above the system clipboard preview)",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "'Add Friends' names the place",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": null,
+  "deciding_evidence": "system_overlay state: Android's clipboard preview covers only the bottom-left corner; the app's own header is fully visible, so the screen is judged",
+  "recommendation": null,
+  "provisional": false
+}

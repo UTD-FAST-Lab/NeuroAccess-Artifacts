@@ -1,0 +1,31 @@
+{
+  "app": "Duolingo",
+  "screen": "s74",
+  "state_str": "4e51b56c4b63f474f326ab3c1c92b39f",
+  "image": "inputs/Duolingo/droidbot_output/states/screen_2026-09-24_190520.png",
+  "marked_image": "inputs/Duolingo/location-graph/marked/s74_header_nav.png",
+  "name": "Find your friends",
+  "regions_read": [
+    {
+      "kind": "header",
+      "text": "Find your friends",
+      "verdict_on_region": "screen title naming the place"
+    },
+    {
+      "kind": "header",
+      "text": "Friend suggestions",
+      "verdict_on_region": "sub-section heading naming a list of people, not the screen — not counted"
+    }
+  ],
+  "identifier_found": "'Find your friends' at the top with a back arrow",
+  "identifier_class": "header",
+  "accessibility_text": null,
+  "initial_verdict": "Sufficient View Identifier",
+  "initial_rationale": "a title naming the screen",
+  "test_cases": [],
+  "final_verdict": "Sufficient View Identifier",
+  "instinct": "confirmed",
+  "deciding_evidence": "'Friend suggestions' is a list heading, not counted; not present live; template carry from s35's test (same template; the header content does not change the answer)",
+  "recommendation": null,
+  "provisional": false
+}
