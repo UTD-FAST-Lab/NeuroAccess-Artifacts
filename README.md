@@ -38,7 +38,7 @@ The 'NeuroAccess-Pipeline' directory contains three main subdirectories and one 
 
 **To understand NeuroAccess detection categories**: Begin with 'Issue-Characterization/issues-definition-and-examples' to see what problems NeuroAccess identifies.
 
-**To run the pipeline**: **To run the pipeline**: Use the prompt `Run CLAUDE.md on [AppName]` where [AppName] is the name of the application you want to evaluate.
+**To run the pipeline**: Use the prompt `Run CLAUDE.md on [AppName]` where [AppName] is the name of the application you want to evaluate.
 
 **To reproduce or extend results**: Reference 'inputs/' for sample data and 'output/' for expected results from each application evaluation phase.
 
